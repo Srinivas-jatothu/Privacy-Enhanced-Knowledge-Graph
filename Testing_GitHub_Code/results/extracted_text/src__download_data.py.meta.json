@@ -1,0 +1,32 @@
+{
+  "relpath": "src/download_data.py",
+  "manifest_meta": {
+    "relpath": "src/download_data.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\download_data.py",
+    "size": 1355,
+    "mtime": 1763123859.5566149,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "c009299aa52b6954c0113a95fa33599b92fb5cf702eeca33a34c5f4a22ffb14f",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\src__download_data.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "1",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'download_data.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "1355",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

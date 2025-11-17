@@ -1,0 +1,10 @@
+"""
+Modular script to perform scaling on incoming data.
+Script taken in columns to be standardized or normalized.
+Input: Path string to load pickle/parquet file.
+Output: Path string for parquet file.
+"""
+import os
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import Normalizer

@@ -1,0 +1,32 @@
+{
+  "relpath": ".git/hooks/pre-commit.sample",
+  "manifest_meta": {
+    "relpath": ".git/hooks/pre-commit.sample",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\pre-commit.sample",
+    "size": 1643,
+    "mtime": 1763123843.5439463,
+    "mime": "text/x-shellscript",
+    "is_text": true,
+    "sha256": "f9af7d95eb1231ecf2eba9770fedfa8d4797a12b02d7240e98d568201251244a",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.git__hooks__pre-commit.sample.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "ISO-8859-1",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'pre-commit.sample'",
+    "X-TIKA:detectedEncoding": "ISO-8859-1",
+    "Content-Length": "1643",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "application/x-sh; charset=ISO-8859-1"
+  }
+}

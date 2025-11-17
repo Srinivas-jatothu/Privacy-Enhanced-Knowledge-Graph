@@ -1,0 +1,1563 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Expr",
+      "value": {
+        "_const_preview": "\nModule for Analyzing Customer Clusters\nusing Radar Chart\n"
+      },
+      "lineno": 1,
+      "end_lineno": 4
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "os",
+          "asname": null,
+          "lineno": 5,
+          "end_lineno": 5
+        }
+      ],
+      "lineno": 5,
+      "end_lineno": 5
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "pandas",
+          "asname": "pd",
+          "lineno": 6,
+          "end_lineno": 6
+        }
+      ],
+      "lineno": 6,
+      "end_lineno": 6
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "matplotlib.pyplot",
+          "asname": "plt",
+          "lineno": 10,
+          "end_lineno": 10
+        }
+      ],
+      "lineno": 10,
+      "end_lineno": 10
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "PAR_DIR",
+          "lineno": 12,
+          "end_lineno": 12
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 12,
+              "end_lineno": 12
+            },
+            "attr": "path",
+            "lineno": 12,
+            "end_lineno": 12
+          },
+          "attr": "dirname",
+          "lineno": 12,
+          "end_lineno": 12
+        },
+        "args": [
+          {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 12,
+                  "end_lineno": 12
+                },
+                "attr": "path",
+                "lineno": 12,
+                "end_lineno": 12
+              },
+              "attr": "dirname",
+              "lineno": 12,
+              "end_lineno": 12
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 12,
+                      "end_lineno": 12
+                    },
+                    "attr": "path",
+                    "lineno": 12,
+                    "end_lineno": 12
+                  },
+                  "attr": "abspath",
+                  "lineno": 12,
+                  "end_lineno": 12
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "__file__",
+                    "lineno": 12,
+                    "end_lineno": 12
+                  }
+                ],
+                "keywords": [],
+                "lineno": 12,
+                "end_lineno": 12
+              }
+            ],
+            "keywords": [],
+            "lineno": 12,
+            "end_lineno": 12
+          }
+        ],
+        "keywords": [],
+        "lineno": 12,
+        "end_lineno": 12
+      },
+      "type_comment": null,
+      "lineno": 12,
+      "end_lineno": 12
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "__INGESTPATH__",
+          "lineno": 15,
+          "end_lineno": 15
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 15,
+              "end_lineno": 15
+            },
+            "attr": "path",
+            "lineno": 15,
+            "end_lineno": 15
+          },
+          "attr": "join",
+          "lineno": 15,
+          "end_lineno": 15
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "PAR_DIR",
+            "lineno": 15,
+            "end_lineno": 15
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 15,
+            "end_lineno": 15
+          },
+          {
+            "_type": "Constant",
+            "value": "processed",
+            "kind": null,
+            "lineno": 15,
+            "end_lineno": 15
+          },
+          {
+            "_type": "Constant",
+            "value": "df_cleaned.parquet",
+            "kind": null,
+            "lineno": 15,
+            "end_lineno": 15
+          }
+        ],
+        "keywords": [],
+        "lineno": 15,
+        "end_lineno": 15
+      },
+      "type_comment": null,
+      "lineno": 15,
+      "end_lineno": 15
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "__SAVEPATH__",
+          "lineno": 16,
+          "end_lineno": 16
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 16,
+              "end_lineno": 16
+            },
+            "attr": "path",
+            "lineno": 16,
+            "end_lineno": 16
+          },
+          "attr": "join",
+          "lineno": 16,
+          "end_lineno": 16
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "PAR_DIR",
+            "lineno": 16,
+            "end_lineno": 16
+          },
+          {
+            "_type": "Constant",
+            "value": "data/plots",
+            "kind": null,
+            "lineno": 16,
+            "end_lineno": 16
+          }
+        ],
+        "keywords": [],
+        "lineno": 16,
+        "end_lineno": 16
+      },
+      "type_comment": null,
+      "lineno": 16,
+      "end_lineno": 16
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "colors",
+          "lineno": 17,
+          "end_lineno": 17
+        }
+      ],
+      "value": {
+        "_type": "List",
+        "elts": [
+          {
+            "_type": "Constant",
+            "value": "#e8000b",
+            "kind": null,
+            "lineno": 17,
+            "end_lineno": 17
+          },
+          {
+            "_type": "Constant",
+            "value": "#023eff",
+            "kind": null,
+            "lineno": 17,
+            "end_lineno": 17
+          },
+          {
+            "_type": "Constant",
+            "value": "#1ac938",
+            "kind": null,
+            "lineno": 17,
+            "end_lineno": 17
+          }
+        ],
+        "lineno": 17,
+        "end_lineno": 17
+      },
+      "type_comment": null,
+      "lineno": 17,
+      "end_lineno": 17
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "rfm_histograms",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "in_path",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 19,
+            "end_lineno": 19
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": [
+          {
+            "_type": "Name",
+            "id": "__INGESTPATH__",
+            "lineno": 19,
+            "end_lineno": 19
+          }
+        ]
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Docstring\n    "
+          },
+          "lineno": 20,
+          "end_lineno": 22
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "df_customer",
+              "lineno": 24,
+              "end_lineno": 24
+            }
+          ],
+          "value": {
+            "_type": "Constant",
+            "value": null,
+            "kind": null,
+            "lineno": 24,
+            "end_lineno": 24
+          },
+          "type_comment": null,
+          "lineno": 24,
+          "end_lineno": 24
+        },
+        {
+          "_type": "Try",
+          "body": [
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "df_customer",
+                  "lineno": 28,
+                  "end_lineno": 28
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "pd",
+                    "lineno": 28,
+                    "end_lineno": 28
+                  },
+                  "attr": "read_parquet",
+                  "lineno": 28,
+                  "end_lineno": 28
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "in_path",
+                    "lineno": 28,
+                    "end_lineno": 28
+                  }
+                ],
+                "keywords": [],
+                "lineno": 28,
+                "end_lineno": 28
+              },
+              "type_comment": null,
+              "lineno": 28,
+              "end_lineno": 28
+            }
+          ],
+          "handlers": [
+            {
+              "_type": "ExceptHandler",
+              "type": {
+                "_type": "Name",
+                "id": "FileNotFoundError",
+                "lineno": 29,
+                "end_lineno": 29
+              },
+              "name": null,
+              "body": [
+                {
+                  "_type": "Raise",
+                  "exc": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "FileNotFoundError",
+                      "lineno": 30,
+                      "end_lineno": 30
+                    },
+                    "args": [
+                      {
+                        "_type": "JoinedStr",
+                        "values": [
+                          {
+                            "_type": "Constant",
+                            "value": "File not found at ",
+                            "kind": null,
+                            "lineno": 30,
+                            "end_lineno": 30
+                          },
+                          {
+                            "_type": "FormattedValue",
+                            "value": {
+                              "_type": "Name",
+                              "id": "in_path",
+                              "lineno": 30,
+                              "end_lineno": 30
+                            },
+                            "conversion": -1,
+                            "format_spec": null,
+                            "lineno": 30,
+                            "end_lineno": 30
+                          },
+                          {
+                            "_type": "Constant",
+                            "value": ".",
+                            "kind": null,
+                            "lineno": 30,
+                            "end_lineno": 30
+                          }
+                        ],
+                        "lineno": 30,
+                        "end_lineno": 30
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 30,
+                    "end_lineno": 30
+                  },
+                  "cause": {
+                    "_type": "Constant",
+                    "value": null,
+                    "kind": null,
+                    "lineno": 30,
+                    "end_lineno": 30
+                  },
+                  "lineno": 30,
+                  "end_lineno": 30
+                }
+              ],
+              "lineno": 29,
+              "end_lineno": 30
+            }
+          ],
+          "orelse": [],
+          "finalbody": [],
+          "lineno": 27,
+          "end_lineno": 30
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "features",
+              "lineno": 33,
+              "end_lineno": 33
+            }
+          ],
+          "value": {
+            "_type": "Subscript",
+            "value": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "df_customer",
+                "lineno": 33,
+                "end_lineno": 33
+              },
+              "attr": "columns",
+              "lineno": 33,
+              "end_lineno": 33
+            },
+            "slice": {
+              "_type": "Slice",
+              "lower": {
+                "_type": "Constant",
+                "value": 1,
+                "kind": null,
+                "lineno": 33,
+                "end_lineno": 33
+              },
+              "upper": {
+                "_type": "UnaryOp",
+                "op": {
+                  "_type": "USub"
+                },
+                "operand": {
+                  "_type": "Constant",
+                  "value": 1,
+                  "kind": null,
+                  "lineno": 33,
+                  "end_lineno": 33
+                },
+                "lineno": 33,
+                "end_lineno": 33
+              },
+              "step": null,
+              "lineno": 33,
+              "end_lineno": 33
+            },
+            "lineno": 33,
+            "end_lineno": 33
+          },
+          "type_comment": null,
+          "lineno": 33,
+          "end_lineno": 33
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "clusters",
+              "lineno": 34,
+              "end_lineno": 34
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "df_customer",
+                  "lineno": 34,
+                  "end_lineno": 34
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "cluster",
+                  "kind": null,
+                  "lineno": 34,
+                  "end_lineno": 34
+                },
+                "lineno": 34,
+                "end_lineno": 34
+              },
+              "attr": "unique",
+              "lineno": 34,
+              "end_lineno": 34
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 34,
+            "end_lineno": 34
+          },
+          "type_comment": null,
+          "lineno": 34,
+          "end_lineno": 34
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "clusters",
+                "lineno": 35,
+                "end_lineno": 35
+              },
+              "attr": "sort",
+              "lineno": 35,
+              "end_lineno": 35
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 35,
+            "end_lineno": 35
+          },
+          "lineno": 35,
+          "end_lineno": 35
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "n_rows",
+              "lineno": 38,
+              "end_lineno": 38
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "len",
+              "lineno": 38,
+              "end_lineno": 38
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "features",
+                "lineno": 38,
+                "end_lineno": 38
+              }
+            ],
+            "keywords": [],
+            "lineno": 38,
+            "end_lineno": 38
+          },
+          "type_comment": null,
+          "lineno": 38,
+          "end_lineno": 38
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "n_cols",
+              "lineno": 39,
+              "end_lineno": 39
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "len",
+              "lineno": 39,
+              "end_lineno": 39
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "clusters",
+                "lineno": 39,
+                "end_lineno": 39
+              }
+            ],
+            "keywords": [],
+            "lineno": 39,
+            "end_lineno": 39
+          },
+          "type_comment": null,
+          "lineno": 39,
+          "end_lineno": 39
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Tuple",
+              "elts": [
+                {
+                  "_type": "Name",
+                  "id": "fig",
+                  "lineno": 41,
+                  "end_lineno": 41
+                },
+                {
+                  "_type": "Name",
+                  "id": "axes",
+                  "lineno": 41,
+                  "end_lineno": 41
+                }
+              ],
+              "lineno": 41,
+              "end_lineno": 41
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 41,
+                "end_lineno": 41
+              },
+              "attr": "subplots",
+              "lineno": 41,
+              "end_lineno": 41
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "n_rows",
+                "lineno": 41,
+                "end_lineno": 41
+              },
+              {
+                "_type": "Name",
+                "id": "n_cols",
+                "lineno": 41,
+                "end_lineno": 41
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "figsize",
+                "value": {
+                  "_type": "Tuple",
+                  "elts": [
+                    {
+                      "_type": "Constant",
+                      "value": 48,
+                      "kind": null,
+                      "lineno": 41,
+                      "end_lineno": 41
+                    },
+                    {
+                      "_type": "BinOp",
+                      "left": {
+                        "_type": "Constant",
+                        "value": 6,
+                        "kind": null,
+                        "lineno": 41,
+                        "end_lineno": 41
+                      },
+                      "op": {
+                        "_type": "Mult"
+                      },
+                      "right": {
+                        "_type": "Name",
+                        "id": "n_rows",
+                        "lineno": 41,
+                        "end_lineno": 41
+                      },
+                      "lineno": 41,
+                      "end_lineno": 41
+                    }
+                  ],
+                  "lineno": 41,
+                  "end_lineno": 41
+                },
+                "lineno": 41,
+                "end_lineno": 41
+              }
+            ],
+            "lineno": 41,
+            "end_lineno": 41
+          },
+          "type_comment": null,
+          "lineno": 41,
+          "end_lineno": 41
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "fig",
+                "lineno": 42,
+                "end_lineno": 42
+              },
+              "attr": "tight_layout",
+              "lineno": 42,
+              "end_lineno": 42
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 42,
+            "end_lineno": 42
+          },
+          "lineno": 42,
+          "end_lineno": 42
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "plt",
+                  "lineno": 43,
+                  "end_lineno": 43
+                },
+                "attr": "rcParams",
+                "lineno": 43,
+                "end_lineno": 43
+              },
+              "attr": "update",
+              "lineno": 43,
+              "end_lineno": 43
+            },
+            "args": [
+              {
+                "_type": "Dict",
+                "keys": [
+                  {
+                    "_type": "Constant",
+                    "value": "font.size",
+                    "kind": null,
+                    "lineno": 43,
+                    "end_lineno": 43
+                  }
+                ],
+                "values": [
+                  {
+                    "_type": "Constant",
+                    "value": 12,
+                    "kind": null,
+                    "lineno": 43,
+                    "end_lineno": 43
+                  }
+                ],
+                "lineno": 43,
+                "end_lineno": 43
+              }
+            ],
+            "keywords": [],
+            "lineno": 43,
+            "end_lineno": 43
+          },
+          "lineno": 43,
+          "end_lineno": 43
+        },
+        {
+          "_type": "For",
+          "target": {
+            "_type": "Tuple",
+            "elts": [
+              {
+                "_type": "Name",
+                "id": "i",
+                "lineno": 46,
+                "end_lineno": 46
+              },
+              {
+                "_type": "Name",
+                "id": "feature",
+                "lineno": 46,
+                "end_lineno": 46
+              }
+            ],
+            "lineno": 46,
+            "end_lineno": 46
+          },
+          "iter": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "enumerate",
+              "lineno": 46,
+              "end_lineno": 46
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "features",
+                "lineno": 46,
+                "end_lineno": 46
+              }
+            ],
+            "keywords": [],
+            "lineno": 46,
+            "end_lineno": 46
+          },
+          "body": [
+            {
+              "_type": "For",
+              "target": {
+                "_type": "Tuple",
+                "elts": [
+                  {
+                    "_type": "Name",
+                    "id": "j",
+                    "lineno": 47,
+                    "end_lineno": 47
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "cluster",
+                    "lineno": 47,
+                    "end_lineno": 47
+                  }
+                ],
+                "lineno": 47,
+                "end_lineno": 47
+              },
+              "iter": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "enumerate",
+                  "lineno": 47,
+                  "end_lineno": 47
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "clusters",
+                    "lineno": 47,
+                    "end_lineno": 47
+                  }
+                ],
+                "keywords": [],
+                "lineno": 47,
+                "end_lineno": 47
+              },
+              "body": [
+                {
+                  "_type": "Assign",
+                  "targets": [
+                    {
+                      "_type": "Name",
+                      "id": "data",
+                      "lineno": 48,
+                      "end_lineno": 48
+                    }
+                  ],
+                  "value": {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "df_customer",
+                        "lineno": 48,
+                        "end_lineno": 48
+                      },
+                      "slice": {
+                        "_type": "Compare",
+                        "left": {
+                          "_type": "Subscript",
+                          "value": {
+                            "_type": "Name",
+                            "id": "df_customer",
+                            "lineno": 48,
+                            "end_lineno": 48
+                          },
+                          "slice": {
+                            "_type": "Constant",
+                            "value": "cluster",
+                            "kind": null,
+                            "lineno": 48,
+                            "end_lineno": 48
+                          },
+                          "lineno": 48,
+                          "end_lineno": 48
+                        },
+                        "ops": [
+                          {
+                            "_type": "Eq"
+                          }
+                        ],
+                        "comparators": [
+                          {
+                            "_type": "Name",
+                            "id": "cluster",
+                            "lineno": 48,
+                            "end_lineno": 48
+                          }
+                        ],
+                        "lineno": 48,
+                        "end_lineno": 48
+                      },
+                      "lineno": 48,
+                      "end_lineno": 48
+                    },
+                    "slice": {
+                      "_type": "Name",
+                      "id": "feature",
+                      "lineno": 48,
+                      "end_lineno": 48
+                    },
+                    "lineno": 48,
+                    "end_lineno": 48
+                  },
+                  "type_comment": null,
+                  "lineno": 48,
+                  "end_lineno": 48
+                },
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Subscript",
+                        "value": {
+                          "_type": "Name",
+                          "id": "axes",
+                          "lineno": 49,
+                          "end_lineno": 49
+                        },
+                        "slice": {
+                          "_type": "Tuple",
+                          "elts": [
+                            {
+                              "_type": "Name",
+                              "id": "i",
+                              "lineno": 49,
+                              "end_lineno": 49
+                            },
+                            {
+                              "_type": "Name",
+                              "id": "j",
+                              "lineno": 49,
+                              "end_lineno": 49
+                            }
+                          ],
+                          "lineno": 49,
+                          "end_lineno": 49
+                        },
+                        "lineno": 49,
+                        "end_lineno": 49
+                      },
+                      "attr": "hist",
+                      "lineno": 49,
+                      "end_lineno": 49
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "data",
+                        "lineno": 49,
+                        "end_lineno": 49
+                      }
+                    ],
+                    "keywords": [
+                      {
+                        "_type": "keyword",
+                        "arg": "bins",
+                        "value": {
+                          "_type": "Constant",
+                          "value": 20,
+                          "kind": null,
+                          "lineno": 49,
+                          "end_lineno": 49
+                        },
+                        "lineno": 49,
+                        "end_lineno": 49
+                      },
+                      {
+                        "_type": "keyword",
+                        "arg": "color",
+                        "value": {
+                          "_type": "Subscript",
+                          "value": {
+                            "_type": "Name",
+                            "id": "colors",
+                            "lineno": 49,
+                            "end_lineno": 49
+                          },
+                          "slice": {
+                            "_type": "Name",
+                            "id": "j",
+                            "lineno": 49,
+                            "end_lineno": 49
+                          },
+                          "lineno": 49,
+                          "end_lineno": 49
+                        },
+                        "lineno": 49,
+                        "end_lineno": 49
+                      },
+                      {
+                        "_type": "keyword",
+                        "arg": "edgecolor",
+                        "value": {
+                          "_const_preview": "w"
+                        },
+                        "lineno": 49,
+                        "end_lineno": 49
+                      },
+                      {
+                        "_type": "keyword",
+                        "arg": "alpha",
+                        "value": {
+                          "_type": "Constant",
+                          "value": 0.7,
+                          "kind": null,
+                          "lineno": 49,
+                          "end_lineno": 49
+                        },
+                        "lineno": 49,
+                        "end_lineno": 49
+                      }
+                    ],
+                    "lineno": 49,
+                    "end_lineno": 49
+                  },
+                  "lineno": 49,
+                  "end_lineno": 49
+                },
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Subscript",
+                        "value": {
+                          "_type": "Name",
+                          "id": "axes",
+                          "lineno": 50,
+                          "end_lineno": 50
+                        },
+                        "slice": {
+                          "_type": "Tuple",
+                          "elts": [
+                            {
+                              "_type": "Name",
+                              "id": "i",
+                              "lineno": 50,
+                              "end_lineno": 50
+                            },
+                            {
+                              "_type": "Name",
+                              "id": "j",
+                              "lineno": 50,
+                              "end_lineno": 50
+                            }
+                          ],
+                          "lineno": 50,
+                          "end_lineno": 50
+                        },
+                        "lineno": 50,
+                        "end_lineno": 50
+                      },
+                      "attr": "set_title",
+                      "lineno": 50,
+                      "end_lineno": 50
+                    },
+                    "args": [
+                      {
+                        "_type": "JoinedStr",
+                        "values": [
+                          {
+                            "_type": "Constant",
+                            "value": "Cluster ",
+                            "kind": null,
+                            "lineno": 50,
+                            "end_lineno": 50
+                          },
+                          {
+                            "_type": "FormattedValue",
+                            "value": {
+                              "_type": "Name",
+                              "id": "cluster",
+                              "lineno": 50,
+                              "end_lineno": 50
+                            },
+                            "conversion": -1,
+                            "format_spec": null,
+                            "lineno": 50,
+                            "end_lineno": 50
+                          },
+                          {
+                            "_type": "Constant",
+                            "value": " - ",
+                            "kind": null,
+                            "lineno": 50,
+                            "end_lineno": 50
+                          },
+                          {
+                            "_type": "FormattedValue",
+                            "value": {
+                              "_type": "Name",
+                              "id": "feature",
+                              "lineno": 50,
+                              "end_lineno": 50
+                            },
+                            "conversion": -1,
+                            "format_spec": null,
+                            "lineno": 50,
+                            "end_lineno": 50
+                          }
+                        ],
+                        "lineno": 50,
+                        "end_lineno": 50
+                      }
+                    ],
+                    "keywords": [
+                      {
+                        "_type": "keyword",
+                        "arg": "fontsize",
+                        "value": {
+                          "_type": "Constant",
+                          "value": 10,
+                          "kind": null,
+                          "lineno": 50,
+                          "end_lineno": 50
+                        },
+                        "lineno": 50,
+                        "end_lineno": 50
+                      }
+                    ],
+                    "lineno": 50,
+                    "end_lineno": 50
+                  },
+                  "lineno": 50,
+                  "end_lineno": 50
+                },
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Subscript",
+                        "value": {
+                          "_type": "Name",
+                          "id": "axes",
+                          "lineno": 51,
+                          "end_lineno": 51
+                        },
+                        "slice": {
+                          "_type": "Tuple",
+                          "elts": [
+                            {
+                              "_type": "Name",
+                              "id": "i",
+                              "lineno": 51,
+                              "end_lineno": 51
+                            },
+                            {
+                              "_type": "Name",
+                              "id": "j",
+                              "lineno": 51,
+                              "end_lineno": 51
+                            }
+                          ],
+                          "lineno": 51,
+                          "end_lineno": 51
+                        },
+                        "lineno": 51,
+                        "end_lineno": 51
+                      },
+                      "attr": "set_xlabel",
+                      "lineno": 51,
+                      "end_lineno": 51
+                    },
+                    "args": [
+                      {
+                        "_type": "Constant",
+                        "value": "",
+                        "kind": null,
+                        "lineno": 51,
+                        "end_lineno": 51
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 51,
+                    "end_lineno": 51
+                  },
+                  "lineno": 51,
+                  "end_lineno": 51
+                },
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Subscript",
+                        "value": {
+                          "_type": "Name",
+                          "id": "axes",
+                          "lineno": 52,
+                          "end_lineno": 52
+                        },
+                        "slice": {
+                          "_type": "Tuple",
+                          "elts": [
+                            {
+                              "_type": "Name",
+                              "id": "i",
+                              "lineno": 52,
+                              "end_lineno": 52
+                            },
+                            {
+                              "_type": "Name",
+                              "id": "j",
+                              "lineno": 52,
+                              "end_lineno": 52
+                            }
+                          ],
+                          "lineno": 52,
+                          "end_lineno": 52
+                        },
+                        "lineno": 52,
+                        "end_lineno": 52
+                      },
+                      "attr": "set_ylabel",
+                      "lineno": 52,
+                      "end_lineno": 52
+                    },
+                    "args": [
+                      {
+                        "_type": "Constant",
+                        "value": "",
+                        "kind": null,
+                        "lineno": 52,
+                        "end_lineno": 52
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 52,
+                    "end_lineno": 52
+                  },
+                  "lineno": 52,
+                  "end_lineno": 52
+                }
+              ],
+              "orelse": [],
+              "type_comment": null,
+              "lineno": 47,
+              "end_lineno": 52
+            }
+          ],
+          "orelse": [],
+          "type_comment": null,
+          "lineno": 46,
+          "end_lineno": 52
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "fig",
+                "lineno": 55,
+                "end_lineno": 55
+              },
+              "attr": "show",
+              "lineno": 55,
+              "end_lineno": 55
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 55,
+            "end_lineno": 55
+          },
+          "lineno": 55,
+          "end_lineno": 55
+        },
+        {
+          "_type": "If",
+          "test": {
+            "_type": "UnaryOp",
+            "op": {
+              "_type": "Not"
+            },
+            "operand": {
+              "_type": "Call",
+              "func": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "os",
+                    "lineno": 57,
+                    "end_lineno": 57
+                  },
+                  "attr": "path",
+                  "lineno": 57,
+                  "end_lineno": 57
+                },
+                "attr": "exists",
+                "lineno": 57,
+                "end_lineno": 57
+              },
+              "args": [
+                {
+                  "_type": "Name",
+                  "id": "__SAVEPATH__",
+                  "lineno": 57,
+                  "end_lineno": 57
+                }
+              ],
+              "keywords": [],
+              "lineno": 57,
+              "end_lineno": 57
+            },
+            "lineno": 57,
+            "end_lineno": 57
+          },
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "os",
+                    "lineno": 58,
+                    "end_lineno": 58
+                  },
+                  "attr": "makedirs",
+                  "lineno": 58,
+                  "end_lineno": 58
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "__SAVEPATH__",
+                    "lineno": 58,
+                    "end_lineno": 58
+                  }
+                ],
+                "keywords": [],
+                "lineno": 58,
+                "end_lineno": 58
+              },
+              "lineno": 58,
+              "end_lineno": 58
+            }
+          ],
+          "orelse": [],
+          "lineno": 57,
+          "end_lineno": 58
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "fig",
+                "lineno": 59,
+                "end_lineno": 59
+              },
+              "attr": "savefig",
+              "lineno": 59,
+              "end_lineno": 59
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 59,
+                      "end_lineno": 59
+                    },
+                    "attr": "path",
+                    "lineno": 59,
+                    "end_lineno": 59
+                  },
+                  "attr": "join",
+                  "lineno": 59,
+                  "end_lineno": 59
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "__SAVEPATH__",
+                    "lineno": 59,
+                    "end_lineno": 59
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "histogram_analysis.png",
+                    "kind": null,
+                    "lineno": 59,
+                    "end_lineno": 59
+                  }
+                ],
+                "keywords": [],
+                "lineno": 59,
+                "end_lineno": 59
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "bbox_inches",
+                "value": {
+                  "_const_preview": "tight"
+                },
+                "lineno": 59,
+                "end_lineno": 59
+              }
+            ],
+            "lineno": 59,
+            "end_lineno": 59
+          },
+          "lineno": 59,
+          "end_lineno": 59
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 19,
+      "end_lineno": 59
+    }
+  ],
+  "type_ignores": []
+}

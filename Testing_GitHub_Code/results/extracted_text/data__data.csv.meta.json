@@ -1,0 +1,35 @@
+{
+  "relpath": "data/data.csv",
+  "manifest_meta": {
+    "relpath": "data/data.csv",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\data.csv",
+    "size": 45580638,
+    "mtime": 1763123857.3269014,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "d07aec9960083af2339975a3f9d3b26313b342dcd9f86cce0b919b1cde639a44",
+    "sample_path": null
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "resourceName": "b'data.csv'",
+    "csv:delimiter": "comma",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "csv:num_rows": "541910",
+    "csv:num_columns": "8",
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "1192",
+    "X-TIKA:embedded_depth": "0",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "45580638",
+    "Content-Type": "text/csv; charset=windows-1252; delimiter=comma"
+  }
+}

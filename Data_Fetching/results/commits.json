@@ -1,0 +1,3877 @@
+[
+  {
+    "sha": "63ba542f61ac4451a6676f17b0db7760ce0ddabb",
+    "message_head": "Merge pull request #109 from Thomas-George-T/dependabot/pip/grpcio-1.53.2",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2024-06-05T16:52:03Z",
+    "parents": [
+      "2943a93511f49dc1685974354dffbf68709d8f52",
+      "af0af94401176e64b35d92dd63a4e83a3dd5e9f1"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/63ba542f61ac4451a6676f17b0db7760ce0ddabb"
+  },
+  {
+    "sha": "af0af94401176e64b35d92dd63a4e83a3dd5e9f1",
+    "message_head": "Update requirements.txt",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2024-06-05T16:47:37Z",
+    "parents": [
+      "9d71e9035e161f0715194da1641d6ad14a974830"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/af0af94401176e64b35d92dd63a4e83a3dd5e9f1"
+  },
+  {
+    "sha": "9d71e9035e161f0715194da1641d6ad14a974830",
+    "message_head": "Bump grpcio from 1.51.3 to 1.53.2",
+    "author_name": "dependabot[bot]",
+    "author_email": "49699333+dependabot[bot]@users.noreply.github.com",
+    "author_date": "2024-06-05T16:47:04Z",
+    "parents": [
+      "2943a93511f49dc1685974354dffbf68709d8f52"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/9d71e9035e161f0715194da1641d6ad14a974830"
+  },
+  {
+    "sha": "2943a93511f49dc1685974354dffbf68709d8f52",
+    "message_head": "Merge pull request #108 from Thomas-George-T/Thomas-George-T-patch-1",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2024-06-05T16:45:25Z",
+    "parents": [
+      "d9a2ff012828d347c98a736164d1ac3b8cc326d7",
+      "b6e2ca6f491b3ec815392cb64effcfdcfd342a13"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/2943a93511f49dc1685974354dffbf68709d8f52"
+  },
+  {
+    "sha": "b6e2ca6f491b3ec815392cb64effcfdcfd342a13",
+    "message_head": "Bumping up versions of Github actions",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2024-06-05T16:41:58Z",
+    "parents": [
+      "182703553878d358ccc76a3f2f825c93092f0d62"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b6e2ca6f491b3ec815392cb64effcfdcfd342a13"
+  },
+  {
+    "sha": "182703553878d358ccc76a3f2f825c93092f0d62",
+    "message_head": "Merge pull request #110 from Thomas-George-T/Thomas-George-T-patch-2",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2024-06-05T16:34:33Z",
+    "parents": [
+      "162ca030184db52d9fe20a31d5f93c5e11cea70f",
+      "6edf75481708fa18215867a867a17d9056db4988"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/182703553878d358ccc76a3f2f825c93092f0d62"
+  },
+  {
+    "sha": "6edf75481708fa18215867a867a17d9056db4988",
+    "message_head": "Update pytest.yml",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2024-06-05T16:34:01Z",
+    "parents": [
+      "d9a2ff012828d347c98a736164d1ac3b8cc326d7"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6edf75481708fa18215867a867a17d9056db4988"
+  },
+  {
+    "sha": "162ca030184db52d9fe20a31d5f93c5e11cea70f",
+    "message_head": "Update .pylintrc",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2024-06-05T16:29:45Z",
+    "parents": [
+      "79c65c61033e757be538a9a3ca16c0a337f0688b"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/162ca030184db52d9fe20a31d5f93c5e11cea70f"
+  },
+  {
+    "sha": "79c65c61033e757be538a9a3ca16c0a337f0688b",
+    "message_head": "Update requirements.txt",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2024-06-05T16:23:15Z",
+    "parents": [
+      "f422d44556426ad13c050f253319f62c92761062"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/79c65c61033e757be538a9a3ca16c0a337f0688b"
+  },
+  {
+    "sha": "f422d44556426ad13c050f253319f62c92761062",
+    "message_head": "Update .pylintrc",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2024-06-05T16:21:34Z",
+    "parents": [
+      "d9a2ff012828d347c98a736164d1ac3b8cc326d7"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f422d44556426ad13c050f253319f62c92761062"
+  },
+  {
+    "sha": "d9a2ff012828d347c98a736164d1ac3b8cc326d7",
+    "message_head": "Merge pull request #107 from Thomas-George-T/dependabot/pip/flask-appbuilder-4.3.11",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2024-06-05T16:17:33Z",
+    "parents": [
+      "99d0f19e66f56d47b5e2374ae4d6db628d7cbee6",
+      "5533e5d200b775685becd28469567c0051c0327b"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d9a2ff012828d347c98a736164d1ac3b8cc326d7"
+  },
+  {
+    "sha": "5533e5d200b775685becd28469567c0051c0327b",
+    "message_head": "Bump flask-appbuilder from 4.3.6 to 4.3.11",
+    "author_name": "dependabot[bot]",
+    "author_email": "49699333+dependabot[bot]@users.noreply.github.com",
+    "author_date": "2024-06-05T14:10:37Z",
+    "parents": [
+      "99d0f19e66f56d47b5e2374ae4d6db628d7cbee6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/5533e5d200b775685becd28469567c0051c0327b"
+  },
+  {
+    "sha": "99d0f19e66f56d47b5e2374ae4d6db628d7cbee6",
+    "message_head": "Merge pull request #106 from Thomas-George-T/dependabot/pip/mlflow-2.13.1",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2024-06-05T14:07:35Z",
+    "parents": [
+      "8edb1111803e6c907f3da2a2044037cf97288c84",
+      "08a2e6238e403440a4ba55922d858f89a4427586"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/99d0f19e66f56d47b5e2374ae4d6db628d7cbee6"
+  },
+  {
+    "sha": "08a2e6238e403440a4ba55922d858f89a4427586",
+    "message_head": "Bump mlflow from 2.8.1 to 2.13.1",
+    "author_name": "dependabot[bot]",
+    "author_email": "49699333+dependabot[bot]@users.noreply.github.com",
+    "author_date": "2024-06-05T13:57:51Z",
+    "parents": [
+      "8edb1111803e6c907f3da2a2044037cf97288c84"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/08a2e6238e403440a4ba55922d858f89a4427586"
+  },
+  {
+    "sha": "8edb1111803e6c907f3da2a2044037cf97288c84",
+    "message_head": "Merge pull request #104 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-13T22:28:55Z",
+    "parents": [
+      "f8e59ee17f13e4c5b4579256934624a186256b10",
+      "10338bce9d7cd8cbe6d6e34e8f4eb9ca5fb0c051"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/8edb1111803e6c907f3da2a2044037cf97288c84"
+  },
+  {
+    "sha": "10338bce9d7cd8cbe6d6e34e8f4eb9ca5fb0c051",
+    "message_head": "Merge branch 'main' into feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-13T22:18:14Z",
+    "parents": [
+      "9c56ea039e2f4474dcbaf59c2d90eee0d4d93ac9",
+      "f8e59ee17f13e4c5b4579256934624a186256b10"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/10338bce9d7cd8cbe6d6e34e8f4eb9ca5fb0c051"
+  },
+  {
+    "sha": "9c56ea039e2f4474dcbaf59c2d90eee0d4d93ac9",
+    "message_head": "Merge pull request #103 from Thomas-George-T/feature_koko",
+    "author_name": "Thomas George Thomas",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-13T22:14:09Z",
+    "parents": [
+      "06927841e95775df6e424a148761182d69e53741",
+      "05ad5d3f73695fbff73e42a06fe58d5afd84ea9d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/9c56ea039e2f4474dcbaf59c2d90eee0d4d93ac9"
+  },
+  {
+    "sha": "05ad5d3f73695fbff73e42a06fe58d5afd84ea9d",
+    "message_head": "Updated readme",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-12-13T22:08:08Z",
+    "parents": [
+      "90c720d8840a0f76658fecec3f949e29fc30c971"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/05ad5d3f73695fbff73e42a06fe58d5afd84ea9d"
+  },
+  {
+    "sha": "90c720d8840a0f76658fecec3f949e29fc30c971",
+    "message_head": "Merge branch 'feature_machine_learning' of https://github.com/Thomas-George-T/Ecommerce-Data-MLOps into feature_koko",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-12-13T22:04:53Z",
+    "parents": [
+      "ea97936208a499cd8a8a24a7cac24583f5f107d9",
+      "06927841e95775df6e424a148761182d69e53741"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/90c720d8840a0f76658fecec3f949e29fc30c971"
+  },
+  {
+    "sha": "ea97936208a499cd8a8a24a7cac24583f5f107d9",
+    "message_head": "Updated readme",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-12-13T21:46:19Z",
+    "parents": [
+      "f2af78b1801289ec9701589a7e50a4367cdc0d97"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ea97936208a499cd8a8a24a7cac24583f5f107d9"
+  },
+  {
+    "sha": "06927841e95775df6e424a148761182d69e53741",
+    "message_head": "Merge pull request #102 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-13T21:40:39Z",
+    "parents": [
+      "7e3d3e76421128f0484d5ac13b896837e16052a8",
+      "13734ef5f49094feedcddff1799bfb77c48b349c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/06927841e95775df6e424a148761182d69e53741"
+  },
+  {
+    "sha": "13734ef5f49094feedcddff1799bfb77c48b349c",
+    "message_head": "Update README.md: Added Monitoring section",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-13T21:34:24Z",
+    "parents": [
+      "a3f4f80f34196800a18ad9985dc14f31b4da1950"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/13734ef5f49094feedcddff1799bfb77c48b349c"
+  },
+  {
+    "sha": "a3f4f80f34196800a18ad9985dc14f31b4da1950",
+    "message_head": "Merge pull request #101 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-13T21:25:33Z",
+    "parents": [
+      "9fddc08e76b25df700f31db64bc5267721835d30",
+      "7e3d3e76421128f0484d5ac13b896837e16052a8"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a3f4f80f34196800a18ad9985dc14f31b4da1950"
+  },
+  {
+    "sha": "7e3d3e76421128f0484d5ac13b896837e16052a8",
+    "message_head": "Merge pull request #100 from Thomas-George-T/feature_moheth",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-13T15:11:25Z",
+    "parents": [
+      "4e622a8d56d9961308eea9d0be7aae00168aefc6",
+      "949fa4e331f5bddb556d5645566310fa50687f85"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7e3d3e76421128f0484d5ac13b896837e16052a8"
+  },
+  {
+    "sha": "949fa4e331f5bddb556d5645566310fa50687f85",
+    "message_head": "Add files via upload",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-13T07:01:23Z",
+    "parents": [
+      "bbe7781967b2175c5f8bc4ca12713542f018a261"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/949fa4e331f5bddb556d5645566310fa50687f85"
+  },
+  {
+    "sha": "bbe7781967b2175c5f8bc4ca12713542f018a261",
+    "message_head": "Merge pull request #99 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-13T07:00:39Z",
+    "parents": [
+      "a9f0cadba93777b7646cf130db896d033ccb5829",
+      "4e622a8d56d9961308eea9d0be7aae00168aefc6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/bbe7781967b2175c5f8bc4ca12713542f018a261"
+  },
+  {
+    "sha": "f8e59ee17f13e4c5b4579256934624a186256b10",
+    "message_head": "Merge pull request #98 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-13T05:50:34Z",
+    "parents": [
+      "e3ffc3f8cdc2296dbf3949f2779af14bb8bd54e5",
+      "4e622a8d56d9961308eea9d0be7aae00168aefc6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f8e59ee17f13e4c5b4579256934624a186256b10"
+  },
+  {
+    "sha": "4e622a8d56d9961308eea9d0be7aae00168aefc6",
+    "message_head": "Merge pull request #97 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-13T05:44:48Z",
+    "parents": [
+      "10fcd3f1a26cab9a2ebd116359d62a9dd871fc0a",
+      "9fddc08e76b25df700f31db64bc5267721835d30"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/4e622a8d56d9961308eea9d0be7aae00168aefc6"
+  },
+  {
+    "sha": "9fddc08e76b25df700f31db64bc5267721835d30",
+    "message_head": "Readme updates",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-13T05:41:27Z",
+    "parents": [
+      "a974227b6a2e1f01422fe6b9eb96afdec7650ba3"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/9fddc08e76b25df700f31db64bc5267721835d30"
+  },
+  {
+    "sha": "a974227b6a2e1f01422fe6b9eb96afdec7650ba3",
+    "message_head": "Readme updates",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-13T05:39:15Z",
+    "parents": [
+      "23f1bcb52c43f60d4b8167f4ec9690b3dee6a53d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a974227b6a2e1f01422fe6b9eb96afdec7650ba3"
+  },
+  {
+    "sha": "23f1bcb52c43f60d4b8167f4ec9690b3dee6a53d",
+    "message_head": "Merge pull request #96 from Thomas-George-T/main",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-13T05:38:03Z",
+    "parents": [
+      "ef16e88049e9b70dd707f7a0a85409be7d6a27d5",
+      "e3ffc3f8cdc2296dbf3949f2779af14bb8bd54e5"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/23f1bcb52c43f60d4b8167f4ec9690b3dee6a53d"
+  },
+  {
+    "sha": "e3ffc3f8cdc2296dbf3949f2779af14bb8bd54e5",
+    "message_head": "Merge pull request #95 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-13T05:35:54Z",
+    "parents": [
+      "8df178086aed8dca841de43bfafae6b1de67b51d",
+      "10fcd3f1a26cab9a2ebd116359d62a9dd871fc0a"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e3ffc3f8cdc2296dbf3949f2779af14bb8bd54e5"
+  },
+  {
+    "sha": "10fcd3f1a26cab9a2ebd116359d62a9dd871fc0a",
+    "message_head": "Merge pull request #94 from Thomas-George-T/feature_thomas",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-13T05:31:53Z",
+    "parents": [
+      "461cf0d903b20cf2b48a4058a61899183f1ee0ab",
+      "ef16e88049e9b70dd707f7a0a85409be7d6a27d5"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/10fcd3f1a26cab9a2ebd116359d62a9dd871fc0a"
+  },
+  {
+    "sha": "ef16e88049e9b70dd707f7a0a85409be7d6a27d5",
+    "message_head": "Removed duplicate image",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-13T05:30:38Z",
+    "parents": [
+      "e4ef56382e5fdedababbb4e7585661c2f9f5b6ab"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ef16e88049e9b70dd707f7a0a85409be7d6a27d5"
+  },
+  {
+    "sha": "e4ef56382e5fdedababbb4e7585661c2f9f5b6ab",
+    "message_head": "Merge pull request #93 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-13T05:30:00Z",
+    "parents": [
+      "a92858d6860f883233955c11db02d0b8e9bff585",
+      "461cf0d903b20cf2b48a4058a61899183f1ee0ab"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e4ef56382e5fdedababbb4e7585661c2f9f5b6ab"
+  },
+  {
+    "sha": "461cf0d903b20cf2b48a4058a61899183f1ee0ab",
+    "message_head": "Merge pull request #92 from Thomas-George-T/feature_thomas",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-13T05:28:39Z",
+    "parents": [
+      "59011bae8485a24f57976255f956857ef2d0cf52",
+      "a92858d6860f883233955c11db02d0b8e9bff585"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/461cf0d903b20cf2b48a4058a61899183f1ee0ab"
+  },
+  {
+    "sha": "a92858d6860f883233955c11db02d0b8e9bff585",
+    "message_head": "Updating inference to latest endpoint",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-13T05:23:54Z",
+    "parents": [
+      "5161bcbd80aaa8386d47f881655af47a0dd35b55"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a92858d6860f883233955c11db02d0b8e9bff585"
+  },
+  {
+    "sha": "5161bcbd80aaa8386d47f881655af47a0dd35b55",
+    "message_head": "Added Monitoring into predict.py",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-13T05:18:59Z",
+    "parents": [
+      "42e7eddda3b6b6ca2562f753758e934ef294ff4e"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/5161bcbd80aaa8386d47f881655af47a0dd35b55"
+  },
+  {
+    "sha": "59011bae8485a24f57976255f956857ef2d0cf52",
+    "message_head": "Merge pull request #91 from Thomas-George-T/feature_bardia",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-13T05:17:22Z",
+    "parents": [
+      "82f3d30d850654b8787cd1149ab708b834645d52",
+      "9fbf2d1f5c178a8df1b46a77c201b1a44ca599eb"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/59011bae8485a24f57976255f956857ef2d0cf52"
+  },
+  {
+    "sha": "9fbf2d1f5c178a8df1b46a77c201b1a44ca599eb",
+    "message_head": "adding data pipeline graph",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-12-13T05:04:17Z",
+    "parents": [
+      "7c7ec8c11ba0d21731088270ae89e8f84c8ca2c2"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/9fbf2d1f5c178a8df1b46a77c201b1a44ca599eb"
+  },
+  {
+    "sha": "82f3d30d850654b8787cd1149ab708b834645d52",
+    "message_head": "Merge pull request #90 from Thomas-George-T/feature_moheth",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-13T04:59:52Z",
+    "parents": [
+      "4574af9b900cc80879e4934866ba5c3a29105842",
+      "a9f0cadba93777b7646cf130db896d033ccb5829"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/82f3d30d850654b8787cd1149ab708b834645d52"
+  },
+  {
+    "sha": "a9f0cadba93777b7646cf130db896d033ccb5829",
+    "message_head": "Update README.md",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-13T04:56:59Z",
+    "parents": [
+      "08540e9a3a41cc8d0505d502dbe8e2d3587542b5"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a9f0cadba93777b7646cf130db896d033ccb5829"
+  },
+  {
+    "sha": "08540e9a3a41cc8d0505d502dbe8e2d3587542b5",
+    "message_head": "Add files via upload",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-13T04:54:45Z",
+    "parents": [
+      "d68fbf6ba557c3946b41c3cf384c150e00b35bf8"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/08540e9a3a41cc8d0505d502dbe8e2d3587542b5"
+  },
+  {
+    "sha": "7c7ec8c11ba0d21731088270ae89e8f84c8ca2c2",
+    "message_head": "Merge branch 'main' into feature_bardia",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-13T04:52:52Z",
+    "parents": [
+      "1513e96c82ba8757ffa3a1dda97f31941786e63e",
+      "8df178086aed8dca841de43bfafae6b1de67b51d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7c7ec8c11ba0d21731088270ae89e8f84c8ca2c2"
+  },
+  {
+    "sha": "1513e96c82ba8757ffa3a1dda97f31941786e63e",
+    "message_head": "Add files via upload",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-12-13T04:44:32Z",
+    "parents": [
+      "0e02b2e0ca2915605e11baf33a48aeb00e1ec2f4"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/1513e96c82ba8757ffa3a1dda97f31941786e63e"
+  },
+  {
+    "sha": "42e7eddda3b6b6ca2562f753758e934ef294ff4e",
+    "message_head": "Updated Inference.py",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-12T05:49:06Z",
+    "parents": [
+      "86f9e7628bca6295f2260c8a5a400ee5a9e1fc69"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/42e7eddda3b6b6ca2562f753758e934ef294ff4e"
+  },
+  {
+    "sha": "d68fbf6ba557c3946b41c3cf384c150e00b35bf8",
+    "message_head": "Merge pull request #87 from Thomas-George-T/main",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-12T01:16:25Z",
+    "parents": [
+      "ed505d952515a1f5c8732002e023446e2f5b89df",
+      "8df178086aed8dca841de43bfafae6b1de67b51d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d68fbf6ba557c3946b41c3cf384c150e00b35bf8"
+  },
+  {
+    "sha": "86f9e7628bca6295f2260c8a5a400ee5a9e1fc69",
+    "message_head": "Readme: Cost Analysis description",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-11T20:13:50Z",
+    "parents": [
+      "b500f4a3301c575e5e3d9b87423177b145e8ea4e"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/86f9e7628bca6295f2260c8a5a400ee5a9e1fc69"
+  },
+  {
+    "sha": "b500f4a3301c575e5e3d9b87423177b145e8ea4e",
+    "message_head": "Readme: Added Costs and Authors",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-11T20:09:55Z",
+    "parents": [
+      "c3fd9b04cde5558dca85a04ae9651a9aa947bffb"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b500f4a3301c575e5e3d9b87423177b145e8ea4e"
+  },
+  {
+    "sha": "c3fd9b04cde5558dca85a04ae9651a9aa947bffb",
+    "message_head": "Merge pull request #86 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-11T20:02:33Z",
+    "parents": [
+      "1420f9d3185da8bc6510d1d49d0bbded97dcff32",
+      "4574af9b900cc80879e4934866ba5c3a29105842"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/c3fd9b04cde5558dca85a04ae9651a9aa947bffb"
+  },
+  {
+    "sha": "8df178086aed8dca841de43bfafae6b1de67b51d",
+    "message_head": "Merge pull request #85 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Komal",
+    "author_email": "130316638+kokomocha@users.noreply.github.com",
+    "author_date": "2023-12-07T02:55:10Z",
+    "parents": [
+      "15975c490f9dc990f64d03fd1afc6d9c97960a62",
+      "4574af9b900cc80879e4934866ba5c3a29105842"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/8df178086aed8dca841de43bfafae6b1de67b51d"
+  },
+  {
+    "sha": "4574af9b900cc80879e4934866ba5c3a29105842",
+    "message_head": "Merge pull request #84 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-07T02:49:42Z",
+    "parents": [
+      "56b3d8fcac2fdc2f3052c271f174835a50ed8a14",
+      "1420f9d3185da8bc6510d1d49d0bbded97dcff32"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/4574af9b900cc80879e4934866ba5c3a29105842"
+  },
+  {
+    "sha": "56b3d8fcac2fdc2f3052c271f174835a50ed8a14",
+    "message_head": "Merge pull request #83 from Thomas-George-T/feature_moheth",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-07T02:46:31Z",
+    "parents": [
+      "0394bb42759d042c4a53e9cc778a7e103a1e35ca",
+      "ed505d952515a1f5c8732002e023446e2f5b89df"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/56b3d8fcac2fdc2f3052c271f174835a50ed8a14"
+  },
+  {
+    "sha": "1420f9d3185da8bc6510d1d49d0bbded97dcff32",
+    "message_head": "Updating serving and added inference",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-07T02:45:47Z",
+    "parents": [
+      "07f52c4683184fda22f31327a1fb99bbc1e0282b"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/1420f9d3185da8bc6510d1d49d0bbded97dcff32"
+  },
+  {
+    "sha": "ed505d952515a1f5c8732002e023446e2f5b89df",
+    "message_head": "Update README.md",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-07T02:22:11Z",
+    "parents": [
+      "d66581b4b1faab986bf74f638e92a6b8a327132f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ed505d952515a1f5c8732002e023446e2f5b89df"
+  },
+  {
+    "sha": "d66581b4b1faab986bf74f638e92a6b8a327132f",
+    "message_head": "Update README.md",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-07T01:53:58Z",
+    "parents": [
+      "da296dea6a026b612aba37a0b8dfe6772b5295ee"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d66581b4b1faab986bf74f638e92a6b8a327132f"
+  },
+  {
+    "sha": "da296dea6a026b612aba37a0b8dfe6772b5295ee",
+    "message_head": "Update README.md",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-07T01:39:27Z",
+    "parents": [
+      "24816c89bfe154f11dc91721b5a28eca026484e4"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/da296dea6a026b612aba37a0b8dfe6772b5295ee"
+  },
+  {
+    "sha": "24816c89bfe154f11dc91721b5a28eca026484e4",
+    "message_head": "Merge pull request #82 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-07T01:36:46Z",
+    "parents": [
+      "b72b99f19c3b6718d7475117a3634cfc4912b738",
+      "0394bb42759d042c4a53e9cc778a7e103a1e35ca"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/24816c89bfe154f11dc91721b5a28eca026484e4"
+  },
+  {
+    "sha": "0394bb42759d042c4a53e9cc778a7e103a1e35ca",
+    "message_head": "Merge pull request #80 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T22:22:39Z",
+    "parents": [
+      "dbb1a2622451593068bf346b7588c195aec6e2de",
+      "07f52c4683184fda22f31327a1fb99bbc1e0282b"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/0394bb42759d042c4a53e9cc778a7e103a1e35ca"
+  },
+  {
+    "sha": "07f52c4683184fda22f31327a1fb99bbc1e0282b",
+    "message_head": "updated serve",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-06T22:18:44Z",
+    "parents": [
+      "8713ce7beefb468f4aec089fc182fdbbda590453"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/07f52c4683184fda22f31327a1fb99bbc1e0282b"
+  },
+  {
+    "sha": "b72b99f19c3b6718d7475117a3634cfc4912b738",
+    "message_head": "Merge pull request #79 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-06T19:56:32Z",
+    "parents": [
+      "2d1f2267b6fdc2aae967453e8dd6ed230539ac7d",
+      "dbb1a2622451593068bf346b7588c195aec6e2de"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b72b99f19c3b6718d7475117a3634cfc4912b738"
+  },
+  {
+    "sha": "f2af78b1801289ec9701589a7e50a4367cdc0d97",
+    "message_head": "readme merge",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-12-06T18:10:29Z",
+    "parents": [
+      "dbb1a2622451593068bf346b7588c195aec6e2de"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f2af78b1801289ec9701589a7e50a4367cdc0d97"
+  },
+  {
+    "sha": "dbb1a2622451593068bf346b7588c195aec6e2de",
+    "message_head": "Merge pull request #78 from Thomas-George-T/feature_thomas",
+    "author_name": "Komal",
+    "author_email": "130316638+kokomocha@users.noreply.github.com",
+    "author_date": "2023-12-06T17:41:27Z",
+    "parents": [
+      "43a5c755918f4679ae18b9ad784c3ea8769e7580",
+      "8713ce7beefb468f4aec089fc182fdbbda590453"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/dbb1a2622451593068bf346b7588c195aec6e2de"
+  },
+  {
+    "sha": "8713ce7beefb468f4aec089fc182fdbbda590453",
+    "message_head": "Readme image link fixes",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-06T17:33:57Z",
+    "parents": [
+      "82512249be86845e156622da144e63d25adc4a3f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/8713ce7beefb468f4aec089fc182fdbbda590453"
+  },
+  {
+    "sha": "82512249be86845e156622da144e63d25adc4a3f",
+    "message_head": "Moving Machine learning pipeline to main readme",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-06T17:32:23Z",
+    "parents": [
+      "e570c3d2b7737c5a2af1fef9b9c128a2a893ee59"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/82512249be86845e156622da144e63d25adc4a3f"
+  },
+  {
+    "sha": "e570c3d2b7737c5a2af1fef9b9c128a2a893ee59",
+    "message_head": "Merge pull request #77 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T17:29:24Z",
+    "parents": [
+      "78d2f1bc9949a3aab851edb5b2c6c182a222aed7",
+      "43a5c755918f4679ae18b9ad784c3ea8769e7580"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e570c3d2b7737c5a2af1fef9b9c128a2a893ee59"
+  },
+  {
+    "sha": "43a5c755918f4679ae18b9ad784c3ea8769e7580",
+    "message_head": "Merge pull request #76 from Thomas-George-T/feature_koko",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T17:27:27Z",
+    "parents": [
+      "91bf3f16c6a47940ce3b3d8672fe26ff5fe325c4",
+      "ee3939aa1e5c36ba18d05ec2b84bdc5da285afa4"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/43a5c755918f4679ae18b9ad784c3ea8769e7580"
+  },
+  {
+    "sha": "ee3939aa1e5c36ba18d05ec2b84bdc5da285afa4",
+    "message_head": "Readme updates",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-12-06T17:13:45Z",
+    "parents": [
+      "d8af7ad730fac0e4dbe189f41cbccb6a429e3714"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ee3939aa1e5c36ba18d05ec2b84bdc5da285afa4"
+  },
+  {
+    "sha": "91bf3f16c6a47940ce3b3d8672fe26ff5fe325c4",
+    "message_head": "Merge pull request #73 from Thomas-George-T/feature_koko",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T16:06:29Z",
+    "parents": [
+      "b4efb9aa7f888f9510fcf717d223661ba2ed93dc",
+      "d8af7ad730fac0e4dbe189f41cbccb6a429e3714"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/91bf3f16c6a47940ce3b3d8672fe26ff5fe325c4"
+  },
+  {
+    "sha": "d8af7ad730fac0e4dbe189f41cbccb6a429e3714",
+    "message_head": "Merge branch 'feature_machine_learning' into feature_koko",
+    "author_name": "Komal",
+    "author_email": "130316638+kokomocha@users.noreply.github.com",
+    "author_date": "2023-12-06T15:25:59Z",
+    "parents": [
+      "7609a7dac27a1608e94cde74e2fe4e8335e34dc3",
+      "b4efb9aa7f888f9510fcf717d223661ba2ed93dc"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d8af7ad730fac0e4dbe189f41cbccb6a429e3714"
+  },
+  {
+    "sha": "7609a7dac27a1608e94cde74e2fe4e8335e34dc3",
+    "message_head": "mlflow_logging location fix",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-12-06T06:33:37Z",
+    "parents": [
+      "910a27426ac410200daef24a09eb9ec150fe665f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7609a7dac27a1608e94cde74e2fe4e8335e34dc3"
+  },
+  {
+    "sha": "b4efb9aa7f888f9510fcf717d223661ba2ed93dc",
+    "message_head": "Merge pull request #72 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T06:12:50Z",
+    "parents": [
+      "5559fbfed9e5d6202d2d205ae5f14f2ced8058fa",
+      "78d2f1bc9949a3aab851edb5b2c6c182a222aed7"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b4efb9aa7f888f9510fcf717d223661ba2ed93dc"
+  },
+  {
+    "sha": "78d2f1bc9949a3aab851edb5b2c6c182a222aed7",
+    "message_head": "updating dockerfile",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-06T05:46:29Z",
+    "parents": [
+      "b9b99a52858edc2ec2fec5ee2670d698b5d12610"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/78d2f1bc9949a3aab851edb5b2c6c182a222aed7"
+  },
+  {
+    "sha": "b9b99a52858edc2ec2fec5ee2670d698b5d12610",
+    "message_head": "Fixed trainer and serve",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-06T04:42:21Z",
+    "parents": [
+      "76e337af86fb67f8c335e61c7b3ee0364267d28d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b9b99a52858edc2ec2fec5ee2670d698b5d12610"
+  },
+  {
+    "sha": "5559fbfed9e5d6202d2d205ae5f14f2ced8058fa",
+    "message_head": "Merge pull request #71 from Thomas-George-T/feature_bardia",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T04:39:52Z",
+    "parents": [
+      "d928dc0fca1aefb1dd09ff98fae4b3f7efad1286",
+      "0e02b2e0ca2915605e11baf33a48aeb00e1ec2f4"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/5559fbfed9e5d6202d2d205ae5f14f2ced8058fa"
+  },
+  {
+    "sha": "910a27426ac410200daef24a09eb9ec150fe665f",
+    "message_head": "docker compose updated to og file",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-12-06T04:31:02Z",
+    "parents": [
+      "e2257c888abf84b13b16ce0655447228533428ea"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/910a27426ac410200daef24a09eb9ec150fe665f"
+  },
+  {
+    "sha": "e2257c888abf84b13b16ce0655447228533428ea",
+    "message_head": "Cluster Visualization scripts, MLFlow script, Docker mod for tfdv compatibility, update to assets folder.",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-12-06T04:27:38Z",
+    "parents": [
+      "72a0eda2de3769728c6a8a0b6d161fb8e8c2a704"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e2257c888abf84b13b16ce0655447228533428ea"
+  },
+  {
+    "sha": "0e02b2e0ca2915605e11baf33a48aeb00e1ec2f4",
+    "message_head": "Update README.md",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-12-06T03:29:53Z",
+    "parents": [
+      "b5ec2727f4315efb574c59fc511ed08168a8474d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/0e02b2e0ca2915605e11baf33a48aeb00e1ec2f4"
+  },
+  {
+    "sha": "76e337af86fb67f8c335e61c7b3ee0364267d28d",
+    "message_head": "Merge pull request #70 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T03:29:31Z",
+    "parents": [
+      "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "d928dc0fca1aefb1dd09ff98fae4b3f7efad1286"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/76e337af86fb67f8c335e61c7b3ee0364267d28d"
+  },
+  {
+    "sha": "d928dc0fca1aefb1dd09ff98fae4b3f7efad1286",
+    "message_head": "Merge pull request #69 from Thomas-George-T/feature_ashkan",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T03:28:59Z",
+    "parents": [
+      "6cdf651cd1c0c4c7041a9eb92eac43fc6d566728",
+      "356d49f95a95716f1b3fd9927193322eb935000c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d928dc0fca1aefb1dd09ff98fae4b3f7efad1286"
+  },
+  {
+    "sha": "2d1f2267b6fdc2aae967453e8dd6ed230539ac7d",
+    "message_head": "Merge pull request #68 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-06T03:26:06Z",
+    "parents": [
+      "d868e6544ed0893a6aa7b97aaf26ba34156a9a95",
+      "6cdf651cd1c0c4c7041a9eb92eac43fc6d566728"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/2d1f2267b6fdc2aae967453e8dd6ed230539ac7d"
+  },
+  {
+    "sha": "6cdf651cd1c0c4c7041a9eb92eac43fc6d566728",
+    "message_head": "Merge pull request #67 from Thomas-George-T/feature_moheth",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T03:25:33Z",
+    "parents": [
+      "dc515d5d0f02073d280d98bbf00cdb84396ede04",
+      "d868e6544ed0893a6aa7b97aaf26ba34156a9a95"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6cdf651cd1c0c4c7041a9eb92eac43fc6d566728"
+  },
+  {
+    "sha": "356d49f95a95716f1b3fd9927193322eb935000c",
+    "message_head": "update predict.py Flask application in serve folder",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-06T03:23:54Z",
+    "parents": [
+      "77cb997f7ada1d22f199042a376bc4c81589e7a9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/356d49f95a95716f1b3fd9927193322eb935000c"
+  },
+  {
+    "sha": "d868e6544ed0893a6aa7b97aaf26ba34156a9a95",
+    "message_head": "Changes to README and plot captions",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-06T03:19:09Z",
+    "parents": [
+      "2d07a9cee3f247110049f9bda48bb12a63595fb3"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d868e6544ed0893a6aa7b97aaf26ba34156a9a95"
+  },
+  {
+    "sha": "77cb997f7ada1d22f199042a376bc4c81589e7a9",
+    "message_head": "update flask app and Dockerfile in serve folder",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-06T03:18:15Z",
+    "parents": [
+      "c73558818706bae4ffc437a03ec1a16d8ccd4fdc"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/77cb997f7ada1d22f199042a376bc4c81589e7a9"
+  },
+  {
+    "sha": "2d07a9cee3f247110049f9bda48bb12a63595fb3",
+    "message_head": "Plot captions",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-06T03:15:52Z",
+    "parents": [
+      "6dd50e294b5fd2514fc668979b08ade51e947d9d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/2d07a9cee3f247110049f9bda48bb12a63595fb3"
+  },
+  {
+    "sha": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+    "message_head": "add predict function to Flask app",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-06T03:14:34Z",
+    "parents": [
+      "85356ee3e1b071444e78c85d89b472b29722e709"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/c73558818706bae4ffc437a03ec1a16d8ccd4fdc"
+  },
+  {
+    "sha": "dc515d5d0f02073d280d98bbf00cdb84396ede04",
+    "message_head": "Merge pull request #66 from Thomas-George-T/feature_bardia",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T03:07:00Z",
+    "parents": [
+      "afa450523dd69d0d1ae369339a644b83cc1476cd",
+      "b5ec2727f4315efb574c59fc511ed08168a8474d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/dc515d5d0f02073d280d98bbf00cdb84396ede04"
+  },
+  {
+    "sha": "b5ec2727f4315efb574c59fc511ed08168a8474d",
+    "message_head": "Update README.md",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-12-06T03:03:28Z",
+    "parents": [
+      "406a1f5e458d13a38dcdd5a60774f3a67900d267"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b5ec2727f4315efb574c59fc511ed08168a8474d"
+  },
+  {
+    "sha": "85356ee3e1b071444e78c85d89b472b29722e709",
+    "message_head": "add serve directory to src and create Dockerfile and predict.py inside serve",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-06T03:02:01Z",
+    "parents": [
+      "684b430ef0df05dd84947c9c8f02b9aa13fcf986"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/85356ee3e1b071444e78c85d89b472b29722e709"
+  },
+  {
+    "sha": "afa450523dd69d0d1ae369339a644b83cc1476cd",
+    "message_head": "Merge pull request #65 from Thomas-George-T/feature_moheth",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T03:01:16Z",
+    "parents": [
+      "a0027cd43da095f3a23ba6883f595de5cf06083b",
+      "6dd50e294b5fd2514fc668979b08ade51e947d9d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/afa450523dd69d0d1ae369339a644b83cc1476cd"
+  },
+  {
+    "sha": "406a1f5e458d13a38dcdd5a60774f3a67900d267",
+    "message_head": "Update README.md",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-12-06T02:55:45Z",
+    "parents": [
+      "375c26a255e166e9480cc7fdeb4ab48c4f2ea63f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/406a1f5e458d13a38dcdd5a60774f3a67900d267"
+  },
+  {
+    "sha": "6dd50e294b5fd2514fc668979b08ade51e947d9d",
+    "message_head": "Plots have been added to README",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-06T02:53:20Z",
+    "parents": [
+      "ebfcf8ac5ae548ad10e7baddc60a118442383aad"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6dd50e294b5fd2514fc668979b08ade51e947d9d"
+  },
+  {
+    "sha": "684b430ef0df05dd84947c9c8f02b9aa13fcf986",
+    "message_head": "Merge pull request #64 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-12-06T02:45:33Z",
+    "parents": [
+      "fee6d76835648a943c5cdf20567a821163342f80",
+      "a0027cd43da095f3a23ba6883f595de5cf06083b"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/684b430ef0df05dd84947c9c8f02b9aa13fcf986"
+  },
+  {
+    "sha": "375c26a255e166e9480cc7fdeb4ab48c4f2ea63f",
+    "message_head": "Update README.md",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-12-06T02:44:09Z",
+    "parents": [
+      "b3c48668bdb8a7e9ceafb2f8a49a37f04a9cdf2b"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/375c26a255e166e9480cc7fdeb4ab48c4f2ea63f"
+  },
+  {
+    "sha": "a0027cd43da095f3a23ba6883f595de5cf06083b",
+    "message_head": "Merge pull request #63 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T02:42:39Z",
+    "parents": [
+      "aee96c62ffc9aa64bc4ba197d4f3880b3c60e8d2",
+      "3d5f8ad2a0393fbd22627efaf6eefc68c848a556"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a0027cd43da095f3a23ba6883f595de5cf06083b"
+  },
+  {
+    "sha": "b3c48668bdb8a7e9ceafb2f8a49a37f04a9cdf2b",
+    "message_head": "Add files via upload",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-12-06T02:41:59Z",
+    "parents": [
+      "c3468a635ce0a4d9b2fcc96777071be3270554ea"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b3c48668bdb8a7e9ceafb2f8a49a37f04a9cdf2b"
+  },
+  {
+    "sha": "c3468a635ce0a4d9b2fcc96777071be3270554ea",
+    "message_head": "Add files via upload",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-12-06T02:40:59Z",
+    "parents": [
+      "4e703f9af246a4b472de45bfdbb0ac181edf6a06"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/c3468a635ce0a4d9b2fcc96777071be3270554ea"
+  },
+  {
+    "sha": "4e703f9af246a4b472de45bfdbb0ac181edf6a06",
+    "message_head": "Add files via upload",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-12-06T02:37:33Z",
+    "parents": [
+      "373a0a0c6b2ef219404d0a662575b0fbda96052a"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/4e703f9af246a4b472de45bfdbb0ac181edf6a06"
+  },
+  {
+    "sha": "aee96c62ffc9aa64bc4ba197d4f3880b3c60e8d2",
+    "message_head": "Merge pull request #61 from Thomas-George-T/feature_bardia",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-06T02:31:46Z",
+    "parents": [
+      "72a0eda2de3769728c6a8a0b6d161fb8e8c2a704",
+      "373a0a0c6b2ef219404d0a662575b0fbda96052a"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/aee96c62ffc9aa64bc4ba197d4f3880b3c60e8d2"
+  },
+  {
+    "sha": "ebfcf8ac5ae548ad10e7baddc60a118442383aad",
+    "message_head": "Update readme.md",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-06T02:22:23Z",
+    "parents": [
+      "79db7cdf22aa714d71e45c5515357d59fb18a29a"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ebfcf8ac5ae548ad10e7baddc60a118442383aad"
+  },
+  {
+    "sha": "373a0a0c6b2ef219404d0a662575b0fbda96052a",
+    "message_head": "Update README.md",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-12-06T02:19:48Z",
+    "parents": [
+      "15d4641b7aa0d0555f48caaeb98d7d80ac198925"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/373a0a0c6b2ef219404d0a662575b0fbda96052a"
+  },
+  {
+    "sha": "15d4641b7aa0d0555f48caaeb98d7d80ac198925",
+    "message_head": "Update README.md",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-12-06T02:17:42Z",
+    "parents": [
+      "79a2d3dc99a5caee98049e51990ed5df76751c93"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/15d4641b7aa0d0555f48caaeb98d7d80ac198925"
+  },
+  {
+    "sha": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+    "message_head": "Moved code to gcpdeploy/src",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-06T00:58:14Z",
+    "parents": [
+      "be1996fd7583ba05c1a14d45f978567402530da9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/3d5f8ad2a0393fbd22627efaf6eefc68c848a556"
+  },
+  {
+    "sha": "79db7cdf22aa714d71e45c5515357d59fb18a29a",
+    "message_head": "Update readme.md",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-06T00:40:38Z",
+    "parents": [
+      "0e0f103b9920a449c19d1badc8d342c46d14fee8"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/79db7cdf22aa714d71e45c5515357d59fb18a29a"
+  },
+  {
+    "sha": "be1996fd7583ba05c1a14d45f978567402530da9",
+    "message_head": "Updates to trainer/train.py",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-06T00:30:38Z",
+    "parents": [
+      "647b45e307455fb4352d2a009eace78541f61607"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/be1996fd7583ba05c1a14d45f978567402530da9"
+  },
+  {
+    "sha": "0e0f103b9920a449c19d1badc8d342c46d14fee8",
+    "message_head": "Add files via upload",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-06T00:20:14Z",
+    "parents": [
+      "b2ef747fcf70197e1d66ef39b371929b3002983d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/0e0f103b9920a449c19d1badc8d342c46d14fee8"
+  },
+  {
+    "sha": "647b45e307455fb4352d2a009eace78541f61607",
+    "message_head": "Updating Trainer Dockerfile and functions.py",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-05T23:19:16Z",
+    "parents": [
+      "e13673fd10a99ae9479e6bea7b3504f9ba0733b0"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/647b45e307455fb4352d2a009eace78541f61607"
+  },
+  {
+    "sha": "e13673fd10a99ae9479e6bea7b3504f9ba0733b0",
+    "message_head": "Merge pull request #59 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-05T22:15:49Z",
+    "parents": [
+      "a984154242c5a90a5ff8894412a83fce3f8d67ca",
+      "72a0eda2de3769728c6a8a0b6d161fb8e8c2a704"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e13673fd10a99ae9479e6bea7b3504f9ba0733b0"
+  },
+  {
+    "sha": "72a0eda2de3769728c6a8a0b6d161fb8e8c2a704",
+    "message_head": "Merge pull request #58 from Thomas-George-T/feature_ashkan",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-05T22:14:22Z",
+    "parents": [
+      "24024aa3d2e7b5fab9152e844dbcdd36697f17ed",
+      "fee6d76835648a943c5cdf20567a821163342f80"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/72a0eda2de3769728c6a8a0b6d161fb8e8c2a704"
+  },
+  {
+    "sha": "fee6d76835648a943c5cdf20567a821163342f80",
+    "message_head": "Merge branch 'feature_ashkan' of github.com:Thomas-George-T/Ecommerce-Data-MLOps into feature_ashkan",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-05T22:09:04Z",
+    "parents": [
+      "d466cc1f17f8fe7e9507e3ae6eb26942025b8b60",
+      "d7257cd6377c0b8f2961931e30fdbb973ef24e87"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/fee6d76835648a943c5cdf20567a821163342f80"
+  },
+  {
+    "sha": "d466cc1f17f8fe7e9507e3ae6eb26942025b8b60",
+    "message_head": "update requirements.txt to remove dotenv",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-05T22:08:52Z",
+    "parents": [
+      "f2c934a90ed67f23fbef543f6063d977f648993d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d466cc1f17f8fe7e9507e3ae6eb26942025b8b60"
+  },
+  {
+    "sha": "d7257cd6377c0b8f2961931e30fdbb973ef24e87",
+    "message_head": "Merge branch 'feature_machine_learning' into feature_ashkan",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-12-05T22:04:53Z",
+    "parents": [
+      "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "24024aa3d2e7b5fab9152e844dbcdd36697f17ed"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d7257cd6377c0b8f2961931e30fdbb973ef24e87"
+  },
+  {
+    "sha": "f2c934a90ed67f23fbef543f6063d977f648993d",
+    "message_head": "modify train.py in trainer to run as model pipeline",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-05T22:01:58Z",
+    "parents": [
+      "3b8d05fb5ecd510467b6089d4cd76681aa5c57da"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f2c934a90ed67f23fbef543f6063d977f648993d"
+  },
+  {
+    "sha": "a984154242c5a90a5ff8894412a83fce3f8d67ca",
+    "message_head": "Adding trainer/DockerFile",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-05T21:46:46Z",
+    "parents": [
+      "d99847a2682092633fbdf49d1236068576d292ce"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a984154242c5a90a5ff8894412a83fce3f8d67ca"
+  },
+  {
+    "sha": "3b8d05fb5ecd510467b6089d4cd76681aa5c57da",
+    "message_head": "Merge branch 'feature_ashkan' of github.com:Thomas-George-T/Ecommerce-Data-MLOps into feature_ashkan",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-05T20:39:09Z",
+    "parents": [
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "22c8eadafaf81fb0ffa41f514b9d38103b1dc514"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/3b8d05fb5ecd510467b6089d4cd76681aa5c57da"
+  },
+  {
+    "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+    "message_head": "Adding ClusterBasedRecommender to GCPDeploy",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-05T20:38:10Z",
+    "parents": [
+      "c35626609e14485c784246088950d61b944a3827"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32"
+  },
+  {
+    "sha": "d99847a2682092633fbdf49d1236068576d292ce",
+    "message_head": "Merge pull request #57 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-05T20:35:34Z",
+    "parents": [
+      "2ceb6d289e68198dd9fe00f74dd6b217a232ca6c",
+      "24024aa3d2e7b5fab9152e844dbcdd36697f17ed"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d99847a2682092633fbdf49d1236068576d292ce"
+  },
+  {
+    "sha": "24024aa3d2e7b5fab9152e844dbcdd36697f17ed",
+    "message_head": "Merge branch 'feature_thomas' into feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-05T20:35:19Z",
+    "parents": [
+      "d4dd2ed3b2e767b871accc7af44ac8e3ac22ba58",
+      "2ceb6d289e68198dd9fe00f74dd6b217a232ca6c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/24024aa3d2e7b5fab9152e844dbcdd36697f17ed"
+  },
+  {
+    "sha": "22c8eadafaf81fb0ffa41f514b9d38103b1dc514",
+    "message_head": "Merge pull request #56 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-12-05T20:32:39Z",
+    "parents": [
+      "15975c490f9dc990f64d03fd1afc6d9c97960a62",
+      "d4dd2ed3b2e767b871accc7af44ac8e3ac22ba58"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/22c8eadafaf81fb0ffa41f514b9d38103b1dc514"
+  },
+  {
+    "sha": "d4dd2ed3b2e767b871accc7af44ac8e3ac22ba58",
+    "message_head": "Added data outputs of Airflow Datapipeline to GCP",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-05T16:49:07Z",
+    "parents": [
+      "45ea50f515988be01befbef23fca067b41566279"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d4dd2ed3b2e767b871accc7af44ac8e3ac22ba58"
+  },
+  {
+    "sha": "45ea50f515988be01befbef23fca067b41566279",
+    "message_head": "fixed merge conflict",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-05T16:36:00Z",
+    "parents": [
+      "fac2baf69cc482192e5eeec4595e53e058e58f13",
+      "4596f93767d4aaf686cd2f282e5be377b6aabcea"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/45ea50f515988be01befbef23fca067b41566279"
+  },
+  {
+    "sha": "fac2baf69cc482192e5eeec4595e53e058e58f13",
+    "message_head": "updated gitignore",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-05T16:34:46Z",
+    "parents": [
+      "0ea9c1bf40f9e397a2823ddfa683edd7bd47c09d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/fac2baf69cc482192e5eeec4595e53e058e58f13"
+  },
+  {
+    "sha": "4596f93767d4aaf686cd2f282e5be377b6aabcea",
+    "message_head": "Merge pull request #55 from Thomas-George-T/feature_koko",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-05T16:23:44Z",
+    "parents": [
+      "ef202740d77c381040b08f6853ae61b643d78d47",
+      "78c9ac7da2f6ab36e4e1602a23b45f95131f8e2e"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/4596f93767d4aaf686cd2f282e5be377b6aabcea"
+  },
+  {
+    "sha": "78c9ac7da2f6ab36e4e1602a23b45f95131f8e2e",
+    "message_head": "Update scaler.py",
+    "author_name": "Komal",
+    "author_email": "130316638+kokomocha@users.noreply.github.com",
+    "author_date": "2023-12-05T14:00:37Z",
+    "parents": [
+      "36f6689f57b33c8452ba6de8ea17c6743dc9f94d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/78c9ac7da2f6ab36e4e1602a23b45f95131f8e2e"
+  },
+  {
+    "sha": "36f6689f57b33c8452ba6de8ea17c6743dc9f94d",
+    "message_head": "Merge branch 'feature_koko' of https://github.com/Thomas-George-T/Ecommerce-Data-MLOps into feature_koko",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-12-05T13:57:08Z",
+    "parents": [
+      "538d945ae376572e6393dff1eff0e685cf90da36",
+      "5ffd0083fd1a9c7857ea0f40a8ccc986f8c1f112"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/36f6689f57b33c8452ba6de8ea17c6743dc9f94d"
+  },
+  {
+    "sha": "538d945ae376572e6393dff1eff0e685cf90da36",
+    "message_head": "updated scripts accoring to dags, gcp_deploy and normal src(All three configured differently.)",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-12-05T06:43:21Z",
+    "parents": [
+      "15975c490f9dc990f64d03fd1afc6d9c97960a62"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/538d945ae376572e6393dff1eff0e685cf90da36"
+  },
+  {
+    "sha": "5ffd0083fd1a9c7857ea0f40a8ccc986f8c1f112",
+    "message_head": "Merge pull request #54 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-05T05:53:53Z",
+    "parents": [
+      "e7cca036046c046def299d4351316b306827fa5b",
+      "ef202740d77c381040b08f6853ae61b643d78d47"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/5ffd0083fd1a9c7857ea0f40a8ccc986f8c1f112"
+  },
+  {
+    "sha": "ef202740d77c381040b08f6853ae61b643d78d47",
+    "message_head": "Merge branch 'feature_koko' into feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-05T05:50:02Z",
+    "parents": [
+      "0ea9c1bf40f9e397a2823ddfa683edd7bd47c09d",
+      "e7cca036046c046def299d4351316b306827fa5b"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ef202740d77c381040b08f6853ae61b643d78d47"
+  },
+  {
+    "sha": "0ea9c1bf40f9e397a2823ddfa683edd7bd47c09d",
+    "message_head": "Merge pull request #53 from Thomas-George-T/feature_moheth",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-05T05:25:24Z",
+    "parents": [
+      "15f12531183b0ab221ccf08b5457f665dcb491d1",
+      "b2ef747fcf70197e1d66ef39b371929b3002983d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/0ea9c1bf40f9e397a2823ddfa683edd7bd47c09d"
+  },
+  {
+    "sha": "b2ef747fcf70197e1d66ef39b371929b3002983d",
+    "message_head": "Removed data in dags/data",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-12-05T05:20:25Z",
+    "parents": [
+      "6e401208a7adda83ebb74c70c39fa21d043b4c5c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b2ef747fcf70197e1d66ef39b371929b3002983d"
+  },
+  {
+    "sha": "6e401208a7adda83ebb74c70c39fa21d043b4c5c",
+    "message_head": "Changes in gitignore",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-12-05T05:16:26Z",
+    "parents": [
+      "614f94993ab15293f38b954e942ef1e8d61f7837",
+      "6e793108c3edf99baba43e0ddd3a279f8ba956d2"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6e401208a7adda83ebb74c70c39fa21d043b4c5c"
+  },
+  {
+    "sha": "614f94993ab15293f38b954e942ef1e8d61f7837",
+    "message_head": "Changes regarding seasonality",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-12-05T05:12:03Z",
+    "parents": [
+      "aeb9970957491beb3889fd45b37a9ff2d61e9b21"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/614f94993ab15293f38b954e942ef1e8d61f7837"
+  },
+  {
+    "sha": "6e793108c3edf99baba43e0ddd3a279f8ba956d2",
+    "message_head": "Merge pull request #52 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-05T05:02:22Z",
+    "parents": [
+      "aeb9970957491beb3889fd45b37a9ff2d61e9b21",
+      "15f12531183b0ab221ccf08b5457f665dcb491d1"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6e793108c3edf99baba43e0ddd3a279f8ba956d2"
+  },
+  {
+    "sha": "2ceb6d289e68198dd9fe00f74dd6b217a232ca6c",
+    "message_head": "deleted .env",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-05T04:59:18Z",
+    "parents": [
+      "bb0ed13a32c53d2d4a96603e4d4cd182cc6b73dd"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/2ceb6d289e68198dd9fe00f74dd6b217a232ca6c"
+  },
+  {
+    "sha": "bb0ed13a32c53d2d4a96603e4d4cd182cc6b73dd",
+    "message_head": "Merge pull request #51 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-05T04:56:05Z",
+    "parents": [
+      "9d7be8f0064425a192c79e0b89071d1fff020675",
+      "15f12531183b0ab221ccf08b5457f665dcb491d1"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/bb0ed13a32c53d2d4a96603e4d4cd182cc6b73dd"
+  },
+  {
+    "sha": "15f12531183b0ab221ccf08b5457f665dcb491d1",
+    "message_head": "Merge pull request #50 from Thomas-George-T/feature_bardia",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-05T04:16:00Z",
+    "parents": [
+      "0297d8e73bcc8e2eb2545de662ef1e194a8a26e9",
+      "79a2d3dc99a5caee98049e51990ed5df76751c93"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/15f12531183b0ab221ccf08b5457f665dcb491d1"
+  },
+  {
+    "sha": "79a2d3dc99a5caee98049e51990ed5df76751c93",
+    "message_head": "updating collections in requirements.txt",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-12-05T04:08:43Z",
+    "parents": [
+      "f793c4448f754b78c6feb666c8c8ccb96cb4005f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/79a2d3dc99a5caee98049e51990ed5df76751c93"
+  },
+  {
+    "sha": "f793c4448f754b78c6feb666c8c8ccb96cb4005f",
+    "message_head": "updating requirement",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-12-05T04:02:53Z",
+    "parents": [
+      "110ef6e59e5be9c6944a5c20939b3b93abf1ce62"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f793c4448f754b78c6feb666c8c8ccb96cb4005f"
+  },
+  {
+    "sha": "110ef6e59e5be9c6944a5c20939b3b93abf1ce62",
+    "message_head": "Merge branch 'feature_bardia' of https://github.com/Thomas-George-T/Ecommerce-Data-MLOps into feature_bardia",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-12-05T04:01:26Z",
+    "parents": [
+      "7111f6056125754bdb63e13fa4e2d695894f5552",
+      "91a503c127ac0d7c23bb8dc9f7222cf02fc95c74"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/110ef6e59e5be9c6944a5c20939b3b93abf1ce62"
+  },
+  {
+    "sha": "91a503c127ac0d7c23bb8dc9f7222cf02fc95c74",
+    "message_head": "Merge pull request #49 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-05T04:01:15Z",
+    "parents": [
+      "c1a540b4f3fcc863b6ad4f12b5f3fd33e02419f6",
+      "0297d8e73bcc8e2eb2545de662ef1e194a8a26e9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/91a503c127ac0d7c23bb8dc9f7222cf02fc95c74"
+  },
+  {
+    "sha": "7111f6056125754bdb63e13fa4e2d695894f5552",
+    "message_head": "Merge branch 'feature_bardia' of https://github.com/Thomas-George-T/Ecommerce-Data-MLOps into feature_bardia",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-12-05T03:59:21Z",
+    "parents": [
+      "e5e924357e14d568f8674f4bee34309ce5ec7d45",
+      "c1a540b4f3fcc863b6ad4f12b5f3fd33e02419f6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7111f6056125754bdb63e13fa4e2d695894f5552"
+  },
+  {
+    "sha": "0297d8e73bcc8e2eb2545de662ef1e194a8a26e9",
+    "message_head": "workflow updates to brnches",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-05T03:57:55Z",
+    "parents": [
+      "227e3819aa2aefca42aed4e0d6041abb2f0580a6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/0297d8e73bcc8e2eb2545de662ef1e194a8a26e9"
+  },
+  {
+    "sha": "e5e924357e14d568f8674f4bee34309ce5ec7d45",
+    "message_head": "removing version for collections",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-12-05T03:56:24Z",
+    "parents": [
+      "4f7b2cf88f9e99aad7a4f1f87efd8db7e150c8ca"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e5e924357e14d568f8674f4bee34309ce5ec7d45"
+  },
+  {
+    "sha": "227e3819aa2aefca42aed4e0d6041abb2f0580a6",
+    "message_head": "updating to version 3.9",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-05T03:50:21Z",
+    "parents": [
+      "d0fa760df4df818be807c4a4b99d120b9a348159"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/227e3819aa2aefca42aed4e0d6041abb2f0580a6"
+  },
+  {
+    "sha": "c1a540b4f3fcc863b6ad4f12b5f3fd33e02419f6",
+    "message_head": "Merge pull request #47 from Thomas-George-T/feature_machine_learning",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-05T03:46:28Z",
+    "parents": [
+      "4f7b2cf88f9e99aad7a4f1f87efd8db7e150c8ca",
+      "d0fa760df4df818be807c4a4b99d120b9a348159"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/c1a540b4f3fcc863b6ad4f12b5f3fd33e02419f6"
+  },
+  {
+    "sha": "d0fa760df4df818be807c4a4b99d120b9a348159",
+    "message_head": "Updating version",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-05T03:38:24Z",
+    "parents": [
+      "15975c490f9dc990f64d03fd1afc6d9c97960a62"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d0fa760df4df818be807c4a4b99d120b9a348159"
+  },
+  {
+    "sha": "4f7b2cf88f9e99aad7a4f1f87efd8db7e150c8ca",
+    "message_head": "updating the train.py file",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-12-05T03:30:47Z",
+    "parents": [
+      "ff4383a9eff76118dda9b0fa94077e0673309e89"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/4f7b2cf88f9e99aad7a4f1f87efd8db7e150c8ca"
+  },
+  {
+    "sha": "aeb9970957491beb3889fd45b37a9ff2d61e9b21",
+    "message_head": "The changes in seasonality.py are done",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-12-05T02:14:40Z",
+    "parents": [
+      "a1d08a6df7ae229d5856f3b0dfbb38b28ea1d808"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/aeb9970957491beb3889fd45b37a9ff2d61e9b21"
+  },
+  {
+    "sha": "a1d08a6df7ae229d5856f3b0dfbb38b28ea1d808",
+    "message_head": "Clustering Evaluation modules are added",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-12-05T01:59:41Z",
+    "parents": [
+      "0944f7bfa161697910f028a0789cb26bec00ea08"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a1d08a6df7ae229d5856f3b0dfbb38b28ea1d808"
+  },
+  {
+    "sha": "ff4383a9eff76118dda9b0fa94077e0673309e89",
+    "message_head": "adding df_outlier",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-12-05T01:38:30Z",
+    "parents": [
+      "96f9cd93bd3e81a6920d29f17f9e45219f397e30"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ff4383a9eff76118dda9b0fa94077e0673309e89"
+  },
+  {
+    "sha": "96f9cd93bd3e81a6920d29f17f9e45219f397e30",
+    "message_head": "deleting kmeand, silhoutte",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-12-05T01:04:54Z",
+    "parents": [
+      "c94ffb54f6db51773525eb9fe075e277105e275e"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/96f9cd93bd3e81a6920d29f17f9e45219f397e30"
+  },
+  {
+    "sha": "c94ffb54f6db51773525eb9fe075e277105e275e",
+    "message_head": "adding paraquet files",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-12-05T01:00:27Z",
+    "parents": [
+      "d03c820984d98a52c9874bb2e3e7e9756c495eca"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/c94ffb54f6db51773525eb9fe075e277105e275e"
+  },
+  {
+    "sha": "d03c820984d98a52c9874bb2e3e7e9756c495eca",
+    "message_head": "adding paraquet files",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-12-05T00:34:58Z",
+    "parents": [
+      "574aa3e0af0454561fe3cddde920e84b1a689bba"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d03c820984d98a52c9874bb2e3e7e9756c495eca"
+  },
+  {
+    "sha": "c35626609e14485c784246088950d61b944a3827",
+    "message_head": "add generate_recommendations to the recommender module",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-04T17:03:11Z",
+    "parents": [
+      "e1bd98ddeb7089f1598ee264ae7b0e39cb76edff"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/c35626609e14485c784246088950d61b944a3827"
+  },
+  {
+    "sha": "e1bd98ddeb7089f1598ee264ae7b0e39cb76edff",
+    "message_head": "create_recommendations to the module",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-04T16:59:25Z",
+    "parents": [
+      "5157ade5d96c3de4db9bdf3c18e1259388d756ab"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e1bd98ddeb7089f1598ee264ae7b0e39cb76edff"
+  },
+  {
+    "sha": "5157ade5d96c3de4db9bdf3c18e1259388d756ab",
+    "message_head": "record_customer_purchases to the recommender module",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-04T16:56:17Z",
+    "parents": [
+      "b8e6a0a686fc37886aaec0288b3127120b9a45ec"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/5157ade5d96c3de4db9bdf3c18e1259388d756ab"
+  },
+  {
+    "sha": "b8e6a0a686fc37886aaec0288b3127120b9a45ec",
+    "message_head": "add merge_customer_transactions, identify_top_products to the recommender module",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-04T16:54:50Z",
+    "parents": [
+      "5f49ecb5b448e2df813a2a980a34d0130e47c705"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b8e6a0a686fc37886aaec0288b3127120b9a45ec"
+  },
+  {
+    "sha": "5f49ecb5b448e2df813a2a980a34d0130e47c705",
+    "message_head": "add remove_outliers function to ClusterBasedRecommender.py module",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-12-04T16:43:52Z",
+    "parents": [
+      "15975c490f9dc990f64d03fd1afc6d9c97960a62"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/5f49ecb5b448e2df813a2a980a34d0130e47c705"
+  },
+  {
+    "sha": "0944f7bfa161697910f028a0789cb26bec00ea08",
+    "message_head": "Merge pull request #41 from Thomas-George-T/main",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-12-03T22:16:32Z",
+    "parents": [
+      "f209bf2743b331b3942b048892924a044f306878",
+      "15975c490f9dc990f64d03fd1afc6d9c97960a62"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/0944f7bfa161697910f028a0789cb26bec00ea08"
+  },
+  {
+    "sha": "574aa3e0af0454561fe3cddde920e84b1a689bba",
+    "message_head": "Merge pull request #40 from Thomas-George-T/main",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-12-03T20:18:51Z",
+    "parents": [
+      "e603d7de00e88d04a53fbf9a31de6dd27da7c8e4",
+      "15975c490f9dc990f64d03fd1afc6d9c97960a62"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/574aa3e0af0454561fe3cddde920e84b1a689bba"
+  },
+  {
+    "sha": "15975c490f9dc990f64d03fd1afc6d9c97960a62",
+    "message_head": "Merge pull request #39 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-02T00:02:58Z",
+    "parents": [
+      "1daa455f5591bdd6a190802baf99a85f9deb8824",
+      "9d7be8f0064425a192c79e0b89071d1fff020675"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/15975c490f9dc990f64d03fd1afc6d9c97960a62"
+  },
+  {
+    "sha": "9d7be8f0064425a192c79e0b89071d1fff020675",
+    "message_head": "Merge branch 'main' into feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-01T23:59:08Z",
+    "parents": [
+      "59370725a092e8ea97d1b5f8df1e78485595f8af",
+      "1daa455f5591bdd6a190802baf99a85f9deb8824"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/9d7be8f0064425a192c79e0b89071d1fff020675"
+  },
+  {
+    "sha": "1daa455f5591bdd6a190802baf99a85f9deb8824",
+    "message_head": "Merge pull request #38 from Thomas-George-T/dependabot/pip/mlflow-2.8.1",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-01T23:57:05Z",
+    "parents": [
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "a385cf310bc6ea31a48baf1db8b17cd412a3dad2"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/1daa455f5591bdd6a190802baf99a85f9deb8824"
+  },
+  {
+    "sha": "a385cf310bc6ea31a48baf1db8b17cd412a3dad2",
+    "message_head": "Bump mlflow from 2.8.0 to 2.8.1",
+    "author_name": "dependabot[bot]",
+    "author_email": "49699333+dependabot[bot]@users.noreply.github.com",
+    "author_date": "2023-12-01T23:51:12Z",
+    "parents": [
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a385cf310bc6ea31a48baf1db8b17cd412a3dad2"
+  },
+  {
+    "sha": "59370725a092e8ea97d1b5f8df1e78485595f8af",
+    "message_head": "pytest updates",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-01T23:49:15Z",
+    "parents": [
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/59370725a092e8ea97d1b5f8df1e78485595f8af"
+  },
+  {
+    "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+    "message_head": "Adding GCPDeploy",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-01T23:47:03Z",
+    "parents": [
+      "f85dff12a05f44b465eac2b11ca2de3b53f344f4"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6b8b21afaf18020f0ab29114baf4dd71ef36223c"
+  },
+  {
+    "sha": "f85dff12a05f44b465eac2b11ca2de3b53f344f4",
+    "message_head": "Updated gitignore",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-12-01T23:22:42Z",
+    "parents": [
+      "ee5fba433c60a13a0b4086de3861118deda0283b"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f85dff12a05f44b465eac2b11ca2de3b53f344f4"
+  },
+  {
+    "sha": "ee5fba433c60a13a0b4086de3861118deda0283b",
+    "message_head": "Merge pull request #37 from Thomas-George-T/main",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-12-01T21:27:32Z",
+    "parents": [
+      "c2b286a585a3814dcd61dfb37d70472c35e543bf",
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ee5fba433c60a13a0b4086de3861118deda0283b"
+  },
+  {
+    "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+    "message_head": "init push with feature engineering updates (#36)",
+    "author_name": "Komal",
+    "author_email": "130316638+kokomocha@users.noreply.github.com",
+    "author_date": "2023-11-30T04:36:46Z",
+    "parents": [
+      "3bf12e85c84a38bbb16e7165a75376710edd87a7"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+  },
+  {
+    "sha": "e7cca036046c046def299d4351316b306827fa5b",
+    "message_head": "push w requested changes",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-11-29T21:07:29Z",
+    "parents": [
+      "3b6fc5a0d69c5648c12816a69d8d5b6ea63a5ca7"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e7cca036046c046def299d4351316b306827fa5b"
+  },
+  {
+    "sha": "c2b286a585a3814dcd61dfb37d70472c35e543bf",
+    "message_head": "Update pytest.yml: Used Globs for feature branch",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-29T20:29:16Z",
+    "parents": [
+      "6bede24f366c191712101a252221e533617b404f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/c2b286a585a3814dcd61dfb37d70472c35e543bf"
+  },
+  {
+    "sha": "3b6fc5a0d69c5648c12816a69d8d5b6ea63a5ca7",
+    "message_head": "Fixed Dag Bug",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-11-29T20:07:32Z",
+    "parents": [
+      "c8789e8b9edff3d00ada4fceadf80629efd5d92b"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/3b6fc5a0d69c5648c12816a69d8d5b6ea63a5ca7"
+  },
+  {
+    "sha": "c8789e8b9edff3d00ada4fceadf80629efd5d92b",
+    "message_head": "added dags and airflow logs to separate dvc",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-11-28T16:39:07Z",
+    "parents": [
+      "f00ebb1dff0b720f0dc4477c56619046b35f09f9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/c8789e8b9edff3d00ada4fceadf80629efd5d92b"
+  },
+  {
+    "sha": "f00ebb1dff0b720f0dc4477c56619046b35f09f9",
+    "message_head": "dvc",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-11-27T23:58:46Z",
+    "parents": [
+      "b82b9d003366c90d9d466a9be97e15064cc0e00f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f00ebb1dff0b720f0dc4477c56619046b35f09f9"
+  },
+  {
+    "sha": "b82b9d003366c90d9d466a9be97e15064cc0e00f",
+    "message_head": "dvc config update",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-11-27T22:23:52Z",
+    "parents": [
+      "24a497cfcde6356d3ab7ba387b1712d58fd54af9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b82b9d003366c90d9d466a9be97e15064cc0e00f"
+  },
+  {
+    "sha": "24a497cfcde6356d3ab7ba387b1712d58fd54af9",
+    "message_head": "updated dags and data.dvc files",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-11-27T22:22:38Z",
+    "parents": [
+      "96f488c2d58d4d52402128641652ebf1e9c50814"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/24a497cfcde6356d3ab7ba387b1712d58fd54af9"
+  },
+  {
+    "sha": "96f488c2d58d4d52402128641652ebf1e9c50814",
+    "message_head": "added seaborn and matplotlib to requirements.txt",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-11-13T21:47:30Z",
+    "parents": [
+      "6aeb65131fdb8bca7680374cccad56a620070a05"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/96f488c2d58d4d52402128641652ebf1e9c50814"
+  },
+  {
+    "sha": "6aeb65131fdb8bca7680374cccad56a620070a05",
+    "message_head": "init push with feature engineering updates",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-11-13T20:57:09Z",
+    "parents": [
+      "3bf12e85c84a38bbb16e7165a75376710edd87a7"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6aeb65131fdb8bca7680374cccad56a620070a05"
+  },
+  {
+    "sha": "3bf12e85c84a38bbb16e7165a75376710edd87a7",
+    "message_head": "Merge pull request #35 from Thomas-George-T/security_fix",
+    "author_name": "Thomas George Thomas",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-11T02:19:43Z",
+    "parents": [
+      "e9e0a982733eecff45a174fd70465405c13bcd3f",
+      "05c7af13c6ff00822f928fff7f4d7968c4861afc"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/3bf12e85c84a38bbb16e7165a75376710edd87a7"
+  },
+  {
+    "sha": "05c7af13c6ff00822f928fff7f4d7968c4861afc",
+    "message_head": "Delete .dvc/customersegmentation-404405-a9b899d55892.json",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-11-11T02:15:05Z",
+    "parents": [
+      "e9e0a982733eecff45a174fd70465405c13bcd3f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/05c7af13c6ff00822f928fff7f4d7968c4861afc"
+  },
+  {
+    "sha": "e9e0a982733eecff45a174fd70465405c13bcd3f",
+    "message_head": "Merge pull request #34 from Thomas-George-T/feature_komal_patch",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-11T01:28:34Z",
+    "parents": [
+      "c627f4fd4d8e4c21dc0d0c7956199d235d38b2c9",
+      "d34984a4e26d377749b595b9442e7427b79fcd30"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e9e0a982733eecff45a174fd70465405c13bcd3f"
+  },
+  {
+    "sha": "d34984a4e26d377749b595b9442e7427b79fcd30",
+    "message_head": "Merge branch 'feature_komal_patch' of https://github.com/Thomas-George-T/Ecommerce-Data-MLOps into feature_komal_patch",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-11-11T01:25:54Z",
+    "parents": [
+      "6992d1a8248dadf67a728e1483895c6ac2a44c5b",
+      "941830f4fb7d384cc81f7e39444977e50d0ea648"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d34984a4e26d377749b595b9442e7427b79fcd30"
+  },
+  {
+    "sha": "6992d1a8248dadf67a728e1483895c6ac2a44c5b",
+    "message_head": ".dvc",
+    "author_name": "kokomocha",
+    "author_email": "komalpardeshi31@gmail.com",
+    "author_date": "2023-11-11T01:25:35Z",
+    "parents": [
+      "e9f27d8af6223e62abf029fb294dad3695d6863c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6992d1a8248dadf67a728e1483895c6ac2a44c5b"
+  },
+  {
+    "sha": "941830f4fb7d384cc81f7e39444977e50d0ea648",
+    "message_head": "DVC updates",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-11T01:21:53Z",
+    "parents": [
+      "e9f27d8af6223e62abf029fb294dad3695d6863c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/941830f4fb7d384cc81f7e39444977e50d0ea648"
+  },
+  {
+    "sha": "e9f27d8af6223e62abf029fb294dad3695d6863c",
+    "message_head": "added DVC links in readme",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-11T01:12:23Z",
+    "parents": [
+      "be061eef3bf3760c5911ad96519071f73916e00a"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e9f27d8af6223e62abf029fb294dad3695d6863c"
+  },
+  {
+    "sha": "be061eef3bf3760c5911ad96519071f73916e00a",
+    "message_head": "Updated links in Readme",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-11T01:10:16Z",
+    "parents": [
+      "7018c9c101e3ba121dd6b185d5a90633cc118431"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/be061eef3bf3760c5911ad96519071f73916e00a"
+  },
+  {
+    "sha": "7018c9c101e3ba121dd6b185d5a90633cc118431",
+    "message_head": "readme",
+    "author_name": "Komal",
+    "author_email": "130316638+kokomocha@users.noreply.github.com",
+    "author_date": "2023-11-11T00:51:50Z",
+    "parents": [
+      "a1d3130ddfb7532a9fd9904510d05667610e92af"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7018c9c101e3ba121dd6b185d5a90633cc118431"
+  },
+  {
+    "sha": "a1d3130ddfb7532a9fd9904510d05667610e92af",
+    "message_head": "readme",
+    "author_name": "Komal",
+    "author_email": "130316638+kokomocha@users.noreply.github.com",
+    "author_date": "2023-11-11T00:25:05Z",
+    "parents": [
+      "d1eacf82c94cb4d0ccd4ec667db832d68f50da98"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a1d3130ddfb7532a9fd9904510d05667610e92af"
+  },
+  {
+    "sha": "d1eacf82c94cb4d0ccd4ec667db832d68f50da98",
+    "message_head": "dvc snip",
+    "author_name": "Komal",
+    "author_email": "130316638+kokomocha@users.noreply.github.com",
+    "author_date": "2023-11-10T23:51:52Z",
+    "parents": [
+      "c627f4fd4d8e4c21dc0d0c7956199d235d38b2c9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d1eacf82c94cb4d0ccd4ec667db832d68f50da98"
+  },
+  {
+    "sha": "c627f4fd4d8e4c21dc0d0c7956199d235d38b2c9",
+    "message_head": "Merge pull request #32 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T23:43:52Z",
+    "parents": [
+      "9fab9f2719f7adfa42b30c4ed1a4e2de8e7ab746",
+      "6bede24f366c191712101a252221e533617b404f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/c627f4fd4d8e4c21dc0d0c7956199d235d38b2c9"
+  },
+  {
+    "sha": "6bede24f366c191712101a252221e533617b404f",
+    "message_head": "Merge branch 'main' into feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T23:40:15Z",
+    "parents": [
+      "e96b3cf488e8d2dabb04f195be75041b6453d67a",
+      "9fab9f2719f7adfa42b30c4ed1a4e2de8e7ab746"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6bede24f366c191712101a252221e533617b404f"
+  },
+  {
+    "sha": "e96b3cf488e8d2dabb04f195be75041b6453d67a",
+    "message_head": "Update README.md: Added Demarcations",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T23:39:53Z",
+    "parents": [
+      "7daf78995da2bd50268375747ee128271d841367"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e96b3cf488e8d2dabb04f195be75041b6453d67a"
+  },
+  {
+    "sha": "9fab9f2719f7adfa42b30c4ed1a4e2de8e7ab746",
+    "message_head": "Merge pull request #31 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T23:35:54Z",
+    "parents": [
+      "7a696615a771cff874535ac240b73762c8b7b5f0",
+      "7daf78995da2bd50268375747ee128271d841367"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/9fab9f2719f7adfa42b30c4ed1a4e2de8e7ab746"
+  },
+  {
+    "sha": "7daf78995da2bd50268375747ee128271d841367",
+    "message_head": "Merge branch 'feature_thomas' of https://github.com/Thomas-George-T/MLOps-Ecomm into feature_thomas",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-10T23:32:55Z",
+    "parents": [
+      "d9043a0d62b6bb4b0c792c99929dd2beb188e4ef",
+      "52755da08520741e3e71a46f51c2f8fc18e1370c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7daf78995da2bd50268375747ee128271d841367"
+  },
+  {
+    "sha": "d9043a0d62b6bb4b0c792c99929dd2beb188e4ef",
+    "message_head": "Added MlOps components",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-10T23:32:51Z",
+    "parents": [
+      "5f7a376c369b782282cd8a3e8346d0c83d9a7292"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d9043a0d62b6bb4b0c792c99929dd2beb188e4ef"
+  },
+  {
+    "sha": "52755da08520741e3e71a46f51c2f8fc18e1370c",
+    "message_head": "Merge branch 'main' into feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T23:28:26Z",
+    "parents": [
+      "f19d10444d583738407953e9a6ae1b8c99e0988b",
+      "7a696615a771cff874535ac240b73762c8b7b5f0"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/52755da08520741e3e71a46f51c2f8fc18e1370c"
+  },
+  {
+    "sha": "f19d10444d583738407953e9a6ae1b8c99e0988b",
+    "message_head": "Update README.md",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T23:27:28Z",
+    "parents": [
+      "5f7a376c369b782282cd8a3e8346d0c83d9a7292"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f19d10444d583738407953e9a6ae1b8c99e0988b"
+  },
+  {
+    "sha": "5f7a376c369b782282cd8a3e8346d0c83d9a7292",
+    "message_head": "Added DAG image to readme",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-10T23:24:57Z",
+    "parents": [
+      "e98d9fd9f6427207c43ad1abdf969c9a9d332ffe"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/5f7a376c369b782282cd8a3e8346d0c83d9a7292"
+  },
+  {
+    "sha": "7a696615a771cff874535ac240b73762c8b7b5f0",
+    "message_head": "Merge pull request #30 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T23:16:23Z",
+    "parents": [
+      "60fdd385bc075a0d550d9ba7d7fa73a2acb82089",
+      "e98d9fd9f6427207c43ad1abdf969c9a9d332ffe"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7a696615a771cff874535ac240b73762c8b7b5f0"
+  },
+  {
+    "sha": "e98d9fd9f6427207c43ad1abdf969c9a9d332ffe",
+    "message_head": "Merge branch 'main' into feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T23:12:32Z",
+    "parents": [
+      "31e7e177c1c0325500b26d202601d8fd52de346d",
+      "60fdd385bc075a0d550d9ba7d7fa73a2acb82089"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e98d9fd9f6427207c43ad1abdf969c9a9d332ffe"
+  },
+  {
+    "sha": "31e7e177c1c0325500b26d202601d8fd52de346d",
+    "message_head": "ADded DAG example image",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-10T23:11:21Z",
+    "parents": [
+      "b26956171564a1ed00949c857732be4beda78388"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/31e7e177c1c0325500b26d202601d8fd52de346d"
+  },
+  {
+    "sha": "b26956171564a1ed00949c857732be4beda78388",
+    "message_head": "MD fix",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-10T23:08:37Z",
+    "parents": [
+      "9942ba99846b6f4a23650d127d8ada8adf208167"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b26956171564a1ed00949c857732be4beda78388"
+  },
+  {
+    "sha": "9942ba99846b6f4a23650d127d8ada8adf208167",
+    "message_head": "Docker AirflowUID fix",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-10T23:07:21Z",
+    "parents": [
+      "5c848c0618a8836338e3da7dc90d24a6486d095d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/9942ba99846b6f4a23650d127d8ada8adf208167"
+  },
+  {
+    "sha": "60fdd385bc075a0d550d9ba7d7fa73a2acb82089",
+    "message_head": "Merge pull request #29 from Thomas-George-T/Moheth2000-patch-1",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-11-10T22:17:05Z",
+    "parents": [
+      "d170bea6d833be7f4a5a67b5865357042811c40b",
+      "20de2c83951c7b976d663f314bc4a91e4717da4e"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/60fdd385bc075a0d550d9ba7d7fa73a2acb82089"
+  },
+  {
+    "sha": "20de2c83951c7b976d663f314bc4a91e4717da4e",
+    "message_head": "Update README.md",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-11-10T21:35:28Z",
+    "parents": [
+      "d170bea6d833be7f4a5a67b5865357042811c40b"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/20de2c83951c7b976d663f314bc4a91e4717da4e"
+  },
+  {
+    "sha": "d170bea6d833be7f4a5a67b5865357042811c40b",
+    "message_head": "Merge pull request #27 from Thomas-George-T/feature_moheth",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-11-10T20:22:26Z",
+    "parents": [
+      "03d44b30100451dc17c85be6576a92cfa567e9ca",
+      "f209bf2743b331b3942b048892924a044f306878"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d170bea6d833be7f4a5a67b5865357042811c40b"
+  },
+  {
+    "sha": "f209bf2743b331b3942b048892924a044f306878",
+    "message_head": "Merge branch 'main' into feature_moheth",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T20:07:58Z",
+    "parents": [
+      "7428b98285aa5a51b2388433bd3e3d37c1767b69",
+      "03d44b30100451dc17c85be6576a92cfa567e9ca"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f209bf2743b331b3942b048892924a044f306878"
+  },
+  {
+    "sha": "7428b98285aa5a51b2388433bd3e3d37c1767b69",
+    "message_head": "pylint updates to outlier_treatment",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-10T20:05:02Z",
+    "parents": [
+      "cce209b5b188ba51e9355d64337b992e2ce8f0a8"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7428b98285aa5a51b2388433bd3e3d37c1767b69"
+  },
+  {
+    "sha": "cce209b5b188ba51e9355d64337b992e2ce8f0a8",
+    "message_head": "Finished Dags and edited docker-compose pip reqs",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-10T20:01:54Z",
+    "parents": [
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/cce209b5b188ba51e9355d64337b992e2ce8f0a8"
+  },
+  {
+    "sha": "03d44b30100451dc17c85be6576a92cfa567e9ca",
+    "message_head": "Merge pull request #26 from Thomas-George-T/feature_bardia",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-11-10T19:41:15Z",
+    "parents": [
+      "d571a7c1743ca857eef0e3b9a44a7e141f4d498c",
+      "e603d7de00e88d04a53fbf9a31de6dd27da7c8e4"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/03d44b30100451dc17c85be6576a92cfa567e9ca"
+  },
+  {
+    "sha": "e603d7de00e88d04a53fbf9a31de6dd27da7c8e4",
+    "message_head": "Merge branch 'main' into feature_bardia",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T19:36:28Z",
+    "parents": [
+      "22ed575adf8ee5ed57aa2e14e07769ad60571376",
+      "d571a7c1743ca857eef0e3b9a44a7e141f4d498c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e603d7de00e88d04a53fbf9a31de6dd27da7c8e4"
+  },
+  {
+    "sha": "d571a7c1743ca857eef0e3b9a44a7e141f4d498c",
+    "message_head": "Merge pull request #24 from Thomas-George-T/feature_thomas",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-11-10T19:36:01Z",
+    "parents": [
+      "86b011ef4a03046c5cba6ceb29361a59fa9ae4a6",
+      "5c848c0618a8836338e3da7dc90d24a6486d095d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d571a7c1743ca857eef0e3b9a44a7e141f4d498c"
+  },
+  {
+    "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+    "message_head": "The scripts have been added to dags",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T19:35:34Z",
+    "parents": [
+      "50bd344102bd73ecb6061e014584975ac2a24ee2"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/06d80485b7a621184ec3d4e83a2836f2da6d3387"
+  },
+  {
+    "sha": "50bd344102bd73ecb6061e014584975ac2a24ee2",
+    "message_head": "Set default values to arguments",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T19:33:29Z",
+    "parents": [
+      "2a7834138eea280980a8d1ae165838c532f39c1e"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/50bd344102bd73ecb6061e014584975ac2a24ee2"
+  },
+  {
+    "sha": "22ed575adf8ee5ed57aa2e14e07769ad60571376",
+    "message_head": "Update README.md",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-11-10T19:33:18Z",
+    "parents": [
+      "124bc5ec9ef80f4f45fdc31b721eda49063edf08"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/22ed575adf8ee5ed57aa2e14e07769ad60571376"
+  },
+  {
+    "sha": "124bc5ec9ef80f4f45fdc31b721eda49063edf08",
+    "message_head": "Merge branch 'main' into feature_bardia",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T19:24:43Z",
+    "parents": [
+      "199e8888d67fe7a7de5ab8cda87c5379cfd4bbda",
+      "86b011ef4a03046c5cba6ceb29361a59fa9ae4a6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/124bc5ec9ef80f4f45fdc31b721eda49063edf08"
+  },
+  {
+    "sha": "5c848c0618a8836338e3da7dc90d24a6486d095d",
+    "message_head": "Merge branch 'main' into feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T19:12:07Z",
+    "parents": [
+      "cc9f37a98bea25c18afa88a8619c5a04be179235",
+      "86b011ef4a03046c5cba6ceb29361a59fa9ae4a6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/5c848c0618a8836338e3da7dc90d24a6486d095d"
+  },
+  {
+    "sha": "86b011ef4a03046c5cba6ceb29361a59fa9ae4a6",
+    "message_head": "Merge pull request #23 from Thomas-George-T/feature_ashkan",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-11-10T18:28:52Z",
+    "parents": [
+      "15ad4ec5a26630e0f5eb2da50fe59308dd6a2e21",
+      "89ff19b1000b6109b043e5a53b96e315f329241a"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/86b011ef4a03046c5cba6ceb29361a59fa9ae4a6"
+  },
+  {
+    "sha": "cc9f37a98bea25c18afa88a8619c5a04be179235",
+    "message_head": "readme updates in progress",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-10T18:17:13Z",
+    "parents": [
+      "f48d000891852ba72551f216b6790b2590c670a7"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/cc9f37a98bea25c18afa88a8619c5a04be179235"
+  },
+  {
+    "sha": "89ff19b1000b6109b043e5a53b96e315f329241a",
+    "message_head": "update test_data_loader to be skipped by pytest",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-11-10T15:50:22Z",
+    "parents": [
+      "f19fedbc9b01b5f623d560367ac054fcfbdaab93"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/89ff19b1000b6109b043e5a53b96e315f329241a"
+  },
+  {
+    "sha": "f19fedbc9b01b5f623d560367ac054fcfbdaab93",
+    "message_head": "Merge branch 'main' into feature_ashkan",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-11-10T12:01:13Z",
+    "parents": [
+      "9cbbe874e3197864f34c5c14e749bfcf7346b074",
+      "15ad4ec5a26630e0f5eb2da50fe59308dd6a2e21"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f19fedbc9b01b5f623d560367ac054fcfbdaab93"
+  },
+  {
+    "sha": "2a7834138eea280980a8d1ae165838c532f39c1e",
+    "message_head": "Adding Dags",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T07:47:39Z",
+    "parents": [
+      "3f3386bca464fb5b9ee92c24d9ca655631549ecc"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/2a7834138eea280980a8d1ae165838c532f39c1e"
+  },
+  {
+    "sha": "3f3386bca464fb5b9ee92c24d9ca655631549ecc",
+    "message_head": "Adding dags",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T07:44:41Z",
+    "parents": [
+      "160fffdfe0174cd8ce165c623caa2eadac46db17"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/3f3386bca464fb5b9ee92c24d9ca655631549ecc"
+  },
+  {
+    "sha": "15ad4ec5a26630e0f5eb2da50fe59308dd6a2e21",
+    "message_head": "Merge pull request #21 from Thomas-George-T/feature_moheth",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-11-10T06:30:04Z",
+    "parents": [
+      "4bd84e7229dd949c24350a39b3c2f43b44390ef9",
+      "160fffdfe0174cd8ce165c623caa2eadac46db17"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/15ad4ec5a26630e0f5eb2da50fe59308dd6a2e21"
+  },
+  {
+    "sha": "160fffdfe0174cd8ce165c623caa2eadac46db17",
+    "message_head": "Fixed the CustomerID error",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T06:22:29Z",
+    "parents": [
+      "ccc8500cf821d477ff89db26c5683ec5faac8a54"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/160fffdfe0174cd8ce165c623caa2eadac46db17"
+  },
+  {
+    "sha": "ccc8500cf821d477ff89db26c5683ec5faac8a54",
+    "message_head": "Testing CustomerID again",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T06:18:13Z",
+    "parents": [
+      "9a90af45bb1154114eeef28909211d583a86046c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ccc8500cf821d477ff89db26c5683ec5faac8a54"
+  },
+  {
+    "sha": "9a90af45bb1154114eeef28909211d583a86046c",
+    "message_head": "Trying to solve the CustomerID issue",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T06:13:26Z",
+    "parents": [
+      "d421a90147d1a5a53ed9b1d4afcc4aed5a976aed"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/9a90af45bb1154114eeef28909211d583a86046c"
+  },
+  {
+    "sha": "d421a90147d1a5a53ed9b1d4afcc4aed5a976aed",
+    "message_head": "The CustomerID is being tackled once more",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T05:54:33Z",
+    "parents": [
+      "848da51ba0648e2f5f38ac025ad93b1f4f52b783"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d421a90147d1a5a53ed9b1d4afcc4aed5a976aed"
+  },
+  {
+    "sha": "848da51ba0648e2f5f38ac025ad93b1f4f52b783",
+    "message_head": "The CustomerID is further checked",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T05:33:02Z",
+    "parents": [
+      "84e0dc4233b5527f6bebe04449b6e2f7b7e737b2"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/848da51ba0648e2f5f38ac025ad93b1f4f52b783"
+  },
+  {
+    "sha": "84e0dc4233b5527f6bebe04449b6e2f7b7e737b2",
+    "message_head": "Checking if the error stops",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T05:25:48Z",
+    "parents": [
+      "c334aefeb54770deb434ddbc408f2d612b36fabc"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/84e0dc4233b5527f6bebe04449b6e2f7b7e737b2"
+  },
+  {
+    "sha": "c334aefeb54770deb434ddbc408f2d612b36fabc",
+    "message_head": "Resolved conflicts",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-10T05:19:52Z",
+    "parents": [
+      "5d13c3087083e628bc362527e4a86aea5a2a59a9",
+      "4bd84e7229dd949c24350a39b3c2f43b44390ef9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/c334aefeb54770deb434ddbc408f2d612b36fabc"
+  },
+  {
+    "sha": "f48d000891852ba72551f216b6790b2590c670a7",
+    "message_head": "Merge branch 'main' of https://github.com/Thomas-George-T/MLOps-Ecomm into feature_thomas",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-10T04:54:31Z",
+    "parents": [
+      "d49b63a688a67ba7fc2ef7497e53cd0e1bb4ee72",
+      "4bd84e7229dd949c24350a39b3c2f43b44390ef9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f48d000891852ba72551f216b6790b2590c670a7"
+  },
+  {
+    "sha": "5d13c3087083e628bc362527e4a86aea5a2a59a9",
+    "message_head": "The LocalError has been solved",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T04:50:23Z",
+    "parents": [
+      "04b6febc6a4ee0d197b4ae2ce2958ece7cf36356"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/5d13c3087083e628bc362527e4a86aea5a2a59a9"
+  },
+  {
+    "sha": "04b6febc6a4ee0d197b4ae2ce2958ece7cf36356",
+    "message_head": "Changed 'input_customer_data' in unique_products.py",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T04:43:27Z",
+    "parents": [
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/04b6febc6a4ee0d197b4ae2ce2958ece7cf36356"
+  },
+  {
+    "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+    "message_head": "Final changes have been made",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T04:32:55Z",
+    "parents": [
+      "a6a20d671a15b63c93ca88e109c5a1bc293b3a66"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7d57159c3fc69a9488da484767e9c34b8c8dd6a2"
+  },
+  {
+    "sha": "9cbbe874e3197864f34c5c14e749bfcf7346b074",
+    "message_head": "update README file",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-11-10T02:59:11Z",
+    "parents": [
+      "4bd84e7229dd949c24350a39b3c2f43b44390ef9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/9cbbe874e3197864f34c5c14e749bfcf7346b074"
+  },
+  {
+    "sha": "199e8888d67fe7a7de5ab8cda87c5379cfd4bbda",
+    "message_head": "Merge pull request #20 from Thomas-George-T/main",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-11-10T01:15:20Z",
+    "parents": [
+      "0da38946aae2fe3da228ef88b6ba143e9dca6f3c",
+      "4bd84e7229dd949c24350a39b3c2f43b44390ef9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/199e8888d67fe7a7de5ab8cda87c5379cfd4bbda"
+  },
+  {
+    "sha": "d49b63a688a67ba7fc2ef7497e53cd0e1bb4ee72",
+    "message_head": "Readme: updates about pipeline and user steps",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-10T00:59:06Z",
+    "parents": [
+      "9be959acbcb93651971ae2c111f365c94f1a37e6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d49b63a688a67ba7fc2ef7497e53cd0e1bb4ee72"
+  },
+  {
+    "sha": "4bd84e7229dd949c24350a39b3c2f43b44390ef9",
+    "message_head": "Merge pull request #18 from Thomas-George-T/feature_bardia",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-11-10T00:57:18Z",
+    "parents": [
+      "4c961cc014b429fac40bcb76f8b43eb3ccb304d1",
+      "0da38946aae2fe3da228ef88b6ba143e9dca6f3c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/4bd84e7229dd949c24350a39b3c2f43b44390ef9"
+  },
+  {
+    "sha": "0da38946aae2fe3da228ef88b6ba143e9dca6f3c",
+    "message_head": "Merge branch 'main' into feature_bardia",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T00:50:28Z",
+    "parents": [
+      "77a4ea9978815846ad9e457a41cde095111fdc0a",
+      "4c961cc014b429fac40bcb76f8b43eb3ccb304d1"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/0da38946aae2fe3da228ef88b6ba143e9dca6f3c"
+  },
+  {
+    "sha": "a6a20d671a15b63c93ca88e109c5a1bc293b3a66",
+    "message_head": "The tests have been modified",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T00:34:01Z",
+    "parents": [
+      "98e0ebd85377e7faefa968c434d52d3a90dcb382"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a6a20d671a15b63c93ca88e109c5a1bc293b3a66"
+  },
+  {
+    "sha": "77a4ea9978815846ad9e457a41cde095111fdc0a",
+    "message_head": "updating_outlier_treatment",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-11-10T00:33:14Z",
+    "parents": [
+      "7757556fa629309b72e8298804c7a6d3a86c7345"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/77a4ea9978815846ad9e457a41cde095111fdc0a"
+  },
+  {
+    "sha": "4c961cc014b429fac40bcb76f8b43eb3ccb304d1",
+    "message_head": "Merge pull request #17 from Thomas-George-T/feature_ashkan",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-11-10T00:29:57Z",
+    "parents": [
+      "7408fcebfe186233270fc8b30dc348089399aeed",
+      "8a3d0b85c99c6888a6cacf634cf423ec2381d1a8"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/4c961cc014b429fac40bcb76f8b43eb3ccb304d1"
+  },
+  {
+    "sha": "8a3d0b85c99c6888a6cacf634cf423ec2381d1a8",
+    "message_head": "updated .gitignore",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-11-10T00:24:23Z",
+    "parents": [
+      "3ddda33c306b882d9d006b43bee59ea26ee0bca9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/8a3d0b85c99c6888a6cacf634cf423ec2381d1a8"
+  },
+  {
+    "sha": "98e0ebd85377e7faefa968c434d52d3a90dcb382",
+    "message_head": "Removed unnecssary files",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-10T00:17:27Z",
+    "parents": [
+      "6187a3b974321c6201c9b39316d5c86ac43a535c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/98e0ebd85377e7faefa968c434d52d3a90dcb382"
+  },
+  {
+    "sha": "3ddda33c306b882d9d006b43bee59ea26ee0bca9",
+    "message_head": "linting issues fixed in datapipeline.py",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-11-10T00:04:58Z",
+    "parents": [
+      "8036507f9e7333a5b5681eaa63882831ce5952cc"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/3ddda33c306b882d9d006b43bee59ea26ee0bca9"
+  },
+  {
+    "sha": "8036507f9e7333a5b5681eaa63882831ce5952cc",
+    "message_head": "Merge branch 'main' into feature_ashkan",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-10T00:02:37Z",
+    "parents": [
+      "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "7408fcebfe186233270fc8b30dc348089399aeed"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/8036507f9e7333a5b5681eaa63882831ce5952cc"
+  },
+  {
+    "sha": "6187a3b974321c6201c9b39316d5c86ac43a535c",
+    "message_head": "The updated files of Feature Engineering are uploaded",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-09T23:59:10Z",
+    "parents": [
+      "51ecc2816bfacf98e20e38cca90c86ebd85d6f1d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6187a3b974321c6201c9b39316d5c86ac43a535c"
+  },
+  {
+    "sha": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+    "message_head": "create dags in airflow.py up to anomaly_codes_task",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-11-09T23:56:31Z",
+    "parents": [
+      "2f7a95f9a63d4738e501a462e281ed6640afec9d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f01c5123c9453c3f3972d88a874ee5cdc05c8f16"
+  },
+  {
+    "sha": "7408fcebfe186233270fc8b30dc348089399aeed",
+    "message_head": "Merge pull request #15 from Thomas-George-T/dependabot/pip/apache-airflow-providers-celery-3.4.1",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-09T22:19:18Z",
+    "parents": [
+      "da3e79f18eebddb51d5b5adc428e08e038bbe691",
+      "50b22cd8a43cf9eba01011dbf275e70197025fbe"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7408fcebfe186233270fc8b30dc348089399aeed"
+  },
+  {
+    "sha": "50b22cd8a43cf9eba01011dbf275e70197025fbe",
+    "message_head": "Bump apache-airflow-providers-celery from 3.3.3 to 3.4.1",
+    "author_name": "dependabot[bot]",
+    "author_email": "49699333+dependabot[bot]@users.noreply.github.com",
+    "author_date": "2023-11-09T22:15:51Z",
+    "parents": [
+      "da3e79f18eebddb51d5b5adc428e08e038bbe691"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/50b22cd8a43cf9eba01011dbf275e70197025fbe"
+  },
+  {
+    "sha": "2f7a95f9a63d4738e501a462e281ed6640afec9d",
+    "message_head": "Merge pull request #14 from Thomas-George-T/main",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-11-09T22:15:14Z",
+    "parents": [
+      "40bca736f828ed7a6d59221099d94dee8379ad82",
+      "da3e79f18eebddb51d5b5adc428e08e038bbe691"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/2f7a95f9a63d4738e501a462e281ed6640afec9d"
+  },
+  {
+    "sha": "da3e79f18eebddb51d5b5adc428e08e038bbe691",
+    "message_head": "Merge pull request #13 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-09T22:09:07Z",
+    "parents": [
+      "0aca25f3d20bc83451c55d3e742be54f3c77319f",
+      "9be959acbcb93651971ae2c111f365c94f1a37e6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/da3e79f18eebddb51d5b5adc428e08e038bbe691"
+  },
+  {
+    "sha": "9be959acbcb93651971ae2c111f365c94f1a37e6",
+    "message_head": "Merge branch 'main' into feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-09T22:02:06Z",
+    "parents": [
+      "5abc55d91082d67abcf58c9a93ec7182b40c6290",
+      "0aca25f3d20bc83451c55d3e742be54f3c77319f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/9be959acbcb93651971ae2c111f365c94f1a37e6"
+  },
+  {
+    "sha": "5abc55d91082d67abcf58c9a93ec7182b40c6290",
+    "message_head": "Security Update: Updated to airflow 2.7.3",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-09T22:00:06Z",
+    "parents": [
+      "b593fb561e67b24aa04de1519450b02605cf0544"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/5abc55d91082d67abcf58c9a93ec7182b40c6290"
+  },
+  {
+    "sha": "40bca736f828ed7a6d59221099d94dee8379ad82",
+    "message_head": "Merge pull request #12 from Thomas-George-T/main",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-11-09T21:54:02Z",
+    "parents": [
+      "1a3a3e13bd28b16c6bf2f34318a2714fbcedf0e7",
+      "0aca25f3d20bc83451c55d3e742be54f3c77319f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/40bca736f828ed7a6d59221099d94dee8379ad82"
+  },
+  {
+    "sha": "0aca25f3d20bc83451c55d3e742be54f3c77319f",
+    "message_head": "Merge pull request #10 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-09T21:20:18Z",
+    "parents": [
+      "c80ecd8d40b414255d0451bdae3c6809ef3baea2",
+      "b593fb561e67b24aa04de1519450b02605cf0544"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/0aca25f3d20bc83451c55d3e742be54f3c77319f"
+  },
+  {
+    "sha": "b593fb561e67b24aa04de1519450b02605cf0544",
+    "message_head": "Added requirements steps",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-09T21:10:07Z",
+    "parents": [
+      "4a6faf41874cd1895745a0f627874e6be9e144d5"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b593fb561e67b24aa04de1519450b02605cf0544"
+  },
+  {
+    "sha": "4a6faf41874cd1895745a0f627874e6be9e144d5",
+    "message_head": "Merge branch 'main' into feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-09T21:03:43Z",
+    "parents": [
+      "ad8c8acd6de97eb6523c61416c12ee2768bd9cc6",
+      "c80ecd8d40b414255d0451bdae3c6809ef3baea2"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/4a6faf41874cd1895745a0f627874e6be9e144d5"
+  },
+  {
+    "sha": "51ecc2816bfacf98e20e38cca90c86ebd85d6f1d",
+    "message_head": "Merge pull request #11 from Thomas-George-T/main",
+    "author_name": "Moheth2000",
+    "author_email": "61285950+Moheth2000@users.noreply.github.com",
+    "author_date": "2023-11-09T20:59:37Z",
+    "parents": [
+      "6fb06a699b80347ca67b161a2d64ca71b71fe7f1",
+      "c80ecd8d40b414255d0451bdae3c6809ef3baea2"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/51ecc2816bfacf98e20e38cca90c86ebd85d6f1d"
+  },
+  {
+    "sha": "6fb06a699b80347ca67b161a2d64ca71b71fe7f1",
+    "message_head": "Monthly and Seasonal Trends have been committed",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-09T20:57:53Z",
+    "parents": [
+      "391b602f9bdf7be92a4915e1adf87ff36bb9fd1d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6fb06a699b80347ca67b161a2d64ca71b71fe7f1"
+  },
+  {
+    "sha": "ad8c8acd6de97eb6523c61416c12ee2768bd9cc6",
+    "message_head": "Added Steps for Airflow DAG development",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-09T20:47:15Z",
+    "parents": [
+      "e45a01eb0a52ba53114c08db3eb285caecd271ac"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ad8c8acd6de97eb6523c61416c12ee2768bd9cc6"
+  },
+  {
+    "sha": "391b602f9bdf7be92a4915e1adf87ff36bb9fd1d",
+    "message_head": "Added test_data monthly_test",
+    "author_name": "Moheth2000",
+    "author_email": "mohethcbe@gmail.com",
+    "author_date": "2023-11-09T20:43:16Z",
+    "parents": [
+      "107a2e2e8d984870d3cc98b4b4a29e7bd72afd7f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/391b602f9bdf7be92a4915e1adf87ff36bb9fd1d"
+  },
+  {
+    "sha": "e45a01eb0a52ba53114c08db3eb285caecd271ac",
+    "message_head": "Added Airflow Dags",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-09T20:23:16Z",
+    "parents": [
+      "a00e3b43a81dbcaccfd52bb53dfe3db79db756e3"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e45a01eb0a52ba53114c08db3eb285caecd271ac"
+  },
+  {
+    "sha": "a00e3b43a81dbcaccfd52bb53dfe3db79db756e3",
+    "message_head": "Fixed Docker and Airflow requirements",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-09T20:06:58Z",
+    "parents": [
+      "da1f8ef192d03c74e307c19cba4415ebb1bd9e5f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a00e3b43a81dbcaccfd52bb53dfe3db79db756e3"
+  },
+  {
+    "sha": "da1f8ef192d03c74e307c19cba4415ebb1bd9e5f",
+    "message_head": "Uploading docker-compose for airflow",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-09T19:32:36Z",
+    "parents": [
+      "bd1eb405abbb5c131a32092b46616a50d5d01bdf"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/da1f8ef192d03c74e307c19cba4415ebb1bd9e5f"
+  },
+  {
+    "sha": "bd1eb405abbb5c131a32092b46616a50d5d01bdf",
+    "message_head": "Updating pylint and ingest_data variable",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-09T19:19:08Z",
+    "parents": [
+      "3acd895bc252c247b040b70b6c3972f3668b898f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/bd1eb405abbb5c131a32092b46616a50d5d01bdf"
+  },
+  {
+    "sha": "3acd895bc252c247b040b70b6c3972f3668b898f",
+    "message_head": "Merge branch 'feature_thomas' of https://github.com/Thomas-George-T/MLOps-Ecomm into feature_thomas",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-09T19:01:06Z",
+    "parents": [
+      "9130d2dc91e4257e1915d318bae86c4a5f4f2d14",
+      "1bbce031526b808e49c9de36d0aa986f48d07391"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/3acd895bc252c247b040b70b6c3972f3668b898f"
+  },
+  {
+    "sha": "9130d2dc91e4257e1915d318bae86c4a5f4f2d14",
+    "message_head": "Moving to py 3.8 for airflow",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-09T19:00:54Z",
+    "parents": [
+      "8c75dd52791738bcc14582247650c89fe9319db7"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/9130d2dc91e4257e1915d318bae86c4a5f4f2d14"
+  },
+  {
+    "sha": "c80ecd8d40b414255d0451bdae3c6809ef3baea2",
+    "message_head": "Merge pull request #9 from Thomas-George-T/feature_thomas",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-11-09T17:34:49Z",
+    "parents": [
+      "7283c87851f5ab1af1a9cd47785aeee9c57b3aa2",
+      "1bbce031526b808e49c9de36d0aa986f48d07391"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/c80ecd8d40b414255d0451bdae3c6809ef3baea2"
+  },
+  {
+    "sha": "1bbce031526b808e49c9de36d0aa986f48d07391",
+    "message_head": "Merge branch 'main' into feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-09T16:54:30Z",
+    "parents": [
+      "8c75dd52791738bcc14582247650c89fe9319db7",
+      "7283c87851f5ab1af1a9cd47785aeee9c57b3aa2"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/1bbce031526b808e49c9de36d0aa986f48d07391"
+  },
+  {
+    "sha": "8c75dd52791738bcc14582247650c89fe9319db7",
+    "message_head": "updated readme.md",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-09T11:43:43Z",
+    "parents": [
+      "7e52267391d0218aafaab9fe5e1f6dd3e5f7bac1"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/8c75dd52791738bcc14582247650c89fe9319db7"
+  },
+  {
+    "sha": "7757556fa629309b72e8298804c7a6d3a86c7345",
+    "message_head": "updating_test_modules",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-11-09T07:09:27Z",
+    "parents": [
+      "8518a04fd1cfe84e26b11144dc1e1dfc0aa8ff22"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7757556fa629309b72e8298804c7a6d3a86c7345"
+  },
+  {
+    "sha": "7e52267391d0218aafaab9fe5e1f6dd3e5f7bac1",
+    "message_head": "Revert \"Testing py 3.8\"",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-09T05:21:23Z",
+    "parents": [
+      "e6222950adfe20cef3c20d6cb1a1187cff8fc618"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7e52267391d0218aafaab9fe5e1f6dd3e5f7bac1"
+  },
+  {
+    "sha": "e6222950adfe20cef3c20d6cb1a1187cff8fc618",
+    "message_head": "Testing py 3.8",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-09T05:07:48Z",
+    "parents": [
+      "b3f3942fc748d07f445b9481532260fa02b2b3f0"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e6222950adfe20cef3c20d6cb1a1187cff8fc618"
+  },
+  {
+    "sha": "8518a04fd1cfe84e26b11144dc1e1dfc0aa8ff22",
+    "message_head": "updates_to_cleanining_description",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-11-09T04:33:45Z",
+    "parents": [
+      "ee0f281fa2e2a3641ae798d7a22be5e4850610b8"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/8518a04fd1cfe84e26b11144dc1e1dfc0aa8ff22"
+  },
+  {
+    "sha": "ee0f281fa2e2a3641ae798d7a22be5e4850610b8",
+    "message_head": "update test_cleaing_descrption",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-11-09T02:18:00Z",
+    "parents": [
+      "068d9f642c1a395727ef9f023f94ef609a9f036e"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ee0f281fa2e2a3641ae798d7a22be5e4850610b8"
+  },
+  {
+    "sha": "068d9f642c1a395727ef9f023f94ef609a9f036e",
+    "message_head": "saved cleaning description, outlier_treatment, removing_zero_unitprice, test_Cleaning_descr",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-11-09T02:10:15Z",
+    "parents": [
+      "07f785cd0a1fb152475f01559ce9427f88ac8345"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/068d9f642c1a395727ef9f023f94ef609a9f036e"
+  },
+  {
+    "sha": "07f785cd0a1fb152475f01559ce9427f88ac8345",
+    "message_head": "updated to .gitiignore",
+    "author_name": "bardiamm",
+    "author_email": "mouhebat.b@northeastern.edu",
+    "author_date": "2023-11-09T02:05:30Z",
+    "parents": [
+      "626f6d45bb55569f66f6ed1120bc9bc9a09409d6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/07f785cd0a1fb152475f01559ce9427f88ac8345"
+  },
+  {
+    "sha": "626f6d45bb55569f66f6ed1120bc9bc9a09409d6",
+    "message_head": "Merge pull request #8 from Thomas-George-T/main",
+    "author_name": "Bardia_Mouhebat",
+    "author_email": "92042097+baridamm@users.noreply.github.com",
+    "author_date": "2023-11-09T01:57:12Z",
+    "parents": [
+      "107a2e2e8d984870d3cc98b4b4a29e7bd72afd7f",
+      "7283c87851f5ab1af1a9cd47785aeee9c57b3aa2"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/626f6d45bb55569f66f6ed1120bc9bc9a09409d6"
+  },
+  {
+    "sha": "7283c87851f5ab1af1a9cd47785aeee9c57b3aa2",
+    "message_head": "Merge pull request #7 from Thomas-George-T/feature_thomas",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-11-09T01:15:01Z",
+    "parents": [
+      "752704356e584d46fdc88d75552e3a641a3cad44",
+      "b3f3942fc748d07f445b9481532260fa02b2b3f0"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7283c87851f5ab1af1a9cd47785aeee9c57b3aa2"
+  },
+  {
+    "sha": "b3f3942fc748d07f445b9481532260fa02b2b3f0",
+    "message_head": "Merge branch 'main' into feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-09T00:28:35Z",
+    "parents": [
+      "a5b70d2b32c635633d2205f2ff0e78ec9bc6dd24",
+      "752704356e584d46fdc88d75552e3a641a3cad44"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b3f3942fc748d07f445b9481532260fa02b2b3f0"
+  },
+  {
+    "sha": "a5b70d2b32c635633d2205f2ff0e78ec9bc6dd24",
+    "message_head": "Freezing requirements versions and updating good variables for pylint",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-08T22:48:09Z",
+    "parents": [
+      "da80f32b3d2adfb681abadfad3f17d97a450e4f5"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a5b70d2b32c635633d2205f2ff0e78ec9bc6dd24"
+  },
+  {
+    "sha": "da80f32b3d2adfb681abadfad3f17d97a450e4f5",
+    "message_head": "updating test for ingest_data()",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-08T22:08:15Z",
+    "parents": [
+      "444dfa79ede04c652fbd016f7a0d6cb0f43d31e0"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/da80f32b3d2adfb681abadfad3f17d97a450e4f5"
+  },
+  {
+    "sha": "444dfa79ede04c652fbd016f7a0d6cb0f43d31e0",
+    "message_head": "Merge branch 'feature_thomas' of https://github.com/Thomas-George-T/MLOps-Ecomm into feature_thomas",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-08T21:45:28Z",
+    "parents": [
+      "0455e19d7d366202137b46eda876f7ce0c6cbdc5",
+      "6f4322b9f2eb99ff79398d2b39be03f8f420720a"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/444dfa79ede04c652fbd016f7a0d6cb0f43d31e0"
+  },
+  {
+    "sha": "0455e19d7d366202137b46eda876f7ce0c6cbdc5",
+    "message_head": "Adding Message to Module",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-11-08T21:45:17Z",
+    "parents": [
+      "23a180d38fcc7d3ccf44755b28e6b45d5ed734e6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/0455e19d7d366202137b46eda876f7ce0c6cbdc5"
+  },
+  {
+    "sha": "1a3a3e13bd28b16c6bf2f34318a2714fbcedf0e7",
+    "message_head": "Merge pull request #6 from Thomas-George-T/main",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-11-08T21:34:51Z",
+    "parents": [
+      "6243313f389fea6219742954bc1205a4a27abf1c",
+      "752704356e584d46fdc88d75552e3a641a3cad44"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/1a3a3e13bd28b16c6bf2f34318a2714fbcedf0e7"
+  },
+  {
+    "sha": "6f4322b9f2eb99ff79398d2b39be03f8f420720a",
+    "message_head": "Update pytest.yml: Added build on pull_request to GH actions",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-08T20:50:48Z",
+    "parents": [
+      "911695206994186bdeab2d2653d64d5c8e06e323"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6f4322b9f2eb99ff79398d2b39be03f8f420720a"
+  },
+  {
+    "sha": "911695206994186bdeab2d2653d64d5c8e06e323",
+    "message_head": "Update README.md: Grammar updates",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-08T20:16:24Z",
+    "parents": [
+      "a532b0325eb89fd9121df51d939335f8908efb0d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/911695206994186bdeab2d2653d64d5c8e06e323"
+  },
+  {
+    "sha": "752704356e584d46fdc88d75552e3a641a3cad44",
+    "message_head": "Merge pull request #5 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-08T20:08:41Z",
+    "parents": [
+      "918ec0e03c88fd0910f211bf6edfb8f92cd97724",
+      "a532b0325eb89fd9121df51d939335f8908efb0d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/752704356e584d46fdc88d75552e3a641a3cad44"
+  },
+  {
+    "sha": "a532b0325eb89fd9121df51d939335f8908efb0d",
+    "message_head": "Merge branch 'main' into feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-08T20:02:12Z",
+    "parents": [
+      "a25c868b30a1c61f8f2d15ea49fbc74807a9f885",
+      "918ec0e03c88fd0910f211bf6edfb8f92cd97724"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a532b0325eb89fd9121df51d939335f8908efb0d"
+  },
+  {
+    "sha": "a25c868b30a1c61f8f2d15ea49fbc74807a9f885",
+    "message_head": "Update README.md: Changed to icons",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-08T19:55:45Z",
+    "parents": [
+      "fe8993bc713c4f991f92156b5f08741b8d32022d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a25c868b30a1c61f8f2d15ea49fbc74807a9f885"
+  },
+  {
+    "sha": "fe8993bc713c4f991f92156b5f08741b8d32022d",
+    "message_head": "Update README.md: Added Images",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-08T19:54:09Z",
+    "parents": [
+      "a162d743f4a4fa69eeb76cfce89a1383b4faa492"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/fe8993bc713c4f991f92156b5f08741b8d32022d"
+  },
+  {
+    "sha": "a162d743f4a4fa69eeb76cfce89a1383b4faa492",
+    "message_head": "README.md: Changes to GH actions",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-07T21:25:15Z",
+    "parents": [
+      "bc089296890b0462b7d874d8b5264a6006dcac03"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a162d743f4a4fa69eeb76cfce89a1383b4faa492"
+  },
+  {
+    "sha": "bc089296890b0462b7d874d8b5264a6006dcac03",
+    "message_head": "Update README.md: Formatting",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-07T21:18:29Z",
+    "parents": [
+      "92df0169637e66b873b82e634436ea64d2085e5d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/bc089296890b0462b7d874d8b5264a6006dcac03"
+  },
+  {
+    "sha": "92df0169637e66b873b82e634436ea64d2085e5d",
+    "message_head": "Rewrite README.md & Added formatting",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-07T21:17:12Z",
+    "parents": [
+      "763d5866957de73c98c3685cc0177694295afd7d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/92df0169637e66b873b82e634436ea64d2085e5d"
+  },
+  {
+    "sha": "763d5866957de73c98c3685cc0177694295afd7d",
+    "message_head": "Update README.md with basic information",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-11-07T21:00:33Z",
+    "parents": [
+      "23a180d38fcc7d3ccf44755b28e6b45d5ed734e6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/763d5866957de73c98c3685cc0177694295afd7d"
+  },
+  {
+    "sha": "918ec0e03c88fd0910f211bf6edfb8f92cd97724",
+    "message_head": "Merge pull request #3 from Thomas-George-T/feature_thomas",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-10-27T00:14:39Z",
+    "parents": [
+      "95c4d1975f01fef669704b159d3b11e40a897233",
+      "23a180d38fcc7d3ccf44755b28e6b45d5ed734e6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/918ec0e03c88fd0910f211bf6edfb8f92cd97724"
+  },
+  {
+    "sha": "23a180d38fcc7d3ccf44755b28e6b45d5ed734e6",
+    "message_head": "Merge branch 'main' into feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-10-26T04:07:49Z",
+    "parents": [
+      "cb24e2bf990ab1ef2e91a728c6b8130f2d2b533b",
+      "95c4d1975f01fef669704b159d3b11e40a897233"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/23a180d38fcc7d3ccf44755b28e6b45d5ed734e6"
+  },
+  {
+    "sha": "cb24e2bf990ab1ef2e91a728c6b8130f2d2b533b",
+    "message_head": "pylint: added init-hook, started the datapipeline, adding zip folder for testing",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-26T03:59:28Z",
+    "parents": [
+      "a83917f6cf8cad0400ec862c7b7a68df0835545c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/cb24e2bf990ab1ef2e91a728c6b8130f2d2b533b"
+  },
+  {
+    "sha": "a83917f6cf8cad0400ec862c7b7a68df0835545c",
+    "message_head": "updating unzip_data and tests",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-26T03:53:12Z",
+    "parents": [
+      "7a64fd850869693f4970154044b9ed0cdc7d53b1"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a83917f6cf8cad0400ec862c7b7a68df0835545c"
+  },
+  {
+    "sha": "7a64fd850869693f4970154044b9ed0cdc7d53b1",
+    "message_head": "Updating download data tests",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-26T03:34:20Z",
+    "parents": [
+      "3e1bec3268f696890080778af22692bb13f5f440"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7a64fd850869693f4970154044b9ed0cdc7d53b1"
+  },
+  {
+    "sha": "3e1bec3268f696890080778af22692bb13f5f440",
+    "message_head": "Moved unzip_data to standalone file",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-25T21:42:02Z",
+    "parents": [
+      "a58f2b2c20672dcc76b35369228a9db5725ba348"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/3e1bec3268f696890080778af22692bb13f5f440"
+  },
+  {
+    "sha": "a58f2b2c20672dcc76b35369228a9db5725ba348",
+    "message_head": "Moved ingest_data() to download_data.py",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-25T21:00:14Z",
+    "parents": [
+      "20e0ac03b340f0583415c9c1e2a60d756250e03e"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a58f2b2c20672dcc76b35369228a9db5725ba348"
+  },
+  {
+    "sha": "95c4d1975f01fef669704b159d3b11e40a897233",
+    "message_head": "Merge pull request #1 from Thomas-George-T/feature_ashkan",
+    "author_name": "Ashkan",
+    "author_email": "61256199+AshyScripts@users.noreply.github.com",
+    "author_date": "2023-10-25T18:43:50Z",
+    "parents": [
+      "8e9628d64b1c91bb1384fdd157b98f9c0b10ef26",
+      "6243313f389fea6219742954bc1205a4a27abf1c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/95c4d1975f01fef669704b159d3b11e40a897233"
+  },
+  {
+    "sha": "6243313f389fea6219742954bc1205a4a27abf1c",
+    "message_head": "Merge branch 'main' into feature_ashkan",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-10-25T18:39:25Z",
+    "parents": [
+      "849efe06d5f07bfaf0b6f0694374de24de58c55f",
+      "8e9628d64b1c91bb1384fdd157b98f9c0b10ef26"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6243313f389fea6219742954bc1205a4a27abf1c"
+  },
+  {
+    "sha": "849efe06d5f07bfaf0b6f0694374de24de58c55f",
+    "message_head": "remove .DS_Store file from data directory",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T18:35:47Z",
+    "parents": [
+      "bb7807467207ab2ddcd097b136edc99cae244be2"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/849efe06d5f07bfaf0b6f0694374de24de58c55f"
+  },
+  {
+    "sha": "8e9628d64b1c91bb1384fdd157b98f9c0b10ef26",
+    "message_head": "Merge pull request #2 from Thomas-George-T/feature_thomas",
+    "author_name": "Thomas George Thomas",
+    "author_email": "thomas.th@northeastern.edu",
+    "author_date": "2023-10-25T18:33:32Z",
+    "parents": [
+      "107a2e2e8d984870d3cc98b4b4a29e7bd72afd7f",
+      "20e0ac03b340f0583415c9c1e2a60d756250e03e"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/8e9628d64b1c91bb1384fdd157b98f9c0b10ef26"
+  },
+  {
+    "sha": "20e0ac03b340f0583415c9c1e2a60d756250e03e",
+    "message_head": "Updating actions and gitignore",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-25T18:22:39Z",
+    "parents": [
+      "16b7ad0511ecd7b9c1c48ac953d62b9a561afbb3"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/20e0ac03b340f0583415c9c1e2a60d756250e03e"
+  },
+  {
+    "sha": "bb7807467207ab2ddcd097b136edc99cae244be2",
+    "message_head": "final cleaning to follow pylint rules for spacing and docstrings",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T18:21:34Z",
+    "parents": [
+      "ac561f8b9b273f9d81a00cf03b647ccbf3f38728"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/bb7807467207ab2ddcd097b136edc99cae244be2"
+  },
+  {
+    "sha": "16b7ad0511ecd7b9c1c48ac953d62b9a561afbb3",
+    "message_head": "update to github actions",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-25T17:46:12Z",
+    "parents": [
+      "107a2e2e8d984870d3cc98b4b4a29e7bd72afd7f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/16b7ad0511ecd7b9c1c48ac953d62b9a561afbb3"
+  },
+  {
+    "sha": "ac561f8b9b273f9d81a00cf03b647ccbf3f38728",
+    "message_head": "update requirements.txt file with openpyxl library",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T17:25:44Z",
+    "parents": [
+      "cf7f45a9f5445345d3a711a531653b6c9b00545c"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/ac561f8b9b273f9d81a00cf03b647ccbf3f38728"
+  },
+  {
+    "sha": "cf7f45a9f5445345d3a711a531653b6c9b00545c",
+    "message_head": "updated .gitignore file",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T17:20:01Z",
+    "parents": [
+      "85795c9cd5f3ba5cdd9e8836fb233ed4dc1443e3"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/cf7f45a9f5445345d3a711a531653b6c9b00545c"
+  },
+  {
+    "sha": "85795c9cd5f3ba5cdd9e8836fb233ed4dc1443e3",
+    "message_head": "delete src/data_preprocessing.py file",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T13:21:11Z",
+    "parents": [
+      "6d671119bdce902a1940dc40b09000b14936bbf9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/85795c9cd5f3ba5cdd9e8836fb233ed4dc1443e3"
+  },
+  {
+    "sha": "6d671119bdce902a1940dc40b09000b14936bbf9",
+    "message_head": "fix test files and path issues using abs path using __file__ path",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T13:19:38Z",
+    "parents": [
+      "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6d671119bdce902a1940dc40b09000b14936bbf9"
+  },
+  {
+    "sha": "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5",
+    "message_head": "add test modules for both transaction_status_handler and anomaly_code_handler modules",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T04:31:32Z",
+    "parents": [
+      "815b7e4377ee5a4f7b4be63fac376975b3694bc4"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5"
+  },
+  {
+    "sha": "815b7e4377ee5a4f7b4be63fac376975b3694bc4",
+    "message_head": "add tests for duplicates_handler module",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T04:16:02Z",
+    "parents": [
+      "53d4f9f4b0600923cb11f05524cfa9352dde65a6"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/815b7e4377ee5a4f7b4be63fac376975b3694bc4"
+  },
+  {
+    "sha": "53d4f9f4b0600923cb11f05524cfa9352dde65a6",
+    "message_head": "add tests for missing_values_handler module",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T04:05:17Z",
+    "parents": [
+      "a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/53d4f9f4b0600923cb11f05524cfa9352dde65a6"
+  },
+  {
+    "sha": "a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5",
+    "message_head": "Add tests for the data_loader module",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T03:57:17Z",
+    "parents": [
+      "e3dc57822babc35cfbe9fc313d3e58bdd41e05ef"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5"
+  },
+  {
+    "sha": "e3dc57822babc35cfbe9fc313d3e58bdd41e05ef",
+    "message_head": "add missing_values_handler, duplicates_handler, transaction_status_handler and anomaly_code_handler modules with pickle paths and pickle paths as the output",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T03:14:06Z",
+    "parents": [
+      "e91e19da05793897edc64b9b8e4a293f79720667"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e3dc57822babc35cfbe9fc313d3e58bdd41e05ef"
+  },
+  {
+    "sha": "e91e19da05793897edc64b9b8e4a293f79720667",
+    "message_head": "update data_loader and create missing_values_handler.py file with input and output as pickle paths",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T02:57:22Z",
+    "parents": [
+      "df0e869355c39ebaae66976b8674626412a5d907"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/e91e19da05793897edc64b9b8e4a293f79720667"
+  },
+  {
+    "sha": "df0e869355c39ebaae66976b8674626412a5d907",
+    "message_head": "update the load_data function in data_loader module",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-25T02:26:23Z",
+    "parents": [
+      "18cf3678bfd3b696d42a997750c67fd68638d11a"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/df0e869355c39ebaae66976b8674626412a5d907"
+  },
+  {
+    "sha": "18cf3678bfd3b696d42a997750c67fd68638d11a",
+    "message_head": "add a function for removing anomalies between StockCode with 0 or 1 digit numbers",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-24T22:20:43Z",
+    "parents": [
+      "10033440bfcf1b41479c0bfefd334b14fedd204e"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/18cf3678bfd3b696d42a997750c67fd68638d11a"
+  },
+  {
+    "sha": "10033440bfcf1b41479c0bfefd334b14fedd204e",
+    "message_head": "add a function for creating a new column with name transaction_status based on the InvoiceNo column",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-24T21:55:14Z",
+    "parents": [
+      "14c32143a514ca92e3f0fa2551170fdf2af04dc9"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/10033440bfcf1b41479c0bfefd334b14fedd204e"
+  },
+  {
+    "sha": "14c32143a514ca92e3f0fa2551170fdf2af04dc9",
+    "message_head": "add a function for dropping duplicates based on a subset of columns",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-24T21:44:47Z",
+    "parents": [
+      "a34d65325ff7b7ae3b5ee5bbdb670b0bfc591d3f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/14c32143a514ca92e3f0fa2551170fdf2af04dc9"
+  },
+  {
+    "sha": "a34d65325ff7b7ae3b5ee5bbdb670b0bfc591d3f",
+    "message_head": "update data_loader with the error message and add data_preprocessing.py module for removing missing values",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-24T20:31:54Z",
+    "parents": [
+      "82eb994dd5b8d6efcb89035e36a0330629c45840"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/a34d65325ff7b7ae3b5ee5bbdb670b0bfc591d3f"
+  },
+  {
+    "sha": "82eb994dd5b8d6efcb89035e36a0330629c45840",
+    "message_head": "add a function for loading the data from data directory",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-24T20:13:16Z",
+    "parents": [
+      "d2873b4c8ede765562ccf530ce3fec7e333c748a"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/82eb994dd5b8d6efcb89035e36a0330629c45840"
+  },
+  {
+    "sha": "d2873b4c8ede765562ccf530ce3fec7e333c748a",
+    "message_head": "create an env and update .gitignore file",
+    "author_name": "Ashkan Ghanavati",
+    "author_email": "ashkan.ghanavati92@gmail.com",
+    "author_date": "2023-10-24T16:06:22Z",
+    "parents": [
+      "107a2e2e8d984870d3cc98b4b4a29e7bd72afd7f"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d2873b4c8ede765562ccf530ce3fec7e333c748a"
+  },
+  {
+    "sha": "107a2e2e8d984870d3cc98b4b4a29e7bd72afd7f",
+    "message_head": "Added pytest --pylint",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-18T18:15:34Z",
+    "parents": [
+      "816213ad43fb0f82a0a942b4e216a97b95fa0cfe"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/107a2e2e8d984870d3cc98b4b4a29e7bd72afd7f"
+  },
+  {
+    "sha": "816213ad43fb0f82a0a942b4e216a97b95fa0cfe",
+    "message_head": "added pytest --pylint",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-18T18:14:42Z",
+    "parents": [
+      "d1ba34a251a8006227e8d94163f4f14f3e324f8d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/816213ad43fb0f82a0a942b4e216a97b95fa0cfe"
+  },
+  {
+    "sha": "d1ba34a251a8006227e8d94163f4f14f3e324f8d",
+    "message_head": "Adding pylint",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-18T17:51:56Z",
+    "parents": [
+      "47b744fb46a3d01cd2c20402dbb5a202afe0524d"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/d1ba34a251a8006227e8d94163f4f14f3e324f8d"
+  },
+  {
+    "sha": "47b744fb46a3d01cd2c20402dbb5a202afe0524d",
+    "message_head": "Adding pytest-mock to requirements",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-18T16:35:53Z",
+    "parents": [
+      "6528e3d39a07e68a5ebf9f71e22afa52bffb8e50"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/47b744fb46a3d01cd2c20402dbb5a202afe0524d"
+  },
+  {
+    "sha": "6528e3d39a07e68a5ebf9f71e22afa52bffb8e50",
+    "message_head": "Updating requirements",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-18T16:31:46Z",
+    "parents": [
+      "cdf8fc263761f440245c9ef4cd4962b5ba5490ec"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/6528e3d39a07e68a5ebf9f71e22afa52bffb8e50"
+  },
+  {
+    "sha": "cdf8fc263761f440245c9ef4cd4962b5ba5490ec",
+    "message_head": "Adding initial tests",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-18T16:29:07Z",
+    "parents": [
+      "c51697e77be34b9c849c8cbb78e814ebb8dca0dc"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/cdf8fc263761f440245c9ef4cd4962b5ba5490ec"
+  },
+  {
+    "sha": "c51697e77be34b9c849c8cbb78e814ebb8dca0dc",
+    "message_head": "Updating versions in pytest build",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-18T15:23:35Z",
+    "parents": [
+      "7972dd88d82c1217eb9181a2d192e5897c09e478"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/c51697e77be34b9c849c8cbb78e814ebb8dca0dc"
+  },
+  {
+    "sha": "7972dd88d82c1217eb9181a2d192e5897c09e478",
+    "message_head": "Basic Pytest GH actions",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-10-18T15:17:24Z",
+    "parents": [
+      "0261676922ea495f3fe51f805d23b40ce52a0b32"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/7972dd88d82c1217eb9181a2d192e5897c09e478"
+  },
+  {
+    "sha": "0261676922ea495f3fe51f805d23b40ce52a0b32",
+    "message_head": "Added data and requirements",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-09-27T00:17:07Z",
+    "parents": [
+      "b6bd35f2d11bfc4a923282a0f2c27699c63fdb17"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/0261676922ea495f3fe51f805d23b40ce52a0b32"
+  },
+  {
+    "sha": "b6bd35f2d11bfc4a923282a0f2c27699c63fdb17",
+    "message_head": "Adding datasets",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-09-26T22:17:09Z",
+    "parents": [
+      "4562fc88236aa89896f8ec09b06de65107460cce"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/b6bd35f2d11bfc4a923282a0f2c27699c63fdb17"
+  },
+  {
+    "sha": "4562fc88236aa89896f8ec09b06de65107460cce",
+    "message_head": "Added Initial Folder Structure",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-09-23T17:12:35Z",
+    "parents": [
+      "f7d84d162ebbadff3794c0ef7ccbd29199e2b270"
+    ],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/4562fc88236aa89896f8ec09b06de65107460cce"
+  },
+  {
+    "sha": "f7d84d162ebbadff3794c0ef7ccbd29199e2b270",
+    "message_head": "first commit",
+    "author_name": "Thomas-George-T",
+    "author_email": "tgt555@gmail.com",
+    "author_date": "2023-09-23T17:08:42Z",
+    "parents": [],
+    "html_url": "https://github.com/Thomas-George-T/Ecommerce-Data-MLOps/commit/f7d84d162ebbadff3794c0ef7ccbd29199e2b270"
+  }
+]

@@ -1,0 +1,9 @@
+import requests
+import json
+
+health_check_url = 'http://127.0.0.1:8080/ping'
+
+response_health = requests.get(health_check_url)
+health_status = response_health.json()
+
+print(health_status)

@@ -1,0 +1,686 @@
+[
+  {
+    "file": "src/anomaly_code_handler.py",
+    "module_doc": "A module for removing anomalies from StockCode column if they have 0 or 1 \ndigit characters since the normal values are 5 or 6 digits.",
+    "functions": [
+      {
+        "name": "handle_anomalous_codes",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, remove rows with stock codes that \nhave 0 or 1 numeric characters, \nthen save the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file.",
+        "start_line": 16,
+        "end_line": 43,
+        "source_sample": "def handle_anomalous_codes(input_pickle_path=INPUT_PICKLE_PATH,\n                           output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n    Load the DataFrame from the input pickle, remove rows with stock codes that \n    have 0 or 1 numeric characters, \n    then save the DataFrame back to a pickle and return its path.\n    \n    :param input_pickle_path: Path to the input pickle file.\n    :param output_pickle_path: Path to the output pickle file.\n    :return: Path to the saved pickle file.\n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n    # Finding the stock codes with 0 and 1 numeric characters\n    unique_stock_codes = df['StockCode'].unique()\n    anomalous_stock_codes = [code for code in unique_stock_codes if\n                             sum(c.isdigit() for c in str(code)) in (0, 1)]\n    # Removing rows with these anomalous stock codes\n    df = df[~df['StockCode'].isin(anomalous_stock_codes)]\n    # Save the data to output pickle\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/cancellation_details.py",
+    "module_doc": "This module shows how cancelling of orders affect the business and the data.\nIt also shows the frequency of cancellation and cancellation rate.",
+    "functions": [
+      {
+        "name": "cancellation_details",
+        "sig": "(input_pickle_file, geographic_pickle_file, output_pickle_file)",
+        "doc": "Process cancellation frequency and calculate cancellation rates for customers.\n\n:param input_pickle_file: Input pickle file path containing transaction data.\n:param geographic_pickle_file: Input pickle file path after geographic_features.\n:param output_pickle_file: Output pickle file path for storing processed customer data.\n:return: Processed customer data with cancellation details and rates.",
+        "start_line": 16,
+        "end_line": 50,
+        "source_sample": "def cancellation_details(input_pickle_file=input_pickle_path,\ngeographic_pickle_file=geographic_pickle_path, output_pickle_file= output_pickle_path):\n    \"\"\"\n    Process cancellation frequency and calculate cancellation rates for customers.\n\n    :param input_pickle_file: Input pickle file path containing transaction data.\n    :param geographic_pickle_file: Input pickle file path after geographic_features.\n    :param output_pickle_file: Output pickle file path for storing processed customer data.\n    :return: Processed customer data with cancellation details and rates.\n    \"\"\"\n    if os.path.exists(input_pickle_file):\n        with open(input_pickle_file, \"rb\") as file:\n            df = pickle.load(file)\n\n    if os.path.exists(geographic_pickle_file):\n        with open(geographic_pickle_file, \"rb\") as file:\n            customer_data = pickle.load(file)\n\n    total_transactions = df.groupby('CustomerID')['InvoiceNo'].nunique().reset_index()\n    df['Transaction_Status'] = np.where(df['InvoiceNo'].astype(str).str.startswith('C'),\n    'Cancelled', 'Completed')\n    cancelled_transactions = df[df['Transaction_Status'] == 'Cancelled']\n    cancellation_frequency = (\n        cancelled_transactions.groupby('CustomerID')['InvoiceNo'].nunique().reset_index()\n    )\n    cancellation_frequency.rename(columns={'InvoiceNo': 'Cancellation_Frequency'}, inplace=True)\n    customer_data = pd.merge(customer_data, cancellation_frequency, on='CustomerID', how='left')\n    customer_data['Cancellation_Frequency'].fillna(0, inplace=True)\n    customer_data['Cancellation_Rate'] =(\n        customer_data['Cancellation_Frequency'] / total_transactions['InvoiceNo']\n    )\n    with open(output_pickle_file, \"wb\") as file:\n        pickle.dump(customer_data, file)\n    print(f\"Data saved to {output_pickle_file}.\")\n    return output_pickle_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/cleaning_description.py",
+    "module_doc": "A module for cleaning the description column",
+    "functions": [
+      {
+        "name": "cleaning_description",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, \nremove rows where the description cointains service related information\nand Standardize the text to uppercase\nsave the DataFrame back to a pickle and return its path.",
+        "start_line": 14,
+        "end_line": 39,
+        "source_sample": "def cleaning_description(input_pickle_path=INPUT_PICKLE_PATH,\n                            output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n    Load the DataFrame from the input pickle, \n    remove rows where the description cointains service related information\n    and Standardize the text to uppercase\n    save the DataFrame back to a pickle and return its path.\n    \n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n\n    service_related_descriptions = [\"Next Day Carriage\", \"High Resolution Image\"]\n\n    df = df[~df['Description'].isin(service_related_descriptions)]\n\n    df['Description'] = df['Description'].str.upper()\n\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/correlation.py",
+    "module_doc": "Inputs: {\n    path: file saving location, \n    correlation threshold: threshold for determining high correlations}\nOutputs: { \n    Image: png file with masked heatmap\n    Matrix: Correlation Matrix as parquet}\nReturns: None",
+    "functions": [
+      {
+        "name": "correlation_check",
+        "sig": "(in_path, out_path, correlation_threshold)",
+        "doc": "Global variables(can only be changed through Config file)\nArgs:\nin_path(str): ingest_path, \nout_path(str1,str2):\ncvr_threshold[float]: cumulative explained variance threshold for variance\ndrop_cols: column to be ommitted for pca",
+        "start_line": 35,
+        "end_line": 96,
+        "source_sample": "def correlation_check(in_path=__INGESTPATH__,out_path=__OUTPUTPATH__,\\\n    correlation_threshold=corr_thresh):\n    \"\"\"\n    Global variables(can only be changed through Config file)\n    Args:\n    in_path(str): ingest_path, \n    out_path(str1,str2):\n    cvr_threshold[float]: cumulative explained variance threshold for variance\n    drop_cols: column to be ommitted for pca\n    \"\"\"\n    #Placeholder for data\n    data = None\n\n    #Try to Load data from pickle\n    try:\n        data = pd.read_parquet(in_path)\n    except FileNotFoundError:\n        raise FileNotFoundError(f\"File not found at {in_path}.\") from None\n\n    #Check datatype\n    if not isinstance(data,pd.DataFrame):\n        raise TypeError(\"File did not load DataFrame correctly.\") from None\n\n    print(data)\n\n    #check save paths are strings\n    try:\n        assert isinstance(out_path[0],str)\n    except AssertionError as ae:\n        raise TypeError(\"Image Save Path should be a String!\") from ae\n\n    try:\n        assert isinstance(out_path[0],str)\n    except AssertionError as ae:\n        raise TypeError(\"Parquet Save Path should be a String!\") from ae\n\n    #Value check for correlation_thresh\n    if not 0<correlation_threshold<1:\n        raise ValueError(\"cvr_thresh should lie between 0 and 1.\")\n\n    # Calculate the correlation matrix, **Future deprecation warning**\n    corr = data.corr()\n\n    # Create a mask to only show the lower triangle of the matrix (since it's mirrored around its\n    # top-left to bottom-right diagonal)\n    mask = np.zeros_like(corr)\n    mask[np.triu_indices_from(mask, k=1)] = True\n\n    # Define a custom colormap\n    colors = ['#ff6200', '#ffcaa8', 'white', '#ffcaa8', '#ff6200']\n    my_cmap = LinearSegmentedColormap.from_list('custom_map', colors, N=256)\n\n    # Plot the heatmap\n    fig=plt.figure(figsize=(10, 10))\n    plt.title(f'Correlation Matrix, Correlation Threshold:{correlation_threshold}', fontsize=14)\n    sns.heatmap(corr, mask=mask, cmap=my_cmap, annot=True, center=0, fmt='.2f', linewidths=2)\n\n    #Save heatmap as image for reference\n    save_heatmap(fig,out_path[0])\n\n    #saving corr matrix\n    save_correlations_as_parquet(corr,out_path[1])\n"
+      },
+      {
+        "name": "save_heatmap",
+        "sig": "(fig, path)",
+        "doc": "Saves the heatmap as png file.\nInputs: data: data to be saved, path: file saving location\nReturns: None\nExecutes: saving of png, except prompts the user to proceed if file open.\nError Checks: FileNotFoundError",
+        "start_line": 98,
+        "end_line": 119,
+        "source_sample": "def save_heatmap(fig,path):\n    \"\"\"\n    Saves the heatmap as png file.\n    Inputs: data: data to be saved, path: file saving location\n    Returns: None\n    Executes: saving of png, except prompts the user to proceed if file open.\n    Error Checks: FileNotFoundError\n    \"\"\"\n    try:\n        p=os.path.dirname(path)\n        if not os.path.exists(p):\n            os.makedirs(p)\n        fig.savefig(path)\n        print(f\"File saved successfully at Path: {path}.\")\n    except FileExistsError as fe:\n        result = yes_no_dialog(\n            title='File Exists Error',\n            text=f\"Existing file in use. Please close to overwrite the file. Error: {fe}.\").run()\n        if result:\n            fig.savefig(path)\n        else:\n            print(f\"Could not save File at Path: {path}.\")\n"
+      },
+      {
+        "name": "save_correlations_as_parquet",
+        "sig": "(data, path)",
+        "doc": "Saves the correlation matrix as parquet.\nInputs: data: data to be saved, path: file saving location\nReturns: None\nExecutes: raises Attribute error if data is not df as /\nto_parquet would not be executed.\nError Checks: FileNotFoundError",
+        "start_line": 121,
+        "end_line": 145,
+        "source_sample": "def save_correlations_as_parquet(data,path):\n    \"\"\"\n    Saves the correlation matrix as parquet.\n    Inputs: data: data to be saved, path: file saving location\n    Returns: None\n    Executes: raises Attribute error if data is not df as /\n    to_parquet would not be executed.\n    Error Checks: FileNotFoundError\n    \"\"\"\n    try:\n        p=os.path.dirname(path)\n        if not os.path.exists(p):\n            os.makedirs(p)\n        data.to_parquet(path)\n        print(f\"File saved successfully at Path: {path}.\")\n    except AttributeError as ae:\n        raise AttributeError(\"to_parquet could not be executed as object not DataFrame.\") from ae\n    except FileExistsError as fe:\n        result = yes_no_dialog(\n            title='File Exists Error',\n            text=f\"Existing file in use. Please close to overwrite the file. Error: {fe}.\").run()\n        if result:\n            data.to_parquet(path)\n        else:\n            print(f\"Could not save File at Path: {path}.\")\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/customers_behavior.py",
+    "module_doc": "The module shows how the behaviorial patterns of customers affect the business\nbased on weekly frequency.",
+    "functions": [
+      {
+        "name": "customers_behavior",
+        "sig": "(input_pickle_file, unique_pickle_file, output_pickle_file)",
+        "doc": "Process customer behavior and generate relevant insights.\n\n:param input_pickle_file: Input pickle file path containing customer transaction data.\n:param unique_pickle_file: Input pickle file path after unique_products.\n:param output_pickle_file: Output pickle file path for storing processed\n                           customer behavior data.\n:return: Processed customer behavior data with insights.",
+        "start_line": 16,
+        "end_line": 69,
+        "source_sample": "def customers_behavior(input_pickle_file=input_pickle_path, unique_pickle_file=unique_pickle_path,\noutput_pickle_file=output_pickle_path):\n    \"\"\"\n    Process customer behavior and generate relevant insights.\n\n    :param input_pickle_file: Input pickle file path containing customer transaction data.\n    :param unique_pickle_file: Input pickle file path after unique_products.\n    :param output_pickle_file: Output pickle file path for storing processed\n                               customer behavior data.\n    :return: Processed customer behavior data with insights.\n    \"\"\"\n    if os.path.exists(input_pickle_file):\n        with open(input_pickle_file, \"rb\") as file:\n            df = pickle.load(file)\n\n    if os.path.exists(unique_pickle_file):\n        with open(unique_pickle_file, \"rb\") as file:\n            customer_data = pickle.load(file)\n\n    df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])\n    df['InvoiceDay'] = df['InvoiceDate'].dt.date\n    df['Day_Of_Week'] = df['InvoiceDate'].dt.dayofweek\n    df['Hour'] = df['InvoiceDate'].dt.hour\n\n    days_between_purchases = (\n        df.groupby('CustomerID')['InvoiceDay']\n        .apply(lambda x: (x.diff().dropna()).apply(lambda y: y.days))\n    )\n    average_days_between_purchases = (\n        days_between_purchases.groupby('CustomerID').mean().reset_index()\n    )\n    average_days_between_purchases.rename(\n        columns={'InvoiceDay': 'Average_Days_Between_Purchases'}, inplace=True)\n\n    favorite_shopping_day = (\n        df.groupby(['CustomerID', 'Day_Of_Week']).size().reset_index(name='Count')\n    )\n    favorite_shopping_day = (\n        favorite_shopping_day.loc[favorite_shopping_day.groupby('CustomerID')['Count'].idxmax()]\n        [['CustomerID', 'Day_Of_Week']]\n    )\n    favorite_shopping_hour = df.groupby(['CustomerID', 'Hour']).size().reset_index(name='Count')\n    favorite_shopping_hour = (\n        favorite_shopping_hour.loc[favorite_shopping_hour.groupby('CustomerID')\n        ['Count'].idxmax()][['CustomerID', 'Hour']]\n    )\n    customer_data = pd.merge(customer_data, average_days_between_purchases, on='CustomerID')\n    customer_data = pd.merge(customer_data, favorite_shopping_day, on='CustomerID')\n    customer_data = pd.merge(customer_data, favorite_shopping_hour, on='CustomerID')\n\n    with open(output_pickle_file, \"wb\") as file:\n        pickle.dump(customer_data, file)\n    print(f\"Data saved to {output_pickle_file}.\")\n    return output_pickle_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/datapipeline.py",
+    "module_doc": "Modularized Data pipeline to form DAGs in the future",
+    "functions": [],
+    "classes": []
+  },
+  {
+    "file": "src/data_loader.py",
+    "module_doc": "Module to handle the loading of e-commerce dataset from either pickle or Excel file format.",
+    "functions": [
+      {
+        "name": "load_data",
+        "sig": "(pickle_path, excel_path)",
+        "doc": "Load the e-commerce dataset.\nFirst, try to load from the pickle file. If it doesn't exist, load from the excel file.\nRegardless of the source, save the loaded data as a pickle for future use and\nreturn the path to that pickle.\n\n:param pickle_path: Path to the pickle file.\n:param excel_path: Path to the Excel file.\n:return: Path to the saved pickle file.",
+        "start_line": 17,
+        "end_line": 48,
+        "source_sample": "def load_data(pickle_path=DEFAULT_PICKLE_PATH, excel_path=DEFAULT_EXCEL_PATH):\n    \"\"\"\n    Load the e-commerce dataset.\n    First, try to load from the pickle file. If it doesn't exist, load from the excel file.\n    Regardless of the source, save the loaded data as a pickle for future use and\n    return the path to that pickle.\n    \n    :param pickle_path: Path to the pickle file.\n    :param excel_path: Path to the Excel file.\n    :return: Path to the saved pickle file.\n    \"\"\"\n    # Placeholder for the DataFrame\n    df = None\n    # Check if pickle file exists\n    if os.path.exists(pickle_path):\n        with open(pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n        print(f\"Data loaded successfully from {pickle_path}.\")\n    # If pickle doesn't exist, load from Excel\n    elif os.path.exists(excel_path):\n        df = pd.read_excel(excel_path)\n        print(f\"Data loaded from {excel_path}.\")\n    else:\n        error_message = f\"No data found in the specified paths: {pickle_path} or {excel_path}\"\n        print(error_message)\n        raise FileNotFoundError(error_message)\n    # Save the data to pickle for future use (or re-save it if loaded from existing pickle)\n    os.makedirs(os.path.dirname(pickle_path), exist_ok=True)\n    with open(pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {pickle_path} for future use.\")\n    return pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/download_data.py",
+    "module_doc": "Function to download and ingest the data file",
+    "functions": [
+      {
+        "name": "ingest_data",
+        "sig": "(file_url)",
+        "doc": "Function to download file from URL\nArgs:\n    file_url: URL of the file, A default is used if not specified\nReturns:\n    zipfile_path: The zipped file path to the data",
+        "start_line": 9,
+        "end_line": 36,
+        "source_sample": "def ingest_data(file_url=DEFAULT_FILE_URL):\n    \"\"\"\n    Function to download file from URL\n    Args:\n        file_url: URL of the file, A default is used if not specified\n    Returns:\n        zipfile_path: The zipped file path to the data\n    \"\"\"\n    # Send an HTTP GET request to the URL\n    response = requests.get(file_url, timeout=30)\n\n    print(\"Downloading Data\")\n\n    # Set the root directory variable using a relative path\n    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))\n\n    # Path to store the zipfile\n    zipfile_path=os.path.join(root_dir, 'data','data.zip')\n    # Check if the request was successful (status code 200)\n    if response.status_code == 200:\n        # Save file to data\n        with open(zipfile_path, \"wb\") as file:\n            file.write(response.content)\n        print(f\"File downloaded successfully. Zip file available under {zipfile_path}\")\n    else:\n        print(f\"Failed to download the file. Status code: {response.status_code}\")\n\n    return zipfile_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/duplicates_handler.py",
+    "module_doc": "A module for removing duplicates in dataset based on subset of \nfollowing columns:\n- InvoiceNo\n- StockCode\n- Description\n- CustomerID\n- Quantity",
+    "functions": [
+      {
+        "name": "remove_duplicates",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, drop duplicates based on certain columns.\nSave the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file.",
+        "start_line": 21,
+        "end_line": 44,
+        "source_sample": "def remove_duplicates(input_pickle_path=INPUT_PICKLE_PATH, output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n    Load the DataFrame from the input pickle, drop duplicates based on certain columns.\n    Save the DataFrame back to a pickle and return its path.\n    \n    :param input_pickle_path: Path to the input pickle file.\n    :param output_pickle_path: Path to the output pickle file.\n    :return: Path to the saved pickle file.\n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n    # Columns to check for duplicates\n    columns_to_check = ['InvoiceNo', 'StockCode', 'Description', 'CustomerID', 'Quantity']\n    # Drop duplicates\n    df = df.drop_duplicates(subset=columns_to_check)\n    # Save the data to output pickle\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/geographic_features.py",
+    "module_doc": "This module defines the distribution of the customers' data with respect to regions.",
+    "functions": [
+      {
+        "name": "geographic_features",
+        "sig": "(input_pickle_file, behavorial_pickle_file, output_pickle_file)",
+        "doc": "Process geographic features and merge with behavioral data.\n\n:param input_pickle_file: Input pickle file path containing\n                          transaction data with geographic information.\n:param behavioral_pickle_file: Input pickle file path after customer_behavior.\n:param output_pickle_file: Output pickle file path for storing processed\n                           customer data with geographic features.\n:return: Processed customer data with added\n         geographic features(whether the datapoint is from UK or not).",
+        "start_line": 14,
+        "end_line": 53,
+        "source_sample": "def geographic_features(input_pickle_file=input_pickle_path,\nbehavorial_pickle_file=behavorial_pickle_path, output_pickle_file=output_pickle_path):\n    \"\"\"\n    Process geographic features and merge with behavioral data.\n\n    :param input_pickle_file: Input pickle file path containing\n                              transaction data with geographic information.\n    :param behavioral_pickle_file: Input pickle file path after customer_behavior.\n    :param output_pickle_file: Output pickle file path for storing processed\n                               customer data with geographic features.\n    :return: Processed customer data with added\n             geographic features(whether the datapoint is from UK or not).\n    \"\"\"\n    if os.path.exists(input_pickle_file):\n        with open(input_pickle_file, \"rb\") as file:\n            df = pickle.load(file)\n\n    if os.path.exists(behavorial_pickle_file):\n        with open(behavorial_pickle_file, \"rb\") as file:\n            customer_data = pickle.load(file)\n\n    df['Country'].value_counts(normalize=True).head()\n    customer_country =(\n        df.groupby(['CustomerID', 'Country']).size().reset_index(name='Number_of_Transactions')\n    )\n    customer_main_country =(\n        customer_country.sort_values('Number_of_Transactions',\n        ascending=False).drop_duplicates('CustomerID')\n    )\n    customer_main_country['Is_UK'] =(\n        customer_main_country['Country'].apply(lambda x: 1 if x == 'United Kingdom' else 0)\n    )\n    customer_data =(\n        pd.merge(customer_data, customer_main_country[['CustomerID', 'Is_UK']],\n    on='CustomerID', how='left')\n    )\n    with open(output_pickle_file, \"wb\") as file:\n        pickle.dump(customer_data, file)\n    print(f\"Data saved to {output_pickle_file}.\")\n    return output_pickle_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/histogram_analysis.py",
+    "module_doc": "Module for Analyzing Customer Clusters\nusing Radar Chart",
+    "functions": [
+      {
+        "name": "rfm_histograms",
+        "sig": "(in_path)",
+        "doc": "Docstring",
+        "start_line": 19,
+        "end_line": 59,
+        "source_sample": "def rfm_histograms(in_path=__INGESTPATH__):\n    \"\"\"\n    Docstring\n    \"\"\"\n    #Placeholder for data\n    df_customer = None\n\n    #File Loading\n    try:\n        df_customer = pd.read_parquet(in_path)\n    except FileNotFoundError:\n        raise FileNotFoundError(f\"File not found at {in_path}.\") from None\n\n    #Plot histograms for each feature segmented by the clusters\n    features = df_customer.columns[1:-1]\n    clusters = df_customer['cluster'].unique()\n    clusters.sort()\n\n    # Setting up the subplots\n    n_rows = len(features)\n    n_cols = len(clusters)\n\n    fig, axes = plt.subplots(n_rows, n_cols, figsize=(48, 6*n_rows))\n    fig.tight_layout()\n    plt.rcParams.update({'font.size': 12})\n\n    # Plotting histograms\n    for i, feature in enumerate(features):\n        for j, cluster in enumerate(clusters):\n            data = df_customer[df_customer['cluster'] == cluster][feature]\n            axes[i, j].hist(data, bins=20, color=colors[j], edgecolor='w', alpha=0.7)\n            axes[i, j].set_title(f'Cluster {cluster} - {feature}', fontsize=10)\n            axes[i, j].set_xlabel('')\n            axes[i, j].set_ylabel('')\n\n    # Adjusting layout to prevent overlapping\n    fig.show()\n\n    if not os.path.exists(__SAVEPATH__):\n        os.makedirs(__SAVEPATH__)\n    fig.savefig(os.path.join(__SAVEPATH__,\"histogram_analysis.png\"),bbox_inches='tight')\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/missing_values_handler.py",
+    "module_doc": "A module for removing missig values from dataset based on CustomeID\nand Description column.",
+    "functions": [
+      {
+        "name": "handle_missing",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, \nremove rows with missing values in 'CustomerID' and 'Description' columns.\nThen, check if there are any missing values left in the dataframe.\nIf there are, raise a ValueError. Finally, \nsave the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file.",
+        "start_line": 15,
+        "end_line": 45,
+        "source_sample": "def handle_missing(input_pickle_path=INPUT_PICKLE_PATH, output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n    Load the DataFrame from the input pickle, \n    remove rows with missing values in 'CustomerID' and 'Description' columns.\n    Then, check if there are any missing values left in the dataframe.\n    If there are, raise a ValueError. Finally, \n    save the DataFrame back to a pickle and return its path.\n    \n    :param input_pickle_path: Path to the input pickle file.\n    :param output_pickle_path: Path to the output pickle file.\n    :return: Path to the saved pickle file.\n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n    # Remove rows with missing values in 'CustomerID' and 'Description'\n    df = df.dropna(subset=['CustomerID', 'Description'])\n    # Check if there are any missing values left\n    if df.isna().sum().sum() != 0:\n        missing_count = df.isna().sum().sum()\n        message = f\"There are {missing_count} missing values left in the dataframe.\"\n        print(message)\n        raise ValueError(message)\n    # Save the data to output pickle\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/outlier_treatment.py",
+    "module_doc": "A module to detect and remove outliers",
+    "functions": [
+      {
+        "name": "removing_outlier",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": " Load the DataFrame from the input pickle, \ndetect and remove outliers\nsave the DataFrame back to a pickle and return its path",
+        "start_line": 16,
+        "end_line": 48,
+        "source_sample": "def removing_outlier(input_pickle_path=INPUT_PICKLE_PATH, output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n     Load the DataFrame from the input pickle, \n    detect and remove outliers\n    save the DataFrame back to a pickle and return its path\n    \n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n\n    model = IsolationForest(contamination=0.05, random_state=0)\n\n    df['Outlier_Scores'] = model.fit_predict(df.iloc[:, 1:].to_numpy())\n\n    df['Is_Outlier'] = [1 if x == -1 else 0 for x in df['Outlier_Scores']]\n\n    df_cleaned = df[df['Is_Outlier'] == 0]\n\n    #dropping the columns\n    df_cleaned = df_cleaned.drop(columns=['Outlier_Scores', 'Is_Outlier'])\n\n    #reseting the index\n    df_cleaned.reset_index(drop=True, inplace=True)\n\n\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df_cleaned, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/pca.py",
+    "module_doc": "Modular script to perform PCA on incoming data.\nScripts checks PC ranging from 2 to 8 until cumulative explained variance of threshold is achieved.\nInput: Path string to load pickle/parquet file.\nOutput: Path string for parquet file.",
+    "functions": [
+      {
+        "name": "pc_analyzer",
+        "sig": "(in_path, out_path, drop_cols, cvr_thresh)",
+        "doc": "Global variables(can only be changed through Config file)\nArgs:\npaths(str1,str2): str1:ingest_path, str2:output_path\nCVR_THRESHOLDold[float]: cumulative explained variance threshold for variance\ndrop_cols: column to be ommitted for pca",
+        "start_line": 27,
+        "end_line": 96,
+        "source_sample": "def pc_analyzer(in_path=__INGESTPATH__,out_path=__OUTPUTPATH__,\\\n    drop_cols=NOT_COLUMNS,cvr_thresh=CVR_THRESHOLD):\n    \"\"\"\n    Global variables(can only be changed through Config file)\n    Args:\n    paths(str1,str2): str1:ingest_path, str2:output_path\n    CVR_THRESHOLDold[float]: cumulative explained variance threshold for variance\n    drop_cols: column to be ommitted for pca\n    \"\"\"\n    #Placeholder for data\n    data = None\n\n    #File Loading\n    try:\n        data = pd.read_parquet(in_path)\n    except FileNotFoundError:\n        raise FileNotFoundError(f\"File not found at {in_path}.\") from None\n\n    #Check datatype\n    if not isinstance(data,pd.DataFrame):\n        raise TypeError(\"File did not load DataFrame correctly.\") from None\n\n    #Check all required columns exist in DF\n    try:\n        assert all(col in data.columns for col in drop_cols)\n    except AssertionError as exc:\n        raise KeyError(\"Column not found in Dataframe.\") from exc\n\n    #Check columns <4, PCA not required\n    if len(data.columns)<4:\n        raise ValueError(\"Columns less than 4. Need not proceed with PCA.\")\n\n    #Value check for CVR_THRESHOLD\n    if not 0<cvr_thresh<1:\n        raise ValueError(\"CVR_THRESHOLD should lie between 0 and 1.\")\n\n    #Selecting columns in data for PCA\n    data.set_index('CustomerID', inplace=True)\n    data = data.drop(drop_cols, axis=1)\n\n    print(data)\n\n    n = pca_(data,cvr_thresh)\n    pca = PCA(n_components=n).fit(data)\n\n    # Getting post-PCA data\n    reduced_data = pca.transform(data)\n    columns=[f'PC{i+1}' for i in range(pca.n_components_)]\n    pca_transformed_data = pd.DataFrame(reduced_data, columns=columns)\n    pca_transformed_data.index = data.index\n    print(pca_transformed_data)\n\n    #saving data as parquet\n    try:\n        p=os.path.dirname(out_path)\n        if not os.path.exists(p):\n            os.makedirs(p)\n        pca_transformed_data.to_parquet(out_path)\n        print(f\"File saved successfully at Path: {out_path}.\")\n    except FileExistsError:\n        result = yes_no_dialog(\n            title='File Exists Error',\n            text=\"Existing file in use. Please close to overwrite the file. Error:.\").run()\n        if result:\n            pca_transformed_data.to_parquet(out_path)\n            print(f\"File saved successfully at Path: {out_path}.\")\n        else:\n            print(f\"Could not save File at Path: {out_path}.\")\n\n    return out_path\n"
+      },
+      {
+        "name": "pca_",
+        "sig": "(data, thresh)",
+        "doc": "Refactoring for iterative check of n_components \nto cover threshold cumulative explained variance.\ndata: input data for pca\nthresh[float]: cumulative explained variance threshold for variance",
+        "start_line": 98,
+        "end_line": 123,
+        "source_sample": "def pca_(data,thresh):\n    \"\"\"\n    Refactoring for iterative check of n_components \n    to cover threshold cumulative explained variance.\n    data: input data for pca\n    thresh[float]: cumulative explained variance threshold for variance\n    \"\"\"\n    #PCA\n    n_components_range=np.arange(2,9)\n    n=[]\n    cumulative_var_ratio=[0]\n    for n_components in n_components_range:\n        if cumulative_var_ratio[-1] <= thresh:\n            pca_check=PCA(n_components=n_components).fit(data)\n            var_ratio = pca_check.explained_variance_ratio_\n            cumulative_var_ratio.append(np.cumsum(var_ratio)[n_components-1])\n            n.append(n_components)\n            print(n[-1],cumulative_var_ratio[-1])\n        elif n_components==n_components_range[-1]:\n            n=n_components\n            break\n        else:\n            n=n_components\n            break\n    print(n,cumulative_var_ratio)\n    return n\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/radar_analysis.py",
+    "module_doc": "Module for Analyzing Customer Clusters\nusing Radar Chart",
+    "functions": [
+      {
+        "name": "radar_charts",
+        "sig": "(in_path)",
+        "doc": "Docstring",
+        "start_line": 21,
+        "end_line": 58,
+        "source_sample": "def radar_charts(in_path=__INGESTPATH__):\n    \"\"\"\n    Docstring\n    \"\"\"\n    #Placeholder for data\n    data = None\n\n    #File Loading\n    try:\n        data = pd.read_parquet(in_path)\n    except FileNotFoundError:\n        raise FileNotFoundError(f\"File not found at {in_path}.\") from None\n\n    # Scaling uniformly\n    scaler = StandardScaler()\n    df_customer_standardized = scaler.fit_transform(data.drop(columns=['cluster'], axis=1))\n\n    # Create a new dataframe with standardized values and add the cluster column back\n    df_customer_standardized = pd.DataFrame(df_customer_standardized, \\\n        columns=data.columns[:-1], index=data.index)\n    df_customer_standardized['cluster'] = data['cluster']\n\n    cluster_centroids = df_customer_standardized.groupby('cluster').mean()\n    print(cluster_centroids)\n\n    #Plotting Figures\n    clusters=cluster_centroids.index\n\n    if not os.path.exists(__SAVEPATH__):\n        os.makedirs(__SAVEPATH__)\n\n    for i in clusters:\n        fig = px.line_polar(cluster_centroids,r=cluster_centroids.iloc[i].tolist()\\\n            ,theta=cluster_centroids.columns, line_close=True)\n        fig.update_traces(fill='toself',line_color=colors[i])\n        fig.show()\n        p=os.path.join(__SAVEPATH__,f\"Cluster{i}.jpeg\")\n        write_image(fig,file=p,format='jpeg')\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/removing_zero_unitprice.py",
+    "module_doc": "A module for removing unit prices with a value of zero",
+    "functions": [
+      {
+        "name": "removing_zero",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": " Load the DataFrame from the input pickle, \nremove rows where unit price is zero\nsave the DataFrame back to a pickle and return its path",
+        "start_line": 16,
+        "end_line": 36,
+        "source_sample": "def removing_zero(input_pickle_path=INPUT_PICKLE_PATH, output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n     Load the DataFrame from the input pickle, \n    remove rows where unit price is zero\n    save the DataFrame back to a pickle and return its path\n    \n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n\n    df = df[df['UnitPrice'] > 0]\n\n\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/rfm.py",
+    "module_doc": "This module analyzes Recency, Frequency and Monetary methods to know about the value\nof customers and dividing the base.",
+    "functions": [
+      {
+        "name": "rfm",
+        "sig": "(input_pickle_file, output_pickle_file)",
+        "doc": "Process customer RFM data based on input pickle file.\n\n:param input_pickle_file: Input pickle file path containing customer data.\n:param output_pickle_file: Output pickle file path for storing processed RFM data.\n:return: Processed RFM data.",
+        "start_line": 14,
+        "end_line": 58,
+        "source_sample": "def rfm(input_pickle_file=input_pickle_path, output_pickle_file=output_pickle_path):\n    \"\"\"\n    Process customer RFM data based on input pickle file.\n\n    :param input_pickle_file: Input pickle file path containing customer data.\n    :param output_pickle_file: Output pickle file path for storing processed RFM data.\n    :return: Processed RFM data.\n    \"\"\"\n    if os.path.exists(input_pickle_file):\n        with open(input_pickle_file, \"rb\") as file:\n            df = pickle.load(file)\n\n    df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])\n    df['InvoiceDay'] = df['InvoiceDate'].dt.date\n    customer_data = df.groupby('CustomerID')['InvoiceDay'].max().reset_index()\n    most_recent_date = df['InvoiceDay'].max()\n    customer_data['InvoiceDay'] = pd.to_datetime(customer_data['InvoiceDay'])\n    most_recent_date = pd.to_datetime(most_recent_date)\n    customer_data['Days_Since_Last_Purchase'] =(\n        (most_recent_date - customer_data['InvoiceDay']).dt.days\n    )\n    customer_data.drop(columns=['InvoiceDay'], inplace=True)\n\n    total_transactions = df.groupby('CustomerID')['InvoiceNo'].nunique().reset_index()\n    total_transactions.rename(columns={'InvoiceNo': 'Total_Transactions'}, inplace=True)\n    total_products_purchased = df.groupby('CustomerID')['Quantity'].sum().reset_index()\n    total_products_purchased.rename(columns={'Quantity': 'Total_Products_Purchased'}, inplace=True)\n    customer_data = pd.merge(customer_data, total_transactions, on='CustomerID')\n    customer_data = pd.merge(customer_data, total_products_purchased, on='CustomerID')\n\n    df['Total_Spend'] = df['UnitPrice'] * df['Quantity']\n    total_spend = df.groupby('CustomerID')['Total_Spend'].sum().reset_index()\n    average_transaction_value = total_spend.merge(total_transactions, on='CustomerID')\n    average_transaction_value['Average_Transaction_Value'] =(\n        average_transaction_value['Total_Spend'] / average_transaction_value['Total_Transactions']\n    )\n    customer_data = pd.merge(customer_data, total_spend, on='CustomerID')\n    customer_data =(\n        pd.merge(customer_data, average_transaction_value[\n            ['CustomerID', 'Average_Transaction_Value']], on='CustomerID')\n    )\n    with open(output_pickle_file, \"wb\") as file:\n        pickle.dump(customer_data, file)\n    print(f\"Data saved to {output_pickle_file}.\")\n    return output_pickle_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/scaler.py",
+    "module_doc": "Modular script to perform scaling on incoming data.\nScript taken in columns to be standardized or normalized.\nInput: Path string to load pickle/parquet file.\nOutput: Path string for parquet file.",
+    "functions": [
+      {
+        "name": "scaler",
+        "sig": "(in_path, out_path, cols)",
+        "doc": "Global variables(can only be changed through Config file)\ncvr_threshold[float]: cumulative explained variance threshold for variance\ncols(standardize_columns, normalize_columns): tuple of columns to be scaled. ",
+        "start_line": 27,
+        "end_line": 95,
+        "source_sample": "def scaler(in_path=__INGESTPATH__,out_path=__OUTPUTPATH__, cols=COLS):\n    \"\"\"\n    Global variables(can only be changed through Config file)\n    cvr_threshold[float]: cumulative explained variance threshold for variance\n    cols(standardize_columns, normalize_columns): tuple of columns to be scaled. \n    \"\"\"\n    #Placeholder for data\n    data = None\n\n    #File Loading\n    try:\n        data = pd.read_pickle(in_path)\n    except FileNotFoundError:\n        raise FileNotFoundError(f\"File not found at {in_path}.\") from None\n\n    try:\n        assert isinstance(out_path,str)\n    except AssertionError as ae:\n        raise TypeError(\"Save Path should be a String!\") from ae\n\n    #Check datatype\n    if not isinstance(data,pd.DataFrame):\n        raise TypeError(\"File did not load DataFrame correctly.\") from None\n\n    #Check all required columns exist in DF\n    try:\n        assert all(col in data.columns for col in cols[0])\n    except AssertionError as exc:\n        raise KeyError(\"Column listed in to be Standardized \\\n        Columns not found in Dataframe.\") from exc\n\n    try:\n        assert all(col in data.columns for col in cols[1])\n    except AssertionError as exc2:\n        raise KeyError(\"Column listed in to be Normalized \\\n            Columns not found in Dataframe.\") from exc2\n\n    print(data)\n\n    #Standardization (-1,1)\n    std_scaler = StandardScaler()\n    data_std = std_scaler.fit_transform(data[cols[0]])\n    df_std = pd.DataFrame(data_std,columns=[cols[0]])\n\n    #Normalization (0,1)\n    norm_scaler = Normalizer()\n    data_norm = norm_scaler.fit_transform(data[cols[1]])\n    df_norm = pd.DataFrame(data_norm,columns=[cols[1]])\n\n    data[COLS[0]] = df_std[cols[0]]\n    data[COLS[1]]=df_norm[cols[1]]\n\n    #saving data as parquet\n    try:\n        p=os.path.dirname(out_path)\n        if not os.path.exists(p):\n            os.makedirs(p)\n        data.to_parquet(out_path)\n        print(f\"File saved successfully at Path: {out_path}.\")\n    except FileExistsError:\n        result = yes_no_dialog(\n            title='File Exists Error',\n            text=\"Existing file in use. Please close to overwrite the file. Error:.\").run()\n        if result:\n            data.to_parquet(out_path)\n            print(f\"File saved successfully at Path: {out_path}.\")\n        else:\n            print(f\"Could not save File at Path: {out_path}.\")\n    return out_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/seasonality.py",
+    "module_doc": "This module analyzes the seasonal trends and how it affects customers and business",
+    "functions": [
+      {
+        "name": "seasonality_impacts",
+        "sig": "(input_pickle_file, cancellation_pickle_file, output_pickle_file)",
+        "doc": "Calculate seasonality impacts and trends for customer spending.\n\n:param input_pickle_file: Input pickle file path containing customer spending data.\n:param cancellation_pickle_file: Input pickle file path containing data from\ncancellation_details.\n:param output_pickle_file: Output pickle file path for storing processed customer data.\n:return: Processed customer data with seasonality impacts and trends.",
+        "start_line": 16,
+        "end_line": 73,
+        "source_sample": "def seasonality_impacts(input_pickle_file=input_pickle_path,\ncancellation_pickle_file=cancellation_pickle_path, output_pickle_file=output_pickle_path):\n    \"\"\"\n    Calculate seasonality impacts and trends for customer spending.\n\n    :param input_pickle_file: Input pickle file path containing customer spending data.\n    :param cancellation_pickle_file: Input pickle file path containing data from\n    cancellation_details.\n    :param output_pickle_file: Output pickle file path for storing processed customer data.\n    :return: Processed customer data with seasonality impacts and trends.\n    \"\"\"\n\n    if os.path.exists(input_pickle_file):\n        with open(input_pickle_file, \"rb\") as file:\n            df = pickle.load(file)\n\n    if os.path.exists(cancellation_pickle_file):\n        with open(cancellation_pickle_file, \"rb\") as file:\n            customer_data = pickle.load(file)\n\n    df['Total_Spend'] = df['UnitPrice'] * df['Quantity']\n    df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])\n    df['Year'] = df['InvoiceDate'].dt.year\n    df['Month'] = df['InvoiceDate'].dt.month\n\n    monthly_spending = df.groupby(['CustomerID', 'Year',\n    'Month'])['Total_Spend'].sum().reset_index()\n    seasonal_buying_patterns =(\n        monthly_spending.groupby('CustomerID')['Total_Spend'].agg(['mean', 'std']).reset_index()\n    )\n    seasonal_buying_patterns.rename(columns={'mean': 'Monthly_Spending_Mean',\n    'std': 'Monthly_Spending_Std'}, inplace=True)\n    seasonal_buying_patterns['Monthly_Spending_Std'].fillna(0, inplace=True)\n\n    def calculate_trend(spend_data):\n\n        if len(spend_data) > 1:\n            x = np.arange(len(spend_data))\n            slope, _, _, _, _ = sc.linregress(x, spend_data)\n            result= slope\n\n            return result\n\n        return 0\n\n    spending_trends =(\n        monthly_spending.groupby('CustomerID')['Total_Spend'].apply(calculate_trend).reset_index()\n    )\n    spending_trends.rename(columns={'Total_Spend': 'Spending_Trend'}, inplace=True)\n    customer_data = pd.merge(customer_data, seasonal_buying_patterns, on='CustomerID')\n    customer_data = pd.merge(customer_data, spending_trends, on='CustomerID')\n    customer_data['CustomerID'] = customer_data['CustomerID'].astype(str)\n    customer_data = customer_data.convert_dtypes()\n\n    with open(output_pickle_file, \"wb\") as file:\n        pickle.dump(customer_data, file)\n    print(f\"Data saved to {output_pickle_file}.\")\n    return output_pickle_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/transaction_status_handler.py",
+    "module_doc": "A module for adding a new column named transaction_status based on the \nstarting character of InvoiceNo column. \ntransaction_status values are Cancelled or Completed.",
+    "functions": [
+      {
+        "name": "handle_transaction_status",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, add a 'transaction_status' column \nto indicate whether the transaction was 'Cancelled' or 'Completed'. \nSave the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file.\n\n:raises KeyError: If the 'InvoiceNo' column doesn't exist in the dataframe.",
+        "start_line": 18,
+        "end_line": 47,
+        "source_sample": "def handle_transaction_status(input_pickle_path=INPUT_PICKLE_PATH,\n                              output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n    Load the DataFrame from the input pickle, add a 'transaction_status' column \n    to indicate whether the transaction was 'Cancelled' or 'Completed'. \n    Save the DataFrame back to a pickle and return its path.\n    \n    :param input_pickle_path: Path to the input pickle file.\n    :param output_pickle_path: Path to the output pickle file.\n    :return: Path to the saved pickle file.\n    \n    :raises KeyError: If the 'InvoiceNo' column doesn't exist in the dataframe.\n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n    # Check if 'InvoiceNo' column exists\n    if 'InvoiceNo' not in df.columns:\n        raise KeyError(\"The input dataframe does not contain an 'InvoiceNo' column.\")\n    # Add the 'Transaction_Status' column\n    df['transaction_status'] = np.where(df['InvoiceNo'].astype(str).str.startswith('C'),\n                                        'Cancelled', 'Completed')\n    # Save the data to output pickle\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/unique_products.py",
+    "module_doc": "This module groups the values based on unique values of CustomerID and orders.",
+    "functions": [
+      {
+        "name": "unique_products",
+        "sig": "(input_pickle_file, rfm_pickle_file, output_pickle_file)",
+        "doc": "Calculate the number of unique products purchased by each customer.\n\n:param input_pickle_file: Input pickle file path containing transaction data.\n:param rfm_pickle_file: Input pickle file path containing RFM data.\n:param output_pickle_file: Output pickle file path for storing processed customer data\n                           with unique product information.\n:return: Processed customer data with added information about unique products purchased.",
+        "start_line": 14,
+        "end_line": 52,
+        "source_sample": "def unique_products(input_pickle_file=input_pickle_path, rfm_pickle_file=rfm_pickle_path ,\noutput_pickle_file=output_pickle_path):\n    \"\"\"\n    Calculate the number of unique products purchased by each customer.\n\n    :param input_pickle_file: Input pickle file path containing transaction data.\n    :param rfm_pickle_file: Input pickle file path containing RFM data.\n    :param output_pickle_file: Output pickle file path for storing processed customer data\n                               with unique product information.\n    :return: Processed customer data with added information about unique products purchased.\n    \"\"\"\n    customer_data = pd.DataFrame()\n\n    if os.path.exists(input_pickle_file):\n        with open(input_pickle_file, \"rb\") as file:\n            df = pickle.load(file)\n\n    if os.path.exists(rfm_pickle_file):\n        with open(rfm_pickle_file, \"rb\") as file:\n            customer_data = pickle.load(file)\n\n    if 'CustomerID' in df.columns and not df.empty:\n        unique_products_purchased = (\n            df.groupby('CustomerID')['StockCode']\n            .nunique()\n            .reset_index()\n            .rename(columns={'StockCode': 'Unique_Products_Purchased'})\n        )\n\n        customer_data = pd.merge(\n            customer_data,\n            unique_products_purchased[unique_products_purchased['CustomerID']\n            .isin(customer_data['CustomerID'])],\n            on='CustomerID',\n        )\n    with open(output_pickle_file, \"wb\") as file:\n        pickle.dump(customer_data, file)\n    print(f\"Data saved to {output_pickle_file}.\")\n    return output_pickle_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/unzip_data.py",
+    "module_doc": "Function to unzip data and make it available",
+    "functions": [
+      {
+        "name": "unzip_file",
+        "sig": "(zip_filename, extract_to)",
+        "doc": "Function to unzip the downloaded data\nArgs:\n  zip_filename: zipfile path, a default is used if not specified\n  extract_to: Path where the unzipped and extracted data is available\nReturns:\n  extract_to: filepath where the data is available",
+        "start_line": 13,
+        "end_line": 30,
+        "source_sample": "def unzip_file(zip_filename=ZIP_FILENAME, extract_to=EXTRACT_TO):\n    \"\"\"\n    Function to unzip the downloaded data\n    Args:\n      zip_filename: zipfile path, a default is used if not specified\n      extract_to: Path where the unzipped and extracted data is available\n    Returns:\n      extract_to: filepath where the data is available\n    \"\"\"\n    try:\n        with zipfile.ZipFile(zip_filename, 'r') as zip_ref:\n            zip_ref.extractall(extract_to)\n        print(f\"File {zip_filename} successfully unzipped to {extract_to}\")\n    except zipfile.BadZipFile:\n        print(f\"Failed to unzip {zip_filename}\")\n    # Return unzipped file\n    unzipped_file =  os.path.join(extract_to, 'Online Retail.xlsx')\n    return unzipped_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/__init__.py",
+    "module_doc": null,
+    "functions": [],
+    "classes": []
+  },
+  {
+    "file": "dags/__init__.py",
+    "module_doc": null,
+    "functions": [],
+    "classes": []
+  },
+  {
+    "file": "dags/data/__init__.py",
+    "module_doc": null,
+    "functions": [],
+    "classes": []
+  },
+  {
+    "file": "dags/src/airflow.py",
+    "module_doc": "The Airflow Dag for the preprocessing datapipeline",
+    "functions": [],
+    "classes": []
+  },
+  {
+    "file": "dags/src/anomaly_code_handler.py",
+    "module_doc": "A module for removing anomalies from StockCode column if they have 0 or 1 \ndigit characters since the normal values are 5 or 6 digits.",
+    "functions": [
+      {
+        "name": "handle_anomalous_codes",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, remove rows with stock codes that \nhave 0 or 1 numeric characters, \nthen save the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file.",
+        "start_line": 16,
+        "end_line": 43,
+        "source_sample": "def handle_anomalous_codes(input_pickle_path=INPUT_PICKLE_PATH,\n                           output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n    Load the DataFrame from the input pickle, remove rows with stock codes that \n    have 0 or 1 numeric characters, \n    then save the DataFrame back to a pickle and return its path.\n    \n    :param input_pickle_path: Path to the input pickle file.\n    :param output_pickle_path: Path to the output pickle file.\n    :return: Path to the saved pickle file.\n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n    # Finding the stock codes with 0 and 1 numeric characters\n    unique_stock_codes = df['StockCode'].unique()\n    anomalous_stock_codes = [code for code in unique_stock_codes if\n                             sum(c.isdigit() for c in str(code)) in (0, 1)]\n    # Removing rows with these anomalous stock codes\n    df = df[~df['StockCode'].isin(anomalous_stock_codes)]\n    # Save the data to output pickle\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/cancellation_details.py",
+    "module_doc": "This module shows how cancelling of orders affect the business and the data.\nIt also shows the frequency of cancellation and cancellation rate.",
+    "functions": [
+      {
+        "name": "cancellation_details",
+        "sig": "(input_pickle_file, geographic_pickle_file, output_pickle_file)",
+        "doc": "Process cancellation frequency and calculate cancellation rates for customers.\n\n:param input_pickle_file: Input pickle file path containing transaction data.\n:param geographic_pickle_file: Input pickle file path after geographic_features.\n:param output_pickle_file: Output pickle file path for storing processed customer data.\n:return: Processed customer data with cancellation details and rates.",
+        "start_line": 16,
+        "end_line": 50,
+        "source_sample": "def cancellation_details(input_pickle_file=input_pickle_path,\ngeographic_pickle_file=geographic_pickle_path, output_pickle_file= output_pickle_path):\n    \"\"\"\n    Process cancellation frequency and calculate cancellation rates for customers.\n\n    :param input_pickle_file: Input pickle file path containing transaction data.\n    :param geographic_pickle_file: Input pickle file path after geographic_features.\n    :param output_pickle_file: Output pickle file path for storing processed customer data.\n    :return: Processed customer data with cancellation details and rates.\n    \"\"\"\n    if os.path.exists(input_pickle_file):\n        with open(input_pickle_file, \"rb\") as file:\n            df = pickle.load(file)\n\n    if os.path.exists(geographic_pickle_file):\n        with open(geographic_pickle_file, \"rb\") as file:\n            customer_data = pickle.load(file)\n\n    total_transactions = df.groupby('CustomerID')['InvoiceNo'].nunique().reset_index()\n    df['Transaction_Status'] = np.where(df['InvoiceNo'].astype(str).str.startswith('C'),\n    'Cancelled', 'Completed')\n    cancelled_transactions = df[df['Transaction_Status'] == 'Cancelled']\n    cancellation_frequency = (\n        cancelled_transactions.groupby('CustomerID')['InvoiceNo'].nunique().reset_index()\n    )\n    cancellation_frequency.rename(columns={'InvoiceNo': 'Cancellation_Frequency'}, inplace=True)\n    customer_data = pd.merge(customer_data, cancellation_frequency, on='CustomerID', how='left')\n    customer_data['Cancellation_Frequency'].fillna(0, inplace=True)\n    customer_data['Cancellation_Rate'] =(\n        customer_data['Cancellation_Frequency'] / total_transactions['InvoiceNo']\n    )\n    with open(output_pickle_file, \"wb\") as file:\n        pickle.dump(customer_data, file)\n    print(f\"Data saved to {output_pickle_file}.\")\n    return output_pickle_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/cleaning_description.py",
+    "module_doc": "A module for cleaning the description column",
+    "functions": [
+      {
+        "name": "cleaning_description",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, \nremove rows where the description cointains service related information\nand Standardize the text to uppercase\nsave the DataFrame back to a pickle and return its path.",
+        "start_line": 14,
+        "end_line": 39,
+        "source_sample": "def cleaning_description(input_pickle_path=INPUT_PICKLE_PATH,\n                            output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n    Load the DataFrame from the input pickle, \n    remove rows where the description cointains service related information\n    and Standardize the text to uppercase\n    save the DataFrame back to a pickle and return its path.\n    \n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n\n    service_related_descriptions = [\"Next Day Carriage\", \"High Resolution Image\"]\n\n    df = df[~df['Description'].isin(service_related_descriptions)]\n\n    df['Description'] = df['Description'].str.upper()\n\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/correlation.py",
+    "module_doc": "Inputs: {\n    path: file saving location, \n    correlation threshold: threshold for determining high correlations}\nOutputs: { \n    Image: png file with masked heatmap\n    Matrix: Correlation Matrix as parquet}\nReturns: None",
+    "functions": [
+      {
+        "name": "correlation_check",
+        "sig": "(in_path, out_path, correlation_threshold)",
+        "doc": "Global variables(can only be changed through Config file)\nArgs:\nin_path(str): ingest_path, \nout_path(str1,str2):\ncvr_threshold[float]: cumulative explained variance threshold for variance\ndrop_cols: column to be ommitted for pca",
+        "start_line": 35,
+        "end_line": 96,
+        "source_sample": "def correlation_check(in_path=__INGESTPATH__,out_path=__OUTPUTPATH__,\\\n    correlation_threshold=corr_thresh):\n    \"\"\"\n    Global variables(can only be changed through Config file)\n    Args:\n    in_path(str): ingest_path, \n    out_path(str1,str2):\n    cvr_threshold[float]: cumulative explained variance threshold for variance\n    drop_cols: column to be ommitted for pca\n    \"\"\"\n    #Placeholder for data\n    data = None\n\n    #Try to Load data from pickle\n    try:\n        data = pd.read_parquet(in_path)\n    except FileNotFoundError:\n        raise FileNotFoundError(f\"File not found at {in_path}.\") from None\n\n    #Check datatype\n    if not isinstance(data,pd.DataFrame):\n        raise TypeError(\"File did not load DataFrame correctly.\") from None\n\n    print(data)\n\n    #check save paths are strings\n    try:\n        assert isinstance(out_path[0],str)\n    except AssertionError as ae:\n        raise TypeError(\"Image Save Path should be a String!\") from ae\n\n    try:\n        assert isinstance(out_path[0],str)\n    except AssertionError as ae:\n        raise TypeError(\"Parquet Save Path should be a String!\") from ae\n\n    #Value check for correlation_thresh\n    if not 0<correlation_threshold<1:\n        raise ValueError(\"cvr_thresh should lie between 0 and 1.\")\n\n    # Calculate the correlation matrix, **Future deprecation warning**\n    corr = data.corr()\n\n    # Create a mask to only show the lower triangle of the matrix (since it's mirrored around its\n    # top-left to bottom-right diagonal)\n    mask = np.zeros_like(corr)\n    mask[np.triu_indices_from(mask, k=1)] = True\n\n    # Define a custom colormap\n    colors = ['#ff6200', '#ffcaa8', 'white', '#ffcaa8', '#ff6200']\n    my_cmap = LinearSegmentedColormap.from_list('custom_map', colors, N=256)\n\n    # Plot the heatmap\n    fig=plt.figure(figsize=(10, 10))\n    plt.title(f'Correlation Matrix, Correlation Threshold:{correlation_threshold}', fontsize=14)\n    sns.heatmap(corr, mask=mask, cmap=my_cmap, annot=True, center=0, fmt='.2f', linewidths=2)\n\n    #Save heatmap as image for reference\n    save_heatmap(fig,out_path[0])\n\n    #saving corr matrix\n    save_correlations_as_parquet(corr,out_path[1])\n"
+      },
+      {
+        "name": "save_heatmap",
+        "sig": "(fig, path)",
+        "doc": "Saves the heatmap as png file.\nInputs: data: data to be saved, path: file saving location\nReturns: None\nExecutes: saving of png, except prompts the user to proceed if file open.\nError Checks: FileNotFoundError",
+        "start_line": 98,
+        "end_line": 119,
+        "source_sample": "def save_heatmap(fig,path):\n    \"\"\"\n    Saves the heatmap as png file.\n    Inputs: data: data to be saved, path: file saving location\n    Returns: None\n    Executes: saving of png, except prompts the user to proceed if file open.\n    Error Checks: FileNotFoundError\n    \"\"\"\n    try:\n        p=os.path.dirname(path)\n        if not os.path.exists(p):\n            os.makedirs(p)\n        fig.savefig(path)\n        print(f\"File saved successfully at Path: {path}.\")\n    except FileExistsError as fe:\n        result = yes_no_dialog(\n            title='File Exists Error',\n            text=f\"Existing file in use. Please close to overwrite the file. Error: {fe}.\").run()\n        if result:\n            fig.savefig(path)\n        else:\n            print(f\"Could not save File at Path: {path}.\")\n"
+      },
+      {
+        "name": "save_correlations_as_parquet",
+        "sig": "(data, path)",
+        "doc": "Saves the correlation matrix as parquet.\nInputs: data: data to be saved, path: file saving location\nReturns: None\nExecutes: raises Attribute error if data is not df as /\nto_parquet would not be executed.\nError Checks: FileNotFoundError",
+        "start_line": 121,
+        "end_line": 145,
+        "source_sample": "def save_correlations_as_parquet(data,path):\n    \"\"\"\n    Saves the correlation matrix as parquet.\n    Inputs: data: data to be saved, path: file saving location\n    Returns: None\n    Executes: raises Attribute error if data is not df as /\n    to_parquet would not be executed.\n    Error Checks: FileNotFoundError\n    \"\"\"\n    try:\n        p=os.path.dirname(path)\n        if not os.path.exists(p):\n            os.makedirs(p)\n        data.to_parquet(path)\n        print(f\"File saved successfully at Path: {path}.\")\n    except AttributeError as ae:\n        raise AttributeError(\"to_parquet could not be executed as object not DataFrame.\") from ae\n    except FileExistsError as fe:\n        result = yes_no_dialog(\n            title='File Exists Error',\n            text=f\"Existing file in use. Please close to overwrite the file. Error: {fe}.\").run()\n        if result:\n            data.to_parquet(path)\n        else:\n            print(f\"Could not save File at Path: {path}.\")\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/customers_behavior.py",
+    "module_doc": "The module shows how the behaviorial patterns of customers affect the business\nbased on weekly frequency.",
+    "functions": [
+      {
+        "name": "customers_behavior",
+        "sig": "(input_pickle_file, unique_pickle_file, output_pickle_file)",
+        "doc": "Process customer behavior and generate relevant insights.\n\n:param input_pickle_file: Input pickle file path containing customer transaction data.\n:param unique_pickle_file: Input pickle file path after unique_products.\n:param output_pickle_file: Output pickle file path for storing processed\n                           customer behavior data.\n:return: Processed customer behavior data with insights.",
+        "start_line": 16,
+        "end_line": 69,
+        "source_sample": "def customers_behavior(input_pickle_file=input_pickle_path, unique_pickle_file=unique_pickle_path,\noutput_pickle_file=output_pickle_path):\n    \"\"\"\n    Process customer behavior and generate relevant insights.\n\n    :param input_pickle_file: Input pickle file path containing customer transaction data.\n    :param unique_pickle_file: Input pickle file path after unique_products.\n    :param output_pickle_file: Output pickle file path for storing processed\n                               customer behavior data.\n    :return: Processed customer behavior data with insights.\n    \"\"\"\n    if os.path.exists(input_pickle_file):\n        with open(input_pickle_file, \"rb\") as file:\n            df = pickle.load(file)\n\n    if os.path.exists(unique_pickle_file):\n        with open(unique_pickle_file, \"rb\") as file:\n            customer_data = pickle.load(file)\n\n    df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])\n    df['InvoiceDay'] = df['InvoiceDate'].dt.date\n    df['Day_Of_Week'] = df['InvoiceDate'].dt.dayofweek\n    df['Hour'] = df['InvoiceDate'].dt.hour\n\n    days_between_purchases = (\n        df.groupby('CustomerID')['InvoiceDay']\n        .apply(lambda x: (x.diff().dropna()).apply(lambda y: y.days))\n    )\n    average_days_between_purchases = (\n        days_between_purchases.groupby('CustomerID').mean().reset_index()\n    )\n    average_days_between_purchases.rename(\n        columns={'InvoiceDay': 'Average_Days_Between_Purchases'}, inplace=True)\n\n    favorite_shopping_day = (\n        df.groupby(['CustomerID', 'Day_Of_Week']).size().reset_index(name='Count')\n    )\n    favorite_shopping_day = (\n        favorite_shopping_day.loc[favorite_shopping_day.groupby('CustomerID')['Count'].idxmax()]\n        [['CustomerID', 'Day_Of_Week']]\n    )\n    favorite_shopping_hour = df.groupby(['CustomerID', 'Hour']).size().reset_index(name='Count')\n    favorite_shopping_hour = (\n        favorite_shopping_hour.loc[favorite_shopping_hour.groupby('CustomerID')\n        ['Count'].idxmax()][['CustomerID', 'Hour']]\n    )\n    customer_data = pd.merge(customer_data, average_days_between_purchases, on='CustomerID')\n    customer_data = pd.merge(customer_data, favorite_shopping_day, on='CustomerID')\n    customer_data = pd.merge(customer_data, favorite_shopping_hour, on='CustomerID')\n\n    with open(output_pickle_file, \"wb\") as file:\n        pickle.dump(customer_data, file)\n    print(f\"Data saved to {output_pickle_file}.\")\n    return output_pickle_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/data_loader.py",
+    "module_doc": "Module to handle the loading of e-commerce dataset from either pickle or Excel file format.",
+    "functions": [
+      {
+        "name": "load_data",
+        "sig": "(pickle_path, excel_path)",
+        "doc": "Load the e-commerce dataset.\nFirst, try to load from the pickle file. If it doesn't exist, load from the excel file.\nRegardless of the source, save the loaded data as a pickle for future use and\nreturn the path to that pickle.\n\n:param pickle_path: Path to the pickle file.\n:param excel_path: Path to the Excel file.\n:return: Path to the saved pickle file.",
+        "start_line": 17,
+        "end_line": 48,
+        "source_sample": "def load_data(pickle_path=DEFAULT_PICKLE_PATH, excel_path=DEFAULT_EXCEL_PATH):\n    \"\"\"\n    Load the e-commerce dataset.\n    First, try to load from the pickle file. If it doesn't exist, load from the excel file.\n    Regardless of the source, save the loaded data as a pickle for future use and\n    return the path to that pickle.\n    \n    :param pickle_path: Path to the pickle file.\n    :param excel_path: Path to the Excel file.\n    :return: Path to the saved pickle file.\n    \"\"\"\n    # Placeholder for the DataFrame\n    df = None\n    # Check if pickle file exists\n    if os.path.exists(pickle_path):\n        with open(pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n        print(f\"Data loaded successfully from {pickle_path}.\")\n    # If pickle doesn't exist, load from Excel\n    elif os.path.exists(excel_path):\n        df = pd.read_excel(excel_path)\n        print(f\"Data loaded from {excel_path}.\")\n    else:\n        error_message = f\"No data found in the specified paths: {pickle_path} or {excel_path}\"\n        print(error_message)\n        raise FileNotFoundError(error_message)\n    # Save the data to pickle for future use (or re-save it if loaded from existing pickle)\n    os.makedirs(os.path.dirname(pickle_path), exist_ok=True)\n    with open(pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {pickle_path} for future use.\")\n    return pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/download_data.py",
+    "module_doc": "Function to download and ingest the data file",
+    "functions": [
+      {
+        "name": "ingest_data",
+        "sig": "(file_url)",
+        "doc": "Function to download file from URL\nArgs:\n    file_url: URL of the file, A default is used if not specified\nReturns:\n    zipfile_path: The zipped file path to the data",
+        "start_line": 9,
+        "end_line": 36,
+        "source_sample": "def ingest_data(file_url=DEFAULT_FILE_URL):\n    \"\"\"\n    Function to download file from URL\n    Args:\n        file_url: URL of the file, A default is used if not specified\n    Returns:\n        zipfile_path: The zipped file path to the data\n    \"\"\"\n    # Send an HTTP GET request to the URL\n    response = requests.get(file_url, timeout=30)\n\n    print(\"Downloading Data\")\n\n    # Set the root directory variable using a relative path\n    root_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))\n\n    # Path to store the zipfile\n    zipfile_path=os.path.join(root_dir, 'data','data.zip')\n    # Check if the request was successful (status code 200)\n    if response.status_code == 200:\n        # Save file to data\n        with open(zipfile_path, \"wb\") as file:\n            file.write(response.content)\n        print(f\"File downloaded successfully. Zip file available under {zipfile_path}\")\n    else:\n        print(f\"Failed to download the file. Status code: {response.status_code}\")\n\n    return zipfile_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/duplicates_handler.py",
+    "module_doc": "A module for removing duplicates in dataset based on subset of \nfollowing columns:\n- InvoiceNo\n- StockCode\n- Description\n- CustomerID\n- Quantity",
+    "functions": [
+      {
+        "name": "remove_duplicates",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, drop duplicates based on certain columns.\nSave the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file.",
+        "start_line": 21,
+        "end_line": 44,
+        "source_sample": "def remove_duplicates(input_pickle_path=INPUT_PICKLE_PATH, output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n    Load the DataFrame from the input pickle, drop duplicates based on certain columns.\n    Save the DataFrame back to a pickle and return its path.\n    \n    :param input_pickle_path: Path to the input pickle file.\n    :param output_pickle_path: Path to the output pickle file.\n    :return: Path to the saved pickle file.\n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n    # Columns to check for duplicates\n    columns_to_check = ['InvoiceNo', 'StockCode', 'Description', 'CustomerID', 'Quantity']\n    # Drop duplicates\n    df = df.drop_duplicates(subset=columns_to_check)\n    # Save the data to output pickle\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/geographic_features.py",
+    "module_doc": "This module defines the distribution of the customers' data with respect to regions.",
+    "functions": [
+      {
+        "name": "geographic_features",
+        "sig": "(input_pickle_file, behavorial_pickle_file, output_pickle_file)",
+        "doc": "Process geographic features and merge with behavioral data.\n\n:param input_pickle_file: Input pickle file path containing\n                          transaction data with geographic information.\n:param behavioral_pickle_file: Input pickle file path after customer_behavior.\n:param output_pickle_file: Output pickle file path for storing processed\n                           customer data with geographic features.\n:return: Processed customer data with added\n         geographic features(whether the datapoint is from UK or not).",
+        "start_line": 14,
+        "end_line": 53,
+        "source_sample": "def geographic_features(input_pickle_file=input_pickle_path,\nbehavorial_pickle_file=behavorial_pickle_path, output_pickle_file=output_pickle_path):\n    \"\"\"\n    Process geographic features and merge with behavioral data.\n\n    :param input_pickle_file: Input pickle file path containing\n                              transaction data with geographic information.\n    :param behavioral_pickle_file: Input pickle file path after customer_behavior.\n    :param output_pickle_file: Output pickle file path for storing processed\n                               customer data with geographic features.\n    :return: Processed customer data with added\n             geographic features(whether the datapoint is from UK or not).\n    \"\"\"\n    if os.path.exists(input_pickle_file):\n        with open(input_pickle_file, \"rb\") as file:\n            df = pickle.load(file)\n\n    if os.path.exists(behavorial_pickle_file):\n        with open(behavorial_pickle_file, \"rb\") as file:\n            customer_data = pickle.load(file)\n\n    df['Country'].value_counts(normalize=True).head()\n    customer_country =(\n        df.groupby(['CustomerID', 'Country']).size().reset_index(name='Number_of_Transactions')\n    )\n    customer_main_country =(\n        customer_country.sort_values('Number_of_Transactions',\n        ascending=False).drop_duplicates('CustomerID')\n    )\n    customer_main_country['Is_UK'] =(\n        customer_main_country['Country'].apply(lambda x: 1 if x == 'United Kingdom' else 0)\n    )\n    customer_data =(\n        pd.merge(customer_data, customer_main_country[['CustomerID', 'Is_UK']],\n    on='CustomerID', how='left')\n    )\n    with open(output_pickle_file, \"wb\") as file:\n        pickle.dump(customer_data, file)\n    print(f\"Data saved to {output_pickle_file}.\")\n    return output_pickle_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/missing_values_handler.py",
+    "module_doc": "A module for removing missig values from dataset based on CustomeID\nand Description column.",
+    "functions": [
+      {
+        "name": "handle_missing",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, \nremove rows with missing values in 'CustomerID' and 'Description' columns.\nThen, check if there are any missing values left in the dataframe.\nIf there are, raise a ValueError. Finally, \nsave the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file.",
+        "start_line": 15,
+        "end_line": 45,
+        "source_sample": "def handle_missing(input_pickle_path=INPUT_PICKLE_PATH, output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n    Load the DataFrame from the input pickle, \n    remove rows with missing values in 'CustomerID' and 'Description' columns.\n    Then, check if there are any missing values left in the dataframe.\n    If there are, raise a ValueError. Finally, \n    save the DataFrame back to a pickle and return its path.\n    \n    :param input_pickle_path: Path to the input pickle file.\n    :param output_pickle_path: Path to the output pickle file.\n    :return: Path to the saved pickle file.\n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n    # Remove rows with missing values in 'CustomerID' and 'Description'\n    df = df.dropna(subset=['CustomerID', 'Description'])\n    # Check if there are any missing values left\n    if df.isna().sum().sum() != 0:\n        missing_count = df.isna().sum().sum()\n        message = f\"There are {missing_count} missing values left in the dataframe.\"\n        print(message)\n        raise ValueError(message)\n    # Save the data to output pickle\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/outlier_treatment.py",
+    "module_doc": "A module to detect and remove outliers",
+    "functions": [
+      {
+        "name": "removing_outlier",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": " Load the DataFrame from the input pickle, \ndetect and remove outliers\nsave the DataFrame back to a pickle and return its path",
+        "start_line": 18,
+        "end_line": 54,
+        "source_sample": "def removing_outlier(input_pickle_path=INPUT_PICKLE_PATH, output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n     Load the DataFrame from the input pickle, \n    detect and remove outliers\n    save the DataFrame back to a pickle and return its path\n    \n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n\n    model = IsolationForest(contamination=0.05, random_state=0)\n\n    df['Outlier_Scores'] = model.fit_predict(df.iloc[:, 1:].to_numpy())\n\n    df['Is_Outlier'] = [1 if x == -1 else 0 for x in df['Outlier_Scores']]\n\n    df_outlier = df[df['Is_Outlier'] == 1]\n\n    df_cleaned = df[df['Is_Outlier'] == 0]\n\n    #dropping the columns\n    df_cleaned = df_cleaned.drop(columns=['Outlier_Scores', 'Is_Outlier'])\n\n    #reseting the index\n    df_cleaned.reset_index(drop=True, inplace=True)\n\n    df_outlier.to_parquet(parquet_file_path, index=False)\n\n\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df_cleaned, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/pca.py",
+    "module_doc": "Modular script to perform PCA on incoming data.\nScripts checks PC ranging from 2 to 8 until cumulative explained variance of threshold is achieved.\nInput: Path string to load pickle/parquet file.\nOutput: Path string for parquet file.",
+    "functions": [
+      {
+        "name": "pc_analyzer",
+        "sig": "(in_path, out_path, drop_cols, cvr_thresh)",
+        "doc": "Global variables(can only be changed through Config file)\nArgs:\npaths(str1,str2): str1:ingest_path, str2:output_path\nCVR_THRESHOLDold[float]: cumulative explained variance threshold for variance\ndrop_cols: column to be ommitted for pca",
+        "start_line": 27,
+        "end_line": 96,
+        "source_sample": "def pc_analyzer(in_path=__INGESTPATH__,out_path=__OUTPUTPATH__,\\\n    drop_cols=NOT_COLUMNS,cvr_thresh=CVR_THRESHOLD):\n    \"\"\"\n    Global variables(can only be changed through Config file)\n    Args:\n    paths(str1,str2): str1:ingest_path, str2:output_path\n    CVR_THRESHOLDold[float]: cumulative explained variance threshold for variance\n    drop_cols: column to be ommitted for pca\n    \"\"\"\n    #Placeholder for data\n    data = None\n\n    #File Loading\n    try:\n        data = pd.read_parquet(in_path)\n    except FileNotFoundError:\n        raise FileNotFoundError(f\"File not found at {in_path}.\") from None\n\n    #Check datatype\n    if not isinstance(data,pd.DataFrame):\n        raise TypeError(\"File did not load DataFrame correctly.\") from None\n\n    #Check all required columns exist in DF\n    try:\n        assert all(col in data.columns for col in drop_cols)\n    except AssertionError as exc:\n        raise KeyError(\"Column not found in Dataframe.\") from exc\n\n    #Check columns <4, PCA not required\n    if len(data.columns)<4:\n        raise ValueError(\"Columns less than 4. Need not proceed with PCA.\")\n\n    #Value check for CVR_THRESHOLD\n    if not 0<cvr_thresh<1:\n        raise ValueError(\"CVR_THRESHOLD should lie between 0 and 1.\")\n\n    #Selecting columns in data for PCA\n    data.set_index('CustomerID', inplace=True)\n    data = data.drop(drop_cols, axis=1)\n\n    print(data)\n\n    n = pca_(data,cvr_thresh)\n    pca = PCA(n_components=n).fit(data)\n\n    # Getting post-PCA data\n    reduced_data = pca.transform(data)\n    columns=[f'PC{i+1}' for i in range(pca.n_components_)]\n    pca_transformed_data = pd.DataFrame(reduced_data, columns=columns)\n    pca_transformed_data.index = data.index\n    print(pca_transformed_data)\n\n    #saving data as parquet\n    try:\n        p=os.path.dirname(out_path)\n        if not os.path.exists(p):\n            os.makedirs(p)\n        pca_transformed_data.to_parquet(out_path)\n        print(f\"File saved successfully at Path: {out_path}.\")\n    except FileExistsError:\n        result = yes_no_dialog(\n            title='File Exists Error',\n            text=\"Existing file in use. Please close to overwrite the file. Error:.\").run()\n        if result:\n            pca_transformed_data.to_parquet(out_path)\n            print(f\"File saved successfully at Path: {out_path}.\")\n        else:\n            print(f\"Could not save File at Path: {out_path}.\")\n\n    return out_path\n"
+      },
+      {
+        "name": "pca_",
+        "sig": "(data, thresh)",
+        "doc": "Refactoring for iterative check of n_components \nto cover threshold cumulative explained variance.\ndata: input data for pca\nthresh[float]: cumulative explained variance threshold for variance",
+        "start_line": 98,
+        "end_line": 123,
+        "source_sample": "def pca_(data,thresh):\n    \"\"\"\n    Refactoring for iterative check of n_components \n    to cover threshold cumulative explained variance.\n    data: input data for pca\n    thresh[float]: cumulative explained variance threshold for variance\n    \"\"\"\n    #PCA\n    n_components_range=np.arange(2,9)\n    n=[]\n    cumulative_var_ratio=[0]\n    for n_components in n_components_range:\n        if cumulative_var_ratio[-1] <= thresh:\n            pca_check=PCA(n_components=n_components).fit(data)\n            var_ratio = pca_check.explained_variance_ratio_\n            cumulative_var_ratio.append(np.cumsum(var_ratio)[n_components-1])\n            n.append(n_components)\n            print(n[-1],cumulative_var_ratio[-1])\n        elif n_components==n_components_range[-1]:\n            n=n_components\n            break\n        else:\n            n=n_components\n            break\n    print(n,cumulative_var_ratio)\n    return n\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/removing_zero_unitprice.py",
+    "module_doc": "A module for removing unit prices with a value of zero",
+    "functions": [
+      {
+        "name": "removing_zero",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": " Load the DataFrame from the input pickle, \nremove rows where unit price is zero\nsave the DataFrame back to a pickle and return its path",
+        "start_line": 16,
+        "end_line": 36,
+        "source_sample": "def removing_zero(input_pickle_path=INPUT_PICKLE_PATH, output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n     Load the DataFrame from the input pickle, \n    remove rows where unit price is zero\n    save the DataFrame back to a pickle and return its path\n    \n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n\n    df = df[df['UnitPrice'] > 0]\n\n\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/rfm.py",
+    "module_doc": "This module analyzes Recency, Frequency and Monetary methods to know about the value\nof customers and dividing the base.",
+    "functions": [
+      {
+        "name": "rfm",
+        "sig": "(input_pickle_file, output_pickle_file)",
+        "doc": "Process customer RFM data based on input pickle file.\n\n:param input_pickle_file: Input pickle file path containing customer data.\n:param output_pickle_file: Output pickle file path for storing processed RFM data.\n:return: Processed RFM data.",
+        "start_line": 14,
+        "end_line": 58,
+        "source_sample": "def rfm(input_pickle_file=input_pickle_path, output_pickle_file=output_pickle_path):\n    \"\"\"\n    Process customer RFM data based on input pickle file.\n\n    :param input_pickle_file: Input pickle file path containing customer data.\n    :param output_pickle_file: Output pickle file path for storing processed RFM data.\n    :return: Processed RFM data.\n    \"\"\"\n    if os.path.exists(input_pickle_file):\n        with open(input_pickle_file, \"rb\") as file:\n            df = pickle.load(file)\n\n    df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])\n    df['InvoiceDay'] = df['InvoiceDate'].dt.date\n    customer_data = df.groupby('CustomerID')['InvoiceDay'].max().reset_index()\n    most_recent_date = df['InvoiceDay'].max()\n    customer_data['InvoiceDay'] = pd.to_datetime(customer_data['InvoiceDay'])\n    most_recent_date = pd.to_datetime(most_recent_date)\n    customer_data['Days_Since_Last_Purchase'] =(\n        (most_recent_date - customer_data['InvoiceDay']).dt.days\n    )\n    customer_data.drop(columns=['InvoiceDay'], inplace=True)\n\n    total_transactions = df.groupby('CustomerID')['InvoiceNo'].nunique().reset_index()\n    total_transactions.rename(columns={'InvoiceNo': 'Total_Transactions'}, inplace=True)\n    total_products_purchased = df.groupby('CustomerID')['Quantity'].sum().reset_index()\n    total_products_purchased.rename(columns={'Quantity': 'Total_Products_Purchased'}, inplace=True)\n    customer_data = pd.merge(customer_data, total_transactions, on='CustomerID')\n    customer_data = pd.merge(customer_data, total_products_purchased, on='CustomerID')\n\n    df['Total_Spend'] = df['UnitPrice'] * df['Quantity']\n    total_spend = df.groupby('CustomerID')['Total_Spend'].sum().reset_index()\n    average_transaction_value = total_spend.merge(total_transactions, on='CustomerID')\n    average_transaction_value['Average_Transaction_Value'] =(\n        average_transaction_value['Total_Spend'] / average_transaction_value['Total_Transactions']\n    )\n    customer_data = pd.merge(customer_data, total_spend, on='CustomerID')\n    customer_data =(\n        pd.merge(customer_data, average_transaction_value[\n            ['CustomerID', 'Average_Transaction_Value']], on='CustomerID')\n    )\n    with open(output_pickle_file, \"wb\") as file:\n        pickle.dump(customer_data, file)\n    print(f\"Data saved to {output_pickle_file}.\")\n    return output_pickle_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/scaler.py",
+    "module_doc": "Modular script to perform scaling on incoming data.\nScript taken in columns to be standardized or normalized.\nInput: Path string to load pickle/parquet file.\nOutput: Path string for parquet file.",
+    "functions": [
+      {
+        "name": "scaler",
+        "sig": "(in_path, out_path, cols)",
+        "doc": "Global variables(can only be changed through Config file)\ncvr_threshold[float]: cumulative explained variance threshold for variance\ncols(standardize_columns, normalize_columns): tuple of columns to be scaled. ",
+        "start_line": 27,
+        "end_line": 95,
+        "source_sample": "def scaler(in_path=__INGESTPATH__,out_path=__OUTPUTPATH__, cols=COLS):\n    \"\"\"\n    Global variables(can only be changed through Config file)\n    cvr_threshold[float]: cumulative explained variance threshold for variance\n    cols(standardize_columns, normalize_columns): tuple of columns to be scaled. \n    \"\"\"\n    #Placeholder for data\n    data = None\n\n    #File Loading\n    try:\n        data = pd.read_pickle(in_path)\n    except FileNotFoundError:\n        raise FileNotFoundError(f\"File not found at {in_path}.\") from None\n\n    try:\n        assert isinstance(out_path,str)\n    except AssertionError as ae:\n        raise TypeError(\"Save Path should be a String!\") from ae\n\n    #Check datatype\n    if not isinstance(data,pd.DataFrame):\n        raise TypeError(\"File did not load DataFrame correctly.\") from None\n\n    #Check all required columns exist in DF\n    try:\n        assert all(col in data.columns for col in cols[0])\n    except AssertionError as exc:\n        raise KeyError(\"Column listed in to be Standardized \\\n        Columns not found in Dataframe.\") from exc\n\n    try:\n        assert all(col in data.columns for col in cols[1])\n    except AssertionError as exc2:\n        raise KeyError(\"Column listed in to be Normalized \\\n            Columns not found in Dataframe.\") from exc2\n\n    print(data)\n\n    #Standardization (-1,1)\n    std_scaler = StandardScaler()\n    data_std = std_scaler.fit_transform(data[cols[0]])\n    df_std = pd.DataFrame(data_std,columns=[cols[0]])\n\n    #Normalization (0,1)\n    norm_scaler = Normalizer()\n    data_norm = norm_scaler.fit_transform(data[cols[1]])\n    df_norm = pd.DataFrame(data_norm,columns=[cols[1]])\n\n    data[COLS[0]] = df_std[cols[0]]\n    data[COLS[1]]=df_norm[cols[1]]\n\n    #saving data as parquet\n    try:\n        p=os.path.dirname(out_path)\n        if not os.path.exists(p):\n            os.makedirs(p)\n        data.to_parquet(out_path)\n        print(f\"File saved successfully at Path: {out_path}.\")\n    except FileExistsError:\n        result = yes_no_dialog(\n            title='File Exists Error',\n            text=\"Existing file in use. Please close to overwrite the file. Error:.\").run()\n        if result:\n            data.to_parquet(out_path)\n            print(f\"File saved successfully at Path: {out_path}.\")\n        else:\n            print(f\"Could not save File at Path: {out_path}.\")\n    return out_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/seasonality.py",
+    "module_doc": "This module analyzes the seasonal trends and how it affects customers and business",
+    "functions": [
+      {
+        "name": "seasonality_impacts",
+        "sig": "(input_pickle_file, cancellation_pickle_file, output_pickle_file, data_filepath)",
+        "doc": "Calculate seasonality impacts and trends for customer spending.\n\n:param input_pickle_file: Input pickle file path containing customer spending data.\n:param cancellation_pickle_file: Input pickle file path containing data from\ncancellation_details.\n:param output_pickle_file: Output pickle file path for storing processed customer data.\n:return: Processed customer data with seasonality impacts and trends.",
+        "start_line": 19,
+        "end_line": 78,
+        "source_sample": "def seasonality_impacts(input_pickle_file=input_pickle_path,\ncancellation_pickle_file=cancellation_pickle_path, output_pickle_file=output_pickle_path,\ndata_filepath=transaction_filepath):\n    \"\"\"\n    Calculate seasonality impacts and trends for customer spending.\n\n    :param input_pickle_file: Input pickle file path containing customer spending data.\n    :param cancellation_pickle_file: Input pickle file path containing data from\n    cancellation_details.\n    :param output_pickle_file: Output pickle file path for storing processed customer data.\n    :return: Processed customer data with seasonality impacts and trends.\n    \"\"\"\n\n    if os.path.exists(input_pickle_file):\n        with open(input_pickle_file, \"rb\") as file:\n            df = pickle.load(file)\n\n    if os.path.exists(cancellation_pickle_file):\n        with open(cancellation_pickle_file, \"rb\") as file:\n            customer_data = pickle.load(file)\n\n    df['Total_Spend'] = df['UnitPrice'] * df['Quantity']\n    df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])\n    df['Year'] = df['InvoiceDate'].dt.year\n    df['Month'] = df['InvoiceDate'].dt.month\n    df['StockCode'] = df['StockCode'].astype(str).apply(lambda x: x.encode('utf-8'))\n    df.to_parquet(data_filepath)\n    monthly_spending = df.groupby(['CustomerID', 'Year',\n    'Month'])['Total_Spend'].sum().reset_index()\n    seasonal_buying_patterns =(\n        monthly_spending.groupby('CustomerID')['Total_Spend'].agg(['mean', 'std']).reset_index()\n    )\n    seasonal_buying_patterns.rename(columns={'mean': 'Monthly_Spending_Mean',\n    'std': 'Monthly_Spending_Std'}, inplace=True)\n    seasonal_buying_patterns['Monthly_Spending_Std'].fillna(0, inplace=True)\n\n    def calculate_trend(spend_data):\n\n        if len(spend_data) > 1:\n            x = np.arange(len(spend_data))\n            slope, _, _, _, _ = sc.linregress(x, spend_data)\n            result= slope\n\n            return result\n\n        return 0\n\n    spending_trends =(\n        monthly_spending.groupby('CustomerID')['Total_Spend'].apply(calculate_trend).reset_index()\n    )\n    spending_trends.rename(columns={'Total_Spend': 'Spending_Trend'}, inplace=True)\n    customer_data = pd.merge(customer_data, seasonal_buying_patterns, on='CustomerID')\n    customer_data = pd.merge(customer_data, spending_trends, on='CustomerID')\n    customer_data['CustomerID'] = customer_data['CustomerID'].astype(str)\n    customer_data = customer_data.convert_dtypes()\n\n    with open(output_pickle_file, \"wb\") as file:\n        pickle.dump(customer_data, file)\n    print(f\"Data saved to {output_pickle_file}.\")\n    return output_pickle_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/transaction_status_handler.py",
+    "module_doc": "A module for adding a new column named transaction_status based on the \nstarting character of InvoiceNo column. \ntransaction_status values are Cancelled or Completed.",
+    "functions": [
+      {
+        "name": "handle_transaction_status",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, add a 'transaction_status' column \nto indicate whether the transaction was 'Cancelled' or 'Completed'. \nSave the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file.\n\n:raises KeyError: If the 'InvoiceNo' column doesn't exist in the dataframe.",
+        "start_line": 18,
+        "end_line": 47,
+        "source_sample": "def handle_transaction_status(input_pickle_path=INPUT_PICKLE_PATH,\n                              output_pickle_path=OUTPUT_PICKLE_PATH):\n    \"\"\"\n    Load the DataFrame from the input pickle, add a 'transaction_status' column \n    to indicate whether the transaction was 'Cancelled' or 'Completed'. \n    Save the DataFrame back to a pickle and return its path.\n    \n    :param input_pickle_path: Path to the input pickle file.\n    :param output_pickle_path: Path to the output pickle file.\n    :return: Path to the saved pickle file.\n    \n    :raises KeyError: If the 'InvoiceNo' column doesn't exist in the dataframe.\n    \"\"\"\n    # Load DataFrame from input pickle\n    if os.path.exists(input_pickle_path):\n        with open(input_pickle_path, \"rb\") as file:\n            df = pickle.load(file)\n    else:\n        raise FileNotFoundError(f\"No data found at the specified path: {input_pickle_path}\")\n    # Check if 'InvoiceNo' column exists\n    if 'InvoiceNo' not in df.columns:\n        raise KeyError(\"The input dataframe does not contain an 'InvoiceNo' column.\")\n    # Add the 'Transaction_Status' column\n    df['transaction_status'] = np.where(df['InvoiceNo'].astype(str).str.startswith('C'),\n                                        'Cancelled', 'Completed')\n    # Save the data to output pickle\n    with open(output_pickle_path, \"wb\") as file:\n        pickle.dump(df, file)\n    print(f\"Data saved to {output_pickle_path}.\")\n    return output_pickle_path\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/unique_products.py",
+    "module_doc": "This module groups the values based on unique values of CustomerID and orders.",
+    "functions": [
+      {
+        "name": "unique_products",
+        "sig": "(input_pickle_file, rfm_pickle_file, output_pickle_file)",
+        "doc": "Calculate the number of unique products purchased by each customer.\n\n:param input_pickle_file: Input pickle file path containing transaction data.\n:param rfm_pickle_file: Input pickle file path containing RFM data.\n:param output_pickle_file: Output pickle file path for storing processed customer data\n                           with unique product information.\n:return: Processed customer data with added information about unique products purchased.",
+        "start_line": 14,
+        "end_line": 52,
+        "source_sample": "def unique_products(input_pickle_file=input_pickle_path, rfm_pickle_file=rfm_pickle_path ,\noutput_pickle_file=output_pickle_path):\n    \"\"\"\n    Calculate the number of unique products purchased by each customer.\n\n    :param input_pickle_file: Input pickle file path containing transaction data.\n    :param rfm_pickle_file: Input pickle file path containing RFM data.\n    :param output_pickle_file: Output pickle file path for storing processed customer data\n                               with unique product information.\n    :return: Processed customer data with added information about unique products purchased.\n    \"\"\"\n    customer_data = pd.DataFrame()\n\n    if os.path.exists(input_pickle_file):\n        with open(input_pickle_file, \"rb\") as file:\n            df = pickle.load(file)\n\n    if os.path.exists(rfm_pickle_file):\n        with open(rfm_pickle_file, \"rb\") as file:\n            customer_data = pickle.load(file)\n\n    if 'CustomerID' in df.columns and not df.empty:\n        unique_products_purchased = (\n            df.groupby('CustomerID')['StockCode']\n            .nunique()\n            .reset_index()\n            .rename(columns={'StockCode': 'Unique_Products_Purchased'})\n        )\n\n        customer_data = pd.merge(\n            customer_data,\n            unique_products_purchased[unique_products_purchased['CustomerID']\n            .isin(customer_data['CustomerID'])],\n            on='CustomerID',\n        )\n    with open(output_pickle_file, \"wb\") as file:\n        pickle.dump(customer_data, file)\n    print(f\"Data saved to {output_pickle_file}.\")\n    return output_pickle_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/unzip_data.py",
+    "module_doc": "Function to unzip data and make it available",
+    "functions": [
+      {
+        "name": "unzip_file",
+        "sig": "(zip_filename, extract_to)",
+        "doc": "Function to unzip the downloaded data\nArgs:\n  zip_filename: zipfile path, a default is used if not specified\n  extract_to: Path where the unzipped and extracted data is available\nReturns:\n  extract_to: filepath where the data is available",
+        "start_line": 13,
+        "end_line": 30,
+        "source_sample": "def unzip_file(zip_filename=ZIP_FILENAME, extract_to=EXTRACT_TO):\n    \"\"\"\n    Function to unzip the downloaded data\n    Args:\n      zip_filename: zipfile path, a default is used if not specified\n      extract_to: Path where the unzipped and extracted data is available\n    Returns:\n      extract_to: filepath where the data is available\n    \"\"\"\n    try:\n        with zipfile.ZipFile(zip_filename, 'r') as zip_ref:\n            zip_ref.extractall(extract_to)\n        print(f\"File {zip_filename} successfully unzipped to {extract_to}\")\n    except zipfile.BadZipFile:\n        print(f\"Failed to unzip {zip_filename}\")\n    # Return unzipped file\n    unzipped_file =  os.path.join(extract_to, 'Online Retail.xlsx')\n    return unzipped_file\n"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/__init__.py",
+    "module_doc": null,
+    "functions": [],
+    "classes": []
+  }
+]

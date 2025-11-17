@@ -1,0 +1,2028 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Expr",
+      "value": {
+        "_const_preview": "\nThis module returns a dataframe with top three products which individual customers has not purchased yet based on the top purchased products from their corresp"
+      },
+      "lineno": 1,
+      "end_lineno": 3
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "pandas",
+          "asname": "pd",
+          "lineno": 5,
+          "end_lineno": 5
+        }
+      ],
+      "lineno": 5,
+      "end_lineno": 5
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "remove_outliers",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "df",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 8,
+            "end_lineno": 8
+          },
+          {
+            "_type": "arg",
+            "arg": "outliers_data",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 8,
+            "end_lineno": 8
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n  Removes transactions related to outlier customers from the main dataframe.\n\n  Parameters:\n  df (DataFrame): The main transaction dataframe.\n  outliers_data ("
+          },
+          "lineno": 9,
+          "end_lineno": 18
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "outlier_customer_ids",
+              "lineno": 20,
+              "end_lineno": 20
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Name",
+                      "id": "outliers_data",
+                      "lineno": 20,
+                      "end_lineno": 20
+                    },
+                    "slice": {
+                      "_type": "Constant",
+                      "value": "CustomerID",
+                      "kind": null,
+                      "lineno": 20,
+                      "end_lineno": 20
+                    },
+                    "lineno": 20,
+                    "end_lineno": 20
+                  },
+                  "attr": "astype",
+                  "lineno": 20,
+                  "end_lineno": 20
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "float",
+                    "kind": null,
+                    "lineno": 20,
+                    "end_lineno": 20
+                  }
+                ],
+                "keywords": [],
+                "lineno": 20,
+                "end_lineno": 20
+              },
+              "attr": "unique",
+              "lineno": 20,
+              "end_lineno": 20
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 20,
+            "end_lineno": 20
+          },
+          "type_comment": null,
+          "lineno": 20,
+          "end_lineno": 20
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "df_filtered",
+              "lineno": 23,
+              "end_lineno": 23
+            }
+          ],
+          "value": {
+            "_type": "Subscript",
+            "value": {
+              "_type": "Name",
+              "id": "df",
+              "lineno": 23,
+              "end_lineno": 23
+            },
+            "slice": {
+              "_type": "UnaryOp",
+              "op": {
+                "_type": "Invert"
+              },
+              "operand": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Name",
+                      "id": "df",
+                      "lineno": 23,
+                      "end_lineno": 23
+                    },
+                    "slice": {
+                      "_type": "Constant",
+                      "value": "CustomerID",
+                      "kind": null,
+                      "lineno": 23,
+                      "end_lineno": 23
+                    },
+                    "lineno": 23,
+                    "end_lineno": 23
+                  },
+                  "attr": "isin",
+                  "lineno": 23,
+                  "end_lineno": 23
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "outlier_customer_ids",
+                    "lineno": 23,
+                    "end_lineno": 23
+                  }
+                ],
+                "keywords": [],
+                "lineno": 23,
+                "end_lineno": 23
+              },
+              "lineno": 23,
+              "end_lineno": 23
+            },
+            "lineno": 23,
+            "end_lineno": 23
+          },
+          "type_comment": null,
+          "lineno": 23,
+          "end_lineno": 23
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "df_filtered",
+            "lineno": 25,
+            "end_lineno": 25
+          },
+          "lineno": 25,
+          "end_lineno": 25
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 8,
+      "end_lineno": 25
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "merge_customer_transactions",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "df",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 28,
+            "end_lineno": 28
+          },
+          {
+            "_type": "arg",
+            "arg": "customer_data_cleaned",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 28,
+            "end_lineno": 28
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n  Merges the transaction data with customer data to include cluster information\n  for each transaction.\n\n  Parameters:\n  df (DataFrame): The transaction datafr"
+          },
+          "lineno": 29,
+          "end_lineno": 39
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "df",
+              "lineno": 41,
+              "end_lineno": 41
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "df",
+                "lineno": 41,
+                "end_lineno": 41
+              },
+              "attr": "copy",
+              "lineno": 41,
+              "end_lineno": 41
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 41,
+            "end_lineno": 41
+          },
+          "type_comment": null,
+          "lineno": 41,
+          "end_lineno": 41
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Subscript",
+              "value": {
+                "_type": "Name",
+                "id": "df",
+                "lineno": 42,
+                "end_lineno": 42
+              },
+              "slice": {
+                "_type": "Constant",
+                "value": "CustomerID",
+                "kind": null,
+                "lineno": 42,
+                "end_lineno": 42
+              },
+              "lineno": 42,
+              "end_lineno": 42
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "df",
+                  "lineno": 42,
+                  "end_lineno": 42
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "CustomerID",
+                  "kind": null,
+                  "lineno": 42,
+                  "end_lineno": 42
+                },
+                "lineno": 42,
+                "end_lineno": 42
+              },
+              "attr": "astype",
+              "lineno": 42,
+              "end_lineno": 42
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "float",
+                "kind": null,
+                "lineno": 42,
+                "end_lineno": 42
+              }
+            ],
+            "keywords": [],
+            "lineno": 42,
+            "end_lineno": 42
+          },
+          "type_comment": null,
+          "lineno": 42,
+          "end_lineno": 42
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Subscript",
+              "value": {
+                "_type": "Name",
+                "id": "customer_data_cleaned",
+                "lineno": 44,
+                "end_lineno": 44
+              },
+              "slice": {
+                "_type": "Constant",
+                "value": "CustomerID",
+                "kind": null,
+                "lineno": 44,
+                "end_lineno": 44
+              },
+              "lineno": 44,
+              "end_lineno": 44
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "customer_data_cleaned",
+                  "lineno": 44,
+                  "end_lineno": 44
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "CustomerID",
+                  "kind": null,
+                  "lineno": 44,
+                  "end_lineno": 44
+                },
+                "lineno": 44,
+                "end_lineno": 44
+              },
+              "attr": "astype",
+              "lineno": 44,
+              "end_lineno": 44
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "float",
+                "kind": null,
+                "lineno": 44,
+                "end_lineno": 44
+              }
+            ],
+            "keywords": [],
+            "lineno": 44,
+            "end_lineno": 44
+          },
+          "type_comment": null,
+          "lineno": 44,
+          "end_lineno": 44
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "merged_data",
+              "lineno": 47,
+              "end_lineno": 47
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "df",
+                "lineno": 47,
+                "end_lineno": 47
+              },
+              "attr": "merge",
+              "lineno": 47,
+              "end_lineno": 47
+            },
+            "args": [
+              {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "customer_data_cleaned",
+                  "lineno": 47,
+                  "end_lineno": 47
+                },
+                "slice": {
+                  "_type": "List",
+                  "elts": [
+                    {
+                      "_type": "Constant",
+                      "value": "CustomerID",
+                      "kind": null,
+                      "lineno": 47,
+                      "end_lineno": 47
+                    },
+                    {
+                      "_type": "Constant",
+                      "value": "cluster",
+                      "kind": null,
+                      "lineno": 47,
+                      "end_lineno": 47
+                    }
+                  ],
+                  "lineno": 47,
+                  "end_lineno": 47
+                },
+                "lineno": 47,
+                "end_lineno": 47
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "on",
+                "value": {
+                  "_const_preview": "CustomerID"
+                },
+                "lineno": 47,
+                "end_lineno": 47
+              },
+              {
+                "_type": "keyword",
+                "arg": "how",
+                "value": {
+                  "_const_preview": "inner"
+                },
+                "lineno": 47,
+                "end_lineno": 47
+              }
+            ],
+            "lineno": 47,
+            "end_lineno": 47
+          },
+          "type_comment": null,
+          "lineno": 47,
+          "end_lineno": 47
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "merged_data",
+            "lineno": 49,
+            "end_lineno": 49
+          },
+          "lineno": 49,
+          "end_lineno": 49
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 28,
+      "end_lineno": 49
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "identify_top_products",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "merged_data",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 52,
+            "end_lineno": 52
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n  Identifies the top 10 best-selling products in each customer cluster.\n\n  Parameters:\n  merged_data (DataFrame): The dataframe from merging transaction data w"
+          },
+          "lineno": 53,
+          "end_lineno": 62
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "grouped_data",
+              "lineno": 64,
+              "end_lineno": 64
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Call",
+                      "func": {
+                        "_type": "Attribute",
+                        "value": {
+                          "_type": "Name",
+                          "id": "merged_data",
+                          "lineno": 64,
+                          "end_lineno": 64
+                        },
+                        "attr": "groupby",
+                        "lineno": 64,
+                        "end_lineno": 64
+                      },
+                      "args": [
+                        {
+                          "_type": "List",
+                          "elts": [
+                            {
+                              "_type": "Constant",
+                              "value": "cluster",
+                              "kind": null,
+                              "lineno": 64,
+                              "end_lineno": 64
+                            },
+                            {
+                              "_type": "Constant",
+                              "value": "StockCode",
+                              "kind": null,
+                              "lineno": 64,
+                              "end_lineno": 64
+                            },
+                            {
+                              "_type": "Constant",
+                              "value": "Description",
+                              "kind": null,
+                              "lineno": 64,
+                              "end_lineno": 64
+                            }
+                          ],
+                          "lineno": 64,
+                          "end_lineno": 64
+                        }
+                      ],
+                      "keywords": [],
+                      "lineno": 64,
+                      "end_lineno": 64
+                    },
+                    "slice": {
+                      "_type": "Constant",
+                      "value": "Quantity",
+                      "kind": null,
+                      "lineno": 64,
+                      "end_lineno": 64
+                    },
+                    "lineno": 64,
+                    "end_lineno": 64
+                  },
+                  "attr": "sum",
+                  "lineno": 64,
+                  "end_lineno": 64
+                },
+                "args": [],
+                "keywords": [],
+                "lineno": 64,
+                "end_lineno": 64
+              },
+              "attr": "reset_index",
+              "lineno": 64,
+              "end_lineno": 64
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 64,
+            "end_lineno": 64
+          },
+          "type_comment": null,
+          "lineno": 64,
+          "end_lineno": 64
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "sorted_grouped_data",
+              "lineno": 67,
+              "end_lineno": 67
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "grouped_data",
+                "lineno": 67,
+                "end_lineno": 67
+              },
+              "attr": "sort_values",
+              "lineno": 67,
+              "end_lineno": 67
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "by",
+                "value": {
+                  "_type": "List",
+                  "elts": [
+                    {
+                      "_type": "Constant",
+                      "value": "cluster",
+                      "kind": null,
+                      "lineno": 67,
+                      "end_lineno": 67
+                    },
+                    {
+                      "_type": "Constant",
+                      "value": "Quantity",
+                      "kind": null,
+                      "lineno": 67,
+                      "end_lineno": 67
+                    }
+                  ],
+                  "lineno": 67,
+                  "end_lineno": 67
+                },
+                "lineno": 67,
+                "end_lineno": 67
+              },
+              {
+                "_type": "keyword",
+                "arg": "ascending",
+                "value": {
+                  "_type": "List",
+                  "elts": [
+                    {
+                      "_type": "Constant",
+                      "value": true,
+                      "kind": null,
+                      "lineno": 67,
+                      "end_lineno": 67
+                    },
+                    {
+                      "_type": "Constant",
+                      "value": false,
+                      "kind": null,
+                      "lineno": 67,
+                      "end_lineno": 67
+                    }
+                  ],
+                  "lineno": 67,
+                  "end_lineno": 67
+                },
+                "lineno": 67,
+                "end_lineno": 67
+              }
+            ],
+            "lineno": 67,
+            "end_lineno": 67
+          },
+          "type_comment": null,
+          "lineno": 67,
+          "end_lineno": 67
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "top_products_per_cluster",
+              "lineno": 70,
+              "end_lineno": 70
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "sorted_grouped_data",
+                    "lineno": 70,
+                    "end_lineno": 70
+                  },
+                  "attr": "groupby",
+                  "lineno": 70,
+                  "end_lineno": 70
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "cluster",
+                    "kind": null,
+                    "lineno": 70,
+                    "end_lineno": 70
+                  }
+                ],
+                "keywords": [],
+                "lineno": 70,
+                "end_lineno": 70
+              },
+              "attr": "head",
+              "lineno": 70,
+              "end_lineno": 70
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": 10,
+                "kind": null,
+                "lineno": 70,
+                "end_lineno": 70
+              }
+            ],
+            "keywords": [],
+            "lineno": 70,
+            "end_lineno": 70
+          },
+          "type_comment": null,
+          "lineno": 70,
+          "end_lineno": 70
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "top_products_per_cluster",
+            "lineno": 72,
+            "end_lineno": 72
+          },
+          "lineno": 72,
+          "end_lineno": 72
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 52,
+      "end_lineno": 72
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "record_customer_purchases",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "merged_data",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 75,
+            "end_lineno": 75
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n  Creates a record of the quantities of each product purchased by each customer \n  in each cluster.\n\n  Parameters:\n  merged_data (DataFrame): The dataframe fro"
+          },
+          "lineno": 76,
+          "end_lineno": 86
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "customer_purchases",
+              "lineno": 88,
+              "end_lineno": 88
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Call",
+                      "func": {
+                        "_type": "Attribute",
+                        "value": {
+                          "_type": "Name",
+                          "id": "merged_data",
+                          "lineno": 88,
+                          "end_lineno": 88
+                        },
+                        "attr": "groupby",
+                        "lineno": 88,
+                        "end_lineno": 88
+                      },
+                      "args": [
+                        {
+                          "_type": "List",
+                          "elts": [
+                            {
+                              "_type": "Constant",
+                              "value": "CustomerID",
+                              "kind": null,
+                              "lineno": 88,
+                              "end_lineno": 88
+                            },
+                            {
+                              "_type": "Constant",
+                              "value": "cluster",
+                              "kind": null,
+                              "lineno": 88,
+                              "end_lineno": 88
+                            },
+                            {
+                              "_type": "Constant",
+                              "value": "StockCode",
+                              "kind": null,
+                              "lineno": 88,
+                              "end_lineno": 88
+                            }
+                          ],
+                          "lineno": 88,
+                          "end_lineno": 88
+                        }
+                      ],
+                      "keywords": [],
+                      "lineno": 88,
+                      "end_lineno": 88
+                    },
+                    "slice": {
+                      "_type": "Constant",
+                      "value": "Quantity",
+                      "kind": null,
+                      "lineno": 88,
+                      "end_lineno": 88
+                    },
+                    "lineno": 88,
+                    "end_lineno": 88
+                  },
+                  "attr": "sum",
+                  "lineno": 88,
+                  "end_lineno": 88
+                },
+                "args": [],
+                "keywords": [],
+                "lineno": 88,
+                "end_lineno": 88
+              },
+              "attr": "reset_index",
+              "lineno": 88,
+              "end_lineno": 88
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 88,
+            "end_lineno": 88
+          },
+          "type_comment": null,
+          "lineno": 88,
+          "end_lineno": 88
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "customer_purchases",
+            "lineno": 90,
+            "end_lineno": 90
+          },
+          "lineno": 90,
+          "end_lineno": 90
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 75,
+      "end_lineno": 90
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "create_recommendations",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "customer_data",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 93,
+            "end_lineno": 93
+          },
+          {
+            "_type": "arg",
+            "arg": "top_products_per_cluster",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 93,
+            "end_lineno": 93
+          },
+          {
+            "_type": "arg",
+            "arg": "customer_purchases",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 93,
+            "end_lineno": 93
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n  Generates product recommendations for each customer based on the top products \n  in their cluster and their purchase history.\n\n  Parameters:\n  customer_data "
+          },
+          "lineno": 94,
+          "end_lineno": 105
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "recommendations",
+              "lineno": 106,
+              "end_lineno": 106
+            }
+          ],
+          "value": {
+            "_type": "List",
+            "elts": [],
+            "lineno": 106,
+            "end_lineno": 106
+          },
+          "type_comment": null,
+          "lineno": 106,
+          "end_lineno": 106
+        },
+        {
+          "_type": "For",
+          "target": {
+            "_type": "Name",
+            "id": "cluster",
+            "lineno": 108,
+            "end_lineno": 108
+          },
+          "iter": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "top_products_per_cluster",
+                  "lineno": 108,
+                  "end_lineno": 108
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "cluster",
+                  "kind": null,
+                  "lineno": 108,
+                  "end_lineno": 108
+                },
+                "lineno": 108,
+                "end_lineno": 108
+              },
+              "attr": "unique",
+              "lineno": 108,
+              "end_lineno": 108
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 108,
+            "end_lineno": 108
+          },
+          "body": [
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "top_products",
+                  "lineno": 110,
+                  "end_lineno": 110
+                }
+              ],
+              "value": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "top_products_per_cluster",
+                  "lineno": 110,
+                  "end_lineno": 110
+                },
+                "slice": {
+                  "_type": "Compare",
+                  "left": {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Name",
+                      "id": "top_products_per_cluster",
+                      "lineno": 110,
+                      "end_lineno": 110
+                    },
+                    "slice": {
+                      "_type": "Constant",
+                      "value": "cluster",
+                      "kind": null,
+                      "lineno": 110,
+                      "end_lineno": 110
+                    },
+                    "lineno": 110,
+                    "end_lineno": 110
+                  },
+                  "ops": [
+                    {
+                      "_type": "Eq"
+                    }
+                  ],
+                  "comparators": [
+                    {
+                      "_type": "Name",
+                      "id": "cluster",
+                      "lineno": 110,
+                      "end_lineno": 110
+                    }
+                  ],
+                  "lineno": 110,
+                  "end_lineno": 110
+                },
+                "lineno": 110,
+                "end_lineno": 110
+              },
+              "type_comment": null,
+              "lineno": 110,
+              "end_lineno": 110
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "customers_in_cluster",
+                  "lineno": 111,
+                  "end_lineno": 111
+                }
+              ],
+              "value": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "customer_data",
+                    "lineno": 111,
+                    "end_lineno": 111
+                  },
+                  "slice": {
+                    "_type": "Compare",
+                    "left": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "customer_data",
+                        "lineno": 111,
+                        "end_lineno": 111
+                      },
+                      "slice": {
+                        "_type": "Constant",
+                        "value": "cluster",
+                        "kind": null,
+                        "lineno": 111,
+                        "end_lineno": 111
+                      },
+                      "lineno": 111,
+                      "end_lineno": 111
+                    },
+                    "ops": [
+                      {
+                        "_type": "Eq"
+                      }
+                    ],
+                    "comparators": [
+                      {
+                        "_type": "Name",
+                        "id": "cluster",
+                        "lineno": 111,
+                        "end_lineno": 111
+                      }
+                    ],
+                    "lineno": 111,
+                    "end_lineno": 111
+                  },
+                  "lineno": 111,
+                  "end_lineno": 111
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "CustomerID",
+                  "kind": null,
+                  "lineno": 111,
+                  "end_lineno": 111
+                },
+                "lineno": 111,
+                "end_lineno": 111
+              },
+              "type_comment": null,
+              "lineno": 111,
+              "end_lineno": 111
+            },
+            {
+              "_type": "For",
+              "target": {
+                "_type": "Name",
+                "id": "customer",
+                "lineno": 113,
+                "end_lineno": 113
+              },
+              "iter": {
+                "_type": "Name",
+                "id": "customers_in_cluster",
+                "lineno": 113,
+                "end_lineno": 113
+              },
+              "body": [
+                {
+                  "_type": "Assign",
+                  "targets": [
+                    {
+                      "_type": "Name",
+                      "id": "customer_purchased_products",
+                      "lineno": 115,
+                      "end_lineno": 115
+                    }
+                  ],
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Subscript",
+                        "value": {
+                          "_type": "Subscript",
+                          "value": {
+                            "_type": "Name",
+                            "id": "customer_purchases",
+                            "lineno": 115,
+                            "end_lineno": 115
+                          },
+                          "slice": {
+                            "_type": "BinOp",
+                            "left": {
+                              "_type": "Compare",
+                              "left": {
+                                "_type": "Subscript",
+                                "value": {
+                                  "_type": "Name",
+                                  "id": "customer_purchases",
+                                  "lineno": 116,
+                                  "end_lineno": 116
+                                },
+                                "slice": {
+                                  "_type": "Constant",
+                                  "value": "CustomerID",
+                                  "kind": null,
+                                  "lineno": 116,
+                                  "end_lineno": 116
+                                },
+                                "lineno": 116,
+                                "end_lineno": 116
+                              },
+                              "ops": [
+                                {
+                                  "_type": "Eq"
+                                }
+                              ],
+                              "comparators": [
+                                {
+                                  "_type": "Name",
+                                  "id": "customer",
+                                  "lineno": 116,
+                                  "end_lineno": 116
+                                }
+                              ],
+                              "lineno": 116,
+                              "end_lineno": 116
+                            },
+                            "op": {
+                              "_type": "BitAnd"
+                            },
+                            "right": {
+                              "_type": "Compare",
+                              "left": {
+                                "_type": "Subscript",
+                                "value": {
+                                  "_type": "Name",
+                                  "id": "customer_purchases",
+                                  "lineno": 117,
+                                  "end_lineno": 117
+                                },
+                                "slice": {
+                                  "_type": "Constant",
+                                  "value": "cluster",
+                                  "kind": null,
+                                  "lineno": 117,
+                                  "end_lineno": 117
+                                },
+                                "lineno": 117,
+                                "end_lineno": 117
+                              },
+                              "ops": [
+                                {
+                                  "_type": "Eq"
+                                }
+                              ],
+                              "comparators": [
+                                {
+                                  "_type": "Name",
+                                  "id": "cluster",
+                                  "lineno": 117,
+                                  "end_lineno": 117
+                                }
+                              ],
+                              "lineno": 117,
+                              "end_lineno": 117
+                            },
+                            "lineno": 116,
+                            "end_lineno": 117
+                          },
+                          "lineno": 115,
+                          "end_lineno": 118
+                        },
+                        "slice": {
+                          "_type": "Constant",
+                          "value": "StockCode",
+                          "kind": null,
+                          "lineno": 118,
+                          "end_lineno": 118
+                        },
+                        "lineno": 115,
+                        "end_lineno": 118
+                      },
+                      "attr": "tolist",
+                      "lineno": 115,
+                      "end_lineno": 118
+                    },
+                    "args": [],
+                    "keywords": [],
+                    "lineno": 115,
+                    "end_lineno": 118
+                  },
+                  "type_comment": null,
+                  "lineno": 115,
+                  "end_lineno": 118
+                },
+                {
+                  "_type": "Assign",
+                  "targets": [
+                    {
+                      "_type": "Name",
+                      "id": "top_products_not_purchased",
+                      "lineno": 121,
+                      "end_lineno": 121
+                    }
+                  ],
+                  "value": {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Name",
+                      "id": "top_products",
+                      "lineno": 121,
+                      "end_lineno": 121
+                    },
+                    "slice": {
+                      "_type": "UnaryOp",
+                      "op": {
+                        "_type": "Invert"
+                      },
+                      "operand": {
+                        "_type": "Call",
+                        "func": {
+                          "_type": "Attribute",
+                          "value": {
+                            "_type": "Subscript",
+                            "value": {
+                              "_type": "Name",
+                              "id": "top_products",
+                              "lineno": 121,
+                              "end_lineno": 121
+                            },
+                            "slice": {
+                              "_type": "Constant",
+                              "value": "StockCode",
+                              "kind": null,
+                              "lineno": 121,
+                              "end_lineno": 121
+                            },
+                            "lineno": 121,
+                            "end_lineno": 121
+                          },
+                          "attr": "isin",
+                          "lineno": 121,
+                          "end_lineno": 121
+                        },
+                        "args": [
+                          {
+                            "_type": "Name",
+                            "id": "customer_purchased_products",
+                            "lineno": 121,
+                            "end_lineno": 121
+                          }
+                        ],
+                        "keywords": [],
+                        "lineno": 121,
+                        "end_lineno": 121
+                      },
+                      "lineno": 121,
+                      "end_lineno": 121
+                    },
+                    "lineno": 121,
+                    "end_lineno": 121
+                  },
+                  "type_comment": null,
+                  "lineno": 121,
+                  "end_lineno": 121
+                },
+                {
+                  "_type": "Assign",
+                  "targets": [
+                    {
+                      "_type": "Name",
+                      "id": "top_3_products_not_purchased",
+                      "lineno": 122,
+                      "end_lineno": 122
+                    }
+                  ],
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Name",
+                        "id": "top_products_not_purchased",
+                        "lineno": 122,
+                        "end_lineno": 122
+                      },
+                      "attr": "head",
+                      "lineno": 122,
+                      "end_lineno": 122
+                    },
+                    "args": [
+                      {
+                        "_type": "Constant",
+                        "value": 3,
+                        "kind": null,
+                        "lineno": 122,
+                        "end_lineno": 122
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 122,
+                    "end_lineno": 122
+                  },
+                  "type_comment": null,
+                  "lineno": 122,
+                  "end_lineno": 122
+                },
+                {
+                  "_type": "Assign",
+                  "targets": [
+                    {
+                      "_type": "Name",
+                      "id": "recommended_items",
+                      "lineno": 125,
+                      "end_lineno": 125
+                    }
+                  ],
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Call",
+                        "func": {
+                          "_type": "Attribute",
+                          "value": {
+                            "_type": "Attribute",
+                            "value": {
+                              "_type": "Subscript",
+                              "value": {
+                                "_type": "Name",
+                                "id": "top_3_products_not_purchased",
+                                "lineno": 125,
+                                "end_lineno": 125
+                              },
+                              "slice": {
+                                "_type": "List",
+                                "elts": [
+                                  {
+                                    "_type": "Constant",
+                                    "value": "StockCode",
+                                    "kind": null,
+                                    "lineno": 125,
+                                    "end_lineno": 125
+                                  },
+                                  {
+                                    "_type": "Constant",
+                                    "value": "Description",
+                                    "kind": null,
+                                    "lineno": 125,
+                                    "end_lineno": 125
+                                  }
+                                ],
+                                "lineno": 125,
+                                "end_lineno": 125
+                              },
+                              "lineno": 125,
+                              "end_lineno": 125
+                            },
+                            "attr": "values",
+                            "lineno": 125,
+                            "end_lineno": 125
+                          },
+                          "attr": "flatten",
+                          "lineno": 125,
+                          "end_lineno": 125
+                        },
+                        "args": [],
+                        "keywords": [],
+                        "lineno": 125,
+                        "end_lineno": 125
+                      },
+                      "attr": "tolist",
+                      "lineno": 125,
+                      "end_lineno": 125
+                    },
+                    "args": [],
+                    "keywords": [],
+                    "lineno": 125,
+                    "end_lineno": 125
+                  },
+                  "type_comment": null,
+                  "lineno": 125,
+                  "end_lineno": 125
+                },
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Name",
+                        "id": "recommendations",
+                        "lineno": 126,
+                        "end_lineno": 126
+                      },
+                      "attr": "append",
+                      "lineno": 126,
+                      "end_lineno": 126
+                    },
+                    "args": [
+                      {
+                        "_type": "BinOp",
+                        "left": {
+                          "_type": "List",
+                          "elts": [
+                            {
+                              "_type": "Name",
+                              "id": "customer",
+                              "lineno": 126,
+                              "end_lineno": 126
+                            },
+                            {
+                              "_type": "Name",
+                              "id": "cluster",
+                              "lineno": 126,
+                              "end_lineno": 126
+                            }
+                          ],
+                          "lineno": 126,
+                          "end_lineno": 126
+                        },
+                        "op": {
+                          "_type": "Add"
+                        },
+                        "right": {
+                          "_type": "Name",
+                          "id": "recommended_items",
+                          "lineno": 126,
+                          "end_lineno": 126
+                        },
+                        "lineno": 126,
+                        "end_lineno": 126
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 126,
+                    "end_lineno": 126
+                  },
+                  "lineno": 126,
+                  "end_lineno": 126
+                }
+              ],
+              "orelse": [],
+              "type_comment": null,
+              "lineno": 113,
+              "end_lineno": 126
+            }
+          ],
+          "orelse": [],
+          "type_comment": null,
+          "lineno": 108,
+          "end_lineno": 126
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "recommendations",
+            "lineno": 128,
+            "end_lineno": 128
+          },
+          "lineno": 128,
+          "end_lineno": 128
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 93,
+      "end_lineno": 128
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "generate_recommendations",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "df",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 131,
+            "end_lineno": 131
+          },
+          {
+            "_type": "arg",
+            "arg": "outliers_data",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 131,
+            "end_lineno": 131
+          },
+          {
+            "_type": "arg",
+            "arg": "customer_data_cleaned",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 131,
+            "end_lineno": 131
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n  Generates product recommendations for each customer based on clustering.\n\n  Parameters:\n  df (DataFrame): Transaction data.\n  outliers_data (DataFrame): Data"
+          },
+          "lineno": 132,
+          "end_lineno": 142
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "df_filtered",
+              "lineno": 144,
+              "end_lineno": 144
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "remove_outliers",
+              "lineno": 144,
+              "end_lineno": 144
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "df",
+                "lineno": 144,
+                "end_lineno": 144
+              },
+              {
+                "_type": "Name",
+                "id": "outliers_data",
+                "lineno": 144,
+                "end_lineno": 144
+              }
+            ],
+            "keywords": [],
+            "lineno": 144,
+            "end_lineno": 144
+          },
+          "type_comment": null,
+          "lineno": 144,
+          "end_lineno": 144
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "merged_data",
+              "lineno": 147,
+              "end_lineno": 147
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "merge_customer_transactions",
+              "lineno": 147,
+              "end_lineno": 147
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "df_filtered",
+                "lineno": 147,
+                "end_lineno": 147
+              },
+              {
+                "_type": "Name",
+                "id": "customer_data_cleaned",
+                "lineno": 147,
+                "end_lineno": 147
+              }
+            ],
+            "keywords": [],
+            "lineno": 147,
+            "end_lineno": 147
+          },
+          "type_comment": null,
+          "lineno": 147,
+          "end_lineno": 147
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "top_products_per_cluster",
+              "lineno": 150,
+              "end_lineno": 150
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "identify_top_products",
+              "lineno": 150,
+              "end_lineno": 150
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "merged_data",
+                "lineno": 150,
+                "end_lineno": 150
+              }
+            ],
+            "keywords": [],
+            "lineno": 150,
+            "end_lineno": 150
+          },
+          "type_comment": null,
+          "lineno": 150,
+          "end_lineno": 150
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "customer_purchases",
+              "lineno": 153,
+              "end_lineno": 153
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "record_customer_purchases",
+              "lineno": 153,
+              "end_lineno": 153
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "merged_data",
+                "lineno": 153,
+                "end_lineno": 153
+              }
+            ],
+            "keywords": [],
+            "lineno": 153,
+            "end_lineno": 153
+          },
+          "type_comment": null,
+          "lineno": 153,
+          "end_lineno": 153
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "recommendations_list",
+              "lineno": 156,
+              "end_lineno": 156
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "create_recommendations",
+              "lineno": 156,
+              "end_lineno": 156
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "customer_data_cleaned",
+                "lineno": 156,
+                "end_lineno": 156
+              },
+              {
+                "_type": "Name",
+                "id": "top_products_per_cluster",
+                "lineno": 156,
+                "end_lineno": 156
+              },
+              {
+                "_type": "Name",
+                "id": "customer_purchases",
+                "lineno": 156,
+                "end_lineno": 156
+              }
+            ],
+            "keywords": [],
+            "lineno": 156,
+            "end_lineno": 156
+          },
+          "type_comment": null,
+          "lineno": 156,
+          "end_lineno": 156
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "recommendations_columns",
+              "lineno": 159,
+              "end_lineno": 159
+            }
+          ],
+          "value": {
+            "_type": "List",
+            "elts": [
+              {
+                "_type": "Constant",
+                "value": "CustomerID",
+                "kind": null,
+                "lineno": 159,
+                "end_lineno": 159
+              },
+              {
+                "_type": "Constant",
+                "value": "cluster",
+                "kind": null,
+                "lineno": 159,
+                "end_lineno": 159
+              },
+              {
+                "_type": "Constant",
+                "value": "Rec1_StockCode",
+                "kind": null,
+                "lineno": 159,
+                "end_lineno": 159
+              },
+              {
+                "_type": "Constant",
+                "value": "Rec1_Description",
+                "kind": null,
+                "lineno": 159,
+                "end_lineno": 159
+              },
+              {
+                "_type": "Constant",
+                "value": "Rec2_StockCode",
+                "kind": null,
+                "lineno": 160,
+                "end_lineno": 160
+              },
+              {
+                "_type": "Constant",
+                "value": "Rec2_Description",
+                "kind": null,
+                "lineno": 160,
+                "end_lineno": 160
+              },
+              {
+                "_type": "Constant",
+                "value": "Rec3_StockCode",
+                "kind": null,
+                "lineno": 160,
+                "end_lineno": 160
+              },
+              {
+                "_type": "Constant",
+                "value": "Rec3_Description",
+                "kind": null,
+                "lineno": 160,
+                "end_lineno": 160
+              }
+            ],
+            "lineno": 159,
+            "end_lineno": 160
+          },
+          "type_comment": null,
+          "lineno": 159,
+          "end_lineno": 160
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "recommendations_df",
+              "lineno": 161,
+              "end_lineno": 161
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "pd",
+                "lineno": 161,
+                "end_lineno": 161
+              },
+              "attr": "DataFrame",
+              "lineno": 161,
+              "end_lineno": 161
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "recommendations_list",
+                "lineno": 161,
+                "end_lineno": 161
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "columns",
+                "value": {
+                  "_type": "Name",
+                  "id": "recommendations_columns",
+                  "lineno": 161,
+                  "end_lineno": 161
+                },
+                "lineno": 161,
+                "end_lineno": 161
+              }
+            ],
+            "lineno": 161,
+            "end_lineno": 161
+          },
+          "type_comment": null,
+          "lineno": 161,
+          "end_lineno": 161
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "recommendations_df",
+            "lineno": 163,
+            "end_lineno": 163
+          },
+          "lineno": 163,
+          "end_lineno": 163
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 131,
+      "end_lineno": 163
+    }
+  ],
+  "type_ignores": []
+}

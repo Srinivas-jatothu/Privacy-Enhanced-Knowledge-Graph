@@ -1,0 +1,32 @@
+{
+  "relpath": ".git/hooks/fsmonitor-watchman.sample",
+  "manifest_meta": {
+    "relpath": ".git/hooks/fsmonitor-watchman.sample",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\fsmonitor-watchman.sample",
+    "size": 4726,
+    "mtime": 1763123843.5419438,
+    "mime": "text/x-perl",
+    "is_text": true,
+    "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.git__hooks__fsmonitor-watchman.sample.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "ISO-8859-1",
+    "X-TIKA:parse_time_millis": "1",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'fsmonitor-watchman.sample'",
+    "X-TIKA:detectedEncoding": "ISO-8859-1",
+    "Content-Length": "4726",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/x-perl; charset=ISO-8859-1"
+  }
+}

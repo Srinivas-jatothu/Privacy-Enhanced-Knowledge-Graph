@@ -1,0 +1,10 @@
+"""
+Modularized Data pipeline to form DAGs in the future
+"""
+from download_data import ingest_data
+from unzip_data import unzip_file
+from data_loader import load_data
+from missing_values_handler import handle_missing
+from duplicates_handler import remove_duplicates
+from transaction_status_handler import handle_transaction_status
+from anomaly_code_handler import handle_anomalous_codes

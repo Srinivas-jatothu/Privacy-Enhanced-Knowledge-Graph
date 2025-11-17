@@ -1,0 +1,32 @@
+{
+  "relpath": "test/test_cleaning_description.py",
+  "manifest_meta": {
+    "relpath": "test/test_cleaning_description.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_cleaning_description.py",
+    "size": 1216,
+    "mtime": 1763123859.5667264,
+    "mime": "text/x-python",
+    "is_text": true,
+    "sha256": "fa2c6c5860072bbc319fd1b6c6c24b5c9e6f50d7d1682d80b8a15bd0e4adb515",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\test__test_cleaning_description.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "0",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'test_cleaning_description.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "1216",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

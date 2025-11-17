@@ -1,0 +1,649 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Expr",
+      "value": {
+        "_const_preview": "\nFunction to download and ingest the data file\n"
+      },
+      "lineno": 1,
+      "end_lineno": 3
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "os",
+          "asname": null,
+          "lineno": 4,
+          "end_lineno": 4
+        }
+      ],
+      "lineno": 4,
+      "end_lineno": 4
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "requests",
+          "asname": null,
+          "lineno": 5,
+          "end_lineno": 5
+        }
+      ],
+      "lineno": 5,
+      "end_lineno": 5
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "DEFAULT_FILE_URL",
+          "lineno": 7,
+          "end_lineno": 7
+        }
+      ],
+      "value": {
+        "_const_preview": "https://archive.ics.uci.edu/static/public/352/online+retail.zip"
+      },
+      "type_comment": null,
+      "lineno": 7,
+      "end_lineno": 7
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "ingest_data",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "file_url",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 9,
+            "end_lineno": 9
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": [
+          {
+            "_type": "Name",
+            "id": "DEFAULT_FILE_URL",
+            "lineno": 9,
+            "end_lineno": 9
+          }
+        ]
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Function to download file from URL\n    Args:\n        file_url: URL of the file, A default is used if not specified\n    Returns:\n        zipfile_path: The z"
+          },
+          "lineno": 10,
+          "end_lineno": 16
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "response",
+              "lineno": 18,
+              "end_lineno": 18
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "requests",
+                "lineno": 18,
+                "end_lineno": 18
+              },
+              "attr": "get",
+              "lineno": 18,
+              "end_lineno": 18
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "file_url",
+                "lineno": 18,
+                "end_lineno": 18
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "timeout",
+                "value": {
+                  "_type": "Constant",
+                  "value": 30,
+                  "kind": null,
+                  "lineno": 18,
+                  "end_lineno": 18
+                },
+                "lineno": 18,
+                "end_lineno": 18
+              }
+            ],
+            "lineno": 18,
+            "end_lineno": 18
+          },
+          "type_comment": null,
+          "lineno": 18,
+          "end_lineno": 18
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "print",
+              "lineno": 20,
+              "end_lineno": 20
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "Downloading Data",
+                "kind": null,
+                "lineno": 20,
+                "end_lineno": 20
+              }
+            ],
+            "keywords": [],
+            "lineno": 20,
+            "end_lineno": 20
+          },
+          "lineno": 20,
+          "end_lineno": 20
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "root_dir",
+              "lineno": 23,
+              "end_lineno": 23
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 23,
+                  "end_lineno": 23
+                },
+                "attr": "path",
+                "lineno": 23,
+                "end_lineno": 23
+              },
+              "attr": "abspath",
+              "lineno": 23,
+              "end_lineno": 23
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 23,
+                      "end_lineno": 23
+                    },
+                    "attr": "path",
+                    "lineno": 23,
+                    "end_lineno": 23
+                  },
+                  "attr": "join",
+                  "lineno": 23,
+                  "end_lineno": 23
+                },
+                "args": [
+                  {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Attribute",
+                        "value": {
+                          "_type": "Name",
+                          "id": "os",
+                          "lineno": 23,
+                          "end_lineno": 23
+                        },
+                        "attr": "path",
+                        "lineno": 23,
+                        "end_lineno": 23
+                      },
+                      "attr": "dirname",
+                      "lineno": 23,
+                      "end_lineno": 23
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "__file__",
+                        "lineno": 23,
+                        "end_lineno": 23
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 23,
+                    "end_lineno": 23
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "..",
+                    "kind": null,
+                    "lineno": 23,
+                    "end_lineno": 23
+                  }
+                ],
+                "keywords": [],
+                "lineno": 23,
+                "end_lineno": 23
+              }
+            ],
+            "keywords": [],
+            "lineno": 23,
+            "end_lineno": 23
+          },
+          "type_comment": null,
+          "lineno": 23,
+          "end_lineno": 23
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "zipfile_path",
+              "lineno": 26,
+              "end_lineno": 26
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 26,
+                  "end_lineno": 26
+                },
+                "attr": "path",
+                "lineno": 26,
+                "end_lineno": 26
+              },
+              "attr": "join",
+              "lineno": 26,
+              "end_lineno": 26
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "root_dir",
+                "lineno": 26,
+                "end_lineno": 26
+              },
+              {
+                "_type": "Constant",
+                "value": "data",
+                "kind": null,
+                "lineno": 26,
+                "end_lineno": 26
+              },
+              {
+                "_type": "Constant",
+                "value": "data.zip",
+                "kind": null,
+                "lineno": 26,
+                "end_lineno": 26
+              }
+            ],
+            "keywords": [],
+            "lineno": 26,
+            "end_lineno": 26
+          },
+          "type_comment": null,
+          "lineno": 26,
+          "end_lineno": 26
+        },
+        {
+          "_type": "If",
+          "test": {
+            "_type": "Compare",
+            "left": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "response",
+                "lineno": 28,
+                "end_lineno": 28
+              },
+              "attr": "status_code",
+              "lineno": 28,
+              "end_lineno": 28
+            },
+            "ops": [
+              {
+                "_type": "Eq"
+              }
+            ],
+            "comparators": [
+              {
+                "_type": "Constant",
+                "value": 200,
+                "kind": null,
+                "lineno": 28,
+                "end_lineno": 28
+              }
+            ],
+            "lineno": 28,
+            "end_lineno": 28
+          },
+          "body": [
+            {
+              "_type": "With",
+              "items": [
+                {
+                  "_type": "withitem",
+                  "context_expr": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "open",
+                      "lineno": 30,
+                      "end_lineno": 30
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "zipfile_path",
+                        "lineno": 30,
+                        "end_lineno": 30
+                      },
+                      {
+                        "_type": "Constant",
+                        "value": "wb",
+                        "kind": null,
+                        "lineno": 30,
+                        "end_lineno": 30
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 30,
+                    "end_lineno": 30
+                  },
+                  "optional_vars": {
+                    "_type": "Name",
+                    "id": "file",
+                    "lineno": 30,
+                    "end_lineno": 30
+                  }
+                }
+              ],
+              "body": [
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Name",
+                        "id": "file",
+                        "lineno": 31,
+                        "end_lineno": 31
+                      },
+                      "attr": "write",
+                      "lineno": 31,
+                      "end_lineno": 31
+                    },
+                    "args": [
+                      {
+                        "_type": "Attribute",
+                        "value": {
+                          "_type": "Name",
+                          "id": "response",
+                          "lineno": 31,
+                          "end_lineno": 31
+                        },
+                        "attr": "content",
+                        "lineno": 31,
+                        "end_lineno": 31
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 31,
+                    "end_lineno": 31
+                  },
+                  "lineno": 31,
+                  "end_lineno": 31
+                }
+              ],
+              "type_comment": null,
+              "lineno": 30,
+              "end_lineno": 31
+            },
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "print",
+                  "lineno": 32,
+                  "end_lineno": 32
+                },
+                "args": [
+                  {
+                    "_type": "JoinedStr",
+                    "values": [
+                      {
+                        "_type": "Constant",
+                        "value": "File downloaded successfully. Zip file available under ",
+                        "kind": null,
+                        "lineno": 32,
+                        "end_lineno": 32
+                      },
+                      {
+                        "_type": "FormattedValue",
+                        "value": {
+                          "_type": "Name",
+                          "id": "zipfile_path",
+                          "lineno": 32,
+                          "end_lineno": 32
+                        },
+                        "conversion": -1,
+                        "format_spec": null,
+                        "lineno": 32,
+                        "end_lineno": 32
+                      }
+                    ],
+                    "lineno": 32,
+                    "end_lineno": 32
+                  }
+                ],
+                "keywords": [],
+                "lineno": 32,
+                "end_lineno": 32
+              },
+              "lineno": 32,
+              "end_lineno": 32
+            }
+          ],
+          "orelse": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "print",
+                  "lineno": 34,
+                  "end_lineno": 34
+                },
+                "args": [
+                  {
+                    "_type": "JoinedStr",
+                    "values": [
+                      {
+                        "_type": "Constant",
+                        "value": "Failed to download the file. Status code: ",
+                        "kind": null,
+                        "lineno": 34,
+                        "end_lineno": 34
+                      },
+                      {
+                        "_type": "FormattedValue",
+                        "value": {
+                          "_type": "Attribute",
+                          "value": {
+                            "_type": "Name",
+                            "id": "response",
+                            "lineno": 34,
+                            "end_lineno": 34
+                          },
+                          "attr": "status_code",
+                          "lineno": 34,
+                          "end_lineno": 34
+                        },
+                        "conversion": -1,
+                        "format_spec": null,
+                        "lineno": 34,
+                        "end_lineno": 34
+                      }
+                    ],
+                    "lineno": 34,
+                    "end_lineno": 34
+                  }
+                ],
+                "keywords": [],
+                "lineno": 34,
+                "end_lineno": 34
+              },
+              "lineno": 34,
+              "end_lineno": 34
+            }
+          ],
+          "lineno": 28,
+          "end_lineno": 34
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "zipfile_path",
+            "lineno": 36,
+            "end_lineno": 36
+          },
+          "lineno": 36,
+          "end_lineno": 36
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 9,
+      "end_lineno": 36
+    },
+    {
+      "_type": "If",
+      "test": {
+        "_type": "Compare",
+        "left": {
+          "_type": "Name",
+          "id": "__name__",
+          "lineno": 38,
+          "end_lineno": 38
+        },
+        "ops": [
+          {
+            "_type": "Eq"
+          }
+        ],
+        "comparators": [
+          {
+            "_type": "Constant",
+            "value": "__main__",
+            "kind": null,
+            "lineno": 38,
+            "end_lineno": 38
+          }
+        ],
+        "lineno": 38,
+        "end_lineno": 38
+      },
+      "body": [
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "ZIPFILE_PATH",
+              "lineno": 39,
+              "end_lineno": 39
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "ingest_data",
+              "lineno": 39,
+              "end_lineno": 39
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "https://archive.ics.uci.edu/static/public/352/online+retail.zip",
+                "kind": null,
+                "lineno": 39,
+                "end_lineno": 39
+              }
+            ],
+            "keywords": [],
+            "lineno": 39,
+            "end_lineno": 39
+          },
+          "type_comment": null,
+          "lineno": 39,
+          "end_lineno": 39
+        }
+      ],
+      "orelse": [],
+      "lineno": 38,
+      "end_lineno": 39
+    }
+  ],
+  "type_ignores": []
+}

@@ -1,0 +1,32 @@
+{
+  "relpath": "mlruns/0/meta.yaml",
+  "manifest_meta": {
+    "relpath": "mlruns/0/meta.yaml",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\mlruns\\0\\meta.yaml",
+    "size": 163,
+    "mtime": 1763123859.3793478,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "1569388b1acace2d4437d33801f8ea29ae1c8b1e6fb09b9a8db7a25ecbc9e4bc",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\mlruns__0__meta.yaml.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'meta.yaml'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "163",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

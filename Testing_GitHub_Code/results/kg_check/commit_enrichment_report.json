@@ -1,0 +1,1009 @@
+{
+  "nodes_total": 1807,
+  "functions_total": 638,
+  "enriched_functions": 226,
+  "attached_prs": 226,
+  "functions_missing_commits_mapping": 412,
+  "sample": [
+    {
+      "id": "Function:dags.src.anomaly_code_handler.handle_anomalous_codes",
+      "commit": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "pr": "22"
+    },
+    {
+      "id": "Function:dags.src.cancellation_details.cancellation_details",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:dags.src.cleaning_description.cleaning_description",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:dags.src.correlation.correlation_check",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:dags.src.correlation.save_heatmap",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:dags.src.correlation.save_correlations_as_parquet",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:dags.src.customers_behavior.customers_behavior",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:dags.src.data_loader.load_data",
+      "commit": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "pr": "22"
+    },
+    {
+      "id": "Function:dags.src.download_data.ingest_data",
+      "commit": "e45a01eb0a52ba53114c08db3eb285caecd271ac",
+      "pr": "22"
+    },
+    {
+      "id": "Function:dags.src.duplicates_handler.remove_duplicates",
+      "commit": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "pr": "22"
+    },
+    {
+      "id": "Function:dags.src.geographic_features.geographic_features",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:dags.src.missing_values_handler.handle_missing",
+      "commit": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "pr": "22"
+    },
+    {
+      "id": "Function:dags.src.outlier_treatment.removing_outlier",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:dags.src.pca.pc_analyzer",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:dags.src.pca.pca_",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:dags.src.removing_zero_unitprice.removing_zero",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:dags.src.rfm.rfm",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:dags.src.scaler.scaler",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:dags.src.seasonality.seasonality_impacts",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:dags.src.transaction_status_handler.handle_transaction_status",
+      "commit": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "pr": "22"
+    },
+    {
+      "id": "Function:dags.src.unique_products.unique_products",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:dags.src.unzip_data.unzip_file",
+      "commit": "e45a01eb0a52ba53114c08db3eb285caecd271ac",
+      "pr": "22"
+    },
+    {
+      "id": "Function:gcpdeploy.src.anomaly_code_handler.handle_anomalous_codes",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.build.initialize_aiplatform",
+      "commit": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.build.create_training_job",
+      "commit": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.build.run_training_job",
+      "commit": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.build.deploy_model_to_endpoint",
+      "commit": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.build.main",
+      "commit": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.cancellation_details.cancellation_details",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.cleaning_description.cleaning_description",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.correlation.correlation_check",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.correlation.save_heatmap",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.correlation.save_correlations_as_parquet",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.customers_behavior.customers_behavior",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.data_loader.load_data",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.download_data.ingest_data",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.duplicates_handler.remove_duplicates",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.geographic_features.geographic_features",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.inference.predict_custom_trained_model",
+      "commit": "1420f9d3185da8bc6510d1d49d0bbded97dcff32",
+      "pr": "87"
+    },
+    {
+      "id": "Function:gcpdeploy.src.mflow_logging.mlflow_logging_train",
+      "commit": "e2257c888abf84b13b16ce0655447228533428ea",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.missing_values_handler.handle_missing",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.model_analysis.load_data",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.model_analysis.normalize_data",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.model_analysis.data_transform",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.model_analysis.top_pca",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.model_analysis.cluster_distribution",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.model_analysis.evaluation_metrics",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.model_analysis.train_model",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.model_analysis.save_and_upload_model",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.model_analysis.silhouette_analysis",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.outlier_treatment.removing_outlier",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.pca.pc_analyzer",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.pca.pca_",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.removing_zero_unitprice.removing_zero",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.rfm.rfm",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.seasonality.seasonality_impacts",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.serve.predict.get_table_schema",
+      "commit": "5161bcbd80aaa8386d47f881655af47a0dd35b55",
+      "pr": "99"
+    },
+    {
+      "id": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists",
+      "commit": "5161bcbd80aaa8386d47f881655af47a0dd35b55",
+      "pr": "99"
+    },
+    {
+      "id": "Function:gcpdeploy.src.serve.predict.initialize_variables",
+      "commit": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.serve.predict.initialize_client_and_bucket",
+      "commit": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.serve.predict.load_model",
+      "commit": "356d49f95a95716f1b3fd9927193322eb935000c",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.serve.predict.fetch_latest_model",
+      "commit": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.serve.predict.health_check",
+      "commit": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.serve.predict.predict",
+      "commit": "5161bcbd80aaa8386d47f881655af47a0dd35b55",
+      "pr": "99"
+    },
+    {
+      "id": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.remove_outliers",
+      "commit": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.merge_customer_transactions",
+      "commit": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.identify_top_products",
+      "commit": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.record_customer_purchases",
+      "commit": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.create_recommendations",
+      "commit": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.generate_recommendations",
+      "commit": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.trainer.train.kmeans_clustering",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.trainer.train.save_and_upload_model",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.trainer.train.main",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:gcpdeploy.src.transaction_status_handler.handle_transaction_status",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.unique_products.unique_products",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:gcpdeploy.src.unzip_data.unzip_file",
+      "commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "pr": "54"
+    },
+    {
+      "id": "Function:src.anomaly_code_handler.handle_anomalous_codes",
+      "commit": "e3dc57822babc35cfbe9fc313d3e58bdd41e05ef",
+      "pr": "11"
+    },
+    {
+      "id": "Function:src.cancellation_details.cancellation_details",
+      "commit": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "pr": "21"
+    },
+    {
+      "id": "Function:src.cleaning_description.cleaning_description",
+      "commit": "068d9f642c1a395727ef9f023f94ef609a9f036e",
+      "pr": "22"
+    },
+    {
+      "id": "Function:src.correlation.correlation_check",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:src.correlation.save_heatmap",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:src.correlation.save_correlations_as_parquet",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:src.customers_behavior.customers_behavior",
+      "commit": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "pr": "21"
+    },
+    {
+      "id": "Function:src.data_loader.load_data",
+      "commit": "e91e19da05793897edc64b9b8e4a293f79720667",
+      "pr": "11"
+    },
+    {
+      "id": "Function:src.download_data.ingest_data",
+      "commit": "a58f2b2c20672dcc76b35369228a9db5725ba348",
+      "pr": "11"
+    },
+    {
+      "id": "Function:src.duplicates_handler.remove_duplicates",
+      "commit": "e3dc57822babc35cfbe9fc313d3e58bdd41e05ef",
+      "pr": "11"
+    },
+    {
+      "id": "Function:src.geographic_features.geographic_features",
+      "commit": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "pr": "21"
+    },
+    {
+      "id": "Function:src.histogram_analysis.rfm_histograms",
+      "commit": "e2257c888abf84b13b16ce0655447228533428ea",
+      "pr": "85"
+    },
+    {
+      "id": "Function:src.missing_values_handler.handle_missing",
+      "commit": "e91e19da05793897edc64b9b8e4a293f79720667",
+      "pr": "11"
+    },
+    {
+      "id": "Function:src.outlier_treatment.removing_outlier",
+      "commit": "068d9f642c1a395727ef9f023f94ef609a9f036e",
+      "pr": "22"
+    },
+    {
+      "id": "Function:src.pca.pc_analyzer",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:src.pca.pca_",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:src.radar_analysis.radar_charts",
+      "commit": "e2257c888abf84b13b16ce0655447228533428ea",
+      "pr": "85"
+    },
+    {
+      "id": "Function:src.removing_zero_unitprice.removing_zero",
+      "commit": "068d9f642c1a395727ef9f023f94ef609a9f036e",
+      "pr": "22"
+    },
+    {
+      "id": "Function:src.rfm.rfm",
+      "commit": "6187a3b974321c6201c9b39316d5c86ac43a535c",
+      "pr": "21"
+    },
+    {
+      "id": "Function:src.scaler.scaler",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:src.seasonality.seasonality_impacts",
+      "commit": "6187a3b974321c6201c9b39316d5c86ac43a535c",
+      "pr": "21"
+    },
+    {
+      "id": "Function:src.transaction_status_handler.handle_transaction_status",
+      "commit": "e3dc57822babc35cfbe9fc313d3e58bdd41e05ef",
+      "pr": "11"
+    },
+    {
+      "id": "Function:src.unique_products.unique_products",
+      "commit": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "pr": "21"
+    },
+    {
+      "id": "Function:src.unzip_data.unzip_file",
+      "commit": "3e1bec3268f696890080778af22692bb13f5f440",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test.test_anomaly_code_handler.test_handle_anomalous_codes",
+      "commit": "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test.test_cancellation_details.test_cancellation_details",
+      "commit": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "pr": "21"
+    },
+    {
+      "id": "Function:test.test_cleaning_description.test_cleaning_description",
+      "commit": "8518a04fd1cfe84e26b11144dc1e1dfc0aa8ff22",
+      "pr": "22"
+    },
+    {
+      "id": "Function:test.test_correlation.test_correlation_filenotfound",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_correlation.test_correlation_parquetpath_error",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_correlation.test_correlation_imagepath_error",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_correlation.test_correlation_imagesavecheck",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_correlation.test_correlation_parquetsavecheck",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_correlation.test_corr_thresh_error",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_customers_behavior.test_customers_behavior",
+      "commit": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "pr": "21"
+    },
+    {
+      "id": "Function:test.test_data_loader.test_load_data_from_excel",
+      "commit": "a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test.test_data_loader.test_load_data_no_files",
+      "commit": "a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test.test_download_data.test_ingest_data",
+      "commit": "a58f2b2c20672dcc76b35369228a9db5725ba348",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test.test_download_data.test_ingest_data_successful_download",
+      "commit": "7a64fd850869693f4970154044b9ed0cdc7d53b1",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test.test_duplicates_handler.test_remove_duplicates_no_input_file",
+      "commit": "815b7e4377ee5a4f7b4be63fac376975b3694bc4",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test.test_duplicates_handler.test_remove_duplicates",
+      "commit": "815b7e4377ee5a4f7b4be63fac376975b3694bc4",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test.test_geographic_features.test_geographic_features",
+      "commit": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "pr": "21"
+    },
+    {
+      "id": "Function:test.test_missing_values_handler.test_handle_missing_success",
+      "commit": "53d4f9f4b0600923cb11f05524cfa9352dde65a6",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test.test_missing_values_handler.test_handle_missing_file_not_found",
+      "commit": "53d4f9f4b0600923cb11f05524cfa9352dde65a6",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test.test_outlier_treatment.test_outlier_treatment",
+      "commit": "7757556fa629309b72e8298804c7a6d3a86c7345",
+      "pr": "22"
+    },
+    {
+      "id": "Function:test.test_pca.test_pca_file_not_found",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_pca.test_missing_columns",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_pca.test_pca_outfile_exists",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_pca.test_cvr_thresh_error",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_pca.test_pca_columnslessthan4",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_removing_zero_unitpirce.test_removing_zero",
+      "commit": "7757556fa629309b72e8298804c7a6d3a86c7345",
+      "pr": "22"
+    },
+    {
+      "id": "Function:test.test_rfm.test_rfm",
+      "commit": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "pr": "21"
+    },
+    {
+      "id": "Function:test.test_scaler.test_scaler_file_not_found",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_scaler.test_missing_std_columns",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_scaler.test_missing_norm_columns",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_scaler.test_scaler_outfile_exists",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test.test_seasonality.test_seasonality_impacts",
+      "commit": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "pr": "21"
+    },
+    {
+      "id": "Function:test.test_transaction_status_handler.test_handle_transaction_status",
+      "commit": "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test.test_unique_products.test_unique_products",
+      "commit": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "pr": "21"
+    },
+    {
+      "id": "Function:test.test_unzip_data.test_unzip_file_successful",
+      "commit": "a83917f6cf8cad0400ec862c7b7a68df0835545c",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test.test_unzip_data.test_unzip_file_bad_zip",
+      "commit": "3e1bec3268f696890080778af22692bb13f5f440",
+      "pr": "11"
+    },
+    {
+      "id": "Function:handle_anomalous_codes",
+      "commit": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "pr": "22"
+    },
+    {
+      "id": "Function:cancellation_details",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:cleaning_description",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:correlation_check",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:save_heatmap",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:save_correlations_as_parquet",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:customers_behavior",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:load_data",
+      "commit": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "pr": "22"
+    },
+    {
+      "id": "Function:ingest_data",
+      "commit": "e45a01eb0a52ba53114c08db3eb285caecd271ac",
+      "pr": "22"
+    },
+    {
+      "id": "Function:remove_duplicates",
+      "commit": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "pr": "22"
+    },
+    {
+      "id": "Function:geographic_features",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:handle_missing",
+      "commit": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "pr": "22"
+    },
+    {
+      "id": "Function:removing_outlier",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:pc_analyzer",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:pca_",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:removing_zero",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:rfm",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:scaler",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:seasonality_impacts",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:handle_transaction_status",
+      "commit": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "pr": "22"
+    },
+    {
+      "id": "Function:unique_products",
+      "commit": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "pr": "40"
+    },
+    {
+      "id": "Function:unzip_file",
+      "commit": "e45a01eb0a52ba53114c08db3eb285caecd271ac",
+      "pr": "22"
+    },
+    {
+      "id": "Function:initialize_aiplatform",
+      "commit": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "pr": "85"
+    },
+    {
+      "id": "Function:create_training_job",
+      "commit": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "pr": "85"
+    },
+    {
+      "id": "Function:run_training_job",
+      "commit": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "pr": "85"
+    },
+    {
+      "id": "Function:deploy_model_to_endpoint",
+      "commit": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "pr": "85"
+    },
+    {
+      "id": "Function:main",
+      "commit": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "pr": "85"
+    },
+    {
+      "id": "Function:predict_custom_trained_model",
+      "commit": "1420f9d3185da8bc6510d1d49d0bbded97dcff32",
+      "pr": "87"
+    },
+    {
+      "id": "Function:mlflow_logging_train",
+      "commit": "e2257c888abf84b13b16ce0655447228533428ea",
+      "pr": "85"
+    },
+    {
+      "id": "Function:normalize_data",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:data_transform",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:top_pca",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:cluster_distribution",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:evaluation_metrics",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:train_model",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:save_and_upload_model",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:silhouette_analysis",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:get_table_schema",
+      "commit": "5161bcbd80aaa8386d47f881655af47a0dd35b55",
+      "pr": "99"
+    },
+    {
+      "id": "Function:create_table_if_not_exists",
+      "commit": "5161bcbd80aaa8386d47f881655af47a0dd35b55",
+      "pr": "99"
+    },
+    {
+      "id": "Function:initialize_variables",
+      "commit": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+      "pr": "85"
+    },
+    {
+      "id": "Function:initialize_client_and_bucket",
+      "commit": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+      "pr": "85"
+    },
+    {
+      "id": "Function:load_model",
+      "commit": "356d49f95a95716f1b3fd9927193322eb935000c",
+      "pr": "85"
+    },
+    {
+      "id": "Function:fetch_latest_model",
+      "commit": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+      "pr": "85"
+    },
+    {
+      "id": "Function:health_check",
+      "commit": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+      "pr": "85"
+    },
+    {
+      "id": "Function:predict",
+      "commit": "5161bcbd80aaa8386d47f881655af47a0dd35b55",
+      "pr": "99"
+    },
+    {
+      "id": "Function:remove_outliers",
+      "commit": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "pr": "85"
+    },
+    {
+      "id": "Function:merge_customer_transactions",
+      "commit": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "pr": "85"
+    },
+    {
+      "id": "Function:identify_top_products",
+      "commit": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "pr": "85"
+    },
+    {
+      "id": "Function:record_customer_purchases",
+      "commit": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "pr": "85"
+    },
+    {
+      "id": "Function:create_recommendations",
+      "commit": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "pr": "85"
+    },
+    {
+      "id": "Function:generate_recommendations",
+      "commit": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "pr": "85"
+    },
+    {
+      "id": "Function:kmeans_clustering",
+      "commit": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "pr": "85"
+    },
+    {
+      "id": "Function:rfm_histograms",
+      "commit": "e2257c888abf84b13b16ce0655447228533428ea",
+      "pr": "85"
+    },
+    {
+      "id": "Function:radar_charts",
+      "commit": "e2257c888abf84b13b16ce0655447228533428ea",
+      "pr": "85"
+    },
+    {
+      "id": "Function:test_handle_anomalous_codes",
+      "commit": "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5",
+      "pr": "11"
+    },
+    {
+      "id": "Function:test_cancellation_details",
+      "commit": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "pr": "21"
+    },
+    {
+      "id": "Function:test_cleaning_description",
+      "commit": "8518a04fd1cfe84e26b11144dc1e1dfc0aa8ff22",
+      "pr": "22"
+    },
+    {
+      "id": "Function:test_correlation_filenotfound",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test_correlation_parquetpath_error",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test_correlation_imagepath_error",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test_correlation_imagesavecheck",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test_correlation_parquetsavecheck",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test_corr_thresh_error",
+      "commit": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "pr": "54"
+    },
+    {
+      "id": "Function:test_customers_behavior",
+      "commit": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "pr": "21"
+    }
+  ]
+}

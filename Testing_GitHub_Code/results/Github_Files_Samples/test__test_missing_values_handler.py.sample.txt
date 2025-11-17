@@ -1,0 +1,10 @@
+"""
+A test module for testing missing_values_handler module.
+"""
+
+import os
+import pytest
+from src.missing_values_handler import handle_missing
+
+# Determine the absolute path of the project directory
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

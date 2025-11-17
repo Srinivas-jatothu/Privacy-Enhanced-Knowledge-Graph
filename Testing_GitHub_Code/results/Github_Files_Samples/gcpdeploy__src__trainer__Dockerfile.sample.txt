@@ -1,0 +1,9 @@
+FROM python:3.9-slim
+
+# WORKDIR /
+WORKDIR /app
+
+ENV AIP_STORAGE_URI=gs://ecommerce_retail_online_mlops/model
+ENV BUCKET_NAME=ecommerce_retail_online_mlops
+
+# Copy current directory contents

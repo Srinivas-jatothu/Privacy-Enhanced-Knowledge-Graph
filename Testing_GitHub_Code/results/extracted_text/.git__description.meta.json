@@ -1,0 +1,32 @@
+{
+  "relpath": ".git/description",
+  "manifest_meta": {
+    "relpath": ".git/description",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\description",
+    "size": 73,
+    "mtime": 1763123843.5389433,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.git__description.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "ISO-8859-1",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'description'",
+    "X-TIKA:detectedEncoding": "ISO-8859-1",
+    "Content-Length": "73",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=ISO-8859-1"
+  }
+}

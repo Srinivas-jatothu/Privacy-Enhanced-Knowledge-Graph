@@ -1,0 +1,1291 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Expr",
+      "value": {
+        "_const_preview": "\nA module to detect and remove outliers\n"
+      },
+      "lineno": 1,
+      "end_lineno": 3
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "os",
+          "asname": null,
+          "lineno": 6,
+          "end_lineno": 6
+        }
+      ],
+      "lineno": 6,
+      "end_lineno": 6
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "pickle",
+          "asname": null,
+          "lineno": 7,
+          "end_lineno": 7
+        }
+      ],
+      "lineno": 7,
+      "end_lineno": 7
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "sklearn.ensemble",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "IsolationForest",
+          "asname": null,
+          "lineno": 8,
+          "end_lineno": 8
+        }
+      ],
+      "level": 0,
+      "lineno": 8,
+      "end_lineno": 8
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "PROJECT_DIR",
+          "lineno": 11,
+          "end_lineno": 11
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 11,
+              "end_lineno": 11
+            },
+            "attr": "path",
+            "lineno": 11,
+            "end_lineno": 11
+          },
+          "attr": "dirname",
+          "lineno": 11,
+          "end_lineno": 11
+        },
+        "args": [
+          {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 11,
+                  "end_lineno": 11
+                },
+                "attr": "path",
+                "lineno": 11,
+                "end_lineno": 11
+              },
+              "attr": "dirname",
+              "lineno": 11,
+              "end_lineno": 11
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 11,
+                      "end_lineno": 11
+                    },
+                    "attr": "path",
+                    "lineno": 11,
+                    "end_lineno": 11
+                  },
+                  "attr": "abspath",
+                  "lineno": 11,
+                  "end_lineno": 11
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "__file__",
+                    "lineno": 11,
+                    "end_lineno": 11
+                  }
+                ],
+                "keywords": [],
+                "lineno": 11,
+                "end_lineno": 11
+              }
+            ],
+            "keywords": [],
+            "lineno": 11,
+            "end_lineno": 11
+          }
+        ],
+        "keywords": [],
+        "lineno": 11,
+        "end_lineno": 11
+      },
+      "type_comment": null,
+      "lineno": 11,
+      "end_lineno": 11
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "INPUT_PICKLE_PATH",
+          "lineno": 13,
+          "end_lineno": 13
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 13,
+              "end_lineno": 13
+            },
+            "attr": "path",
+            "lineno": 13,
+            "end_lineno": 13
+          },
+          "attr": "join",
+          "lineno": 13,
+          "end_lineno": 13
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "PROJECT_DIR",
+            "lineno": 13,
+            "end_lineno": 13
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 13,
+            "end_lineno": 13
+          },
+          {
+            "_type": "Constant",
+            "value": "processed",
+            "kind": null,
+            "lineno": 13,
+            "end_lineno": 13
+          },
+          {
+            "_type": "Constant",
+            "value": "seasonality.pkl",
+            "kind": null,
+            "lineno": 13,
+            "end_lineno": 13
+          }
+        ],
+        "keywords": [],
+        "lineno": 13,
+        "end_lineno": 13
+      },
+      "type_comment": null,
+      "lineno": 13,
+      "end_lineno": 13
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "OUTPUT_PICKLE_PATH",
+          "lineno": 14,
+          "end_lineno": 14
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 14,
+              "end_lineno": 14
+            },
+            "attr": "path",
+            "lineno": 14,
+            "end_lineno": 14
+          },
+          "attr": "join",
+          "lineno": 14,
+          "end_lineno": 14
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "PROJECT_DIR",
+            "lineno": 14,
+            "end_lineno": 14
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 14,
+            "end_lineno": 14
+          },
+          {
+            "_type": "Constant",
+            "value": "processed",
+            "kind": null,
+            "lineno": 14,
+            "end_lineno": 14
+          },
+          {
+            "_type": "Constant",
+            "value": "after_outlier_treatment.pkl",
+            "kind": null,
+            "lineno": 14,
+            "end_lineno": 14
+          }
+        ],
+        "keywords": [],
+        "lineno": 14,
+        "end_lineno": 14
+      },
+      "type_comment": null,
+      "lineno": 14,
+      "end_lineno": 14
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "parquet_file_path",
+          "lineno": 16,
+          "end_lineno": 16
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 16,
+              "end_lineno": 16
+            },
+            "attr": "path",
+            "lineno": 16,
+            "end_lineno": 16
+          },
+          "attr": "join",
+          "lineno": 16,
+          "end_lineno": 16
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "PROJECT_DIR",
+            "lineno": 16,
+            "end_lineno": 16
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 16,
+            "end_lineno": 16
+          },
+          {
+            "_type": "Constant",
+            "value": "processed",
+            "kind": null,
+            "lineno": 16,
+            "end_lineno": 16
+          },
+          {
+            "_type": "Constant",
+            "value": "df_outlier.parquet",
+            "kind": null,
+            "lineno": 16,
+            "end_lineno": 16
+          }
+        ],
+        "keywords": [],
+        "lineno": 16,
+        "end_lineno": 16
+      },
+      "type_comment": null,
+      "lineno": 16,
+      "end_lineno": 16
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "removing_outlier",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "input_pickle_path",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 18,
+            "end_lineno": 18
+          },
+          {
+            "_type": "arg",
+            "arg": "output_pickle_path",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 18,
+            "end_lineno": 18
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": [
+          {
+            "_type": "Name",
+            "id": "INPUT_PICKLE_PATH",
+            "lineno": 18,
+            "end_lineno": 18
+          },
+          {
+            "_type": "Name",
+            "id": "OUTPUT_PICKLE_PATH",
+            "lineno": 18,
+            "end_lineno": 18
+          }
+        ]
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n     Load the DataFrame from the input pickle, \n    detect and remove outliers\n    save the DataFrame back to a pickle and return its path\n    \n    "
+          },
+          "lineno": 19,
+          "end_lineno": 24
+        },
+        {
+          "_type": "If",
+          "test": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 26,
+                  "end_lineno": 26
+                },
+                "attr": "path",
+                "lineno": 26,
+                "end_lineno": 26
+              },
+              "attr": "exists",
+              "lineno": 26,
+              "end_lineno": 26
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "input_pickle_path",
+                "lineno": 26,
+                "end_lineno": 26
+              }
+            ],
+            "keywords": [],
+            "lineno": 26,
+            "end_lineno": 26
+          },
+          "body": [
+            {
+              "_type": "With",
+              "items": [
+                {
+                  "_type": "withitem",
+                  "context_expr": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "open",
+                      "lineno": 27,
+                      "end_lineno": 27
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "input_pickle_path",
+                        "lineno": 27,
+                        "end_lineno": 27
+                      },
+                      {
+                        "_type": "Constant",
+                        "value": "rb",
+                        "kind": null,
+                        "lineno": 27,
+                        "end_lineno": 27
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 27,
+                    "end_lineno": 27
+                  },
+                  "optional_vars": {
+                    "_type": "Name",
+                    "id": "file",
+                    "lineno": 27,
+                    "end_lineno": 27
+                  }
+                }
+              ],
+              "body": [
+                {
+                  "_type": "Assign",
+                  "targets": [
+                    {
+                      "_type": "Name",
+                      "id": "df",
+                      "lineno": 28,
+                      "end_lineno": 28
+                    }
+                  ],
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Name",
+                        "id": "pickle",
+                        "lineno": 28,
+                        "end_lineno": 28
+                      },
+                      "attr": "load",
+                      "lineno": 28,
+                      "end_lineno": 28
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "file",
+                        "lineno": 28,
+                        "end_lineno": 28
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 28,
+                    "end_lineno": 28
+                  },
+                  "type_comment": null,
+                  "lineno": 28,
+                  "end_lineno": 28
+                }
+              ],
+              "type_comment": null,
+              "lineno": 27,
+              "end_lineno": 28
+            }
+          ],
+          "orelse": [
+            {
+              "_type": "Raise",
+              "exc": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "FileNotFoundError",
+                  "lineno": 30,
+                  "end_lineno": 30
+                },
+                "args": [
+                  {
+                    "_type": "JoinedStr",
+                    "values": [
+                      {
+                        "_type": "Constant",
+                        "value": "No data found at the specified path: ",
+                        "kind": null,
+                        "lineno": 30,
+                        "end_lineno": 30
+                      },
+                      {
+                        "_type": "FormattedValue",
+                        "value": {
+                          "_type": "Name",
+                          "id": "input_pickle_path",
+                          "lineno": 30,
+                          "end_lineno": 30
+                        },
+                        "conversion": -1,
+                        "format_spec": null,
+                        "lineno": 30,
+                        "end_lineno": 30
+                      }
+                    ],
+                    "lineno": 30,
+                    "end_lineno": 30
+                  }
+                ],
+                "keywords": [],
+                "lineno": 30,
+                "end_lineno": 30
+              },
+              "cause": null,
+              "lineno": 30,
+              "end_lineno": 30
+            }
+          ],
+          "lineno": 26,
+          "end_lineno": 30
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "model",
+              "lineno": 32,
+              "end_lineno": 32
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "IsolationForest",
+              "lineno": 32,
+              "end_lineno": 32
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "contamination",
+                "value": {
+                  "_type": "Constant",
+                  "value": 0.05,
+                  "kind": null,
+                  "lineno": 32,
+                  "end_lineno": 32
+                },
+                "lineno": 32,
+                "end_lineno": 32
+              },
+              {
+                "_type": "keyword",
+                "arg": "random_state",
+                "value": {
+                  "_type": "Constant",
+                  "value": 0,
+                  "kind": null,
+                  "lineno": 32,
+                  "end_lineno": 32
+                },
+                "lineno": 32,
+                "end_lineno": 32
+              }
+            ],
+            "lineno": 32,
+            "end_lineno": 32
+          },
+          "type_comment": null,
+          "lineno": 32,
+          "end_lineno": 32
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Subscript",
+              "value": {
+                "_type": "Name",
+                "id": "df",
+                "lineno": 34,
+                "end_lineno": 34
+              },
+              "slice": {
+                "_type": "Constant",
+                "value": "Outlier_Scores",
+                "kind": null,
+                "lineno": 34,
+                "end_lineno": 34
+              },
+              "lineno": 34,
+              "end_lineno": 34
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "model",
+                "lineno": 34,
+                "end_lineno": 34
+              },
+              "attr": "fit_predict",
+              "lineno": 34,
+              "end_lineno": 34
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Name",
+                        "id": "df",
+                        "lineno": 34,
+                        "end_lineno": 34
+                      },
+                      "attr": "iloc",
+                      "lineno": 34,
+                      "end_lineno": 34
+                    },
+                    "slice": {
+                      "_type": "Tuple",
+                      "elts": [
+                        {
+                          "_type": "Slice",
+                          "lower": null,
+                          "upper": null,
+                          "step": null,
+                          "lineno": 34,
+                          "end_lineno": 34
+                        },
+                        {
+                          "_type": "Slice",
+                          "lower": {
+                            "_type": "Constant",
+                            "value": 1,
+                            "kind": null,
+                            "lineno": 34,
+                            "end_lineno": 34
+                          },
+                          "upper": null,
+                          "step": null,
+                          "lineno": 34,
+                          "end_lineno": 34
+                        }
+                      ],
+                      "lineno": 34,
+                      "end_lineno": 34
+                    },
+                    "lineno": 34,
+                    "end_lineno": 34
+                  },
+                  "attr": "to_numpy",
+                  "lineno": 34,
+                  "end_lineno": 34
+                },
+                "args": [],
+                "keywords": [],
+                "lineno": 34,
+                "end_lineno": 34
+              }
+            ],
+            "keywords": [],
+            "lineno": 34,
+            "end_lineno": 34
+          },
+          "type_comment": null,
+          "lineno": 34,
+          "end_lineno": 34
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Subscript",
+              "value": {
+                "_type": "Name",
+                "id": "df",
+                "lineno": 36,
+                "end_lineno": 36
+              },
+              "slice": {
+                "_type": "Constant",
+                "value": "Is_Outlier",
+                "kind": null,
+                "lineno": 36,
+                "end_lineno": 36
+              },
+              "lineno": 36,
+              "end_lineno": 36
+            }
+          ],
+          "value": {
+            "_type": "ListComp",
+            "elt": {
+              "_type": "IfExp",
+              "test": {
+                "_type": "Compare",
+                "left": {
+                  "_type": "Name",
+                  "id": "x",
+                  "lineno": 36,
+                  "end_lineno": 36
+                },
+                "ops": [
+                  {
+                    "_type": "Eq"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_type": "UnaryOp",
+                    "op": {
+                      "_type": "USub"
+                    },
+                    "operand": {
+                      "_type": "Constant",
+                      "value": 1,
+                      "kind": null,
+                      "lineno": 36,
+                      "end_lineno": 36
+                    },
+                    "lineno": 36,
+                    "end_lineno": 36
+                  }
+                ],
+                "lineno": 36,
+                "end_lineno": 36
+              },
+              "body": {
+                "_type": "Constant",
+                "value": 1,
+                "kind": null,
+                "lineno": 36,
+                "end_lineno": 36
+              },
+              "orelse": {
+                "_type": "Constant",
+                "value": 0,
+                "kind": null,
+                "lineno": 36,
+                "end_lineno": 36
+              },
+              "lineno": 36,
+              "end_lineno": 36
+            },
+            "generators": [
+              {
+                "_type": "comprehension",
+                "target": {
+                  "_type": "Name",
+                  "id": "x",
+                  "lineno": 36,
+                  "end_lineno": 36
+                },
+                "iter": {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "df",
+                    "lineno": 36,
+                    "end_lineno": 36
+                  },
+                  "slice": {
+                    "_type": "Constant",
+                    "value": "Outlier_Scores",
+                    "kind": null,
+                    "lineno": 36,
+                    "end_lineno": 36
+                  },
+                  "lineno": 36,
+                  "end_lineno": 36
+                },
+                "ifs": [],
+                "is_async": 0
+              }
+            ],
+            "lineno": 36,
+            "end_lineno": 36
+          },
+          "type_comment": null,
+          "lineno": 36,
+          "end_lineno": 36
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "df_outlier",
+              "lineno": 38,
+              "end_lineno": 38
+            }
+          ],
+          "value": {
+            "_type": "Subscript",
+            "value": {
+              "_type": "Name",
+              "id": "df",
+              "lineno": 38,
+              "end_lineno": 38
+            },
+            "slice": {
+              "_type": "Compare",
+              "left": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "df",
+                  "lineno": 38,
+                  "end_lineno": 38
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "Is_Outlier",
+                  "kind": null,
+                  "lineno": 38,
+                  "end_lineno": 38
+                },
+                "lineno": 38,
+                "end_lineno": 38
+              },
+              "ops": [
+                {
+                  "_type": "Eq"
+                }
+              ],
+              "comparators": [
+                {
+                  "_type": "Constant",
+                  "value": 1,
+                  "kind": null,
+                  "lineno": 38,
+                  "end_lineno": 38
+                }
+              ],
+              "lineno": 38,
+              "end_lineno": 38
+            },
+            "lineno": 38,
+            "end_lineno": 38
+          },
+          "type_comment": null,
+          "lineno": 38,
+          "end_lineno": 38
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "df_cleaned",
+              "lineno": 40,
+              "end_lineno": 40
+            }
+          ],
+          "value": {
+            "_type": "Subscript",
+            "value": {
+              "_type": "Name",
+              "id": "df",
+              "lineno": 40,
+              "end_lineno": 40
+            },
+            "slice": {
+              "_type": "Compare",
+              "left": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "df",
+                  "lineno": 40,
+                  "end_lineno": 40
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "Is_Outlier",
+                  "kind": null,
+                  "lineno": 40,
+                  "end_lineno": 40
+                },
+                "lineno": 40,
+                "end_lineno": 40
+              },
+              "ops": [
+                {
+                  "_type": "Eq"
+                }
+              ],
+              "comparators": [
+                {
+                  "_type": "Constant",
+                  "value": 0,
+                  "kind": null,
+                  "lineno": 40,
+                  "end_lineno": 40
+                }
+              ],
+              "lineno": 40,
+              "end_lineno": 40
+            },
+            "lineno": 40,
+            "end_lineno": 40
+          },
+          "type_comment": null,
+          "lineno": 40,
+          "end_lineno": 40
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "df_cleaned",
+              "lineno": 43,
+              "end_lineno": 43
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "df_cleaned",
+                "lineno": 43,
+                "end_lineno": 43
+              },
+              "attr": "drop",
+              "lineno": 43,
+              "end_lineno": 43
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "columns",
+                "value": {
+                  "_type": "List",
+                  "elts": [
+                    {
+                      "_type": "Constant",
+                      "value": "Outlier_Scores",
+                      "kind": null,
+                      "lineno": 43,
+                      "end_lineno": 43
+                    },
+                    {
+                      "_type": "Constant",
+                      "value": "Is_Outlier",
+                      "kind": null,
+                      "lineno": 43,
+                      "end_lineno": 43
+                    }
+                  ],
+                  "lineno": 43,
+                  "end_lineno": 43
+                },
+                "lineno": 43,
+                "end_lineno": 43
+              }
+            ],
+            "lineno": 43,
+            "end_lineno": 43
+          },
+          "type_comment": null,
+          "lineno": 43,
+          "end_lineno": 43
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "df_cleaned",
+                "lineno": 46,
+                "end_lineno": 46
+              },
+              "attr": "reset_index",
+              "lineno": 46,
+              "end_lineno": 46
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "drop",
+                "value": {
+                  "_type": "Constant",
+                  "value": true,
+                  "kind": null,
+                  "lineno": 46,
+                  "end_lineno": 46
+                },
+                "lineno": 46,
+                "end_lineno": 46
+              },
+              {
+                "_type": "keyword",
+                "arg": "inplace",
+                "value": {
+                  "_type": "Constant",
+                  "value": true,
+                  "kind": null,
+                  "lineno": 46,
+                  "end_lineno": 46
+                },
+                "lineno": 46,
+                "end_lineno": 46
+              }
+            ],
+            "lineno": 46,
+            "end_lineno": 46
+          },
+          "lineno": 46,
+          "end_lineno": 46
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "df_outlier",
+                "lineno": 48,
+                "end_lineno": 48
+              },
+              "attr": "to_parquet",
+              "lineno": 48,
+              "end_lineno": 48
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "parquet_file_path",
+                "lineno": 48,
+                "end_lineno": 48
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "index",
+                "value": {
+                  "_type": "Constant",
+                  "value": false,
+                  "kind": null,
+                  "lineno": 48,
+                  "end_lineno": 48
+                },
+                "lineno": 48,
+                "end_lineno": 48
+              }
+            ],
+            "lineno": 48,
+            "end_lineno": 48
+          },
+          "lineno": 48,
+          "end_lineno": 48
+        },
+        {
+          "_type": "With",
+          "items": [
+            {
+              "_type": "withitem",
+              "context_expr": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "open",
+                  "lineno": 51,
+                  "end_lineno": 51
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "output_pickle_path",
+                    "lineno": 51,
+                    "end_lineno": 51
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "wb",
+                    "kind": null,
+                    "lineno": 51,
+                    "end_lineno": 51
+                  }
+                ],
+                "keywords": [],
+                "lineno": 51,
+                "end_lineno": 51
+              },
+              "optional_vars": {
+                "_type": "Name",
+                "id": "file",
+                "lineno": 51,
+                "end_lineno": 51
+              }
+            }
+          ],
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "pickle",
+                    "lineno": 52,
+                    "end_lineno": 52
+                  },
+                  "attr": "dump",
+                  "lineno": 52,
+                  "end_lineno": 52
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "df_cleaned",
+                    "lineno": 52,
+                    "end_lineno": 52
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "file",
+                    "lineno": 52,
+                    "end_lineno": 52
+                  }
+                ],
+                "keywords": [],
+                "lineno": 52,
+                "end_lineno": 52
+              },
+              "lineno": 52,
+              "end_lineno": 52
+            }
+          ],
+          "type_comment": null,
+          "lineno": 51,
+          "end_lineno": 52
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "print",
+              "lineno": 53,
+              "end_lineno": 53
+            },
+            "args": [
+              {
+                "_type": "JoinedStr",
+                "values": [
+                  {
+                    "_type": "Constant",
+                    "value": "Data saved to ",
+                    "kind": null,
+                    "lineno": 53,
+                    "end_lineno": 53
+                  },
+                  {
+                    "_type": "FormattedValue",
+                    "value": {
+                      "_type": "Name",
+                      "id": "output_pickle_path",
+                      "lineno": 53,
+                      "end_lineno": 53
+                    },
+                    "conversion": -1,
+                    "format_spec": null,
+                    "lineno": 53,
+                    "end_lineno": 53
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": ".",
+                    "kind": null,
+                    "lineno": 53,
+                    "end_lineno": 53
+                  }
+                ],
+                "lineno": 53,
+                "end_lineno": 53
+              }
+            ],
+            "keywords": [],
+            "lineno": 53,
+            "end_lineno": 53
+          },
+          "lineno": 53,
+          "end_lineno": 53
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "output_pickle_path",
+            "lineno": 54,
+            "end_lineno": 54
+          },
+          "lineno": 54,
+          "end_lineno": 54
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 18,
+      "end_lineno": 54
+    }
+  ],
+  "type_ignores": []
+}

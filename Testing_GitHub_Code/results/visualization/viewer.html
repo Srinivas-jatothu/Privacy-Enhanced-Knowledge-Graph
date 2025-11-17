@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>PEKG D3 Subgraph Viewer</title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; }
+  #top { padding:8px; background:#222; color:#fff; display:flex; gap:8px; align-items:center; }
+  #search { padding:6px; width:300px; }
+  #canvas { width:100vw; height:calc(100vh - 44px); background:#fafafa; }
+  .node { stroke: #fff; stroke-width: 1.2px; cursor: pointer; }
+  .link { stroke: #999; opacity: 0.6; }
+  .tooltip { position: absolute; background: rgba(0,0,0,0.8); color:#fff; padding:6px; border-radius:4px; pointer-events:none; font-size:12px; }
+</style>
+</head>
+<body>
+<div id="top">
+  <strong>PEKG viewer</strong>
+  <input id="search" placeholder="Type node id (or part) and press Enter"/>
+  <button id="reset">Reset</button>
+  <span id="stats" style="margin-left:12px;color:#ddd"></span>
+</div>
+<div id="canvas"></div>
+<div id="tooltip" class="tooltip" style="display:none"></div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script>
+(async function(){
+  const data = await fetch("d3_subgraph.json").then(r=>r.json());
+  const nodes = data.nodes;
+  const links = data.links;
+
+  document.getElementById("stats").textContent = `nodes: ${nodes.length}  links: ${links.length}`;
+
+  const width = window.innerWidth;
+  const height = window.innerHeight - 44;
+
+  const svg = d3.select("#canvas").append("svg").attr("width", width).attr("height", height);
+
+  const color = d3.scaleOrdinal(d3.schemeCategory10);
+
+  const simulation = d3.forceSimulation(nodes)
+      .force("link", d3.forceLink(links).id(d=>d.id).distance(60).strength(0.6))
+      .force("charge", d3.forceManyBody().strength(-120))
+      .force("center", d3.forceCenter(width/2, height/2))
+      .force("collide", d3.forceCollide(12));
+
+  const link = svg.append("g")
+      .attr("stroke", "#999")
+    .selectAll("line")
+    .data(links)
+    .join("line")
+      .attr("class","link")
+      .attr("stroke-width", 1);
+
+  const node = svg.append("g")
+    .selectAll("circle")
+    .data(nodes)
+    .join("circle")
+      .attr("r", 6)
+      .attr("class","node")
+      .attr("fill", d => color(d.type || "x"))
+      .call(drag(simulation));
+
+  const label = svg.append("g")
+    .selectAll("text")
+    .data(nodes)
+    .join("text")
+      .attr("font-size", 9)
+      .attr("dx", 8)
+      .attr("dy", 3)
+      .text(d=>d.label ? (d.label.length>24?d.label.slice(0,22)+"…":d.label) : d.id);
+
+  const tooltip = d3.select("#tooltip");
+
+  node.on("mouseover", (event,d) => {
+    tooltip.style("display","block").html(`<b>${d.id}</b><br/>type: ${d.type || ""}<br/>pr: ${d.introduced_by_pr || ""}`)
+           .style("left",(event.pageX+8)+"px").style("top",(event.pageY+8)+"px");
+  }).on("mousemove",(event)=> {
+    tooltip.style("left",(event.pageX+8)+"px").style("top",(event.pageY+8)+"px");
+  }).on("mouseout", ()=> tooltip.style("display","none"))
+    .on("dblclick", (e,d) => {
+      // center node
+      d.fx = width/2; d.fy = height/2; simulation.alpha(0.8).restart();
+    });
+
+  simulation.on("tick", () => {
+    link.attr("x1", d=>d.source.x).attr("y1", d=>d.source.y).attr("x2", d=>d.target.x).attr("y2", d=>d.target.y);
+    node.attr("cx", d=>d.x).attr("cy", d=>d.y);
+    label.attr("x", d=>d.x).attr("y", d=>d.y);
+  });
+
+  document.getElementById("reset").onclick = () => {
+    nodes.forEach(n=>{n.fx=null; n.fy=null;});
+    simulation.alpha(0.8).restart();
+  };
+
+  document.getElementById("search").addEventListener("keydown", (ev) => {
+    if(ev.key === "Enter"){
+      const q = ev.target.value.trim().toLowerCase();
+      if(!q) return;
+      // highlight matches
+      node.attr("r", d => (d.id.toLowerCase().includes(q) || (d.label||"").toLowerCase().includes(q)) ? 10 : 4)
+          .attr("opacity", d => (d.id.toLowerCase().includes(q) || (d.label||"").toLowerCase().includes(q)) ? 1 : 0.2);
+    }
+  });
+
+  function drag(sim){
+    function started(event,d){
+      if(!event.active) sim.alphaTarget(0.3).restart();
+      d.fx = d.x; d.fy = d.y;
+    }
+    function dragged(event,d){
+      d.fx = event.x; d.fy = event.y;
+    }
+    function ended(event,d){
+      if(!event.active) sim.alphaTarget(0);
+      // keep pinned on double-click; otherwise clear
+      if(!event.sourceEvent.detail || event.sourceEvent.detail < 2) { d.fx = null; d.fy = null; }
+    }
+    return d3.drag().on("start", started).on("drag", dragged).on("end", ended);
+  }
+
+})();
+</script>
+</body>
+</html>

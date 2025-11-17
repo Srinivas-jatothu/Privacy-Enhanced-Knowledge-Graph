@@ -1,0 +1,16 @@
+23:46:40 INFO     Starting full call graph builder
+23:46:40 INFO     Repo dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Ecommerce-Data-MLOps
+23:46:40 INFO     Out dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results
+23:46:40 INFO     Patterns: ['**/*.py']
+23:46:40 INFO     Discovered 100 Python files (patterns=['**/*.py'])
+23:46:40 WARNING  Failed parse (skipping) gcpdeploy/src/scaler.py
+23:46:40 INFO     Built symbol index with 136 canonical symbols
+23:46:40 INFO     Built import alias map for 99 modules
+23:46:40 INFO     Wrote JSON output: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\symbol_table.json
+23:46:40 INFO     Wrote JSON output: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\module_index.json
+23:46:40 INFO     Wrote JSON output: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\import_aliases.json
+23:46:40 INFO     Processed calls: total=2014 resolved=85 unresolved=1929
+23:46:40 INFO     Wrote JSON output: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\call_graph.json
+23:46:40 INFO     Call graph complete. edges=2014 resolved=85 unresolved=1929
+23:46:40 INFO     Outputs: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\symbol_table.json, C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\module_index.json, C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\import_aliases.json, C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\call_graph.json
+23:46:40 INFO     Done.

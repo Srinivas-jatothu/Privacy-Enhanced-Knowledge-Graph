@@ -1,0 +1,10 @@
+00:10:55 INFO     Starting function -> commit mapping
+00:10:55 INFO     Repo dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Ecommerce-Data-MLOps
+00:10:55 INFO     Out dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results
+00:10:55 INFO     Symbol table path: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\symbol_table.json
+00:10:56 INFO     Loaded symbol_table with 136 entries from C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\symbol_table.json
+00:10:56 INFO     Processing 136 symbols
+00:10:58 INFO     Processed 50 symbols...
+00:11:01 INFO     Processed 100 symbols...
+00:11:03 INFO     Wrote function->commit mapping for 136 symbols to C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\function_commits.json
+00:11:03 INFO     Finished. processed=136 skipped=0

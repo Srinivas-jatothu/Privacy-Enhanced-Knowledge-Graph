@@ -1,0 +1,32 @@
+{
+  "relpath": ".git/hooks/pre-merge-commit.sample",
+  "manifest_meta": {
+    "relpath": ".git/hooks/pre-merge-commit.sample",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\pre-merge-commit.sample",
+    "size": 416,
+    "mtime": 1763123843.5449452,
+    "mime": "text/x-shellscript",
+    "is_text": true,
+    "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.git__hooks__pre-merge-commit.sample.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "ISO-8859-1",
+    "X-TIKA:parse_time_millis": "1",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'pre-merge-commit.sample'",
+    "X-TIKA:detectedEncoding": "ISO-8859-1",
+    "Content-Length": "416",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "application/x-sh; charset=ISO-8859-1"
+  }
+}

@@ -1,0 +1,10 @@
+"""
+Tests for data_loader module.
+"""
+
+import os
+import pytest
+from src.data_loader import load_data
+
+# Determine the absolute path of the project directory
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

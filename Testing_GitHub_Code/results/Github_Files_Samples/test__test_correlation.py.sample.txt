@@ -1,0 +1,10 @@
+"""
+A test module for testing correlation module.
+"""
+import os
+import pytest
+from src.correlation import correlation_check
+
+# Determine the absolute path of the project directory
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+INPUT_FILE_PATH = os.path.join(PROJECT_DIR, "data", "processed","scaler_output.parquet")

@@ -1,0 +1,388 @@
+{
+  "requirements.txt": [
+    {
+      "name": "scikit-learn",
+      "version": "== 1.3.2",
+      "marker": null,
+      "raw": "scikit-learn==1.3.2",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "numpy",
+      "version": "== 1.24.4",
+      "marker": null,
+      "raw": "numpy==1.24.4",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "pandas",
+      "version": "== 1.5.3",
+      "marker": null,
+      "raw": "pandas==1.5.3",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "pytest",
+      "version": "== 7.4.3",
+      "marker": null,
+      "raw": "pytest==7.4.3",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "ipykernel",
+      "version": "== 6.26.0",
+      "marker": null,
+      "raw": "ipykernel==6.26.0",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "mlflow",
+      "version": "== 2.13.1",
+      "marker": null,
+      "raw": "mlflow==2.13.1",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "requests",
+      "version": "== 2.31.0",
+      "marker": null,
+      "raw": "requests==2.31.0",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "pytest-mock",
+      "version": "== 3.12.0",
+      "marker": null,
+      "raw": "pytest-mock==3.12.0",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "pytest-pylint",
+      "version": "== 0.21.0",
+      "marker": null,
+      "raw": "pytest-pylint==0.21.0",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "openpyxl",
+      "version": "== 3.1.2",
+      "marker": null,
+      "raw": "openpyxl==3.1.2",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "requests-mock",
+      "version": "== 1.11.0",
+      "marker": null,
+      "raw": "requests-mock==1.11.0",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "apache-airflow",
+      "version": "== 2.7.3",
+      "marker": null,
+      "raw": "apache-airflow==2.7.3",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "apache-airflow-providers-celery",
+      "version": "== 3.4.1",
+      "marker": null,
+      "raw": "apache-airflow-providers-celery==3.4.1",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "apache-airflow-providers-common-sql",
+      "version": "== 1.7.1",
+      "marker": null,
+      "raw": "apache-airflow-providers-common-sql==1.7.1",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "apache-airflow-providers-ftp",
+      "version": "== 3.5.1",
+      "marker": null,
+      "raw": "apache-airflow-providers-ftp==3.5.1",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "apache-airflow-providers-http",
+      "version": "== 4.5.1",
+      "marker": null,
+      "raw": "apache-airflow-providers-http==4.5.1",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "apache-airflow-providers-imap",
+      "version": "== 3.3.1",
+      "marker": null,
+      "raw": "apache-airflow-providers-imap==3.3.1",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "apache-airflow-providers-sqlite",
+      "version": "== 3.4.3",
+      "marker": null,
+      "raw": "apache-airflow-providers-sqlite==3.4.3",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "Flask",
+      "version": "== 2.2.5",
+      "marker": null,
+      "raw": "Flask==2.2.5",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "Flask-AppBuilder",
+      "version": "== 4.3.6",
+      "marker": null,
+      "raw": "Flask-AppBuilder==4.3.6",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "Flask-Babel",
+      "version": "== 2.0.0",
+      "marker": null,
+      "raw": "Flask-Babel==2.0.0",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "Flask-Caching",
+      "version": "== 2.0.2",
+      "marker": null,
+      "raw": "Flask-Caching==2.0.2",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "Flask-JWT-Extended",
+      "version": "== 4.5.2",
+      "marker": null,
+      "raw": "Flask-JWT-Extended==4.5.2",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "Flask-Limiter",
+      "version": "== 3.5.0",
+      "marker": null,
+      "raw": "Flask-Limiter==3.5.0",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "Flask-Login",
+      "version": "== 0.6.2",
+      "marker": null,
+      "raw": "Flask-Login==0.6.2",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "Flask-Session",
+      "version": "== 0.5.0",
+      "marker": null,
+      "raw": "Flask-Session==0.5.0",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "Flask-SQLAlchemy",
+      "version": "== 2.5.1",
+      "marker": null,
+      "raw": "Flask-SQLAlchemy==2.5.1",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "Flask-WTF",
+      "version": "== 1.1.1",
+      "marker": null,
+      "raw": "Flask-WTF==1.1.1",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "flower",
+      "version": "== 2.0.1",
+      "marker": null,
+      "raw": "flower==2.0.1",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "celery",
+      "version": "== 5.3.4",
+      "marker": null,
+      "raw": "celery==5.3.4",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "scipy",
+      "version": "== 1.10.1",
+      "marker": null,
+      "raw": "scipy==1.10.1",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "seaborn",
+      "version": "== 0.13.0",
+      "marker": null,
+      "raw": "seaborn==0.13.0",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "matplotlib",
+      "version": "== 3.7.4",
+      "marker": null,
+      "raw": "matplotlib==3.7.4",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "dash",
+      "version": "== 2.14.2",
+      "marker": null,
+      "raw": "dash==2.14.2",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "plotly.express",
+      "version": "== 0.4.1",
+      "marker": null,
+      "raw": "plotly.express==0.4.1",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "tensorflow",
+      "version": "== 2.14.0",
+      "marker": null,
+      "raw": "tensorflow==2.14.0",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "plotly",
+      "version": "== 5.18.0",
+      "marker": null,
+      "raw": "plotly==5.18.0",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "tabulate",
+      "version": "== 0.9.0",
+      "marker": null,
+      "raw": "tabulate==0.9.0",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "yellowbrick",
+      "version": "== 1.5",
+      "marker": null,
+      "raw": "yellowbrick==1.5",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "collection",
+      "version": "== 0.1.6",
+      "marker": null,
+      "raw": "collection==0.1.6",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "google-cloud-storage",
+      "version": null,
+      "marker": null,
+      "raw": "google-cloud-storage",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "gcsfs",
+      "version": null,
+      "marker": null,
+      "raw": "gcsfs",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "python-dotenv",
+      "version": null,
+      "marker": null,
+      "raw": "python-dotenv",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "kaleido",
+      "version": "== 0.2.1",
+      "marker": null,
+      "raw": "kaleido==0.2.1",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "grpcio",
+      "version": "== 1.53.2",
+      "marker": null,
+      "raw": "grpcio==1.53.2",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "google-cloud-logging",
+      "version": null,
+      "marker": null,
+      "raw": "google-cloud-logging",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "google-cloud-bigquery",
+      "version": null,
+      "marker": null,
+      "raw": "google-cloud-bigquery",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    },
+    {
+      "name": "google-auth",
+      "version": null,
+      "marker": null,
+      "raw": "google-auth",
+      "ecosystem": "python",
+      "file": "requirements.txt"
+    }
+  ]
+}

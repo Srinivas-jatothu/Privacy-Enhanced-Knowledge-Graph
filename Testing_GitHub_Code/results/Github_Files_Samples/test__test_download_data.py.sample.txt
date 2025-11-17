@@ -1,0 +1,9 @@
+"""
+  Tests for downloda_data.py
+"""
+import os
+import requests
+import requests_mock
+from src import download_data
+
+DEFAULT_FILE_URL = "https://archive.ics.uci.edu/static/public/352/online+retail.zip"

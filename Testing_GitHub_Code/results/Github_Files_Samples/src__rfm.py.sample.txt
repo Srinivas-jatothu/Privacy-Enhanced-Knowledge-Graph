@@ -1,0 +1,10 @@
+"""
+This module analyzes Recency, Frequency and Monetary methods to know about the value
+of customers and dividing the base.
+"""
+import  pickle
+import os
+import pandas as pd
+
+PROJECT_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+input_pickle_path=os.path.join(PROJECT_DIR, 'data', 'processed',

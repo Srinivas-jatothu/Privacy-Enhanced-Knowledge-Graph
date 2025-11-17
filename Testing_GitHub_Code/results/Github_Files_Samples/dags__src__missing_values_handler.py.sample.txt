@@ -1,0 +1,10 @@
+"""
+A module for removing missig values from dataset based on CustomeID
+and Description column.
+"""
+
+import os
+import pickle
+
+# Determine the absolute path of the project directory
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

@@ -1,0 +1,9 @@
+{
+  "requested_at": "2025-11-17T11:14:12.951500Z",
+  "requester": "unknown",
+  "function_name": "load_data",
+  "file_path": "src/data_loader.py",
+  "resolved_repo_root": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps",
+  "validation_warnings": [],
+  "extra": {}
+}

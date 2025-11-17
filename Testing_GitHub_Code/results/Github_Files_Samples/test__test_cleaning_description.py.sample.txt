@@ -1,0 +1,10 @@
+"""
+A test for checking cleaning description
+"""
+
+import os
+import pickle
+from src.cleaning_description import cleaning_description
+
+
+# Determine the absolute path of the project directory

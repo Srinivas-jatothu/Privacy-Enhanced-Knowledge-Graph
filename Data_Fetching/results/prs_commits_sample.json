@@ -1,0 +1,113 @@
+{
+  "repo": "Thomas-George-T/Ecommerce-Data-MLOps",
+  "pr_commits_sample": [
+    {
+      "number": 110,
+      "title": "Add concurrency to Tests",
+      "commits_count": 1,
+      "commits": [
+        {
+          "sha": "6edf75481708fa18215867a867a17d9056db4988",
+          "message": "Update pytest.yml"
+        }
+      ]
+    },
+    {
+      "number": 109,
+      "title": "Bump grpcio from 1.51.3 to 1.53.2",
+      "commits_count": 2,
+      "commits": [
+        {
+          "sha": "9d71e9035e161f0715194da1641d6ad14a974830",
+          "message": "Bump grpcio from 1.51.3 to 1.53.2\n\nBumps [grpcio](https://github.com/grpc/grpc) from 1.51.3 to 1.53.2.\n- [Release notes](https://github.com/grpc/grpc/releases)\n- [Changelog](https://github.com/grpc/grpc/blob/master/doc/grpc_release_schedule.md)\n- [Commits](https://github.com/grpc/grpc/compare/v1.51.3...v1.53.2)\n\n---\nupdated-dependencies:\n- dependency-name: grpcio\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+        },
+        {
+          "sha": "af0af94401176e64b35d92dd63a4e83a3dd5e9f1",
+          "message": "Update requirements.txt"
+        }
+      ]
+    },
+    {
+      "number": 108,
+      "title": "Build Fix",
+      "commits_count": 6,
+      "commits": [
+        {
+          "sha": "f422d44556426ad13c050f253319f62c92761062",
+          "message": "Update .pylintrc"
+        },
+        {
+          "sha": "79c65c61033e757be538a9a3ca16c0a337f0688b",
+          "message": "Update requirements.txt"
+        },
+        {
+          "sha": "162ca030184db52d9fe20a31d5f93c5e11cea70f",
+          "message": "Update .pylintrc"
+        },
+        {
+          "sha": "6edf75481708fa18215867a867a17d9056db4988",
+          "message": "Update pytest.yml"
+        },
+        {
+          "sha": "182703553878d358ccc76a3f2f825c93092f0d62",
+          "message": "Merge pull request #110 from Thomas-George-T/Thomas-George-T-patch-2\n\nAdd concurrency to Tests"
+        },
+        {
+          "sha": "b6e2ca6f491b3ec815392cb64effcfdcfd342a13",
+          "message": "Bumping up versions of Github actions"
+        }
+      ]
+    },
+    {
+      "number": 107,
+      "title": "Bump flask-appbuilder from 4.3.6 to 4.3.11",
+      "commits_count": 1,
+      "commits": [
+        {
+          "sha": "5533e5d200b775685becd28469567c0051c0327b",
+          "message": "Bump flask-appbuilder from 4.3.6 to 4.3.11\n\nBumps [flask-appbuilder](https://github.com/dpgaspar/flask-appbuilder) from 4.3.6 to 4.3.11.\n- [Release notes](https://github.com/dpgaspar/flask-appbuilder/releases)\n- [Changelog](https://github.com/dpgaspar/Flask-AppBuilder/blob/master/CHANGELOG.rst)\n- [Commits](https://github.com/dpgaspar/flask-appbuilder/compare/v4.3.6...v4.3.11)\n\n---\nupdated-dependencies:\n- dependency-name: flask-appbuilder\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+        }
+      ]
+    },
+    {
+      "number": 106,
+      "title": "Bump mlflow from 2.8.1 to 2.13.1",
+      "commits_count": 1,
+      "commits": [
+        {
+          "sha": "08a2e6238e403440a4ba55922d858f89a4427586",
+          "message": "Bump mlflow from 2.8.1 to 2.13.1\n\nBumps [mlflow](https://github.com/mlflow/mlflow) from 2.8.1 to 2.13.1.\n- [Release notes](https://github.com/mlflow/mlflow/releases)\n- [Changelog](https://github.com/mlflow/mlflow/blob/master/CHANGELOG.md)\n- [Commits](https://github.com/mlflow/mlflow/compare/v2.8.1...v2.13.1)\n\n---\nupdated-dependencies:\n- dependency-name: mlflow\n  dependency-type: direct:production\n...\n\nSigned-off-by: dependabot[bot] <support@github.com>"
+        }
+      ]
+    }
+  ],
+  "commit_to_prs_sample": {
+    "6edf75481708fa18215867a867a17d9056db4988": [
+      110
+    ],
+    "9d71e9035e161f0715194da1641d6ad14a974830": [
+      109
+    ],
+    "af0af94401176e64b35d92dd63a4e83a3dd5e9f1": [
+      109
+    ],
+    "f422d44556426ad13c050f253319f62c92761062": [
+      108
+    ],
+    "79c65c61033e757be538a9a3ca16c0a337f0688b": [
+      108
+    ],
+    "162ca030184db52d9fe20a31d5f93c5e11cea70f": [
+      108
+    ],
+    "182703553878d358ccc76a3f2f825c93092f0d62": [
+      110
+    ],
+    "b6e2ca6f491b3ec815392cb64effcfdcfd342a13": [
+      108
+    ],
+    "5533e5d200b775685becd28469567c0051c0327b": [
+      107
+    ]
+  }
+}

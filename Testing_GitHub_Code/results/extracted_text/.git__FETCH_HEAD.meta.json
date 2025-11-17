@@ -1,0 +1,32 @@
+{
+  "relpath": ".git/FETCH_HEAD",
+  "manifest_meta": {
+    "relpath": ".git/FETCH_HEAD",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\FETCH_HEAD",
+    "size": 1378,
+    "mtime": 1763126837.0117228,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "9ac8af6caa007da5701e69f0a894e51eaff98fc69aa59e2cb8131e26bccfb0e7",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.git__FETCH_HEAD.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "ISO-8859-1",
+    "X-TIKA:parse_time_millis": "5",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'FETCH_HEAD'",
+    "X-TIKA:detectedEncoding": "ISO-8859-1",
+    "Content-Length": "1378",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=ISO-8859-1"
+  }
+}

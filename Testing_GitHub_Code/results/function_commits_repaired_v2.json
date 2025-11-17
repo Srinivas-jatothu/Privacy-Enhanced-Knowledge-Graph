@@ -1,0 +1,4759 @@
+{
+  "dags.src.anomaly_code_handler.handle_anomalous_codes": {
+    "file": "dags/src/anomaly_code_handler.py",
+    "lineno": 16,
+    "end_lineno": 43,
+    "blame_summary": {
+      "f01c5123c9453c3f3972d88a874ee5cdc05c8f16": {
+        "count": 28,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-11-09T23:56:31Z",
+        "summary": "create dags in airflow.py up to anomaly_codes_task"
+      }
+    },
+    "top_commit": {
+      "sha": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "count": 28,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-11-09T23:56:31Z",
+      "summary": "create dags in airflow.py up to anomaly_codes_task"
+    }
+  },
+  "dags.src.cancellation_details.cancellation_details": {
+    "file": "dags/src/cancellation_details.py",
+    "lineno": 16,
+    "end_lineno": 50,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count": 35,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:35:34Z",
+        "summary": "The scripts have been added to dags"
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "count": 35,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T19:35:34Z",
+      "summary": "The scripts have been added to dags"
+    }
+  },
+  "dags.src.cleaning_description.cleaning_description": {
+    "file": "dags/src/cleaning_description.py",
+    "lineno": 14,
+    "end_lineno": 39,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count": 26,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:35:34Z",
+        "summary": "The scripts have been added to dags"
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "count": 26,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T19:35:34Z",
+      "summary": "The scripts have been added to dags"
+    }
+  },
+  "dags.src.correlation.correlation_check": {
+    "file": "dags/src/correlation.py",
+    "lineno": 35,
+    "end_lineno": 96,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 62,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 62,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "dags.src.correlation.save_heatmap": {
+    "file": "dags/src/correlation.py",
+    "lineno": 98,
+    "end_lineno": 119,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 22,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 22,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "dags.src.correlation.save_correlations_as_parquet": {
+    "file": "dags/src/correlation.py",
+    "lineno": 121,
+    "end_lineno": 145,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 25,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 25,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "dags.src.customers_behavior.customers_behavior": {
+    "file": "dags/src/customers_behavior.py",
+    "lineno": 16,
+    "end_lineno": 69,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count": 54,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:35:34Z",
+        "summary": "The scripts have been added to dags"
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "count": 54,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T19:35:34Z",
+      "summary": "The scripts have been added to dags"
+    }
+  },
+  "dags.src.data_loader.load_data": {
+    "file": "dags/src/data_loader.py",
+    "lineno": 17,
+    "end_lineno": 48,
+    "blame_summary": {
+      "f01c5123c9453c3f3972d88a874ee5cdc05c8f16": {
+        "count": 32,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-11-09T23:56:31Z",
+        "summary": "create dags in airflow.py up to anomaly_codes_task"
+      }
+    },
+    "top_commit": {
+      "sha": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "count": 32,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-11-09T23:56:31Z",
+      "summary": "create dags in airflow.py up to anomaly_codes_task"
+    }
+  },
+  "dags.src.download_data.ingest_data": {
+    "file": "dags/src/download_data.py",
+    "lineno": 9,
+    "end_lineno": 36,
+    "blame_summary": {
+      "e45a01eb0a52ba53114c08db3eb285caecd271ac": {
+        "count": 28,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-11-09T20:23:16Z",
+        "summary": "Added Airflow Dags"
+      }
+    },
+    "top_commit": {
+      "sha": "e45a01eb0a52ba53114c08db3eb285caecd271ac",
+      "count": 28,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-11-09T20:23:16Z",
+      "summary": "Added Airflow Dags"
+    }
+  },
+  "dags.src.duplicates_handler.remove_duplicates": {
+    "file": "dags/src/duplicates_handler.py",
+    "lineno": 21,
+    "end_lineno": 44,
+    "blame_summary": {
+      "f01c5123c9453c3f3972d88a874ee5cdc05c8f16": {
+        "count": 24,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-11-09T23:56:31Z",
+        "summary": "create dags in airflow.py up to anomaly_codes_task"
+      }
+    },
+    "top_commit": {
+      "sha": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "count": 24,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-11-09T23:56:31Z",
+      "summary": "create dags in airflow.py up to anomaly_codes_task"
+    }
+  },
+  "dags.src.geographic_features.geographic_features": {
+    "file": "dags/src/geographic_features.py",
+    "lineno": 14,
+    "end_lineno": 53,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count": 40,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:35:34Z",
+        "summary": "The scripts have been added to dags"
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "count": 40,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T19:35:34Z",
+      "summary": "The scripts have been added to dags"
+    }
+  },
+  "dags.src.missing_values_handler.handle_missing": {
+    "file": "dags/src/missing_values_handler.py",
+    "lineno": 15,
+    "end_lineno": 45,
+    "blame_summary": {
+      "f01c5123c9453c3f3972d88a874ee5cdc05c8f16": {
+        "count": 31,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-11-09T23:56:31Z",
+        "summary": "create dags in airflow.py up to anomaly_codes_task"
+      }
+    },
+    "top_commit": {
+      "sha": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "count": 31,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-11-09T23:56:31Z",
+      "summary": "create dags in airflow.py up to anomaly_codes_task"
+    }
+  },
+  "dags.src.outlier_treatment.removing_outlier": {
+    "file": "dags/src/outlier_treatment.py",
+    "lineno": 18,
+    "end_lineno": 54,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count": 33,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:35:34Z",
+        "summary": "The scripts have been added to dags"
+      },
+      "ff4383a9eff76118dda9b0fa94077e0673309e89": {
+        "count": 3,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-12-05T01:38:30Z",
+        "summary": "adding df_outlier"
+      },
+      "d03c820984d98a52c9874bb2e3e7e9756c495eca": {
+        "count": 1,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-12-05T00:34:58Z",
+        "summary": "adding paraquet files"
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "count": 33,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T19:35:34Z",
+      "summary": "The scripts have been added to dags"
+    }
+  },
+  "dags.src.pca.pc_analyzer": {
+    "file": "dags/src/pca.py",
+    "lineno": 27,
+    "end_lineno": 96,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 70,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 70,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "dags.src.pca.pca_": {
+    "file": "dags/src/pca.py",
+    "lineno": 98,
+    "end_lineno": 123,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 26,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 26,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "dags.src.removing_zero_unitprice.removing_zero": {
+    "file": "dags/src/removing_zero_unitprice.py",
+    "lineno": 16,
+    "end_lineno": 36,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count": 21,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:35:34Z",
+        "summary": "The scripts have been added to dags"
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "count": 21,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T19:35:34Z",
+      "summary": "The scripts have been added to dags"
+    }
+  },
+  "dags.src.rfm.rfm": {
+    "file": "dags/src/rfm.py",
+    "lineno": 14,
+    "end_lineno": 58,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count": 45,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:35:34Z",
+        "summary": "The scripts have been added to dags"
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "count": 45,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T19:35:34Z",
+      "summary": "The scripts have been added to dags"
+    }
+  },
+  "dags.src.scaler.scaler": {
+    "file": "dags/src/scaler.py",
+    "lineno": 27,
+    "end_lineno": 95,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 69,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 69,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "dags.src.seasonality.seasonality_impacts": {
+    "file": "dags/src/seasonality.py",
+    "lineno": 19,
+    "end_lineno": 78,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count": 56,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:35:34Z",
+        "summary": "The scripts have been added to dags"
+      },
+      "aeb9970957491beb3889fd45b37a9ff2d61e9b21": {
+        "count": 3,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-12-05T02:14:40Z",
+        "summary": "The changes in seasonality.py are done"
+      },
+      "a1d08a6df7ae229d5856f3b0dfbb38b28ea1d808": {
+        "count": 1,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-12-05T01:59:41Z",
+        "summary": "Clustering Evaluation modules are added"
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "count": 56,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T19:35:34Z",
+      "summary": "The scripts have been added to dags"
+    }
+  },
+  "dags.src.transaction_status_handler.handle_transaction_status": {
+    "file": "dags/src/transaction_status_handler.py",
+    "lineno": 18,
+    "end_lineno": 47,
+    "blame_summary": {
+      "f01c5123c9453c3f3972d88a874ee5cdc05c8f16": {
+        "count": 30,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-11-09T23:56:31Z",
+        "summary": "create dags in airflow.py up to anomaly_codes_task"
+      }
+    },
+    "top_commit": {
+      "sha": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16",
+      "count": 30,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-11-09T23:56:31Z",
+      "summary": "create dags in airflow.py up to anomaly_codes_task"
+    }
+  },
+  "dags.src.unique_products.unique_products": {
+    "file": "dags/src/unique_products.py",
+    "lineno": 14,
+    "end_lineno": 52,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count": 39,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:35:34Z",
+        "summary": "The scripts have been added to dags"
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387",
+      "count": 39,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T19:35:34Z",
+      "summary": "The scripts have been added to dags"
+    }
+  },
+  "dags.src.unzip_data.unzip_file": {
+    "file": "dags/src/unzip_data.py",
+    "lineno": 13,
+    "end_lineno": 30,
+    "blame_summary": {
+      "e45a01eb0a52ba53114c08db3eb285caecd271ac": {
+        "count": 18,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-11-09T20:23:16Z",
+        "summary": "Added Airflow Dags"
+      }
+    },
+    "top_commit": {
+      "sha": "e45a01eb0a52ba53114c08db3eb285caecd271ac",
+      "count": 18,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-11-09T20:23:16Z",
+      "summary": "Added Airflow Dags"
+    }
+  },
+  "gcpdeploy.src.anomaly_code_handler.handle_anomalous_codes": {
+    "file": "gcpdeploy/src/anomaly_code_handler.py",
+    "lineno": 16,
+    "end_lineno": 43,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 28,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 28,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.build.initialize_aiplatform": {
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 17,
+    "end_lineno": 24,
+    "blame_summary": {
+      "3d5f8ad2a0393fbd22627efaf6eefc68c848a556": {
+        "count": 8,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-06T00:58:14Z",
+        "summary": "Moved code to gcpdeploy/src"
+      }
+    },
+    "top_commit": {
+      "sha": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "count": 8,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-06T00:58:14Z",
+      "summary": "Moved code to gcpdeploy/src"
+    }
+  },
+  "gcpdeploy.src.build.create_training_job": {
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 26,
+    "end_lineno": 41,
+    "blame_summary": {
+      "3d5f8ad2a0393fbd22627efaf6eefc68c848a556": {
+        "count": 16,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-06T00:58:14Z",
+        "summary": "Moved code to gcpdeploy/src"
+      }
+    },
+    "top_commit": {
+      "sha": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "count": 16,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-06T00:58:14Z",
+      "summary": "Moved code to gcpdeploy/src"
+    }
+  },
+  "gcpdeploy.src.build.run_training_job": {
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 43,
+    "end_lineno": 57,
+    "blame_summary": {
+      "3d5f8ad2a0393fbd22627efaf6eefc68c848a556": {
+        "count": 15,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-06T00:58:14Z",
+        "summary": "Moved code to gcpdeploy/src"
+      }
+    },
+    "top_commit": {
+      "sha": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "count": 15,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-06T00:58:14Z",
+      "summary": "Moved code to gcpdeploy/src"
+    }
+  },
+  "gcpdeploy.src.build.deploy_model_to_endpoint": {
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 59,
+    "end_lineno": 71,
+    "blame_summary": {
+      "3d5f8ad2a0393fbd22627efaf6eefc68c848a556": {
+        "count": 13,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-06T00:58:14Z",
+        "summary": "Moved code to gcpdeploy/src"
+      }
+    },
+    "top_commit": {
+      "sha": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "count": 13,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-06T00:58:14Z",
+      "summary": "Moved code to gcpdeploy/src"
+    }
+  },
+  "gcpdeploy.src.build.main": {
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 73,
+    "end_lineno": 83,
+    "blame_summary": {
+      "3d5f8ad2a0393fbd22627efaf6eefc68c848a556": {
+        "count": 11,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-06T00:58:14Z",
+        "summary": "Moved code to gcpdeploy/src"
+      }
+    },
+    "top_commit": {
+      "sha": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556",
+      "count": 11,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-06T00:58:14Z",
+      "summary": "Moved code to gcpdeploy/src"
+    }
+  },
+  "gcpdeploy.src.cancellation_details.cancellation_details": {
+    "file": "gcpdeploy/src/cancellation_details.py",
+    "lineno": 16,
+    "end_lineno": 50,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 35,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 35,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.cleaning_description.cleaning_description": {
+    "file": "gcpdeploy/src/cleaning_description.py",
+    "lineno": 14,
+    "end_lineno": 39,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 26,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 26,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.correlation.correlation_check": {
+    "file": "gcpdeploy/src/correlation.py",
+    "lineno": 32,
+    "end_lineno": 93,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 61,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      },
+      "538d945ae376572e6393dff1eff0e685cf90da36": {
+        "count": 1,
+        "author": "kokomocha",
+        "author_email": "<komalpardeshi31@gmail.com>",
+        "author_time": "2023-12-05T06:43:21Z",
+        "summary": "updated scripts accoring to dags, gcp_deploy and normal src(All three configured differently.)"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 61,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.correlation.save_heatmap": {
+    "file": "gcpdeploy/src/correlation.py",
+    "lineno": 95,
+    "end_lineno": 116,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 22,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 22,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.correlation.save_correlations_as_parquet": {
+    "file": "gcpdeploy/src/correlation.py",
+    "lineno": 118,
+    "end_lineno": 142,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 25,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 25,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.customers_behavior.customers_behavior": {
+    "file": "gcpdeploy/src/customers_behavior.py",
+    "lineno": 16,
+    "end_lineno": 69,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 54,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 54,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.data_loader.load_data": {
+    "file": "gcpdeploy/src/data_loader.py",
+    "lineno": 17,
+    "end_lineno": 48,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 32,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 32,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.download_data.ingest_data": {
+    "file": "gcpdeploy/src/download_data.py",
+    "lineno": 9,
+    "end_lineno": 36,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 28,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 28,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.duplicates_handler.remove_duplicates": {
+    "file": "gcpdeploy/src/duplicates_handler.py",
+    "lineno": 21,
+    "end_lineno": 44,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 24,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 24,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.geographic_features.geographic_features": {
+    "file": "gcpdeploy/src/geographic_features.py",
+    "lineno": 14,
+    "end_lineno": 53,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 40,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 40,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.inference.predict_custom_trained_model": {
+    "file": "gcpdeploy/src/inference.py",
+    "lineno": 7,
+    "end_lineno": 46,
+    "blame_summary": {
+      "1420f9d3185da8bc6510d1d49d0bbded97dcff32": {
+        "count": 40,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-07T02:45:47Z",
+        "summary": "Updating serving and added inference"
+      }
+    },
+    "top_commit": {
+      "sha": "1420f9d3185da8bc6510d1d49d0bbded97dcff32",
+      "count": 40,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-07T02:45:47Z",
+      "summary": "Updating serving and added inference"
+    }
+  },
+  "gcpdeploy.src.mflow_logging.mlflow_logging_train": {
+    "file": "gcpdeploy/src/mflow_logging.py",
+    "lineno": 35,
+    "end_lineno": 92,
+    "blame_summary": {
+      "e2257c888abf84b13b16ce0655447228533428ea": {
+        "count": 54,
+        "author": "kokomocha",
+        "author_email": "<komalpardeshi31@gmail.com>",
+        "author_time": "2023-12-06T04:27:38Z",
+        "summary": "Cluster Visualization scripts, MLFlow script, Docker mod for tfdv compatibility, update to assets folder."
+      },
+      "7609a7dac27a1608e94cde74e2fe4e8335e34dc3": {
+        "count": 4,
+        "author": "kokomocha",
+        "author_email": "<komalpardeshi31@gmail.com>",
+        "author_time": "2023-12-06T06:33:37Z",
+        "summary": "mlflow_logging location fix"
+      }
+    },
+    "top_commit": {
+      "sha": "e2257c888abf84b13b16ce0655447228533428ea",
+      "count": 54,
+      "author": "kokomocha",
+      "author_email": "<komalpardeshi31@gmail.com>",
+      "author_time": "2023-12-06T04:27:38Z",
+      "summary": "Cluster Visualization scripts, MLFlow script, Docker mod for tfdv compatibility, update to assets folder."
+    }
+  },
+  "gcpdeploy.src.missing_values_handler.handle_missing": {
+    "file": "gcpdeploy/src/missing_values_handler.py",
+    "lineno": 15,
+    "end_lineno": 45,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 31,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 31,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.model_analysis.load_data": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 28,
+    "end_lineno": 49,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count": 22,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T22:01:58Z",
+        "summary": "modify train.py in trainer to run as model pipeline"
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "count": 22,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T22:01:58Z",
+      "summary": "modify train.py in trainer to run as model pipeline"
+    }
+  },
+  "gcpdeploy.src.model_analysis.normalize_data": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 51,
+    "end_lineno": 71,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count": 21,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T22:01:58Z",
+        "summary": "modify train.py in trainer to run as model pipeline"
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "count": 21,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T22:01:58Z",
+      "summary": "modify train.py in trainer to run as model pipeline"
+    }
+  },
+  "gcpdeploy.src.model_analysis.data_transform": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 73,
+    "end_lineno": 115,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count": 43,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T22:01:58Z",
+        "summary": "modify train.py in trainer to run as model pipeline"
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "count": 43,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T22:01:58Z",
+      "summary": "modify train.py in trainer to run as model pipeline"
+    }
+  },
+  "gcpdeploy.src.model_analysis.top_pca": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 117,
+    "end_lineno": 163,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count": 47,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T22:01:58Z",
+        "summary": "modify train.py in trainer to run as model pipeline"
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "count": 47,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T22:01:58Z",
+      "summary": "modify train.py in trainer to run as model pipeline"
+    }
+  },
+  "gcpdeploy.src.model_analysis.cluster_distribution": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 165,
+    "end_lineno": 207,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count": 43,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T22:01:58Z",
+        "summary": "modify train.py in trainer to run as model pipeline"
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "count": 43,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T22:01:58Z",
+      "summary": "modify train.py in trainer to run as model pipeline"
+    }
+  },
+  "gcpdeploy.src.model_analysis.evaluation_metrics": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 209,
+    "end_lineno": 249,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count": 41,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T22:01:58Z",
+        "summary": "modify train.py in trainer to run as model pipeline"
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "count": 41,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T22:01:58Z",
+      "summary": "modify train.py in trainer to run as model pipeline"
+    }
+  },
+  "gcpdeploy.src.model_analysis.train_model": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 251,
+    "end_lineno": 264,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count": 14,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T22:01:58Z",
+        "summary": "modify train.py in trainer to run as model pipeline"
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "count": 14,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T22:01:58Z",
+      "summary": "modify train.py in trainer to run as model pipeline"
+    }
+  },
+  "gcpdeploy.src.model_analysis.save_and_upload_model": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 266,
+    "end_lineno": 280,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count": 15,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T22:01:58Z",
+        "summary": "modify train.py in trainer to run as model pipeline"
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "count": 15,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T22:01:58Z",
+      "summary": "modify train.py in trainer to run as model pipeline"
+    }
+  },
+  "gcpdeploy.src.model_analysis.silhouette_analysis": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 282,
+    "end_lineno": 345,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count": 64,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T22:01:58Z",
+        "summary": "modify train.py in trainer to run as model pipeline"
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "count": 64,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T22:01:58Z",
+      "summary": "modify train.py in trainer to run as model pipeline"
+    }
+  },
+  "gcpdeploy.src.outlier_treatment.removing_outlier": {
+    "file": "gcpdeploy/src/outlier_treatment.py",
+    "lineno": 16,
+    "end_lineno": 48,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 33,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 33,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.pca.pc_analyzer": {
+    "file": "gcpdeploy/src/pca.py",
+    "lineno": 23,
+    "end_lineno": 92,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 70,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 70,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.pca.pca_": {
+    "file": "gcpdeploy/src/pca.py",
+    "lineno": 94,
+    "end_lineno": 119,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 26,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 26,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.removing_zero_unitprice.removing_zero": {
+    "file": "gcpdeploy/src/removing_zero_unitprice.py",
+    "lineno": 16,
+    "end_lineno": 36,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 21,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 21,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.rfm.rfm": {
+    "file": "gcpdeploy/src/rfm.py",
+    "lineno": 14,
+    "end_lineno": 58,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 45,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 45,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.seasonality.seasonality_impacts": {
+    "file": "gcpdeploy/src/seasonality.py",
+    "lineno": 16,
+    "end_lineno": 73,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 58,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 58,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.serve.predict.get_table_schema": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 36,
+    "end_lineno": 52,
+    "blame_summary": {
+      "5161bcbd80aaa8386d47f881655af47a0dd35b55": {
+        "count": 17,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-13T05:18:59Z",
+        "summary": "Added Monitoring into predict.py"
+      }
+    },
+    "top_commit": {
+      "sha": "5161bcbd80aaa8386d47f881655af47a0dd35b55",
+      "count": 17,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-13T05:18:59Z",
+      "summary": "Added Monitoring into predict.py"
+    }
+  },
+  "gcpdeploy.src.serve.predict.create_table_if_not_exists": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 55,
+    "end_lineno": 72,
+    "blame_summary": {
+      "5161bcbd80aaa8386d47f881655af47a0dd35b55": {
+        "count": 18,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-13T05:18:59Z",
+        "summary": "Added Monitoring into predict.py"
+      }
+    },
+    "top_commit": {
+      "sha": "5161bcbd80aaa8386d47f881655af47a0dd35b55",
+      "count": 18,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-13T05:18:59Z",
+      "summary": "Added Monitoring into predict.py"
+    }
+  },
+  "gcpdeploy.src.serve.predict.initialize_variables": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 76,
+    "end_lineno": 84,
+    "blame_summary": {
+      "85356ee3e1b071444e78c85d89b472b29722e709": {
+        "count": 1,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-06T03:02:01Z",
+        "summary": "add serve directory to src and create Dockerfile and predict.py inside serve"
+      },
+      "c73558818706bae4ffc437a03ec1a16d8ccd4fdc": {
+        "count": 8,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-06T03:14:34Z",
+        "summary": "add predict function to Flask app"
+      }
+    },
+    "top_commit": {
+      "sha": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+      "count": 8,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-06T03:14:34Z",
+      "summary": "add predict function to Flask app"
+    }
+  },
+  "gcpdeploy.src.serve.predict.initialize_client_and_bucket": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 86,
+    "end_lineno": 96,
+    "blame_summary": {
+      "85356ee3e1b071444e78c85d89b472b29722e709": {
+        "count": 1,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-06T03:02:01Z",
+        "summary": "add serve directory to src and create Dockerfile and predict.py inside serve"
+      },
+      "c73558818706bae4ffc437a03ec1a16d8ccd4fdc": {
+        "count": 10,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-06T03:14:34Z",
+        "summary": "add predict function to Flask app"
+      }
+    },
+    "top_commit": {
+      "sha": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+      "count": 10,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-06T03:14:34Z",
+      "summary": "add predict function to Flask app"
+    }
+  },
+  "gcpdeploy.src.serve.predict.load_model": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 98,
+    "end_lineno": 121,
+    "blame_summary": {
+      "c73558818706bae4ffc437a03ec1a16d8ccd4fdc": {
+        "count": 9,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-06T03:14:34Z",
+        "summary": "add predict function to Flask app"
+      },
+      "356d49f95a95716f1b3fd9927193322eb935000c": {
+        "count": 13,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-06T03:23:54Z",
+        "summary": "update predict.py Flask application in serve folder"
+      },
+      "1420f9d3185da8bc6510d1d49d0bbded97dcff32": {
+        "count": 2,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-07T02:45:47Z",
+        "summary": "Updating serving and added inference"
+      }
+    },
+    "top_commit": {
+      "sha": "356d49f95a95716f1b3fd9927193322eb935000c",
+      "count": 13,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-06T03:23:54Z",
+      "summary": "update predict.py Flask application in serve folder"
+    }
+  },
+  "gcpdeploy.src.serve.predict.fetch_latest_model": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 124,
+    "end_lineno": 142,
+    "blame_summary": {
+      "85356ee3e1b071444e78c85d89b472b29722e709": {
+        "count": 4,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-06T03:02:01Z",
+        "summary": "add serve directory to src and create Dockerfile and predict.py inside serve"
+      },
+      "c73558818706bae4ffc437a03ec1a16d8ccd4fdc": {
+        "count": 14,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-06T03:14:34Z",
+        "summary": "add predict function to Flask app"
+      },
+      "1420f9d3185da8bc6510d1d49d0bbded97dcff32": {
+        "count": 1,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-07T02:45:47Z",
+        "summary": "Updating serving and added inference"
+      }
+    },
+    "top_commit": {
+      "sha": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+      "count": 14,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-06T03:14:34Z",
+      "summary": "add predict function to Flask app"
+    }
+  },
+  "gcpdeploy.src.serve.predict.health_check": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 145,
+    "end_lineno": 150,
+    "blame_summary": {
+      "c73558818706bae4ffc437a03ec1a16d8ccd4fdc": {
+        "count": 6,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-06T03:14:34Z",
+        "summary": "add predict function to Flask app"
+      }
+    },
+    "top_commit": {
+      "sha": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc",
+      "count": 6,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-06T03:14:34Z",
+      "summary": "add predict function to Flask app"
+    }
+  },
+  "gcpdeploy.src.serve.predict.predict": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 153,
+    "end_lineno": 209,
+    "blame_summary": {
+      "c73558818706bae4ffc437a03ec1a16d8ccd4fdc": {
+        "count": 9,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-06T03:14:34Z",
+        "summary": "add predict function to Flask app"
+      },
+      "07f52c4683184fda22f31327a1fb99bbc1e0282b": {
+        "count": 6,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-06T22:18:44Z",
+        "summary": "updated serve"
+      },
+      "5161bcbd80aaa8386d47f881655af47a0dd35b55": {
+        "count": 42,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-13T05:18:59Z",
+        "summary": "Added Monitoring into predict.py"
+      }
+    },
+    "top_commit": {
+      "sha": "5161bcbd80aaa8386d47f881655af47a0dd35b55",
+      "count": 42,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-13T05:18:59Z",
+      "summary": "Added Monitoring into predict.py"
+    }
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender.remove_outliers": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 8,
+    "end_lineno": 25,
+    "blame_summary": {
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32": {
+        "count": 13,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T20:38:10Z",
+        "summary": "Adding ClusterBasedRecommender to GCPDeploy"
+      },
+      "5f49ecb5b448e2df813a2a980a34d0130e47c705": {
+        "count": 5,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-04T16:43:52Z",
+        "summary": "add remove_outliers function to ClusterBasedRecommender.py module"
+      }
+    },
+    "top_commit": {
+      "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "count": 13,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T20:38:10Z",
+      "summary": "Adding ClusterBasedRecommender to GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender.merge_customer_transactions": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 28,
+    "end_lineno": 49,
+    "blame_summary": {
+      "b8e6a0a686fc37886aaec0288b3127120b9a45ec": {
+        "count": 5,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-04T16:54:50Z",
+        "summary": "add merge_customer_transactions, identify_top_products to the recommender module"
+      },
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32": {
+        "count": 14,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T20:38:10Z",
+        "summary": "Adding ClusterBasedRecommender to GCPDeploy"
+      },
+      "647b45e307455fb4352d2a009eace78541f61607": {
+        "count": 3,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-05T23:19:16Z",
+        "summary": "Updating Trainer Dockerfile and functions.py"
+      }
+    },
+    "top_commit": {
+      "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "count": 14,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T20:38:10Z",
+      "summary": "Adding ClusterBasedRecommender to GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender.identify_top_products": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 52,
+    "end_lineno": 72,
+    "blame_summary": {
+      "b8e6a0a686fc37886aaec0288b3127120b9a45ec": {
+        "count": 6,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-04T16:54:50Z",
+        "summary": "add merge_customer_transactions, identify_top_products to the recommender module"
+      },
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32": {
+        "count": 15,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T20:38:10Z",
+        "summary": "Adding ClusterBasedRecommender to GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "count": 15,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T20:38:10Z",
+      "summary": "Adding ClusterBasedRecommender to GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender.record_customer_purchases": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 75,
+    "end_lineno": 90,
+    "blame_summary": {
+      "5157ade5d96c3de4db9bdf3c18e1259388d756ab": {
+        "count": 4,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-04T16:56:17Z",
+        "summary": "record_customer_purchases to the recommender module"
+      },
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32": {
+        "count": 12,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T20:38:10Z",
+        "summary": "Adding ClusterBasedRecommender to GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "count": 12,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T20:38:10Z",
+      "summary": "Adding ClusterBasedRecommender to GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender.create_recommendations": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 93,
+    "end_lineno": 128,
+    "blame_summary": {
+      "e1bd98ddeb7089f1598ee264ae7b0e39cb76edff": {
+        "count": 1,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-04T16:59:25Z",
+        "summary": "create_recommendations to the module"
+      },
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32": {
+        "count": 35,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T20:38:10Z",
+        "summary": "Adding ClusterBasedRecommender to GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "count": 35,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T20:38:10Z",
+      "summary": "Adding ClusterBasedRecommender to GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender.generate_recommendations": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 131,
+    "end_lineno": 163,
+    "blame_summary": {
+      "c35626609e14485c784246088950d61b944a3827": {
+        "count": 9,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-04T17:03:11Z",
+        "summary": "add generate_recommendations to the recommender module"
+      },
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32": {
+        "count": 24,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T20:38:10Z",
+        "summary": "Adding ClusterBasedRecommender to GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32",
+      "count": 24,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T20:38:10Z",
+      "summary": "Adding ClusterBasedRecommender to GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.trainer.train.kmeans_clustering": {
+    "file": "gcpdeploy/src/trainer/train.py",
+    "lineno": 33,
+    "end_lineno": 56,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count": 11,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T22:01:58Z",
+        "summary": "modify train.py in trainer to run as model pipeline"
+      },
+      "be1996fd7583ba05c1a14d45f978567402530da9": {
+        "count": 3,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-06T00:30:38Z",
+        "summary": "Updates to trainer/train.py"
+      },
+      "a1d08a6df7ae229d5856f3b0dfbb38b28ea1d808": {
+        "count": 8,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-12-05T01:59:41Z",
+        "summary": "Clustering Evaluation modules are added"
+      },
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 2,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "count": 11,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T22:01:58Z",
+      "summary": "modify train.py in trainer to run as model pipeline"
+    }
+  },
+  "gcpdeploy.src.trainer.train.save_and_upload_model": {
+    "file": "gcpdeploy/src/trainer/train.py",
+    "lineno": 58,
+    "end_lineno": 72,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 14,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      },
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count": 1,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T22:01:58Z",
+        "summary": "modify train.py in trainer to run as model pipeline"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 14,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.trainer.train.main": {
+    "file": "gcpdeploy/src/trainer/train.py",
+    "lineno": 75,
+    "end_lineno": 107,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 8,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      },
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count": 13,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-12-05T22:01:58Z",
+        "summary": "modify train.py in trainer to run as model pipeline"
+      },
+      "be1996fd7583ba05c1a14d45f978567402530da9": {
+        "count": 10,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-06T00:30:38Z",
+        "summary": "Updates to trainer/train.py"
+      },
+      "647b45e307455fb4352d2a009eace78541f61607": {
+        "count": 2,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-05T23:19:16Z",
+        "summary": "Updating Trainer Dockerfile and functions.py"
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d",
+      "count": 13,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-12-05T22:01:58Z",
+      "summary": "modify train.py in trainer to run as model pipeline"
+    }
+  },
+  "gcpdeploy.src.transaction_status_handler.handle_transaction_status": {
+    "file": "gcpdeploy/src/transaction_status_handler.py",
+    "lineno": 18,
+    "end_lineno": 47,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 30,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 30,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.unique_products.unique_products": {
+    "file": "gcpdeploy/src/unique_products.py",
+    "lineno": 14,
+    "end_lineno": 52,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 39,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 39,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "gcpdeploy.src.unzip_data.unzip_file": {
+    "file": "gcpdeploy/src/unzip_data.py",
+    "lineno": 13,
+    "end_lineno": 30,
+    "blame_summary": {
+      "6b8b21afaf18020f0ab29114baf4dd71ef36223c": {
+        "count": 18,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-12-01T23:47:03Z",
+        "summary": "Adding GCPDeploy"
+      }
+    },
+    "top_commit": {
+      "sha": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "count": 18,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-12-01T23:47:03Z",
+      "summary": "Adding GCPDeploy"
+    }
+  },
+  "src.anomaly_code_handler.handle_anomalous_codes": {
+    "file": "src/anomaly_code_handler.py",
+    "lineno": 16,
+    "end_lineno": 43,
+    "blame_summary": {
+      "bb7807467207ab2ddcd097b136edc99cae244be2": {
+        "count": 6,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T18:21:34Z",
+        "summary": "final cleaning to follow pylint rules for spacing and docstrings"
+      },
+      "e3dc57822babc35cfbe9fc313d3e58bdd41e05ef": {
+        "count": 22,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T03:14:06Z",
+        "summary": "add missing_values_handler, duplicates_handler, transaction_status_handler and anomaly_code_handler modules with pickle paths and pickle paths as the output"
+      }
+    },
+    "top_commit": {
+      "sha": "e3dc57822babc35cfbe9fc313d3e58bdd41e05ef",
+      "count": 22,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T03:14:06Z",
+      "summary": "add missing_values_handler, duplicates_handler, transaction_status_handler and anomaly_code_handler modules with pickle paths and pickle paths as the output"
+    }
+  },
+  "src.cancellation_details.cancellation_details": {
+    "file": "src/cancellation_details.py",
+    "lineno": 16,
+    "end_lineno": 50,
+    "blame_summary": {
+      "50bd344102bd73ecb6061e014584975ac2a24ee2": {
+        "count": 4,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:33:29Z",
+        "summary": "Set default values to arguments"
+      },
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count": 17,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:32:55Z",
+        "summary": "Final changes have been made"
+      },
+      "6187a3b974321c6201c9b39316d5c86ac43a535c": {
+        "count": 14,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-09T23:59:10Z",
+        "summary": "The updated files of Feature Engineering are uploaded"
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "count": 17,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T04:32:55Z",
+      "summary": "Final changes have been made"
+    }
+  },
+  "src.cleaning_description.cleaning_description": {
+    "file": "src/cleaning_description.py",
+    "lineno": 14,
+    "end_lineno": 39,
+    "blame_summary": {
+      "7757556fa629309b72e8298804c7a6d3a86c7345": {
+        "count": 2,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-11-09T07:09:27Z",
+        "summary": "updating_test_modules"
+      },
+      "068d9f642c1a395727ef9f023f94ef609a9f036e": {
+        "count": 24,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-11-09T02:10:15Z",
+        "summary": "saved cleaning description, outlier_treatment, removing_zero_unitprice, test_Cleaning_descr"
+      }
+    },
+    "top_commit": {
+      "sha": "068d9f642c1a395727ef9f023f94ef609a9f036e",
+      "count": 24,
+      "author": "bardiamm",
+      "author_email": "<mouhebat.b@northeastern.edu>",
+      "author_time": "2023-11-09T02:10:15Z",
+      "summary": "saved cleaning description, outlier_treatment, removing_zero_unitprice, test_Cleaning_descr"
+    }
+  },
+  "src.correlation.correlation_check": {
+    "file": "src/correlation.py",
+    "lineno": 35,
+    "end_lineno": 96,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 62,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 62,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "src.correlation.save_heatmap": {
+    "file": "src/correlation.py",
+    "lineno": 98,
+    "end_lineno": 119,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 22,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 22,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "src.correlation.save_correlations_as_parquet": {
+    "file": "src/correlation.py",
+    "lineno": 121,
+    "end_lineno": 145,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 25,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 25,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "src.customers_behavior.customers_behavior": {
+    "file": "src/customers_behavior.py",
+    "lineno": 16,
+    "end_lineno": 69,
+    "blame_summary": {
+      "50bd344102bd73ecb6061e014584975ac2a24ee2": {
+        "count": 4,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:33:29Z",
+        "summary": "Set default values to arguments"
+      },
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count": 29,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:32:55Z",
+        "summary": "Final changes have been made"
+      },
+      "6187a3b974321c6201c9b39316d5c86ac43a535c": {
+        "count": 21,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-09T23:59:10Z",
+        "summary": "The updated files of Feature Engineering are uploaded"
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "count": 29,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T04:32:55Z",
+      "summary": "Final changes have been made"
+    }
+  },
+  "src.data_loader.load_data": {
+    "file": "src/data_loader.py",
+    "lineno": 17,
+    "end_lineno": 48,
+    "blame_summary": {
+      "cf7f45a9f5445345d3a711a531653b6c9b00545c": {
+        "count": 6,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T17:20:01Z",
+        "summary": "updated .gitignore file"
+      },
+      "82eb994dd5b8d6efcb89035e36a0330629c45840": {
+        "count": 2,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-24T20:13:16Z",
+        "summary": "add a function for loading the data from data directory"
+      },
+      "bb7807467207ab2ddcd097b136edc99cae244be2": {
+        "count": 5,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T18:21:34Z",
+        "summary": "final cleaning to follow pylint rules for spacing and docstrings"
+      },
+      "e91e19da05793897edc64b9b8e4a293f79720667": {
+        "count": 10,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T02:57:22Z",
+        "summary": "update data_loader and create missing_values_handler.py file with input and output as pickle paths"
+      },
+      "df0e869355c39ebaae66976b8674626412a5d907": {
+        "count": 8,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T02:26:23Z",
+        "summary": "update the load_data function in data_loader module"
+      },
+      "f01c5123c9453c3f3972d88a874ee5cdc05c8f16": {
+        "count": 1,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-11-09T23:56:31Z",
+        "summary": "create dags in airflow.py up to anomaly_codes_task"
+      }
+    },
+    "top_commit": {
+      "sha": "e91e19da05793897edc64b9b8e4a293f79720667",
+      "count": 10,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T02:57:22Z",
+      "summary": "update data_loader and create missing_values_handler.py file with input and output as pickle paths"
+    }
+  },
+  "src.download_data.ingest_data": {
+    "file": "src/download_data.py",
+    "lineno": 9,
+    "end_lineno": 36,
+    "blame_summary": {
+      "a58f2b2c20672dcc76b35369228a9db5725ba348": {
+        "count": 17,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-10-25T21:00:14Z",
+        "summary": "Moved ingest_data() to download_data.py"
+      },
+      "3e1bec3268f696890080778af22692bb13f5f440": {
+        "count": 4,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-10-25T21:42:02Z",
+        "summary": "Moved unzip_data to standalone file"
+      },
+      "0455e19d7d366202137b46eda876f7ce0c6cbdc5": {
+        "count": 2,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-11-08T21:45:17Z",
+        "summary": "Adding Message to Module"
+      },
+      "bd1eb405abbb5c131a32092b46616a50d5d01bdf": {
+        "count": 4,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-11-09T19:19:08Z",
+        "summary": "Updating pylint and ingest_data variable"
+      },
+      "7a64fd850869693f4970154044b9ed0cdc7d53b1": {
+        "count": 1,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-10-26T03:34:20Z",
+        "summary": "Updating download data tests"
+      }
+    },
+    "top_commit": {
+      "sha": "a58f2b2c20672dcc76b35369228a9db5725ba348",
+      "count": 17,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-10-25T21:00:14Z",
+      "summary": "Moved ingest_data() to download_data.py"
+    }
+  },
+  "src.duplicates_handler.remove_duplicates": {
+    "file": "src/duplicates_handler.py",
+    "lineno": 21,
+    "end_lineno": 44,
+    "blame_summary": {
+      "6d671119bdce902a1940dc40b09000b14936bbf9": {
+        "count": 1,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T13:19:38Z",
+        "summary": "fix test files and path issues using abs path using __file__ path"
+      },
+      "e3dc57822babc35cfbe9fc313d3e58bdd41e05ef": {
+        "count": 23,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T03:14:06Z",
+        "summary": "add missing_values_handler, duplicates_handler, transaction_status_handler and anomaly_code_handler modules with pickle paths and pickle paths as the output"
+      }
+    },
+    "top_commit": {
+      "sha": "e3dc57822babc35cfbe9fc313d3e58bdd41e05ef",
+      "count": 23,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T03:14:06Z",
+      "summary": "add missing_values_handler, duplicates_handler, transaction_status_handler and anomaly_code_handler modules with pickle paths and pickle paths as the output"
+    }
+  },
+  "src.geographic_features.geographic_features": {
+    "file": "src/geographic_features.py",
+    "lineno": 14,
+    "end_lineno": 53,
+    "blame_summary": {
+      "50bd344102bd73ecb6061e014584975ac2a24ee2": {
+        "count": 4,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:33:29Z",
+        "summary": "Set default values to arguments"
+      },
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count": 26,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:32:55Z",
+        "summary": "Final changes have been made"
+      },
+      "6187a3b974321c6201c9b39316d5c86ac43a535c": {
+        "count": 10,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-09T23:59:10Z",
+        "summary": "The updated files of Feature Engineering are uploaded"
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "count": 26,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T04:32:55Z",
+      "summary": "Final changes have been made"
+    }
+  },
+  "src.histogram_analysis.rfm_histograms": {
+    "file": "src/histogram_analysis.py",
+    "lineno": 19,
+    "end_lineno": 59,
+    "blame_summary": {
+      "e2257c888abf84b13b16ce0655447228533428ea": {
+        "count": 41,
+        "author": "kokomocha",
+        "author_email": "<komalpardeshi31@gmail.com>",
+        "author_time": "2023-12-06T04:27:38Z",
+        "summary": "Cluster Visualization scripts, MLFlow script, Docker mod for tfdv compatibility, update to assets folder."
+      }
+    },
+    "top_commit": {
+      "sha": "e2257c888abf84b13b16ce0655447228533428ea",
+      "count": 41,
+      "author": "kokomocha",
+      "author_email": "<komalpardeshi31@gmail.com>",
+      "author_time": "2023-12-06T04:27:38Z",
+      "summary": "Cluster Visualization scripts, MLFlow script, Docker mod for tfdv compatibility, update to assets folder."
+    }
+  },
+  "src.missing_values_handler.handle_missing": {
+    "file": "src/missing_values_handler.py",
+    "lineno": 15,
+    "end_lineno": 45,
+    "blame_summary": {
+      "6d671119bdce902a1940dc40b09000b14936bbf9": {
+        "count": 1,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T13:19:38Z",
+        "summary": "fix test files and path issues using abs path using __file__ path"
+      },
+      "e91e19da05793897edc64b9b8e4a293f79720667": {
+        "count": 26,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T02:57:22Z",
+        "summary": "update data_loader and create missing_values_handler.py file with input and output as pickle paths"
+      },
+      "bb7807467207ab2ddcd097b136edc99cae244be2": {
+        "count": 4,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T18:21:34Z",
+        "summary": "final cleaning to follow pylint rules for spacing and docstrings"
+      }
+    },
+    "top_commit": {
+      "sha": "e91e19da05793897edc64b9b8e4a293f79720667",
+      "count": 26,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T02:57:22Z",
+      "summary": "update data_loader and create missing_values_handler.py file with input and output as pickle paths"
+    }
+  },
+  "src.outlier_treatment.removing_outlier": {
+    "file": "src/outlier_treatment.py",
+    "lineno": 16,
+    "end_lineno": 48,
+    "blame_summary": {
+      "7757556fa629309b72e8298804c7a6d3a86c7345": {
+        "count": 1,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-11-09T07:09:27Z",
+        "summary": "updating_test_modules"
+      },
+      "068d9f642c1a395727ef9f023f94ef609a9f036e": {
+        "count": 31,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-11-09T02:10:15Z",
+        "summary": "saved cleaning description, outlier_treatment, removing_zero_unitprice, test_Cleaning_descr"
+      },
+      "77a4ea9978815846ad9e457a41cde095111fdc0a": {
+        "count": 1,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-11-10T00:33:14Z",
+        "summary": "updating_outlier_treatment"
+      }
+    },
+    "top_commit": {
+      "sha": "068d9f642c1a395727ef9f023f94ef609a9f036e",
+      "count": 31,
+      "author": "bardiamm",
+      "author_email": "<mouhebat.b@northeastern.edu>",
+      "author_time": "2023-11-09T02:10:15Z",
+      "summary": "saved cleaning description, outlier_treatment, removing_zero_unitprice, test_Cleaning_descr"
+    }
+  },
+  "src.pca.pc_analyzer": {
+    "file": "src/pca.py",
+    "lineno": 27,
+    "end_lineno": 96,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 70,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 70,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "src.pca.pca_": {
+    "file": "src/pca.py",
+    "lineno": 98,
+    "end_lineno": 123,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 26,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 26,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "src.radar_analysis.radar_charts": {
+    "file": "src/radar_analysis.py",
+    "lineno": 21,
+    "end_lineno": 58,
+    "blame_summary": {
+      "e2257c888abf84b13b16ce0655447228533428ea": {
+        "count": 38,
+        "author": "kokomocha",
+        "author_email": "<komalpardeshi31@gmail.com>",
+        "author_time": "2023-12-06T04:27:38Z",
+        "summary": "Cluster Visualization scripts, MLFlow script, Docker mod for tfdv compatibility, update to assets folder."
+      }
+    },
+    "top_commit": {
+      "sha": "e2257c888abf84b13b16ce0655447228533428ea",
+      "count": 38,
+      "author": "kokomocha",
+      "author_email": "<komalpardeshi31@gmail.com>",
+      "author_time": "2023-12-06T04:27:38Z",
+      "summary": "Cluster Visualization scripts, MLFlow script, Docker mod for tfdv compatibility, update to assets folder."
+    }
+  },
+  "src.removing_zero_unitprice.removing_zero": {
+    "file": "src/removing_zero_unitprice.py",
+    "lineno": 16,
+    "end_lineno": 36,
+    "blame_summary": {
+      "068d9f642c1a395727ef9f023f94ef609a9f036e": {
+        "count": 20,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-11-09T02:10:15Z",
+        "summary": "saved cleaning description, outlier_treatment, removing_zero_unitprice, test_Cleaning_descr"
+      },
+      "7757556fa629309b72e8298804c7a6d3a86c7345": {
+        "count": 1,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-11-09T07:09:27Z",
+        "summary": "updating_test_modules"
+      }
+    },
+    "top_commit": {
+      "sha": "068d9f642c1a395727ef9f023f94ef609a9f036e",
+      "count": 20,
+      "author": "bardiamm",
+      "author_email": "<mouhebat.b@northeastern.edu>",
+      "author_time": "2023-11-09T02:10:15Z",
+      "summary": "saved cleaning description, outlier_treatment, removing_zero_unitprice, test_Cleaning_descr"
+    }
+  },
+  "src.rfm.rfm": {
+    "file": "src/rfm.py",
+    "lineno": 14,
+    "end_lineno": 58,
+    "blame_summary": {
+      "50bd344102bd73ecb6061e014584975ac2a24ee2": {
+        "count": 3,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:33:29Z",
+        "summary": "Set default values to arguments"
+      },
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count": 17,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:32:55Z",
+        "summary": "Final changes have been made"
+      },
+      "6187a3b974321c6201c9b39316d5c86ac43a535c": {
+        "count": 25,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-09T23:59:10Z",
+        "summary": "The updated files of Feature Engineering are uploaded"
+      }
+    },
+    "top_commit": {
+      "sha": "6187a3b974321c6201c9b39316d5c86ac43a535c",
+      "count": 25,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-09T23:59:10Z",
+      "summary": "The updated files of Feature Engineering are uploaded"
+    }
+  },
+  "src.scaler.scaler": {
+    "file": "src/scaler.py",
+    "lineno": 27,
+    "end_lineno": 95,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 69,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 69,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "src.seasonality.seasonality_impacts": {
+    "file": "src/seasonality.py",
+    "lineno": 16,
+    "end_lineno": 73,
+    "blame_summary": {
+      "50bd344102bd73ecb6061e014584975ac2a24ee2": {
+        "count": 4,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:33:29Z",
+        "summary": "Set default values to arguments"
+      },
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count": 26,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:32:55Z",
+        "summary": "Final changes have been made"
+      },
+      "6187a3b974321c6201c9b39316d5c86ac43a535c": {
+        "count": 28,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-09T23:59:10Z",
+        "summary": "The updated files of Feature Engineering are uploaded"
+      }
+    },
+    "top_commit": {
+      "sha": "6187a3b974321c6201c9b39316d5c86ac43a535c",
+      "count": 28,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-09T23:59:10Z",
+      "summary": "The updated files of Feature Engineering are uploaded"
+    }
+  },
+  "src.transaction_status_handler.handle_transaction_status": {
+    "file": "src/transaction_status_handler.py",
+    "lineno": 18,
+    "end_lineno": 47,
+    "blame_summary": {
+      "bb7807467207ab2ddcd097b136edc99cae244be2": {
+        "count": 4,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T18:21:34Z",
+        "summary": "final cleaning to follow pylint rules for spacing and docstrings"
+      },
+      "e3dc57822babc35cfbe9fc313d3e58bdd41e05ef": {
+        "count": 26,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T03:14:06Z",
+        "summary": "add missing_values_handler, duplicates_handler, transaction_status_handler and anomaly_code_handler modules with pickle paths and pickle paths as the output"
+      }
+    },
+    "top_commit": {
+      "sha": "e3dc57822babc35cfbe9fc313d3e58bdd41e05ef",
+      "count": 26,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T03:14:06Z",
+      "summary": "add missing_values_handler, duplicates_handler, transaction_status_handler and anomaly_code_handler modules with pickle paths and pickle paths as the output"
+    }
+  },
+  "src.unique_products.unique_products": {
+    "file": "src/unique_products.py",
+    "lineno": 14,
+    "end_lineno": 52,
+    "blame_summary": {
+      "50bd344102bd73ecb6061e014584975ac2a24ee2": {
+        "count": 4,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T19:33:29Z",
+        "summary": "Set default values to arguments"
+      },
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count": 11,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:32:55Z",
+        "summary": "Final changes have been made"
+      },
+      "5d13c3087083e628bc362527e4a86aea5a2a59a9": {
+        "count": 1,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:50:23Z",
+        "summary": "The LocalError has been solved"
+      },
+      "84e0dc4233b5527f6bebe04449b6e2f7b7e737b2": {
+        "count": 2,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T05:25:48Z",
+        "summary": "Checking if the error stops"
+      },
+      "6187a3b974321c6201c9b39316d5c86ac43a535c": {
+        "count": 7,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-09T23:59:10Z",
+        "summary": "The updated files of Feature Engineering are uploaded"
+      },
+      "04b6febc6a4ee0d197b4ae2ce2958ece7cf36356": {
+        "count": 1,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:43:27Z",
+        "summary": "Changed 'input_customer_data' in unique_products.py"
+      },
+      "9a90af45bb1154114eeef28909211d583a86046c": {
+        "count": 11,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T06:13:26Z",
+        "summary": "Trying to solve the CustomerID issue"
+      },
+      "160fffdfe0174cd8ce165c623caa2eadac46db17": {
+        "count": 2,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T06:22:29Z",
+        "summary": "Fixed the CustomerID error"
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "count": 11,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T04:32:55Z",
+      "summary": "Final changes have been made"
+    }
+  },
+  "src.unzip_data.unzip_file": {
+    "file": "src/unzip_data.py",
+    "lineno": 13,
+    "end_lineno": 30,
+    "blame_summary": {
+      "3e1bec3268f696890080778af22692bb13f5f440": {
+        "count": 15,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-10-25T21:42:02Z",
+        "summary": "Moved unzip_data to standalone file"
+      },
+      "a83917f6cf8cad0400ec862c7b7a68df0835545c": {
+        "count": 3,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-10-26T03:53:12Z",
+        "summary": "updating unzip_data and tests"
+      }
+    },
+    "top_commit": {
+      "sha": "3e1bec3268f696890080778af22692bb13f5f440",
+      "count": 15,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-10-25T21:42:02Z",
+      "summary": "Moved unzip_data to standalone file"
+    }
+  },
+  "test.test_anomaly_code_handler.test_handle_anomalous_codes": {
+    "file": "test/test_anomaly_code_handler.py",
+    "lineno": 16,
+    "end_lineno": 33,
+    "blame_summary": {
+      "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5": {
+        "count": 12,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T04:31:32Z",
+        "summary": "add test modules for both transaction_status_handler and anomaly_code_handler modules"
+      },
+      "bb7807467207ab2ddcd097b136edc99cae244be2": {
+        "count": 6,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T18:21:34Z",
+        "summary": "final cleaning to follow pylint rules for spacing and docstrings"
+      }
+    },
+    "top_commit": {
+      "sha": "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5",
+      "count": 12,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T04:31:32Z",
+      "summary": "add test modules for both transaction_status_handler and anomaly_code_handler modules"
+    }
+  },
+  "test.test_cancellation_details.test_cancellation_details": {
+    "file": "test/test_cancellation_details.py",
+    "lineno": 15,
+    "end_lineno": 21,
+    "blame_summary": {
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count": 6,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:32:55Z",
+        "summary": "Final changes have been made"
+      },
+      "a6a20d671a15b63c93ca88e109c5a1bc293b3a66": {
+        "count": 1,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T00:34:01Z",
+        "summary": "The tests have been modified"
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "count": 6,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T04:32:55Z",
+      "summary": "Final changes have been made"
+    }
+  },
+  "test.test_cleaning_description.test_cleaning_description": {
+    "file": "test/test_cleaning_description.py",
+    "lineno": 18,
+    "end_lineno": 33,
+    "blame_summary": {
+      "8518a04fd1cfe84e26b11144dc1e1dfc0aa8ff22": {
+        "count": 9,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-11-09T04:33:45Z",
+        "summary": "updates_to_cleanining_description"
+      },
+      "7757556fa629309b72e8298804c7a6d3a86c7345": {
+        "count": 6,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-11-09T07:09:27Z",
+        "summary": "updating_test_modules"
+      },
+      "068d9f642c1a395727ef9f023f94ef609a9f036e": {
+        "count": 1,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-11-09T02:10:15Z",
+        "summary": "saved cleaning description, outlier_treatment, removing_zero_unitprice, test_Cleaning_descr"
+      }
+    },
+    "top_commit": {
+      "sha": "8518a04fd1cfe84e26b11144dc1e1dfc0aa8ff22",
+      "count": 9,
+      "author": "bardiamm",
+      "author_email": "<mouhebat.b@northeastern.edu>",
+      "author_time": "2023-11-09T04:33:45Z",
+      "summary": "updates_to_cleanining_description"
+    }
+  },
+  "test.test_correlation.test_correlation_filenotfound": {
+    "file": "test/test_correlation.py",
+    "lineno": 15,
+    "end_lineno": 21,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 7,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 7,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_correlation.test_correlation_parquetpath_error": {
+    "file": "test/test_correlation.py",
+    "lineno": 23,
+    "end_lineno": 29,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 7,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 7,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_correlation.test_correlation_imagepath_error": {
+    "file": "test/test_correlation.py",
+    "lineno": 31,
+    "end_lineno": 37,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 7,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 7,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_correlation.test_correlation_imagesavecheck": {
+    "file": "test/test_correlation.py",
+    "lineno": 39,
+    "end_lineno": 49,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 11,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 11,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_correlation.test_correlation_parquetsavecheck": {
+    "file": "test/test_correlation.py",
+    "lineno": 51,
+    "end_lineno": 61,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 11,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 11,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_correlation.test_corr_thresh_error": {
+    "file": "test/test_correlation.py",
+    "lineno": 63,
+    "end_lineno": 69,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 7,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 7,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_customers_behavior.test_customers_behavior": {
+    "file": "test/test_customers_behavior.py",
+    "lineno": 15,
+    "end_lineno": 21,
+    "blame_summary": {
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count": 6,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:32:55Z",
+        "summary": "Final changes have been made"
+      },
+      "a6a20d671a15b63c93ca88e109c5a1bc293b3a66": {
+        "count": 1,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T00:34:01Z",
+        "summary": "The tests have been modified"
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "count": 6,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T04:32:55Z",
+      "summary": "Final changes have been made"
+    }
+  },
+  "test.test_data_loader.test_load_data_from_excel": {
+    "file": "test/test_data_loader.py",
+    "lineno": 17,
+    "end_lineno": 29,
+    "blame_summary": {
+      "cf7f45a9f5445345d3a711a531653b6c9b00545c": {
+        "count": 2,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T17:20:01Z",
+        "summary": "updated .gitignore file"
+      },
+      "a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5": {
+        "count": 9,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T03:57:17Z",
+        "summary": "Add tests for the data_loader module"
+      },
+      "bb7807467207ab2ddcd097b136edc99cae244be2": {
+        "count": 2,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T18:21:34Z",
+        "summary": "final cleaning to follow pylint rules for spacing and docstrings"
+      }
+    },
+    "top_commit": {
+      "sha": "a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5",
+      "count": 9,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T03:57:17Z",
+      "summary": "Add tests for the data_loader module"
+    }
+  },
+  "test.test_data_loader.test_load_data_no_files": {
+    "file": "test/test_data_loader.py",
+    "lineno": 31,
+    "end_lineno": 46,
+    "blame_summary": {
+      "a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5": {
+        "count": 10,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T03:57:17Z",
+        "summary": "Add tests for the data_loader module"
+      },
+      "cf7f45a9f5445345d3a711a531653b6c9b00545c": {
+        "count": 6,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T17:20:01Z",
+        "summary": "updated .gitignore file"
+      }
+    },
+    "top_commit": {
+      "sha": "a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5",
+      "count": 10,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T03:57:17Z",
+      "summary": "Add tests for the data_loader module"
+    }
+  },
+  "test.test_download_data.test_ingest_data": {
+    "file": "test/test_download_data.py",
+    "lineno": 11,
+    "end_lineno": 22,
+    "blame_summary": {
+      "a58f2b2c20672dcc76b35369228a9db5725ba348": {
+        "count": 11,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-10-25T21:00:14Z",
+        "summary": "Moved ingest_data() to download_data.py"
+      },
+      "da80f32b3d2adfb681abadfad3f17d97a450e4f5": {
+        "count": 1,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-11-08T22:08:15Z",
+        "summary": "updating test for ingest_data()"
+      }
+    },
+    "top_commit": {
+      "sha": "a58f2b2c20672dcc76b35369228a9db5725ba348",
+      "count": 11,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-10-25T21:00:14Z",
+      "summary": "Moved ingest_data() to download_data.py"
+    }
+  },
+  "test.test_download_data.test_ingest_data_successful_download": {
+    "file": "test/test_download_data.py",
+    "lineno": 23,
+    "end_lineno": 46,
+    "blame_summary": {
+      "7a64fd850869693f4970154044b9ed0cdc7d53b1": {
+        "count": 20,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-10-26T03:34:20Z",
+        "summary": "Updating download data tests"
+      },
+      "a58f2b2c20672dcc76b35369228a9db5725ba348": {
+        "count": 4,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-10-25T21:00:14Z",
+        "summary": "Moved ingest_data() to download_data.py"
+      }
+    },
+    "top_commit": {
+      "sha": "7a64fd850869693f4970154044b9ed0cdc7d53b1",
+      "count": 20,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-10-26T03:34:20Z",
+      "summary": "Updating download data tests"
+    }
+  },
+  "test.test_duplicates_handler.test_remove_duplicates_no_input_file": {
+    "file": "test/test_duplicates_handler.py",
+    "lineno": 17,
+    "end_lineno": 29,
+    "blame_summary": {
+      "815b7e4377ee5a4f7b4be63fac376975b3694bc4": {
+        "count": 11,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T04:16:02Z",
+        "summary": "add tests for duplicates_handler module"
+      },
+      "bb7807467207ab2ddcd097b136edc99cae244be2": {
+        "count": 2,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T18:21:34Z",
+        "summary": "final cleaning to follow pylint rules for spacing and docstrings"
+      }
+    },
+    "top_commit": {
+      "sha": "815b7e4377ee5a4f7b4be63fac376975b3694bc4",
+      "count": 11,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T04:16:02Z",
+      "summary": "add tests for duplicates_handler module"
+    }
+  },
+  "test.test_duplicates_handler.test_remove_duplicates": {
+    "file": "test/test_duplicates_handler.py",
+    "lineno": 31,
+    "end_lineno": 44,
+    "blame_summary": {
+      "815b7e4377ee5a4f7b4be63fac376975b3694bc4": {
+        "count": 8,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T04:16:02Z",
+        "summary": "add tests for duplicates_handler module"
+      },
+      "bb7807467207ab2ddcd097b136edc99cae244be2": {
+        "count": 6,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T18:21:34Z",
+        "summary": "final cleaning to follow pylint rules for spacing and docstrings"
+      }
+    },
+    "top_commit": {
+      "sha": "815b7e4377ee5a4f7b4be63fac376975b3694bc4",
+      "count": 8,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T04:16:02Z",
+      "summary": "add tests for duplicates_handler module"
+    }
+  },
+  "test.test_geographic_features.test_geographic_features": {
+    "file": "test/test_geographic_features.py",
+    "lineno": 15,
+    "end_lineno": 21,
+    "blame_summary": {
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count": 7,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:32:55Z",
+        "summary": "Final changes have been made"
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "count": 7,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T04:32:55Z",
+      "summary": "Final changes have been made"
+    }
+  },
+  "test.test_missing_values_handler.test_handle_missing_success": {
+    "file": "test/test_missing_values_handler.py",
+    "lineno": 16,
+    "end_lineno": 22,
+    "blame_summary": {
+      "53d4f9f4b0600923cb11f05524cfa9352dde65a6": {
+        "count": 5,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T04:05:17Z",
+        "summary": "add tests for missing_values_handler module"
+      },
+      "bb7807467207ab2ddcd097b136edc99cae244be2": {
+        "count": 2,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T18:21:34Z",
+        "summary": "final cleaning to follow pylint rules for spacing and docstrings"
+      }
+    },
+    "top_commit": {
+      "sha": "53d4f9f4b0600923cb11f05524cfa9352dde65a6",
+      "count": 5,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T04:05:17Z",
+      "summary": "add tests for missing_values_handler module"
+    }
+  },
+  "test.test_missing_values_handler.test_handle_missing_file_not_found": {
+    "file": "test/test_missing_values_handler.py",
+    "lineno": 23,
+    "end_lineno": 35,
+    "blame_summary": {
+      "53d4f9f4b0600923cb11f05524cfa9352dde65a6": {
+        "count": 11,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T04:05:17Z",
+        "summary": "add tests for missing_values_handler module"
+      },
+      "bb7807467207ab2ddcd097b136edc99cae244be2": {
+        "count": 2,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T18:21:34Z",
+        "summary": "final cleaning to follow pylint rules for spacing and docstrings"
+      }
+    },
+    "top_commit": {
+      "sha": "53d4f9f4b0600923cb11f05524cfa9352dde65a6",
+      "count": 11,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T04:05:17Z",
+      "summary": "add tests for missing_values_handler module"
+    }
+  },
+  "test.test_outlier_treatment.test_outlier_treatment": {
+    "file": "test/test_outlier_treatment.py",
+    "lineno": 18,
+    "end_lineno": 36,
+    "blame_summary": {
+      "7757556fa629309b72e8298804c7a6d3a86c7345": {
+        "count": 19,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-11-09T07:09:27Z",
+        "summary": "updating_test_modules"
+      }
+    },
+    "top_commit": {
+      "sha": "7757556fa629309b72e8298804c7a6d3a86c7345",
+      "count": 19,
+      "author": "bardiamm",
+      "author_email": "<mouhebat.b@northeastern.edu>",
+      "author_time": "2023-11-09T07:09:27Z",
+      "summary": "updating_test_modules"
+    }
+  },
+  "test.test_pca.test_pca_file_not_found": {
+    "file": "test/test_pca.py",
+    "lineno": 18,
+    "end_lineno": 24,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 7,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 7,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_pca.test_missing_columns": {
+    "file": "test/test_pca.py",
+    "lineno": 26,
+    "end_lineno": 32,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 7,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 7,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_pca.test_pca_outfile_exists": {
+    "file": "test/test_pca.py",
+    "lineno": 34,
+    "end_lineno": 43,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 10,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 10,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_pca.test_cvr_thresh_error": {
+    "file": "test/test_pca.py",
+    "lineno": 45,
+    "end_lineno": 51,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 7,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 7,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_pca.test_pca_columnslessthan4": {
+    "file": "test/test_pca.py",
+    "lineno": 53,
+    "end_lineno": 59,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 7,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 7,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_removing_zero_unitpirce.test_removing_zero": {
+    "file": "test/test_removing_zero_unitpirce.py",
+    "lineno": 18,
+    "end_lineno": 32,
+    "blame_summary": {
+      "7757556fa629309b72e8298804c7a6d3a86c7345": {
+        "count": 15,
+        "author": "bardiamm",
+        "author_email": "<mouhebat.b@northeastern.edu>",
+        "author_time": "2023-11-09T07:09:27Z",
+        "summary": "updating_test_modules"
+      }
+    },
+    "top_commit": {
+      "sha": "7757556fa629309b72e8298804c7a6d3a86c7345",
+      "count": 15,
+      "author": "bardiamm",
+      "author_email": "<mouhebat.b@northeastern.edu>",
+      "author_time": "2023-11-09T07:09:27Z",
+      "summary": "updating_test_modules"
+    }
+  },
+  "test.test_rfm.test_rfm": {
+    "file": "test/test_rfm.py",
+    "lineno": 15,
+    "end_lineno": 21,
+    "blame_summary": {
+      "6187a3b974321c6201c9b39316d5c86ac43a535c": {
+        "count": 1,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-09T23:59:10Z",
+        "summary": "The updated files of Feature Engineering are uploaded"
+      },
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count": 6,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:32:55Z",
+        "summary": "Final changes have been made"
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "count": 6,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T04:32:55Z",
+      "summary": "Final changes have been made"
+    }
+  },
+  "test.test_scaler.test_scaler_file_not_found": {
+    "file": "test/test_scaler.py",
+    "lineno": 19,
+    "end_lineno": 25,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 7,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 7,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_scaler.test_missing_std_columns": {
+    "file": "test/test_scaler.py",
+    "lineno": 27,
+    "end_lineno": 33,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 7,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 7,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_scaler.test_missing_norm_columns": {
+    "file": "test/test_scaler.py",
+    "lineno": 35,
+    "end_lineno": 41,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 7,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 7,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_scaler.test_scaler_outfile_exists": {
+    "file": "test/test_scaler.py",
+    "lineno": 43,
+    "end_lineno": 52,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count": 10,
+        "author": "Komal",
+        "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+        "author_time": "2023-11-30T04:36:46Z",
+        "summary": "init push with feature engineering updates (#36)"
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3",
+      "count": 10,
+      "author": "Komal",
+      "author_email": "<130316638+kokomocha@users.noreply.github.com>",
+      "author_time": "2023-11-30T04:36:46Z",
+      "summary": "init push with feature engineering updates (#36)"
+    }
+  },
+  "test.test_seasonality.test_seasonality_impacts": {
+    "file": "test/test_seasonality.py",
+    "lineno": 15,
+    "end_lineno": 21,
+    "blame_summary": {
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count": 6,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:32:55Z",
+        "summary": "Final changes have been made"
+      },
+      "a6a20d671a15b63c93ca88e109c5a1bc293b3a66": {
+        "count": 1,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T00:34:01Z",
+        "summary": "The tests have been modified"
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "count": 6,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T04:32:55Z",
+      "summary": "Final changes have been made"
+    }
+  },
+  "test.test_transaction_status_handler.test_handle_transaction_status": {
+    "file": "test/test_transaction_status_handler.py",
+    "lineno": 16,
+    "end_lineno": 33,
+    "blame_summary": {
+      "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5": {
+        "count": 12,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T04:31:32Z",
+        "summary": "add test modules for both transaction_status_handler and anomaly_code_handler modules"
+      },
+      "bb7807467207ab2ddcd097b136edc99cae244be2": {
+        "count": 6,
+        "author": "Ashkan Ghanavati",
+        "author_email": "<ashkan.ghanavati92@gmail.com>",
+        "author_time": "2023-10-25T18:21:34Z",
+        "summary": "final cleaning to follow pylint rules for spacing and docstrings"
+      }
+    },
+    "top_commit": {
+      "sha": "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5",
+      "count": 12,
+      "author": "Ashkan Ghanavati",
+      "author_email": "<ashkan.ghanavati92@gmail.com>",
+      "author_time": "2023-10-25T04:31:32Z",
+      "summary": "add test modules for both transaction_status_handler and anomaly_code_handler modules"
+    }
+  },
+  "test.test_unique_products.test_unique_products": {
+    "file": "test/test_unique_products.py",
+    "lineno": 15,
+    "end_lineno": 20,
+    "blame_summary": {
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count": 4,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T04:32:55Z",
+        "summary": "Final changes have been made"
+      },
+      "84e0dc4233b5527f6bebe04449b6e2f7b7e737b2": {
+        "count": 1,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T05:25:48Z",
+        "summary": "Checking if the error stops"
+      },
+      "a6a20d671a15b63c93ca88e109c5a1bc293b3a66": {
+        "count": 1,
+        "author": "Moheth2000",
+        "author_email": "<mohethcbe@gmail.com>",
+        "author_time": "2023-11-10T00:34:01Z",
+        "summary": "The tests have been modified"
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2",
+      "count": 4,
+      "author": "Moheth2000",
+      "author_email": "<mohethcbe@gmail.com>",
+      "author_time": "2023-11-10T04:32:55Z",
+      "summary": "Final changes have been made"
+    }
+  },
+  "test.test_unzip_data.test_unzip_file_successful": {
+    "file": "test/test_unzip_data.py",
+    "lineno": 16,
+    "end_lineno": 27,
+    "blame_summary": {
+      "a83917f6cf8cad0400ec862c7b7a68df0835545c": {
+        "count": 7,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-10-26T03:53:12Z",
+        "summary": "updating unzip_data and tests"
+      },
+      "3e1bec3268f696890080778af22692bb13f5f440": {
+        "count": 5,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-10-25T21:42:02Z",
+        "summary": "Moved unzip_data to standalone file"
+      }
+    },
+    "top_commit": {
+      "sha": "a83917f6cf8cad0400ec862c7b7a68df0835545c",
+      "count": 7,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-10-26T03:53:12Z",
+      "summary": "updating unzip_data and tests"
+    }
+  },
+  "test.test_unzip_data.test_unzip_file_bad_zip": {
+    "file": "test/test_unzip_data.py",
+    "lineno": 30,
+    "end_lineno": 46,
+    "blame_summary": {
+      "3e1bec3268f696890080778af22692bb13f5f440": {
+        "count": 12,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-10-25T21:42:02Z",
+        "summary": "Moved unzip_data to standalone file"
+      },
+      "a83917f6cf8cad0400ec862c7b7a68df0835545c": {
+        "count": 5,
+        "author": "Thomas-George-T",
+        "author_email": "<tgt555@gmail.com>",
+        "author_time": "2023-10-26T03:53:12Z",
+        "summary": "updating unzip_data and tests"
+      }
+    },
+    "top_commit": {
+      "sha": "3e1bec3268f696890080778af22692bb13f5f440",
+      "count": 12,
+      "author": "Thomas-George-T",
+      "author_email": "<tgt555@gmail.com>",
+      "author_time": "2023-10-25T21:42:02Z",
+      "summary": "Moved unzip_data to standalone file"
+    }
+  },
+  "handle_anomalous_codes": {
+    "file": "dags/src/anomaly_code_handler.py",
+    "lineno": 16,
+    "end_lineno": 43,
+    "blame_summary": {
+      "f01c5123c9453c3f3972d88a874ee5cdc05c8f16": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16"
+    }
+  },
+  "cancellation_details": {
+    "file": "dags/src/cancellation_details.py",
+    "lineno": 16,
+    "end_lineno": 50,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387"
+    }
+  },
+  "cleaning_description": {
+    "file": "dags/src/cleaning_description.py",
+    "lineno": 14,
+    "end_lineno": 39,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387"
+    }
+  },
+  "correlation_check": {
+    "file": "dags/src/correlation.py",
+    "lineno": 35,
+    "end_lineno": 97,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "save_heatmap": {
+    "file": "dags/src/correlation.py",
+    "lineno": 98,
+    "end_lineno": 120,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "save_correlations_as_parquet": {
+    "file": "dags/src/correlation.py",
+    "lineno": 121,
+    "end_lineno": 145,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "customers_behavior": {
+    "file": "dags/src/customers_behavior.py",
+    "lineno": 16,
+    "end_lineno": 69,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387"
+    }
+  },
+  "load_data": {
+    "file": "dags/src/data_loader.py",
+    "lineno": 17,
+    "end_lineno": 48,
+    "blame_summary": {
+      "f01c5123c9453c3f3972d88a874ee5cdc05c8f16": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16"
+    }
+  },
+  "ingest_data": {
+    "file": "dags/src/download_data.py",
+    "lineno": 9,
+    "end_lineno": 40,
+    "blame_summary": {
+      "e45a01eb0a52ba53114c08db3eb285caecd271ac": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "e45a01eb0a52ba53114c08db3eb285caecd271ac"
+    }
+  },
+  "remove_duplicates": {
+    "file": "dags/src/duplicates_handler.py",
+    "lineno": 21,
+    "end_lineno": 44,
+    "blame_summary": {
+      "f01c5123c9453c3f3972d88a874ee5cdc05c8f16": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16"
+    }
+  },
+  "geographic_features": {
+    "file": "dags/src/geographic_features.py",
+    "lineno": 14,
+    "end_lineno": 53,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387"
+    }
+  },
+  "handle_missing": {
+    "file": "dags/src/missing_values_handler.py",
+    "lineno": 15,
+    "end_lineno": 45,
+    "blame_summary": {
+      "f01c5123c9453c3f3972d88a874ee5cdc05c8f16": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16"
+    }
+  },
+  "removing_outlier": {
+    "file": "dags/src/outlier_treatment.py",
+    "lineno": 18,
+    "end_lineno": 54,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387"
+    }
+  },
+  "pc_analyzer": {
+    "file": "dags/src/pca.py",
+    "lineno": 27,
+    "end_lineno": 97,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "pca_": {
+    "file": "dags/src/pca.py",
+    "lineno": 98,
+    "end_lineno": 123,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "removing_zero": {
+    "file": "dags/src/removing_zero_unitprice.py",
+    "lineno": 16,
+    "end_lineno": 36,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387"
+    }
+  },
+  "rfm": {
+    "file": "dags/src/rfm.py",
+    "lineno": 14,
+    "end_lineno": 58,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387"
+    }
+  },
+  "scaler": {
+    "file": "dags/src/scaler.py",
+    "lineno": 27,
+    "end_lineno": 95,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "seasonality_impacts": {
+    "file": "dags/src/seasonality.py",
+    "lineno": 19,
+    "end_lineno": 54,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387"
+    }
+  },
+  "handle_transaction_status": {
+    "file": "dags/src/transaction_status_handler.py",
+    "lineno": 18,
+    "end_lineno": 47,
+    "blame_summary": {
+      "f01c5123c9453c3f3972d88a874ee5cdc05c8f16": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f01c5123c9453c3f3972d88a874ee5cdc05c8f16"
+    }
+  },
+  "unique_products": {
+    "file": "dags/src/unique_products.py",
+    "lineno": 14,
+    "end_lineno": 52,
+    "blame_summary": {
+      "06d80485b7a621184ec3d4e83a2836f2da6d3387": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "06d80485b7a621184ec3d4e83a2836f2da6d3387"
+    }
+  },
+  "unzip_file": {
+    "file": "dags/src/unzip_data.py",
+    "lineno": 13,
+    "end_lineno": 33,
+    "blame_summary": {
+      "e45a01eb0a52ba53114c08db3eb285caecd271ac": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "e45a01eb0a52ba53114c08db3eb285caecd271ac"
+    }
+  },
+  "initialize_aiplatform": {
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 17,
+    "end_lineno": 25,
+    "blame_summary": {
+      "3d5f8ad2a0393fbd22627efaf6eefc68c848a556": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556"
+    }
+  },
+  "create_training_job": {
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 26,
+    "end_lineno": 42,
+    "blame_summary": {
+      "3d5f8ad2a0393fbd22627efaf6eefc68c848a556": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556"
+    }
+  },
+  "run_training_job": {
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 43,
+    "end_lineno": 58,
+    "blame_summary": {
+      "3d5f8ad2a0393fbd22627efaf6eefc68c848a556": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556"
+    }
+  },
+  "deploy_model_to_endpoint": {
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 59,
+    "end_lineno": 72,
+    "blame_summary": {
+      "3d5f8ad2a0393fbd22627efaf6eefc68c848a556": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556"
+    }
+  },
+  "main": {
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 73,
+    "end_lineno": 86,
+    "blame_summary": {
+      "3d5f8ad2a0393fbd22627efaf6eefc68c848a556": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "3d5f8ad2a0393fbd22627efaf6eefc68c848a556"
+    }
+  },
+  "predict_custom_trained_model": {
+    "file": "gcpdeploy/src/inference.py",
+    "lineno": 7,
+    "end_lineno": 62,
+    "blame_summary": {
+      "1420f9d3185da8bc6510d1d49d0bbded97dcff32": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "1420f9d3185da8bc6510d1d49d0bbded97dcff32"
+    }
+  },
+  "mlflow_logging_train": {
+    "file": "gcpdeploy/src/mflow_logging.py",
+    "lineno": 35,
+    "end_lineno": 95,
+    "blame_summary": {
+      "e2257c888abf84b13b16ce0655447228533428ea": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "e2257c888abf84b13b16ce0655447228533428ea"
+    }
+  },
+  "normalize_data": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 51,
+    "end_lineno": 72,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d"
+    }
+  },
+  "data_transform": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 73,
+    "end_lineno": 116,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d"
+    }
+  },
+  "top_pca": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 117,
+    "end_lineno": 164,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d"
+    }
+  },
+  "cluster_distribution": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 165,
+    "end_lineno": 208,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d"
+    }
+  },
+  "evaluation_metrics": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 209,
+    "end_lineno": 250,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d"
+    }
+  },
+  "train_model": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 251,
+    "end_lineno": 265,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d"
+    }
+  },
+  "save_and_upload_model": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 266,
+    "end_lineno": 281,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d"
+    }
+  },
+  "silhouette_analysis": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 282,
+    "end_lineno": 345,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d"
+    }
+  },
+  "get_table_schema": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 36,
+    "end_lineno": 54,
+    "blame_summary": {
+      "5161bcbd80aaa8386d47f881655af47a0dd35b55": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "5161bcbd80aaa8386d47f881655af47a0dd35b55"
+    }
+  },
+  "create_table_if_not_exists": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 55,
+    "end_lineno": 75,
+    "blame_summary": {
+      "5161bcbd80aaa8386d47f881655af47a0dd35b55": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "5161bcbd80aaa8386d47f881655af47a0dd35b55"
+    }
+  },
+  "initialize_variables": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 76,
+    "end_lineno": 85,
+    "blame_summary": {
+      "c73558818706bae4ffc437a03ec1a16d8ccd4fdc": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc"
+    }
+  },
+  "initialize_client_and_bucket": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 86,
+    "end_lineno": 97,
+    "blame_summary": {
+      "c73558818706bae4ffc437a03ec1a16d8ccd4fdc": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc"
+    }
+  },
+  "load_model": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 98,
+    "end_lineno": 123,
+    "blame_summary": {
+      "356d49f95a95716f1b3fd9927193322eb935000c": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "356d49f95a95716f1b3fd9927193322eb935000c"
+    }
+  },
+  "fetch_latest_model": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 124,
+    "end_lineno": 144,
+    "blame_summary": {
+      "c73558818706bae4ffc437a03ec1a16d8ccd4fdc": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc"
+    }
+  },
+  "health_check": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 145,
+    "end_lineno": 152,
+    "blame_summary": {
+      "c73558818706bae4ffc437a03ec1a16d8ccd4fdc": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "c73558818706bae4ffc437a03ec1a16d8ccd4fdc"
+    }
+  },
+  "predict": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 153,
+    "end_lineno": 224,
+    "blame_summary": {
+      "5161bcbd80aaa8386d47f881655af47a0dd35b55": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "5161bcbd80aaa8386d47f881655af47a0dd35b55"
+    }
+  },
+  "remove_outliers": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 8,
+    "end_lineno": 27,
+    "blame_summary": {
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32"
+    }
+  },
+  "merge_customer_transactions": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 28,
+    "end_lineno": 51,
+    "blame_summary": {
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32"
+    }
+  },
+  "identify_top_products": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 52,
+    "end_lineno": 74,
+    "blame_summary": {
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32"
+    }
+  },
+  "record_customer_purchases": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 75,
+    "end_lineno": 92,
+    "blame_summary": {
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32"
+    }
+  },
+  "create_recommendations": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 93,
+    "end_lineno": 130,
+    "blame_summary": {
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32"
+    }
+  },
+  "generate_recommendations": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 131,
+    "end_lineno": 164,
+    "blame_summary": {
+      "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "ba3fe06fabb6eaec94f1ab2d14870ac7d6fbef32"
+    }
+  },
+  "kmeans_clustering": {
+    "file": "gcpdeploy/src/trainer/train.py",
+    "lineno": 33,
+    "end_lineno": 57,
+    "blame_summary": {
+      "f2c934a90ed67f23fbef543f6063d977f648993d": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "f2c934a90ed67f23fbef543f6063d977f648993d"
+    }
+  },
+  "rfm_histograms": {
+    "file": "src/histogram_analysis.py",
+    "lineno": 19,
+    "end_lineno": 61,
+    "blame_summary": {
+      "e2257c888abf84b13b16ce0655447228533428ea": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "e2257c888abf84b13b16ce0655447228533428ea"
+    }
+  },
+  "radar_charts": {
+    "file": "src/radar_analysis.py",
+    "lineno": 21,
+    "end_lineno": 60,
+    "blame_summary": {
+      "e2257c888abf84b13b16ce0655447228533428ea": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "e2257c888abf84b13b16ce0655447228533428ea"
+    }
+  },
+  "test_handle_anomalous_codes": {
+    "file": "test/test_anomaly_code_handler.py",
+    "lineno": 16,
+    "end_lineno": 33,
+    "blame_summary": {
+      "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5"
+    }
+  },
+  "test_cancellation_details": {
+    "file": "test/test_cancellation_details.py",
+    "lineno": 15,
+    "end_lineno": 21,
+    "blame_summary": {
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2"
+    }
+  },
+  "test_cleaning_description": {
+    "file": "test/test_cleaning_description.py",
+    "lineno": 18,
+    "end_lineno": 33,
+    "blame_summary": {
+      "8518a04fd1cfe84e26b11144dc1e1dfc0aa8ff22": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "8518a04fd1cfe84e26b11144dc1e1dfc0aa8ff22"
+    }
+  },
+  "test_correlation_filenotfound": {
+    "file": "test/test_correlation.py",
+    "lineno": 15,
+    "end_lineno": 22,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_correlation_parquetpath_error": {
+    "file": "test/test_correlation.py",
+    "lineno": 23,
+    "end_lineno": 30,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_correlation_imagepath_error": {
+    "file": "test/test_correlation.py",
+    "lineno": 31,
+    "end_lineno": 38,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_correlation_imagesavecheck": {
+    "file": "test/test_correlation.py",
+    "lineno": 39,
+    "end_lineno": 50,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_correlation_parquetsavecheck": {
+    "file": "test/test_correlation.py",
+    "lineno": 51,
+    "end_lineno": 62,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_corr_thresh_error": {
+    "file": "test/test_correlation.py",
+    "lineno": 63,
+    "end_lineno": 69,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_customers_behavior": {
+    "file": "test/test_customers_behavior.py",
+    "lineno": 15,
+    "end_lineno": 21,
+    "blame_summary": {
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2"
+    }
+  },
+  "test_load_data_from_excel": {
+    "file": "test/test_data_loader.py",
+    "lineno": 17,
+    "end_lineno": 30,
+    "blame_summary": {
+      "a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5"
+    }
+  },
+  "test_load_data_no_files": {
+    "file": "test/test_data_loader.py",
+    "lineno": 31,
+    "end_lineno": 46,
+    "blame_summary": {
+      "a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "a0d893a9cbb4bd7fcc830fd2e3afa58fcef03cb5"
+    }
+  },
+  "test_ingest_data": {
+    "file": "test/test_download_data.py",
+    "lineno": 11,
+    "end_lineno": 22,
+    "blame_summary": {
+      "a58f2b2c20672dcc76b35369228a9db5725ba348": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "a58f2b2c20672dcc76b35369228a9db5725ba348"
+    }
+  },
+  "test_ingest_data_successful_download": {
+    "file": "test/test_download_data.py",
+    "lineno": 23,
+    "end_lineno": 46,
+    "blame_summary": {
+      "7a64fd850869693f4970154044b9ed0cdc7d53b1": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "7a64fd850869693f4970154044b9ed0cdc7d53b1"
+    }
+  },
+  "test_remove_duplicates_no_input_file": {
+    "file": "test/test_duplicates_handler.py",
+    "lineno": 17,
+    "end_lineno": 30,
+    "blame_summary": {
+      "815b7e4377ee5a4f7b4be63fac376975b3694bc4": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "815b7e4377ee5a4f7b4be63fac376975b3694bc4"
+    }
+  },
+  "test_remove_duplicates": {
+    "file": "test/test_duplicates_handler.py",
+    "lineno": 31,
+    "end_lineno": 44,
+    "blame_summary": {
+      "815b7e4377ee5a4f7b4be63fac376975b3694bc4": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "815b7e4377ee5a4f7b4be63fac376975b3694bc4"
+    }
+  },
+  "test_geographic_features": {
+    "file": "test/test_geographic_features.py",
+    "lineno": 15,
+    "end_lineno": 21,
+    "blame_summary": {
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2"
+    }
+  },
+  "test_handle_missing_success": {
+    "file": "test/test_missing_values_handler.py",
+    "lineno": 16,
+    "end_lineno": 22,
+    "blame_summary": {
+      "53d4f9f4b0600923cb11f05524cfa9352dde65a6": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "53d4f9f4b0600923cb11f05524cfa9352dde65a6"
+    }
+  },
+  "test_handle_missing_file_not_found": {
+    "file": "test/test_missing_values_handler.py",
+    "lineno": 23,
+    "end_lineno": 35,
+    "blame_summary": {
+      "53d4f9f4b0600923cb11f05524cfa9352dde65a6": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "53d4f9f4b0600923cb11f05524cfa9352dde65a6"
+    }
+  },
+  "test_outlier_treatment": {
+    "file": "test/test_outlier_treatment.py",
+    "lineno": 18,
+    "end_lineno": 36,
+    "blame_summary": {
+      "7757556fa629309b72e8298804c7a6d3a86c7345": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "7757556fa629309b72e8298804c7a6d3a86c7345"
+    }
+  },
+  "test_pca_file_not_found": {
+    "file": "test/test_pca.py",
+    "lineno": 18,
+    "end_lineno": 25,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_missing_columns": {
+    "file": "test/test_pca.py",
+    "lineno": 26,
+    "end_lineno": 33,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_pca_outfile_exists": {
+    "file": "test/test_pca.py",
+    "lineno": 34,
+    "end_lineno": 44,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_cvr_thresh_error": {
+    "file": "test/test_pca.py",
+    "lineno": 45,
+    "end_lineno": 52,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_pca_columnslessthan4": {
+    "file": "test/test_pca.py",
+    "lineno": 53,
+    "end_lineno": 59,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_removing_zero": {
+    "file": "test/test_removing_zero_unitpirce.py",
+    "lineno": 18,
+    "end_lineno": 32,
+    "blame_summary": {
+      "7757556fa629309b72e8298804c7a6d3a86c7345": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "7757556fa629309b72e8298804c7a6d3a86c7345"
+    }
+  },
+  "test_rfm": {
+    "file": "test/test_rfm.py",
+    "lineno": 15,
+    "end_lineno": 21,
+    "blame_summary": {
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2"
+    }
+  },
+  "test_scaler_file_not_found": {
+    "file": "test/test_scaler.py",
+    "lineno": 19,
+    "end_lineno": 26,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_missing_std_columns": {
+    "file": "test/test_scaler.py",
+    "lineno": 27,
+    "end_lineno": 34,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_missing_norm_columns": {
+    "file": "test/test_scaler.py",
+    "lineno": 35,
+    "end_lineno": 42,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_scaler_outfile_exists": {
+    "file": "test/test_scaler.py",
+    "lineno": 43,
+    "end_lineno": 52,
+    "blame_summary": {
+      "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "0ce21a710a9b6cd46eb330cf6cd75dc24436faa3"
+    }
+  },
+  "test_seasonality_impacts": {
+    "file": "test/test_seasonality.py",
+    "lineno": 15,
+    "end_lineno": 21,
+    "blame_summary": {
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2"
+    }
+  },
+  "test_handle_transaction_status": {
+    "file": "test/test_transaction_status_handler.py",
+    "lineno": 16,
+    "end_lineno": 33,
+    "blame_summary": {
+      "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "e400c88051ccc7a973b6fbcd9f7fe3b0f8a292e5"
+    }
+  },
+  "test_unique_products": {
+    "file": "test/test_unique_products.py",
+    "lineno": 15,
+    "end_lineno": 20,
+    "blame_summary": {
+      "7d57159c3fc69a9488da484767e9c34b8c8dd6a2": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "7d57159c3fc69a9488da484767e9c34b8c8dd6a2"
+    }
+  },
+  "test_unzip_file_successful": {
+    "file": "test/test_unzip_data.py",
+    "lineno": 16,
+    "end_lineno": 29,
+    "blame_summary": {
+      "a83917f6cf8cad0400ec862c7b7a68df0835545c": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "a83917f6cf8cad0400ec862c7b7a68df0835545c"
+    }
+  },
+  "test_unzip_file_bad_zip": {
+    "file": "test/test_unzip_data.py",
+    "lineno": 30,
+    "end_lineno": 46,
+    "blame_summary": {
+      "3e1bec3268f696890080778af22692bb13f5f440": {
+        "count_est": null
+      }
+    },
+    "top_commit": {
+      "sha": "3e1bec3268f696890080778af22692bb13f5f440"
+    }
+  }
+}

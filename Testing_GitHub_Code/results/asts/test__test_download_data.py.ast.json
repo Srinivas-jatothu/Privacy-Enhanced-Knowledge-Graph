@@ -1,0 +1,707 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Expr",
+      "value": {
+        "_const_preview": "\n  Tests for downloda_data.py\n"
+      },
+      "lineno": 1,
+      "end_lineno": 3
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "os",
+          "asname": null,
+          "lineno": 4,
+          "end_lineno": 4
+        }
+      ],
+      "lineno": 4,
+      "end_lineno": 4
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "requests",
+          "asname": null,
+          "lineno": 5,
+          "end_lineno": 5
+        }
+      ],
+      "lineno": 5,
+      "end_lineno": 5
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "requests_mock",
+          "asname": null,
+          "lineno": 6,
+          "end_lineno": 6
+        }
+      ],
+      "lineno": 6,
+      "end_lineno": 6
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "download_data",
+          "asname": null,
+          "lineno": 7,
+          "end_lineno": 7
+        }
+      ],
+      "level": 0,
+      "lineno": 7,
+      "end_lineno": 7
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "DEFAULT_FILE_URL",
+          "lineno": 9,
+          "end_lineno": 9
+        }
+      ],
+      "value": {
+        "_const_preview": "https://archive.ics.uci.edu/static/public/352/online+retail.zip"
+      },
+      "type_comment": null,
+      "lineno": 9,
+      "end_lineno": 9
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "test_ingest_data",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "mocker",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 11,
+            "end_lineno": 11
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n      Tests for checking print call\n    "
+          },
+          "lineno": 12,
+          "end_lineno": 14
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "mock_print",
+              "lineno": 17,
+              "end_lineno": 17
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "mocker",
+                "lineno": 17,
+                "end_lineno": 17
+              },
+              "attr": "MagicMock",
+              "lineno": 17,
+              "end_lineno": 17
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "name",
+                "value": {
+                  "_const_preview": "print"
+                },
+                "lineno": 17,
+                "end_lineno": 17
+              }
+            ],
+            "lineno": 17,
+            "end_lineno": 17
+          },
+          "type_comment": null,
+          "lineno": 17,
+          "end_lineno": 17
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "mocker",
+                "lineno": 18,
+                "end_lineno": 18
+              },
+              "attr": "patch",
+              "lineno": 18,
+              "end_lineno": 18
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "src.download_data.print",
+                "kind": null,
+                "lineno": 18,
+                "end_lineno": 18
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "new",
+                "value": {
+                  "_type": "Name",
+                  "id": "mock_print",
+                  "lineno": 18,
+                  "end_lineno": 18
+                },
+                "lineno": 18,
+                "end_lineno": 18
+              }
+            ],
+            "lineno": 18,
+            "end_lineno": 18
+          },
+          "lineno": 18,
+          "end_lineno": 18
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "download_data",
+                "lineno": 20,
+                "end_lineno": 20
+              },
+              "attr": "ingest_data",
+              "lineno": 20,
+              "end_lineno": 20
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "DEFAULT_FILE_URL",
+                "lineno": 20,
+                "end_lineno": 20
+              }
+            ],
+            "keywords": [],
+            "lineno": 20,
+            "end_lineno": 20
+          },
+          "lineno": 20,
+          "end_lineno": 20
+        },
+        {
+          "_type": "Assert",
+          "test": {
+            "_type": "Compare",
+            "left": {
+              "_type": "Constant",
+              "value": 2,
+              "kind": null,
+              "lineno": 22,
+              "end_lineno": 22
+            },
+            "ops": [
+              {
+                "_type": "Eq"
+              }
+            ],
+            "comparators": [
+              {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "mock_print",
+                  "lineno": 22,
+                  "end_lineno": 22
+                },
+                "attr": "call_count",
+                "lineno": 22,
+                "end_lineno": 22
+              }
+            ],
+            "lineno": 22,
+            "end_lineno": 22
+          },
+          "msg": null,
+          "lineno": 22,
+          "end_lineno": 22
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 11,
+      "end_lineno": 22
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "test_ingest_data_successful_download",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n      Test for checking successful download of the file\n    "
+          },
+          "lineno": 24,
+          "end_lineno": 26
+        },
+        {
+          "_type": "With",
+          "items": [
+            {
+              "_type": "withitem",
+              "context_expr": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "requests",
+                    "lineno": 28,
+                    "end_lineno": 28
+                  },
+                  "attr": "Session",
+                  "lineno": 28,
+                  "end_lineno": 28
+                },
+                "args": [],
+                "keywords": [],
+                "lineno": 28,
+                "end_lineno": 28
+              },
+              "optional_vars": {
+                "_type": "Name",
+                "id": "session",
+                "lineno": 28,
+                "end_lineno": 28
+              }
+            }
+          ],
+          "body": [
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "adapter",
+                  "lineno": 29,
+                  "end_lineno": 29
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "requests_mock",
+                    "lineno": 29,
+                    "end_lineno": 29
+                  },
+                  "attr": "Adapter",
+                  "lineno": 29,
+                  "end_lineno": 29
+                },
+                "args": [],
+                "keywords": [],
+                "lineno": 29,
+                "end_lineno": 29
+              },
+              "type_comment": null,
+              "lineno": 29,
+              "end_lineno": 29
+            },
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "session",
+                    "lineno": 31,
+                    "end_lineno": 31
+                  },
+                  "attr": "mount",
+                  "lineno": 31,
+                  "end_lineno": 31
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "https://",
+                    "kind": null,
+                    "lineno": 31,
+                    "end_lineno": 31
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "adapter",
+                    "lineno": 31,
+                    "end_lineno": 31
+                  }
+                ],
+                "keywords": [],
+                "lineno": 31,
+                "end_lineno": 31
+              },
+              "lineno": 31,
+              "end_lineno": 31
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "root_dir",
+                  "lineno": 34,
+                  "end_lineno": 34
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 34,
+                      "end_lineno": 34
+                    },
+                    "attr": "path",
+                    "lineno": 34,
+                    "end_lineno": 34
+                  },
+                  "attr": "abspath",
+                  "lineno": 34,
+                  "end_lineno": 34
+                },
+                "args": [
+                  {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Attribute",
+                        "value": {
+                          "_type": "Name",
+                          "id": "os",
+                          "lineno": 34,
+                          "end_lineno": 34
+                        },
+                        "attr": "path",
+                        "lineno": 34,
+                        "end_lineno": 34
+                      },
+                      "attr": "join",
+                      "lineno": 34,
+                      "end_lineno": 34
+                    },
+                    "args": [
+                      {
+                        "_type": "Call",
+                        "func": {
+                          "_type": "Attribute",
+                          "value": {
+                            "_type": "Attribute",
+                            "value": {
+                              "_type": "Name",
+                              "id": "os",
+                              "lineno": 34,
+                              "end_lineno": 34
+                            },
+                            "attr": "path",
+                            "lineno": 34,
+                            "end_lineno": 34
+                          },
+                          "attr": "dirname",
+                          "lineno": 34,
+                          "end_lineno": 34
+                        },
+                        "args": [
+                          {
+                            "_type": "Name",
+                            "id": "__file__",
+                            "lineno": 34,
+                            "end_lineno": 34
+                          }
+                        ],
+                        "keywords": [],
+                        "lineno": 34,
+                        "end_lineno": 34
+                      },
+                      {
+                        "_type": "Constant",
+                        "value": "..",
+                        "kind": null,
+                        "lineno": 34,
+                        "end_lineno": 34
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 34,
+                    "end_lineno": 34
+                  }
+                ],
+                "keywords": [],
+                "lineno": 34,
+                "end_lineno": 34
+              },
+              "type_comment": null,
+              "lineno": 34,
+              "end_lineno": 34
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "zipfile_path",
+                  "lineno": 37,
+                  "end_lineno": 37
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 37,
+                      "end_lineno": 37
+                    },
+                    "attr": "path",
+                    "lineno": 37,
+                    "end_lineno": 37
+                  },
+                  "attr": "join",
+                  "lineno": 37,
+                  "end_lineno": 37
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "root_dir",
+                    "lineno": 37,
+                    "end_lineno": 37
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "data",
+                    "kind": null,
+                    "lineno": 37,
+                    "end_lineno": 37
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "data.zip",
+                    "kind": null,
+                    "lineno": 37,
+                    "end_lineno": 37
+                  }
+                ],
+                "keywords": [],
+                "lineno": 37,
+                "end_lineno": 37
+              },
+              "type_comment": null,
+              "lineno": 37,
+              "end_lineno": 37
+            },
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "adapter",
+                    "lineno": 40,
+                    "end_lineno": 40
+                  },
+                  "attr": "register_uri",
+                  "lineno": 40,
+                  "end_lineno": 40
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "GET",
+                    "kind": null,
+                    "lineno": 40,
+                    "end_lineno": 40
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "DEFAULT_FILE_URL",
+                    "lineno": 40,
+                    "end_lineno": 40
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "text",
+                    "value": {
+                      "_type": "Name",
+                      "id": "zipfile_path",
+                      "lineno": 40,
+                      "end_lineno": 40
+                    },
+                    "lineno": 40,
+                    "end_lineno": 40
+                  }
+                ],
+                "lineno": 40,
+                "end_lineno": 40
+              },
+              "lineno": 40,
+              "end_lineno": 40
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "result",
+                  "lineno": 43,
+                  "end_lineno": 43
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "download_data",
+                    "lineno": 43,
+                    "end_lineno": 43
+                  },
+                  "attr": "ingest_data",
+                  "lineno": 43,
+                  "end_lineno": 43
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "DEFAULT_FILE_URL",
+                    "lineno": 43,
+                    "end_lineno": 43
+                  }
+                ],
+                "keywords": [],
+                "lineno": 43,
+                "end_lineno": 43
+              },
+              "type_comment": null,
+              "lineno": 43,
+              "end_lineno": 43
+            },
+            {
+              "_type": "Assert",
+              "test": {
+                "_type": "Compare",
+                "left": {
+                  "_type": "Name",
+                  "id": "result",
+                  "lineno": 46,
+                  "end_lineno": 46
+                },
+                "ops": [
+                  {
+                    "_type": "Eq"
+                  }
+                ],
+                "comparators": [
+                  {
+                    "_type": "Name",
+                    "id": "zipfile_path",
+                    "lineno": 46,
+                    "end_lineno": 46
+                  }
+                ],
+                "lineno": 46,
+                "end_lineno": 46
+              },
+              "msg": null,
+              "lineno": 46,
+              "end_lineno": 46
+            }
+          ],
+          "type_comment": null,
+          "lineno": 28,
+          "end_lineno": 46
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 23,
+      "end_lineno": 46
+    }
+  ],
+  "type_ignores": []
+}

@@ -1,0 +1,6514 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "ImportFrom",
+      "module": "google.cloud",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "storage",
+          "asname": null,
+          "lineno": 1,
+          "end_lineno": 1
+        }
+      ],
+      "level": 0,
+      "lineno": 1,
+      "end_lineno": 1
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "datetime",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "datetime",
+          "asname": null,
+          "lineno": 2,
+          "end_lineno": 2
+        }
+      ],
+      "level": 0,
+      "lineno": 2,
+      "end_lineno": 2
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "pytz",
+          "asname": null,
+          "lineno": 3,
+          "end_lineno": 3
+        }
+      ],
+      "lineno": 3,
+      "end_lineno": 3
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "pandas",
+          "asname": "pd",
+          "lineno": 4,
+          "end_lineno": 4
+        }
+      ],
+      "lineno": 4,
+      "end_lineno": 4
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "sklearn.model_selection",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "train_test_split",
+          "asname": null,
+          "lineno": 5,
+          "end_lineno": 5
+        }
+      ],
+      "level": 0,
+      "lineno": 5,
+      "end_lineno": 5
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "sklearn.ensemble",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "RandomForestRegressor",
+          "asname": null,
+          "lineno": 6,
+          "end_lineno": 6
+        }
+      ],
+      "level": 0,
+      "lineno": 6,
+      "end_lineno": 6
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "joblib",
+          "asname": null,
+          "lineno": 7,
+          "end_lineno": 7
+        }
+      ],
+      "lineno": 7,
+      "end_lineno": 7
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "json",
+          "asname": null,
+          "lineno": 8,
+          "end_lineno": 8
+        }
+      ],
+      "lineno": 8,
+      "end_lineno": 8
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "gcsfs",
+          "asname": null,
+          "lineno": 9,
+          "end_lineno": 9
+        }
+      ],
+      "lineno": 9,
+      "end_lineno": 9
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "os",
+          "asname": null,
+          "lineno": 10,
+          "end_lineno": 10
+        }
+      ],
+      "lineno": 10,
+      "end_lineno": 10
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "dotenv",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "load_dotenv",
+          "asname": null,
+          "lineno": 11,
+          "end_lineno": 11
+        }
+      ],
+      "level": 0,
+      "lineno": 11,
+      "end_lineno": 11
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "plotly.graph_objects",
+          "asname": "go",
+          "lineno": 12,
+          "end_lineno": 12
+        }
+      ],
+      "lineno": 12,
+      "end_lineno": 12
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "seaborn",
+          "asname": "sns",
+          "lineno": 13,
+          "end_lineno": 13
+        }
+      ],
+      "lineno": 13,
+      "end_lineno": 13
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "matplotlib.pyplot",
+          "asname": "plt",
+          "lineno": 14,
+          "end_lineno": 14
+        }
+      ],
+      "lineno": 14,
+      "end_lineno": 14
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "numpy",
+          "asname": "np",
+          "lineno": 15,
+          "end_lineno": 15
+        }
+      ],
+      "lineno": 15,
+      "end_lineno": 15
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "sklearn.metrics",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "silhouette_score",
+          "asname": null,
+          "lineno": 16,
+          "end_lineno": 16
+        },
+        {
+          "_type": "alias",
+          "name": "calinski_harabasz_score",
+          "asname": null,
+          "lineno": 16,
+          "end_lineno": 16
+        },
+        {
+          "_type": "alias",
+          "name": "davies_bouldin_score",
+          "asname": null,
+          "lineno": 16,
+          "end_lineno": 16
+        }
+      ],
+      "level": 0,
+      "lineno": 16,
+      "end_lineno": 16
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "tabulate",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "tabulate",
+          "asname": null,
+          "lineno": 17,
+          "end_lineno": 17
+        }
+      ],
+      "level": 0,
+      "lineno": 17,
+      "end_lineno": 17
+    },
+    {
+      "_type": "Expr",
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "load_dotenv",
+          "lineno": 20,
+          "end_lineno": 20
+        },
+        "args": [],
+        "keywords": [],
+        "lineno": 20,
+        "end_lineno": 20
+      },
+      "lineno": 20,
+      "end_lineno": 20
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "fs",
+          "lineno": 23,
+          "end_lineno": 23
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "gcsfs",
+            "lineno": 23,
+            "end_lineno": 23
+          },
+          "attr": "GCSFileSystem",
+          "lineno": 23,
+          "end_lineno": 23
+        },
+        "args": [],
+        "keywords": [],
+        "lineno": 23,
+        "end_lineno": 23
+      },
+      "type_comment": null,
+      "lineno": 23,
+      "end_lineno": 23
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "storage_client",
+          "lineno": 24,
+          "end_lineno": 24
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "storage",
+            "lineno": 24,
+            "end_lineno": 24
+          },
+          "attr": "Client",
+          "lineno": 24,
+          "end_lineno": 24
+        },
+        "args": [],
+        "keywords": [],
+        "lineno": 24,
+        "end_lineno": 24
+      },
+      "type_comment": null,
+      "lineno": 24,
+      "end_lineno": 24
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "bucket_name",
+          "lineno": 25,
+          "end_lineno": 25
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "os",
+            "lineno": 25,
+            "end_lineno": 25
+          },
+          "attr": "getenv",
+          "lineno": 25,
+          "end_lineno": 25
+        },
+        "args": [
+          {
+            "_type": "Constant",
+            "value": "BUCKET_NAME",
+            "kind": null,
+            "lineno": 25,
+            "end_lineno": 25
+          }
+        ],
+        "keywords": [],
+        "lineno": 25,
+        "end_lineno": 25
+      },
+      "type_comment": null,
+      "lineno": 25,
+      "end_lineno": 25
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "MODEL_DIR",
+          "lineno": 26,
+          "end_lineno": 26
+        }
+      ],
+      "value": {
+        "_type": "Subscript",
+        "value": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "os",
+            "lineno": 26,
+            "end_lineno": 26
+          },
+          "attr": "environ",
+          "lineno": 26,
+          "end_lineno": 26
+        },
+        "slice": {
+          "_type": "Constant",
+          "value": "AIP_STORAGE_URI",
+          "kind": null,
+          "lineno": 26,
+          "end_lineno": 26
+        },
+        "lineno": 26,
+        "end_lineno": 26
+      },
+      "type_comment": null,
+      "lineno": 26,
+      "end_lineno": 26
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "load_data",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "gcs_train_data_path",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 28,
+            "end_lineno": 28
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Loads the training data from Google Cloud Storage (GCS).\n    \n    Parameters:\n    gcs_train_data_path (str): GCS path where the training data CSV is stored"
+          },
+          "lineno": 29,
+          "end_lineno": 37
+        },
+        {
+          "_type": "With",
+          "items": [
+            {
+              "_type": "withitem",
+              "context_expr": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "fs",
+                    "lineno": 38,
+                    "end_lineno": 38
+                  },
+                  "attr": "open",
+                  "lineno": 38,
+                  "end_lineno": 38
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "gcs_train_data_path",
+                    "lineno": 38,
+                    "end_lineno": 38
+                  }
+                ],
+                "keywords": [],
+                "lineno": 38,
+                "end_lineno": 38
+              },
+              "optional_vars": {
+                "_type": "Name",
+                "id": "f",
+                "lineno": 38,
+                "end_lineno": 38
+              }
+            }
+          ],
+          "body": [
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "df",
+                  "lineno": 39,
+                  "end_lineno": 39
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "pd",
+                    "lineno": 39,
+                    "end_lineno": 39
+                  },
+                  "attr": "read_csv",
+                  "lineno": 39,
+                  "end_lineno": 39
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "f",
+                    "lineno": 39,
+                    "end_lineno": 39
+                  }
+                ],
+                "keywords": [],
+                "lineno": 39,
+                "end_lineno": 39
+              },
+              "type_comment": null,
+              "lineno": 39,
+              "end_lineno": 39
+            }
+          ],
+          "type_comment": null,
+          "lineno": 38,
+          "end_lineno": 39
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "column_names",
+              "lineno": 42,
+              "end_lineno": 42
+            }
+          ],
+          "value": {
+            "_type": "List",
+            "elts": [
+              {
+                "_type": "Constant",
+                "value": "Date",
+                "kind": null,
+                "lineno": 43,
+                "end_lineno": 43
+              },
+              {
+                "_type": "Constant",
+                "value": "Time",
+                "kind": null,
+                "lineno": 43,
+                "end_lineno": 43
+              },
+              {
+                "_type": "Constant",
+                "value": "CO(GT)",
+                "kind": null,
+                "lineno": 43,
+                "end_lineno": 43
+              },
+              {
+                "_type": "Constant",
+                "value": "PT08.S1(CO)",
+                "kind": null,
+                "lineno": 43,
+                "end_lineno": 43
+              },
+              {
+                "_type": "Constant",
+                "value": "NMHC(GT)",
+                "kind": null,
+                "lineno": 43,
+                "end_lineno": 43
+              },
+              {
+                "_type": "Constant",
+                "value": "C6H6(GT)",
+                "kind": null,
+                "lineno": 43,
+                "end_lineno": 43
+              },
+              {
+                "_type": "Constant",
+                "value": "PT08.S2(NMHC)",
+                "kind": null,
+                "lineno": 44,
+                "end_lineno": 44
+              },
+              {
+                "_type": "Constant",
+                "value": "NOx(GT)",
+                "kind": null,
+                "lineno": 44,
+                "end_lineno": 44
+              },
+              {
+                "_type": "Constant",
+                "value": "PT08.S3(NOx)",
+                "kind": null,
+                "lineno": 44,
+                "end_lineno": 44
+              },
+              {
+                "_type": "Constant",
+                "value": "NO2(GT)",
+                "kind": null,
+                "lineno": 44,
+                "end_lineno": 44
+              },
+              {
+                "_type": "Constant",
+                "value": "PT08.S4(NO2)",
+                "kind": null,
+                "lineno": 44,
+                "end_lineno": 44
+              },
+              {
+                "_type": "Constant",
+                "value": "PT08.S5(O3)",
+                "kind": null,
+                "lineno": 45,
+                "end_lineno": 45
+              },
+              {
+                "_type": "Constant",
+                "value": "T",
+                "kind": null,
+                "lineno": 45,
+                "end_lineno": 45
+              },
+              {
+                "_type": "Constant",
+                "value": "RH",
+                "kind": null,
+                "lineno": 45,
+                "end_lineno": 45
+              },
+              {
+                "_type": "Constant",
+                "value": "AH",
+                "kind": null,
+                "lineno": 45,
+                "end_lineno": 45
+              }
+            ],
+            "lineno": 42,
+            "end_lineno": 46
+          },
+          "type_comment": null,
+          "lineno": 42,
+          "end_lineno": 46
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "df",
+                "lineno": 47,
+                "end_lineno": 47
+              },
+              "attr": "columns",
+              "lineno": 47,
+              "end_lineno": 47
+            }
+          ],
+          "value": {
+            "_type": "Name",
+            "id": "column_names",
+            "lineno": 47,
+            "end_lineno": 47
+          },
+          "type_comment": null,
+          "lineno": 47,
+          "end_lineno": 47
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "df",
+            "lineno": 49,
+            "end_lineno": 49
+          },
+          "lineno": 49,
+          "end_lineno": 49
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 28,
+      "end_lineno": 49
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "normalize_data",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "data",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 51,
+            "end_lineno": 51
+          },
+          {
+            "_type": "arg",
+            "arg": "stats",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 51,
+            "end_lineno": 51
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Normalizes the data using the provided statistics.\n\n    Parameters:\n    data (DataFrame): The data to be normalized.\n    stats (dict): A dictionary contain"
+          },
+          "lineno": 52,
+          "end_lineno": 61
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "normalized_data",
+              "lineno": 62,
+              "end_lineno": 62
+            }
+          ],
+          "value": {
+            "_type": "Dict",
+            "keys": [],
+            "values": [],
+            "lineno": 62,
+            "end_lineno": 62
+          },
+          "type_comment": null,
+          "lineno": 62,
+          "end_lineno": 62
+        },
+        {
+          "_type": "For",
+          "target": {
+            "_type": "Name",
+            "id": "column",
+            "lineno": 63,
+            "end_lineno": 63
+          },
+          "iter": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "data",
+              "lineno": 63,
+              "end_lineno": 63
+            },
+            "attr": "columns",
+            "lineno": 63,
+            "end_lineno": 63
+          },
+          "body": [
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "mean",
+                  "lineno": 64,
+                  "end_lineno": 64
+                }
+              ],
+              "value": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "stats",
+                    "lineno": 64,
+                    "end_lineno": 64
+                  },
+                  "slice": {
+                    "_type": "Constant",
+                    "value": "mean",
+                    "kind": null,
+                    "lineno": 64,
+                    "end_lineno": 64
+                  },
+                  "lineno": 64,
+                  "end_lineno": 64
+                },
+                "slice": {
+                  "_type": "Name",
+                  "id": "column",
+                  "lineno": 64,
+                  "end_lineno": 64
+                },
+                "lineno": 64,
+                "end_lineno": 64
+              },
+              "type_comment": null,
+              "lineno": 64,
+              "end_lineno": 64
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "std",
+                  "lineno": 65,
+                  "end_lineno": 65
+                }
+              ],
+              "value": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "stats",
+                    "lineno": 65,
+                    "end_lineno": 65
+                  },
+                  "slice": {
+                    "_type": "Constant",
+                    "value": "std",
+                    "kind": null,
+                    "lineno": 65,
+                    "end_lineno": 65
+                  },
+                  "lineno": 65,
+                  "end_lineno": 65
+                },
+                "slice": {
+                  "_type": "Name",
+                  "id": "column",
+                  "lineno": 65,
+                  "end_lineno": 65
+                },
+                "lineno": 65,
+                "end_lineno": 65
+              },
+              "type_comment": null,
+              "lineno": 65,
+              "end_lineno": 65
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "normalized_data",
+                    "lineno": 67,
+                    "end_lineno": 67
+                  },
+                  "slice": {
+                    "_type": "Name",
+                    "id": "column",
+                    "lineno": 67,
+                    "end_lineno": 67
+                  },
+                  "lineno": 67,
+                  "end_lineno": 67
+                }
+              ],
+              "value": {
+                "_type": "ListComp",
+                "elt": {
+                  "_type": "BinOp",
+                  "left": {
+                    "_type": "BinOp",
+                    "left": {
+                      "_type": "Name",
+                      "id": "value",
+                      "lineno": 67,
+                      "end_lineno": 67
+                    },
+                    "op": {
+                      "_type": "Sub"
+                    },
+                    "right": {
+                      "_type": "Name",
+                      "id": "mean",
+                      "lineno": 67,
+                      "end_lineno": 67
+                    },
+                    "lineno": 67,
+                    "end_lineno": 67
+                  },
+                  "op": {
+                    "_type": "Div"
+                  },
+                  "right": {
+                    "_type": "Name",
+                    "id": "std",
+                    "lineno": 67,
+                    "end_lineno": 67
+                  },
+                  "lineno": 67,
+                  "end_lineno": 67
+                },
+                "generators": [
+                  {
+                    "_type": "comprehension",
+                    "target": {
+                      "_type": "Name",
+                      "id": "value",
+                      "lineno": 67,
+                      "end_lineno": 67
+                    },
+                    "iter": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "data",
+                        "lineno": 67,
+                        "end_lineno": 67
+                      },
+                      "slice": {
+                        "_type": "Name",
+                        "id": "column",
+                        "lineno": 67,
+                        "end_lineno": 67
+                      },
+                      "lineno": 67,
+                      "end_lineno": 67
+                    },
+                    "ifs": [],
+                    "is_async": 0
+                  }
+                ],
+                "lineno": 67,
+                "end_lineno": 67
+              },
+              "type_comment": null,
+              "lineno": 67,
+              "end_lineno": 67
+            }
+          ],
+          "orelse": [],
+          "type_comment": null,
+          "lineno": 63,
+          "end_lineno": 67
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "normalized_df",
+              "lineno": 70,
+              "end_lineno": 70
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "pd",
+                "lineno": 70,
+                "end_lineno": 70
+              },
+              "attr": "DataFrame",
+              "lineno": 70,
+              "end_lineno": 70
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "normalized_data",
+                "lineno": 70,
+                "end_lineno": 70
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "index",
+                "value": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "data",
+                    "lineno": 70,
+                    "end_lineno": 70
+                  },
+                  "attr": "index",
+                  "lineno": 70,
+                  "end_lineno": 70
+                },
+                "lineno": 70,
+                "end_lineno": 70
+              }
+            ],
+            "lineno": 70,
+            "end_lineno": 70
+          },
+          "type_comment": null,
+          "lineno": 70,
+          "end_lineno": 70
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "normalized_df",
+            "lineno": 71,
+            "end_lineno": 71
+          },
+          "lineno": 71,
+          "end_lineno": 71
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 51,
+      "end_lineno": 71
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "data_transform",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "df",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 73,
+            "end_lineno": 73
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Transforms the data by setting a datetime index, and splitting it into \n    training and validation sets. It also normalizes the features.\n    \n    Paramet"
+          },
+          "lineno": 74,
+          "end_lineno": 84
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Subscript",
+              "value": {
+                "_type": "Name",
+                "id": "df",
+                "lineno": 86,
+                "end_lineno": 86
+              },
+              "slice": {
+                "_type": "Constant",
+                "value": "Datetime",
+                "kind": null,
+                "lineno": 86,
+                "end_lineno": 86
+              },
+              "lineno": 86,
+              "end_lineno": 86
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "pd",
+                "lineno": 86,
+                "end_lineno": 86
+              },
+              "attr": "to_datetime",
+              "lineno": 86,
+              "end_lineno": 86
+            },
+            "args": [
+              {
+                "_type": "BinOp",
+                "left": {
+                  "_type": "BinOp",
+                  "left": {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Name",
+                      "id": "df",
+                      "lineno": 86,
+                      "end_lineno": 86
+                    },
+                    "slice": {
+                      "_type": "Constant",
+                      "value": "Date",
+                      "kind": null,
+                      "lineno": 86,
+                      "end_lineno": 86
+                    },
+                    "lineno": 86,
+                    "end_lineno": 86
+                  },
+                  "op": {
+                    "_type": "Add"
+                  },
+                  "right": {
+                    "_type": "Constant",
+                    "value": " ",
+                    "kind": null,
+                    "lineno": 86,
+                    "end_lineno": 86
+                  },
+                  "lineno": 86,
+                  "end_lineno": 86
+                },
+                "op": {
+                  "_type": "Add"
+                },
+                "right": {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "df",
+                    "lineno": 86,
+                    "end_lineno": 86
+                  },
+                  "slice": {
+                    "_type": "Constant",
+                    "value": "Time",
+                    "kind": null,
+                    "lineno": 86,
+                    "end_lineno": 86
+                  },
+                  "lineno": 86,
+                  "end_lineno": 86
+                },
+                "lineno": 86,
+                "end_lineno": 86
+              }
+            ],
+            "keywords": [],
+            "lineno": 86,
+            "end_lineno": 86
+          },
+          "type_comment": null,
+          "lineno": 86,
+          "end_lineno": 86
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "df",
+                "lineno": 87,
+                "end_lineno": 87
+              },
+              "attr": "set_index",
+              "lineno": 87,
+              "end_lineno": 87
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "Datetime",
+                "kind": null,
+                "lineno": 87,
+                "end_lineno": 87
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "inplace",
+                "value": {
+                  "_type": "Constant",
+                  "value": true,
+                  "kind": null,
+                  "lineno": 87,
+                  "end_lineno": 87
+                },
+                "lineno": 87,
+                "end_lineno": 87
+              }
+            ],
+            "lineno": 87,
+            "end_lineno": 87
+          },
+          "lineno": 87,
+          "end_lineno": 87
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "df",
+                "lineno": 88,
+                "end_lineno": 88
+              },
+              "attr": "drop",
+              "lineno": 88,
+              "end_lineno": 88
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "columns",
+                "value": {
+                  "_type": "List",
+                  "elts": [
+                    {
+                      "_type": "Constant",
+                      "value": "Date",
+                      "kind": null,
+                      "lineno": 88,
+                      "end_lineno": 88
+                    },
+                    {
+                      "_type": "Constant",
+                      "value": "Time",
+                      "kind": null,
+                      "lineno": 88,
+                      "end_lineno": 88
+                    }
+                  ],
+                  "lineno": 88,
+                  "end_lineno": 88
+                },
+                "lineno": 88,
+                "end_lineno": 88
+              },
+              {
+                "_type": "keyword",
+                "arg": "inplace",
+                "value": {
+                  "_type": "Constant",
+                  "value": true,
+                  "kind": null,
+                  "lineno": 88,
+                  "end_lineno": 88
+                },
+                "lineno": 88,
+                "end_lineno": 88
+              }
+            ],
+            "lineno": 88,
+            "end_lineno": 88
+          },
+          "lineno": 88,
+          "end_lineno": 88
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Tuple",
+              "elts": [
+                {
+                  "_type": "Name",
+                  "id": "train",
+                  "lineno": 91,
+                  "end_lineno": 91
+                },
+                {
+                  "_type": "Name",
+                  "id": "test",
+                  "lineno": 91,
+                  "end_lineno": 91
+                }
+              ],
+              "lineno": 91,
+              "end_lineno": 91
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "train_test_split",
+              "lineno": 91,
+              "end_lineno": 91
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "df",
+                "lineno": 91,
+                "end_lineno": 91
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "test_size",
+                "value": {
+                  "_type": "Constant",
+                  "value": 0.2,
+                  "kind": null,
+                  "lineno": 91,
+                  "end_lineno": 91
+                },
+                "lineno": 91,
+                "end_lineno": 91
+              },
+              {
+                "_type": "keyword",
+                "arg": "shuffle",
+                "value": {
+                  "_type": "Constant",
+                  "value": false,
+                  "kind": null,
+                  "lineno": 91,
+                  "end_lineno": 91
+                },
+                "lineno": 91,
+                "end_lineno": 91
+              }
+            ],
+            "lineno": 91,
+            "end_lineno": 91
+          },
+          "type_comment": null,
+          "lineno": 91,
+          "end_lineno": 91
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "X_train",
+              "lineno": 94,
+              "end_lineno": 94
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "train",
+                "lineno": 94,
+                "end_lineno": 94
+              },
+              "attr": "drop",
+              "lineno": 94,
+              "end_lineno": 94
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "columns",
+                "value": {
+                  "_type": "List",
+                  "elts": [
+                    {
+                      "_type": "Constant",
+                      "value": "CO(GT)",
+                      "kind": null,
+                      "lineno": 94,
+                      "end_lineno": 94
+                    }
+                  ],
+                  "lineno": 94,
+                  "end_lineno": 94
+                },
+                "lineno": 94,
+                "end_lineno": 94
+              }
+            ],
+            "lineno": 94,
+            "end_lineno": 94
+          },
+          "type_comment": null,
+          "lineno": 94,
+          "end_lineno": 94
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "y_train",
+              "lineno": 95,
+              "end_lineno": 95
+            }
+          ],
+          "value": {
+            "_type": "Subscript",
+            "value": {
+              "_type": "Name",
+              "id": "train",
+              "lineno": 95,
+              "end_lineno": 95
+            },
+            "slice": {
+              "_type": "Constant",
+              "value": "CO(GT)",
+              "kind": null,
+              "lineno": 95,
+              "end_lineno": 95
+            },
+            "lineno": 95,
+            "end_lineno": 95
+          },
+          "type_comment": null,
+          "lineno": 95,
+          "end_lineno": 95
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "X_test",
+              "lineno": 97,
+              "end_lineno": 97
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "test",
+                "lineno": 97,
+                "end_lineno": 97
+              },
+              "attr": "drop",
+              "lineno": 97,
+              "end_lineno": 97
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "columns",
+                "value": {
+                  "_type": "List",
+                  "elts": [
+                    {
+                      "_type": "Constant",
+                      "value": "CO(GT)",
+                      "kind": null,
+                      "lineno": 97,
+                      "end_lineno": 97
+                    }
+                  ],
+                  "lineno": 97,
+                  "end_lineno": 97
+                },
+                "lineno": 97,
+                "end_lineno": 97
+              }
+            ],
+            "lineno": 97,
+            "end_lineno": 97
+          },
+          "type_comment": null,
+          "lineno": 97,
+          "end_lineno": 97
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "y_test",
+              "lineno": 98,
+              "end_lineno": 98
+            }
+          ],
+          "value": {
+            "_type": "Subscript",
+            "value": {
+              "_type": "Name",
+              "id": "test",
+              "lineno": 98,
+              "end_lineno": 98
+            },
+            "slice": {
+              "_type": "Constant",
+              "value": "CO(GT)",
+              "kind": null,
+              "lineno": 98,
+              "end_lineno": 98
+            },
+            "lineno": 98,
+            "end_lineno": 98
+          },
+          "type_comment": null,
+          "lineno": 98,
+          "end_lineno": 98
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "client",
+              "lineno": 101,
+              "end_lineno": 101
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "storage",
+                "lineno": 101,
+                "end_lineno": 101
+              },
+              "attr": "Client",
+              "lineno": 101,
+              "end_lineno": 101
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 101,
+            "end_lineno": 101
+          },
+          "type_comment": null,
+          "lineno": 101,
+          "end_lineno": 101
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "bucket_name",
+              "lineno": 102,
+              "end_lineno": 102
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "os",
+                "lineno": 102,
+                "end_lineno": 102
+              },
+              "attr": "getenv",
+              "lineno": 102,
+              "end_lineno": 102
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "BUCKET_NAME",
+                "kind": null,
+                "lineno": 102,
+                "end_lineno": 102
+              }
+            ],
+            "keywords": [],
+            "lineno": 102,
+            "end_lineno": 102
+          },
+          "type_comment": null,
+          "lineno": 102,
+          "end_lineno": 102
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "blob_path",
+              "lineno": 103,
+              "end_lineno": 103
+            }
+          ],
+          "value": {
+            "_const_preview": "scaler/normalization_stats.json"
+          },
+          "type_comment": null,
+          "lineno": 103,
+          "end_lineno": 103
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "bucket",
+              "lineno": 104,
+              "end_lineno": 104
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "client",
+                "lineno": 104,
+                "end_lineno": 104
+              },
+              "attr": "get_bucket",
+              "lineno": 104,
+              "end_lineno": 104
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "mlops___fall2023",
+                "kind": null,
+                "lineno": 104,
+                "end_lineno": 104
+              }
+            ],
+            "keywords": [],
+            "lineno": 104,
+            "end_lineno": 104
+          },
+          "type_comment": null,
+          "lineno": 104,
+          "end_lineno": 104
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "blob",
+              "lineno": 105,
+              "end_lineno": 105
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "bucket",
+                "lineno": 105,
+                "end_lineno": 105
+              },
+              "attr": "blob",
+              "lineno": 105,
+              "end_lineno": 105
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "blob_path",
+                "lineno": 105,
+                "end_lineno": 105
+              }
+            ],
+            "keywords": [],
+            "lineno": 105,
+            "end_lineno": 105
+          },
+          "type_comment": null,
+          "lineno": 105,
+          "end_lineno": 105
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "data",
+              "lineno": 108,
+              "end_lineno": 108
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "blob",
+                "lineno": 108,
+                "end_lineno": 108
+              },
+              "attr": "download_as_string",
+              "lineno": 108,
+              "end_lineno": 108
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 108,
+            "end_lineno": 108
+          },
+          "type_comment": null,
+          "lineno": 108,
+          "end_lineno": 108
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "stats",
+              "lineno": 109,
+              "end_lineno": 109
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "json",
+                "lineno": 109,
+                "end_lineno": 109
+              },
+              "attr": "loads",
+              "lineno": 109,
+              "end_lineno": 109
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "data",
+                "lineno": 109,
+                "end_lineno": 109
+              }
+            ],
+            "keywords": [],
+            "lineno": 109,
+            "end_lineno": 109
+          },
+          "type_comment": null,
+          "lineno": 109,
+          "end_lineno": 109
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "X_train_scaled",
+              "lineno": 112,
+              "end_lineno": 112
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "normalize_data",
+              "lineno": 112,
+              "end_lineno": 112
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "X_train",
+                "lineno": 112,
+                "end_lineno": 112
+              },
+              {
+                "_type": "Name",
+                "id": "stats",
+                "lineno": 112,
+                "end_lineno": 112
+              }
+            ],
+            "keywords": [],
+            "lineno": 112,
+            "end_lineno": 112
+          },
+          "type_comment": null,
+          "lineno": 112,
+          "end_lineno": 112
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "y_train_scaled",
+              "lineno": 113,
+              "end_lineno": 113
+            }
+          ],
+          "value": {
+            "_type": "BinOp",
+            "left": {
+              "_type": "BinOp",
+              "left": {
+                "_type": "Name",
+                "id": "y_train",
+                "lineno": 113,
+                "end_lineno": 113
+              },
+              "op": {
+                "_type": "Sub"
+              },
+              "right": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "stats",
+                    "lineno": 113,
+                    "end_lineno": 113
+                  },
+                  "slice": {
+                    "_type": "Constant",
+                    "value": "mean",
+                    "kind": null,
+                    "lineno": 113,
+                    "end_lineno": 113
+                  },
+                  "lineno": 113,
+                  "end_lineno": 113
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "CO(GT)",
+                  "kind": null,
+                  "lineno": 113,
+                  "end_lineno": 113
+                },
+                "lineno": 113,
+                "end_lineno": 113
+              },
+              "lineno": 113,
+              "end_lineno": 113
+            },
+            "op": {
+              "_type": "Div"
+            },
+            "right": {
+              "_type": "Subscript",
+              "value": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "stats",
+                  "lineno": 113,
+                  "end_lineno": 113
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "std",
+                  "kind": null,
+                  "lineno": 113,
+                  "end_lineno": 113
+                },
+                "lineno": 113,
+                "end_lineno": 113
+              },
+              "slice": {
+                "_type": "Constant",
+                "value": "CO(GT)",
+                "kind": null,
+                "lineno": 113,
+                "end_lineno": 113
+              },
+              "lineno": 113,
+              "end_lineno": 113
+            },
+            "lineno": 113,
+            "end_lineno": 113
+          },
+          "type_comment": null,
+          "lineno": 113,
+          "end_lineno": 113
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Tuple",
+            "elts": [
+              {
+                "_type": "Name",
+                "id": "X_train_scaled",
+                "lineno": 115,
+                "end_lineno": 115
+              },
+              {
+                "_type": "Name",
+                "id": "X_test",
+                "lineno": 115,
+                "end_lineno": 115
+              },
+              {
+                "_type": "Name",
+                "id": "y_train_scaled",
+                "lineno": 115,
+                "end_lineno": 115
+              },
+              {
+                "_type": "Name",
+                "id": "y_test",
+                "lineno": 115,
+                "end_lineno": 115
+              }
+            ],
+            "lineno": 115,
+            "end_lineno": 115
+          },
+          "lineno": 115,
+          "end_lineno": 115
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 73,
+      "end_lineno": 115
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "top_pca",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "pca_output",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 117,
+            "end_lineno": 117
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Generate a 3D scatter plot visualizing clusters in PCA space for customer data.\n\n    Parameters:\n    - customer_data_pca: DataFrame\n        DataFrame conta"
+          },
+          "lineno": 118,
+          "end_lineno": 129
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "colors",
+              "lineno": 130,
+              "end_lineno": 130
+            }
+          ],
+          "value": {
+            "_type": "List",
+            "elts": [
+              {
+                "_type": "Constant",
+                "value": "#e8000b",
+                "kind": null,
+                "lineno": 130,
+                "end_lineno": 130
+              },
+              {
+                "_type": "Constant",
+                "value": "#1ac938",
+                "kind": null,
+                "lineno": 130,
+                "end_lineno": 130
+              },
+              {
+                "_type": "Constant",
+                "value": "#023eff",
+                "kind": null,
+                "lineno": 130,
+                "end_lineno": 130
+              }
+            ],
+            "lineno": 130,
+            "end_lineno": 130
+          },
+          "type_comment": null,
+          "lineno": 130,
+          "end_lineno": 130
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "cluster_0",
+              "lineno": 132,
+              "end_lineno": 132
+            }
+          ],
+          "value": {
+            "_type": "Subscript",
+            "value": {
+              "_type": "Name",
+              "id": "pca_output",
+              "lineno": 132,
+              "end_lineno": 132
+            },
+            "slice": {
+              "_type": "Compare",
+              "left": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "pca_output",
+                  "lineno": 132,
+                  "end_lineno": 132
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "cluster",
+                  "kind": null,
+                  "lineno": 132,
+                  "end_lineno": 132
+                },
+                "lineno": 132,
+                "end_lineno": 132
+              },
+              "ops": [
+                {
+                  "_type": "Eq"
+                }
+              ],
+              "comparators": [
+                {
+                  "_type": "Constant",
+                  "value": 0,
+                  "kind": null,
+                  "lineno": 132,
+                  "end_lineno": 132
+                }
+              ],
+              "lineno": 132,
+              "end_lineno": 132
+            },
+            "lineno": 132,
+            "end_lineno": 132
+          },
+          "type_comment": null,
+          "lineno": 132,
+          "end_lineno": 132
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "cluster_1",
+              "lineno": 133,
+              "end_lineno": 133
+            }
+          ],
+          "value": {
+            "_type": "Subscript",
+            "value": {
+              "_type": "Name",
+              "id": "pca_output",
+              "lineno": 133,
+              "end_lineno": 133
+            },
+            "slice": {
+              "_type": "Compare",
+              "left": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "pca_output",
+                  "lineno": 133,
+                  "end_lineno": 133
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "cluster",
+                  "kind": null,
+                  "lineno": 133,
+                  "end_lineno": 133
+                },
+                "lineno": 133,
+                "end_lineno": 133
+              },
+              "ops": [
+                {
+                  "_type": "Eq"
+                }
+              ],
+              "comparators": [
+                {
+                  "_type": "Constant",
+                  "value": 1,
+                  "kind": null,
+                  "lineno": 133,
+                  "end_lineno": 133
+                }
+              ],
+              "lineno": 133,
+              "end_lineno": 133
+            },
+            "lineno": 133,
+            "end_lineno": 133
+          },
+          "type_comment": null,
+          "lineno": 133,
+          "end_lineno": 133
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "cluster_2",
+              "lineno": 134,
+              "end_lineno": 134
+            }
+          ],
+          "value": {
+            "_type": "Subscript",
+            "value": {
+              "_type": "Name",
+              "id": "pca_output",
+              "lineno": 134,
+              "end_lineno": 134
+            },
+            "slice": {
+              "_type": "Compare",
+              "left": {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "pca_output",
+                  "lineno": 134,
+                  "end_lineno": 134
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "cluster",
+                  "kind": null,
+                  "lineno": 134,
+                  "end_lineno": 134
+                },
+                "lineno": 134,
+                "end_lineno": 134
+              },
+              "ops": [
+                {
+                  "_type": "Eq"
+                }
+              ],
+              "comparators": [
+                {
+                  "_type": "Constant",
+                  "value": 2,
+                  "kind": null,
+                  "lineno": 134,
+                  "end_lineno": 134
+                }
+              ],
+              "lineno": 134,
+              "end_lineno": 134
+            },
+            "lineno": 134,
+            "end_lineno": 134
+          },
+          "type_comment": null,
+          "lineno": 134,
+          "end_lineno": 134
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "fig",
+              "lineno": 137,
+              "end_lineno": 137
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "go",
+                "lineno": 137,
+                "end_lineno": 137
+              },
+              "attr": "Figure",
+              "lineno": 137,
+              "end_lineno": 137
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 137,
+            "end_lineno": 137
+          },
+          "type_comment": null,
+          "lineno": 137,
+          "end_lineno": 137
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "fig",
+                "lineno": 140,
+                "end_lineno": 140
+              },
+              "attr": "add_trace",
+              "lineno": 140,
+              "end_lineno": 140
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "go",
+                    "lineno": 140,
+                    "end_lineno": 140
+                  },
+                  "attr": "Scatter3d",
+                  "lineno": 140,
+                  "end_lineno": 140
+                },
+                "args": [],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "x",
+                    "value": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "cluster_0",
+                        "lineno": 140,
+                        "end_lineno": 140
+                      },
+                      "slice": {
+                        "_type": "Constant",
+                        "value": "PC1",
+                        "kind": null,
+                        "lineno": 140,
+                        "end_lineno": 140
+                      },
+                      "lineno": 140,
+                      "end_lineno": 140
+                    },
+                    "lineno": 140,
+                    "end_lineno": 140
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "y",
+                    "value": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "cluster_0",
+                        "lineno": 140,
+                        "end_lineno": 140
+                      },
+                      "slice": {
+                        "_type": "Constant",
+                        "value": "PC2",
+                        "kind": null,
+                        "lineno": 140,
+                        "end_lineno": 140
+                      },
+                      "lineno": 140,
+                      "end_lineno": 140
+                    },
+                    "lineno": 140,
+                    "end_lineno": 140
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "z",
+                    "value": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "cluster_0",
+                        "lineno": 140,
+                        "end_lineno": 140
+                      },
+                      "slice": {
+                        "_type": "Constant",
+                        "value": "PC3",
+                        "kind": null,
+                        "lineno": 140,
+                        "end_lineno": 140
+                      },
+                      "lineno": 140,
+                      "end_lineno": 140
+                    },
+                    "lineno": 140,
+                    "end_lineno": 140
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "mode",
+                    "value": {
+                      "_const_preview": "markers"
+                    },
+                    "lineno": 141,
+                    "end_lineno": 141
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "marker",
+                    "value": {
+                      "_type": "Call",
+                      "func": {
+                        "_type": "Name",
+                        "id": "dict",
+                        "lineno": 141,
+                        "end_lineno": 141
+                      },
+                      "args": [],
+                      "keywords": [
+                        {
+                          "_type": "keyword",
+                          "arg": "color",
+                          "value": {
+                            "_type": "Subscript",
+                            "value": {
+                              "_type": "Name",
+                              "id": "colors",
+                              "lineno": 141,
+                              "end_lineno": 141
+                            },
+                            "slice": {
+                              "_type": "Constant",
+                              "value": 0,
+                              "kind": null,
+                              "lineno": 141,
+                              "end_lineno": 141
+                            },
+                            "lineno": 141,
+                            "end_lineno": 141
+                          },
+                          "lineno": 141,
+                          "end_lineno": 141
+                        },
+                        {
+                          "_type": "keyword",
+                          "arg": "size",
+                          "value": {
+                            "_type": "Constant",
+                            "value": 5,
+                            "kind": null,
+                            "lineno": 141,
+                            "end_lineno": 141
+                          },
+                          "lineno": 141,
+                          "end_lineno": 141
+                        },
+                        {
+                          "_type": "keyword",
+                          "arg": "opacity",
+                          "value": {
+                            "_type": "Constant",
+                            "value": 0.4,
+                            "kind": null,
+                            "lineno": 141,
+                            "end_lineno": 141
+                          },
+                          "lineno": 141,
+                          "end_lineno": 141
+                        }
+                      ],
+                      "lineno": 141,
+                      "end_lineno": 141
+                    },
+                    "lineno": 141,
+                    "end_lineno": 141
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "name",
+                    "value": {
+                      "_const_preview": "Cluster 0"
+                    },
+                    "lineno": 142,
+                    "end_lineno": 142
+                  }
+                ],
+                "lineno": 140,
+                "end_lineno": 142
+              }
+            ],
+            "keywords": [],
+            "lineno": 140,
+            "end_lineno": 142
+          },
+          "lineno": 140,
+          "end_lineno": 142
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "fig",
+                "lineno": 143,
+                "end_lineno": 143
+              },
+              "attr": "add_trace",
+              "lineno": 143,
+              "end_lineno": 143
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "go",
+                    "lineno": 143,
+                    "end_lineno": 143
+                  },
+                  "attr": "Scatter3d",
+                  "lineno": 143,
+                  "end_lineno": 143
+                },
+                "args": [],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "x",
+                    "value": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "cluster_1",
+                        "lineno": 143,
+                        "end_lineno": 143
+                      },
+                      "slice": {
+                        "_type": "Constant",
+                        "value": "PC1",
+                        "kind": null,
+                        "lineno": 143,
+                        "end_lineno": 143
+                      },
+                      "lineno": 143,
+                      "end_lineno": 143
+                    },
+                    "lineno": 143,
+                    "end_lineno": 143
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "y",
+                    "value": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "cluster_1",
+                        "lineno": 143,
+                        "end_lineno": 143
+                      },
+                      "slice": {
+                        "_type": "Constant",
+                        "value": "PC2",
+                        "kind": null,
+                        "lineno": 143,
+                        "end_lineno": 143
+                      },
+                      "lineno": 143,
+                      "end_lineno": 143
+                    },
+                    "lineno": 143,
+                    "end_lineno": 143
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "z",
+                    "value": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "cluster_1",
+                        "lineno": 143,
+                        "end_lineno": 143
+                      },
+                      "slice": {
+                        "_type": "Constant",
+                        "value": "PC3",
+                        "kind": null,
+                        "lineno": 143,
+                        "end_lineno": 143
+                      },
+                      "lineno": 143,
+                      "end_lineno": 143
+                    },
+                    "lineno": 143,
+                    "end_lineno": 143
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "mode",
+                    "value": {
+                      "_const_preview": "markers"
+                    },
+                    "lineno": 144,
+                    "end_lineno": 144
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "marker",
+                    "value": {
+                      "_type": "Call",
+                      "func": {
+                        "_type": "Name",
+                        "id": "dict",
+                        "lineno": 144,
+                        "end_lineno": 144
+                      },
+                      "args": [],
+                      "keywords": [
+                        {
+                          "_type": "keyword",
+                          "arg": "color",
+                          "value": {
+                            "_type": "Subscript",
+                            "value": {
+                              "_type": "Name",
+                              "id": "colors",
+                              "lineno": 144,
+                              "end_lineno": 144
+                            },
+                            "slice": {
+                              "_type": "Constant",
+                              "value": 1,
+                              "kind": null,
+                              "lineno": 144,
+                              "end_lineno": 144
+                            },
+                            "lineno": 144,
+                            "end_lineno": 144
+                          },
+                          "lineno": 144,
+                          "end_lineno": 144
+                        },
+                        {
+                          "_type": "keyword",
+                          "arg": "size",
+                          "value": {
+                            "_type": "Constant",
+                            "value": 5,
+                            "kind": null,
+                            "lineno": 144,
+                            "end_lineno": 144
+                          },
+                          "lineno": 144,
+                          "end_lineno": 144
+                        },
+                        {
+                          "_type": "keyword",
+                          "arg": "opacity",
+                          "value": {
+                            "_type": "Constant",
+                            "value": 0.4,
+                            "kind": null,
+                            "lineno": 144,
+                            "end_lineno": 144
+                          },
+                          "lineno": 144,
+                          "end_lineno": 144
+                        }
+                      ],
+                      "lineno": 144,
+                      "end_lineno": 144
+                    },
+                    "lineno": 144,
+                    "end_lineno": 144
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "name",
+                    "value": {
+                      "_const_preview": "Cluster 1"
+                    },
+                    "lineno": 145,
+                    "end_lineno": 145
+                  }
+                ],
+                "lineno": 143,
+                "end_lineno": 145
+              }
+            ],
+            "keywords": [],
+            "lineno": 143,
+            "end_lineno": 145
+          },
+          "lineno": 143,
+          "end_lineno": 145
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "fig",
+                "lineno": 146,
+                "end_lineno": 146
+              },
+              "attr": "add_trace",
+              "lineno": 146,
+              "end_lineno": 146
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "go",
+                    "lineno": 146,
+                    "end_lineno": 146
+                  },
+                  "attr": "Scatter3d",
+                  "lineno": 146,
+                  "end_lineno": 146
+                },
+                "args": [],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "x",
+                    "value": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "cluster_2",
+                        "lineno": 146,
+                        "end_lineno": 146
+                      },
+                      "slice": {
+                        "_type": "Constant",
+                        "value": "PC1",
+                        "kind": null,
+                        "lineno": 146,
+                        "end_lineno": 146
+                      },
+                      "lineno": 146,
+                      "end_lineno": 146
+                    },
+                    "lineno": 146,
+                    "end_lineno": 146
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "y",
+                    "value": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "cluster_2",
+                        "lineno": 146,
+                        "end_lineno": 146
+                      },
+                      "slice": {
+                        "_type": "Constant",
+                        "value": "PC2",
+                        "kind": null,
+                        "lineno": 146,
+                        "end_lineno": 146
+                      },
+                      "lineno": 146,
+                      "end_lineno": 146
+                    },
+                    "lineno": 146,
+                    "end_lineno": 146
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "z",
+                    "value": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "cluster_2",
+                        "lineno": 146,
+                        "end_lineno": 146
+                      },
+                      "slice": {
+                        "_type": "Constant",
+                        "value": "PC3",
+                        "kind": null,
+                        "lineno": 146,
+                        "end_lineno": 146
+                      },
+                      "lineno": 146,
+                      "end_lineno": 146
+                    },
+                    "lineno": 146,
+                    "end_lineno": 146
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "mode",
+                    "value": {
+                      "_const_preview": "markers"
+                    },
+                    "lineno": 147,
+                    "end_lineno": 147
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "marker",
+                    "value": {
+                      "_type": "Call",
+                      "func": {
+                        "_type": "Name",
+                        "id": "dict",
+                        "lineno": 147,
+                        "end_lineno": 147
+                      },
+                      "args": [],
+                      "keywords": [
+                        {
+                          "_type": "keyword",
+                          "arg": "color",
+                          "value": {
+                            "_type": "Subscript",
+                            "value": {
+                              "_type": "Name",
+                              "id": "colors",
+                              "lineno": 147,
+                              "end_lineno": 147
+                            },
+                            "slice": {
+                              "_type": "Constant",
+                              "value": 2,
+                              "kind": null,
+                              "lineno": 147,
+                              "end_lineno": 147
+                            },
+                            "lineno": 147,
+                            "end_lineno": 147
+                          },
+                          "lineno": 147,
+                          "end_lineno": 147
+                        },
+                        {
+                          "_type": "keyword",
+                          "arg": "size",
+                          "value": {
+                            "_type": "Constant",
+                            "value": 5,
+                            "kind": null,
+                            "lineno": 147,
+                            "end_lineno": 147
+                          },
+                          "lineno": 147,
+                          "end_lineno": 147
+                        },
+                        {
+                          "_type": "keyword",
+                          "arg": "opacity",
+                          "value": {
+                            "_type": "Constant",
+                            "value": 0.4,
+                            "kind": null,
+                            "lineno": 147,
+                            "end_lineno": 147
+                          },
+                          "lineno": 147,
+                          "end_lineno": 147
+                        }
+                      ],
+                      "lineno": 147,
+                      "end_lineno": 147
+                    },
+                    "lineno": 147,
+                    "end_lineno": 147
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "name",
+                    "value": {
+                      "_const_preview": "Cluster 2"
+                    },
+                    "lineno": 148,
+                    "end_lineno": 148
+                  }
+                ],
+                "lineno": 146,
+                "end_lineno": 148
+              }
+            ],
+            "keywords": [],
+            "lineno": 146,
+            "end_lineno": 148
+          },
+          "lineno": 146,
+          "end_lineno": 148
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "fig",
+                "lineno": 151,
+                "end_lineno": 151
+              },
+              "attr": "update_layout",
+              "lineno": 151,
+              "end_lineno": 151
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "title",
+                "value": {
+                  "_type": "Call",
+                  "func": {
+                    "_type": "Name",
+                    "id": "dict",
+                    "lineno": 152,
+                    "end_lineno": 152
+                  },
+                  "args": [],
+                  "keywords": [
+                    {
+                      "_type": "keyword",
+                      "arg": "text",
+                      "value": {
+                        "_const_preview": "3D Visualization of Customer Clusters in PCA Space"
+                      },
+                      "lineno": 152,
+                      "end_lineno": 152
+                    },
+                    {
+                      "_type": "keyword",
+                      "arg": "x",
+                      "value": {
+                        "_type": "Constant",
+                        "value": 0.5,
+                        "kind": null,
+                        "lineno": 152,
+                        "end_lineno": 152
+                      },
+                      "lineno": 152,
+                      "end_lineno": 152
+                    }
+                  ],
+                  "lineno": 152,
+                  "end_lineno": 152
+                },
+                "lineno": 152,
+                "end_lineno": 152
+              },
+              {
+                "_type": "keyword",
+                "arg": "scene",
+                "value": {
+                  "_type": "Call",
+                  "func": {
+                    "_type": "Name",
+                    "id": "dict",
+                    "lineno": 153,
+                    "end_lineno": 153
+                  },
+                  "args": [],
+                  "keywords": [
+                    {
+                      "_type": "keyword",
+                      "arg": "xaxis",
+                      "value": {
+                        "_type": "Call",
+                        "func": {
+                          "_type": "Name",
+                          "id": "dict",
+                          "lineno": 154,
+                          "end_lineno": 154
+                        },
+                        "args": [],
+                        "keywords": [
+                          {
+                            "_type": "keyword",
+                            "arg": "backgroundcolor",
+                            "value": {
+                              "_const_preview": "#fcf0dc"
+                            },
+                            "lineno": 154,
+                            "end_lineno": 154
+                          },
+                          {
+                            "_type": "keyword",
+                            "arg": "gridcolor",
+                            "value": {
+                              "_const_preview": "white"
+                            },
+                            "lineno": 154,
+                            "end_lineno": 154
+                          },
+                          {
+                            "_type": "keyword",
+                            "arg": "title",
+                            "value": {
+                              "_const_preview": "PC1"
+                            },
+                            "lineno": 154,
+                            "end_lineno": 154
+                          }
+                        ],
+                        "lineno": 154,
+                        "end_lineno": 154
+                      },
+                      "lineno": 154,
+                      "end_lineno": 154
+                    },
+                    {
+                      "_type": "keyword",
+                      "arg": "yaxis",
+                      "value": {
+                        "_type": "Call",
+                        "func": {
+                          "_type": "Name",
+                          "id": "dict",
+                          "lineno": 155,
+                          "end_lineno": 155
+                        },
+                        "args": [],
+                        "keywords": [
+                          {
+                            "_type": "keyword",
+                            "arg": "backgroundcolor",
+                            "value": {
+                              "_const_preview": "#fcf0dc"
+                            },
+                            "lineno": 155,
+                            "end_lineno": 155
+                          },
+                          {
+                            "_type": "keyword",
+                            "arg": "gridcolor",
+                            "value": {
+                              "_const_preview": "white"
+                            },
+                            "lineno": 155,
+                            "end_lineno": 155
+                          },
+                          {
+                            "_type": "keyword",
+                            "arg": "title",
+                            "value": {
+                              "_const_preview": "PC2"
+                            },
+                            "lineno": 155,
+                            "end_lineno": 155
+                          }
+                        ],
+                        "lineno": 155,
+                        "end_lineno": 155
+                      },
+                      "lineno": 155,
+                      "end_lineno": 155
+                    },
+                    {
+                      "_type": "keyword",
+                      "arg": "zaxis",
+                      "value": {
+                        "_type": "Call",
+                        "func": {
+                          "_type": "Name",
+                          "id": "dict",
+                          "lineno": 156,
+                          "end_lineno": 156
+                        },
+                        "args": [],
+                        "keywords": [
+                          {
+                            "_type": "keyword",
+                            "arg": "backgroundcolor",
+                            "value": {
+                              "_const_preview": "#fcf0dc"
+                            },
+                            "lineno": 156,
+                            "end_lineno": 156
+                          },
+                          {
+                            "_type": "keyword",
+                            "arg": "gridcolor",
+                            "value": {
+                              "_const_preview": "white"
+                            },
+                            "lineno": 156,
+                            "end_lineno": 156
+                          },
+                          {
+                            "_type": "keyword",
+                            "arg": "title",
+                            "value": {
+                              "_const_preview": "PC3"
+                            },
+                            "lineno": 156,
+                            "end_lineno": 156
+                          }
+                        ],
+                        "lineno": 156,
+                        "end_lineno": 156
+                      },
+                      "lineno": 156,
+                      "end_lineno": 156
+                    }
+                  ],
+                  "lineno": 153,
+                  "end_lineno": 157
+                },
+                "lineno": 153,
+                "end_lineno": 157
+              },
+              {
+                "_type": "keyword",
+                "arg": "width",
+                "value": {
+                  "_type": "Constant",
+                  "value": 900,
+                  "kind": null,
+                  "lineno": 158,
+                  "end_lineno": 158
+                },
+                "lineno": 158,
+                "end_lineno": 158
+              },
+              {
+                "_type": "keyword",
+                "arg": "height",
+                "value": {
+                  "_type": "Constant",
+                  "value": 800,
+                  "kind": null,
+                  "lineno": 159,
+                  "end_lineno": 159
+                },
+                "lineno": 159,
+                "end_lineno": 159
+              }
+            ],
+            "lineno": 151,
+            "end_lineno": 160
+          },
+          "lineno": 151,
+          "end_lineno": 160
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "fig",
+                "lineno": 163,
+                "end_lineno": 163
+              },
+              "attr": "show",
+              "lineno": 163,
+              "end_lineno": 163
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 163,
+            "end_lineno": 163
+          },
+          "lineno": 163,
+          "end_lineno": 163
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 117,
+      "end_lineno": 163
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "cluster_distribution",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "pca_output",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 165,
+            "end_lineno": 165
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Visualizes the distribution of customers across clusters using a horizontal bar plot.\n\n    Parameters:\n    - pca_output: Pandas DataFrame containing PCA ou"
+          },
+          "lineno": 166,
+          "end_lineno": 184
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "colors",
+              "lineno": 186,
+              "end_lineno": 186
+            }
+          ],
+          "value": {
+            "_type": "List",
+            "elts": [
+              {
+                "_type": "Constant",
+                "value": "#e8000b",
+                "kind": null,
+                "lineno": 186,
+                "end_lineno": 186
+              },
+              {
+                "_type": "Constant",
+                "value": "#1ac938",
+                "kind": null,
+                "lineno": 186,
+                "end_lineno": 186
+              },
+              {
+                "_type": "Constant",
+                "value": "#023eff",
+                "kind": null,
+                "lineno": 186,
+                "end_lineno": 186
+              }
+            ],
+            "lineno": 186,
+            "end_lineno": 186
+          },
+          "type_comment": null,
+          "lineno": 186,
+          "end_lineno": 186
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "cluster_percentage",
+              "lineno": 188,
+              "end_lineno": 188
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "BinOp",
+                "left": {
+                  "_type": "Call",
+                  "func": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Name",
+                        "id": "pca_output",
+                        "lineno": 189,
+                        "end_lineno": 189
+                      },
+                      "slice": {
+                        "_type": "Constant",
+                        "value": "cluster",
+                        "kind": null,
+                        "lineno": 189,
+                        "end_lineno": 189
+                      },
+                      "lineno": 189,
+                      "end_lineno": 189
+                    },
+                    "attr": "value_counts",
+                    "lineno": 189,
+                    "end_lineno": 189
+                  },
+                  "args": [],
+                  "keywords": [
+                    {
+                      "_type": "keyword",
+                      "arg": "normalize",
+                      "value": {
+                        "_type": "Constant",
+                        "value": true,
+                        "kind": null,
+                        "lineno": 189,
+                        "end_lineno": 189
+                      },
+                      "lineno": 189,
+                      "end_lineno": 189
+                    }
+                  ],
+                  "lineno": 189,
+                  "end_lineno": 189
+                },
+                "op": {
+                  "_type": "Mult"
+                },
+                "right": {
+                  "_type": "Constant",
+                  "value": 100,
+                  "kind": null,
+                  "lineno": 189,
+                  "end_lineno": 189
+                },
+                "lineno": 189,
+                "end_lineno": 189
+              },
+              "attr": "reset_index",
+              "lineno": 189,
+              "end_lineno": 189
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 189,
+            "end_lineno": 189
+          },
+          "type_comment": null,
+          "lineno": 188,
+          "end_lineno": 189
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "cluster_percentage",
+                "lineno": 190,
+                "end_lineno": 190
+              },
+              "attr": "columns",
+              "lineno": 190,
+              "end_lineno": 190
+            }
+          ],
+          "value": {
+            "_type": "List",
+            "elts": [
+              {
+                "_type": "Constant",
+                "value": "Cluster",
+                "kind": null,
+                "lineno": 190,
+                "end_lineno": 190
+              },
+              {
+                "_type": "Constant",
+                "value": "Percentage",
+                "kind": null,
+                "lineno": 190,
+                "end_lineno": 190
+              }
+            ],
+            "lineno": 190,
+            "end_lineno": 190
+          },
+          "type_comment": null,
+          "lineno": 190,
+          "end_lineno": 190
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "cluster_percentage",
+                "lineno": 191,
+                "end_lineno": 191
+              },
+              "attr": "sort_values",
+              "lineno": 191,
+              "end_lineno": 191
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "by",
+                "value": {
+                  "_const_preview": "Cluster"
+                },
+                "lineno": 191,
+                "end_lineno": 191
+              },
+              {
+                "_type": "keyword",
+                "arg": "inplace",
+                "value": {
+                  "_type": "Constant",
+                  "value": true,
+                  "kind": null,
+                  "lineno": 191,
+                  "end_lineno": 191
+                },
+                "lineno": 191,
+                "end_lineno": 191
+              }
+            ],
+            "lineno": 191,
+            "end_lineno": 191
+          },
+          "lineno": 191,
+          "end_lineno": 191
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 194,
+                "end_lineno": 194
+              },
+              "attr": "figure",
+              "lineno": 194,
+              "end_lineno": 194
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "figsize",
+                "value": {
+                  "_type": "Tuple",
+                  "elts": [
+                    {
+                      "_type": "Constant",
+                      "value": 10,
+                      "kind": null,
+                      "lineno": 194,
+                      "end_lineno": 194
+                    },
+                    {
+                      "_type": "Constant",
+                      "value": 4,
+                      "kind": null,
+                      "lineno": 194,
+                      "end_lineno": 194
+                    }
+                  ],
+                  "lineno": 194,
+                  "end_lineno": 194
+                },
+                "lineno": 194,
+                "end_lineno": 194
+              }
+            ],
+            "lineno": 194,
+            "end_lineno": 194
+          },
+          "lineno": 194,
+          "end_lineno": 194
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "sns",
+                "lineno": 195,
+                "end_lineno": 195
+              },
+              "attr": "barplot",
+              "lineno": 195,
+              "end_lineno": 195
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "x",
+                "value": {
+                  "_const_preview": "Percentage"
+                },
+                "lineno": 195,
+                "end_lineno": 195
+              },
+              {
+                "_type": "keyword",
+                "arg": "y",
+                "value": {
+                  "_const_preview": "Cluster"
+                },
+                "lineno": 195,
+                "end_lineno": 195
+              },
+              {
+                "_type": "keyword",
+                "arg": "data",
+                "value": {
+                  "_type": "Name",
+                  "id": "cluster_percentage",
+                  "lineno": 196,
+                  "end_lineno": 196
+                },
+                "lineno": 196,
+                "end_lineno": 196
+              },
+              {
+                "_type": "keyword",
+                "arg": "orient",
+                "value": {
+                  "_const_preview": "h"
+                },
+                "lineno": 196,
+                "end_lineno": 196
+              },
+              {
+                "_type": "keyword",
+                "arg": "palette",
+                "value": {
+                  "_type": "Name",
+                  "id": "colors",
+                  "lineno": 196,
+                  "end_lineno": 196
+                },
+                "lineno": 196,
+                "end_lineno": 196
+              }
+            ],
+            "lineno": 195,
+            "end_lineno": 196
+          },
+          "lineno": 195,
+          "end_lineno": 196
+        },
+        {
+          "_type": "For",
+          "target": {
+            "_type": "Tuple",
+            "elts": [
+              {
+                "_type": "Name",
+                "id": "index",
+                "lineno": 199,
+                "end_lineno": 199
+              },
+              {
+                "_type": "Name",
+                "id": "value",
+                "lineno": 199,
+                "end_lineno": 199
+              }
+            ],
+            "lineno": 199,
+            "end_lineno": 199
+          },
+          "iter": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "enumerate",
+              "lineno": 199,
+              "end_lineno": 199
+            },
+            "args": [
+              {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "cluster_percentage",
+                  "lineno": 199,
+                  "end_lineno": 199
+                },
+                "slice": {
+                  "_type": "Constant",
+                  "value": "Percentage",
+                  "kind": null,
+                  "lineno": 199,
+                  "end_lineno": 199
+                },
+                "lineno": 199,
+                "end_lineno": 199
+              }
+            ],
+            "keywords": [],
+            "lineno": 199,
+            "end_lineno": 199
+          },
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "plt",
+                    "lineno": 200,
+                    "end_lineno": 200
+                  },
+                  "attr": "text",
+                  "lineno": 200,
+                  "end_lineno": 200
+                },
+                "args": [
+                  {
+                    "_type": "BinOp",
+                    "left": {
+                      "_type": "Name",
+                      "id": "value",
+                      "lineno": 200,
+                      "end_lineno": 200
+                    },
+                    "op": {
+                      "_type": "Add"
+                    },
+                    "right": {
+                      "_type": "Constant",
+                      "value": 0.5,
+                      "kind": null,
+                      "lineno": 200,
+                      "end_lineno": 200
+                    },
+                    "lineno": 200,
+                    "end_lineno": 200
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "index",
+                    "lineno": 200,
+                    "end_lineno": 200
+                  },
+                  {
+                    "_type": "JoinedStr",
+                    "values": [
+                      {
+                        "_type": "FormattedValue",
+                        "value": {
+                          "_type": "Name",
+                          "id": "value",
+                          "lineno": 200,
+                          "end_lineno": 200
+                        },
+                        "conversion": -1,
+                        "format_spec": {
+                          "_type": "JoinedStr",
+                          "values": [
+                            {
+                              "_type": "Constant",
+                              "value": ".2f",
+                              "kind": null,
+                              "lineno": 200,
+                              "end_lineno": 200
+                            }
+                          ],
+                          "lineno": 200,
+                          "end_lineno": 200
+                        },
+                        "lineno": 200,
+                        "end_lineno": 200
+                      },
+                      {
+                        "_type": "Constant",
+                        "value": "%",
+                        "kind": null,
+                        "lineno": 200,
+                        "end_lineno": 200
+                      }
+                    ],
+                    "lineno": 200,
+                    "end_lineno": 200
+                  }
+                ],
+                "keywords": [],
+                "lineno": 200,
+                "end_lineno": 200
+              },
+              "lineno": 200,
+              "end_lineno": 200
+            }
+          ],
+          "orelse": [],
+          "type_comment": null,
+          "lineno": 199,
+          "end_lineno": 200
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 202,
+                "end_lineno": 202
+              },
+              "attr": "title",
+              "lineno": 202,
+              "end_lineno": 202
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "Distribution of Customers Across Clusters",
+                "kind": null,
+                "lineno": 202,
+                "end_lineno": 202
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "fontsize",
+                "value": {
+                  "_type": "Constant",
+                  "value": 14,
+                  "kind": null,
+                  "lineno": 202,
+                  "end_lineno": 202
+                },
+                "lineno": 202,
+                "end_lineno": 202
+              }
+            ],
+            "lineno": 202,
+            "end_lineno": 202
+          },
+          "lineno": 202,
+          "end_lineno": 202
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 203,
+                "end_lineno": 203
+              },
+              "attr": "xticks",
+              "lineno": 203,
+              "end_lineno": 203
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "ticks",
+                "value": {
+                  "_type": "Call",
+                  "func": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "np",
+                      "lineno": 203,
+                      "end_lineno": 203
+                    },
+                    "attr": "arange",
+                    "lineno": 203,
+                    "end_lineno": 203
+                  },
+                  "args": [
+                    {
+                      "_type": "Constant",
+                      "value": 0,
+                      "kind": null,
+                      "lineno": 203,
+                      "end_lineno": 203
+                    },
+                    {
+                      "_type": "Constant",
+                      "value": 50,
+                      "kind": null,
+                      "lineno": 203,
+                      "end_lineno": 203
+                    },
+                    {
+                      "_type": "Constant",
+                      "value": 5,
+                      "kind": null,
+                      "lineno": 203,
+                      "end_lineno": 203
+                    }
+                  ],
+                  "keywords": [],
+                  "lineno": 203,
+                  "end_lineno": 203
+                },
+                "lineno": 203,
+                "end_lineno": 203
+              }
+            ],
+            "lineno": 203,
+            "end_lineno": 203
+          },
+          "lineno": 203,
+          "end_lineno": 203
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 204,
+                "end_lineno": 204
+              },
+              "attr": "xlabel",
+              "lineno": 204,
+              "end_lineno": 204
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "Percentage (%)",
+                "kind": null,
+                "lineno": 204,
+                "end_lineno": 204
+              }
+            ],
+            "keywords": [],
+            "lineno": 204,
+            "end_lineno": 204
+          },
+          "lineno": 204,
+          "end_lineno": 204
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 207,
+                "end_lineno": 207
+              },
+              "attr": "show",
+              "lineno": 207,
+              "end_lineno": 207
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 207,
+            "end_lineno": 207
+          },
+          "lineno": 207,
+          "end_lineno": 207
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 165,
+      "end_lineno": 207
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "evaluation_metrics",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "pca_output",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 209,
+            "end_lineno": 209
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Computes evaluation metrics including Silhouette Score, Calinski Harabasz Score,\n      and Davies Bouldin Score.\n\n    Parameters:\n    - pca_output: Pandas "
+          },
+          "lineno": 210,
+          "end_lineno": 228
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "num_observations",
+              "lineno": 229,
+              "end_lineno": 229
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "len",
+              "lineno": 229,
+              "end_lineno": 229
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "pca_output",
+                "lineno": 229,
+                "end_lineno": 229
+              }
+            ],
+            "keywords": [],
+            "lineno": 229,
+            "end_lineno": 229
+          },
+          "type_comment": null,
+          "lineno": 229,
+          "end_lineno": 229
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "X",
+              "lineno": 232,
+              "end_lineno": 232
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "pca_output",
+                "lineno": 232,
+                "end_lineno": 232
+              },
+              "attr": "drop",
+              "lineno": 232,
+              "end_lineno": 232
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "cluster",
+                "kind": null,
+                "lineno": 232,
+                "end_lineno": 232
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "axis",
+                "value": {
+                  "_type": "Constant",
+                  "value": 1,
+                  "kind": null,
+                  "lineno": 232,
+                  "end_lineno": 232
+                },
+                "lineno": 232,
+                "end_lineno": 232
+              }
+            ],
+            "lineno": 232,
+            "end_lineno": 232
+          },
+          "type_comment": null,
+          "lineno": 232,
+          "end_lineno": 232
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "clusters",
+              "lineno": 233,
+              "end_lineno": 233
+            }
+          ],
+          "value": {
+            "_type": "Subscript",
+            "value": {
+              "_type": "Name",
+              "id": "pca_output",
+              "lineno": 233,
+              "end_lineno": 233
+            },
+            "slice": {
+              "_type": "Constant",
+              "value": "cluster",
+              "kind": null,
+              "lineno": 233,
+              "end_lineno": 233
+            },
+            "lineno": 233,
+            "end_lineno": 233
+          },
+          "type_comment": null,
+          "lineno": 233,
+          "end_lineno": 233
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "sil_score",
+              "lineno": 236,
+              "end_lineno": 236
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "silhouette_score",
+              "lineno": 236,
+              "end_lineno": 236
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "X",
+                "lineno": 236,
+                "end_lineno": 236
+              },
+              {
+                "_type": "Name",
+                "id": "clusters",
+                "lineno": 236,
+                "end_lineno": 236
+              }
+            ],
+            "keywords": [],
+            "lineno": 236,
+            "end_lineno": 236
+          },
+          "type_comment": null,
+          "lineno": 236,
+          "end_lineno": 236
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "calinski_score",
+              "lineno": 237,
+              "end_lineno": 237
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "calinski_harabasz_score",
+              "lineno": 237,
+              "end_lineno": 237
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "X",
+                "lineno": 237,
+                "end_lineno": 237
+              },
+              {
+                "_type": "Name",
+                "id": "clusters",
+                "lineno": 237,
+                "end_lineno": 237
+              }
+            ],
+            "keywords": [],
+            "lineno": 237,
+            "end_lineno": 237
+          },
+          "type_comment": null,
+          "lineno": 237,
+          "end_lineno": 237
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "davies_score",
+              "lineno": 238,
+              "end_lineno": 238
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "davies_bouldin_score",
+              "lineno": 238,
+              "end_lineno": 238
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "X",
+                "lineno": 238,
+                "end_lineno": 238
+              },
+              {
+                "_type": "Name",
+                "id": "clusters",
+                "lineno": 238,
+                "end_lineno": 238
+              }
+            ],
+            "keywords": [],
+            "lineno": 238,
+            "end_lineno": 238
+          },
+          "type_comment": null,
+          "lineno": 238,
+          "end_lineno": 238
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "table_data",
+              "lineno": 241,
+              "end_lineno": 241
+            }
+          ],
+          "value": {
+            "_type": "List",
+            "elts": [
+              {
+                "_type": "List",
+                "elts": [
+                  {
+                    "_type": "Constant",
+                    "value": "Number of Observations",
+                    "kind": null,
+                    "lineno": 242,
+                    "end_lineno": 242
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "num_observations",
+                    "lineno": 242,
+                    "end_lineno": 242
+                  }
+                ],
+                "lineno": 242,
+                "end_lineno": 242
+              },
+              {
+                "_type": "List",
+                "elts": [
+                  {
+                    "_type": "Constant",
+                    "value": "Silhouette Score",
+                    "kind": null,
+                    "lineno": 243,
+                    "end_lineno": 243
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "sil_score",
+                    "lineno": 243,
+                    "end_lineno": 243
+                  }
+                ],
+                "lineno": 243,
+                "end_lineno": 243
+              },
+              {
+                "_type": "List",
+                "elts": [
+                  {
+                    "_type": "Constant",
+                    "value": "Calinski Harabasz Score",
+                    "kind": null,
+                    "lineno": 244,
+                    "end_lineno": 244
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "calinski_score",
+                    "lineno": 244,
+                    "end_lineno": 244
+                  }
+                ],
+                "lineno": 244,
+                "end_lineno": 244
+              },
+              {
+                "_type": "List",
+                "elts": [
+                  {
+                    "_type": "Constant",
+                    "value": "Davies Bouldin Score",
+                    "kind": null,
+                    "lineno": 245,
+                    "end_lineno": 245
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "davies_score",
+                    "lineno": 245,
+                    "end_lineno": 245
+                  }
+                ],
+                "lineno": 245,
+                "end_lineno": 245
+              }
+            ],
+            "lineno": 241,
+            "end_lineno": 246
+          },
+          "type_comment": null,
+          "lineno": 241,
+          "end_lineno": 246
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "print",
+              "lineno": 249,
+              "end_lineno": 249
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "tabulate",
+                  "lineno": 249,
+                  "end_lineno": 249
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "table_data",
+                    "lineno": 249,
+                    "end_lineno": 249
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "headers",
+                    "value": {
+                      "_type": "List",
+                      "elts": [
+                        {
+                          "_type": "Constant",
+                          "value": "Metric",
+                          "kind": null,
+                          "lineno": 249,
+                          "end_lineno": 249
+                        },
+                        {
+                          "_type": "Constant",
+                          "value": "Value",
+                          "kind": null,
+                          "lineno": 249,
+                          "end_lineno": 249
+                        }
+                      ],
+                      "lineno": 249,
+                      "end_lineno": 249
+                    },
+                    "lineno": 249,
+                    "end_lineno": 249
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "tablefmt",
+                    "value": {
+                      "_const_preview": "pretty"
+                    },
+                    "lineno": 249,
+                    "end_lineno": 249
+                  }
+                ],
+                "lineno": 249,
+                "end_lineno": 249
+              }
+            ],
+            "keywords": [],
+            "lineno": 249,
+            "end_lineno": 249
+          },
+          "lineno": 249,
+          "end_lineno": 249
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 209,
+      "end_lineno": 249
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "train_model",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "X_train",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 251,
+            "end_lineno": 251
+          },
+          {
+            "_type": "arg",
+            "arg": "y_train",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 251,
+            "end_lineno": 251
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Trains a Random Forest Regressor model on the provided data.\n    \n    Parameters:\n    X_train (DataFrame): The training features.\n    y_train (Series): The"
+          },
+          "lineno": 252,
+          "end_lineno": 261
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "model",
+              "lineno": 262,
+              "end_lineno": 262
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "RandomForestRegressor",
+              "lineno": 262,
+              "end_lineno": 262
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "n_estimators",
+                "value": {
+                  "_type": "Constant",
+                  "value": 100,
+                  "kind": null,
+                  "lineno": 262,
+                  "end_lineno": 262
+                },
+                "lineno": 262,
+                "end_lineno": 262
+              },
+              {
+                "_type": "keyword",
+                "arg": "random_state",
+                "value": {
+                  "_type": "Constant",
+                  "value": 42,
+                  "kind": null,
+                  "lineno": 262,
+                  "end_lineno": 262
+                },
+                "lineno": 262,
+                "end_lineno": 262
+              }
+            ],
+            "lineno": 262,
+            "end_lineno": 262
+          },
+          "type_comment": null,
+          "lineno": 262,
+          "end_lineno": 262
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "model",
+                "lineno": 263,
+                "end_lineno": 263
+              },
+              "attr": "fit",
+              "lineno": 263,
+              "end_lineno": 263
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "X_train",
+                "lineno": 263,
+                "end_lineno": 263
+              },
+              {
+                "_type": "Name",
+                "id": "y_train",
+                "lineno": 263,
+                "end_lineno": 263
+              }
+            ],
+            "keywords": [],
+            "lineno": 263,
+            "end_lineno": 263
+          },
+          "lineno": 263,
+          "end_lineno": 263
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "model",
+            "lineno": 264,
+            "end_lineno": 264
+          },
+          "lineno": 264,
+          "end_lineno": 264
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 251,
+      "end_lineno": 264
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "save_and_upload_model",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "model",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 266,
+            "end_lineno": 266
+          },
+          {
+            "_type": "arg",
+            "arg": "local_model_path",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 266,
+            "end_lineno": 266
+          },
+          {
+            "_type": "arg",
+            "arg": "gcs_model_path",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 266,
+            "end_lineno": 266
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Saves the model locally and uploads it to GCS.\n    \n    Parameters:\n    model (RandomForestRegressor): The trained model to be saved and uploaded.\n    loca"
+          },
+          "lineno": 267,
+          "end_lineno": 274
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "joblib",
+                "lineno": 276,
+                "end_lineno": 276
+              },
+              "attr": "dump",
+              "lineno": 276,
+              "end_lineno": 276
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "model",
+                "lineno": 276,
+                "end_lineno": 276
+              },
+              {
+                "_type": "Name",
+                "id": "local_model_path",
+                "lineno": 276,
+                "end_lineno": 276
+              }
+            ],
+            "keywords": [],
+            "lineno": 276,
+            "end_lineno": 276
+          },
+          "lineno": 276,
+          "end_lineno": 276
+        },
+        {
+          "_type": "With",
+          "items": [
+            {
+              "_type": "withitem",
+              "context_expr": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "fs",
+                    "lineno": 279,
+                    "end_lineno": 279
+                  },
+                  "attr": "open",
+                  "lineno": 279,
+                  "end_lineno": 279
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "gcs_model_path",
+                    "lineno": 279,
+                    "end_lineno": 279
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "wb",
+                    "kind": null,
+                    "lineno": 279,
+                    "end_lineno": 279
+                  }
+                ],
+                "keywords": [],
+                "lineno": 279,
+                "end_lineno": 279
+              },
+              "optional_vars": {
+                "_type": "Name",
+                "id": "f",
+                "lineno": 279,
+                "end_lineno": 279
+              }
+            }
+          ],
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "joblib",
+                    "lineno": 280,
+                    "end_lineno": 280
+                  },
+                  "attr": "dump",
+                  "lineno": 280,
+                  "end_lineno": 280
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "model",
+                    "lineno": 280,
+                    "end_lineno": 280
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "f",
+                    "lineno": 280,
+                    "end_lineno": 280
+                  }
+                ],
+                "keywords": [],
+                "lineno": 280,
+                "end_lineno": 280
+              },
+              "lineno": 280,
+              "end_lineno": 280
+            }
+          ],
+          "type_comment": null,
+          "lineno": 279,
+          "end_lineno": 280
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 266,
+      "end_lineno": 280
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "silhouette_analysis",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "df",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 282,
+            "end_lineno": 282
+          },
+          {
+            "_type": "arg",
+            "arg": "figsize",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 282,
+            "end_lineno": 282
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": [
+          {
+            "_type": "Tuple",
+            "elts": [
+              {
+                "_type": "Constant",
+                "value": 25,
+                "kind": null,
+                "lineno": 282,
+                "end_lineno": 282
+              },
+              {
+                "_type": "Constant",
+                "value": 25,
+                "kind": null,
+                "lineno": 282,
+                "end_lineno": 282
+              }
+            ],
+            "lineno": 282,
+            "end_lineno": 282
+          }
+        ]
+      },
+      "body": [
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "start_k",
+              "lineno": 284,
+              "end_lineno": 284
+            }
+          ],
+          "value": {
+            "_type": "Constant",
+            "value": 2,
+            "kind": null,
+            "lineno": 284,
+            "end_lineno": 284
+          },
+          "type_comment": null,
+          "lineno": 284,
+          "end_lineno": 284
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "stop_k",
+              "lineno": 285,
+              "end_lineno": 285
+            }
+          ],
+          "value": {
+            "_type": "Constant",
+            "value": 15,
+            "kind": null,
+            "lineno": 285,
+            "end_lineno": 285
+          },
+          "type_comment": null,
+          "lineno": 285,
+          "end_lineno": 285
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 288,
+                "end_lineno": 288
+              },
+              "attr": "figure",
+              "lineno": 288,
+              "end_lineno": 288
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "figsize",
+                "value": {
+                  "_type": "Name",
+                  "id": "figsize",
+                  "lineno": 288,
+                  "end_lineno": 288
+                },
+                "lineno": 288,
+                "end_lineno": 288
+              }
+            ],
+            "lineno": 288,
+            "end_lineno": 288
+          },
+          "lineno": 288,
+          "end_lineno": 288
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "grid",
+              "lineno": 291,
+              "end_lineno": 291
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "gridspec",
+                "lineno": 291,
+                "end_lineno": 291
+              },
+              "attr": "GridSpec",
+              "lineno": 291,
+              "end_lineno": 291
+            },
+            "args": [
+              {
+                "_type": "BinOp",
+                "left": {
+                  "_type": "BinOp",
+                  "left": {
+                    "_type": "Name",
+                    "id": "stop_k",
+                    "lineno": 291,
+                    "end_lineno": 291
+                  },
+                  "op": {
+                    "_type": "Sub"
+                  },
+                  "right": {
+                    "_type": "Name",
+                    "id": "start_k",
+                    "lineno": 291,
+                    "end_lineno": 291
+                  },
+                  "lineno": 291,
+                  "end_lineno": 291
+                },
+                "op": {
+                  "_type": "Add"
+                },
+                "right": {
+                  "_type": "Constant",
+                  "value": 1,
+                  "kind": null,
+                  "lineno": 291,
+                  "end_lineno": 291
+                },
+                "lineno": 291,
+                "end_lineno": 291
+              },
+              {
+                "_type": "Constant",
+                "value": 2,
+                "kind": null,
+                "lineno": 291,
+                "end_lineno": 291
+              }
+            ],
+            "keywords": [],
+            "lineno": 291,
+            "end_lineno": 291
+          },
+          "type_comment": null,
+          "lineno": 291,
+          "end_lineno": 291
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "first_plot",
+              "lineno": 294,
+              "end_lineno": 294
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 294,
+                "end_lineno": 294
+              },
+              "attr": "subplot",
+              "lineno": 294,
+              "end_lineno": 294
+            },
+            "args": [
+              {
+                "_type": "Subscript",
+                "value": {
+                  "_type": "Name",
+                  "id": "grid",
+                  "lineno": 294,
+                  "end_lineno": 294
+                },
+                "slice": {
+                  "_type": "Tuple",
+                  "elts": [
+                    {
+                      "_type": "Constant",
+                      "value": 0,
+                      "kind": null,
+                      "lineno": 294,
+                      "end_lineno": 294
+                    },
+                    {
+                      "_type": "Slice",
+                      "lower": null,
+                      "upper": null,
+                      "step": null,
+                      "lineno": 294,
+                      "end_lineno": 294
+                    }
+                  ],
+                  "lineno": 294,
+                  "end_lineno": 294
+                },
+                "lineno": 294,
+                "end_lineno": 294
+              }
+            ],
+            "keywords": [],
+            "lineno": 294,
+            "end_lineno": 294
+          },
+          "type_comment": null,
+          "lineno": 294,
+          "end_lineno": 294
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "sns",
+                "lineno": 297,
+                "end_lineno": 297
+              },
+              "attr": "set_palette",
+              "lineno": 297,
+              "end_lineno": 297
+            },
+            "args": [
+              {
+                "_type": "List",
+                "elts": [
+                  {
+                    "_type": "Constant",
+                    "value": "darkorange",
+                    "kind": null,
+                    "lineno": 297,
+                    "end_lineno": 297
+                  }
+                ],
+                "lineno": 297,
+                "end_lineno": 297
+              }
+            ],
+            "keywords": [],
+            "lineno": 297,
+            "end_lineno": 297
+          },
+          "lineno": 297,
+          "end_lineno": 297
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "silhouette_scores",
+              "lineno": 299,
+              "end_lineno": 299
+            }
+          ],
+          "value": {
+            "_type": "List",
+            "elts": [],
+            "lineno": 299,
+            "end_lineno": 299
+          },
+          "type_comment": null,
+          "lineno": 299,
+          "end_lineno": 299
+        },
+        {
+          "_type": "For",
+          "target": {
+            "_type": "Name",
+            "id": "k",
+            "lineno": 301,
+            "end_lineno": 301
+          },
+          "iter": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "range",
+              "lineno": 301,
+              "end_lineno": 301
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "start_k",
+                "lineno": 301,
+                "end_lineno": 301
+              },
+              {
+                "_type": "BinOp",
+                "left": {
+                  "_type": "Name",
+                  "id": "stop_k",
+                  "lineno": 301,
+                  "end_lineno": 301
+                },
+                "op": {
+                  "_type": "Add"
+                },
+                "right": {
+                  "_type": "Constant",
+                  "value": 1,
+                  "kind": null,
+                  "lineno": 301,
+                  "end_lineno": 301
+                },
+                "lineno": 301,
+                "end_lineno": 301
+              }
+            ],
+            "keywords": [],
+            "lineno": 301,
+            "end_lineno": 301
+          },
+          "body": [
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "km",
+                  "lineno": 302,
+                  "end_lineno": 302
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "KMeans",
+                  "lineno": 302,
+                  "end_lineno": 302
+                },
+                "args": [],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "n_clusters",
+                    "value": {
+                      "_type": "Name",
+                      "id": "k",
+                      "lineno": 302,
+                      "end_lineno": 302
+                    },
+                    "lineno": 302,
+                    "end_lineno": 302
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "init",
+                    "value": {
+                      "_const_preview": "k-means++"
+                    },
+                    "lineno": 302,
+                    "end_lineno": 302
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "n_init",
+                    "value": {
+                      "_type": "Constant",
+                      "value": 10,
+                      "kind": null,
+                      "lineno": 302,
+                      "end_lineno": 302
+                    },
+                    "lineno": 302,
+                    "end_lineno": 302
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "max_iter",
+                    "value": {
+                      "_type": "Constant",
+                      "value": 100,
+                      "kind": null,
+                      "lineno": 302,
+                      "end_lineno": 302
+                    },
+                    "lineno": 302,
+                    "end_lineno": 302
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "random_state",
+                    "value": {
+                      "_type": "Constant",
+                      "value": 0,
+                      "kind": null,
+                      "lineno": 302,
+                      "end_lineno": 302
+                    },
+                    "lineno": 302,
+                    "end_lineno": 302
+                  }
+                ],
+                "lineno": 302,
+                "end_lineno": 302
+              },
+              "type_comment": null,
+              "lineno": 302,
+              "end_lineno": 302
+            },
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "km",
+                    "lineno": 303,
+                    "end_lineno": 303
+                  },
+                  "attr": "fit",
+                  "lineno": 303,
+                  "end_lineno": 303
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "df",
+                    "lineno": 303,
+                    "end_lineno": 303
+                  }
+                ],
+                "keywords": [],
+                "lineno": 303,
+                "end_lineno": 303
+              },
+              "lineno": 303,
+              "end_lineno": 303
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "labels",
+                  "lineno": 304,
+                  "end_lineno": 304
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "km",
+                    "lineno": 304,
+                    "end_lineno": 304
+                  },
+                  "attr": "predict",
+                  "lineno": 304,
+                  "end_lineno": 304
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "df",
+                    "lineno": 304,
+                    "end_lineno": 304
+                  }
+                ],
+                "keywords": [],
+                "lineno": 304,
+                "end_lineno": 304
+              },
+              "type_comment": null,
+              "lineno": 304,
+              "end_lineno": 304
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "score",
+                  "lineno": 305,
+                  "end_lineno": 305
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "silhouette_score",
+                  "lineno": 305,
+                  "end_lineno": 305
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "df",
+                    "lineno": 305,
+                    "end_lineno": 305
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "labels",
+                    "lineno": 305,
+                    "end_lineno": 305
+                  }
+                ],
+                "keywords": [],
+                "lineno": 305,
+                "end_lineno": 305
+              },
+              "type_comment": null,
+              "lineno": 305,
+              "end_lineno": 305
+            },
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "silhouette_scores",
+                    "lineno": 306,
+                    "end_lineno": 306
+                  },
+                  "attr": "append",
+                  "lineno": 306,
+                  "end_lineno": 306
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "score",
+                    "lineno": 306,
+                    "end_lineno": 306
+                  }
+                ],
+                "keywords": [],
+                "lineno": 306,
+                "end_lineno": 306
+              },
+              "lineno": 306,
+              "end_lineno": 306
+            }
+          ],
+          "orelse": [],
+          "type_comment": null,
+          "lineno": 301,
+          "end_lineno": 306
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "best_k",
+              "lineno": 308,
+              "end_lineno": 308
+            }
+          ],
+          "value": {
+            "_type": "BinOp",
+            "left": {
+              "_type": "Name",
+              "id": "start_k",
+              "lineno": 308,
+              "end_lineno": 308
+            },
+            "op": {
+              "_type": "Add"
+            },
+            "right": {
+              "_type": "Call",
+              "func": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "silhouette_scores",
+                  "lineno": 308,
+                  "end_lineno": 308
+                },
+                "attr": "index",
+                "lineno": 308,
+                "end_lineno": 308
+              },
+              "args": [
+                {
+                  "_type": "Call",
+                  "func": {
+                    "_type": "Name",
+                    "id": "max",
+                    "lineno": 308,
+                    "end_lineno": 308
+                  },
+                  "args": [
+                    {
+                      "_type": "Name",
+                      "id": "silhouette_scores",
+                      "lineno": 308,
+                      "end_lineno": 308
+                    }
+                  ],
+                  "keywords": [],
+                  "lineno": 308,
+                  "end_lineno": 308
+                }
+              ],
+              "keywords": [],
+              "lineno": 308,
+              "end_lineno": 308
+            },
+            "lineno": 308,
+            "end_lineno": 308
+          },
+          "type_comment": null,
+          "lineno": 308,
+          "end_lineno": 308
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 310,
+                "end_lineno": 310
+              },
+              "attr": "plot",
+              "lineno": 310,
+              "end_lineno": 310
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "range",
+                  "lineno": 310,
+                  "end_lineno": 310
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "start_k",
+                    "lineno": 310,
+                    "end_lineno": 310
+                  },
+                  {
+                    "_type": "BinOp",
+                    "left": {
+                      "_type": "Name",
+                      "id": "stop_k",
+                      "lineno": 310,
+                      "end_lineno": 310
+                    },
+                    "op": {
+                      "_type": "Add"
+                    },
+                    "right": {
+                      "_type": "Constant",
+                      "value": 1,
+                      "kind": null,
+                      "lineno": 310,
+                      "end_lineno": 310
+                    },
+                    "lineno": 310,
+                    "end_lineno": 310
+                  }
+                ],
+                "keywords": [],
+                "lineno": 310,
+                "end_lineno": 310
+              },
+              {
+                "_type": "Name",
+                "id": "silhouette_scores",
+                "lineno": 310,
+                "end_lineno": 310
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "marker",
+                "value": {
+                  "_const_preview": "o"
+                },
+                "lineno": 310,
+                "end_lineno": 310
+              }
+            ],
+            "lineno": 310,
+            "end_lineno": 310
+          },
+          "lineno": 310,
+          "end_lineno": 310
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 311,
+                "end_lineno": 311
+              },
+              "attr": "xticks",
+              "lineno": 311,
+              "end_lineno": 311
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "range",
+                  "lineno": 311,
+                  "end_lineno": 311
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "start_k",
+                    "lineno": 311,
+                    "end_lineno": 311
+                  },
+                  {
+                    "_type": "BinOp",
+                    "left": {
+                      "_type": "Name",
+                      "id": "stop_k",
+                      "lineno": 311,
+                      "end_lineno": 311
+                    },
+                    "op": {
+                      "_type": "Add"
+                    },
+                    "right": {
+                      "_type": "Constant",
+                      "value": 1,
+                      "kind": null,
+                      "lineno": 311,
+                      "end_lineno": 311
+                    },
+                    "lineno": 311,
+                    "end_lineno": 311
+                  }
+                ],
+                "keywords": [],
+                "lineno": 311,
+                "end_lineno": 311
+              }
+            ],
+            "keywords": [],
+            "lineno": 311,
+            "end_lineno": 311
+          },
+          "lineno": 311,
+          "end_lineno": 311
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 312,
+                "end_lineno": 312
+              },
+              "attr": "xlabel",
+              "lineno": 312,
+              "end_lineno": 312
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "Number of clusters (k)",
+                "kind": null,
+                "lineno": 312,
+                "end_lineno": 312
+              }
+            ],
+            "keywords": [],
+            "lineno": 312,
+            "end_lineno": 312
+          },
+          "lineno": 312,
+          "end_lineno": 312
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 313,
+                "end_lineno": 313
+              },
+              "attr": "ylabel",
+              "lineno": 313,
+              "end_lineno": 313
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "Silhouette score",
+                "kind": null,
+                "lineno": 313,
+                "end_lineno": 313
+              }
+            ],
+            "keywords": [],
+            "lineno": 313,
+            "end_lineno": 313
+          },
+          "lineno": 313,
+          "end_lineno": 313
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 314,
+                "end_lineno": 314
+              },
+              "attr": "title",
+              "lineno": 314,
+              "end_lineno": 314
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "Average Silhouette Score for Different k Values",
+                "kind": null,
+                "lineno": 314,
+                "end_lineno": 314
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "fontsize",
+                "value": {
+                  "_type": "Constant",
+                  "value": 15,
+                  "kind": null,
+                  "lineno": 314,
+                  "end_lineno": 314
+                },
+                "lineno": 314,
+                "end_lineno": 314
+              }
+            ],
+            "lineno": 314,
+            "end_lineno": 314
+          },
+          "lineno": 314,
+          "end_lineno": 314
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "optimal_k_text",
+              "lineno": 317,
+              "end_lineno": 317
+            }
+          ],
+          "value": {
+            "_type": "JoinedStr",
+            "values": [
+              {
+                "_type": "Constant",
+                "value": "The k value with the highest Silhouette score is: ",
+                "kind": null,
+                "lineno": 317,
+                "end_lineno": 317
+              },
+              {
+                "_type": "FormattedValue",
+                "value": {
+                  "_type": "Name",
+                  "id": "best_k",
+                  "lineno": 317,
+                  "end_lineno": 317
+                },
+                "conversion": -1,
+                "format_spec": null,
+                "lineno": 317,
+                "end_lineno": 317
+              }
+            ],
+            "lineno": 317,
+            "end_lineno": 317
+          },
+          "type_comment": null,
+          "lineno": 317,
+          "end_lineno": 317
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 318,
+                "end_lineno": 318
+              },
+              "attr": "text",
+              "lineno": 318,
+              "end_lineno": 318
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": 10,
+                "kind": null,
+                "lineno": 318,
+                "end_lineno": 318
+              },
+              {
+                "_type": "Constant",
+                "value": 0.23,
+                "kind": null,
+                "lineno": 318,
+                "end_lineno": 318
+              },
+              {
+                "_type": "Name",
+                "id": "optimal_k_text",
+                "lineno": 318,
+                "end_lineno": 318
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "fontsize",
+                "value": {
+                  "_type": "Constant",
+                  "value": 12,
+                  "kind": null,
+                  "lineno": 318,
+                  "end_lineno": 318
+                },
+                "lineno": 318,
+                "end_lineno": 318
+              },
+              {
+                "_type": "keyword",
+                "arg": "verticalalignment",
+                "value": {
+                  "_const_preview": "bottom"
+                },
+                "lineno": 318,
+                "end_lineno": 318
+              },
+              {
+                "_type": "keyword",
+                "arg": "horizontalalignment",
+                "value": {
+                  "_const_preview": "left"
+                },
+                "lineno": 319,
+                "end_lineno": 319
+              },
+              {
+                "_type": "keyword",
+                "arg": "bbox",
+                "value": {
+                  "_type": "Call",
+                  "func": {
+                    "_type": "Name",
+                    "id": "dict",
+                    "lineno": 319,
+                    "end_lineno": 319
+                  },
+                  "args": [],
+                  "keywords": [
+                    {
+                      "_type": "keyword",
+                      "arg": "facecolor",
+                      "value": {
+                        "_const_preview": "#fcc36d"
+                      },
+                      "lineno": 319,
+                      "end_lineno": 319
+                    },
+                    {
+                      "_type": "keyword",
+                      "arg": "edgecolor",
+                      "value": {
+                        "_const_preview": "#ff6200"
+                      },
+                      "lineno": 319,
+                      "end_lineno": 319
+                    },
+                    {
+                      "_type": "keyword",
+                      "arg": "boxstyle",
+                      "value": {
+                        "_const_preview": "round, pad=0.5"
+                      },
+                      "lineno": 319,
+                      "end_lineno": 319
+                    }
+                  ],
+                  "lineno": 319,
+                  "end_lineno": 319
+                },
+                "lineno": 319,
+                "end_lineno": 319
+              }
+            ],
+            "lineno": 318,
+            "end_lineno": 319
+          },
+          "lineno": 318,
+          "end_lineno": 319
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "colors",
+              "lineno": 323,
+              "end_lineno": 323
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "sns",
+                "lineno": 323,
+                "end_lineno": 323
+              },
+              "attr": "color_palette",
+              "lineno": 323,
+              "end_lineno": 323
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "bright",
+                "kind": null,
+                "lineno": 323,
+                "end_lineno": 323
+              }
+            ],
+            "keywords": [],
+            "lineno": 323,
+            "end_lineno": 323
+          },
+          "type_comment": null,
+          "lineno": 323,
+          "end_lineno": 323
+        },
+        {
+          "_type": "For",
+          "target": {
+            "_type": "Name",
+            "id": "i",
+            "lineno": 325,
+            "end_lineno": 325
+          },
+          "iter": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "range",
+              "lineno": 325,
+              "end_lineno": 325
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "start_k",
+                "lineno": 325,
+                "end_lineno": 325
+              },
+              {
+                "_type": "BinOp",
+                "left": {
+                  "_type": "Name",
+                  "id": "stop_k",
+                  "lineno": 325,
+                  "end_lineno": 325
+                },
+                "op": {
+                  "_type": "Add"
+                },
+                "right": {
+                  "_type": "Constant",
+                  "value": 1,
+                  "kind": null,
+                  "lineno": 325,
+                  "end_lineno": 325
+                },
+                "lineno": 325,
+                "end_lineno": 325
+              }
+            ],
+            "keywords": [],
+            "lineno": 325,
+            "end_lineno": 325
+          },
+          "body": [
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "km",
+                  "lineno": 326,
+                  "end_lineno": 326
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "KMeans",
+                  "lineno": 326,
+                  "end_lineno": 326
+                },
+                "args": [],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "n_clusters",
+                    "value": {
+                      "_type": "Name",
+                      "id": "i",
+                      "lineno": 326,
+                      "end_lineno": 326
+                    },
+                    "lineno": 326,
+                    "end_lineno": 326
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "init",
+                    "value": {
+                      "_const_preview": "k-means++"
+                    },
+                    "lineno": 326,
+                    "end_lineno": 326
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "n_init",
+                    "value": {
+                      "_type": "Constant",
+                      "value": 10,
+                      "kind": null,
+                      "lineno": 326,
+                      "end_lineno": 326
+                    },
+                    "lineno": 326,
+                    "end_lineno": 326
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "max_iter",
+                    "value": {
+                      "_type": "Constant",
+                      "value": 100,
+                      "kind": null,
+                      "lineno": 326,
+                      "end_lineno": 326
+                    },
+                    "lineno": 326,
+                    "end_lineno": 326
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "random_state",
+                    "value": {
+                      "_type": "Constant",
+                      "value": 0,
+                      "kind": null,
+                      "lineno": 326,
+                      "end_lineno": 326
+                    },
+                    "lineno": 326,
+                    "end_lineno": 326
+                  }
+                ],
+                "lineno": 326,
+                "end_lineno": 326
+              },
+              "type_comment": null,
+              "lineno": 326,
+              "end_lineno": 326
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Tuple",
+                  "elts": [
+                    {
+                      "_type": "Name",
+                      "id": "row_idx",
+                      "lineno": 327,
+                      "end_lineno": 327
+                    },
+                    {
+                      "_type": "Name",
+                      "id": "col_idx",
+                      "lineno": 327,
+                      "end_lineno": 327
+                    }
+                  ],
+                  "lineno": 327,
+                  "end_lineno": 327
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "divmod",
+                  "lineno": 327,
+                  "end_lineno": 327
+                },
+                "args": [
+                  {
+                    "_type": "BinOp",
+                    "left": {
+                      "_type": "Name",
+                      "id": "i",
+                      "lineno": 327,
+                      "end_lineno": 327
+                    },
+                    "op": {
+                      "_type": "Sub"
+                    },
+                    "right": {
+                      "_type": "Name",
+                      "id": "start_k",
+                      "lineno": 327,
+                      "end_lineno": 327
+                    },
+                    "lineno": 327,
+                    "end_lineno": 327
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": 2,
+                    "kind": null,
+                    "lineno": 327,
+                    "end_lineno": 327
+                  }
+                ],
+                "keywords": [],
+                "lineno": 327,
+                "end_lineno": 327
+              },
+              "type_comment": null,
+              "lineno": 327,
+              "end_lineno": 327
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "ax",
+                  "lineno": 330,
+                  "end_lineno": 330
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "plt",
+                    "lineno": 330,
+                    "end_lineno": 330
+                  },
+                  "attr": "subplot",
+                  "lineno": 330,
+                  "end_lineno": 330
+                },
+                "args": [
+                  {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Name",
+                      "id": "grid",
+                      "lineno": 330,
+                      "end_lineno": 330
+                    },
+                    "slice": {
+                      "_type": "Tuple",
+                      "elts": [
+                        {
+                          "_type": "BinOp",
+                          "left": {
+                            "_type": "Name",
+                            "id": "row_idx",
+                            "lineno": 330,
+                            "end_lineno": 330
+                          },
+                          "op": {
+                            "_type": "Add"
+                          },
+                          "right": {
+                            "_type": "Constant",
+                            "value": 1,
+                            "kind": null,
+                            "lineno": 330,
+                            "end_lineno": 330
+                          },
+                          "lineno": 330,
+                          "end_lineno": 330
+                        },
+                        {
+                          "_type": "Name",
+                          "id": "col_idx",
+                          "lineno": 330,
+                          "end_lineno": 330
+                        }
+                      ],
+                      "lineno": 330,
+                      "end_lineno": 330
+                    },
+                    "lineno": 330,
+                    "end_lineno": 330
+                  }
+                ],
+                "keywords": [],
+                "lineno": 330,
+                "end_lineno": 330
+              },
+              "type_comment": null,
+              "lineno": 330,
+              "end_lineno": 330
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "visualizer",
+                  "lineno": 332,
+                  "end_lineno": 332
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "SilhouetteVisualizer",
+                  "lineno": 332,
+                  "end_lineno": 332
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "km",
+                    "lineno": 332,
+                    "end_lineno": 332
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "colors",
+                    "value": {
+                      "_type": "Name",
+                      "id": "colors",
+                      "lineno": 332,
+                      "end_lineno": 332
+                    },
+                    "lineno": 332,
+                    "end_lineno": 332
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "ax",
+                    "value": {
+                      "_type": "Name",
+                      "id": "ax",
+                      "lineno": 332,
+                      "end_lineno": 332
+                    },
+                    "lineno": 332,
+                    "end_lineno": 332
+                  }
+                ],
+                "lineno": 332,
+                "end_lineno": 332
+              },
+              "type_comment": null,
+              "lineno": 332,
+              "end_lineno": 332
+            },
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "visualizer",
+                    "lineno": 333,
+                    "end_lineno": 333
+                  },
+                  "attr": "fit",
+                  "lineno": 333,
+                  "end_lineno": 333
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "df",
+                    "lineno": 333,
+                    "end_lineno": 333
+                  }
+                ],
+                "keywords": [],
+                "lineno": 333,
+                "end_lineno": 333
+              },
+              "lineno": 333,
+              "end_lineno": 333
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "score",
+                  "lineno": 336,
+                  "end_lineno": 336
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "silhouette_score",
+                  "lineno": 336,
+                  "end_lineno": 336
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "df",
+                    "lineno": 336,
+                    "end_lineno": 336
+                  },
+                  {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "km",
+                      "lineno": 336,
+                      "end_lineno": 336
+                    },
+                    "attr": "labels_",
+                    "lineno": 336,
+                    "end_lineno": 336
+                  }
+                ],
+                "keywords": [],
+                "lineno": 336,
+                "end_lineno": 336
+              },
+              "type_comment": null,
+              "lineno": 336,
+              "end_lineno": 336
+            },
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "ax",
+                    "lineno": 337,
+                    "end_lineno": 337
+                  },
+                  "attr": "text",
+                  "lineno": 337,
+                  "end_lineno": 337
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": 0.97,
+                    "kind": null,
+                    "lineno": 337,
+                    "end_lineno": 337
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": 0.02,
+                    "kind": null,
+                    "lineno": 337,
+                    "end_lineno": 337
+                  },
+                  {
+                    "_type": "JoinedStr",
+                    "values": [
+                      {
+                        "_type": "Constant",
+                        "value": "Silhouette Score: ",
+                        "kind": null,
+                        "lineno": 337,
+                        "end_lineno": 337
+                      },
+                      {
+                        "_type": "FormattedValue",
+                        "value": {
+                          "_type": "Name",
+                          "id": "score",
+                          "lineno": 337,
+                          "end_lineno": 337
+                        },
+                        "conversion": -1,
+                        "format_spec": {
+                          "_type": "JoinedStr",
+                          "values": [
+                            {
+                              "_type": "Constant",
+                              "value": ".2f",
+                              "kind": null,
+                              "lineno": 337,
+                              "end_lineno": 337
+                            }
+                          ],
+                          "lineno": 337,
+                          "end_lineno": 337
+                        },
+                        "lineno": 337,
+                        "end_lineno": 337
+                      }
+                    ],
+                    "lineno": 337,
+                    "end_lineno": 337
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "fontsize",
+                    "value": {
+                      "_type": "Constant",
+                      "value": 12,
+                      "kind": null,
+                      "lineno": 337,
+                      "end_lineno": 337
+                    },
+                    "lineno": 337,
+                    "end_lineno": 337
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "ha",
+                    "value": {
+                      "_const_preview": "right"
+                    },
+                    "lineno": 338,
+                    "end_lineno": 338
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "transform",
+                    "value": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Name",
+                        "id": "ax",
+                        "lineno": 338,
+                        "end_lineno": 338
+                      },
+                      "attr": "transAxes",
+                      "lineno": 338,
+                      "end_lineno": 338
+                    },
+                    "lineno": 338,
+                    "end_lineno": 338
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "color",
+                    "value": {
+                      "_const_preview": "red"
+                    },
+                    "lineno": 338,
+                    "end_lineno": 338
+                  }
+                ],
+                "lineno": 337,
+                "end_lineno": 338
+              },
+              "lineno": 337,
+              "end_lineno": 338
+            },
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "ax",
+                    "lineno": 340,
+                    "end_lineno": 340
+                  },
+                  "attr": "set_title",
+                  "lineno": 340,
+                  "end_lineno": 340
+                },
+                "args": [
+                  {
+                    "_type": "JoinedStr",
+                    "values": [
+                      {
+                        "_type": "Constant",
+                        "value": "Silhouette Plot for ",
+                        "kind": null,
+                        "lineno": 340,
+                        "end_lineno": 340
+                      },
+                      {
+                        "_type": "FormattedValue",
+                        "value": {
+                          "_type": "Name",
+                          "id": "i",
+                          "lineno": 340,
+                          "end_lineno": 340
+                        },
+                        "conversion": -1,
+                        "format_spec": null,
+                        "lineno": 340,
+                        "end_lineno": 340
+                      },
+                      {
+                        "_type": "Constant",
+                        "value": " Clusters",
+                        "kind": null,
+                        "lineno": 340,
+                        "end_lineno": 340
+                      }
+                    ],
+                    "lineno": 340,
+                    "end_lineno": 340
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "fontsize",
+                    "value": {
+                      "_type": "Constant",
+                      "value": 15,
+                      "kind": null,
+                      "lineno": 340,
+                      "end_lineno": 340
+                    },
+                    "lineno": 340,
+                    "end_lineno": 340
+                  }
+                ],
+                "lineno": 340,
+                "end_lineno": 340
+              },
+              "lineno": 340,
+              "end_lineno": 340
+            }
+          ],
+          "orelse": [],
+          "type_comment": null,
+          "lineno": 325,
+          "end_lineno": 340
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 342,
+                "end_lineno": 342
+              },
+              "attr": "tight_layout",
+              "lineno": 342,
+              "end_lineno": 342
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 342,
+            "end_lineno": 342
+          },
+          "lineno": 342,
+          "end_lineno": 342
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "plt",
+                "lineno": 343,
+                "end_lineno": 343
+              },
+              "attr": "show",
+              "lineno": 343,
+              "end_lineno": 343
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 343,
+            "end_lineno": 343
+          },
+          "lineno": 343,
+          "end_lineno": 343
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "best_k",
+            "lineno": 345,
+            "end_lineno": 345
+          },
+          "lineno": 345,
+          "end_lineno": 345
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 282,
+      "end_lineno": 345
+    }
+  ],
+  "type_ignores": []
+}

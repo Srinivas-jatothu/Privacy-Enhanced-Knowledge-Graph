@@ -1,0 +1,10 @@
+"""
+A test module for testing_scaler module.
+"""
+import os
+import pytest
+from src.scaler import scaler
+
+# Determine the absolute path of the project directory
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+INPUT_PATH = os.path.join(PROJECT_DIR, "data", "processed","seasonality.pkl")

@@ -1,0 +1,32 @@
+{
+  "relpath": "test/test_cancellation_details.py",
+  "manifest_meta": {
+    "relpath": "test/test_cancellation_details.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_cancellation_details.py",
+    "size": 667,
+    "mtime": 1763123859.565727,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "0138912dcfce98ca10ccda53eaf4f49290c7ea5cb16b63aa5fb3f39762ccf603",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\test__test_cancellation_details.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'test_cancellation_details.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "667",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

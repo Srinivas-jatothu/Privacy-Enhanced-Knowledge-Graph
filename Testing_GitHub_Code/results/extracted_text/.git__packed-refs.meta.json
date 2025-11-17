@@ -1,0 +1,32 @@
+{
+  "relpath": ".git/packed-refs",
+  "manifest_meta": {
+    "relpath": ".git/packed-refs",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\packed-refs",
+    "size": 817,
+    "mtime": 1763123855.0488155,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "c84751e5f8b731902b79fc416ad41bd483ceb31df7d1a52d2d0bdd98458ec6bd",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.git__packed-refs.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "ISO-8859-1",
+    "X-TIKA:parse_time_millis": "7",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'packed-refs'",
+    "X-TIKA:detectedEncoding": "ISO-8859-1",
+    "Content-Length": "817",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=ISO-8859-1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "relpath": "gcpdeploy/src/serve/Dockerfile",
+  "manifest_meta": {
+    "relpath": "gcpdeploy/src/serve/Dockerfile",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\serve\\Dockerfile",
+    "size": 860,
+    "mtime": 1763123859.3727162,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "b4fd471b5054028e55b10aa2ce593846e51b0b5b6b3dd9e1de7418f16fddae11",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\gcpdeploy__src__serve__Dockerfile.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "1",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'Dockerfile'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "860",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "relpath": ".dvcignore",
+  "manifest_meta": {
+    "relpath": ".dvcignore",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvcignore",
+    "size": 21,
+    "mtime": 1763123856.727403,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "367ddd68e3ea152808f749e1bd3b94354df21662540e75ece4bf9aed44cf12f6",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.dvcignore.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "ISO-8859-1",
+    "X-TIKA:parse_time_millis": "4",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'.dvcignore'",
+    "X-TIKA:detectedEncoding": "ISO-8859-1",
+    "Content-Length": "21",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=ISO-8859-1"
+  }
+}

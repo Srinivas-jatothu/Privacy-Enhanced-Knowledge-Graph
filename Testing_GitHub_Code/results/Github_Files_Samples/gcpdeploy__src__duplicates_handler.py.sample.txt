@@ -1,0 +1,9 @@
+"""
+A module for removing duplicates in dataset based on subset of 
+following columns:
+- InvoiceNo
+- StockCode
+- Description
+- CustomerID
+- Quantity
+"""

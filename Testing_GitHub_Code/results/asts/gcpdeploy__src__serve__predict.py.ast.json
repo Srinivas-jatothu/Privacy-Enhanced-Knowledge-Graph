@@ -1,0 +1,3723 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "ImportFrom",
+      "module": "flask",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "Flask",
+          "asname": null,
+          "lineno": 1,
+          "end_lineno": 1
+        },
+        {
+          "_type": "alias",
+          "name": "jsonify",
+          "asname": null,
+          "lineno": 1,
+          "end_lineno": 1
+        },
+        {
+          "_type": "alias",
+          "name": "request",
+          "asname": null,
+          "lineno": 1,
+          "end_lineno": 1
+        }
+      ],
+      "level": 0,
+      "lineno": 1,
+      "end_lineno": 1
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "joblib",
+          "asname": null,
+          "lineno": 3,
+          "end_lineno": 3
+        }
+      ],
+      "lineno": 3,
+      "end_lineno": 3
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "os",
+          "asname": null,
+          "lineno": 4,
+          "end_lineno": 4
+        }
+      ],
+      "lineno": 4,
+      "end_lineno": 4
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "json",
+          "asname": null,
+          "lineno": 5,
+          "end_lineno": 5
+        }
+      ],
+      "lineno": 5,
+      "end_lineno": 5
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "dotenv",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "load_dotenv",
+          "asname": null,
+          "lineno": 6,
+          "end_lineno": 6
+        }
+      ],
+      "level": 0,
+      "lineno": 6,
+      "end_lineno": 6
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "pandas",
+          "asname": "pd",
+          "lineno": 7,
+          "end_lineno": 7
+        }
+      ],
+      "lineno": 7,
+      "end_lineno": 7
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "time",
+          "asname": null,
+          "lineno": 9,
+          "end_lineno": 9
+        }
+      ],
+      "lineno": 9,
+      "end_lineno": 9
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "datetime",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "datetime",
+          "asname": null,
+          "lineno": 10,
+          "end_lineno": 10
+        }
+      ],
+      "level": 0,
+      "lineno": 10,
+      "end_lineno": 10
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "google.cloud",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "storage",
+          "asname": null,
+          "lineno": 11,
+          "end_lineno": 11
+        },
+        {
+          "_type": "alias",
+          "name": "logging",
+          "asname": null,
+          "lineno": 11,
+          "end_lineno": 11
+        },
+        {
+          "_type": "alias",
+          "name": "bigquery",
+          "asname": null,
+          "lineno": 11,
+          "end_lineno": 11
+        }
+      ],
+      "level": 0,
+      "lineno": 11,
+      "end_lineno": 11
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "google.cloud.bigquery",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "SchemaField",
+          "asname": null,
+          "lineno": 12,
+          "end_lineno": 12
+        }
+      ],
+      "level": 0,
+      "lineno": 12,
+      "end_lineno": 12
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "google.api_core.exceptions",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "NotFound",
+          "asname": null,
+          "lineno": 13,
+          "end_lineno": 13
+        }
+      ],
+      "level": 0,
+      "lineno": 13,
+      "end_lineno": 13
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "google.oauth2",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "service_account",
+          "asname": null,
+          "lineno": 14,
+          "end_lineno": 14
+        }
+      ],
+      "level": 0,
+      "lineno": 14,
+      "end_lineno": 14
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "google.logging.type",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "log_severity_pb2",
+          "asname": "severity",
+          "lineno": 15,
+          "end_lineno": 15
+        }
+      ],
+      "level": 0,
+      "lineno": 15,
+      "end_lineno": 15
+    },
+    {
+      "_type": "Expr",
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "load_dotenv",
+          "lineno": 18,
+          "end_lineno": 18
+        },
+        "args": [],
+        "keywords": [],
+        "lineno": 18,
+        "end_lineno": 18
+      },
+      "lineno": 18,
+      "end_lineno": 18
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "storage_client",
+          "lineno": 21,
+          "end_lineno": 21
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "storage",
+            "lineno": 21,
+            "end_lineno": 21
+          },
+          "attr": "Client",
+          "lineno": 21,
+          "end_lineno": 21
+        },
+        "args": [],
+        "keywords": [],
+        "lineno": 21,
+        "end_lineno": 21
+      },
+      "type_comment": null,
+      "lineno": 21,
+      "end_lineno": 21
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "app",
+          "lineno": 23,
+          "end_lineno": 23
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "Flask",
+          "lineno": 23,
+          "end_lineno": 23
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "__name__",
+            "lineno": 23,
+            "end_lineno": 23
+          }
+        ],
+        "keywords": [],
+        "lineno": 23,
+        "end_lineno": 23
+      },
+      "type_comment": null,
+      "lineno": 23,
+      "end_lineno": 23
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "service_account_file",
+          "lineno": 27,
+          "end_lineno": 27
+        }
+      ],
+      "value": {
+        "_const_preview": "ecommerce-mlops-406821-40598235283c.json"
+      },
+      "type_comment": null,
+      "lineno": 27,
+      "end_lineno": 27
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "credentials",
+          "lineno": 28,
+          "end_lineno": 28
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "service_account",
+              "lineno": 28,
+              "end_lineno": 28
+            },
+            "attr": "Credentials",
+            "lineno": 28,
+            "end_lineno": 28
+          },
+          "attr": "from_service_account_file",
+          "lineno": 28,
+          "end_lineno": 28
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "service_account_file",
+            "lineno": 28,
+            "end_lineno": 28
+          }
+        ],
+        "keywords": [],
+        "lineno": 28,
+        "end_lineno": 28
+      },
+      "type_comment": null,
+      "lineno": 28,
+      "end_lineno": 28
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "client",
+          "lineno": 29,
+          "end_lineno": 29
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "logging",
+            "lineno": 29,
+            "end_lineno": 29
+          },
+          "attr": "Client",
+          "lineno": 29,
+          "end_lineno": 29
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "credentials",
+            "value": {
+              "_type": "Name",
+              "id": "credentials",
+              "lineno": 29,
+              "end_lineno": 29
+            },
+            "lineno": 29,
+            "end_lineno": 29
+          }
+        ],
+        "lineno": 29,
+        "end_lineno": 29
+      },
+      "type_comment": null,
+      "lineno": 29,
+      "end_lineno": 29
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "logger",
+          "lineno": 30,
+          "end_lineno": 30
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "client",
+            "lineno": 30,
+            "end_lineno": 30
+          },
+          "attr": "logger",
+          "lineno": 30,
+          "end_lineno": 30
+        },
+        "args": [
+          {
+            "_type": "Constant",
+            "value": "training_pipeline",
+            "kind": null,
+            "lineno": 30,
+            "end_lineno": 30
+          }
+        ],
+        "keywords": [],
+        "lineno": 30,
+        "end_lineno": 30
+      },
+      "type_comment": null,
+      "lineno": 30,
+      "end_lineno": 30
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "bq_client",
+          "lineno": 32,
+          "end_lineno": 32
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "bigquery",
+            "lineno": 32,
+            "end_lineno": 32
+          },
+          "attr": "Client",
+          "lineno": 32,
+          "end_lineno": 32
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "credentials",
+            "value": {
+              "_type": "Name",
+              "id": "credentials",
+              "lineno": 32,
+              "end_lineno": 32
+            },
+            "lineno": 32,
+            "end_lineno": 32
+          }
+        ],
+        "lineno": 32,
+        "end_lineno": 32
+      },
+      "type_comment": null,
+      "lineno": 32,
+      "end_lineno": 32
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "table_id",
+          "lineno": 33,
+          "end_lineno": 33
+        }
+      ],
+      "value": {
+        "_type": "Subscript",
+        "value": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "os",
+            "lineno": 33,
+            "end_lineno": 33
+          },
+          "attr": "environ",
+          "lineno": 33,
+          "end_lineno": 33
+        },
+        "slice": {
+          "_type": "Constant",
+          "value": "BIGQUERY_TABLE_ID",
+          "kind": null,
+          "lineno": 33,
+          "end_lineno": 33
+        },
+        "lineno": 33,
+        "end_lineno": 33
+      },
+      "type_comment": null,
+      "lineno": 33,
+      "end_lineno": 33
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "get_table_schema",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "Build the table schema for the output table\n    \n    Returns:\n        List: List of `SchemaField` objects"
+          },
+          "lineno": 37,
+          "end_lineno": 40
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "List",
+            "elts": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "SchemaField",
+                  "lineno": 43,
+                  "end_lineno": 43
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "PC1",
+                    "kind": null,
+                    "lineno": 43,
+                    "end_lineno": 43
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "FLOAT",
+                    "kind": null,
+                    "lineno": 43,
+                    "end_lineno": 43
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "mode",
+                    "value": {
+                      "_const_preview": "NULLABLE"
+                    },
+                    "lineno": 43,
+                    "end_lineno": 43
+                  }
+                ],
+                "lineno": 43,
+                "end_lineno": 43
+              },
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "SchemaField",
+                  "lineno": 44,
+                  "end_lineno": 44
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "PC2",
+                    "kind": null,
+                    "lineno": 44,
+                    "end_lineno": 44
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "FLOAT",
+                    "kind": null,
+                    "lineno": 44,
+                    "end_lineno": 44
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "mode",
+                    "value": {
+                      "_const_preview": "NULLABLE"
+                    },
+                    "lineno": 44,
+                    "end_lineno": 44
+                  }
+                ],
+                "lineno": 44,
+                "end_lineno": 44
+              },
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "SchemaField",
+                  "lineno": 45,
+                  "end_lineno": 45
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "PC3",
+                    "kind": null,
+                    "lineno": 45,
+                    "end_lineno": 45
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "FLOAT",
+                    "kind": null,
+                    "lineno": 45,
+                    "end_lineno": 45
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "mode",
+                    "value": {
+                      "_const_preview": "NULLABLE"
+                    },
+                    "lineno": 45,
+                    "end_lineno": 45
+                  }
+                ],
+                "lineno": 45,
+                "end_lineno": 45
+              },
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "SchemaField",
+                  "lineno": 46,
+                  "end_lineno": 46
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "PC4",
+                    "kind": null,
+                    "lineno": 46,
+                    "end_lineno": 46
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "FLOAT",
+                    "kind": null,
+                    "lineno": 46,
+                    "end_lineno": 46
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "mode",
+                    "value": {
+                      "_const_preview": "NULLABLE"
+                    },
+                    "lineno": 46,
+                    "end_lineno": 46
+                  }
+                ],
+                "lineno": 46,
+                "end_lineno": 46
+              },
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "SchemaField",
+                  "lineno": 47,
+                  "end_lineno": 47
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "PC5",
+                    "kind": null,
+                    "lineno": 47,
+                    "end_lineno": 47
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "FLOAT",
+                    "kind": null,
+                    "lineno": 47,
+                    "end_lineno": 47
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "mode",
+                    "value": {
+                      "_const_preview": "NULLABLE"
+                    },
+                    "lineno": 47,
+                    "end_lineno": 47
+                  }
+                ],
+                "lineno": 47,
+                "end_lineno": 47
+              },
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "SchemaField",
+                  "lineno": 48,
+                  "end_lineno": 48
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "PC6",
+                    "kind": null,
+                    "lineno": 48,
+                    "end_lineno": 48
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "FLOAT",
+                    "kind": null,
+                    "lineno": 48,
+                    "end_lineno": 48
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "mode",
+                    "value": {
+                      "_const_preview": "NULLABLE"
+                    },
+                    "lineno": 48,
+                    "end_lineno": 48
+                  }
+                ],
+                "lineno": 48,
+                "end_lineno": 48
+              },
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "SchemaField",
+                  "lineno": 49,
+                  "end_lineno": 49
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "prediction",
+                    "kind": null,
+                    "lineno": 49,
+                    "end_lineno": 49
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "FLOAT",
+                    "kind": null,
+                    "lineno": 49,
+                    "end_lineno": 49
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "mode",
+                    "value": {
+                      "_const_preview": "NULLABLE"
+                    },
+                    "lineno": 49,
+                    "end_lineno": 49
+                  }
+                ],
+                "lineno": 49,
+                "end_lineno": 49
+              },
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "SchemaField",
+                  "lineno": 50,
+                  "end_lineno": 50
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "timestamp",
+                    "kind": null,
+                    "lineno": 50,
+                    "end_lineno": 50
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "TIMESTAMP",
+                    "kind": null,
+                    "lineno": 50,
+                    "end_lineno": 50
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "mode",
+                    "value": {
+                      "_const_preview": "NULLABLE"
+                    },
+                    "lineno": 50,
+                    "end_lineno": 50
+                  }
+                ],
+                "lineno": 50,
+                "end_lineno": 50
+              },
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "SchemaField",
+                  "lineno": 51,
+                  "end_lineno": 51
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "latency",
+                    "kind": null,
+                    "lineno": 51,
+                    "end_lineno": 51
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "FLOAT",
+                    "kind": null,
+                    "lineno": 51,
+                    "end_lineno": 51
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "mode",
+                    "value": {
+                      "_const_preview": "NULLABLE"
+                    },
+                    "lineno": 51,
+                    "end_lineno": 51
+                  }
+                ],
+                "lineno": 51,
+                "end_lineno": 51
+              }
+            ],
+            "lineno": 41,
+            "end_lineno": 52
+          },
+          "lineno": 41,
+          "end_lineno": 52
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 36,
+      "end_lineno": 52
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "create_table_if_not_exists",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "client",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 55,
+            "end_lineno": 55
+          },
+          {
+            "_type": "arg",
+            "arg": "table_id",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 55,
+            "end_lineno": 55
+          },
+          {
+            "_type": "arg",
+            "arg": "schema",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 55,
+            "end_lineno": 55
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "Create a BigQuery table if it doesn't exist\n    \n    Args:\n        client (bigquery.client.Client): A BigQuery Client\n        table_id (str): The ID of the tabl"
+          },
+          "lineno": 56,
+          "end_lineno": 64
+        },
+        {
+          "_type": "Try",
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "client",
+                    "lineno": 66,
+                    "end_lineno": 66
+                  },
+                  "attr": "get_table",
+                  "lineno": 66,
+                  "end_lineno": 66
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "table_id",
+                    "lineno": 66,
+                    "end_lineno": 66
+                  }
+                ],
+                "keywords": [],
+                "lineno": 66,
+                "end_lineno": 66
+              },
+              "lineno": 66,
+              "end_lineno": 66
+            },
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "print",
+                  "lineno": 67,
+                  "end_lineno": 67
+                },
+                "args": [
+                  {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_const_preview": "Table {} already exists."
+                      },
+                      "attr": "format",
+                      "lineno": 67,
+                      "end_lineno": 67
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "table_id",
+                        "lineno": 67,
+                        "end_lineno": 67
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 67,
+                    "end_lineno": 67
+                  }
+                ],
+                "keywords": [],
+                "lineno": 67,
+                "end_lineno": 67
+              },
+              "lineno": 67,
+              "end_lineno": 67
+            }
+          ],
+          "handlers": [
+            {
+              "_type": "ExceptHandler",
+              "type": {
+                "_type": "Name",
+                "id": "NotFound",
+                "lineno": 68,
+                "end_lineno": 68
+              },
+              "name": null,
+              "body": [
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "print",
+                      "lineno": 69,
+                      "end_lineno": 69
+                    },
+                    "args": [
+                      {
+                        "_type": "Call",
+                        "func": {
+                          "_type": "Attribute",
+                          "value": {
+                            "_const_preview": "Table {} is not found. Creating table..."
+                          },
+                          "attr": "format",
+                          "lineno": 69,
+                          "end_lineno": 69
+                        },
+                        "args": [
+                          {
+                            "_type": "Name",
+                            "id": "table_id",
+                            "lineno": 69,
+                            "end_lineno": 69
+                          }
+                        ],
+                        "keywords": [],
+                        "lineno": 69,
+                        "end_lineno": 69
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 69,
+                    "end_lineno": 69
+                  },
+                  "lineno": 69,
+                  "end_lineno": 69
+                },
+                {
+                  "_type": "Assign",
+                  "targets": [
+                    {
+                      "_type": "Name",
+                      "id": "table",
+                      "lineno": 70,
+                      "end_lineno": 70
+                    }
+                  ],
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Name",
+                        "id": "bigquery",
+                        "lineno": 70,
+                        "end_lineno": 70
+                      },
+                      "attr": "Table",
+                      "lineno": 70,
+                      "end_lineno": 70
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "table_id",
+                        "lineno": 70,
+                        "end_lineno": 70
+                      }
+                    ],
+                    "keywords": [
+                      {
+                        "_type": "keyword",
+                        "arg": "schema",
+                        "value": {
+                          "_type": "Name",
+                          "id": "schema",
+                          "lineno": 70,
+                          "end_lineno": 70
+                        },
+                        "lineno": 70,
+                        "end_lineno": 70
+                      }
+                    ],
+                    "lineno": 70,
+                    "end_lineno": 70
+                  },
+                  "type_comment": null,
+                  "lineno": 70,
+                  "end_lineno": 70
+                },
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Name",
+                        "id": "client",
+                        "lineno": 71,
+                        "end_lineno": 71
+                      },
+                      "attr": "create_table",
+                      "lineno": 71,
+                      "end_lineno": 71
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "table",
+                        "lineno": 71,
+                        "end_lineno": 71
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 71,
+                    "end_lineno": 71
+                  },
+                  "lineno": 71,
+                  "end_lineno": 71
+                },
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "print",
+                      "lineno": 72,
+                      "end_lineno": 72
+                    },
+                    "args": [
+                      {
+                        "_type": "Call",
+                        "func": {
+                          "_type": "Attribute",
+                          "value": {
+                            "_const_preview": "Created table {}.{}.{}"
+                          },
+                          "attr": "format",
+                          "lineno": 72,
+                          "end_lineno": 72
+                        },
+                        "args": [
+                          {
+                            "_type": "Attribute",
+                            "value": {
+                              "_type": "Name",
+                              "id": "table",
+                              "lineno": 72,
+                              "end_lineno": 72
+                            },
+                            "attr": "project",
+                            "lineno": 72,
+                            "end_lineno": 72
+                          },
+                          {
+                            "_type": "Attribute",
+                            "value": {
+                              "_type": "Name",
+                              "id": "table",
+                              "lineno": 72,
+                              "end_lineno": 72
+                            },
+                            "attr": "dataset_id",
+                            "lineno": 72,
+                            "end_lineno": 72
+                          },
+                          {
+                            "_type": "Attribute",
+                            "value": {
+                              "_type": "Name",
+                              "id": "table",
+                              "lineno": 72,
+                              "end_lineno": 72
+                            },
+                            "attr": "table_id",
+                            "lineno": 72,
+                            "end_lineno": 72
+                          }
+                        ],
+                        "keywords": [],
+                        "lineno": 72,
+                        "end_lineno": 72
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 72,
+                    "end_lineno": 72
+                  },
+                  "lineno": 72,
+                  "end_lineno": 72
+                }
+              ],
+              "lineno": 68,
+              "end_lineno": 72
+            }
+          ],
+          "orelse": [],
+          "finalbody": [],
+          "lineno": 65,
+          "end_lineno": 72
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 55,
+      "end_lineno": 72
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "initialize_variables",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n  Initialize environment variables.\n  Returns:\n      tuple: The project id and bucket name.\n  "
+          },
+          "lineno": 77,
+          "end_lineno": 81
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "project_id",
+              "lineno": 82,
+              "end_lineno": 82
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "os",
+                "lineno": 82,
+                "end_lineno": 82
+              },
+              "attr": "getenv",
+              "lineno": 82,
+              "end_lineno": 82
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "PROJECT_ID",
+                "kind": null,
+                "lineno": 82,
+                "end_lineno": 82
+              }
+            ],
+            "keywords": [],
+            "lineno": 82,
+            "end_lineno": 82
+          },
+          "type_comment": null,
+          "lineno": 82,
+          "end_lineno": 82
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "bucket_name",
+              "lineno": 83,
+              "end_lineno": 83
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "os",
+                "lineno": 83,
+                "end_lineno": 83
+              },
+              "attr": "getenv",
+              "lineno": 83,
+              "end_lineno": 83
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "BUCKET_NAME",
+                "kind": null,
+                "lineno": 83,
+                "end_lineno": 83
+              }
+            ],
+            "keywords": [],
+            "lineno": 83,
+            "end_lineno": 83
+          },
+          "type_comment": null,
+          "lineno": 83,
+          "end_lineno": 83
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Tuple",
+            "elts": [
+              {
+                "_type": "Name",
+                "id": "project_id",
+                "lineno": 84,
+                "end_lineno": 84
+              },
+              {
+                "_type": "Name",
+                "id": "bucket_name",
+                "lineno": 84,
+                "end_lineno": 84
+              }
+            ],
+            "lineno": 84,
+            "end_lineno": 84
+          },
+          "lineno": 84,
+          "end_lineno": 84
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 76,
+      "end_lineno": 84
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "initialize_client_and_bucket",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "bucket_name",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 86,
+            "end_lineno": 86
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n  Initialize a storage client and get a bucket object.\n  Args:\n      bucket_name (str): The name of the bucket.\n  Returns:\n      tuple: The storage client and "
+          },
+          "lineno": 87,
+          "end_lineno": 93
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "storage_client",
+              "lineno": 94,
+              "end_lineno": 94
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "storage",
+                "lineno": 94,
+                "end_lineno": 94
+              },
+              "attr": "Client",
+              "lineno": 94,
+              "end_lineno": 94
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 94,
+            "end_lineno": 94
+          },
+          "type_comment": null,
+          "lineno": 94,
+          "end_lineno": 94
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "bucket",
+              "lineno": 95,
+              "end_lineno": 95
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "storage_client",
+                "lineno": 95,
+                "end_lineno": 95
+              },
+              "attr": "get_bucket",
+              "lineno": 95,
+              "end_lineno": 95
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "bucket_name",
+                "lineno": 95,
+                "end_lineno": 95
+              }
+            ],
+            "keywords": [],
+            "lineno": 95,
+            "end_lineno": 95
+          },
+          "type_comment": null,
+          "lineno": 95,
+          "end_lineno": 95
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Tuple",
+            "elts": [
+              {
+                "_type": "Name",
+                "id": "storage_client",
+                "lineno": 96,
+                "end_lineno": 96
+              },
+              {
+                "_type": "Name",
+                "id": "bucket",
+                "lineno": 96,
+                "end_lineno": 96
+              }
+            ],
+            "lineno": 96,
+            "end_lineno": 96
+          },
+          "lineno": 96,
+          "end_lineno": 96
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 86,
+      "end_lineno": 96
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "load_model",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "bucket",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 98,
+            "end_lineno": 98
+          },
+          {
+            "_type": "arg",
+            "arg": "bucket_name",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 98,
+            "end_lineno": 98
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n  Fetch and load the latest model from the bucket.\n  Args:\n      bucket (Bucket): The bucket object.\n      bucket_name (str): The name of the bucket.\n  Returns"
+          },
+          "lineno": 99,
+          "end_lineno": 106
+        },
+        {
+          "_type": "Try",
+          "body": [
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "latest_model_blob_name",
+                  "lineno": 108,
+                  "end_lineno": 108
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "fetch_latest_model",
+                  "lineno": 108,
+                  "end_lineno": 108
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "bucket_name",
+                    "lineno": 108,
+                    "end_lineno": 108
+                  }
+                ],
+                "keywords": [],
+                "lineno": 108,
+                "end_lineno": 108
+              },
+              "type_comment": null,
+              "lineno": 108,
+              "end_lineno": 108
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "local_model_file_name",
+                  "lineno": 109,
+                  "end_lineno": 109
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 109,
+                      "end_lineno": 109
+                    },
+                    "attr": "path",
+                    "lineno": 109,
+                    "end_lineno": 109
+                  },
+                  "attr": "basename",
+                  "lineno": 109,
+                  "end_lineno": 109
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "latest_model_blob_name",
+                    "lineno": 109,
+                    "end_lineno": 109
+                  }
+                ],
+                "keywords": [],
+                "lineno": 109,
+                "end_lineno": 109
+              },
+              "type_comment": null,
+              "lineno": 109,
+              "end_lineno": 109
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "model_blob",
+                  "lineno": 110,
+                  "end_lineno": 110
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "bucket",
+                    "lineno": 110,
+                    "end_lineno": 110
+                  },
+                  "attr": "blob",
+                  "lineno": 110,
+                  "end_lineno": 110
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "latest_model_blob_name",
+                    "lineno": 110,
+                    "end_lineno": 110
+                  }
+                ],
+                "keywords": [],
+                "lineno": 110,
+                "end_lineno": 110
+              },
+              "type_comment": null,
+              "lineno": 110,
+              "end_lineno": 110
+            },
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "print",
+                  "lineno": 112,
+                  "end_lineno": 112
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "latest_model_blob_name",
+                    "kind": null,
+                    "lineno": 112,
+                    "end_lineno": 112
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "latest_model_blob_name",
+                    "lineno": 112,
+                    "end_lineno": 112
+                  }
+                ],
+                "keywords": [],
+                "lineno": 112,
+                "end_lineno": 112
+              },
+              "lineno": 112,
+              "end_lineno": 112
+            },
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "model_blob",
+                    "lineno": 115,
+                    "end_lineno": 115
+                  },
+                  "attr": "download_to_filename",
+                  "lineno": 115,
+                  "end_lineno": 115
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "local_model_file_name",
+                    "lineno": 115,
+                    "end_lineno": 115
+                  }
+                ],
+                "keywords": [],
+                "lineno": 115,
+                "end_lineno": 115
+              },
+              "lineno": 115,
+              "end_lineno": 115
+            },
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "model",
+                  "lineno": 118,
+                  "end_lineno": 118
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "joblib",
+                    "lineno": 118,
+                    "end_lineno": 118
+                  },
+                  "attr": "load",
+                  "lineno": 118,
+                  "end_lineno": 118
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "local_model_file_name",
+                    "lineno": 118,
+                    "end_lineno": 118
+                  }
+                ],
+                "keywords": [],
+                "lineno": 118,
+                "end_lineno": 118
+              },
+              "type_comment": null,
+              "lineno": 118,
+              "end_lineno": 118
+            },
+            {
+              "_type": "Return",
+              "value": {
+                "_type": "Name",
+                "id": "model",
+                "lineno": 119,
+                "end_lineno": 119
+              },
+              "lineno": 119,
+              "end_lineno": 119
+            }
+          ],
+          "handlers": [
+            {
+              "_type": "ExceptHandler",
+              "type": {
+                "_type": "Name",
+                "id": "Exception",
+                "lineno": 120,
+                "end_lineno": 120
+              },
+              "name": "e",
+              "body": [
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "print",
+                      "lineno": 121,
+                      "end_lineno": 121
+                    },
+                    "args": [
+                      {
+                        "_type": "JoinedStr",
+                        "values": [
+                          {
+                            "_type": "Constant",
+                            "value": "Error occurred while loading the model: ",
+                            "kind": null,
+                            "lineno": 121,
+                            "end_lineno": 121
+                          },
+                          {
+                            "_type": "FormattedValue",
+                            "value": {
+                              "_type": "Name",
+                              "id": "e",
+                              "lineno": 121,
+                              "end_lineno": 121
+                            },
+                            "conversion": -1,
+                            "format_spec": null,
+                            "lineno": 121,
+                            "end_lineno": 121
+                          }
+                        ],
+                        "lineno": 121,
+                        "end_lineno": 121
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 121,
+                    "end_lineno": 121
+                  },
+                  "lineno": 121,
+                  "end_lineno": 121
+                }
+              ],
+              "lineno": 120,
+              "end_lineno": 121
+            }
+          ],
+          "orelse": [],
+          "finalbody": [],
+          "lineno": 107,
+          "end_lineno": 121
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 98,
+      "end_lineno": 121
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "fetch_latest_model",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "bucket_name",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 124,
+            "end_lineno": 124
+          },
+          {
+            "_type": "arg",
+            "arg": "prefix",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 124,
+            "end_lineno": 124
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": [
+          {
+            "_type": "Constant",
+            "value": "model/model_",
+            "kind": null,
+            "lineno": 124,
+            "end_lineno": 124
+          }
+        ]
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "Fetches the latest model file from the specified GCS bucket.\n  Args:\n      bucket_name (str): The name of the GCS bucket.\n      prefix (str): The prefix of the "
+          },
+          "lineno": 125,
+          "end_lineno": 131
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "blobs",
+              "lineno": 133,
+              "end_lineno": 133
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "storage_client",
+                "lineno": 133,
+                "end_lineno": 133
+              },
+              "attr": "list_blobs",
+              "lineno": 133,
+              "end_lineno": 133
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "bucket_name",
+                "lineno": 133,
+                "end_lineno": 133
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "prefix",
+                "value": {
+                  "_type": "Name",
+                  "id": "prefix",
+                  "lineno": 133,
+                  "end_lineno": 133
+                },
+                "lineno": 133,
+                "end_lineno": 133
+              }
+            ],
+            "lineno": 133,
+            "end_lineno": 133
+          },
+          "type_comment": null,
+          "lineno": 133,
+          "end_lineno": 133
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "blob_names",
+              "lineno": 136,
+              "end_lineno": 136
+            }
+          ],
+          "value": {
+            "_type": "ListComp",
+            "elt": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "blob",
+                "lineno": 136,
+                "end_lineno": 136
+              },
+              "attr": "name",
+              "lineno": 136,
+              "end_lineno": 136
+            },
+            "generators": [
+              {
+                "_type": "comprehension",
+                "target": {
+                  "_type": "Name",
+                  "id": "blob",
+                  "lineno": 136,
+                  "end_lineno": 136
+                },
+                "iter": {
+                  "_type": "Name",
+                  "id": "blobs",
+                  "lineno": 136,
+                  "end_lineno": 136
+                },
+                "ifs": [],
+                "is_async": 0
+              }
+            ],
+            "lineno": 136,
+            "end_lineno": 136
+          },
+          "type_comment": null,
+          "lineno": 136,
+          "end_lineno": 136
+        },
+        {
+          "_type": "If",
+          "test": {
+            "_type": "UnaryOp",
+            "op": {
+              "_type": "Not"
+            },
+            "operand": {
+              "_type": "Name",
+              "id": "blob_names",
+              "lineno": 137,
+              "end_lineno": 137
+            },
+            "lineno": 137,
+            "end_lineno": 137
+          },
+          "body": [
+            {
+              "_type": "Raise",
+              "exc": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "ValueError",
+                  "lineno": 138,
+                  "end_lineno": 138
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "No model files found in the GCS bucket.",
+                    "kind": null,
+                    "lineno": 138,
+                    "end_lineno": 138
+                  }
+                ],
+                "keywords": [],
+                "lineno": 138,
+                "end_lineno": 138
+              },
+              "cause": null,
+              "lineno": 138,
+              "end_lineno": 138
+            }
+          ],
+          "orelse": [],
+          "lineno": 137,
+          "end_lineno": 138
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "latest_blob_name",
+              "lineno": 140,
+              "end_lineno": 140
+            }
+          ],
+          "value": {
+            "_type": "Subscript",
+            "value": {
+              "_type": "Call",
+              "func": {
+                "_type": "Name",
+                "id": "sorted",
+                "lineno": 140,
+                "end_lineno": 140
+              },
+              "args": [
+                {
+                  "_type": "Name",
+                  "id": "blob_names",
+                  "lineno": 140,
+                  "end_lineno": 140
+                }
+              ],
+              "keywords": [
+                {
+                  "_type": "keyword",
+                  "arg": "key",
+                  "value": {
+                    "_type": "Lambda",
+                    "args": {
+                      "_type": "arguments",
+                      "posonlyargs": [],
+                      "args": [
+                        {
+                          "_type": "arg",
+                          "arg": "x",
+                          "annotation": null,
+                          "type_comment": null,
+                          "lineno": 140,
+                          "end_lineno": 140
+                        }
+                      ],
+                      "vararg": null,
+                      "kwonlyargs": [],
+                      "kw_defaults": [],
+                      "kwarg": null,
+                      "defaults": []
+                    },
+                    "body": {
+                      "_type": "Subscript",
+                      "value": {
+                        "_type": "Call",
+                        "func": {
+                          "_type": "Attribute",
+                          "value": {
+                            "_type": "Name",
+                            "id": "x",
+                            "lineno": 140,
+                            "end_lineno": 140
+                          },
+                          "attr": "split",
+                          "lineno": 140,
+                          "end_lineno": 140
+                        },
+                        "args": [
+                          {
+                            "_type": "Constant",
+                            "value": "_",
+                            "kind": null,
+                            "lineno": 140,
+                            "end_lineno": 140
+                          }
+                        ],
+                        "keywords": [],
+                        "lineno": 140,
+                        "end_lineno": 140
+                      },
+                      "slice": {
+                        "_type": "UnaryOp",
+                        "op": {
+                          "_type": "USub"
+                        },
+                        "operand": {
+                          "_type": "Constant",
+                          "value": 1,
+                          "kind": null,
+                          "lineno": 140,
+                          "end_lineno": 140
+                        },
+                        "lineno": 140,
+                        "end_lineno": 140
+                      },
+                      "lineno": 140,
+                      "end_lineno": 140
+                    },
+                    "lineno": 140,
+                    "end_lineno": 140
+                  },
+                  "lineno": 140,
+                  "end_lineno": 140
+                },
+                {
+                  "_type": "keyword",
+                  "arg": "reverse",
+                  "value": {
+                    "_type": "Constant",
+                    "value": true,
+                    "kind": null,
+                    "lineno": 140,
+                    "end_lineno": 140
+                  },
+                  "lineno": 140,
+                  "end_lineno": 140
+                }
+              ],
+              "lineno": 140,
+              "end_lineno": 140
+            },
+            "slice": {
+              "_type": "Constant",
+              "value": 1,
+              "kind": null,
+              "lineno": 140,
+              "end_lineno": 140
+            },
+            "lineno": 140,
+            "end_lineno": 140
+          },
+          "type_comment": null,
+          "lineno": 140,
+          "end_lineno": 140
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "latest_blob_name",
+            "lineno": 142,
+            "end_lineno": 142
+          },
+          "lineno": 142,
+          "end_lineno": 142
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 124,
+      "end_lineno": 142
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "health_check",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "Health check endpoint that returns the status of the server.\n  Returns:\n      Response: A Flask response with status 200 and \"healthy\" as the body.\n  "
+          },
+          "lineno": 146,
+          "end_lineno": 149
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Dict",
+            "keys": [
+              {
+                "_type": "Constant",
+                "value": "status",
+                "kind": null,
+                "lineno": 150,
+                "end_lineno": 150
+              }
+            ],
+            "values": [
+              {
+                "_type": "Constant",
+                "value": "healthy",
+                "kind": null,
+                "lineno": 150,
+                "end_lineno": 150
+              }
+            ],
+            "lineno": 150,
+            "end_lineno": 150
+          },
+          "lineno": 150,
+          "end_lineno": 150
+        }
+      ],
+      "decorator_list": [
+        {
+          "_type": "Call",
+          "func": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "app",
+              "lineno": 144,
+              "end_lineno": 144
+            },
+            "attr": "route",
+            "lineno": 144,
+            "end_lineno": 144
+          },
+          "args": [
+            {
+              "_type": "Subscript",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 144,
+                  "end_lineno": 144
+                },
+                "attr": "environ",
+                "lineno": 144,
+                "end_lineno": 144
+              },
+              "slice": {
+                "_type": "Constant",
+                "value": "AIP_HEALTH_ROUTE",
+                "kind": null,
+                "lineno": 144,
+                "end_lineno": 144
+              },
+              "lineno": 144,
+              "end_lineno": 144
+            }
+          ],
+          "keywords": [
+            {
+              "_type": "keyword",
+              "arg": "methods",
+              "value": {
+                "_type": "List",
+                "elts": [
+                  {
+                    "_type": "Constant",
+                    "value": "GET",
+                    "kind": null,
+                    "lineno": 144,
+                    "end_lineno": 144
+                  }
+                ],
+                "lineno": 144,
+                "end_lineno": 144
+              },
+              "lineno": 144,
+              "end_lineno": 144
+            }
+          ],
+          "lineno": 144,
+          "end_lineno": 144
+        }
+      ],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 145,
+      "end_lineno": 150
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "predict",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n  Endpoint for making predictions with the KMeans model.\n  Expects a JSON payload with a 'data' key containing a list of 6 PCA values.\n  Returns:\n      Respons"
+          },
+          "lineno": 154,
+          "end_lineno": 159
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "request_json",
+              "lineno": 160,
+              "end_lineno": 160
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "request",
+                "lineno": 160,
+                "end_lineno": 160
+              },
+              "attr": "get_json",
+              "lineno": 160,
+              "end_lineno": 160
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 160,
+            "end_lineno": 160
+          },
+          "type_comment": null,
+          "lineno": 160,
+          "end_lineno": 160
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "request_instances",
+              "lineno": 162,
+              "end_lineno": 162
+            }
+          ],
+          "value": {
+            "_type": "Subscript",
+            "value": {
+              "_type": "Name",
+              "id": "request_json",
+              "lineno": 162,
+              "end_lineno": 162
+            },
+            "slice": {
+              "_type": "Constant",
+              "value": "instances",
+              "kind": null,
+              "lineno": 162,
+              "end_lineno": 162
+            },
+            "lineno": 162,
+            "end_lineno": 162
+          },
+          "type_comment": null,
+          "lineno": 162,
+          "end_lineno": 162
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "logger",
+                "lineno": 165,
+                "end_lineno": 165
+              },
+              "attr": "log_text",
+              "lineno": 165,
+              "end_lineno": 165
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "Received prediction request.",
+                "kind": null,
+                "lineno": 165,
+                "end_lineno": 165
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "severity",
+                "value": {
+                  "_const_preview": "INFO"
+                },
+                "lineno": 165,
+                "end_lineno": 165
+              }
+            ],
+            "lineno": 165,
+            "end_lineno": 165
+          },
+          "lineno": 165,
+          "end_lineno": 165
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "prediction_start_time",
+              "lineno": 167,
+              "end_lineno": 167
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "time",
+                "lineno": 167,
+                "end_lineno": 167
+              },
+              "attr": "time",
+              "lineno": 167,
+              "end_lineno": 167
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 167,
+            "end_lineno": 167
+          },
+          "type_comment": null,
+          "lineno": 167,
+          "end_lineno": 167
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "current_timestamp",
+              "lineno": 168,
+              "end_lineno": 168
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "datetime",
+                    "lineno": 168,
+                    "end_lineno": 168
+                  },
+                  "attr": "now",
+                  "lineno": 168,
+                  "end_lineno": 168
+                },
+                "args": [],
+                "keywords": [],
+                "lineno": 168,
+                "end_lineno": 168
+              },
+              "attr": "isoformat",
+              "lineno": 168,
+              "end_lineno": 168
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 168,
+            "end_lineno": 168
+          },
+          "type_comment": null,
+          "lineno": 168,
+          "end_lineno": 168
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "prediction",
+              "lineno": 171,
+              "end_lineno": 171
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "model",
+                "lineno": 171,
+                "end_lineno": 171
+              },
+              "attr": "predict",
+              "lineno": 171,
+              "end_lineno": 171
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "pd",
+                    "lineno": 171,
+                    "end_lineno": 171
+                  },
+                  "attr": "DataFrame",
+                  "lineno": 171,
+                  "end_lineno": 171
+                },
+                "args": [
+                  {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "list",
+                      "lineno": 171,
+                      "end_lineno": 171
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "request_instances",
+                        "lineno": 171,
+                        "end_lineno": 171
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 171,
+                    "end_lineno": 171
+                  }
+                ],
+                "keywords": [],
+                "lineno": 171,
+                "end_lineno": 171
+              }
+            ],
+            "keywords": [],
+            "lineno": 171,
+            "end_lineno": 171
+          },
+          "type_comment": null,
+          "lineno": 171,
+          "end_lineno": 171
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "prediction_end_time",
+              "lineno": 174,
+              "end_lineno": 174
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "time",
+                "lineno": 174,
+                "end_lineno": 174
+              },
+              "attr": "time",
+              "lineno": 174,
+              "end_lineno": 174
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 174,
+            "end_lineno": 174
+          },
+          "type_comment": null,
+          "lineno": 174,
+          "end_lineno": 174
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "prediction_latency",
+              "lineno": 175,
+              "end_lineno": 175
+            }
+          ],
+          "value": {
+            "_type": "BinOp",
+            "left": {
+              "_type": "Name",
+              "id": "prediction_end_time",
+              "lineno": 175,
+              "end_lineno": 175
+            },
+            "op": {
+              "_type": "Sub"
+            },
+            "right": {
+              "_type": "Name",
+              "id": "prediction_start_time",
+              "lineno": 175,
+              "end_lineno": 175
+            },
+            "lineno": 175,
+            "end_lineno": 175
+          },
+          "type_comment": null,
+          "lineno": 175,
+          "end_lineno": 175
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "prediction",
+              "lineno": 178,
+              "end_lineno": 178
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "prediction",
+                "lineno": 178,
+                "end_lineno": 178
+              },
+              "attr": "tolist",
+              "lineno": 178,
+              "end_lineno": 178
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 178,
+            "end_lineno": 178
+          },
+          "type_comment": null,
+          "lineno": 178,
+          "end_lineno": 178
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "logger",
+                "lineno": 182,
+                "end_lineno": 182
+              },
+              "attr": "log_text",
+              "lineno": 182,
+              "end_lineno": 182
+            },
+            "args": [
+              {
+                "_type": "JoinedStr",
+                "values": [
+                  {
+                    "_type": "Constant",
+                    "value": "Prediction results: ",
+                    "kind": null,
+                    "lineno": 182,
+                    "end_lineno": 182
+                  },
+                  {
+                    "_type": "FormattedValue",
+                    "value": {
+                      "_type": "Name",
+                      "id": "prediction",
+                      "lineno": 182,
+                      "end_lineno": 182
+                    },
+                    "conversion": -1,
+                    "format_spec": null,
+                    "lineno": 182,
+                    "end_lineno": 182
+                  }
+                ],
+                "lineno": 182,
+                "end_lineno": 182
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "severity",
+                "value": {
+                  "_const_preview": "INFO"
+                },
+                "lineno": 182,
+                "end_lineno": 182
+              }
+            ],
+            "lineno": 182,
+            "end_lineno": 182
+          },
+          "lineno": 182,
+          "end_lineno": 182
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "rows_to_insert",
+              "lineno": 184,
+              "end_lineno": 184
+            }
+          ],
+          "value": {
+            "_type": "ListComp",
+            "elt": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "PC1",
+                  "kind": null,
+                  "lineno": 186,
+                  "end_lineno": 186
+                },
+                {
+                  "_type": "Constant",
+                  "value": "PC2",
+                  "kind": null,
+                  "lineno": 187,
+                  "end_lineno": 187
+                },
+                {
+                  "_type": "Constant",
+                  "value": "PC3",
+                  "kind": null,
+                  "lineno": 188,
+                  "end_lineno": 188
+                },
+                {
+                  "_type": "Constant",
+                  "value": "PC4",
+                  "kind": null,
+                  "lineno": 189,
+                  "end_lineno": 189
+                },
+                {
+                  "_type": "Constant",
+                  "value": "PC5",
+                  "kind": null,
+                  "lineno": 190,
+                  "end_lineno": 190
+                },
+                {
+                  "_type": "Constant",
+                  "value": "PC6",
+                  "kind": null,
+                  "lineno": 191,
+                  "end_lineno": 191
+                },
+                {
+                  "_type": "Constant",
+                  "value": "prediction",
+                  "kind": null,
+                  "lineno": 192,
+                  "end_lineno": 192
+                },
+                {
+                  "_type": "Constant",
+                  "value": "timestamp",
+                  "kind": null,
+                  "lineno": 193,
+                  "end_lineno": 193
+                },
+                {
+                  "_type": "Constant",
+                  "value": "latency",
+                  "kind": null,
+                  "lineno": 194,
+                  "end_lineno": 194
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "instance",
+                    "lineno": 186,
+                    "end_lineno": 186
+                  },
+                  "slice": {
+                    "_type": "Constant",
+                    "value": "PC1",
+                    "kind": null,
+                    "lineno": 186,
+                    "end_lineno": 186
+                  },
+                  "lineno": 186,
+                  "end_lineno": 186
+                },
+                {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "instance",
+                    "lineno": 187,
+                    "end_lineno": 187
+                  },
+                  "slice": {
+                    "_type": "Constant",
+                    "value": "PC2",
+                    "kind": null,
+                    "lineno": 187,
+                    "end_lineno": 187
+                  },
+                  "lineno": 187,
+                  "end_lineno": 187
+                },
+                {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "instance",
+                    "lineno": 188,
+                    "end_lineno": 188
+                  },
+                  "slice": {
+                    "_type": "Constant",
+                    "value": "PC3",
+                    "kind": null,
+                    "lineno": 188,
+                    "end_lineno": 188
+                  },
+                  "lineno": 188,
+                  "end_lineno": 188
+                },
+                {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "instance",
+                    "lineno": 189,
+                    "end_lineno": 189
+                  },
+                  "slice": {
+                    "_type": "Constant",
+                    "value": "PC4",
+                    "kind": null,
+                    "lineno": 189,
+                    "end_lineno": 189
+                  },
+                  "lineno": 189,
+                  "end_lineno": 189
+                },
+                {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "instance",
+                    "lineno": 190,
+                    "end_lineno": 190
+                  },
+                  "slice": {
+                    "_type": "Constant",
+                    "value": "PC5",
+                    "kind": null,
+                    "lineno": 190,
+                    "end_lineno": 190
+                  },
+                  "lineno": 190,
+                  "end_lineno": 190
+                },
+                {
+                  "_type": "Subscript",
+                  "value": {
+                    "_type": "Name",
+                    "id": "instance",
+                    "lineno": 191,
+                    "end_lineno": 191
+                  },
+                  "slice": {
+                    "_type": "Constant",
+                    "value": "PC6",
+                    "kind": null,
+                    "lineno": 191,
+                    "end_lineno": 191
+                  },
+                  "lineno": 191,
+                  "end_lineno": 191
+                },
+                {
+                  "_type": "Name",
+                  "id": "pred",
+                  "lineno": 192,
+                  "end_lineno": 192
+                },
+                {
+                  "_type": "Name",
+                  "id": "current_timestamp",
+                  "lineno": 193,
+                  "end_lineno": 193
+                },
+                {
+                  "_type": "Name",
+                  "id": "prediction_latency",
+                  "lineno": 194,
+                  "end_lineno": 194
+                }
+              ],
+              "lineno": 185,
+              "end_lineno": 195
+            },
+            "generators": [
+              {
+                "_type": "comprehension",
+                "target": {
+                  "_type": "Tuple",
+                  "elts": [
+                    {
+                      "_type": "Name",
+                      "id": "instance",
+                      "lineno": 196,
+                      "end_lineno": 196
+                    },
+                    {
+                      "_type": "Name",
+                      "id": "pred",
+                      "lineno": 196,
+                      "end_lineno": 196
+                    }
+                  ],
+                  "lineno": 196,
+                  "end_lineno": 196
+                },
+                "iter": {
+                  "_type": "Call",
+                  "func": {
+                    "_type": "Name",
+                    "id": "zip",
+                    "lineno": 196,
+                    "end_lineno": 196
+                  },
+                  "args": [
+                    {
+                      "_type": "Name",
+                      "id": "request_instances",
+                      "lineno": 196,
+                      "end_lineno": 196
+                    },
+                    {
+                      "_type": "Name",
+                      "id": "prediction",
+                      "lineno": 196,
+                      "end_lineno": 196
+                    }
+                  ],
+                  "keywords": [],
+                  "lineno": 196,
+                  "end_lineno": 196
+                },
+                "ifs": [],
+                "is_async": 0
+              }
+            ],
+            "lineno": 184,
+            "end_lineno": 197
+          },
+          "type_comment": null,
+          "lineno": 184,
+          "end_lineno": 197
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "errors",
+              "lineno": 199,
+              "end_lineno": 199
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "bq_client",
+                "lineno": 199,
+                "end_lineno": 199
+              },
+              "attr": "insert_rows_json",
+              "lineno": 199,
+              "end_lineno": 199
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "table_id",
+                "lineno": 199,
+                "end_lineno": 199
+              },
+              {
+                "_type": "Name",
+                "id": "rows_to_insert",
+                "lineno": 199,
+                "end_lineno": 199
+              }
+            ],
+            "keywords": [],
+            "lineno": 199,
+            "end_lineno": 199
+          },
+          "type_comment": null,
+          "lineno": 199,
+          "end_lineno": 199
+        },
+        {
+          "_type": "If",
+          "test": {
+            "_type": "Compare",
+            "left": {
+              "_type": "Name",
+              "id": "errors",
+              "lineno": 200,
+              "end_lineno": 200
+            },
+            "ops": [
+              {
+                "_type": "Eq"
+              }
+            ],
+            "comparators": [
+              {
+                "_type": "List",
+                "elts": [],
+                "lineno": 200,
+                "end_lineno": 200
+              }
+            ],
+            "lineno": 200,
+            "end_lineno": 200
+          },
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "logger",
+                    "lineno": 201,
+                    "end_lineno": 201
+                  },
+                  "attr": "log_text",
+                  "lineno": 201,
+                  "end_lineno": 201
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "New predictions inserted into BigQuery.",
+                    "kind": null,
+                    "lineno": 201,
+                    "end_lineno": 201
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "severity",
+                    "value": {
+                      "_const_preview": "INFO"
+                    },
+                    "lineno": 201,
+                    "end_lineno": 201
+                  }
+                ],
+                "lineno": 201,
+                "end_lineno": 201
+              },
+              "lineno": 201,
+              "end_lineno": 201
+            }
+          ],
+          "orelse": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "logger",
+                    "lineno": 203,
+                    "end_lineno": 203
+                  },
+                  "attr": "log_text",
+                  "lineno": 203,
+                  "end_lineno": 203
+                },
+                "args": [
+                  {
+                    "_type": "JoinedStr",
+                    "values": [
+                      {
+                        "_type": "Constant",
+                        "value": "Encountered errors inserting predictions into BigQuery: ",
+                        "kind": null,
+                        "lineno": 203,
+                        "end_lineno": 203
+                      },
+                      {
+                        "_type": "FormattedValue",
+                        "value": {
+                          "_type": "Name",
+                          "id": "errors",
+                          "lineno": 203,
+                          "end_lineno": 203
+                        },
+                        "conversion": -1,
+                        "format_spec": null,
+                        "lineno": 203,
+                        "end_lineno": 203
+                      }
+                    ],
+                    "lineno": 203,
+                    "end_lineno": 203
+                  }
+                ],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "severity",
+                    "value": {
+                      "_const_preview": "ERROR"
+                    },
+                    "lineno": 203,
+                    "end_lineno": 203
+                  }
+                ],
+                "lineno": 203,
+                "end_lineno": 203
+              },
+              "lineno": 203,
+              "end_lineno": 203
+            }
+          ],
+          "lineno": 200,
+          "end_lineno": 203
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "output",
+              "lineno": 208,
+              "end_lineno": 208
+            }
+          ],
+          "value": {
+            "_type": "Dict",
+            "keys": [
+              {
+                "_type": "Constant",
+                "value": "predictions",
+                "kind": null,
+                "lineno": 208,
+                "end_lineno": 208
+              }
+            ],
+            "values": [
+              {
+                "_type": "ListComp",
+                "elt": {
+                  "_type": "Dict",
+                  "keys": [
+                    {
+                      "_type": "Constant",
+                      "value": "cluster",
+                      "kind": null,
+                      "lineno": 208,
+                      "end_lineno": 208
+                    }
+                  ],
+                  "values": [
+                    {
+                      "_type": "Name",
+                      "id": "pred",
+                      "lineno": 208,
+                      "end_lineno": 208
+                    }
+                  ],
+                  "lineno": 208,
+                  "end_lineno": 208
+                },
+                "generators": [
+                  {
+                    "_type": "comprehension",
+                    "target": {
+                      "_type": "Name",
+                      "id": "pred",
+                      "lineno": 208,
+                      "end_lineno": 208
+                    },
+                    "iter": {
+                      "_type": "Name",
+                      "id": "prediction",
+                      "lineno": 208,
+                      "end_lineno": 208
+                    },
+                    "ifs": [],
+                    "is_async": 0
+                  }
+                ],
+                "lineno": 208,
+                "end_lineno": 208
+              }
+            ],
+            "lineno": 208,
+            "end_lineno": 208
+          },
+          "type_comment": null,
+          "lineno": 208,
+          "end_lineno": 208
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "jsonify",
+              "lineno": 209,
+              "end_lineno": 209
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "output",
+                "lineno": 209,
+                "end_lineno": 209
+              }
+            ],
+            "keywords": [],
+            "lineno": 209,
+            "end_lineno": 209
+          },
+          "lineno": 209,
+          "end_lineno": 209
+        }
+      ],
+      "decorator_list": [
+        {
+          "_type": "Call",
+          "func": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "app",
+              "lineno": 152,
+              "end_lineno": 152
+            },
+            "attr": "route",
+            "lineno": 152,
+            "end_lineno": 152
+          },
+          "args": [
+            {
+              "_type": "Subscript",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 152,
+                  "end_lineno": 152
+                },
+                "attr": "environ",
+                "lineno": 152,
+                "end_lineno": 152
+              },
+              "slice": {
+                "_type": "Constant",
+                "value": "AIP_PREDICT_ROUTE",
+                "kind": null,
+                "lineno": 152,
+                "end_lineno": 152
+              },
+              "lineno": 152,
+              "end_lineno": 152
+            }
+          ],
+          "keywords": [
+            {
+              "_type": "keyword",
+              "arg": "methods",
+              "value": {
+                "_type": "List",
+                "elts": [
+                  {
+                    "_type": "Constant",
+                    "value": "POST",
+                    "kind": null,
+                    "lineno": 152,
+                    "end_lineno": 152
+                  }
+                ],
+                "lineno": 152,
+                "end_lineno": 152
+              },
+              "lineno": 152,
+              "end_lineno": 152
+            }
+          ],
+          "lineno": 152,
+          "end_lineno": 152
+        }
+      ],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 153,
+      "end_lineno": 209
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Tuple",
+          "elts": [
+            {
+              "_type": "Name",
+              "id": "project_id",
+              "lineno": 212,
+              "end_lineno": 212
+            },
+            {
+              "_type": "Name",
+              "id": "bucket_name",
+              "lineno": 212,
+              "end_lineno": 212
+            }
+          ],
+          "lineno": 212,
+          "end_lineno": 212
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "initialize_variables",
+          "lineno": 212,
+          "end_lineno": 212
+        },
+        "args": [],
+        "keywords": [],
+        "lineno": 212,
+        "end_lineno": 212
+      },
+      "type_comment": null,
+      "lineno": 212,
+      "end_lineno": 212
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Tuple",
+          "elts": [
+            {
+              "_type": "Name",
+              "id": "storage_client",
+              "lineno": 213,
+              "end_lineno": 213
+            },
+            {
+              "_type": "Name",
+              "id": "bucket",
+              "lineno": 213,
+              "end_lineno": 213
+            }
+          ],
+          "lineno": 213,
+          "end_lineno": 213
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "initialize_client_and_bucket",
+          "lineno": 213,
+          "end_lineno": 213
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "bucket_name",
+            "lineno": 213,
+            "end_lineno": 213
+          }
+        ],
+        "keywords": [],
+        "lineno": 213,
+        "end_lineno": 213
+      },
+      "type_comment": null,
+      "lineno": 213,
+      "end_lineno": 213
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "model",
+          "lineno": 215,
+          "end_lineno": 215
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "load_model",
+          "lineno": 215,
+          "end_lineno": 215
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "bucket",
+            "lineno": 215,
+            "end_lineno": 215
+          },
+          {
+            "_type": "Name",
+            "id": "bucket_name",
+            "lineno": 215,
+            "end_lineno": 215
+          }
+        ],
+        "keywords": [],
+        "lineno": 215,
+        "end_lineno": 215
+      },
+      "type_comment": null,
+      "lineno": 215,
+      "end_lineno": 215
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "schema",
+          "lineno": 218,
+          "end_lineno": 218
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "get_table_schema",
+          "lineno": 218,
+          "end_lineno": 218
+        },
+        "args": [],
+        "keywords": [],
+        "lineno": 218,
+        "end_lineno": 218
+      },
+      "type_comment": null,
+      "lineno": 218,
+      "end_lineno": 218
+    },
+    {
+      "_type": "Expr",
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "create_table_if_not_exists",
+          "lineno": 219,
+          "end_lineno": 219
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "bq_client",
+            "lineno": 219,
+            "end_lineno": 219
+          },
+          {
+            "_type": "Name",
+            "id": "table_id",
+            "lineno": 219,
+            "end_lineno": 219
+          },
+          {
+            "_type": "Name",
+            "id": "schema",
+            "lineno": 219,
+            "end_lineno": 219
+          }
+        ],
+        "keywords": [],
+        "lineno": 219,
+        "end_lineno": 219
+      },
+      "lineno": 219,
+      "end_lineno": 219
+    },
+    {
+      "_type": "If",
+      "test": {
+        "_type": "Compare",
+        "left": {
+          "_type": "Name",
+          "id": "__name__",
+          "lineno": 223,
+          "end_lineno": 223
+        },
+        "ops": [
+          {
+            "_type": "Eq"
+          }
+        ],
+        "comparators": [
+          {
+            "_type": "Constant",
+            "value": "__main__",
+            "kind": null,
+            "lineno": 223,
+            "end_lineno": 223
+          }
+        ],
+        "lineno": 223,
+        "end_lineno": 223
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "app",
+                "lineno": 224,
+                "end_lineno": 224
+              },
+              "attr": "run",
+              "lineno": 224,
+              "end_lineno": 224
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "host",
+                "value": {
+                  "_const_preview": "0.0.0.0"
+                },
+                "lineno": 224,
+                "end_lineno": 224
+              },
+              {
+                "_type": "keyword",
+                "arg": "port",
+                "value": {
+                  "_type": "Constant",
+                  "value": 8080,
+                  "kind": null,
+                  "lineno": 224,
+                  "end_lineno": 224
+                },
+                "lineno": 224,
+                "end_lineno": 224
+              }
+            ],
+            "lineno": 224,
+            "end_lineno": 224
+          },
+          "lineno": 224,
+          "end_lineno": 224
+        }
+      ],
+      "orelse": [],
+      "lineno": 223,
+      "end_lineno": 224
+    }
+  ],
+  "type_ignores": []
+}

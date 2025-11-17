@@ -1,0 +1,306 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "PEKG Canonical KG Schema",
+  "description": "Canonical schema and ontology for the Privacy-Enhanced Knowledge Graph (PEKG) produced by stepO_merge_into_kg.py",
+  "type": "object",
+  "definitions": {
+    "Node": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": { "type": "string", "description": "Canonical ID: <TYPE>:<identifier>" },
+        "type": { "type": "string", "description": "Node type (see node_types enum)" },
+        "label": { "type": ["string", "null"], "description": "Human-readable label" },
+        "attrs": { "type": ["object", "null"], "description": "Raw/original attributes from source artifacts" }
+      },
+      "additionalProperties": true
+    },
+    "Provenance": {
+      "type": "object",
+      "description": "Provenance counts keyed by artifact name",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "Edge": {
+      "type": "object",
+      "required": ["source", "target", "type"],
+      "properties": {
+        "source": { "type": "string", "description": "Canonical node id (source)" },
+        "target": { "type": "string", "description": "Canonical node id (target)" },
+        "type": { "type": "string", "description": "Edge type (see edge_types enum)" },
+        "count": { "type": "integer", "minimum": 1, "default": 1 },
+        "provenance": { "$ref": "#/definitions/Provenance" },
+        "attrs": { "type": ["object", "null"], "description": "Extra attributes for this edge" }
+      },
+      "additionalProperties": true
+    }
+  },
+
+  "properties": {
+    "node_types": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["File","Module","Function","Class","Commit","PullRequest","Package","Config","Document"]
+    },
+
+    "edge_types": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["IMPORTS","CALLS","DEFINES","MODIFIED_BY","CLOSED_BY","DEPENDS_ON","MENTIONS","CALLS_FILE_LEVEL"]
+    },
+
+    "node_schemas": {
+      "type": "object",
+      "description": "Per-node-type canonical property specs",
+      "properties": {
+        "File": {
+          "type": "object",
+          "required": ["id","type","path"],
+          "properties": {
+            "id": { "type": "string" },
+            "type": { "const": "File" },
+            "label": { "type": ["string","null"] },
+            "path": { "type": "string", "description": "path relative to repo root" },
+            "size": { "type": ["integer","null"] },
+            "mime": { "type": ["string","null"] },
+            "hash": { "type": ["string","null"], "description": "sha or content hash" },
+            "attrs": { "type": ["object","null"] }
+          },
+          "additionalProperties": true
+        },
+
+        "Module": {
+          "type": "object",
+          "required": ["id","type","name"],
+          "properties": {
+            "id": { "type": "string" },
+            "type": { "const": "Module" },
+            "name": { "type": "string" },
+            "file": { "type": ["string","null"] },
+            "attrs": { "type": ["object","null"] }
+          },
+          "additionalProperties": true
+        },
+
+        "Function": {
+          "type": "object",
+          "required": ["id","type","qualified_name"],
+          "properties": {
+            "id": { "type": "string" },
+            "type": { "const": "Function" },
+            "qualified_name": { "type": "string", "description": "canonical qualified name (module.func)" },
+            "label": { "type": ["string","null"] },
+            "file": { "type": ["string","null"], "description": "File.path where function is defined" },
+            "lineno": { "type": ["integer","string","null"], "description": "line number or null if unknown" },
+            "signature": { "type": ["string","null"] },
+            "docstring": { "type": ["string","null"] },
+            "top_commit": { "type": ["string","null"], "description": "top SHA (no prefix) for function" },
+            "introduced_by_pr": { "type": ["array","null"], "items": { "type": "string" } },
+            "attrs": { "type": ["object","null"] }
+          },
+          "additionalProperties": true
+        },
+
+        "Class": {
+          "type": "object",
+          "required": ["id","type","qualified_name"],
+          "properties": {
+            "id": { "type": "string" },
+            "type": { "const": "Class" },
+            "qualified_name": { "type": "string" },
+            "file": { "type": ["string","null"] },
+            "lineno": { "type": ["integer","string","null"] },
+            "attrs": { "type": ["object","null"] }
+          },
+          "additionalProperties": true
+        },
+
+        "Commit": {
+          "type": "object",
+          "required": ["id","type","sha"],
+          "properties": {
+            "id": { "type": "string" },
+            "type": { "const": "Commit" },
+            "sha": { "type": "string", "description": "commit SHA (hex)" },
+            "message": { "type": ["string","null"] },
+            "author": { "type": ["string","null"] },
+            "date": { "type": ["string","null"], "description": "ISO datetime if available" },
+            "attrs": { "type": ["object","null"] }
+          },
+          "additionalProperties": true
+        },
+
+        "PullRequest": {
+          "type": "object",
+          "required": ["id","type","number"],
+          "properties": {
+            "id": { "type": "string" },
+            "type": { "const": "PullRequest" },
+            "number": { "type": ["integer","string"] },
+            "title": { "type": ["string","null"] },
+            "author": { "type": ["string","null"] },
+            "created_at": { "type": ["string","null"] },
+            "merged_at": { "type": ["string","null"] },
+            "attrs": { "type": ["object","null"] }
+          },
+          "additionalProperties": true
+        },
+
+        "Package": {
+          "type": "object",
+          "required": ["id","type","name"],
+          "properties": {
+            "id": { "type": "string" },
+            "type": { "const": "Package" },
+            "name": { "type": "string" },
+            "version": { "type": ["string","null"] },
+            "attrs": { "type": ["object","null"] }
+          },
+          "additionalProperties": true
+        },
+
+        "Document": {
+          "type": "object",
+          "required": ["id","type","file"],
+          "properties": {
+            "id": { "type": "string" },
+            "type": { "const": "Document" },
+            "file": { "type": "string", "description": "path under results/extracted_text" },
+            "text_preview": { "type": ["string","null"] },
+            "attrs": { "type": ["object","null"] }
+          },
+          "additionalProperties": true
+        },
+
+        "Config": {
+          "type": "object",
+          "properties": {
+            "id": { "type": "string" },
+            "type": { "const": "Config" },
+            "path": { "type": ["string","null"] },
+            "attrs": { "type": ["object","null"] }
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "edge_schemas": {
+      "type": "object",
+      "properties": {
+        "IMPORTS": {
+          "type": "object",
+          "required": ["source","target","type"],
+          "properties": {
+            "type": { "const": "IMPORTS" },
+            "source": { "type": "string", "description": "File:<relpath>" },
+            "target": { "type": "string", "description": "File:<relpath>" },
+            "count": { "type": "integer" },
+            "provenance": { "$ref": "#/definitions/Provenance" }
+          }
+        },
+        "CALLS": {
+          "type": "object",
+          "required": ["source","target","type"],
+          "properties": {
+            "type": { "const": "CALLS" },
+            "source": { "type": "string", "description": "Function:<qualified_name>" },
+            "target": { "type": "string", "description": "Function:<qualified_name>" },
+            "attrs": { "type": ["object","null"] },
+            "provenance": { "$ref": "#/definitions/Provenance" }
+          }
+        },
+        "DEFINES": {
+          "type": "object",
+          "required": ["source","target","type"],
+          "properties": {
+            "type": { "const": "DEFINES" },
+            "source": { "type": "string", "description": "File:<path>" },
+            "target": { "type": "string", "description": "Function|Class ID" },
+            "provenance": { "$ref": "#/definitions/Provenance" }
+          }
+        },
+        "MODIFIED_BY": {
+          "type": "object",
+          "required": ["source","target","type"],
+          "properties": {
+            "type": { "const": "MODIFIED_BY" },
+            "source": { "type": "string", "description": "Function:<qualified_name>" },
+            "target": { "type": "string", "description": "Commit:<sha>" },
+            "provenance": { "$ref": "#/definitions/Provenance" },
+            "count": { "type": "integer" }
+          }
+        },
+        "CLOSED_BY": {
+          "type": "object",
+          "required": ["source","target","type"],
+          "properties": {
+            "type": { "const": "CLOSED_BY" },
+            "source": { "type": "string", "description": "Commit:<sha>" },
+            "target": { "type": "string", "description": "PullRequest:<number>" },
+            "provenance": { "$ref": "#/definitions/Provenance" },
+            "count": { "type": "integer" }
+          }
+        },
+        "DEPENDS_ON": {
+          "type": "object",
+          "required": ["source","target","type"],
+          "properties": {
+            "type": { "const": "DEPENDS_ON" },
+            "source": { "type": "string", "description": "File:<path>" },
+            "target": { "type": "string", "description": "Package:<name@version>" },
+            "provenance": { "$ref": "#/definitions/Provenance" }
+          }
+        },
+        "MENTIONS": {
+          "type": "object",
+          "required": ["source","target","type"],
+          "properties": {
+            "type": { "const": "MENTIONS" },
+            "source": { "type": "string", "description": "File|Function|Module ID" },
+            "target": { "type": "string", "description": "Document:<path>" },
+            "provenance": { "$ref": "#/definitions/Provenance" }
+          }
+        },
+        "CALLS_FILE_LEVEL": {
+          "type": "object",
+          "required": ["source","target","type"],
+          "properties": {
+            "type": { "const": "CALLS_FILE_LEVEL" },
+            "source": { "type": "string", "description": "File:<path>" },
+            "target": { "type": "string", "description": "File:<path>" },
+            "provenance": { "$ref": "#/definitions/Provenance" }
+          }
+        }
+      }
+    }
+  },
+
+  "examples": [
+    {
+      "id": "Function:package.module.func",
+      "type": "Function",
+      "qualified_name": "package.module.func",
+      "label": "func",
+      "file": "src/package/module.py",
+      "lineno": 123,
+      "signature": "(a, b)",
+      "docstring": "Function docstring",
+      "top_commit": "6b8b21afaf18020f0ab29114baf4dd71ef36223c",
+      "introduced_by_pr": ["85"],
+      "attrs": {}
+    },
+    {
+      "source": "Function:package.module.func",
+      "target": "Commit:6b8b21af…",
+      "type": "MODIFIED_BY",
+      "count": 1,
+      "provenance": { "function_commits": 1 },
+      "attrs": {}
+    }
+  ],
+
+  "notes": "Use this schema to validate nodes.json and edges.json. Node IDs must follow canonical form: <TYPE>:<identifier>."
+}

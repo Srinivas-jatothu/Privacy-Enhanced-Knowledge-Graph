@@ -1,0 +1,17 @@
+01:14:56 INFO     Starting Jedi-based call-graph enrichment
+01:14:56 INFO     Repo dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Ecommerce-Data-MLOps
+01:14:56 INFO     Results dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results
+01:14:56 INFO     Loaded call graph edges: 2014
+01:14:56 INFO     Loaded canonical symbols: 136
+01:15:00 INFO     Processed 200/2014 edges  (jedi_resolved=0)
+01:15:01 INFO     Processed 400/2014 edges  (jedi_resolved=0)
+01:15:03 INFO     Processed 600/2014 edges  (jedi_resolved=0)
+01:15:05 INFO     Processed 800/2014 edges  (jedi_resolved=0)
+01:15:07 INFO     Processed 1000/2014 edges  (jedi_resolved=0)
+01:15:09 INFO     Processed 1200/2014 edges  (jedi_resolved=0)
+01:15:12 INFO     Processed 1600/2014 edges  (jedi_resolved=0)
+01:15:14 INFO     Processed 1800/2014 edges  (jedi_resolved=0)
+01:15:17 INFO     Processed 2000/2014 edges  (jedi_resolved=0)
+01:15:17 INFO     Enrichment complete. edges=2014 jedi_resolved=0 already_resolved=85 unresolved=1929
+01:15:17 INFO     Wrote enriched call graph to: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\call_graph_enriched.json
+01:15:17 INFO     Done.

@@ -1,0 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
+
+[pytest]
+addopts = --ignore=logs --ignore=dags --ignore=gcpdeploy

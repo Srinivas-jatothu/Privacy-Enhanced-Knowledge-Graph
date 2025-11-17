@@ -1,0 +1,32 @@
+{
+  "relpath": ".dvc/tmp/rwlock.lock",
+  "manifest_meta": {
+    "relpath": ".dvc/tmp/rwlock.lock",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\tmp\\rwlock.lock",
+    "size": 8,
+    "mtime": 1763123856.727403,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "a6b0fd50a3a34477ce0b1418f27c71240dad27d0dfd496977beb6f57522d92fd",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.dvc__tmp__rwlock.lock.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "1",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'rwlock.lock'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "8",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

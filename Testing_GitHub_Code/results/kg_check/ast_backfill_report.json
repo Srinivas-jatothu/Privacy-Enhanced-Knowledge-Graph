@@ -1,0 +1,33 @@
+{
+  "total_functions": 638,
+  "initial_missing": 90,
+  "filled_exact": 0,
+  "filled_short_unique": 66,
+  "remaining_missing": 24,
+  "remaining_sample": [
+    "Function:handle_anomalous_codes",
+    "Function:cancellation_details",
+    "Function:cleaning_description",
+    "Function:correlation_check",
+    "Function:save_heatmap",
+    "Function:save_correlations_as_parquet",
+    "Function:customers_behavior",
+    "Function:load_data",
+    "Function:ingest_data",
+    "Function:remove_duplicates",
+    "Function:geographic_features",
+    "Function:handle_missing",
+    "Function:removing_outlier",
+    "Function:pc_analyzer",
+    "Function:pca_",
+    "Function:removing_zero",
+    "Function:rfm",
+    "Function:scaler",
+    "Function:seasonality_impacts",
+    "Function:handle_transaction_status",
+    "Function:unique_products",
+    "Function:unzip_file",
+    "Function:main",
+    "Function:save_and_upload_model"
+  ]
+}

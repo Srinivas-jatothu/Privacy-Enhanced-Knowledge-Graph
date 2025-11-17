@@ -1,0 +1,32 @@
+{
+  "relpath": ".git/hooks/sendemail-validate.sample",
+  "manifest_meta": {
+    "relpath": ".git/hooks/sendemail-validate.sample",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\sendemail-validate.sample",
+    "size": 2308,
+    "mtime": 1763123843.5489466,
+    "mime": "text/x-shellscript",
+    "is_text": true,
+    "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.git__hooks__sendemail-validate.sample.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "ISO-8859-1",
+    "X-TIKA:parse_time_millis": "2",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'sendemail-validate.sample'",
+    "X-TIKA:detectedEncoding": "ISO-8859-1",
+    "Content-Length": "2308",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "application/x-sh; charset=ISO-8859-1"
+  }
+}

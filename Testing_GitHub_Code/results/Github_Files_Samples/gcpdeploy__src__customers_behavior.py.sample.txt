@@ -1,0 +1,10 @@
+"""
+The module shows how the behaviorial patterns of customers affect the business
+based on weekly frequency.
+"""
+
+import pickle
+import os
+import pandas as pd
+
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

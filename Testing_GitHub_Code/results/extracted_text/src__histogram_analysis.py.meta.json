@@ -1,0 +1,32 @@
+{
+  "relpath": "src/histogram_analysis.py",
+  "manifest_meta": {
+    "relpath": "src/histogram_analysis.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\histogram_analysis.py",
+    "size": 1925,
+    "mtime": 1763123859.558609,
+    "mime": "text/x-objective-c",
+    "is_text": true,
+    "sha256": "ca5b53ff0db461e47d1cf684d0a6e3380b4e5b8e4f17041ec65072b569287c95",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\src__histogram_analysis.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "2",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'histogram_analysis.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "1925",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

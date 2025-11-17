@@ -1,0 +1,11 @@
+{
+  "repo": "Ecommerce-Data-MLOps",
+  "archives": {
+    "data/bad.zip": {
+      "error": "File is not a zip file"
+    },
+    "data/data.zip": [
+      "data__data.zip/Online Retail.xlsx"
+    ]
+  }
+}

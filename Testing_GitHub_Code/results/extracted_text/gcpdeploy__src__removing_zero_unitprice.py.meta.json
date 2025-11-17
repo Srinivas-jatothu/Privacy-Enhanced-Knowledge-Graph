@@ -1,0 +1,32 @@
+{
+  "relpath": "gcpdeploy/src/removing_zero_unitprice.py",
+  "manifest_meta": {
+    "relpath": "gcpdeploy/src/removing_zero_unitprice.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\removing_zero_unitprice.py",
+    "size": 1224,
+    "mtime": 1763123859.3707168,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "39385a9abeeb329be38d428bcabd02db547703cfd4772158e5ec5c93e03e18b5",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\gcpdeploy__src__removing_zero_unitprice.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'removing_zero_unitprice.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "1224",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

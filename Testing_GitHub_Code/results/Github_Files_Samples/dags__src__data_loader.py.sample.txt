@@ -1,0 +1,10 @@
+"""
+Module to handle the loading of e-commerce dataset from either pickle or Excel file format.
+"""
+
+import pickle
+import os
+import pandas as pd
+
+# Determine the absolute path of the project directory
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

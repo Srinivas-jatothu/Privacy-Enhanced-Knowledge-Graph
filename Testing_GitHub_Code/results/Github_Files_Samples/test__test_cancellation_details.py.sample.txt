@@ -1,0 +1,9 @@
+"""
+This module checks if the cancellation_details script works.
+"""
+import os
+import pickle
+
+PROJECT_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+input_pickle_path=os.path.join(PROJECT_DIR, 'data', 'processed',
+'cancellation_details.pkl')

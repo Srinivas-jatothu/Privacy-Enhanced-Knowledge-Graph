@@ -1,0 +1,32 @@
+{
+  "relpath": "README.md",
+  "manifest_meta": {
+    "relpath": "README.md",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\README.md",
+    "size": 24826,
+    "mtime": 1763123856.7344007,
+    "mime": "text/html",
+    "is_text": true,
+    "sha256": "a0a03484517eb7191e01102454a6427097d87fd3847eacf76c10425dd5518170",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\README.md.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "UTF-8",
+    "X-TIKA:parse_time_millis": "31",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'README.md'",
+    "X-TIKA:detectedEncoding": "UTF-8",
+    "Content-Length": "24826",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=UTF-8"
+  }
+}

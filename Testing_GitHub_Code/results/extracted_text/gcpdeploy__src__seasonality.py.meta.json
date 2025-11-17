@@ -1,0 +1,32 @@
+{
+  "relpath": "gcpdeploy/src/seasonality.py",
+  "manifest_meta": {
+    "relpath": "gcpdeploy/src/seasonality.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\seasonality.py",
+    "size": 3068,
+    "mtime": 1763123859.3717258,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "4a9f37709214f4e91562eaca25abdc7bf2093f4d752b93b25ad271313b896a4d",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\gcpdeploy__src__seasonality.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'seasonality.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "3068",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

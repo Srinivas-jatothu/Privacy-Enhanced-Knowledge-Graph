@@ -1,0 +1,32 @@
+{
+  "relpath": "gcpdeploy/src/inference.py",
+  "manifest_meta": {
+    "relpath": "gcpdeploy/src/inference.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\inference.py",
+    "size": 2382,
+    "mtime": 1763123859.3687227,
+    "mime": "text/x-python",
+    "is_text": true,
+    "sha256": "233773db616b05f9bc5e096a5ef2948faf1ac92d800ff393ec8aa43a12648af2",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\gcpdeploy__src__inference.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "1",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'inference.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "2382",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

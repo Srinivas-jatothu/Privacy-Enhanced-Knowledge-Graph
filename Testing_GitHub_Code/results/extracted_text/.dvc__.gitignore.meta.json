@@ -1,0 +1,32 @@
+{
+  "relpath": ".dvc/.gitignore",
+  "manifest_meta": {
+    "relpath": ".dvc/.gitignore",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\.gitignore",
+    "size": 43,
+    "mtime": 1763123855.0784023,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "6d76473f7aa18dd75743188267a1ee3421744e0d58fd0fa1a0e7be73086dd531",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.dvc__.gitignore.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "5",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'.gitignore'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "43",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

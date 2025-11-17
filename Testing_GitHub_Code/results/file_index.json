@@ -1,0 +1,2255 @@
+{
+  "repo": "Ecommerce-Data-MLOps",
+  "total_files": 249,
+  "counts": {
+    "other": 100,
+    "config": 7,
+    "doc": 3,
+    "binary": 24,
+    "code": 100,
+    "data": 15
+  },
+  "files": [
+    {
+      "relpath": ".dvcignore",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvcignore",
+      "category": "other",
+      "ext": "",
+      "size": 21,
+      "mtime": 1763123856.727403,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".gitignore",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.gitignore",
+      "category": "other",
+      "ext": "",
+      "size": 1145,
+      "mtime": 1763123856.7303996,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".pylintrc",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.pylintrc",
+      "category": "other",
+      "ext": "",
+      "size": 518,
+      "mtime": 1763123856.7303996,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags.dvc",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags.dvc",
+      "category": "other",
+      "ext": ".dvc",
+      "size": 112,
+      "mtime": 1763123856.7762005,
+      "sample_taken": true
+    },
+    {
+      "relpath": "data.dvc",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data.dvc",
+      "category": "other",
+      "ext": ".dvc",
+      "size": 112,
+      "mtime": 1763123856.7941954,
+      "sample_taken": true
+    },
+    {
+      "relpath": "docker-compose.yaml",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\docker-compose.yaml",
+      "category": "config",
+      "ext": ".yaml",
+      "size": 13265,
+      "mtime": 1763123858.5637045,
+      "sample_taken": true
+    },
+    {
+      "relpath": "logs.dvc",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\logs.dvc",
+      "category": "other",
+      "ext": ".dvc",
+      "size": 111,
+      "mtime": 1763123859.3783398,
+      "sample_taken": true
+    },
+    {
+      "relpath": "pytest.ini",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\pytest.ini",
+      "category": "config",
+      "ext": ".ini",
+      "size": 66,
+      "mtime": 1763123859.3793478,
+      "sample_taken": true
+    },
+    {
+      "relpath": "README.md",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\README.md",
+      "category": "doc",
+      "ext": ".md",
+      "size": 24826,
+      "mtime": 1763123856.7344007,
+      "sample_taken": true
+    },
+    {
+      "relpath": "requirements.txt",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\requirements.txt",
+      "category": "doc",
+      "ext": ".txt",
+      "size": 1022,
+      "mtime": 1763123859.3793478,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".dvc/.gitignore",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\.gitignore",
+      "category": "other",
+      "ext": "",
+      "size": 43,
+      "mtime": 1763123855.0784023,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".dvc/config",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\config",
+      "category": "other",
+      "ext": "",
+      "size": 179,
+      "mtime": 1763123856.72339,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".dvc/config.local",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\config.local",
+      "category": "other",
+      "ext": ".local",
+      "size": 268,
+      "mtime": 1763123856.72339,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/09/3789d1a0c6f5be557d9287f59e0926",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\09\\3789d1a0c6f5be557d9287f59e0926",
+      "category": "other",
+      "ext": "",
+      "size": 23715478,
+      "mtime": 1763123855.2680714,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/22/30e8560c102b5e46dcd1faa94bd3bb",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\22\\30e8560c102b5e46dcd1faa94bd3bb",
+      "category": "other",
+      "ext": "",
+      "size": 590241,
+      "mtime": 1763123855.2812693,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/23/3cf5a311d0b9a3af7fda8983d2cc76.dir",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\23\\3cf5a311d0b9a3af7fda8983d2cc76.dir",
+      "category": "other",
+      "ext": ".dir",
+      "size": 1618,
+      "mtime": 1763123855.2945187,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/29/3577125fd5a728fc1fadcbf4527828",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\29\\3577125fd5a728fc1fadcbf4527828",
+      "category": "other",
+      "ext": "",
+      "size": 153674,
+      "mtime": 1763123855.297027,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/31/687b023f3f9df5c85cf497840f9211",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\31\\687b023f3f9df5c85cf497840f9211",
+      "category": "other",
+      "ext": "",
+      "size": 767958,
+      "mtime": 1763123855.3049893,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/4a/1bd110fc6b7a5d77267c1006f80441",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\4a\\1bd110fc6b7a5d77267c1006f80441",
+      "category": "other",
+      "ext": "",
+      "size": 28577294,
+      "mtime": 1763123855.481273,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/5b/f5ee725e3ea25ccee03e7ce20bc147",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\5b\\f5ee725e3ea25ccee03e7ce20bc147",
+      "category": "other",
+      "ext": "",
+      "size": 201510,
+      "mtime": 1763123855.485658,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/5d/295417e543b29d40366cd75fb4c75a",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\5d\\295417e543b29d40366cd75fb4c75a",
+      "category": "other",
+      "ext": "",
+      "size": 45580638,
+      "mtime": 1763123855.733807,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/81/02315b69020193f53f68a97b4302cd",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\81\\02315b69020193f53f68a97b4302cd",
+      "category": "other",
+      "ext": "",
+      "size": 24193531,
+      "mtime": 1763123855.8460975,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/84/96dc1c07f55d7fe1b5837ff7e855ca",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\84\\96dc1c07f55d7fe1b5837ff7e855ca",
+      "category": "other",
+      "ext": "",
+      "size": 660633,
+      "mtime": 1763123855.8510835,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/8f/8e6d94ba88f976f4d8290cb2dea7fd",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\8f\\8e6d94ba88f976f4d8290cb2dea7fd",
+      "category": "other",
+      "ext": "",
+      "size": 23715344,
+      "mtime": 1763123856.0765924,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/90/dcd6e6b8ff0be3702848f849d9a7cb",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\90\\dcd6e6b8ff0be3702848f849d9a7cb",
+      "category": "other",
+      "ext": "",
+      "size": 37890240,
+      "mtime": 1763123856.2084,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/a8/4e1ecaa7181c052509dc82fa32bf8c",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\a8\\4e1ecaa7181c052509dc82fa32bf8c",
+      "category": "other",
+      "ext": "",
+      "size": 23892715,
+      "mtime": 1763123856.2503061,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/c0/f97bdaf82c4f66ee8f5caaefd69ffd",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\c0\\f97bdaf82c4f66ee8f5caaefd69ffd",
+      "category": "other",
+      "ext": "",
+      "size": 28,
+      "mtime": 1763123856.268226,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/c5/72794c836103b332b1a9ae359f436a",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\c5\\72794c836103b332b1a9ae359f436a",
+      "category": "other",
+      "ext": "",
+      "size": 27678413,
+      "mtime": 1763123856.4093587,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/cc/6cee452c71df4fe9bcd4a6b61e6962",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\cc\\6cee452c71df4fe9bcd4a6b61e6962",
+      "category": "other",
+      "ext": "",
+      "size": 27678379,
+      "mtime": 1763123856.4749496,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/d1/f3296518f175c8c18a3435c7f48861",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\d1\\f3296518f175c8c18a3435c7f48861",
+      "category": "other",
+      "ext": "",
+      "size": 28712889,
+      "mtime": 1763123856.5473585,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/d4/1d8cd98f00b204e9800998ecf8427e",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\d4\\1d8cd98f00b204e9800998ecf8427e",
+      "category": "other",
+      "ext": "",
+      "size": 0,
+      "mtime": 1763123856.5512779,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/cache/files/md5/ed/1a0067e994a471dd5e95abe136e4c8",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\ed\\1a0067e994a471dd5e95abe136e4c8",
+      "category": "other",
+      "ext": "",
+      "size": 37887185,
+      "mtime": 1763123856.7203894,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/tmp/btime",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\tmp\\btime",
+      "category": "other",
+      "ext": "",
+      "size": 0,
+      "mtime": 1763123856.7243893,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".dvc/tmp/dag.md",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\tmp\\dag.md",
+      "category": "doc",
+      "ext": ".md",
+      "size": 89,
+      "mtime": 1763123856.725386,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".dvc/tmp/lock",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\tmp\\lock",
+      "category": "other",
+      "ext": "",
+      "size": 8,
+      "mtime": 1763123856.7263896,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".dvc/tmp/rwlock",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\tmp\\rwlock",
+      "category": "other",
+      "ext": "",
+      "size": 13,
+      "mtime": 1763123856.7263896,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".dvc/tmp/rwlock.lock",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\tmp\\rwlock.lock",
+      "category": "other",
+      "ext": ".lock",
+      "size": 8,
+      "mtime": 1763123856.727403,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/config",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\config",
+      "category": "other",
+      "ext": "",
+      "size": 487,
+      "mtime": 1763123867.5983982,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/description",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\description",
+      "category": "other",
+      "ext": "",
+      "size": 73,
+      "mtime": 1763123843.5389433,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/FETCH_HEAD",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\FETCH_HEAD",
+      "category": "other",
+      "ext": "",
+      "size": 1378,
+      "mtime": 1763125680.386899,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/HEAD",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\HEAD",
+      "category": "other",
+      "ext": "",
+      "size": 21,
+      "mtime": 1763123855.0578353,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/index",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\index",
+      "category": "other",
+      "ext": "",
+      "size": 22437,
+      "mtime": 1763123859.5827167,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".git/packed-refs",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\packed-refs",
+      "category": "other",
+      "ext": "",
+      "size": 817,
+      "mtime": 1763123855.0488155,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/applypatch-msg.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\applypatch-msg.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 478,
+      "mtime": 1763123843.5409474,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/commit-msg.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\commit-msg.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 896,
+      "mtime": 1763123843.5409474,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/fsmonitor-watchman.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\fsmonitor-watchman.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 4726,
+      "mtime": 1763123843.5419438,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/post-update.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\post-update.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 189,
+      "mtime": 1763123843.5429454,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/pre-applypatch.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\pre-applypatch.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 424,
+      "mtime": 1763123843.5429454,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/pre-commit.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\pre-commit.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 1643,
+      "mtime": 1763123843.5439463,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/pre-merge-commit.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\pre-merge-commit.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 416,
+      "mtime": 1763123843.5449452,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/pre-push.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\pre-push.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 1374,
+      "mtime": 1763123843.5449452,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/pre-rebase.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\pre-rebase.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 4898,
+      "mtime": 1763123843.5459435,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/pre-receive.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\pre-receive.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 544,
+      "mtime": 1763123843.5459435,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/prepare-commit-msg.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\prepare-commit-msg.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 1492,
+      "mtime": 1763123843.5469437,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/push-to-checkout.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\push-to-checkout.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 2783,
+      "mtime": 1763123843.5479484,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/sendemail-validate.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\sendemail-validate.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 2308,
+      "mtime": 1763123843.5489466,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/hooks/update.sample",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\update.sample",
+      "category": "other",
+      "ext": ".sample",
+      "size": 3650,
+      "mtime": 1763123843.5499463,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/info/exclude",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\info\\exclude",
+      "category": "other",
+      "ext": "",
+      "size": 240,
+      "mtime": 1763123843.5509446,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/logs/HEAD",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\logs\\HEAD",
+      "category": "other",
+      "ext": "",
+      "size": 211,
+      "mtime": 1763123855.0620797,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/logs/refs/heads/main",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\logs\\refs\\heads\\main",
+      "category": "other",
+      "ext": "",
+      "size": 211,
+      "mtime": 1763123855.0630803,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/logs/refs/remotes/origin/HEAD",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\logs\\refs\\remotes\\origin\\HEAD",
+      "category": "other",
+      "ext": "",
+      "size": 211,
+      "mtime": 1763123855.0568268,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/objects/pack/pack-42ae9645ae69066ccdbc8e6785ca8afef2509415.idx",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\objects\\pack\\pack-42ae9645ae69066ccdbc8e6785ca8afef2509415.idx",
+      "category": "other",
+      "ext": ".idx",
+      "size": 43632,
+      "mtime": 1763123854.818403,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".git/objects/pack/pack-42ae9645ae69066ccdbc8e6785ca8afef2509415.pack",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\objects\\pack\\pack-42ae9645ae69066ccdbc8e6785ca8afef2509415.pack",
+      "category": "other",
+      "ext": ".pack",
+      "size": 85148580,
+      "mtime": 1763123854.8114731,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".git/objects/pack/pack-42ae9645ae69066ccdbc8e6785ca8afef2509415.rev",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\objects\\pack\\pack-42ae9645ae69066ccdbc8e6785ca8afef2509415.rev",
+      "category": "other",
+      "ext": ".rev",
+      "size": 6132,
+      "mtime": 1763123854.818403,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".git/objects/pack/pack-504b031443881bb401e4bbfc0bc39905b50c996a.idx",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\objects\\pack\\pack-504b031443881bb401e4bbfc0bc39905b50c996a.idx",
+      "category": "other",
+      "ext": ".idx",
+      "size": 43912,
+      "mtime": 1763123854.9806201,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".git/objects/pack/pack-504b031443881bb401e4bbfc0bc39905b50c996a.pack",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\objects\\pack\\pack-504b031443881bb401e4bbfc0bc39905b50c996a.pack",
+      "category": "other",
+      "ext": ".pack",
+      "size": 85226253,
+      "mtime": 1763123854.9806201,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".git/objects/pack/pack-504b031443881bb401e4bbfc0bc39905b50c996a.rev",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\objects\\pack\\pack-504b031443881bb401e4bbfc0bc39905b50c996a.rev",
+      "category": "other",
+      "ext": ".rev",
+      "size": 6172,
+      "mtime": 1763123854.983775,
+      "sample_taken": false
+    },
+    {
+      "relpath": ".git/refs/heads/main",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\refs\\heads\\main",
+      "category": "other",
+      "ext": "",
+      "size": 41,
+      "mtime": 1763123855.0610814,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".git/refs/remotes/origin/HEAD",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\refs\\remotes\\origin\\HEAD",
+      "category": "other",
+      "ext": "",
+      "size": 30,
+      "mtime": 1763123855.0568268,
+      "sample_taken": true
+    },
+    {
+      "relpath": ".github/workflows/pytest.yml",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.github\\workflows\\pytest.yml",
+      "category": "config",
+      "ext": ".yml",
+      "size": 1148,
+      "mtime": 1763123856.7294009,
+      "sample_taken": true
+    },
+    {
+      "relpath": "assets/3D_Visualization_of_clusters.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\3D_Visualization_of_clusters.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 229884,
+      "mtime": 1763123856.7354102,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/dag.jpg",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\dag.jpg",
+      "category": "binary",
+      "ext": ".jpg",
+      "size": 107146,
+      "mtime": 1763123856.764627,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/Data_Pipeline.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\Data_Pipeline.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 42434,
+      "mtime": 1763123856.7354102,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/Deployment-Pipeline.jpeg",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\Deployment-Pipeline.jpeg",
+      "category": "binary",
+      "ext": ".jpeg",
+      "size": 115916,
+      "mtime": 1763123856.743118,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/Distribtion_customers.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\Distribtion_customers.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 20560,
+      "mtime": 1763123856.744147,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/dvc-working.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\dvc-working.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 113778,
+      "mtime": 1763123856.7671719,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/dvc.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\dvc.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 111437,
+      "mtime": 1763123856.7695267,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/Ecommerce-Overall-Pipeline.jpeg",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\Ecommerce-Overall-Pipeline.jpeg",
+      "category": "binary",
+      "ext": ".jpeg",
+      "size": 527663,
+      "mtime": 1763123856.747894,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/flask_logo.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\flask_logo.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 157985,
+      "mtime": 1763123856.7715204,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/gcp_logo.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\gcp_logo.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 3321,
+      "mtime": 1763123856.7725198,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/KMeans_Parallelplot.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\KMeans_Parallelplot.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 210010,
+      "mtime": 1763123856.7512748,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/MLFlow_dashboard.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\MLFlow_dashboard.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 120034,
+      "mtime": 1763123856.7534063,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/mlflow_logo.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\mlflow_logo.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 3289,
+      "mtime": 1763123856.7725198,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/Model_Monitoring_Graph.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\Model_Monitoring_Graph.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 16049,
+      "mtime": 1763123856.7553983,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/Model_Pipeline.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\Model_Pipeline.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 98962,
+      "mtime": 1763123856.7581568,
+      "sample_taken": false
+    },
+    {
+      "relpath": "assets/Silhouette_analysis.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\assets\\Silhouette_analysis.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 340797,
+      "mtime": 1763123856.7626376,
+      "sample_taken": false
+    },
+    {
+      "relpath": "config/feature_processing.json",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\config\\feature_processing.json",
+      "category": "config",
+      "ext": ".json",
+      "size": 1104,
+      "mtime": 1763123856.7750392,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/__init__.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\__init__.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 0,
+      "mtime": 1763123856.7775857,
+      "sample_taken": false
+    },
+    {
+      "relpath": "dags/data/__init__.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\data\\__init__.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 0,
+      "mtime": 1763123856.778586,
+      "sample_taken": false
+    },
+    {
+      "relpath": "dags/src/airflow.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\airflow.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 8349,
+      "mtime": 1763123856.7805867,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/anomaly_code_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\anomaly_code_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1939,
+      "mtime": 1763123856.781577,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/cancellation_details.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\cancellation_details.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2465,
+      "mtime": 1763123856.781577,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/cleaning_description.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\cleaning_description.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1456,
+      "mtime": 1763123856.7830105,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/correlation.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\correlation.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 5252,
+      "mtime": 1763123856.7842367,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/customers_behavior.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\customers_behavior.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3039,
+      "mtime": 1763123856.7846985,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/data_loader.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\data_loader.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1996,
+      "mtime": 1763123856.7859068,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/download_data.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\download_data.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1355,
+      "mtime": 1763123856.7869525,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/duplicates_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\duplicates_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1714,
+      "mtime": 1763123856.7869525,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/geographic_features.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\geographic_features.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2339,
+      "mtime": 1763123856.787937,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/missing_values_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\missing_values_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1938,
+      "mtime": 1763123856.787937,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/outlier_treatment.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\outlier_treatment.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1814,
+      "mtime": 1763123856.788965,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/pca.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\pca.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 4442,
+      "mtime": 1763123856.789972,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/removing_zero_unitprice.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\removing_zero_unitprice.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1224,
+      "mtime": 1763123856.789972,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/rfm.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\rfm.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2856,
+      "mtime": 1763123856.789972,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/scaler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\scaler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3498,
+      "mtime": 1763123856.791687,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/seasonality.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\seasonality.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3401,
+      "mtime": 1763123856.7924595,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/transaction_status_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\transaction_status_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2109,
+      "mtime": 1763123856.7931156,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/unique_products.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\unique_products.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2124,
+      "mtime": 1763123856.7931156,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/unzip_data.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\unzip_data.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1162,
+      "mtime": 1763123856.7941954,
+      "sample_taken": true
+    },
+    {
+      "relpath": "dags/src/__init__.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\__init__.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 0,
+      "mtime": 1763123856.7795846,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/after_missing_values.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\after_missing_values.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 24193531,
+      "mtime": 1763123857.080933,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/bad.zip",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\bad.zip",
+      "category": "binary",
+      "ext": ".zip",
+      "size": 28,
+      "mtime": 1763123857.0829566,
+      "sample_taken": true
+    },
+    {
+      "relpath": "data/data.csv",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\data.csv",
+      "category": "data",
+      "ext": ".csv",
+      "size": 45580638,
+      "mtime": 1763123857.3269014,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/data.zip",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\data.zip",
+      "category": "binary",
+      "ext": ".zip",
+      "size": 23715478,
+      "mtime": 1763123857.5621035,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/Online Retail.xlsx",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\Online Retail.xlsx",
+      "category": "data",
+      "ext": ".xlsx",
+      "size": 23715344,
+      "mtime": 1763123856.9813356,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/raw_data.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\raw_data.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 27678379,
+      "mtime": 1763123858.547195,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/__init__.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\__init__.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 0,
+      "mtime": 1763123856.9851117,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/plots/Cluster0.jpeg",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\plots\\Cluster0.jpeg",
+      "category": "binary",
+      "ext": ".jpeg",
+      "size": 46200,
+      "mtime": 1763123857.5780163,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/plots/Cluster1.jpeg",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\plots\\Cluster1.jpeg",
+      "category": "binary",
+      "ext": ".jpeg",
+      "size": 48368,
+      "mtime": 1763123857.5780163,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/plots/Cluster2.jpeg",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\plots\\Cluster2.jpeg",
+      "category": "binary",
+      "ext": ".jpeg",
+      "size": 45258,
+      "mtime": 1763123857.5780163,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/plots/correlation_heatmap.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\plots\\correlation_heatmap.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 150501,
+      "mtime": 1763123857.5780163,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/plots/histogram_analysis.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\plots\\histogram_analysis.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 597095,
+      "mtime": 1763123857.5945158,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/after_anomaly_code.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\after_anomaly_code.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 29785490,
+      "mtime": 1763123857.6972241,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/after_cleaning_description.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\after_cleaning_description.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 39575006,
+      "mtime": 1763123857.8566146,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/after_duplicates.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\after_duplicates.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 23535681,
+      "mtime": 1763123857.9433858,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/after_missing_values.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\after_missing_values.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 23843387,
+      "mtime": 1763123857.9920487,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/after_outlier_treatment.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\after_outlier_treatment.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 560880,
+      "mtime": 1763123857.9970596,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/after_removing_zero_unitprice.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\after_removing_zero_unitprice.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 39571794,
+      "mtime": 1763123858.1259148,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/after_RFM.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\after_RFM.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 210325,
+      "mtime": 1763123857.6040678,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/after_transaction_status.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\after_transaction_status.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 29927638,
+      "mtime": 1763123858.2226353,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/calculate_trends.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\calculate_trends.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 767958,
+      "mtime": 1763123858.2286282,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/cancellation_details.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\cancellation_details.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 412522,
+      "mtime": 1763123858.231641,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/correlation_matrix.parquet",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\correlation_matrix.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 15904,
+      "mtime": 1763123858.2326388,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/customers_behavior.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\customers_behavior.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 309526,
+      "mtime": 1763123858.2349164,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/data_1",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\data_1",
+      "category": "other",
+      "ext": "",
+      "size": 13872038,
+      "mtime": 1763123858.2818837,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/data_2",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\data_2",
+      "category": "other",
+      "ext": "",
+      "size": 13850582,
+      "mtime": 1763123858.3282201,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/df_cleaned.parquet",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\df_cleaned.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 226377,
+      "mtime": 1763123858.3292189,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/geographic_features.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\geographic_features.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 343824,
+      "mtime": 1763123858.3292189,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/monthly_spending.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\monthly_spending.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 329127,
+      "mtime": 1763123858.3292189,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/pca_output.parquet",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\pca_output.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 262007,
+      "mtime": 1763123858.3292189,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/raw_data.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\raw_data.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 27414709,
+      "mtime": 1763123858.438864,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/scaler_output.parquet",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\scaler_output.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 299643,
+      "mtime": 1763123858.4443953,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/seasonality.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\seasonality.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 590241,
+      "mtime": 1763123858.4484336,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/seasonal_buying.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\seasonal_buying.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 105708,
+      "mtime": 1763123858.4464169,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/processed/unique_products.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\processed\\unique_products.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 245325,
+      "mtime": 1763123858.4511826,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/test_data/corr.parquet",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\test_data\\corr.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 14948,
+      "mtime": 1763123858.5637045,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/test_data/corr.png",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\test_data\\corr.png",
+      "category": "binary",
+      "ext": ".png",
+      "size": 141049,
+      "mtime": 1763123858.5637045,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/test_data/monthly_test.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\test_data\\monthly_test.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 955,
+      "mtime": 1763123858.5637045,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/test_data/test_pca_output.parquet",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\test_data\\test_pca_output.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 262007,
+      "mtime": 1763123858.5637045,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/test_data/test_scaler_output.parquet",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\test_data\\test_scaler_output.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 299643,
+      "mtime": 1763123858.5637045,
+      "sample_taken": false
+    },
+    {
+      "relpath": "data/test_data/__init__.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\data\\test_data\\__init__.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 0,
+      "mtime": 1763123858.5637045,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/after_anomaly_code.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\after_anomaly_code.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 29785490,
+      "mtime": 1763123858.645134,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/after_cleaning_description.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\after_cleaning_description.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 39575006,
+      "mtime": 1763123858.8333683,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/after_duplicates.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\after_duplicates.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 23535681,
+      "mtime": 1763123858.9147313,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/after_missing_values.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\after_missing_values.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 23843387,
+      "mtime": 1763123858.9871168,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/after_outlier_treatment.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\after_outlier_treatment.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 593306,
+      "mtime": 1763123858.99207,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/after_removing_zero_unitprice.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\after_removing_zero_unitprice.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 39571794,
+      "mtime": 1763123859.1433156,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/after_RFM.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\after_RFM.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 245408,
+      "mtime": 1763123858.5754554,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/after_transaction_status.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\after_transaction_status.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 29927638,
+      "mtime": 1763123859.2001426,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/cancellation_details.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\cancellation_details.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 481453,
+      "mtime": 1763123859.2050085,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/correlation_matrix.parquet",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\correlation_matrix.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 14948,
+      "mtime": 1763123859.2073317,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/customers_behavior.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\customers_behavior.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 378344,
+      "mtime": 1763123859.2073317,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/df_outlier.parquet",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\df_outlier.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 29930,
+      "mtime": 1763123859.2073317,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/geographic_features.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\geographic_features.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 412707,
+      "mtime": 1763123859.2108338,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/pca_output.parquet",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\pca_output.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 262007,
+      "mtime": 1763123859.2108338,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/raw_data.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\raw_data.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 27414675,
+      "mtime": 1763123859.3062947,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/scaler_output.parquet",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\scaler_output.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 299761,
+      "mtime": 1763123859.3112864,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/seasonality.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\seasonality.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 658820,
+      "mtime": 1763123859.3133948,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/transaction_dataframe.parquet",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\transaction_dataframe.parquet",
+      "category": "data",
+      "ext": ".parquet",
+      "size": 5195379,
+      "mtime": 1763123859.3572187,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/data/processed/unique_products.pkl",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\data\\processed\\unique_products.pkl",
+      "category": "other",
+      "ext": ".pkl",
+      "size": 280431,
+      "mtime": 1763123859.3592074,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/src/airflow.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\airflow.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 8349,
+      "mtime": 1763123859.3592074,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/anomaly_code_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\anomaly_code_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1939,
+      "mtime": 1763123859.3592074,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/build.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\build.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3131,
+      "mtime": 1763123859.3592074,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/cancellation_details.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\cancellation_details.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2465,
+      "mtime": 1763123859.3592074,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/cleaning_description.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\cleaning_description.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1456,
+      "mtime": 1763123859.3645127,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/correlation.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\correlation.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 5022,
+      "mtime": 1763123859.3645127,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/customers_behavior.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\customers_behavior.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3039,
+      "mtime": 1763123859.365239,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/datapipeline.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\datapipeline.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1141,
+      "mtime": 1763123859.3662944,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/data_loader.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\data_loader.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1996,
+      "mtime": 1763123859.365239,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/download_data.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\download_data.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1355,
+      "mtime": 1763123859.3662944,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/duplicates_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\duplicates_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1714,
+      "mtime": 1763123859.3677053,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/geographic_features.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\geographic_features.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2339,
+      "mtime": 1763123859.3687227,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/inference.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\inference.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2382,
+      "mtime": 1763123859.3687227,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/mflow_logging.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\mflow_logging.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3513,
+      "mtime": 1763123859.3687227,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/missing_values_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\missing_values_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1938,
+      "mtime": 1763123859.369723,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/model_analysis.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\model_analysis.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 12585,
+      "mtime": 1763123859.369723,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/outlier_treatment.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\outlier_treatment.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1616,
+      "mtime": 1763123859.369723,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/pca.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\pca.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 4204,
+      "mtime": 1763123859.3707168,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/removing_zero_unitprice.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\removing_zero_unitprice.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1224,
+      "mtime": 1763123859.3707168,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/rfm.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\rfm.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2856,
+      "mtime": 1763123859.3717258,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/scaler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\scaler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3518,
+      "mtime": 1763123859.3717258,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/seasonality.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\seasonality.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3068,
+      "mtime": 1763123859.3717258,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/transaction_status_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\transaction_status_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2109,
+      "mtime": 1763123859.3769395,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/unique_products.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\unique_products.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2124,
+      "mtime": 1763123859.3769395,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/unzip_data.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\unzip_data.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1162,
+      "mtime": 1763123859.3769395,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/__init__.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\__init__.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 0,
+      "mtime": 1763123859.3592074,
+      "sample_taken": false
+    },
+    {
+      "relpath": "gcpdeploy/src/serve/Dockerfile",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\serve\\Dockerfile",
+      "category": "config",
+      "ext": "",
+      "size": 860,
+      "mtime": 1763123859.3727162,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/serve/predict.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\serve\\predict.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 7291,
+      "mtime": 1763123859.3737159,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/serve/testing_serve.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\serve\\testing_serve.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 575,
+      "mtime": 1763123859.3737159,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 7048,
+      "mtime": 1763123859.3748937,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/trainer/Dockerfile",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\trainer\\Dockerfile",
+      "category": "config",
+      "ext": "",
+      "size": 496,
+      "mtime": 1763123859.375923,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/trainer/train.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\trainer\\train.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3819,
+      "mtime": 1763123859.3769395,
+      "sample_taken": true
+    },
+    {
+      "relpath": "gcpdeploy/src/trainer/__init__.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\trainer\\__init__.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 0,
+      "mtime": 1763123859.375923,
+      "sample_taken": false
+    },
+    {
+      "relpath": "mlruns/0/meta.yaml",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\mlruns\\0\\meta.yaml",
+      "category": "config",
+      "ext": ".yaml",
+      "size": 163,
+      "mtime": 1763123859.3793478,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/anomaly_code_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\anomaly_code_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1939,
+      "mtime": 1763123859.3803475,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/cancellation_details.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\cancellation_details.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2465,
+      "mtime": 1763123859.3803475,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/cleaning_description.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\cleaning_description.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1456,
+      "mtime": 1763123859.3818276,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/correlation.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\correlation.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 5234,
+      "mtime": 1763123859.3818276,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/customers_behavior.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\customers_behavior.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3039,
+      "mtime": 1763123859.3830528,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/datapipeline.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\datapipeline.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1011,
+      "mtime": 1763123859.555597,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/data_loader.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\data_loader.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1996,
+      "mtime": 1763123859.555597,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/download_data.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\download_data.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1355,
+      "mtime": 1763123859.5566149,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/duplicates_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\duplicates_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1714,
+      "mtime": 1763123859.557609,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/geographic_features.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\geographic_features.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2339,
+      "mtime": 1763123859.557609,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/histogram_analysis.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\histogram_analysis.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1925,
+      "mtime": 1763123859.558609,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/missing_values_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\missing_values_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1938,
+      "mtime": 1763123859.558609,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/outlier_treatment.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\outlier_treatment.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1616,
+      "mtime": 1763123859.5596094,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/pca.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\pca.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 4418,
+      "mtime": 1763123859.5596094,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/radar_analysis.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\radar_analysis.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1970,
+      "mtime": 1763123859.5606139,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/removing_zero_unitprice.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\removing_zero_unitprice.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1224,
+      "mtime": 1763123859.5606139,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/rfm.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\rfm.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2856,
+      "mtime": 1763123859.5616143,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/scaler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\scaler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3485,
+      "mtime": 1763123859.5626068,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/seasonality.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\seasonality.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 3068,
+      "mtime": 1763123859.5626068,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/transaction_status_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\transaction_status_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2109,
+      "mtime": 1763123859.5637417,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/unique_products.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\unique_products.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2124,
+      "mtime": 1763123859.5637417,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/unzip_data.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\unzip_data.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1162,
+      "mtime": 1763123859.5637417,
+      "sample_taken": true
+    },
+    {
+      "relpath": "src/__init__.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\__init__.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 0,
+      "mtime": 1763123859.3803475,
+      "sample_taken": false
+    },
+    {
+      "relpath": "src/data/Online Retail.xlsx",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\data\\Online Retail.xlsx",
+      "category": "data",
+      "ext": ".xlsx",
+      "size": 23715344,
+      "mtime": 1763123859.5534012,
+      "sample_taken": false
+    },
+    {
+      "relpath": "test/test_anomaly_code_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_anomaly_code_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1531,
+      "mtime": 1763123859.564738,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_cancellation_details.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_cancellation_details.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 667,
+      "mtime": 1763123859.565727,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_cleaning_description.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_cleaning_description.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1216,
+      "mtime": 1763123859.5667264,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_correlation.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_correlation.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2418,
+      "mtime": 1763123859.5677276,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_customers_behavior.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_customers_behavior.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 638,
+      "mtime": 1763123859.5677276,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_datapipeline.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_datapipeline.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 44,
+      "mtime": 1763123859.5691013,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_data_loader.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_data_loader.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1902,
+      "mtime": 1763123859.5691013,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_download_data.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_download_data.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1543,
+      "mtime": 1763123859.5705519,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_duplicates_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_duplicates_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1902,
+      "mtime": 1763123859.571562,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_geographic_features.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_geographic_features.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 655,
+      "mtime": 1763123859.571562,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_missing_values_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_missing_values_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1566,
+      "mtime": 1763123859.571562,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_outlier_treatment.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_outlier_treatment.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1123,
+      "mtime": 1763123859.5726166,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_pca.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_pca.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 2181,
+      "mtime": 1763123859.5736296,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_removing_zero_unitpirce.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_removing_zero_unitpirce.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1094,
+      "mtime": 1763123859.5746253,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_rfm.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_rfm.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 636,
+      "mtime": 1763123859.5756266,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_scaler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_scaler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1984,
+      "mtime": 1763123859.5767846,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_seasonality.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_seasonality.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 645,
+      "mtime": 1763123859.5777974,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_transaction_status_handler.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_transaction_status_handler.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1647,
+      "mtime": 1763123859.5786374,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_unique_products.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_unique_products.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 639,
+      "mtime": 1763123859.5786374,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/test_unzip_data.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_unzip_data.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 1577,
+      "mtime": 1763123859.5802248,
+      "sample_taken": true
+    },
+    {
+      "relpath": "test/__init__.py",
+      "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\__init__.py",
+      "category": "code",
+      "ext": ".py",
+      "size": 0,
+      "mtime": 1763123859.564738,
+      "sample_taken": false
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "relpath": "dags/src/geographic_features.py",
+  "manifest_meta": {
+    "relpath": "dags/src/geographic_features.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\geographic_features.py",
+    "size": 2339,
+    "mtime": 1763123856.787937,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "706a1b7b9c003d32c50b4d831bbcd692d89073e1b93eeb69a20b6c0c7f68a852",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\dags__src__geographic_features.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "2",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'geographic_features.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "2339",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

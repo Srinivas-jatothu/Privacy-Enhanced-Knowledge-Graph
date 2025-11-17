@@ -1,0 +1,10 @@
+"""
+A test for duplicates_handler module.
+"""
+
+import os
+import pickle
+import pytest
+from src.duplicates_handler import remove_duplicates
+
+# Determine the absolute path of the project directory

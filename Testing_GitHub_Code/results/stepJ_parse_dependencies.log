@@ -1,0 +1,18 @@
+00:41:24 INFO     Starting dependency parsing
+00:41:24 INFO     Repo dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Ecommerce-Data-MLOps
+00:41:24 INFO     Out dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results
+00:41:24 INFO     Discovered 1 manifest files
+00:41:24 INFO     Parsed 48 deps from requirements.txt
+00:41:24 INFO     Wrote dependencies: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\dependencies.json (total=48)
+00:41:24 INFO     Wrote dependencies_by_file: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\dependencies_by_file.json
+00:41:24 INFO     Dependency parsing complete. Found 48 unique dependency entries across 1 manifests.
+00:41:24 INFO     Done.
+00:59:45 INFO     Starting dependency parsing
+00:59:45 INFO     Repo dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Ecommerce-Data-MLOps
+00:59:45 INFO     Out dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results
+00:59:45 INFO     Discovered 1 manifest files
+00:59:45 INFO     Parsed 48 deps from requirements.txt
+00:59:45 INFO     Wrote dependencies: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\dependencies.json (total=48)
+00:59:45 INFO     Wrote dependencies_by_file: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\dependencies_by_file.json
+00:59:45 INFO     Dependency parsing complete. Found 48 unique dependency entries across 1 manifests.
+00:59:45 INFO     Done.

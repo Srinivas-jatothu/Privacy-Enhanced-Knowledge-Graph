@@ -1,0 +1,10 @@
+"""
+A module for removing unit prices with a value of zero
+"""
+
+
+import os
+import pickle
+
+# Determine the absolute path of the project directory
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

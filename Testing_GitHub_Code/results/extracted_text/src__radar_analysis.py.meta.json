@@ -1,0 +1,32 @@
+{
+  "relpath": "src/radar_analysis.py",
+  "manifest_meta": {
+    "relpath": "src/radar_analysis.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\radar_analysis.py",
+    "size": 1970,
+    "mtime": 1763123859.5606139,
+    "mime": "text/x-objective-c",
+    "is_text": true,
+    "sha256": "01329ff75f9156eba0f472c8857a3316abfb38db37dc7d00199c0d36609497b9",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\src__radar_analysis.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "5",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'radar_analysis.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "1970",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "relpath": ".git/hooks/push-to-checkout.sample",
+  "manifest_meta": {
+    "relpath": ".git/hooks/push-to-checkout.sample",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.git\\hooks\\push-to-checkout.sample",
+    "size": 2783,
+    "mtime": 1763123843.5479484,
+    "mime": "text/x-shellscript",
+    "is_text": true,
+    "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.git__hooks__push-to-checkout.sample.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "ISO-8859-1",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'push-to-checkout.sample'",
+    "X-TIKA:detectedEncoding": "ISO-8859-1",
+    "Content-Length": "2783",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "application/x-sh; charset=ISO-8859-1"
+  }
+}

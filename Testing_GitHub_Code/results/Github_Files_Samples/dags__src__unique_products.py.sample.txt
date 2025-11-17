@@ -1,0 +1,10 @@
+"""
+This module groups the values based on unique values of CustomerID and orders.
+"""
+import  pickle
+import os
+import pandas as pd
+
+PROJECT_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+input_pickle_path=os.path.join(PROJECT_DIR, 'data', 'processed',
+'after_removing_zero_unitprice.pkl')

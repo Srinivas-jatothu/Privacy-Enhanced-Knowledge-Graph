@@ -1,0 +1,9 @@
+{
+  "requested_at": "2025-11-17T14:25:17.446693Z",
+  "requester": "unknown",
+  "function_name": "correlation_check",
+  "file_path": "dags/src/correlation.py",
+  "resolved_repo_root": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps",
+  "validation_warnings": [],
+  "extra": {}
+}

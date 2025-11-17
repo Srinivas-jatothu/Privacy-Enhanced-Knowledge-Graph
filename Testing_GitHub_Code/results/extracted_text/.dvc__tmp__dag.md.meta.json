@@ -1,0 +1,32 @@
+{
+  "relpath": ".dvc/tmp/dag.md",
+  "manifest_meta": {
+    "relpath": ".dvc/tmp/dag.md",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\tmp\\dag.md",
+    "size": 89,
+    "mtime": 1763123856.725386,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "e36ac7a7ec50471c35410219134126406828e5c0df1583389e74f3b3dd2eccf9",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.dvc__tmp__dag.md.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'dag.md'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "89",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

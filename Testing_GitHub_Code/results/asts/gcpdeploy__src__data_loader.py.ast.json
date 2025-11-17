@@ -1,0 +1,1005 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Expr",
+      "value": {
+        "_const_preview": "\nModule to handle the loading of e-commerce dataset from either pickle or Excel file format.\n"
+      },
+      "lineno": 1,
+      "end_lineno": 3
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "pickle",
+          "asname": null,
+          "lineno": 5,
+          "end_lineno": 5
+        }
+      ],
+      "lineno": 5,
+      "end_lineno": 5
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "os",
+          "asname": null,
+          "lineno": 6,
+          "end_lineno": 6
+        }
+      ],
+      "lineno": 6,
+      "end_lineno": 6
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "pandas",
+          "asname": "pd",
+          "lineno": 7,
+          "end_lineno": 7
+        }
+      ],
+      "lineno": 7,
+      "end_lineno": 7
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "PROJECT_DIR",
+          "lineno": 10,
+          "end_lineno": 10
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 10,
+              "end_lineno": 10
+            },
+            "attr": "path",
+            "lineno": 10,
+            "end_lineno": 10
+          },
+          "attr": "dirname",
+          "lineno": 10,
+          "end_lineno": 10
+        },
+        "args": [
+          {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 10,
+                  "end_lineno": 10
+                },
+                "attr": "path",
+                "lineno": 10,
+                "end_lineno": 10
+              },
+              "attr": "dirname",
+              "lineno": 10,
+              "end_lineno": 10
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 10,
+                      "end_lineno": 10
+                    },
+                    "attr": "path",
+                    "lineno": 10,
+                    "end_lineno": 10
+                  },
+                  "attr": "abspath",
+                  "lineno": 10,
+                  "end_lineno": 10
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "__file__",
+                    "lineno": 10,
+                    "end_lineno": 10
+                  }
+                ],
+                "keywords": [],
+                "lineno": 10,
+                "end_lineno": 10
+              }
+            ],
+            "keywords": [],
+            "lineno": 10,
+            "end_lineno": 10
+          }
+        ],
+        "keywords": [],
+        "lineno": 10,
+        "end_lineno": 10
+      },
+      "type_comment": null,
+      "lineno": 10,
+      "end_lineno": 10
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "DEFAULT_PICKLE_PATH",
+          "lineno": 13,
+          "end_lineno": 13
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 13,
+              "end_lineno": 13
+            },
+            "attr": "path",
+            "lineno": 13,
+            "end_lineno": 13
+          },
+          "attr": "join",
+          "lineno": 13,
+          "end_lineno": 13
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "PROJECT_DIR",
+            "lineno": 13,
+            "end_lineno": 13
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 13,
+            "end_lineno": 13
+          },
+          {
+            "_type": "Constant",
+            "value": "processed",
+            "kind": null,
+            "lineno": 14,
+            "end_lineno": 14
+          },
+          {
+            "_type": "Constant",
+            "value": "raw_data.pkl",
+            "kind": null,
+            "lineno": 14,
+            "end_lineno": 14
+          }
+        ],
+        "keywords": [],
+        "lineno": 13,
+        "end_lineno": 14
+      },
+      "type_comment": null,
+      "lineno": 13,
+      "end_lineno": 14
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "DEFAULT_EXCEL_PATH",
+          "lineno": 15,
+          "end_lineno": 15
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 15,
+              "end_lineno": 15
+            },
+            "attr": "path",
+            "lineno": 15,
+            "end_lineno": 15
+          },
+          "attr": "join",
+          "lineno": 15,
+          "end_lineno": 15
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "PROJECT_DIR",
+            "lineno": 15,
+            "end_lineno": 15
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 15,
+            "end_lineno": 15
+          },
+          {
+            "_type": "Constant",
+            "value": "Online Retail.xlsx",
+            "kind": null,
+            "lineno": 15,
+            "end_lineno": 15
+          }
+        ],
+        "keywords": [],
+        "lineno": 15,
+        "end_lineno": 15
+      },
+      "type_comment": null,
+      "lineno": 15,
+      "end_lineno": 15
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "load_data",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "pickle_path",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 17,
+            "end_lineno": 17
+          },
+          {
+            "_type": "arg",
+            "arg": "excel_path",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 17,
+            "end_lineno": 17
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": [
+          {
+            "_type": "Name",
+            "id": "DEFAULT_PICKLE_PATH",
+            "lineno": 17,
+            "end_lineno": 17
+          },
+          {
+            "_type": "Name",
+            "id": "DEFAULT_EXCEL_PATH",
+            "lineno": 17,
+            "end_lineno": 17
+          }
+        ]
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Load the e-commerce dataset.\n    First, try to load from the pickle file. If it doesn't exist, load from the excel file.\n    Regardless of the source, save"
+          },
+          "lineno": 18,
+          "end_lineno": 27
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "df",
+              "lineno": 29,
+              "end_lineno": 29
+            }
+          ],
+          "value": {
+            "_type": "Constant",
+            "value": null,
+            "kind": null,
+            "lineno": 29,
+            "end_lineno": 29
+          },
+          "type_comment": null,
+          "lineno": 29,
+          "end_lineno": 29
+        },
+        {
+          "_type": "If",
+          "test": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 31,
+                  "end_lineno": 31
+                },
+                "attr": "path",
+                "lineno": 31,
+                "end_lineno": 31
+              },
+              "attr": "exists",
+              "lineno": 31,
+              "end_lineno": 31
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "pickle_path",
+                "lineno": 31,
+                "end_lineno": 31
+              }
+            ],
+            "keywords": [],
+            "lineno": 31,
+            "end_lineno": 31
+          },
+          "body": [
+            {
+              "_type": "With",
+              "items": [
+                {
+                  "_type": "withitem",
+                  "context_expr": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "open",
+                      "lineno": 32,
+                      "end_lineno": 32
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "pickle_path",
+                        "lineno": 32,
+                        "end_lineno": 32
+                      },
+                      {
+                        "_type": "Constant",
+                        "value": "rb",
+                        "kind": null,
+                        "lineno": 32,
+                        "end_lineno": 32
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 32,
+                    "end_lineno": 32
+                  },
+                  "optional_vars": {
+                    "_type": "Name",
+                    "id": "file",
+                    "lineno": 32,
+                    "end_lineno": 32
+                  }
+                }
+              ],
+              "body": [
+                {
+                  "_type": "Assign",
+                  "targets": [
+                    {
+                      "_type": "Name",
+                      "id": "df",
+                      "lineno": 33,
+                      "end_lineno": 33
+                    }
+                  ],
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Name",
+                        "id": "pickle",
+                        "lineno": 33,
+                        "end_lineno": 33
+                      },
+                      "attr": "load",
+                      "lineno": 33,
+                      "end_lineno": 33
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "file",
+                        "lineno": 33,
+                        "end_lineno": 33
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 33,
+                    "end_lineno": 33
+                  },
+                  "type_comment": null,
+                  "lineno": 33,
+                  "end_lineno": 33
+                }
+              ],
+              "type_comment": null,
+              "lineno": 32,
+              "end_lineno": 33
+            },
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "print",
+                  "lineno": 34,
+                  "end_lineno": 34
+                },
+                "args": [
+                  {
+                    "_type": "JoinedStr",
+                    "values": [
+                      {
+                        "_type": "Constant",
+                        "value": "Data loaded successfully from ",
+                        "kind": null,
+                        "lineno": 34,
+                        "end_lineno": 34
+                      },
+                      {
+                        "_type": "FormattedValue",
+                        "value": {
+                          "_type": "Name",
+                          "id": "pickle_path",
+                          "lineno": 34,
+                          "end_lineno": 34
+                        },
+                        "conversion": -1,
+                        "format_spec": null,
+                        "lineno": 34,
+                        "end_lineno": 34
+                      },
+                      {
+                        "_type": "Constant",
+                        "value": ".",
+                        "kind": null,
+                        "lineno": 34,
+                        "end_lineno": 34
+                      }
+                    ],
+                    "lineno": 34,
+                    "end_lineno": 34
+                  }
+                ],
+                "keywords": [],
+                "lineno": 34,
+                "end_lineno": 34
+              },
+              "lineno": 34,
+              "end_lineno": 34
+            }
+          ],
+          "orelse": [
+            {
+              "_type": "If",
+              "test": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 36,
+                      "end_lineno": 36
+                    },
+                    "attr": "path",
+                    "lineno": 36,
+                    "end_lineno": 36
+                  },
+                  "attr": "exists",
+                  "lineno": 36,
+                  "end_lineno": 36
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "excel_path",
+                    "lineno": 36,
+                    "end_lineno": 36
+                  }
+                ],
+                "keywords": [],
+                "lineno": 36,
+                "end_lineno": 36
+              },
+              "body": [
+                {
+                  "_type": "Assign",
+                  "targets": [
+                    {
+                      "_type": "Name",
+                      "id": "df",
+                      "lineno": 37,
+                      "end_lineno": 37
+                    }
+                  ],
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Name",
+                        "id": "pd",
+                        "lineno": 37,
+                        "end_lineno": 37
+                      },
+                      "attr": "read_excel",
+                      "lineno": 37,
+                      "end_lineno": 37
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "excel_path",
+                        "lineno": 37,
+                        "end_lineno": 37
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 37,
+                    "end_lineno": 37
+                  },
+                  "type_comment": null,
+                  "lineno": 37,
+                  "end_lineno": 37
+                },
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "print",
+                      "lineno": 38,
+                      "end_lineno": 38
+                    },
+                    "args": [
+                      {
+                        "_type": "JoinedStr",
+                        "values": [
+                          {
+                            "_type": "Constant",
+                            "value": "Data loaded from ",
+                            "kind": null,
+                            "lineno": 38,
+                            "end_lineno": 38
+                          },
+                          {
+                            "_type": "FormattedValue",
+                            "value": {
+                              "_type": "Name",
+                              "id": "excel_path",
+                              "lineno": 38,
+                              "end_lineno": 38
+                            },
+                            "conversion": -1,
+                            "format_spec": null,
+                            "lineno": 38,
+                            "end_lineno": 38
+                          },
+                          {
+                            "_type": "Constant",
+                            "value": ".",
+                            "kind": null,
+                            "lineno": 38,
+                            "end_lineno": 38
+                          }
+                        ],
+                        "lineno": 38,
+                        "end_lineno": 38
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 38,
+                    "end_lineno": 38
+                  },
+                  "lineno": 38,
+                  "end_lineno": 38
+                }
+              ],
+              "orelse": [
+                {
+                  "_type": "Assign",
+                  "targets": [
+                    {
+                      "_type": "Name",
+                      "id": "error_message",
+                      "lineno": 40,
+                      "end_lineno": 40
+                    }
+                  ],
+                  "value": {
+                    "_type": "JoinedStr",
+                    "values": [
+                      {
+                        "_type": "Constant",
+                        "value": "No data found in the specified paths: ",
+                        "kind": null,
+                        "lineno": 40,
+                        "end_lineno": 40
+                      },
+                      {
+                        "_type": "FormattedValue",
+                        "value": {
+                          "_type": "Name",
+                          "id": "pickle_path",
+                          "lineno": 40,
+                          "end_lineno": 40
+                        },
+                        "conversion": -1,
+                        "format_spec": null,
+                        "lineno": 40,
+                        "end_lineno": 40
+                      },
+                      {
+                        "_type": "Constant",
+                        "value": " or ",
+                        "kind": null,
+                        "lineno": 40,
+                        "end_lineno": 40
+                      },
+                      {
+                        "_type": "FormattedValue",
+                        "value": {
+                          "_type": "Name",
+                          "id": "excel_path",
+                          "lineno": 40,
+                          "end_lineno": 40
+                        },
+                        "conversion": -1,
+                        "format_spec": null,
+                        "lineno": 40,
+                        "end_lineno": 40
+                      }
+                    ],
+                    "lineno": 40,
+                    "end_lineno": 40
+                  },
+                  "type_comment": null,
+                  "lineno": 40,
+                  "end_lineno": 40
+                },
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "print",
+                      "lineno": 41,
+                      "end_lineno": 41
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "error_message",
+                        "lineno": 41,
+                        "end_lineno": 41
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 41,
+                    "end_lineno": 41
+                  },
+                  "lineno": 41,
+                  "end_lineno": 41
+                },
+                {
+                  "_type": "Raise",
+                  "exc": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "FileNotFoundError",
+                      "lineno": 42,
+                      "end_lineno": 42
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "error_message",
+                        "lineno": 42,
+                        "end_lineno": 42
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 42,
+                    "end_lineno": 42
+                  },
+                  "cause": null,
+                  "lineno": 42,
+                  "end_lineno": 42
+                }
+              ],
+              "lineno": 36,
+              "end_lineno": 42
+            }
+          ],
+          "lineno": 31,
+          "end_lineno": 42
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "os",
+                "lineno": 44,
+                "end_lineno": 44
+              },
+              "attr": "makedirs",
+              "lineno": 44,
+              "end_lineno": 44
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 44,
+                      "end_lineno": 44
+                    },
+                    "attr": "path",
+                    "lineno": 44,
+                    "end_lineno": 44
+                  },
+                  "attr": "dirname",
+                  "lineno": 44,
+                  "end_lineno": 44
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "pickle_path",
+                    "lineno": 44,
+                    "end_lineno": 44
+                  }
+                ],
+                "keywords": [],
+                "lineno": 44,
+                "end_lineno": 44
+              }
+            ],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "exist_ok",
+                "value": {
+                  "_type": "Constant",
+                  "value": true,
+                  "kind": null,
+                  "lineno": 44,
+                  "end_lineno": 44
+                },
+                "lineno": 44,
+                "end_lineno": 44
+              }
+            ],
+            "lineno": 44,
+            "end_lineno": 44
+          },
+          "lineno": 44,
+          "end_lineno": 44
+        },
+        {
+          "_type": "With",
+          "items": [
+            {
+              "_type": "withitem",
+              "context_expr": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "open",
+                  "lineno": 45,
+                  "end_lineno": 45
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "pickle_path",
+                    "lineno": 45,
+                    "end_lineno": 45
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "wb",
+                    "kind": null,
+                    "lineno": 45,
+                    "end_lineno": 45
+                  }
+                ],
+                "keywords": [],
+                "lineno": 45,
+                "end_lineno": 45
+              },
+              "optional_vars": {
+                "_type": "Name",
+                "id": "file",
+                "lineno": 45,
+                "end_lineno": 45
+              }
+            }
+          ],
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "pickle",
+                    "lineno": 46,
+                    "end_lineno": 46
+                  },
+                  "attr": "dump",
+                  "lineno": 46,
+                  "end_lineno": 46
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "df",
+                    "lineno": 46,
+                    "end_lineno": 46
+                  },
+                  {
+                    "_type": "Name",
+                    "id": "file",
+                    "lineno": 46,
+                    "end_lineno": 46
+                  }
+                ],
+                "keywords": [],
+                "lineno": 46,
+                "end_lineno": 46
+              },
+              "lineno": 46,
+              "end_lineno": 46
+            }
+          ],
+          "type_comment": null,
+          "lineno": 45,
+          "end_lineno": 46
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "print",
+              "lineno": 47,
+              "end_lineno": 47
+            },
+            "args": [
+              {
+                "_type": "JoinedStr",
+                "values": [
+                  {
+                    "_type": "Constant",
+                    "value": "Data saved to ",
+                    "kind": null,
+                    "lineno": 47,
+                    "end_lineno": 47
+                  },
+                  {
+                    "_type": "FormattedValue",
+                    "value": {
+                      "_type": "Name",
+                      "id": "pickle_path",
+                      "lineno": 47,
+                      "end_lineno": 47
+                    },
+                    "conversion": -1,
+                    "format_spec": null,
+                    "lineno": 47,
+                    "end_lineno": 47
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": " for future use.",
+                    "kind": null,
+                    "lineno": 47,
+                    "end_lineno": 47
+                  }
+                ],
+                "lineno": 47,
+                "end_lineno": 47
+              }
+            ],
+            "keywords": [],
+            "lineno": 47,
+            "end_lineno": 47
+          },
+          "lineno": 47,
+          "end_lineno": 47
+        },
+        {
+          "_type": "Return",
+          "value": {
+            "_type": "Name",
+            "id": "pickle_path",
+            "lineno": 48,
+            "end_lineno": 48
+          },
+          "lineno": 48,
+          "end_lineno": 48
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 17,
+      "end_lineno": 48
+    }
+  ],
+  "type_ignores": []
+}

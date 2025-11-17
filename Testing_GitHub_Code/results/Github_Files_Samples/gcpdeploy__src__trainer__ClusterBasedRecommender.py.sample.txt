@@ -1,0 +1,10 @@
+"""
+This module returns a dataframe with top three products which individual customers has not purchased yet based on the top purchased products from their corresponding cluster.
+"""
+
+import pandas as pd
+
+# Removing outliers from transactions dataframe
+def remove_outliers(df, outliers_data):
+  """
+  Removes transactions related to outlier customers from the main dataframe.

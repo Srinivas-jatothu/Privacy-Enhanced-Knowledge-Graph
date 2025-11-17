@@ -1,0 +1,10 @@
+"""
+A module for testing transaction_status_handler module.
+"""
+
+import os
+import pickle
+from src.transaction_status_handler import handle_transaction_status
+
+# Determine the absolute path of the project directory
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

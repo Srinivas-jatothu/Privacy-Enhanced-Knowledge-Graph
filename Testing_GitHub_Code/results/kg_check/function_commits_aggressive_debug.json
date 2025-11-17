@@ -1,0 +1,6602 @@
+{
+  "summary": {
+    "functions_total": 638,
+    "processed_count": 412,
+    "repaired_count": 0,
+    "remaining": 638
+  },
+  "processed": [
+    {
+      "id": "Function:dags/src/airflow.py:31",
+      "qualified_name": "dags/src/airflow.py:31",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:32",
+      "qualified_name": "dags/src/airflow.py:32",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:43",
+      "qualified_name": "dags/src/airflow.py:43",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:54",
+      "qualified_name": "dags/src/airflow.py:54",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:62",
+      "qualified_name": "dags/src/airflow.py:62",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:70",
+      "qualified_name": "dags/src/airflow.py:70",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:80",
+      "qualified_name": "dags/src/airflow.py:80",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:90",
+      "qualified_name": "dags/src/airflow.py:90",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:100",
+      "qualified_name": "dags/src/airflow.py:100",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:110",
+      "qualified_name": "dags/src/airflow.py:110",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:120",
+      "qualified_name": "dags/src/airflow.py:120",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:130",
+      "qualified_name": "dags/src/airflow.py:130",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:140",
+      "qualified_name": "dags/src/airflow.py:140",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:150",
+      "qualified_name": "dags/src/airflow.py:150",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:160",
+      "qualified_name": "dags/src/airflow.py:160",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:170",
+      "qualified_name": "dags/src/airflow.py:170",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:180",
+      "qualified_name": "dags/src/airflow.py:180",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:190",
+      "qualified_name": "dags/src/airflow.py:190",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:200",
+      "qualified_name": "dags/src/airflow.py:200",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:210",
+      "qualified_name": "dags/src/airflow.py:210",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:220",
+      "qualified_name": "dags/src/airflow.py:220",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:230",
+      "qualified_name": "dags/src/airflow.py:230",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:37",
+      "qualified_name": "dags/src/airflow.py:37",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:39",
+      "qualified_name": "dags/src/airflow.py:39",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/airflow.py:248",
+      "qualified_name": "dags/src/airflow.py:248",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/anomaly_code_handler.py:10",
+      "qualified_name": "dags/src/anomaly_code_handler.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/anomaly_code_handler.py:11",
+      "qualified_name": "dags/src/anomaly_code_handler.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/anomaly_code_handler.py:13",
+      "qualified_name": "dags/src/anomaly_code_handler.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/cancellation_details.py:10",
+      "qualified_name": "dags/src/cancellation_details.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/cancellation_details.py:11",
+      "qualified_name": "dags/src/cancellation_details.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/cancellation_details.py:13",
+      "qualified_name": "dags/src/cancellation_details.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/cancellation_details.py:14",
+      "qualified_name": "dags/src/cancellation_details.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/cleaning_description.py:9",
+      "qualified_name": "dags/src/cleaning_description.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/cleaning_description.py:11",
+      "qualified_name": "dags/src/cleaning_description.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/cleaning_description.py:12",
+      "qualified_name": "dags/src/cleaning_description.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/correlation.py:20",
+      "qualified_name": "dags/src/correlation.py:20",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/correlation.py:23",
+      "qualified_name": "dags/src/correlation.py:23",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/correlation.py:24",
+      "qualified_name": "dags/src/correlation.py:24",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/correlation.py:29",
+      "qualified_name": "dags/src/correlation.py:29",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/correlation.py:30",
+      "qualified_name": "dags/src/correlation.py:30",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/correlation.py:31",
+      "qualified_name": "dags/src/correlation.py:31",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/correlation.py:32",
+      "qualified_name": "dags/src/correlation.py:32",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/correlation.py:25",
+      "qualified_name": "dags/src/correlation.py:25",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/correlation.py:26",
+      "qualified_name": "dags/src/correlation.py:26",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/customers_behavior.py:10",
+      "qualified_name": "dags/src/customers_behavior.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/customers_behavior.py:11",
+      "qualified_name": "dags/src/customers_behavior.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/customers_behavior.py:13",
+      "qualified_name": "dags/src/customers_behavior.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/customers_behavior.py:14",
+      "qualified_name": "dags/src/customers_behavior.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/data_loader.py:10",
+      "qualified_name": "dags/src/data_loader.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/data_loader.py:13",
+      "qualified_name": "dags/src/data_loader.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/data_loader.py:15",
+      "qualified_name": "dags/src/data_loader.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/download_data.py:39",
+      "qualified_name": "dags/src/download_data.py:39",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/duplicates_handler.py:15",
+      "qualified_name": "dags/src/duplicates_handler.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/duplicates_handler.py:16",
+      "qualified_name": "dags/src/duplicates_handler.py:16",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/duplicates_handler.py:18",
+      "qualified_name": "dags/src/duplicates_handler.py:18",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/geographic_features.py:8",
+      "qualified_name": "dags/src/geographic_features.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/geographic_features.py:9",
+      "qualified_name": "dags/src/geographic_features.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/geographic_features.py:11",
+      "qualified_name": "dags/src/geographic_features.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/geographic_features.py:12",
+      "qualified_name": "dags/src/geographic_features.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/missing_values_handler.py:10",
+      "qualified_name": "dags/src/missing_values_handler.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/missing_values_handler.py:12",
+      "qualified_name": "dags/src/missing_values_handler.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/missing_values_handler.py:13",
+      "qualified_name": "dags/src/missing_values_handler.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/outlier_treatment.py:11",
+      "qualified_name": "dags/src/outlier_treatment.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/outlier_treatment.py:13",
+      "qualified_name": "dags/src/outlier_treatment.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/outlier_treatment.py:14",
+      "qualified_name": "dags/src/outlier_treatment.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/outlier_treatment.py:16",
+      "qualified_name": "dags/src/outlier_treatment.py:16",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/pca.py:16",
+      "qualified_name": "dags/src/pca.py:16",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/pca.py:17",
+      "qualified_name": "dags/src/pca.py:17",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/pca.py:22",
+      "qualified_name": "dags/src/pca.py:22",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/pca.py:23",
+      "qualified_name": "dags/src/pca.py:23",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/pca.py:24",
+      "qualified_name": "dags/src/pca.py:24",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/pca.py:25",
+      "qualified_name": "dags/src/pca.py:25",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/pca.py:18",
+      "qualified_name": "dags/src/pca.py:18",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/pca.py:19",
+      "qualified_name": "dags/src/pca.py:19",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/removing_zero_unitprice.py:10",
+      "qualified_name": "dags/src/removing_zero_unitprice.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/removing_zero_unitprice.py:12",
+      "qualified_name": "dags/src/removing_zero_unitprice.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/removing_zero_unitprice.py:13",
+      "qualified_name": "dags/src/removing_zero_unitprice.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/rfm.py:9",
+      "qualified_name": "dags/src/rfm.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/rfm.py:10",
+      "qualified_name": "dags/src/rfm.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/rfm.py:12",
+      "qualified_name": "dags/src/rfm.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/scaler.py:15",
+      "qualified_name": "dags/src/scaler.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/scaler.py:16",
+      "qualified_name": "dags/src/scaler.py:16",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/scaler.py:21",
+      "qualified_name": "dags/src/scaler.py:21",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/scaler.py:22",
+      "qualified_name": "dags/src/scaler.py:22",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/scaler.py:23",
+      "qualified_name": "dags/src/scaler.py:23",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/scaler.py:24",
+      "qualified_name": "dags/src/scaler.py:24",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/scaler.py:17",
+      "qualified_name": "dags/src/scaler.py:17",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/scaler.py:18",
+      "qualified_name": "dags/src/scaler.py:18",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/seasonality.py:10",
+      "qualified_name": "dags/src/seasonality.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/seasonality.py:11",
+      "qualified_name": "dags/src/seasonality.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/seasonality.py:13",
+      "qualified_name": "dags/src/seasonality.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/seasonality.py:15",
+      "qualified_name": "dags/src/seasonality.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/seasonality.py:16",
+      "qualified_name": "dags/src/seasonality.py:16",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/seasonality.py:57",
+      "qualified_name": "dags/src/seasonality.py:57",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/seasonality.py:58",
+      "qualified_name": "dags/src/seasonality.py:58",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/seasonality.py:59",
+      "qualified_name": "dags/src/seasonality.py:59",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/transaction_status_handler.py:12",
+      "qualified_name": "dags/src/transaction_status_handler.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/transaction_status_handler.py:13",
+      "qualified_name": "dags/src/transaction_status_handler.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/transaction_status_handler.py:15",
+      "qualified_name": "dags/src/transaction_status_handler.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/unique_products.py:8",
+      "qualified_name": "dags/src/unique_products.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/unique_products.py:9",
+      "qualified_name": "dags/src/unique_products.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/unique_products.py:11",
+      "qualified_name": "dags/src/unique_products.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/unique_products.py:12",
+      "qualified_name": "dags/src/unique_products.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/unzip_data.py:8",
+      "qualified_name": "dags/src/unzip_data.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/unzip_data.py:10",
+      "qualified_name": "dags/src/unzip_data.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/unzip_data.py:11",
+      "qualified_name": "dags/src/unzip_data.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:dags/src/unzip_data.py:33",
+      "qualified_name": "dags/src/unzip_data.py:33",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:31",
+      "qualified_name": "gcpdeploy/src/airflow.py:31",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:32",
+      "qualified_name": "gcpdeploy/src/airflow.py:32",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:43",
+      "qualified_name": "gcpdeploy/src/airflow.py:43",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:54",
+      "qualified_name": "gcpdeploy/src/airflow.py:54",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:62",
+      "qualified_name": "gcpdeploy/src/airflow.py:62",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:70",
+      "qualified_name": "gcpdeploy/src/airflow.py:70",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:80",
+      "qualified_name": "gcpdeploy/src/airflow.py:80",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:90",
+      "qualified_name": "gcpdeploy/src/airflow.py:90",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:100",
+      "qualified_name": "gcpdeploy/src/airflow.py:100",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:110",
+      "qualified_name": "gcpdeploy/src/airflow.py:110",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:120",
+      "qualified_name": "gcpdeploy/src/airflow.py:120",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:130",
+      "qualified_name": "gcpdeploy/src/airflow.py:130",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:140",
+      "qualified_name": "gcpdeploy/src/airflow.py:140",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:150",
+      "qualified_name": "gcpdeploy/src/airflow.py:150",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:160",
+      "qualified_name": "gcpdeploy/src/airflow.py:160",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:170",
+      "qualified_name": "gcpdeploy/src/airflow.py:170",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:180",
+      "qualified_name": "gcpdeploy/src/airflow.py:180",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:190",
+      "qualified_name": "gcpdeploy/src/airflow.py:190",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:200",
+      "qualified_name": "gcpdeploy/src/airflow.py:200",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:210",
+      "qualified_name": "gcpdeploy/src/airflow.py:210",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:220",
+      "qualified_name": "gcpdeploy/src/airflow.py:220",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:230",
+      "qualified_name": "gcpdeploy/src/airflow.py:230",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:37",
+      "qualified_name": "gcpdeploy/src/airflow.py:37",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:39",
+      "qualified_name": "gcpdeploy/src/airflow.py:39",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/airflow.py:248",
+      "qualified_name": "gcpdeploy/src/airflow.py:248",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/anomaly_code_handler.py:10",
+      "qualified_name": "gcpdeploy/src/anomaly_code_handler.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/anomaly_code_handler.py:11",
+      "qualified_name": "gcpdeploy/src/anomaly_code_handler.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/anomaly_code_handler.py:13",
+      "qualified_name": "gcpdeploy/src/anomaly_code_handler.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/build.py:5",
+      "qualified_name": "gcpdeploy/src/build.py:5",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/build.py:8",
+      "qualified_name": "gcpdeploy/src/build.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/build.py:9",
+      "qualified_name": "gcpdeploy/src/build.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/build.py:10",
+      "qualified_name": "gcpdeploy/src/build.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/build.py:11",
+      "qualified_name": "gcpdeploy/src/build.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/build.py:12",
+      "qualified_name": "gcpdeploy/src/build.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/build.py:13",
+      "qualified_name": "gcpdeploy/src/build.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/build.py:15",
+      "qualified_name": "gcpdeploy/src/build.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/build.py:86",
+      "qualified_name": "gcpdeploy/src/build.py:86",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/cancellation_details.py:10",
+      "qualified_name": "gcpdeploy/src/cancellation_details.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/cancellation_details.py:11",
+      "qualified_name": "gcpdeploy/src/cancellation_details.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/cancellation_details.py:13",
+      "qualified_name": "gcpdeploy/src/cancellation_details.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/cancellation_details.py:14",
+      "qualified_name": "gcpdeploy/src/cancellation_details.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/cleaning_description.py:9",
+      "qualified_name": "gcpdeploy/src/cleaning_description.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/cleaning_description.py:11",
+      "qualified_name": "gcpdeploy/src/cleaning_description.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/cleaning_description.py:12",
+      "qualified_name": "gcpdeploy/src/cleaning_description.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/correlation.py:19",
+      "qualified_name": "gcpdeploy/src/correlation.py:19",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/correlation.py:22",
+      "qualified_name": "gcpdeploy/src/correlation.py:22",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/correlation.py:25",
+      "qualified_name": "gcpdeploy/src/correlation.py:25",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/correlation.py:26",
+      "qualified_name": "gcpdeploy/src/correlation.py:26",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/correlation.py:28",
+      "qualified_name": "gcpdeploy/src/correlation.py:28",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/customers_behavior.py:10",
+      "qualified_name": "gcpdeploy/src/customers_behavior.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/customers_behavior.py:11",
+      "qualified_name": "gcpdeploy/src/customers_behavior.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/customers_behavior.py:13",
+      "qualified_name": "gcpdeploy/src/customers_behavior.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/customers_behavior.py:14",
+      "qualified_name": "gcpdeploy/src/customers_behavior.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/data_loader.py:10",
+      "qualified_name": "gcpdeploy/src/data_loader.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/data_loader.py:13",
+      "qualified_name": "gcpdeploy/src/data_loader.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/data_loader.py:15",
+      "qualified_name": "gcpdeploy/src/data_loader.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/datapipeline.py:19",
+      "qualified_name": "gcpdeploy/src/datapipeline.py:19",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/datapipeline.py:21",
+      "qualified_name": "gcpdeploy/src/datapipeline.py:21",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/datapipeline.py:22",
+      "qualified_name": "gcpdeploy/src/datapipeline.py:22",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/datapipeline.py:23",
+      "qualified_name": "gcpdeploy/src/datapipeline.py:23",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/datapipeline.py:24",
+      "qualified_name": "gcpdeploy/src/datapipeline.py:24",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/datapipeline.py:25",
+      "qualified_name": "gcpdeploy/src/datapipeline.py:25",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/datapipeline.py:26",
+      "qualified_name": "gcpdeploy/src/datapipeline.py:26",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/download_data.py:39",
+      "qualified_name": "gcpdeploy/src/download_data.py:39",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/duplicates_handler.py:15",
+      "qualified_name": "gcpdeploy/src/duplicates_handler.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/duplicates_handler.py:16",
+      "qualified_name": "gcpdeploy/src/duplicates_handler.py:16",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/duplicates_handler.py:18",
+      "qualified_name": "gcpdeploy/src/duplicates_handler.py:18",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/geographic_features.py:8",
+      "qualified_name": "gcpdeploy/src/geographic_features.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/geographic_features.py:9",
+      "qualified_name": "gcpdeploy/src/geographic_features.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/geographic_features.py:11",
+      "qualified_name": "gcpdeploy/src/geographic_features.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/geographic_features.py:12",
+      "qualified_name": "gcpdeploy/src/geographic_features.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/inference.py:49",
+      "qualified_name": "gcpdeploy/src/inference.py:49",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/mflow_logging.py:20",
+      "qualified_name": "gcpdeploy/src/mflow_logging.py:20",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/mflow_logging.py:21",
+      "qualified_name": "gcpdeploy/src/mflow_logging.py:21",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/mflow_logging.py:28",
+      "qualified_name": "gcpdeploy/src/mflow_logging.py:28",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/mflow_logging.py:29",
+      "qualified_name": "gcpdeploy/src/mflow_logging.py:29",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/mflow_logging.py:30",
+      "qualified_name": "gcpdeploy/src/mflow_logging.py:30",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/mflow_logging.py:33",
+      "qualified_name": "gcpdeploy/src/mflow_logging.py:33",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/missing_values_handler.py:10",
+      "qualified_name": "gcpdeploy/src/missing_values_handler.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/missing_values_handler.py:12",
+      "qualified_name": "gcpdeploy/src/missing_values_handler.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/missing_values_handler.py:13",
+      "qualified_name": "gcpdeploy/src/missing_values_handler.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/model_analysis.py:20",
+      "qualified_name": "gcpdeploy/src/model_analysis.py:20",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/model_analysis.py:23",
+      "qualified_name": "gcpdeploy/src/model_analysis.py:23",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/model_analysis.py:24",
+      "qualified_name": "gcpdeploy/src/model_analysis.py:24",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/model_analysis.py:25",
+      "qualified_name": "gcpdeploy/src/model_analysis.py:25",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/outlier_treatment.py:11",
+      "qualified_name": "gcpdeploy/src/outlier_treatment.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/outlier_treatment.py:13",
+      "qualified_name": "gcpdeploy/src/outlier_treatment.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/outlier_treatment.py:14",
+      "qualified_name": "gcpdeploy/src/outlier_treatment.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/pca.py:15",
+      "qualified_name": "gcpdeploy/src/pca.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/pca.py:18",
+      "qualified_name": "gcpdeploy/src/pca.py:18",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/pca.py:19",
+      "qualified_name": "gcpdeploy/src/pca.py:19",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/removing_zero_unitprice.py:10",
+      "qualified_name": "gcpdeploy/src/removing_zero_unitprice.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/removing_zero_unitprice.py:12",
+      "qualified_name": "gcpdeploy/src/removing_zero_unitprice.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/removing_zero_unitprice.py:13",
+      "qualified_name": "gcpdeploy/src/removing_zero_unitprice.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/rfm.py:9",
+      "qualified_name": "gcpdeploy/src/rfm.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/rfm.py:10",
+      "qualified_name": "gcpdeploy/src/rfm.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/rfm.py:12",
+      "qualified_name": "gcpdeploy/src/rfm.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/seasonality.py:10",
+      "qualified_name": "gcpdeploy/src/seasonality.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/seasonality.py:11",
+      "qualified_name": "gcpdeploy/src/seasonality.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/seasonality.py:13",
+      "qualified_name": "gcpdeploy/src/seasonality.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/seasonality.py:14",
+      "qualified_name": "gcpdeploy/src/seasonality.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/seasonality.py:52",
+      "qualified_name": "gcpdeploy/src/seasonality.py:52",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/seasonality.py:53",
+      "qualified_name": "gcpdeploy/src/seasonality.py:53",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/seasonality.py:54",
+      "qualified_name": "gcpdeploy/src/seasonality.py:54",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:18",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:18",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:21",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:21",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:23",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:23",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:28",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:28",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:29",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:29",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:30",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:30",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:32",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:32",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:144",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:144",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:152",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:152",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:212",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:212",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:213",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:213",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:215",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:215",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:218",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:218",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:219",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:219",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/predict.py:224",
+      "qualified_name": "gcpdeploy/src/serve/predict.py:224",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/testing_serve.py:6",
+      "qualified_name": "gcpdeploy/src/serve/testing_serve.py:6",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/testing_serve.py:7",
+      "qualified_name": "gcpdeploy/src/serve/testing_serve.py:7",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/testing_serve.py:9",
+      "qualified_name": "gcpdeploy/src/serve/testing_serve.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/testing_serve.py:28",
+      "qualified_name": "gcpdeploy/src/serve/testing_serve.py:28",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/testing_serve.py:29",
+      "qualified_name": "gcpdeploy/src/serve/testing_serve.py:29",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/serve/testing_serve.py:31",
+      "qualified_name": "gcpdeploy/src/serve/testing_serve.py:31",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/trainer/train.py:25",
+      "qualified_name": "gcpdeploy/src/trainer/train.py:25",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/trainer/train.py:28",
+      "qualified_name": "gcpdeploy/src/trainer/train.py:28",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/trainer/train.py:29",
+      "qualified_name": "gcpdeploy/src/trainer/train.py:29",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/trainer/train.py:30",
+      "qualified_name": "gcpdeploy/src/trainer/train.py:30",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/trainer/train.py:110",
+      "qualified_name": "gcpdeploy/src/trainer/train.py:110",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/transaction_status_handler.py:12",
+      "qualified_name": "gcpdeploy/src/transaction_status_handler.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/transaction_status_handler.py:13",
+      "qualified_name": "gcpdeploy/src/transaction_status_handler.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/transaction_status_handler.py:15",
+      "qualified_name": "gcpdeploy/src/transaction_status_handler.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/unique_products.py:8",
+      "qualified_name": "gcpdeploy/src/unique_products.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/unique_products.py:9",
+      "qualified_name": "gcpdeploy/src/unique_products.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/unique_products.py:11",
+      "qualified_name": "gcpdeploy/src/unique_products.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/unique_products.py:12",
+      "qualified_name": "gcpdeploy/src/unique_products.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/unzip_data.py:8",
+      "qualified_name": "gcpdeploy/src/unzip_data.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/unzip_data.py:10",
+      "qualified_name": "gcpdeploy/src/unzip_data.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/unzip_data.py:11",
+      "qualified_name": "gcpdeploy/src/unzip_data.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:gcpdeploy/src/unzip_data.py:33",
+      "qualified_name": "gcpdeploy/src/unzip_data.py:33",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/anomaly_code_handler.py:10",
+      "qualified_name": "src/anomaly_code_handler.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/anomaly_code_handler.py:11",
+      "qualified_name": "src/anomaly_code_handler.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/anomaly_code_handler.py:13",
+      "qualified_name": "src/anomaly_code_handler.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/cancellation_details.py:10",
+      "qualified_name": "src/cancellation_details.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/cancellation_details.py:11",
+      "qualified_name": "src/cancellation_details.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/cancellation_details.py:13",
+      "qualified_name": "src/cancellation_details.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/cancellation_details.py:14",
+      "qualified_name": "src/cancellation_details.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/cleaning_description.py:9",
+      "qualified_name": "src/cleaning_description.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/cleaning_description.py:11",
+      "qualified_name": "src/cleaning_description.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/cleaning_description.py:12",
+      "qualified_name": "src/cleaning_description.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/correlation.py:20",
+      "qualified_name": "src/correlation.py:20",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/correlation.py:23",
+      "qualified_name": "src/correlation.py:23",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/correlation.py:24",
+      "qualified_name": "src/correlation.py:24",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/correlation.py:29",
+      "qualified_name": "src/correlation.py:29",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/correlation.py:30",
+      "qualified_name": "src/correlation.py:30",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/correlation.py:31",
+      "qualified_name": "src/correlation.py:31",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/correlation.py:32",
+      "qualified_name": "src/correlation.py:32",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/correlation.py:25",
+      "qualified_name": "src/correlation.py:25",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/correlation.py:26",
+      "qualified_name": "src/correlation.py:26",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/customers_behavior.py:10",
+      "qualified_name": "src/customers_behavior.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/customers_behavior.py:11",
+      "qualified_name": "src/customers_behavior.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/customers_behavior.py:13",
+      "qualified_name": "src/customers_behavior.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/customers_behavior.py:14",
+      "qualified_name": "src/customers_behavior.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/data_loader.py:10",
+      "qualified_name": "src/data_loader.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/data_loader.py:13",
+      "qualified_name": "src/data_loader.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/data_loader.py:15",
+      "qualified_name": "src/data_loader.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/datapipeline.py:14",
+      "qualified_name": "src/datapipeline.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/datapipeline.py:16",
+      "qualified_name": "src/datapipeline.py:16",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/datapipeline.py:17",
+      "qualified_name": "src/datapipeline.py:17",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/datapipeline.py:18",
+      "qualified_name": "src/datapipeline.py:18",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/datapipeline.py:19",
+      "qualified_name": "src/datapipeline.py:19",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/datapipeline.py:20",
+      "qualified_name": "src/datapipeline.py:20",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/datapipeline.py:21",
+      "qualified_name": "src/datapipeline.py:21",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/download_data.py:39",
+      "qualified_name": "src/download_data.py:39",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/duplicates_handler.py:15",
+      "qualified_name": "src/duplicates_handler.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/duplicates_handler.py:16",
+      "qualified_name": "src/duplicates_handler.py:16",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/duplicates_handler.py:18",
+      "qualified_name": "src/duplicates_handler.py:18",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/geographic_features.py:8",
+      "qualified_name": "src/geographic_features.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/geographic_features.py:9",
+      "qualified_name": "src/geographic_features.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/geographic_features.py:11",
+      "qualified_name": "src/geographic_features.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/geographic_features.py:12",
+      "qualified_name": "src/geographic_features.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/histogram_analysis.py:12",
+      "qualified_name": "src/histogram_analysis.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/histogram_analysis.py:15",
+      "qualified_name": "src/histogram_analysis.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/histogram_analysis.py:16",
+      "qualified_name": "src/histogram_analysis.py:16",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/missing_values_handler.py:10",
+      "qualified_name": "src/missing_values_handler.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/missing_values_handler.py:12",
+      "qualified_name": "src/missing_values_handler.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/missing_values_handler.py:13",
+      "qualified_name": "src/missing_values_handler.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/outlier_treatment.py:11",
+      "qualified_name": "src/outlier_treatment.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/outlier_treatment.py:13",
+      "qualified_name": "src/outlier_treatment.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/outlier_treatment.py:14",
+      "qualified_name": "src/outlier_treatment.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/pca.py:16",
+      "qualified_name": "src/pca.py:16",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/pca.py:17",
+      "qualified_name": "src/pca.py:17",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/pca.py:22",
+      "qualified_name": "src/pca.py:22",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/pca.py:23",
+      "qualified_name": "src/pca.py:23",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/pca.py:24",
+      "qualified_name": "src/pca.py:24",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/pca.py:25",
+      "qualified_name": "src/pca.py:25",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/pca.py:18",
+      "qualified_name": "src/pca.py:18",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/pca.py:19",
+      "qualified_name": "src/pca.py:19",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/radar_analysis.py:14",
+      "qualified_name": "src/radar_analysis.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/radar_analysis.py:17",
+      "qualified_name": "src/radar_analysis.py:17",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/radar_analysis.py:18",
+      "qualified_name": "src/radar_analysis.py:18",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/removing_zero_unitprice.py:10",
+      "qualified_name": "src/removing_zero_unitprice.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/removing_zero_unitprice.py:12",
+      "qualified_name": "src/removing_zero_unitprice.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/removing_zero_unitprice.py:13",
+      "qualified_name": "src/removing_zero_unitprice.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/rfm.py:9",
+      "qualified_name": "src/rfm.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/rfm.py:10",
+      "qualified_name": "src/rfm.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/rfm.py:12",
+      "qualified_name": "src/rfm.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/scaler.py:15",
+      "qualified_name": "src/scaler.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/scaler.py:16",
+      "qualified_name": "src/scaler.py:16",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/scaler.py:21",
+      "qualified_name": "src/scaler.py:21",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/scaler.py:22",
+      "qualified_name": "src/scaler.py:22",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/scaler.py:23",
+      "qualified_name": "src/scaler.py:23",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/scaler.py:24",
+      "qualified_name": "src/scaler.py:24",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/scaler.py:17",
+      "qualified_name": "src/scaler.py:17",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/scaler.py:18",
+      "qualified_name": "src/scaler.py:18",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/seasonality.py:10",
+      "qualified_name": "src/seasonality.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/seasonality.py:11",
+      "qualified_name": "src/seasonality.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/seasonality.py:13",
+      "qualified_name": "src/seasonality.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/seasonality.py:14",
+      "qualified_name": "src/seasonality.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/seasonality.py:52",
+      "qualified_name": "src/seasonality.py:52",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/seasonality.py:53",
+      "qualified_name": "src/seasonality.py:53",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/seasonality.py:54",
+      "qualified_name": "src/seasonality.py:54",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/transaction_status_handler.py:12",
+      "qualified_name": "src/transaction_status_handler.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/transaction_status_handler.py:13",
+      "qualified_name": "src/transaction_status_handler.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/transaction_status_handler.py:15",
+      "qualified_name": "src/transaction_status_handler.py:15",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/unique_products.py:8",
+      "qualified_name": "src/unique_products.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/unique_products.py:9",
+      "qualified_name": "src/unique_products.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/unique_products.py:11",
+      "qualified_name": "src/unique_products.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/unique_products.py:12",
+      "qualified_name": "src/unique_products.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/unzip_data.py:8",
+      "qualified_name": "src/unzip_data.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/unzip_data.py:10",
+      "qualified_name": "src/unzip_data.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/unzip_data.py:11",
+      "qualified_name": "src/unzip_data.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:src/unzip_data.py:33",
+      "qualified_name": "src/unzip_data.py:33",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_anomaly_code_handler.py:10",
+      "qualified_name": "test/test_anomaly_code_handler.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_anomaly_code_handler.py:11",
+      "qualified_name": "test/test_anomaly_code_handler.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_anomaly_code_handler.py:13",
+      "qualified_name": "test/test_anomaly_code_handler.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_cancellation_details.py:7",
+      "qualified_name": "test/test_cancellation_details.py:7",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_cancellation_details.py:8",
+      "qualified_name": "test/test_cancellation_details.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_cancellation_details.py:11",
+      "qualified_name": "test/test_cancellation_details.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_cancellation_details.py:12",
+      "qualified_name": "test/test_cancellation_details.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_cancellation_details.py:13",
+      "qualified_name": "test/test_cancellation_details.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_cleaning_description.py:11",
+      "qualified_name": "test/test_cleaning_description.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_cleaning_description.py:12",
+      "qualified_name": "test/test_cleaning_description.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_cleaning_description.py:14",
+      "qualified_name": "test/test_cleaning_description.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_correlation.py:9",
+      "qualified_name": "test/test_correlation.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_correlation.py:10",
+      "qualified_name": "test/test_correlation.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_correlation.py:11",
+      "qualified_name": "test/test_correlation.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_correlation.py:12",
+      "qualified_name": "test/test_correlation.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_customers_behavior.py:7",
+      "qualified_name": "test/test_customers_behavior.py:7",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_customers_behavior.py:8",
+      "qualified_name": "test/test_customers_behavior.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_customers_behavior.py:11",
+      "qualified_name": "test/test_customers_behavior.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_customers_behavior.py:12",
+      "qualified_name": "test/test_customers_behavior.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_customers_behavior.py:13",
+      "qualified_name": "test/test_customers_behavior.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_data_loader.py:10",
+      "qualified_name": "test/test_data_loader.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_data_loader.py:13",
+      "qualified_name": "test/test_data_loader.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_data_loader.py:14",
+      "qualified_name": "test/test_data_loader.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_data_loader.py:16",
+      "qualified_name": "test/test_data_loader.py:16",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_data_loader.py:30",
+      "qualified_name": "test/test_data_loader.py:30",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_duplicates_handler.py:11",
+      "qualified_name": "test/test_duplicates_handler.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_duplicates_handler.py:12",
+      "qualified_name": "test/test_duplicates_handler.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_duplicates_handler.py:14",
+      "qualified_name": "test/test_duplicates_handler.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_geographic_features.py:7",
+      "qualified_name": "test/test_geographic_features.py:7",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_geographic_features.py:8",
+      "qualified_name": "test/test_geographic_features.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_geographic_features.py:11",
+      "qualified_name": "test/test_geographic_features.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_geographic_features.py:12",
+      "qualified_name": "test/test_geographic_features.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_geographic_features.py:13",
+      "qualified_name": "test/test_geographic_features.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_missing_values_handler.py:10",
+      "qualified_name": "test/test_missing_values_handler.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_missing_values_handler.py:11",
+      "qualified_name": "test/test_missing_values_handler.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_missing_values_handler.py:13",
+      "qualified_name": "test/test_missing_values_handler.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_outlier_treatment.py:11",
+      "qualified_name": "test/test_outlier_treatment.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_outlier_treatment.py:12",
+      "qualified_name": "test/test_outlier_treatment.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_outlier_treatment.py:14",
+      "qualified_name": "test/test_outlier_treatment.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_pca.py:9",
+      "qualified_name": "test/test_pca.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_pca.py:10",
+      "qualified_name": "test/test_pca.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_pca.py:11",
+      "qualified_name": "test/test_pca.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_removing_zero_unitpirce.py:11",
+      "qualified_name": "test/test_removing_zero_unitpirce.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_removing_zero_unitpirce.py:12",
+      "qualified_name": "test/test_removing_zero_unitpirce.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_removing_zero_unitpirce.py:14",
+      "qualified_name": "test/test_removing_zero_unitpirce.py:14",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_rfm.py:7",
+      "qualified_name": "test/test_rfm.py:7",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_rfm.py:8",
+      "qualified_name": "test/test_rfm.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_rfm.py:11",
+      "qualified_name": "test/test_rfm.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_rfm.py:12",
+      "qualified_name": "test/test_rfm.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_rfm.py:13",
+      "qualified_name": "test/test_rfm.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_scaler.py:9",
+      "qualified_name": "test/test_scaler.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_scaler.py:10",
+      "qualified_name": "test/test_scaler.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_scaler.py:11",
+      "qualified_name": "test/test_scaler.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_scaler.py:17",
+      "qualified_name": "test/test_scaler.py:17",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_seasonality.py:7",
+      "qualified_name": "test/test_seasonality.py:7",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_seasonality.py:8",
+      "qualified_name": "test/test_seasonality.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_seasonality.py:11",
+      "qualified_name": "test/test_seasonality.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_seasonality.py:12",
+      "qualified_name": "test/test_seasonality.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_seasonality.py:13",
+      "qualified_name": "test/test_seasonality.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_transaction_status_handler.py:10",
+      "qualified_name": "test/test_transaction_status_handler.py:10",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_transaction_status_handler.py:11",
+      "qualified_name": "test/test_transaction_status_handler.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_transaction_status_handler.py:13",
+      "qualified_name": "test/test_transaction_status_handler.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_unique_products.py:7",
+      "qualified_name": "test/test_unique_products.py:7",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_unique_products.py:8",
+      "qualified_name": "test/test_unique_products.py:8",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_unique_products.py:11",
+      "qualified_name": "test/test_unique_products.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_unique_products.py:12",
+      "qualified_name": "test/test_unique_products.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_unique_products.py:13",
+      "qualified_name": "test/test_unique_products.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_unzip_data.py:9",
+      "qualified_name": "test/test_unzip_data.py:9",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_unzip_data.py:11",
+      "qualified_name": "test/test_unzip_data.py:11",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_unzip_data.py:12",
+      "qualified_name": "test/test_unzip_data.py:12",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    },
+    {
+      "id": "Function:test/test_unzip_data.py:13",
+      "qualified_name": "test/test_unzip_data.py:13",
+      "attempts": [
+        {
+          "strategy": "search_candidates",
+          "count": 0,
+          "candidates": []
+        }
+      ],
+      "result": {
+        "status": "failed",
+        "reason": "no_sha_found",
+        "attempts_count": 1
+      }
+    }
+  ]
+}

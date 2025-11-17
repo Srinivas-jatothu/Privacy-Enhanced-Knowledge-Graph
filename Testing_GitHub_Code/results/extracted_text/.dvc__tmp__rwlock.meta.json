@@ -1,0 +1,32 @@
+{
+  "relpath": ".dvc/tmp/rwlock",
+  "manifest_meta": {
+    "relpath": ".dvc/tmp/rwlock",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\tmp\\rwlock",
+    "size": 13,
+    "mtime": 1763123856.7263896,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "880d4d69a53e1330be2f576bc8b8451d3d10f0a51b08cfc0f2692eb5ce9c7fc1",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.dvc__tmp__rwlock.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "ISO-8859-1",
+    "X-TIKA:parse_time_millis": "7",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'rwlock'",
+    "X-TIKA:detectedEncoding": "ISO-8859-1",
+    "Content-Length": "13",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=ISO-8859-1"
+  }
+}

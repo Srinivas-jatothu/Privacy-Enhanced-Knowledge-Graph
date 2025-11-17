@@ -1,0 +1,2169 @@
+{
+  "inferred_count": 2,
+  "left_count": 22,
+  "inferred": [
+    {
+      "id": "Function:load_data",
+      "picked": "gcpdeploy/src/model_analysis.py",
+      "lineno": 28,
+      "score": 39,
+      "explain": {
+        "file": "gcpdeploy/src/model_analysis.py",
+        "src_pref": true,
+        "in_manifest": true,
+        "sym_count": 9,
+        "commit_count": 0,
+        "deployment_bias": false,
+        "final_score": 39,
+        "lineno": 28
+      }
+    },
+    {
+      "id": "Function:save_and_upload_model",
+      "picked": "gcpdeploy/src/model_analysis.py",
+      "lineno": 266,
+      "score": 39,
+      "explain": {
+        "file": "gcpdeploy/src/model_analysis.py",
+        "src_pref": true,
+        "in_manifest": true,
+        "sym_count": 9,
+        "commit_count": 0,
+        "deployment_bias": false,
+        "final_score": 39,
+        "lineno": 266
+      }
+    }
+  ],
+  "left_sample": [
+    [
+      "Function:handle_anomalous_codes",
+      "no_clear_winner",
+      [
+        [
+          "src/anomaly_code_handler.py",
+          16,
+          {
+            "file": "src/anomaly_code_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          "gcpdeploy/src/anomaly_code_handler.py",
+          16,
+          {
+            "file": "gcpdeploy/src/anomaly_code_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          "dags/src/anomaly_code_handler.py",
+          16,
+          {
+            "file": "dags/src/anomaly_code_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:cancellation_details",
+      "no_clear_winner",
+      [
+        [
+          "src/cancellation_details.py",
+          16,
+          {
+            "file": "src/cancellation_details.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          "gcpdeploy/src/cancellation_details.py",
+          16,
+          {
+            "file": "gcpdeploy/src/cancellation_details.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          "dags/src/cancellation_details.py",
+          16,
+          {
+            "file": "dags/src/cancellation_details.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:cleaning_description",
+      "no_clear_winner",
+      [
+        [
+          "src/cleaning_description.py",
+          14,
+          {
+            "file": "src/cleaning_description.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          "gcpdeploy/src/cleaning_description.py",
+          14,
+          {
+            "file": "gcpdeploy/src/cleaning_description.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          "dags/src/cleaning_description.py",
+          14,
+          {
+            "file": "dags/src/cleaning_description.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:correlation_check",
+      "no_clear_winner",
+      [
+        [
+          "src/correlation.py",
+          35,
+          {
+            "file": "src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 35
+          }
+        ],
+        [
+          "gcpdeploy/src/correlation.py",
+          32,
+          {
+            "file": "gcpdeploy/src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 32
+          }
+        ],
+        [
+          "dags/src/correlation.py",
+          35,
+          {
+            "file": "dags/src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 35
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:save_heatmap",
+      "no_clear_winner",
+      [
+        [
+          "src/correlation.py",
+          98,
+          {
+            "file": "src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 98
+          }
+        ],
+        [
+          "gcpdeploy/src/correlation.py",
+          95,
+          {
+            "file": "gcpdeploy/src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 95
+          }
+        ],
+        [
+          "dags/src/correlation.py",
+          98,
+          {
+            "file": "dags/src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 98
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:save_correlations_as_parquet",
+      "no_clear_winner",
+      [
+        [
+          "src/correlation.py",
+          121,
+          {
+            "file": "src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 121
+          }
+        ],
+        [
+          "gcpdeploy/src/correlation.py",
+          118,
+          {
+            "file": "gcpdeploy/src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 118
+          }
+        ],
+        [
+          "dags/src/correlation.py",
+          121,
+          {
+            "file": "dags/src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 121
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:customers_behavior",
+      "no_clear_winner",
+      [
+        [
+          "src/customers_behavior.py",
+          16,
+          {
+            "file": "src/customers_behavior.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          "gcpdeploy/src/customers_behavior.py",
+          16,
+          {
+            "file": "gcpdeploy/src/customers_behavior.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          "dags/src/customers_behavior.py",
+          16,
+          {
+            "file": "dags/src/customers_behavior.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:ingest_data",
+      "no_clear_winner",
+      [
+        [
+          "src/download_data.py",
+          9,
+          {
+            "file": "src/download_data.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 9
+          }
+        ],
+        [
+          "gcpdeploy/src/download_data.py",
+          9,
+          {
+            "file": "gcpdeploy/src/download_data.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 9
+          }
+        ],
+        [
+          "dags/src/download_data.py",
+          9,
+          {
+            "file": "dags/src/download_data.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 9
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:remove_duplicates",
+      "no_clear_winner",
+      [
+        [
+          "src/duplicates_handler.py",
+          21,
+          {
+            "file": "src/duplicates_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 21
+          }
+        ],
+        [
+          "gcpdeploy/src/duplicates_handler.py",
+          21,
+          {
+            "file": "gcpdeploy/src/duplicates_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 21
+          }
+        ],
+        [
+          "dags/src/duplicates_handler.py",
+          21,
+          {
+            "file": "dags/src/duplicates_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 21
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:geographic_features",
+      "no_clear_winner",
+      [
+        [
+          "src/geographic_features.py",
+          14,
+          {
+            "file": "src/geographic_features.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          "gcpdeploy/src/geographic_features.py",
+          14,
+          {
+            "file": "gcpdeploy/src/geographic_features.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          "dags/src/geographic_features.py",
+          14,
+          {
+            "file": "dags/src/geographic_features.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:handle_missing",
+      "no_clear_winner",
+      [
+        [
+          "src/missing_values_handler.py",
+          15,
+          {
+            "file": "src/missing_values_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 15
+          }
+        ],
+        [
+          "gcpdeploy/src/missing_values_handler.py",
+          15,
+          {
+            "file": "gcpdeploy/src/missing_values_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 15
+          }
+        ],
+        [
+          "dags/src/missing_values_handler.py",
+          15,
+          {
+            "file": "dags/src/missing_values_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 15
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:removing_outlier",
+      "no_clear_winner",
+      [
+        [
+          "src/outlier_treatment.py",
+          16,
+          {
+            "file": "src/outlier_treatment.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          "gcpdeploy/src/outlier_treatment.py",
+          16,
+          {
+            "file": "gcpdeploy/src/outlier_treatment.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          "dags/src/outlier_treatment.py",
+          18,
+          {
+            "file": "dags/src/outlier_treatment.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 18
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:pc_analyzer",
+      "no_clear_winner",
+      [
+        [
+          "src/pca.py",
+          27,
+          {
+            "file": "src/pca.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 2,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 32,
+            "lineno": 27
+          }
+        ],
+        [
+          "gcpdeploy/src/pca.py",
+          23,
+          {
+            "file": "gcpdeploy/src/pca.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 2,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 32,
+            "lineno": 23
+          }
+        ],
+        [
+          "dags/src/pca.py",
+          27,
+          {
+            "file": "dags/src/pca.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 2,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 32,
+            "lineno": 27
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:pca_",
+      "no_clear_winner",
+      [
+        [
+          "src/pca.py",
+          98,
+          {
+            "file": "src/pca.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 2,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 32,
+            "lineno": 98
+          }
+        ],
+        [
+          "gcpdeploy/src/pca.py",
+          94,
+          {
+            "file": "gcpdeploy/src/pca.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 2,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 32,
+            "lineno": 94
+          }
+        ],
+        [
+          "dags/src/pca.py",
+          98,
+          {
+            "file": "dags/src/pca.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 2,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 32,
+            "lineno": 98
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:removing_zero",
+      "no_clear_winner",
+      [
+        [
+          "src/removing_zero_unitprice.py",
+          16,
+          {
+            "file": "src/removing_zero_unitprice.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          "gcpdeploy/src/removing_zero_unitprice.py",
+          16,
+          {
+            "file": "gcpdeploy/src/removing_zero_unitprice.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          "dags/src/removing_zero_unitprice.py",
+          16,
+          {
+            "file": "dags/src/removing_zero_unitprice.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:rfm",
+      "no_clear_winner",
+      [
+        [
+          "src/rfm.py",
+          14,
+          {
+            "file": "src/rfm.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          "gcpdeploy/src/rfm.py",
+          14,
+          {
+            "file": "gcpdeploy/src/rfm.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          "dags/src/rfm.py",
+          14,
+          {
+            "file": "dags/src/rfm.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:scaler",
+      "no_clear_winner",
+      [
+        [
+          "src/scaler.py",
+          27,
+          {
+            "file": "src/scaler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 27
+          }
+        ],
+        [
+          "dags/src/scaler.py",
+          27,
+          {
+            "file": "dags/src/scaler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 27
+          }
+        ],
+        [
+          "gcpdeploy/src/scaler.py",
+          25,
+          {
+            "file": "gcpdeploy/src/scaler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 0,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 30,
+            "lineno": 25
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:seasonality_impacts",
+      "no_clear_winner",
+      [
+        [
+          "src/seasonality.py",
+          16,
+          {
+            "file": "src/seasonality.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          "gcpdeploy/src/seasonality.py",
+          16,
+          {
+            "file": "gcpdeploy/src/seasonality.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          "dags/src/seasonality.py",
+          19,
+          {
+            "file": "dags/src/seasonality.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 19
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:handle_transaction_status",
+      "no_clear_winner",
+      [
+        [
+          "src/transaction_status_handler.py",
+          18,
+          {
+            "file": "src/transaction_status_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 18
+          }
+        ],
+        [
+          "gcpdeploy/src/transaction_status_handler.py",
+          18,
+          {
+            "file": "gcpdeploy/src/transaction_status_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 18
+          }
+        ],
+        [
+          "dags/src/transaction_status_handler.py",
+          18,
+          {
+            "file": "dags/src/transaction_status_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 18
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:unique_products",
+      "no_clear_winner",
+      [
+        [
+          "src/unique_products.py",
+          14,
+          {
+            "file": "src/unique_products.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          "gcpdeploy/src/unique_products.py",
+          14,
+          {
+            "file": "gcpdeploy/src/unique_products.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          "dags/src/unique_products.py",
+          14,
+          {
+            "file": "dags/src/unique_products.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:unzip_file",
+      "no_clear_winner",
+      [
+        [
+          "src/unzip_data.py",
+          13,
+          {
+            "file": "src/unzip_data.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 13
+          }
+        ],
+        [
+          "gcpdeploy/src/unzip_data.py",
+          13,
+          {
+            "file": "gcpdeploy/src/unzip_data.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 13
+          }
+        ],
+        [
+          "dags/src/unzip_data.py",
+          13,
+          {
+            "file": "dags/src/unzip_data.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 13
+          }
+        ]
+      ]
+    ],
+    [
+      "Function:main",
+      "no_clear_winner",
+      [
+        [
+          "gcpdeploy/src/build.py",
+          73,
+          {
+            "file": "gcpdeploy/src/build.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 5,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 35,
+            "lineno": 73
+          }
+        ],
+        [
+          "gcpdeploy/src/trainer/train.py",
+          75,
+          {
+            "file": "gcpdeploy/src/trainer/train.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 75
+          }
+        ]
+      ]
+    ]
+  ],
+  "details_sample": [
+    {
+      "id": "Function:handle_anomalous_codes",
+      "scored": [
+        [
+          31,
+          "src/anomaly_code_handler.py",
+          16,
+          {
+            "file": "src/anomaly_code_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/anomaly_code_handler.py",
+          16,
+          {
+            "file": "gcpdeploy/src/anomaly_code_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          31,
+          "dags/src/anomaly_code_handler.py",
+          16,
+          {
+            "file": "dags/src/anomaly_code_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:cancellation_details",
+      "scored": [
+        [
+          31,
+          "src/cancellation_details.py",
+          16,
+          {
+            "file": "src/cancellation_details.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/cancellation_details.py",
+          16,
+          {
+            "file": "gcpdeploy/src/cancellation_details.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          31,
+          "dags/src/cancellation_details.py",
+          16,
+          {
+            "file": "dags/src/cancellation_details.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:cleaning_description",
+      "scored": [
+        [
+          31,
+          "src/cleaning_description.py",
+          14,
+          {
+            "file": "src/cleaning_description.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/cleaning_description.py",
+          14,
+          {
+            "file": "gcpdeploy/src/cleaning_description.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          31,
+          "dags/src/cleaning_description.py",
+          14,
+          {
+            "file": "dags/src/cleaning_description.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:correlation_check",
+      "scored": [
+        [
+          33,
+          "src/correlation.py",
+          35,
+          {
+            "file": "src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 35
+          }
+        ],
+        [
+          33,
+          "gcpdeploy/src/correlation.py",
+          32,
+          {
+            "file": "gcpdeploy/src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 32
+          }
+        ],
+        [
+          33,
+          "dags/src/correlation.py",
+          35,
+          {
+            "file": "dags/src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 35
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:save_heatmap",
+      "scored": [
+        [
+          33,
+          "src/correlation.py",
+          98,
+          {
+            "file": "src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 98
+          }
+        ],
+        [
+          33,
+          "gcpdeploy/src/correlation.py",
+          95,
+          {
+            "file": "gcpdeploy/src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 95
+          }
+        ],
+        [
+          33,
+          "dags/src/correlation.py",
+          98,
+          {
+            "file": "dags/src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 98
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:save_correlations_as_parquet",
+      "scored": [
+        [
+          33,
+          "src/correlation.py",
+          121,
+          {
+            "file": "src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 121
+          }
+        ],
+        [
+          33,
+          "gcpdeploy/src/correlation.py",
+          118,
+          {
+            "file": "gcpdeploy/src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 118
+          }
+        ],
+        [
+          33,
+          "dags/src/correlation.py",
+          121,
+          {
+            "file": "dags/src/correlation.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 121
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:customers_behavior",
+      "scored": [
+        [
+          31,
+          "src/customers_behavior.py",
+          16,
+          {
+            "file": "src/customers_behavior.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/customers_behavior.py",
+          16,
+          {
+            "file": "gcpdeploy/src/customers_behavior.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          31,
+          "dags/src/customers_behavior.py",
+          16,
+          {
+            "file": "dags/src/customers_behavior.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:ingest_data",
+      "scored": [
+        [
+          31,
+          "src/download_data.py",
+          9,
+          {
+            "file": "src/download_data.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 9
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/download_data.py",
+          9,
+          {
+            "file": "gcpdeploy/src/download_data.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 9
+          }
+        ],
+        [
+          31,
+          "dags/src/download_data.py",
+          9,
+          {
+            "file": "dags/src/download_data.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 9
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:remove_duplicates",
+      "scored": [
+        [
+          31,
+          "src/duplicates_handler.py",
+          21,
+          {
+            "file": "src/duplicates_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 21
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/duplicates_handler.py",
+          21,
+          {
+            "file": "gcpdeploy/src/duplicates_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 21
+          }
+        ],
+        [
+          31,
+          "dags/src/duplicates_handler.py",
+          21,
+          {
+            "file": "dags/src/duplicates_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 21
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:geographic_features",
+      "scored": [
+        [
+          31,
+          "src/geographic_features.py",
+          14,
+          {
+            "file": "src/geographic_features.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/geographic_features.py",
+          14,
+          {
+            "file": "gcpdeploy/src/geographic_features.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          31,
+          "dags/src/geographic_features.py",
+          14,
+          {
+            "file": "dags/src/geographic_features.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:handle_missing",
+      "scored": [
+        [
+          31,
+          "src/missing_values_handler.py",
+          15,
+          {
+            "file": "src/missing_values_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 15
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/missing_values_handler.py",
+          15,
+          {
+            "file": "gcpdeploy/src/missing_values_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 15
+          }
+        ],
+        [
+          31,
+          "dags/src/missing_values_handler.py",
+          15,
+          {
+            "file": "dags/src/missing_values_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 15
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:removing_outlier",
+      "scored": [
+        [
+          31,
+          "src/outlier_treatment.py",
+          16,
+          {
+            "file": "src/outlier_treatment.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/outlier_treatment.py",
+          16,
+          {
+            "file": "gcpdeploy/src/outlier_treatment.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          31,
+          "dags/src/outlier_treatment.py",
+          18,
+          {
+            "file": "dags/src/outlier_treatment.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 18
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:pc_analyzer",
+      "scored": [
+        [
+          32,
+          "src/pca.py",
+          27,
+          {
+            "file": "src/pca.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 2,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 32,
+            "lineno": 27
+          }
+        ],
+        [
+          32,
+          "gcpdeploy/src/pca.py",
+          23,
+          {
+            "file": "gcpdeploy/src/pca.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 2,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 32,
+            "lineno": 23
+          }
+        ],
+        [
+          32,
+          "dags/src/pca.py",
+          27,
+          {
+            "file": "dags/src/pca.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 2,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 32,
+            "lineno": 27
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:pca_",
+      "scored": [
+        [
+          32,
+          "src/pca.py",
+          98,
+          {
+            "file": "src/pca.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 2,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 32,
+            "lineno": 98
+          }
+        ],
+        [
+          32,
+          "gcpdeploy/src/pca.py",
+          94,
+          {
+            "file": "gcpdeploy/src/pca.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 2,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 32,
+            "lineno": 94
+          }
+        ],
+        [
+          32,
+          "dags/src/pca.py",
+          98,
+          {
+            "file": "dags/src/pca.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 2,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 32,
+            "lineno": 98
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:removing_zero",
+      "scored": [
+        [
+          31,
+          "src/removing_zero_unitprice.py",
+          16,
+          {
+            "file": "src/removing_zero_unitprice.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/removing_zero_unitprice.py",
+          16,
+          {
+            "file": "gcpdeploy/src/removing_zero_unitprice.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          31,
+          "dags/src/removing_zero_unitprice.py",
+          16,
+          {
+            "file": "dags/src/removing_zero_unitprice.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:rfm",
+      "scored": [
+        [
+          31,
+          "src/rfm.py",
+          14,
+          {
+            "file": "src/rfm.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/rfm.py",
+          14,
+          {
+            "file": "gcpdeploy/src/rfm.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          31,
+          "dags/src/rfm.py",
+          14,
+          {
+            "file": "dags/src/rfm.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:scaler",
+      "scored": [
+        [
+          31,
+          "src/scaler.py",
+          27,
+          {
+            "file": "src/scaler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 27
+          }
+        ],
+        [
+          31,
+          "dags/src/scaler.py",
+          27,
+          {
+            "file": "dags/src/scaler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 27
+          }
+        ],
+        [
+          30,
+          "gcpdeploy/src/scaler.py",
+          25,
+          {
+            "file": "gcpdeploy/src/scaler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 0,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 30,
+            "lineno": 25
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:seasonality_impacts",
+      "scored": [
+        [
+          31,
+          "src/seasonality.py",
+          16,
+          {
+            "file": "src/seasonality.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/seasonality.py",
+          16,
+          {
+            "file": "gcpdeploy/src/seasonality.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 16
+          }
+        ],
+        [
+          31,
+          "dags/src/seasonality.py",
+          19,
+          {
+            "file": "dags/src/seasonality.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 19
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:handle_transaction_status",
+      "scored": [
+        [
+          31,
+          "src/transaction_status_handler.py",
+          18,
+          {
+            "file": "src/transaction_status_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 18
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/transaction_status_handler.py",
+          18,
+          {
+            "file": "gcpdeploy/src/transaction_status_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 18
+          }
+        ],
+        [
+          31,
+          "dags/src/transaction_status_handler.py",
+          18,
+          {
+            "file": "dags/src/transaction_status_handler.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 18
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:unique_products",
+      "scored": [
+        [
+          31,
+          "src/unique_products.py",
+          14,
+          {
+            "file": "src/unique_products.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/unique_products.py",
+          14,
+          {
+            "file": "gcpdeploy/src/unique_products.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ],
+        [
+          31,
+          "dags/src/unique_products.py",
+          14,
+          {
+            "file": "dags/src/unique_products.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 14
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:unzip_file",
+      "scored": [
+        [
+          31,
+          "src/unzip_data.py",
+          13,
+          {
+            "file": "src/unzip_data.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 13
+          }
+        ],
+        [
+          31,
+          "gcpdeploy/src/unzip_data.py",
+          13,
+          {
+            "file": "gcpdeploy/src/unzip_data.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 13
+          }
+        ],
+        [
+          31,
+          "dags/src/unzip_data.py",
+          13,
+          {
+            "file": "dags/src/unzip_data.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 1,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 31,
+            "lineno": 13
+          }
+        ]
+      ]
+    },
+    {
+      "id": "Function:main",
+      "scored": [
+        [
+          35,
+          "gcpdeploy/src/build.py",
+          73,
+          {
+            "file": "gcpdeploy/src/build.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 5,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 35,
+            "lineno": 73
+          }
+        ],
+        [
+          33,
+          "gcpdeploy/src/trainer/train.py",
+          75,
+          {
+            "file": "gcpdeploy/src/trainer/train.py",
+            "src_pref": true,
+            "in_manifest": true,
+            "sym_count": 3,
+            "commit_count": 0,
+            "deployment_bias": false,
+            "final_score": 33,
+            "lineno": 75
+          }
+        ]
+      ]
+    }
+  ]
+}

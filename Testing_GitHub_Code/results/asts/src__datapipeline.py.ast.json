@@ -1,0 +1,435 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Expr",
+      "value": {
+        "_const_preview": "\nModularized Data pipeline to form DAGs in the future\n"
+      },
+      "lineno": 1,
+      "end_lineno": 3
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "download_data",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "ingest_data",
+          "asname": null,
+          "lineno": 4,
+          "end_lineno": 4
+        }
+      ],
+      "level": 0,
+      "lineno": 4,
+      "end_lineno": 4
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "unzip_data",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "unzip_file",
+          "asname": null,
+          "lineno": 5,
+          "end_lineno": 5
+        }
+      ],
+      "level": 0,
+      "lineno": 5,
+      "end_lineno": 5
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "data_loader",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "load_data",
+          "asname": null,
+          "lineno": 6,
+          "end_lineno": 6
+        }
+      ],
+      "level": 0,
+      "lineno": 6,
+      "end_lineno": 6
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "missing_values_handler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "handle_missing",
+          "asname": null,
+          "lineno": 7,
+          "end_lineno": 7
+        }
+      ],
+      "level": 0,
+      "lineno": 7,
+      "end_lineno": 7
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "duplicates_handler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "remove_duplicates",
+          "asname": null,
+          "lineno": 8,
+          "end_lineno": 8
+        }
+      ],
+      "level": 0,
+      "lineno": 8,
+      "end_lineno": 8
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "transaction_status_handler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "handle_transaction_status",
+          "asname": null,
+          "lineno": 9,
+          "end_lineno": 9
+        }
+      ],
+      "level": 0,
+      "lineno": 9,
+      "end_lineno": 9
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "anomaly_code_handler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "handle_anomalous_codes",
+          "asname": null,
+          "lineno": 10,
+          "end_lineno": 10
+        }
+      ],
+      "level": 0,
+      "lineno": 10,
+      "end_lineno": 10
+    },
+    {
+      "_type": "If",
+      "test": {
+        "_type": "Compare",
+        "left": {
+          "_type": "Name",
+          "id": "__name__",
+          "lineno": 13,
+          "end_lineno": 13
+        },
+        "ops": [
+          {
+            "_type": "Eq"
+          }
+        ],
+        "comparators": [
+          {
+            "_type": "Constant",
+            "value": "__main__",
+            "kind": null,
+            "lineno": 13,
+            "end_lineno": 13
+          }
+        ],
+        "lineno": 13,
+        "end_lineno": 13
+      },
+      "body": [
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "ZIPFILE_PATH",
+              "lineno": 14,
+              "end_lineno": 14
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "ingest_data",
+              "lineno": 14,
+              "end_lineno": 14
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "https://archive.ics.uci.edu/static/public/352/online+retail.zip",
+                "kind": null,
+                "lineno": 15,
+                "end_lineno": 15
+              }
+            ],
+            "keywords": [],
+            "lineno": 14,
+            "end_lineno": 15
+          },
+          "type_comment": null,
+          "lineno": 14,
+          "end_lineno": 15
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "UNZIPPED_FILE",
+              "lineno": 16,
+              "end_lineno": 16
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "unzip_file",
+              "lineno": 16,
+              "end_lineno": 16
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "ZIPFILE_PATH",
+                "lineno": 16,
+                "end_lineno": 16
+              },
+              {
+                "_type": "Constant",
+                "value": "data",
+                "kind": null,
+                "lineno": 16,
+                "end_lineno": 16
+              }
+            ],
+            "keywords": [],
+            "lineno": 16,
+            "end_lineno": 16
+          },
+          "type_comment": null,
+          "lineno": 16,
+          "end_lineno": 16
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "LOADED_DATA_PATH",
+              "lineno": 17,
+              "end_lineno": 17
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "load_data",
+              "lineno": 17,
+              "end_lineno": 17
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "excel_path",
+                "value": {
+                  "_type": "Name",
+                  "id": "UNZIPPED_FILE",
+                  "lineno": 17,
+                  "end_lineno": 17
+                },
+                "lineno": 17,
+                "end_lineno": 17
+              }
+            ],
+            "lineno": 17,
+            "end_lineno": 17
+          },
+          "type_comment": null,
+          "lineno": 17,
+          "end_lineno": 17
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "AFTER_MISSING_PATH",
+              "lineno": 18,
+              "end_lineno": 18
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "handle_missing",
+              "lineno": 18,
+              "end_lineno": 18
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "input_pickle_path",
+                "value": {
+                  "_type": "Name",
+                  "id": "LOADED_DATA_PATH",
+                  "lineno": 18,
+                  "end_lineno": 18
+                },
+                "lineno": 18,
+                "end_lineno": 18
+              }
+            ],
+            "lineno": 18,
+            "end_lineno": 18
+          },
+          "type_comment": null,
+          "lineno": 18,
+          "end_lineno": 18
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "AFTER_DUPLICATES_PATH",
+              "lineno": 19,
+              "end_lineno": 19
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "remove_duplicates",
+              "lineno": 19,
+              "end_lineno": 19
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "input_pickle_path",
+                "value": {
+                  "_type": "Name",
+                  "id": "AFTER_MISSING_PATH",
+                  "lineno": 19,
+                  "end_lineno": 19
+                },
+                "lineno": 19,
+                "end_lineno": 19
+              }
+            ],
+            "lineno": 19,
+            "end_lineno": 19
+          },
+          "type_comment": null,
+          "lineno": 19,
+          "end_lineno": 19
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "AFTER_TRANSACTION_PATH",
+              "lineno": 20,
+              "end_lineno": 20
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "handle_transaction_status",
+              "lineno": 20,
+              "end_lineno": 20
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "input_pickle_path",
+                "value": {
+                  "_type": "Name",
+                  "id": "AFTER_DUPLICATES_PATH",
+                  "lineno": 20,
+                  "end_lineno": 20
+                },
+                "lineno": 20,
+                "end_lineno": 20
+              }
+            ],
+            "lineno": 20,
+            "end_lineno": 20
+          },
+          "type_comment": null,
+          "lineno": 20,
+          "end_lineno": 20
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "AFTER_ANOMALY_CODE_PATH",
+              "lineno": 21,
+              "end_lineno": 21
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "handle_anomalous_codes",
+              "lineno": 21,
+              "end_lineno": 21
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "input_pickle_path",
+                "value": {
+                  "_type": "Name",
+                  "id": "AFTER_TRANSACTION_PATH",
+                  "lineno": 21,
+                  "end_lineno": 21
+                },
+                "lineno": 21,
+                "end_lineno": 21
+              }
+            ],
+            "lineno": 21,
+            "end_lineno": 21
+          },
+          "type_comment": null,
+          "lineno": 21,
+          "end_lineno": 21
+        }
+      ],
+      "orelse": [],
+      "lineno": 13,
+      "end_lineno": 21
+    }
+  ],
+  "type_ignores": []
+}

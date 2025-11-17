@@ -1,0 +1,78 @@
+[
+  {
+    "file": ".github/workflows/pytest.yml",
+    "type": "github_workflow",
+    "name": "Pytest",
+    "on": null,
+    "jobs": {
+      "build": {
+        "name": "Run lint Tests",
+        "runs_on": "ubuntu-latest",
+        "env": {},
+        "steps": [
+          {
+            "name": "Checkout code",
+            "uses": "actions/checkout@v4",
+            "run": null,
+            "with": {},
+            "env": {}
+          },
+          {
+            "name": "Set up Python",
+            "uses": "actions/setup-python@v5",
+            "run": null,
+            "with": {
+              "python-version": "3.9"
+            },
+            "env": {}
+          },
+          {
+            "name": "Install dependencies",
+            "uses": null,
+            "run": "pip install -r requirements.txt",
+            "with": {},
+            "env": {}
+          },
+          {
+            "name": "Run linting tests",
+            "uses": null,
+            "run": "pytest --pylint",
+            "with": {},
+            "env": {}
+          },
+          {
+            "name": "Run tests and generate XML report",
+            "uses": null,
+            "run": "pytest --junitxml=pytest-report.xml",
+            "with": {},
+            "env": {}
+          },
+          {
+            "name": "Upload test results",
+            "uses": "actions/upload-artifact@v4",
+            "run": null,
+            "with": {
+              "name": "pytest-results",
+              "path": "pytest-report.xml"
+            },
+            "env": {}
+          },
+          {
+            "name": "Notify on success",
+            "uses": null,
+            "run": "echo \"Tests passed successfully\"",
+            "with": {},
+            "env": {}
+          },
+          {
+            "name": "Notify on failure",
+            "uses": null,
+            "run": "echo \"Tests failed\"",
+            "with": {},
+            "env": {}
+          }
+        ]
+      }
+    }
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "relpath": "gcpdeploy/src/transaction_status_handler.py",
+  "manifest_meta": {
+    "relpath": "gcpdeploy/src/transaction_status_handler.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\transaction_status_handler.py",
+    "size": 2109,
+    "mtime": 1763123859.3769395,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "f4f5872b5216b5596bb52d66f91cbf8c3b90f31d4a60e1cc2d2b0c6909523799",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\gcpdeploy__src__transaction_status_handler.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "2",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'transaction_status_handler.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "2109",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

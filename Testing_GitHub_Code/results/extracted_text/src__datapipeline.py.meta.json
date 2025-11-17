@@ -1,0 +1,32 @@
+{
+  "relpath": "src/datapipeline.py",
+  "manifest_meta": {
+    "relpath": "src/datapipeline.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\datapipeline.py",
+    "size": 1011,
+    "mtime": 1763123859.555597,
+    "mime": "text/x-python",
+    "is_text": true,
+    "sha256": "ba23e5f4eb3e5def06624dca23f613712c867ed32fc11540c8e3119dbba1533c",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\src__datapipeline.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'datapipeline.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "1011",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

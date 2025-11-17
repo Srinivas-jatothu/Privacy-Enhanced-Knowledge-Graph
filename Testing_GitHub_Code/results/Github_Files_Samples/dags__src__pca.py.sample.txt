@@ -1,0 +1,10 @@
+"""
+Modular script to perform PCA on incoming data.
+Scripts checks PC ranging from 2 to 8 until cumulative \
+explained variance of threshold is achieved.
+Input: Path string to load pickle/parquet file.
+Output: Path string for parquet file.
+"""
+import os
+import json
+import pandas as pd

@@ -1,0 +1,32 @@
+{
+  "relpath": "dags.dvc",
+  "manifest_meta": {
+    "relpath": "dags.dvc",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags.dvc",
+    "size": 112,
+    "mtime": 1763123856.7762005,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "ebd46e2b316754140e6f036ebda2f6af1489eb14b6adbb66b2547fc15bae88df",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\dags.dvc.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "6",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'dags.dvc'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "112",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "node_counts": {
+    "File": 250,
+    "Module": 99,
+    "Function": 638,
+    "Commit": 352,
+    "PullRequest": 109,
+    "Package": 54,
+    "Document": 305
+  },
+  "edge_counts": {
+    "IMPORTS": 87,
+    "CALLS": 221,
+    "DEFINES": 548,
+    "MODIFIED_BY": 221,
+    "CLOSED_BY": 1280,
+    "DEPENDS_ON": 48,
+    "MENTIONS": 11
+  },
+  "nodes_total": 1807,
+  "edges_total": 2416
+}

@@ -1,0 +1,415 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "requests",
+          "asname": null,
+          "lineno": 1,
+          "end_lineno": 1
+        }
+      ],
+      "lineno": 1,
+      "end_lineno": 1
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "json",
+          "asname": null,
+          "lineno": 2,
+          "end_lineno": 2
+        }
+      ],
+      "lineno": 2,
+      "end_lineno": 2
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "health_check_url",
+          "lineno": 4,
+          "end_lineno": 4
+        }
+      ],
+      "value": {
+        "_const_preview": "http://127.0.0.1:8080/ping"
+      },
+      "type_comment": null,
+      "lineno": 4,
+      "end_lineno": 4
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "response_health",
+          "lineno": 6,
+          "end_lineno": 6
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "requests",
+            "lineno": 6,
+            "end_lineno": 6
+          },
+          "attr": "get",
+          "lineno": 6,
+          "end_lineno": 6
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "health_check_url",
+            "lineno": 6,
+            "end_lineno": 6
+          }
+        ],
+        "keywords": [],
+        "lineno": 6,
+        "end_lineno": 6
+      },
+      "type_comment": null,
+      "lineno": 6,
+      "end_lineno": 6
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "health_status",
+          "lineno": 7,
+          "end_lineno": 7
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "response_health",
+            "lineno": 7,
+            "end_lineno": 7
+          },
+          "attr": "json",
+          "lineno": 7,
+          "end_lineno": 7
+        },
+        "args": [],
+        "keywords": [],
+        "lineno": 7,
+        "end_lineno": 7
+      },
+      "type_comment": null,
+      "lineno": 7,
+      "end_lineno": 7
+    },
+    {
+      "_type": "Expr",
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "print",
+          "lineno": 9,
+          "end_lineno": 9
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "health_status",
+            "lineno": 9,
+            "end_lineno": 9
+          }
+        ],
+        "keywords": [],
+        "lineno": 9,
+        "end_lineno": 9
+      },
+      "lineno": 9,
+      "end_lineno": 9
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "predict_url",
+          "lineno": 12,
+          "end_lineno": 12
+        }
+      ],
+      "value": {
+        "_const_preview": "http://127.0.0.1:8080/predict"
+      },
+      "type_comment": null,
+      "lineno": 12,
+      "end_lineno": 12
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "data",
+          "lineno": 14,
+          "end_lineno": 14
+        }
+      ],
+      "value": {
+        "_type": "Dict",
+        "keys": [
+          {
+            "_type": "Constant",
+            "value": "instances",
+            "kind": null,
+            "lineno": 15,
+            "end_lineno": 15
+          }
+        ],
+        "values": [
+          {
+            "_type": "List",
+            "elts": [
+              {
+                "_type": "Dict",
+                "keys": [
+                  {
+                    "_type": "Constant",
+                    "value": "PC1",
+                    "kind": null,
+                    "lineno": 17,
+                    "end_lineno": 17
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "PC2",
+                    "kind": null,
+                    "lineno": 18,
+                    "end_lineno": 18
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "PC3",
+                    "kind": null,
+                    "lineno": 19,
+                    "end_lineno": 19
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "PC4",
+                    "kind": null,
+                    "lineno": 20,
+                    "end_lineno": 20
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "PC5",
+                    "kind": null,
+                    "lineno": 21,
+                    "end_lineno": 21
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "PC6",
+                    "kind": null,
+                    "lineno": 22,
+                    "end_lineno": 22
+                  }
+                ],
+                "values": [
+                  {
+                    "_type": "Constant",
+                    "value": 1000.595596,
+                    "kind": null,
+                    "lineno": 17,
+                    "end_lineno": 17
+                  },
+                  {
+                    "_type": "UnaryOp",
+                    "op": {
+                      "_type": "USub"
+                    },
+                    "operand": {
+                      "_type": "Constant",
+                      "value": 0.944713,
+                      "kind": null,
+                      "lineno": 18,
+                      "end_lineno": 18
+                    },
+                    "lineno": 18,
+                    "end_lineno": 18
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": 0.340492,
+                    "kind": null,
+                    "lineno": 19,
+                    "end_lineno": 19
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": 1.335999,
+                    "kind": null,
+                    "lineno": 20,
+                    "end_lineno": 20
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": 0.13531,
+                    "kind": null,
+                    "lineno": 21,
+                    "end_lineno": 21
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": 0.506377,
+                    "kind": null,
+                    "lineno": 22,
+                    "end_lineno": 22
+                  }
+                ],
+                "lineno": 16,
+                "end_lineno": 23
+              }
+            ],
+            "lineno": 15,
+            "end_lineno": 24
+          }
+        ],
+        "lineno": 14,
+        "end_lineno": 25
+      },
+      "type_comment": null,
+      "lineno": 14,
+      "end_lineno": 25
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "response_predict",
+          "lineno": 28,
+          "end_lineno": 28
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "requests",
+            "lineno": 28,
+            "end_lineno": 28
+          },
+          "attr": "post",
+          "lineno": 28,
+          "end_lineno": 28
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "predict_url",
+            "lineno": 28,
+            "end_lineno": 28
+          }
+        ],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "json",
+            "value": {
+              "_type": "Name",
+              "id": "data",
+              "lineno": 28,
+              "end_lineno": 28
+            },
+            "lineno": 28,
+            "end_lineno": 28
+          }
+        ],
+        "lineno": 28,
+        "end_lineno": 28
+      },
+      "type_comment": null,
+      "lineno": 28,
+      "end_lineno": 28
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "predict_status",
+          "lineno": 29,
+          "end_lineno": 29
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "response_predict",
+            "lineno": 29,
+            "end_lineno": 29
+          },
+          "attr": "json",
+          "lineno": 29,
+          "end_lineno": 29
+        },
+        "args": [],
+        "keywords": [],
+        "lineno": 29,
+        "end_lineno": 29
+      },
+      "type_comment": null,
+      "lineno": 29,
+      "end_lineno": 29
+    },
+    {
+      "_type": "Expr",
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "print",
+          "lineno": 31,
+          "end_lineno": 31
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "predict_status",
+            "lineno": 31,
+            "end_lineno": 31
+          }
+        ],
+        "keywords": [],
+        "lineno": 31,
+        "end_lineno": 31
+      },
+      "lineno": 31,
+      "end_lineno": 31
+    }
+  ],
+  "type_ignores": []
+}

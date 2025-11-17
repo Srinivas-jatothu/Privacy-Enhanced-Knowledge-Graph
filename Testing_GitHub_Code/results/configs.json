@@ -1,0 +1,539 @@
+{
+  ".github/workflows/pytest.yml": {
+    "name": "Pytest",
+    "true": {
+      "push": {
+        "branches": [
+          "main",
+          "feature_*",
+          "<REDACTED>"
+        ]
+      },
+      "pull_request": {
+        "branches": [
+          "main"
+        ]
+      }
+    },
+    "jobs": {
+      "build": {
+        "name": "Run lint Tests",
+        "runs-on": "ubuntu-latest",
+        "concurrency": {
+          "group": "Run lint Tests",
+          "cancel-in-progress": true
+        },
+        "steps": [
+          {
+            "name": "Checkout code",
+            "uses": "actions/checkout@v4"
+          },
+          {
+            "name": "Set up Python",
+            "uses": "actions/setup-python@v5",
+            "with": {
+              "python-version": "3.9"
+            }
+          },
+          {
+            "name": "Install dependencies",
+            "run": "pip install -r requirements.txt"
+          },
+          {
+            "name": "Run linting tests",
+            "run": "pytest --pylint",
+            "continue-on-error": false
+          },
+          {
+            "name": "Run tests and generate XML report",
+            "run": "pytest --junitxml=pytest-report.xml",
+            "continue-on-error": false
+          },
+          {
+            "name": "Upload test results",
+            "if": "always()",
+            "uses": "actions/upload-artifact@v4",
+            "with": {
+              "name": "pytest-results",
+              "path": "pytest-report.xml"
+            }
+          },
+          {
+            "name": "Notify on success",
+            "if": "success()",
+            "run": "echo \"Tests passed successfully\""
+          },
+          {
+            "name": "Notify on failure",
+            "if": "failure()",
+            "run": "echo \"Tests failed\""
+          }
+        ]
+      }
+    }
+  },
+  "config/feature_processing.json": {
+    "scaler": {
+      "ingest_path": "<REDACTED>",
+      "output_path": "data/processed/scaler_output.parquet",
+      "standardize_columns": [
+        "<REDACTED>",
+        "Total_Transactions",
+        "Total_Spend",
+        "<REDACTED>",
+        "<REDACTED>",
+        "Cancellation_Rate",
+        "<REDACTED>",
+        "<REDACTED>",
+        "Spending_Trend"
+      ],
+      "normalize_columns": [
+        "<REDACTED>",
+        "<REDACTED>",
+        "<REDACTED>"
+      ]
+    },
+    "correlation": {
+      "ingest_path": "data/processed/scaler_output.parquet",
+      "image_path": "data/plots/correlation_heatmap.png",
+      "correlation_matrix_path": "<REDACTED>",
+      "list_path": "<REDACTED>",
+      "correlation_threshold": 0.5
+    },
+    "pca": {
+      "ingest_path": "data/processed/scaler_output.parquet",
+      "output_path": "data/processed/pca_output.parquet",
+      "columns_not_considered": [],
+      "cvr_threshold": 0.8
+    }
+  },
+  "docker-compose.yaml": {
+    "version": "3.9",
+    "x-airflow-common": {
+      "image": "${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}",
+      "environment": {
+        "AIRFLOW__CORE__EXECUTOR": "CeleryExecutor",
+        "AIRFLOW__DATABASE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+        "AIRFLOW__CORE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+        "AIRFLOW__CELERY__RESULT_BACKEND": "db+postgresql://airflow:airflow@postgres/airflow",
+        "AIRFLOW__CELERY__BROKER_URL": "redis://:@redis:6379/0",
+        "AIRFLOW__CORE__FERNET_KEY": "<REDACTED>",
+        "AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION": "true",
+        "AIRFLOW__CORE__LOAD_EXAMPLES": "false",
+        "AIRFLOW__API__AUTH_BACKENDS": "<REDACTED>",
+        "AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK": "true",
+        "AIRFLOW__ADDITIONAL_REQUIREMENTS": "gcc",
+        "_PIP_ADDITIONAL_REQUIREMENTS": "<REDACTED>"
+      },
+      "volumes": [
+        "${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags",
+        "${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs",
+        "${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config",
+        "${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins"
+      ],
+      "user": "${AIRFLOW_UID:-50000}:0",
+      "depends_on": {
+        "redis": {
+          "condition": "service_healthy"
+        },
+        "postgres": {
+          "condition": "service_healthy"
+        }
+      }
+    },
+    "services": {
+      "python": {
+        "image": "python:3.9"
+      },
+      "postgres": {
+        "image": "postgres:13",
+        "environment": {
+          "POSTGRES_USER": "airflow",
+          "POSTGRES_PASSWORD": "<REDACTED>",
+          "POSTGRES_DB": "airflow"
+        },
+        "volumes": [
+          "postgres-db-volume:/var/lib/postgresql/data"
+        ],
+        "healthcheck": {
+          "test": [
+            "CMD",
+            "pg_isready",
+            "-U",
+            "airflow"
+          ],
+          "interval": "10s",
+          "retries": 5,
+          "start_period": "5s"
+        },
+        "restart": "always"
+      },
+      "redis": {
+        "image": "redis:latest",
+        "expose": [
+          6379
+        ],
+        "healthcheck": {
+          "test": [
+            "CMD",
+            "redis-cli",
+            "ping"
+          ],
+          "interval": "10s",
+          "timeout": "30s",
+          "retries": 50,
+          "start_period": "30s"
+        },
+        "restart": "always"
+      },
+      "airflow-webserver": {
+        "image": "${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}",
+        "environment": {
+          "AIRFLOW__CORE__EXECUTOR": "CeleryExecutor",
+          "AIRFLOW__DATABASE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CORE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__RESULT_BACKEND": "db+postgresql://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__BROKER_URL": "redis://:@redis:6379/0",
+          "AIRFLOW__CORE__FERNET_KEY": "<REDACTED>",
+          "AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION": "true",
+          "AIRFLOW__CORE__LOAD_EXAMPLES": "false",
+          "AIRFLOW__API__AUTH_BACKENDS": "<REDACTED>",
+          "AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK": "true",
+          "AIRFLOW__ADDITIONAL_REQUIREMENTS": "gcc",
+          "_PIP_ADDITIONAL_REQUIREMENTS": "<REDACTED>"
+        },
+        "volumes": [
+          "${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags",
+          "${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs",
+          "${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config",
+          "${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins"
+        ],
+        "user": "${AIRFLOW_UID:-50000}:0",
+        "depends_on": {
+          "redis": {
+            "condition": "service_healthy"
+          },
+          "postgres": {
+            "condition": "service_healthy"
+          },
+          "airflow-init": {
+            "condition": "<REDACTED>"
+          }
+        },
+        "command": "webserver",
+        "ports": [
+          "8080:8080"
+        ],
+        "healthcheck": {
+          "test": [
+            "CMD",
+            "curl",
+            "--fail",
+            "http://localhost:8080/health"
+          ],
+          "interval": "30s",
+          "timeout": "10s",
+          "retries": 5,
+          "start_period": "30s"
+        },
+        "restart": "always"
+      },
+      "airflow-scheduler": {
+        "image": "${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}",
+        "environment": {
+          "AIRFLOW__CORE__EXECUTOR": "CeleryExecutor",
+          "AIRFLOW__DATABASE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CORE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__RESULT_BACKEND": "db+postgresql://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__BROKER_URL": "redis://:@redis:6379/0",
+          "AIRFLOW__CORE__FERNET_KEY": "<REDACTED>",
+          "AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION": "true",
+          "AIRFLOW__CORE__LOAD_EXAMPLES": "false",
+          "AIRFLOW__API__AUTH_BACKENDS": "<REDACTED>",
+          "AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK": "true",
+          "AIRFLOW__ADDITIONAL_REQUIREMENTS": "gcc",
+          "_PIP_ADDITIONAL_REQUIREMENTS": "<REDACTED>"
+        },
+        "volumes": [
+          "${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags",
+          "${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs",
+          "${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config",
+          "${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins"
+        ],
+        "user": "${AIRFLOW_UID:-50000}:0",
+        "depends_on": {
+          "redis": {
+            "condition": "service_healthy"
+          },
+          "postgres": {
+            "condition": "service_healthy"
+          },
+          "airflow-init": {
+            "condition": "<REDACTED>"
+          }
+        },
+        "command": "scheduler",
+        "healthcheck": {
+          "test": [
+            "CMD",
+            "curl",
+            "--fail",
+            "http://localhost:8974/health"
+          ],
+          "interval": "30s",
+          "timeout": "10s",
+          "retries": 5,
+          "start_period": "30s"
+        },
+        "restart": "always"
+      },
+      "airflow-worker": {
+        "image": "${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}",
+        "environment": {
+          "AIRFLOW__CORE__EXECUTOR": "CeleryExecutor",
+          "AIRFLOW__DATABASE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CORE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__RESULT_BACKEND": "db+postgresql://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__BROKER_URL": "redis://:@redis:6379/0",
+          "AIRFLOW__CORE__FERNET_KEY": "<REDACTED>",
+          "AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION": "true",
+          "AIRFLOW__CORE__LOAD_EXAMPLES": "false",
+          "AIRFLOW__API__AUTH_BACKENDS": "<REDACTED>",
+          "AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK": "true",
+          "AIRFLOW__ADDITIONAL_REQUIREMENTS": "gcc",
+          "_PIP_ADDITIONAL_REQUIREMENTS": "<REDACTED>",
+          "DUMB_INIT_SETSID": "0"
+        },
+        "volumes": [
+          "${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags",
+          "${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs",
+          "${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config",
+          "${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins"
+        ],
+        "user": "${AIRFLOW_UID:-50000}:0",
+        "depends_on": {
+          "redis": {
+            "condition": "service_healthy"
+          },
+          "postgres": {
+            "condition": "service_healthy"
+          },
+          "airflow-init": {
+            "condition": "<REDACTED>"
+          }
+        },
+        "command": "celery worker",
+        "healthcheck": {
+          "test": [
+            "CMD-SHELL",
+            "celery --app airflow.providers.celery.executors.celery_executor.app inspect ping -d \"celery@$${HOSTNAME}\" || celery --app airflow.executors.celery_executor.app inspect ping -d \"celery@$${HOSTNAME}\""
+          ],
+          "interval": "30s",
+          "timeout": "10s",
+          "retries": 5,
+          "start_period": "30s"
+        },
+        "restart": "always"
+      },
+      "airflow-triggerer": {
+        "image": "${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}",
+        "environment": {
+          "AIRFLOW__CORE__EXECUTOR": "CeleryExecutor",
+          "AIRFLOW__DATABASE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CORE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__RESULT_BACKEND": "db+postgresql://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__BROKER_URL": "redis://:@redis:6379/0",
+          "AIRFLOW__CORE__FERNET_KEY": "<REDACTED>",
+          "AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION": "true",
+          "AIRFLOW__CORE__LOAD_EXAMPLES": "false",
+          "AIRFLOW__API__AUTH_BACKENDS": "<REDACTED>",
+          "AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK": "true",
+          "AIRFLOW__ADDITIONAL_REQUIREMENTS": "gcc",
+          "_PIP_ADDITIONAL_REQUIREMENTS": "<REDACTED>"
+        },
+        "volumes": [
+          "${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags",
+          "${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs",
+          "${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config",
+          "${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins"
+        ],
+        "user": "${AIRFLOW_UID:-50000}:0",
+        "depends_on": {
+          "redis": {
+            "condition": "service_healthy"
+          },
+          "postgres": {
+            "condition": "service_healthy"
+          },
+          "airflow-init": {
+            "condition": "<REDACTED>"
+          }
+        },
+        "command": "triggerer",
+        "healthcheck": {
+          "test": [
+            "CMD-SHELL",
+            "airflow jobs check --job-type TriggererJob --hostname \"$${HOSTNAME}\""
+          ],
+          "interval": "30s",
+          "timeout": "10s",
+          "retries": 5,
+          "start_period": "30s"
+        },
+        "restart": "always"
+      },
+      "airflow-init": {
+        "image": "${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}",
+        "environment": {
+          "AIRFLOW__CORE__EXECUTOR": "CeleryExecutor",
+          "AIRFLOW__DATABASE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CORE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__RESULT_BACKEND": "db+postgresql://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__BROKER_URL": "redis://:@redis:6379/0",
+          "AIRFLOW__CORE__FERNET_KEY": "<REDACTED>",
+          "AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION": "true",
+          "AIRFLOW__CORE__LOAD_EXAMPLES": "false",
+          "AIRFLOW__API__AUTH_BACKENDS": "<REDACTED>",
+          "AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK": "true",
+          "AIRFLOW__ADDITIONAL_REQUIREMENTS": "gcc",
+          "_PIP_ADDITIONAL_REQUIREMENTS": "",
+          "_AIRFLOW_DB_MIGRATE": "true",
+          "_AIRFLOW_WWW_USER_CREATE": "true",
+          "_AIRFLOW_WWW_USER_USERNAME": "<REDACTED>",
+          "_AIRFLOW_WWW_USER_PASSWORD": "<REDACTED>"
+        },
+        "volumes": [
+          "${AIRFLOW_PROJ_DIR:-.}:/sources",
+          "${AIRFLOW_PROJ_DIR:-.}/working_data:/opt/airflow/working_data"
+        ],
+        "user": "0:0",
+        "depends_on": {
+          "redis": {
+            "condition": "service_healthy"
+          },
+          "postgres": {
+            "condition": "service_healthy"
+          }
+        },
+        "entrypoint": "/bin/bash",
+        "command": [
+          "-c",
+          "<REDACTED>"
+        ]
+      },
+      "airflow-cli": {
+        "image": "${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}",
+        "environment": {
+          "AIRFLOW__CORE__EXECUTOR": "CeleryExecutor",
+          "AIRFLOW__DATABASE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CORE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__RESULT_BACKEND": "db+postgresql://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__BROKER_URL": "redis://:@redis:6379/0",
+          "AIRFLOW__CORE__FERNET_KEY": "<REDACTED>",
+          "AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION": "true",
+          "AIRFLOW__CORE__LOAD_EXAMPLES": "false",
+          "AIRFLOW__API__AUTH_BACKENDS": "<REDACTED>",
+          "AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK": "true",
+          "AIRFLOW__ADDITIONAL_REQUIREMENTS": "gcc",
+          "_PIP_ADDITIONAL_REQUIREMENTS": "<REDACTED>",
+          "CONNECTION_CHECK_MAX_COUNT": "0"
+        },
+        "volumes": [
+          "${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags",
+          "${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs",
+          "${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config",
+          "${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins"
+        ],
+        "user": "${AIRFLOW_UID:-50000}:0",
+        "depends_on": {
+          "redis": {
+            "condition": "service_healthy"
+          },
+          "postgres": {
+            "condition": "service_healthy"
+          }
+        },
+        "profiles": [
+          "debug"
+        ],
+        "command": [
+          "bash",
+          "-c",
+          "airflow"
+        ]
+      },
+      "flower": {
+        "image": "${AIRFLOW_IMAGE_NAME:-apache/airflow:2.7.3}",
+        "environment": {
+          "AIRFLOW__CORE__EXECUTOR": "CeleryExecutor",
+          "AIRFLOW__DATABASE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CORE__SQL_ALCHEMY_CONN": "postgresql+psycopg2://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__RESULT_BACKEND": "db+postgresql://airflow:airflow@postgres/airflow",
+          "AIRFLOW__CELERY__BROKER_URL": "redis://:@redis:6379/0",
+          "AIRFLOW__CORE__FERNET_KEY": "<REDACTED>",
+          "AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION": "true",
+          "AIRFLOW__CORE__LOAD_EXAMPLES": "false",
+          "AIRFLOW__API__AUTH_BACKENDS": "<REDACTED>",
+          "AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK": "true",
+          "AIRFLOW__ADDITIONAL_REQUIREMENTS": "gcc",
+          "_PIP_ADDITIONAL_REQUIREMENTS": "<REDACTED>"
+        },
+        "volumes": [
+          "${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags",
+          "${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs",
+          "${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config",
+          "${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins"
+        ],
+        "user": "${AIRFLOW_UID:-50000}:0",
+        "depends_on": {
+          "redis": {
+            "condition": "service_healthy"
+          },
+          "postgres": {
+            "condition": "service_healthy"
+          },
+          "airflow-init": {
+            "condition": "<REDACTED>"
+          }
+        },
+        "command": "celery flower",
+        "profiles": [
+          "flower"
+        ],
+        "ports": [
+          "5555:5555"
+        ],
+        "healthcheck": {
+          "test": [
+            "CMD",
+            "curl",
+            "--fail",
+            "http://localhost:5555/"
+          ],
+          "interval": "30s",
+          "timeout": "10s",
+          "retries": 5,
+          "start_period": "30s"
+        },
+        "restart": "always"
+      }
+    },
+    "volumes": {
+      "postgres-db-volume": null
+    }
+  },
+  "mlruns/0/meta.yaml": {
+    "artifact_location": "mlflow-artifacts:/0",
+    "creation_time": 1701817520553,
+    "experiment_id": "0",
+    "last_update_time": 1701817520553,
+    "lifecycle_stage": "active",
+    "name": "Default"
+  },
+  "pytest.ini": {
+    "pytest": {
+      "addopts": "--ignore=logs --ignore=dags --ignore=gcpdeploy"
+    }
+  },
+  "requirements.txt": "<REDACTED>"
+}

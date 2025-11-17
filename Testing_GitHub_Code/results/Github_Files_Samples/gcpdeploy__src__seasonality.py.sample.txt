@@ -1,0 +1,10 @@
+"""
+This module analyzes the seasonal trends and how it affects customers and business
+"""
+import  pickle
+import os
+import pandas as pd
+import numpy as np
+import scipy.stats as sc
+
+PROJECT_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

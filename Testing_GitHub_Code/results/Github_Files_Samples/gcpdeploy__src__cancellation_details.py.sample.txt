@@ -1,0 +1,10 @@
+"""
+This module shows how cancelling of orders affect the business and the data.
+It also shows the frequency of cancellation and cancellation rate.
+"""
+import  pickle
+import os
+import pandas as pd
+import numpy as np
+
+PROJECT_DIR=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

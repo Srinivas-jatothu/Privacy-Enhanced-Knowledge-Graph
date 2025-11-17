@@ -1,0 +1,9 @@
+"""
+A module for adding a new column named transaction_status based on the 
+starting character of InvoiceNo column. 
+transaction_status values are Cancelled or Completed.
+"""
+
+import pickle
+import os
+import numpy as np

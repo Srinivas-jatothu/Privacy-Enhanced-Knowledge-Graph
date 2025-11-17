@@ -1,0 +1,32 @@
+{
+  "relpath": ".dvc/config",
+  "manifest_meta": {
+    "relpath": ".dvc/config",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\config",
+    "size": 179,
+    "mtime": 1763123856.72339,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "ecc4de8145d835e920062ed8f1eee7e3f1140ce8e2dfc57b0640e8a72af40cd3",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.dvc__config.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "2",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'config'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "179",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

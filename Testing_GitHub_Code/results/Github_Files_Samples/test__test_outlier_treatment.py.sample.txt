@@ -1,0 +1,10 @@
+"""
+A test for checking outlier treatment
+"""
+
+import os
+import pickle
+from src.outlier_treatment import removing_outlier
+
+
+# Determine the absolute path of the project directory

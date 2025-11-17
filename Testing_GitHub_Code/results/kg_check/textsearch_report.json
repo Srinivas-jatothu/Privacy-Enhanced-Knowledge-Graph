@@ -1,0 +1,413 @@
+{
+  "total_missing_before": 24,
+  "recovered_count": 0,
+  "ambiguous_count": 24,
+  "remaining_after": 24,
+  "recovered_sample": [],
+  "ambiguous_sample": [
+    {
+      "id": "Function:handle_anomalous_codes",
+      "candidates": [
+        [
+          "dags/src/anomaly_code_handler.py",
+          16
+        ],
+        [
+          "gcpdeploy/src/anomaly_code_handler.py",
+          16
+        ],
+        [
+          "src/anomaly_code_handler.py",
+          16
+        ]
+      ]
+    },
+    {
+      "id": "Function:cancellation_details",
+      "candidates": [
+        [
+          "dags/src/cancellation_details.py",
+          16
+        ],
+        [
+          "gcpdeploy/src/cancellation_details.py",
+          16
+        ],
+        [
+          "src/cancellation_details.py",
+          16
+        ]
+      ]
+    },
+    {
+      "id": "Function:cleaning_description",
+      "candidates": [
+        [
+          "dags/src/cleaning_description.py",
+          14
+        ],
+        [
+          "gcpdeploy/src/cleaning_description.py",
+          14
+        ],
+        [
+          "src/cleaning_description.py",
+          14
+        ]
+      ]
+    },
+    {
+      "id": "Function:correlation_check",
+      "candidates": [
+        [
+          "dags/src/correlation.py",
+          35
+        ],
+        [
+          "gcpdeploy/src/correlation.py",
+          32
+        ],
+        [
+          "src/correlation.py",
+          35
+        ]
+      ]
+    },
+    {
+      "id": "Function:save_heatmap",
+      "candidates": [
+        [
+          "dags/src/correlation.py",
+          98
+        ],
+        [
+          "gcpdeploy/src/correlation.py",
+          95
+        ],
+        [
+          "src/correlation.py",
+          98
+        ]
+      ]
+    },
+    {
+      "id": "Function:save_correlations_as_parquet",
+      "candidates": [
+        [
+          "dags/src/correlation.py",
+          121
+        ],
+        [
+          "gcpdeploy/src/correlation.py",
+          118
+        ],
+        [
+          "src/correlation.py",
+          121
+        ]
+      ]
+    },
+    {
+      "id": "Function:customers_behavior",
+      "candidates": [
+        [
+          "dags/src/customers_behavior.py",
+          16
+        ],
+        [
+          "gcpdeploy/src/customers_behavior.py",
+          16
+        ],
+        [
+          "src/customers_behavior.py",
+          16
+        ]
+      ]
+    },
+    {
+      "id": "Function:load_data",
+      "candidates": [
+        [
+          "dags/src/data_loader.py",
+          17
+        ],
+        [
+          "gcpdeploy/src/data_loader.py",
+          17
+        ],
+        [
+          "gcpdeploy/src/model_analysis.py",
+          28
+        ],
+        [
+          "src/data_loader.py",
+          17
+        ]
+      ]
+    },
+    {
+      "id": "Function:ingest_data",
+      "candidates": [
+        [
+          "dags/src/download_data.py",
+          9
+        ],
+        [
+          "gcpdeploy/src/download_data.py",
+          9
+        ],
+        [
+          "src/download_data.py",
+          9
+        ]
+      ]
+    },
+    {
+      "id": "Function:remove_duplicates",
+      "candidates": [
+        [
+          "dags/src/duplicates_handler.py",
+          21
+        ],
+        [
+          "gcpdeploy/src/duplicates_handler.py",
+          21
+        ],
+        [
+          "src/duplicates_handler.py",
+          21
+        ]
+      ]
+    },
+    {
+      "id": "Function:geographic_features",
+      "candidates": [
+        [
+          "dags/src/geographic_features.py",
+          14
+        ],
+        [
+          "gcpdeploy/src/geographic_features.py",
+          14
+        ],
+        [
+          "src/geographic_features.py",
+          14
+        ]
+      ]
+    },
+    {
+      "id": "Function:handle_missing",
+      "candidates": [
+        [
+          "dags/src/missing_values_handler.py",
+          15
+        ],
+        [
+          "gcpdeploy/src/missing_values_handler.py",
+          15
+        ],
+        [
+          "src/missing_values_handler.py",
+          15
+        ]
+      ]
+    },
+    {
+      "id": "Function:removing_outlier",
+      "candidates": [
+        [
+          "dags/src/outlier_treatment.py",
+          18
+        ],
+        [
+          "gcpdeploy/src/outlier_treatment.py",
+          16
+        ],
+        [
+          "src/outlier_treatment.py",
+          16
+        ]
+      ]
+    },
+    {
+      "id": "Function:pc_analyzer",
+      "candidates": [
+        [
+          "dags/src/pca.py",
+          27
+        ],
+        [
+          "gcpdeploy/src/pca.py",
+          23
+        ],
+        [
+          "src/pca.py",
+          27
+        ]
+      ]
+    },
+    {
+      "id": "Function:pca_",
+      "candidates": [
+        [
+          "dags/src/pca.py",
+          98
+        ],
+        [
+          "gcpdeploy/src/pca.py",
+          94
+        ],
+        [
+          "src/pca.py",
+          98
+        ]
+      ]
+    },
+    {
+      "id": "Function:removing_zero",
+      "candidates": [
+        [
+          "dags/src/removing_zero_unitprice.py",
+          16
+        ],
+        [
+          "gcpdeploy/src/removing_zero_unitprice.py",
+          16
+        ],
+        [
+          "src/removing_zero_unitprice.py",
+          16
+        ]
+      ]
+    },
+    {
+      "id": "Function:rfm",
+      "candidates": [
+        [
+          "dags/src/rfm.py",
+          14
+        ],
+        [
+          "gcpdeploy/src/rfm.py",
+          14
+        ],
+        [
+          "src/rfm.py",
+          14
+        ]
+      ]
+    },
+    {
+      "id": "Function:scaler",
+      "candidates": [
+        [
+          "dags/src/scaler.py",
+          27
+        ],
+        [
+          "gcpdeploy/src/scaler.py",
+          25
+        ],
+        [
+          "src/scaler.py",
+          27
+        ]
+      ]
+    },
+    {
+      "id": "Function:seasonality_impacts",
+      "candidates": [
+        [
+          "dags/src/seasonality.py",
+          19
+        ],
+        [
+          "gcpdeploy/src/seasonality.py",
+          16
+        ],
+        [
+          "src/seasonality.py",
+          16
+        ]
+      ]
+    },
+    {
+      "id": "Function:handle_transaction_status",
+      "candidates": [
+        [
+          "dags/src/transaction_status_handler.py",
+          18
+        ],
+        [
+          "gcpdeploy/src/transaction_status_handler.py",
+          18
+        ],
+        [
+          "src/transaction_status_handler.py",
+          18
+        ]
+      ]
+    },
+    {
+      "id": "Function:unique_products",
+      "candidates": [
+        [
+          "dags/src/unique_products.py",
+          14
+        ],
+        [
+          "gcpdeploy/src/unique_products.py",
+          14
+        ],
+        [
+          "src/unique_products.py",
+          14
+        ]
+      ]
+    },
+    {
+      "id": "Function:unzip_file",
+      "candidates": [
+        [
+          "dags/src/unzip_data.py",
+          13
+        ],
+        [
+          "gcpdeploy/src/unzip_data.py",
+          13
+        ],
+        [
+          "src/unzip_data.py",
+          13
+        ]
+      ]
+    },
+    {
+      "id": "Function:main",
+      "candidates": [
+        [
+          "gcpdeploy/src/build.py",
+          73
+        ],
+        [
+          "gcpdeploy/src/trainer/train.py",
+          75
+        ]
+      ]
+    },
+    {
+      "id": "Function:save_and_upload_model",
+      "candidates": [
+        [
+          "gcpdeploy/src/model_analysis.py",
+          266
+        ],
+        [
+          "gcpdeploy/src/trainer/train.py",
+          58
+        ]
+      ]
+    }
+  ]
+}

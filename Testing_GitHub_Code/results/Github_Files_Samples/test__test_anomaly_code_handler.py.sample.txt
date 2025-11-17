@@ -1,0 +1,10 @@
+"""
+A module for testing anomaly_code_handler module.
+"""
+
+import os
+import pickle
+from src.anomaly_code_handler import handle_anomalous_codes
+
+# Determine the absolute path of the project directory
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

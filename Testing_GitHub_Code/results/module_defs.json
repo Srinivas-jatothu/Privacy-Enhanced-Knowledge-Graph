@@ -1,0 +1,1261 @@
+{
+  "dags": {
+    "file": "dags/__init__.py",
+    "functions": [],
+    "classes": []
+  },
+  "dags.data": {
+    "file": "dags/data/__init__.py",
+    "functions": [],
+    "classes": []
+  },
+  "dags.src": {
+    "file": "dags/src/__init__.py",
+    "functions": [],
+    "classes": []
+  },
+  "dags.src.airflow": {
+    "file": "dags/src/airflow.py",
+    "functions": [],
+    "classes": []
+  },
+  "dags.src.anomaly_code_handler": {
+    "file": "dags/src/anomaly_code_handler.py",
+    "functions": [
+      {
+        "name": "handle_anomalous_codes",
+        "lineno": 16,
+        "end_lineno": 43
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.cancellation_details": {
+    "file": "dags/src/cancellation_details.py",
+    "functions": [
+      {
+        "name": "cancellation_details",
+        "lineno": 16,
+        "end_lineno": 50
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.cleaning_description": {
+    "file": "dags/src/cleaning_description.py",
+    "functions": [
+      {
+        "name": "cleaning_description",
+        "lineno": 14,
+        "end_lineno": 39
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.correlation": {
+    "file": "dags/src/correlation.py",
+    "functions": [
+      {
+        "name": "correlation_check",
+        "lineno": 35,
+        "end_lineno": 96
+      },
+      {
+        "name": "save_heatmap",
+        "lineno": 98,
+        "end_lineno": 119
+      },
+      {
+        "name": "save_correlations_as_parquet",
+        "lineno": 121,
+        "end_lineno": 145
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.customers_behavior": {
+    "file": "dags/src/customers_behavior.py",
+    "functions": [
+      {
+        "name": "customers_behavior",
+        "lineno": 16,
+        "end_lineno": 69
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.data_loader": {
+    "file": "dags/src/data_loader.py",
+    "functions": [
+      {
+        "name": "load_data",
+        "lineno": 17,
+        "end_lineno": 48
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.download_data": {
+    "file": "dags/src/download_data.py",
+    "functions": [
+      {
+        "name": "ingest_data",
+        "lineno": 9,
+        "end_lineno": 36
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.duplicates_handler": {
+    "file": "dags/src/duplicates_handler.py",
+    "functions": [
+      {
+        "name": "remove_duplicates",
+        "lineno": 21,
+        "end_lineno": 44
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.geographic_features": {
+    "file": "dags/src/geographic_features.py",
+    "functions": [
+      {
+        "name": "geographic_features",
+        "lineno": 14,
+        "end_lineno": 53
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.missing_values_handler": {
+    "file": "dags/src/missing_values_handler.py",
+    "functions": [
+      {
+        "name": "handle_missing",
+        "lineno": 15,
+        "end_lineno": 45
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.outlier_treatment": {
+    "file": "dags/src/outlier_treatment.py",
+    "functions": [
+      {
+        "name": "removing_outlier",
+        "lineno": 18,
+        "end_lineno": 54
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.pca": {
+    "file": "dags/src/pca.py",
+    "functions": [
+      {
+        "name": "pc_analyzer",
+        "lineno": 27,
+        "end_lineno": 96
+      },
+      {
+        "name": "pca_",
+        "lineno": 98,
+        "end_lineno": 123
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.removing_zero_unitprice": {
+    "file": "dags/src/removing_zero_unitprice.py",
+    "functions": [
+      {
+        "name": "removing_zero",
+        "lineno": 16,
+        "end_lineno": 36
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.rfm": {
+    "file": "dags/src/rfm.py",
+    "functions": [
+      {
+        "name": "rfm",
+        "lineno": 14,
+        "end_lineno": 58
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.scaler": {
+    "file": "dags/src/scaler.py",
+    "functions": [
+      {
+        "name": "scaler",
+        "lineno": 27,
+        "end_lineno": 95
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.seasonality": {
+    "file": "dags/src/seasonality.py",
+    "functions": [
+      {
+        "name": "seasonality_impacts",
+        "lineno": 19,
+        "end_lineno": 78
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.transaction_status_handler": {
+    "file": "dags/src/transaction_status_handler.py",
+    "functions": [
+      {
+        "name": "handle_transaction_status",
+        "lineno": 18,
+        "end_lineno": 47
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.unique_products": {
+    "file": "dags/src/unique_products.py",
+    "functions": [
+      {
+        "name": "unique_products",
+        "lineno": 14,
+        "end_lineno": 52
+      }
+    ],
+    "classes": []
+  },
+  "dags.src.unzip_data": {
+    "file": "dags/src/unzip_data.py",
+    "functions": [
+      {
+        "name": "unzip_file",
+        "lineno": 13,
+        "end_lineno": 30
+      }
+    ],
+    "classes": []
+  },
+  "data": {
+    "file": "data/__init__.py",
+    "functions": [],
+    "classes": []
+  },
+  "data.test_data": {
+    "file": "data/test_data/__init__.py",
+    "functions": [],
+    "classes": []
+  },
+  "gcpdeploy.src": {
+    "file": "gcpdeploy/src/__init__.py",
+    "functions": [],
+    "classes": []
+  },
+  "gcpdeploy.src.airflow": {
+    "file": "gcpdeploy/src/airflow.py",
+    "functions": [],
+    "classes": []
+  },
+  "gcpdeploy.src.anomaly_code_handler": {
+    "file": "gcpdeploy/src/anomaly_code_handler.py",
+    "functions": [
+      {
+        "name": "handle_anomalous_codes",
+        "lineno": 16,
+        "end_lineno": 43
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.build": {
+    "file": "gcpdeploy/src/build.py",
+    "functions": [
+      {
+        "name": "initialize_aiplatform",
+        "lineno": 17,
+        "end_lineno": 24
+      },
+      {
+        "name": "create_training_job",
+        "lineno": 26,
+        "end_lineno": 41
+      },
+      {
+        "name": "run_training_job",
+        "lineno": 43,
+        "end_lineno": 57
+      },
+      {
+        "name": "deploy_model_to_endpoint",
+        "lineno": 59,
+        "end_lineno": 71
+      },
+      {
+        "name": "main",
+        "lineno": 73,
+        "end_lineno": 83
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.cancellation_details": {
+    "file": "gcpdeploy/src/cancellation_details.py",
+    "functions": [
+      {
+        "name": "cancellation_details",
+        "lineno": 16,
+        "end_lineno": 50
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.cleaning_description": {
+    "file": "gcpdeploy/src/cleaning_description.py",
+    "functions": [
+      {
+        "name": "cleaning_description",
+        "lineno": 14,
+        "end_lineno": 39
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.correlation": {
+    "file": "gcpdeploy/src/correlation.py",
+    "functions": [
+      {
+        "name": "correlation_check",
+        "lineno": 32,
+        "end_lineno": 93
+      },
+      {
+        "name": "save_heatmap",
+        "lineno": 95,
+        "end_lineno": 116
+      },
+      {
+        "name": "save_correlations_as_parquet",
+        "lineno": 118,
+        "end_lineno": 142
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.customers_behavior": {
+    "file": "gcpdeploy/src/customers_behavior.py",
+    "functions": [
+      {
+        "name": "customers_behavior",
+        "lineno": 16,
+        "end_lineno": 69
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.data_loader": {
+    "file": "gcpdeploy/src/data_loader.py",
+    "functions": [
+      {
+        "name": "load_data",
+        "lineno": 17,
+        "end_lineno": 48
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.datapipeline": {
+    "file": "gcpdeploy/src/datapipeline.py",
+    "functions": [],
+    "classes": []
+  },
+  "gcpdeploy.src.download_data": {
+    "file": "gcpdeploy/src/download_data.py",
+    "functions": [
+      {
+        "name": "ingest_data",
+        "lineno": 9,
+        "end_lineno": 36
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.duplicates_handler": {
+    "file": "gcpdeploy/src/duplicates_handler.py",
+    "functions": [
+      {
+        "name": "remove_duplicates",
+        "lineno": 21,
+        "end_lineno": 44
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.geographic_features": {
+    "file": "gcpdeploy/src/geographic_features.py",
+    "functions": [
+      {
+        "name": "geographic_features",
+        "lineno": 14,
+        "end_lineno": 53
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.inference": {
+    "file": "gcpdeploy/src/inference.py",
+    "functions": [
+      {
+        "name": "predict_custom_trained_model",
+        "lineno": 7,
+        "end_lineno": 46
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.mflow_logging": {
+    "file": "gcpdeploy/src/mflow_logging.py",
+    "functions": [
+      {
+        "name": "mlflow_logging_train",
+        "lineno": 35,
+        "end_lineno": 92
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.missing_values_handler": {
+    "file": "gcpdeploy/src/missing_values_handler.py",
+    "functions": [
+      {
+        "name": "handle_missing",
+        "lineno": 15,
+        "end_lineno": 45
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.model_analysis": {
+    "file": "gcpdeploy/src/model_analysis.py",
+    "functions": [
+      {
+        "name": "load_data",
+        "lineno": 28,
+        "end_lineno": 49
+      },
+      {
+        "name": "normalize_data",
+        "lineno": 51,
+        "end_lineno": 71
+      },
+      {
+        "name": "data_transform",
+        "lineno": 73,
+        "end_lineno": 115
+      },
+      {
+        "name": "top_pca",
+        "lineno": 117,
+        "end_lineno": 163
+      },
+      {
+        "name": "cluster_distribution",
+        "lineno": 165,
+        "end_lineno": 207
+      },
+      {
+        "name": "evaluation_metrics",
+        "lineno": 209,
+        "end_lineno": 249
+      },
+      {
+        "name": "train_model",
+        "lineno": 251,
+        "end_lineno": 264
+      },
+      {
+        "name": "save_and_upload_model",
+        "lineno": 266,
+        "end_lineno": 280
+      },
+      {
+        "name": "silhouette_analysis",
+        "lineno": 282,
+        "end_lineno": 345
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.outlier_treatment": {
+    "file": "gcpdeploy/src/outlier_treatment.py",
+    "functions": [
+      {
+        "name": "removing_outlier",
+        "lineno": 16,
+        "end_lineno": 48
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.pca": {
+    "file": "gcpdeploy/src/pca.py",
+    "functions": [
+      {
+        "name": "pc_analyzer",
+        "lineno": 23,
+        "end_lineno": 92
+      },
+      {
+        "name": "pca_",
+        "lineno": 94,
+        "end_lineno": 119
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.removing_zero_unitprice": {
+    "file": "gcpdeploy/src/removing_zero_unitprice.py",
+    "functions": [
+      {
+        "name": "removing_zero",
+        "lineno": 16,
+        "end_lineno": 36
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.rfm": {
+    "file": "gcpdeploy/src/rfm.py",
+    "functions": [
+      {
+        "name": "rfm",
+        "lineno": 14,
+        "end_lineno": 58
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.seasonality": {
+    "file": "gcpdeploy/src/seasonality.py",
+    "functions": [
+      {
+        "name": "seasonality_impacts",
+        "lineno": 16,
+        "end_lineno": 73
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.serve.predict": {
+    "file": "gcpdeploy/src/serve/predict.py",
+    "functions": [
+      {
+        "name": "get_table_schema",
+        "lineno": 36,
+        "end_lineno": 52
+      },
+      {
+        "name": "create_table_if_not_exists",
+        "lineno": 55,
+        "end_lineno": 72
+      },
+      {
+        "name": "initialize_variables",
+        "lineno": 76,
+        "end_lineno": 84
+      },
+      {
+        "name": "initialize_client_and_bucket",
+        "lineno": 86,
+        "end_lineno": 96
+      },
+      {
+        "name": "load_model",
+        "lineno": 98,
+        "end_lineno": 121
+      },
+      {
+        "name": "fetch_latest_model",
+        "lineno": 124,
+        "end_lineno": 142
+      },
+      {
+        "name": "health_check",
+        "lineno": 145,
+        "end_lineno": 150
+      },
+      {
+        "name": "predict",
+        "lineno": 153,
+        "end_lineno": 209
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.serve.testing_serve": {
+    "file": "gcpdeploy/src/serve/testing_serve.py",
+    "functions": [],
+    "classes": []
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender": {
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "functions": [
+      {
+        "name": "remove_outliers",
+        "lineno": 8,
+        "end_lineno": 25
+      },
+      {
+        "name": "merge_customer_transactions",
+        "lineno": 28,
+        "end_lineno": 49
+      },
+      {
+        "name": "identify_top_products",
+        "lineno": 52,
+        "end_lineno": 72
+      },
+      {
+        "name": "record_customer_purchases",
+        "lineno": 75,
+        "end_lineno": 90
+      },
+      {
+        "name": "create_recommendations",
+        "lineno": 93,
+        "end_lineno": 128
+      },
+      {
+        "name": "generate_recommendations",
+        "lineno": 131,
+        "end_lineno": 163
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.trainer": {
+    "file": "gcpdeploy/src/trainer/__init__.py",
+    "functions": [],
+    "classes": []
+  },
+  "gcpdeploy.src.trainer.train": {
+    "file": "gcpdeploy/src/trainer/train.py",
+    "functions": [
+      {
+        "name": "kmeans_clustering",
+        "lineno": 33,
+        "end_lineno": 56
+      },
+      {
+        "name": "save_and_upload_model",
+        "lineno": 58,
+        "end_lineno": 72
+      },
+      {
+        "name": "main",
+        "lineno": 75,
+        "end_lineno": 107
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.transaction_status_handler": {
+    "file": "gcpdeploy/src/transaction_status_handler.py",
+    "functions": [
+      {
+        "name": "handle_transaction_status",
+        "lineno": 18,
+        "end_lineno": 47
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.unique_products": {
+    "file": "gcpdeploy/src/unique_products.py",
+    "functions": [
+      {
+        "name": "unique_products",
+        "lineno": 14,
+        "end_lineno": 52
+      }
+    ],
+    "classes": []
+  },
+  "gcpdeploy.src.unzip_data": {
+    "file": "gcpdeploy/src/unzip_data.py",
+    "functions": [
+      {
+        "name": "unzip_file",
+        "lineno": 13,
+        "end_lineno": 30
+      }
+    ],
+    "classes": []
+  },
+  "src": {
+    "file": "src/__init__.py",
+    "functions": [],
+    "classes": []
+  },
+  "src.anomaly_code_handler": {
+    "file": "src/anomaly_code_handler.py",
+    "functions": [
+      {
+        "name": "handle_anomalous_codes",
+        "lineno": 16,
+        "end_lineno": 43
+      }
+    ],
+    "classes": []
+  },
+  "src.cancellation_details": {
+    "file": "src/cancellation_details.py",
+    "functions": [
+      {
+        "name": "cancellation_details",
+        "lineno": 16,
+        "end_lineno": 50
+      }
+    ],
+    "classes": []
+  },
+  "src.cleaning_description": {
+    "file": "src/cleaning_description.py",
+    "functions": [
+      {
+        "name": "cleaning_description",
+        "lineno": 14,
+        "end_lineno": 39
+      }
+    ],
+    "classes": []
+  },
+  "src.correlation": {
+    "file": "src/correlation.py",
+    "functions": [
+      {
+        "name": "correlation_check",
+        "lineno": 35,
+        "end_lineno": 96
+      },
+      {
+        "name": "save_heatmap",
+        "lineno": 98,
+        "end_lineno": 119
+      },
+      {
+        "name": "save_correlations_as_parquet",
+        "lineno": 121,
+        "end_lineno": 145
+      }
+    ],
+    "classes": []
+  },
+  "src.customers_behavior": {
+    "file": "src/customers_behavior.py",
+    "functions": [
+      {
+        "name": "customers_behavior",
+        "lineno": 16,
+        "end_lineno": 69
+      }
+    ],
+    "classes": []
+  },
+  "src.data_loader": {
+    "file": "src/data_loader.py",
+    "functions": [
+      {
+        "name": "load_data",
+        "lineno": 17,
+        "end_lineno": 48
+      }
+    ],
+    "classes": []
+  },
+  "src.datapipeline": {
+    "file": "src/datapipeline.py",
+    "functions": [],
+    "classes": []
+  },
+  "src.download_data": {
+    "file": "src/download_data.py",
+    "functions": [
+      {
+        "name": "ingest_data",
+        "lineno": 9,
+        "end_lineno": 36
+      }
+    ],
+    "classes": []
+  },
+  "src.duplicates_handler": {
+    "file": "src/duplicates_handler.py",
+    "functions": [
+      {
+        "name": "remove_duplicates",
+        "lineno": 21,
+        "end_lineno": 44
+      }
+    ],
+    "classes": []
+  },
+  "src.geographic_features": {
+    "file": "src/geographic_features.py",
+    "functions": [
+      {
+        "name": "geographic_features",
+        "lineno": 14,
+        "end_lineno": 53
+      }
+    ],
+    "classes": []
+  },
+  "src.histogram_analysis": {
+    "file": "src/histogram_analysis.py",
+    "functions": [
+      {
+        "name": "rfm_histograms",
+        "lineno": 19,
+        "end_lineno": 59
+      }
+    ],
+    "classes": []
+  },
+  "src.missing_values_handler": {
+    "file": "src/missing_values_handler.py",
+    "functions": [
+      {
+        "name": "handle_missing",
+        "lineno": 15,
+        "end_lineno": 45
+      }
+    ],
+    "classes": []
+  },
+  "src.outlier_treatment": {
+    "file": "src/outlier_treatment.py",
+    "functions": [
+      {
+        "name": "removing_outlier",
+        "lineno": 16,
+        "end_lineno": 48
+      }
+    ],
+    "classes": []
+  },
+  "src.pca": {
+    "file": "src/pca.py",
+    "functions": [
+      {
+        "name": "pc_analyzer",
+        "lineno": 27,
+        "end_lineno": 96
+      },
+      {
+        "name": "pca_",
+        "lineno": 98,
+        "end_lineno": 123
+      }
+    ],
+    "classes": []
+  },
+  "src.radar_analysis": {
+    "file": "src/radar_analysis.py",
+    "functions": [
+      {
+        "name": "radar_charts",
+        "lineno": 21,
+        "end_lineno": 58
+      }
+    ],
+    "classes": []
+  },
+  "src.removing_zero_unitprice": {
+    "file": "src/removing_zero_unitprice.py",
+    "functions": [
+      {
+        "name": "removing_zero",
+        "lineno": 16,
+        "end_lineno": 36
+      }
+    ],
+    "classes": []
+  },
+  "src.rfm": {
+    "file": "src/rfm.py",
+    "functions": [
+      {
+        "name": "rfm",
+        "lineno": 14,
+        "end_lineno": 58
+      }
+    ],
+    "classes": []
+  },
+  "src.scaler": {
+    "file": "src/scaler.py",
+    "functions": [
+      {
+        "name": "scaler",
+        "lineno": 27,
+        "end_lineno": 95
+      }
+    ],
+    "classes": []
+  },
+  "src.seasonality": {
+    "file": "src/seasonality.py",
+    "functions": [
+      {
+        "name": "seasonality_impacts",
+        "lineno": 16,
+        "end_lineno": 73
+      }
+    ],
+    "classes": []
+  },
+  "src.transaction_status_handler": {
+    "file": "src/transaction_status_handler.py",
+    "functions": [
+      {
+        "name": "handle_transaction_status",
+        "lineno": 18,
+        "end_lineno": 47
+      }
+    ],
+    "classes": []
+  },
+  "src.unique_products": {
+    "file": "src/unique_products.py",
+    "functions": [
+      {
+        "name": "unique_products",
+        "lineno": 14,
+        "end_lineno": 52
+      }
+    ],
+    "classes": []
+  },
+  "src.unzip_data": {
+    "file": "src/unzip_data.py",
+    "functions": [
+      {
+        "name": "unzip_file",
+        "lineno": 13,
+        "end_lineno": 30
+      }
+    ],
+    "classes": []
+  },
+  "test": {
+    "file": "test/__init__.py",
+    "functions": [],
+    "classes": []
+  },
+  "test.test_anomaly_code_handler": {
+    "file": "test/test_anomaly_code_handler.py",
+    "functions": [
+      {
+        "name": "test_handle_anomalous_codes",
+        "lineno": 16,
+        "end_lineno": 33
+      }
+    ],
+    "classes": []
+  },
+  "test.test_cancellation_details": {
+    "file": "test/test_cancellation_details.py",
+    "functions": [
+      {
+        "name": "test_cancellation_details",
+        "lineno": 15,
+        "end_lineno": 21
+      }
+    ],
+    "classes": []
+  },
+  "test.test_cleaning_description": {
+    "file": "test/test_cleaning_description.py",
+    "functions": [
+      {
+        "name": "test_cleaning_description",
+        "lineno": 18,
+        "end_lineno": 33
+      }
+    ],
+    "classes": []
+  },
+  "test.test_correlation": {
+    "file": "test/test_correlation.py",
+    "functions": [
+      {
+        "name": "test_correlation_filenotfound",
+        "lineno": 15,
+        "end_lineno": 21
+      },
+      {
+        "name": "test_correlation_parquetpath_error",
+        "lineno": 23,
+        "end_lineno": 29
+      },
+      {
+        "name": "test_correlation_imagepath_error",
+        "lineno": 31,
+        "end_lineno": 37
+      },
+      {
+        "name": "test_correlation_imagesavecheck",
+        "lineno": 39,
+        "end_lineno": 49
+      },
+      {
+        "name": "test_correlation_parquetsavecheck",
+        "lineno": 51,
+        "end_lineno": 61
+      },
+      {
+        "name": "test_corr_thresh_error",
+        "lineno": 63,
+        "end_lineno": 69
+      }
+    ],
+    "classes": []
+  },
+  "test.test_customers_behavior": {
+    "file": "test/test_customers_behavior.py",
+    "functions": [
+      {
+        "name": "test_customers_behavior",
+        "lineno": 15,
+        "end_lineno": 21
+      }
+    ],
+    "classes": []
+  },
+  "test.test_data_loader": {
+    "file": "test/test_data_loader.py",
+    "functions": [
+      {
+        "name": "test_load_data_from_excel",
+        "lineno": 17,
+        "end_lineno": 29
+      },
+      {
+        "name": "test_load_data_no_files",
+        "lineno": 31,
+        "end_lineno": 46
+      }
+    ],
+    "classes": []
+  },
+  "test.test_datapipeline": {
+    "file": "test/test_datapipeline.py",
+    "functions": [],
+    "classes": []
+  },
+  "test.test_download_data": {
+    "file": "test/test_download_data.py",
+    "functions": [
+      {
+        "name": "test_ingest_data",
+        "lineno": 11,
+        "end_lineno": 22
+      },
+      {
+        "name": "test_ingest_data_successful_download",
+        "lineno": 23,
+        "end_lineno": 46
+      }
+    ],
+    "classes": []
+  },
+  "test.test_duplicates_handler": {
+    "file": "test/test_duplicates_handler.py",
+    "functions": [
+      {
+        "name": "test_remove_duplicates_no_input_file",
+        "lineno": 17,
+        "end_lineno": 29
+      },
+      {
+        "name": "test_remove_duplicates",
+        "lineno": 31,
+        "end_lineno": 44
+      }
+    ],
+    "classes": []
+  },
+  "test.test_geographic_features": {
+    "file": "test/test_geographic_features.py",
+    "functions": [
+      {
+        "name": "test_geographic_features",
+        "lineno": 15,
+        "end_lineno": 21
+      }
+    ],
+    "classes": []
+  },
+  "test.test_missing_values_handler": {
+    "file": "test/test_missing_values_handler.py",
+    "functions": [
+      {
+        "name": "test_handle_missing_success",
+        "lineno": 16,
+        "end_lineno": 22
+      },
+      {
+        "name": "test_handle_missing_file_not_found",
+        "lineno": 23,
+        "end_lineno": 35
+      }
+    ],
+    "classes": []
+  },
+  "test.test_outlier_treatment": {
+    "file": "test/test_outlier_treatment.py",
+    "functions": [
+      {
+        "name": "test_outlier_treatment",
+        "lineno": 18,
+        "end_lineno": 36
+      }
+    ],
+    "classes": []
+  },
+  "test.test_pca": {
+    "file": "test/test_pca.py",
+    "functions": [
+      {
+        "name": "test_pca_file_not_found",
+        "lineno": 18,
+        "end_lineno": 24
+      },
+      {
+        "name": "test_missing_columns",
+        "lineno": 26,
+        "end_lineno": 32
+      },
+      {
+        "name": "test_pca_outfile_exists",
+        "lineno": 34,
+        "end_lineno": 43
+      },
+      {
+        "name": "test_cvr_thresh_error",
+        "lineno": 45,
+        "end_lineno": 51
+      },
+      {
+        "name": "test_pca_columnslessthan4",
+        "lineno": 53,
+        "end_lineno": 59
+      }
+    ],
+    "classes": []
+  },
+  "test.test_removing_zero_unitpirce": {
+    "file": "test/test_removing_zero_unitpirce.py",
+    "functions": [
+      {
+        "name": "test_removing_zero",
+        "lineno": 18,
+        "end_lineno": 32
+      }
+    ],
+    "classes": []
+  },
+  "test.test_rfm": {
+    "file": "test/test_rfm.py",
+    "functions": [
+      {
+        "name": "test_rfm",
+        "lineno": 15,
+        "end_lineno": 21
+      }
+    ],
+    "classes": []
+  },
+  "test.test_scaler": {
+    "file": "test/test_scaler.py",
+    "functions": [
+      {
+        "name": "test_scaler_file_not_found",
+        "lineno": 19,
+        "end_lineno": 25
+      },
+      {
+        "name": "test_missing_std_columns",
+        "lineno": 27,
+        "end_lineno": 33
+      },
+      {
+        "name": "test_missing_norm_columns",
+        "lineno": 35,
+        "end_lineno": 41
+      },
+      {
+        "name": "test_scaler_outfile_exists",
+        "lineno": 43,
+        "end_lineno": 52
+      }
+    ],
+    "classes": []
+  },
+  "test.test_seasonality": {
+    "file": "test/test_seasonality.py",
+    "functions": [
+      {
+        "name": "test_seasonality_impacts",
+        "lineno": 15,
+        "end_lineno": 21
+      }
+    ],
+    "classes": []
+  },
+  "test.test_transaction_status_handler": {
+    "file": "test/test_transaction_status_handler.py",
+    "functions": [
+      {
+        "name": "test_handle_transaction_status",
+        "lineno": 16,
+        "end_lineno": 33
+      }
+    ],
+    "classes": []
+  },
+  "test.test_unique_products": {
+    "file": "test/test_unique_products.py",
+    "functions": [
+      {
+        "name": "test_unique_products",
+        "lineno": 15,
+        "end_lineno": 20
+      }
+    ],
+    "classes": []
+  },
+  "test.test_unzip_data": {
+    "file": "test/test_unzip_data.py",
+    "functions": [
+      {
+        "name": "test_unzip_file_successful",
+        "lineno": 16,
+        "end_lineno": 27
+      },
+      {
+        "name": "test_unzip_file_bad_zip",
+        "lineno": 30,
+        "end_lineno": 46
+      }
+    ],
+    "classes": []
+  }
+}

@@ -1,0 +1,12 @@
+01:00:01 INFO     Starting CI/CD workflow parsing
+01:00:01 INFO     Repo dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Ecommerce-Data-MLOps
+01:00:01 INFO     Out dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results
+01:03:51 INFO     Starting CI/CD workflow parsing
+01:03:51 INFO     Repo dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Ecommerce-Data-MLOps
+01:03:51 INFO     Out dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results
+01:03:51 INFO     Discovered 1 CI/CD manifest files
+01:03:51 INFO     Parsing: .github/workflows/pytest.yml
+01:03:51 INFO     Wrote parsed workflows to: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\ci_workflows.json
+01:03:51 INFO     Wrote secrets report to: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\ci_env_secrets_report.json
+01:03:51 INFO     CI/CD parsing complete. Workflows=1 detections=0
+01:03:51 INFO     Done.

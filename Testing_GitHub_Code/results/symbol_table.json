@@ -1,0 +1,1090 @@
+{
+  "dags.src.anomaly_code_handler.handle_anomalous_codes": {
+    "type": "function",
+    "module": "dags.src.anomaly_code_handler",
+    "qualified_name": "dags.src.anomaly_code_handler.handle_anomalous_codes",
+    "file": "dags/src/anomaly_code_handler.py",
+    "lineno": 16,
+    "end_lineno": 43
+  },
+  "dags.src.cancellation_details.cancellation_details": {
+    "type": "function",
+    "module": "dags.src.cancellation_details",
+    "qualified_name": "dags.src.cancellation_details.cancellation_details",
+    "file": "dags/src/cancellation_details.py",
+    "lineno": 16,
+    "end_lineno": 50
+  },
+  "dags.src.cleaning_description.cleaning_description": {
+    "type": "function",
+    "module": "dags.src.cleaning_description",
+    "qualified_name": "dags.src.cleaning_description.cleaning_description",
+    "file": "dags/src/cleaning_description.py",
+    "lineno": 14,
+    "end_lineno": 39
+  },
+  "dags.src.correlation.correlation_check": {
+    "type": "function",
+    "module": "dags.src.correlation",
+    "qualified_name": "dags.src.correlation.correlation_check",
+    "file": "dags/src/correlation.py",
+    "lineno": 35,
+    "end_lineno": 96
+  },
+  "dags.src.correlation.save_heatmap": {
+    "type": "function",
+    "module": "dags.src.correlation",
+    "qualified_name": "dags.src.correlation.save_heatmap",
+    "file": "dags/src/correlation.py",
+    "lineno": 98,
+    "end_lineno": 119
+  },
+  "dags.src.correlation.save_correlations_as_parquet": {
+    "type": "function",
+    "module": "dags.src.correlation",
+    "qualified_name": "dags.src.correlation.save_correlations_as_parquet",
+    "file": "dags/src/correlation.py",
+    "lineno": 121,
+    "end_lineno": 145
+  },
+  "dags.src.customers_behavior.customers_behavior": {
+    "type": "function",
+    "module": "dags.src.customers_behavior",
+    "qualified_name": "dags.src.customers_behavior.customers_behavior",
+    "file": "dags/src/customers_behavior.py",
+    "lineno": 16,
+    "end_lineno": 69
+  },
+  "dags.src.data_loader.load_data": {
+    "type": "function",
+    "module": "dags.src.data_loader",
+    "qualified_name": "dags.src.data_loader.load_data",
+    "file": "dags/src/data_loader.py",
+    "lineno": 17,
+    "end_lineno": 48
+  },
+  "dags.src.download_data.ingest_data": {
+    "type": "function",
+    "module": "dags.src.download_data",
+    "qualified_name": "dags.src.download_data.ingest_data",
+    "file": "dags/src/download_data.py",
+    "lineno": 9,
+    "end_lineno": 36
+  },
+  "dags.src.duplicates_handler.remove_duplicates": {
+    "type": "function",
+    "module": "dags.src.duplicates_handler",
+    "qualified_name": "dags.src.duplicates_handler.remove_duplicates",
+    "file": "dags/src/duplicates_handler.py",
+    "lineno": 21,
+    "end_lineno": 44
+  },
+  "dags.src.geographic_features.geographic_features": {
+    "type": "function",
+    "module": "dags.src.geographic_features",
+    "qualified_name": "dags.src.geographic_features.geographic_features",
+    "file": "dags/src/geographic_features.py",
+    "lineno": 14,
+    "end_lineno": 53
+  },
+  "dags.src.missing_values_handler.handle_missing": {
+    "type": "function",
+    "module": "dags.src.missing_values_handler",
+    "qualified_name": "dags.src.missing_values_handler.handle_missing",
+    "file": "dags/src/missing_values_handler.py",
+    "lineno": 15,
+    "end_lineno": 45
+  },
+  "dags.src.outlier_treatment.removing_outlier": {
+    "type": "function",
+    "module": "dags.src.outlier_treatment",
+    "qualified_name": "dags.src.outlier_treatment.removing_outlier",
+    "file": "dags/src/outlier_treatment.py",
+    "lineno": 18,
+    "end_lineno": 54
+  },
+  "dags.src.pca.pc_analyzer": {
+    "type": "function",
+    "module": "dags.src.pca",
+    "qualified_name": "dags.src.pca.pc_analyzer",
+    "file": "dags/src/pca.py",
+    "lineno": 27,
+    "end_lineno": 96
+  },
+  "dags.src.pca.pca_": {
+    "type": "function",
+    "module": "dags.src.pca",
+    "qualified_name": "dags.src.pca.pca_",
+    "file": "dags/src/pca.py",
+    "lineno": 98,
+    "end_lineno": 123
+  },
+  "dags.src.removing_zero_unitprice.removing_zero": {
+    "type": "function",
+    "module": "dags.src.removing_zero_unitprice",
+    "qualified_name": "dags.src.removing_zero_unitprice.removing_zero",
+    "file": "dags/src/removing_zero_unitprice.py",
+    "lineno": 16,
+    "end_lineno": 36
+  },
+  "dags.src.rfm.rfm": {
+    "type": "function",
+    "module": "dags.src.rfm",
+    "qualified_name": "dags.src.rfm.rfm",
+    "file": "dags/src/rfm.py",
+    "lineno": 14,
+    "end_lineno": 58
+  },
+  "dags.src.scaler.scaler": {
+    "type": "function",
+    "module": "dags.src.scaler",
+    "qualified_name": "dags.src.scaler.scaler",
+    "file": "dags/src/scaler.py",
+    "lineno": 27,
+    "end_lineno": 95
+  },
+  "dags.src.seasonality.seasonality_impacts": {
+    "type": "function",
+    "module": "dags.src.seasonality",
+    "qualified_name": "dags.src.seasonality.seasonality_impacts",
+    "file": "dags/src/seasonality.py",
+    "lineno": 19,
+    "end_lineno": 78
+  },
+  "dags.src.transaction_status_handler.handle_transaction_status": {
+    "type": "function",
+    "module": "dags.src.transaction_status_handler",
+    "qualified_name": "dags.src.transaction_status_handler.handle_transaction_status",
+    "file": "dags/src/transaction_status_handler.py",
+    "lineno": 18,
+    "end_lineno": 47
+  },
+  "dags.src.unique_products.unique_products": {
+    "type": "function",
+    "module": "dags.src.unique_products",
+    "qualified_name": "dags.src.unique_products.unique_products",
+    "file": "dags/src/unique_products.py",
+    "lineno": 14,
+    "end_lineno": 52
+  },
+  "dags.src.unzip_data.unzip_file": {
+    "type": "function",
+    "module": "dags.src.unzip_data",
+    "qualified_name": "dags.src.unzip_data.unzip_file",
+    "file": "dags/src/unzip_data.py",
+    "lineno": 13,
+    "end_lineno": 30
+  },
+  "gcpdeploy.src.anomaly_code_handler.handle_anomalous_codes": {
+    "type": "function",
+    "module": "gcpdeploy.src.anomaly_code_handler",
+    "qualified_name": "gcpdeploy.src.anomaly_code_handler.handle_anomalous_codes",
+    "file": "gcpdeploy/src/anomaly_code_handler.py",
+    "lineno": 16,
+    "end_lineno": 43
+  },
+  "gcpdeploy.src.build.initialize_aiplatform": {
+    "type": "function",
+    "module": "gcpdeploy.src.build",
+    "qualified_name": "gcpdeploy.src.build.initialize_aiplatform",
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 17,
+    "end_lineno": 24
+  },
+  "gcpdeploy.src.build.create_training_job": {
+    "type": "function",
+    "module": "gcpdeploy.src.build",
+    "qualified_name": "gcpdeploy.src.build.create_training_job",
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 26,
+    "end_lineno": 41
+  },
+  "gcpdeploy.src.build.run_training_job": {
+    "type": "function",
+    "module": "gcpdeploy.src.build",
+    "qualified_name": "gcpdeploy.src.build.run_training_job",
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 43,
+    "end_lineno": 57
+  },
+  "gcpdeploy.src.build.deploy_model_to_endpoint": {
+    "type": "function",
+    "module": "gcpdeploy.src.build",
+    "qualified_name": "gcpdeploy.src.build.deploy_model_to_endpoint",
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 59,
+    "end_lineno": 71
+  },
+  "gcpdeploy.src.build.main": {
+    "type": "function",
+    "module": "gcpdeploy.src.build",
+    "qualified_name": "gcpdeploy.src.build.main",
+    "file": "gcpdeploy/src/build.py",
+    "lineno": 73,
+    "end_lineno": 83
+  },
+  "gcpdeploy.src.cancellation_details.cancellation_details": {
+    "type": "function",
+    "module": "gcpdeploy.src.cancellation_details",
+    "qualified_name": "gcpdeploy.src.cancellation_details.cancellation_details",
+    "file": "gcpdeploy/src/cancellation_details.py",
+    "lineno": 16,
+    "end_lineno": 50
+  },
+  "gcpdeploy.src.cleaning_description.cleaning_description": {
+    "type": "function",
+    "module": "gcpdeploy.src.cleaning_description",
+    "qualified_name": "gcpdeploy.src.cleaning_description.cleaning_description",
+    "file": "gcpdeploy/src/cleaning_description.py",
+    "lineno": 14,
+    "end_lineno": 39
+  },
+  "gcpdeploy.src.correlation.correlation_check": {
+    "type": "function",
+    "module": "gcpdeploy.src.correlation",
+    "qualified_name": "gcpdeploy.src.correlation.correlation_check",
+    "file": "gcpdeploy/src/correlation.py",
+    "lineno": 32,
+    "end_lineno": 93
+  },
+  "gcpdeploy.src.correlation.save_heatmap": {
+    "type": "function",
+    "module": "gcpdeploy.src.correlation",
+    "qualified_name": "gcpdeploy.src.correlation.save_heatmap",
+    "file": "gcpdeploy/src/correlation.py",
+    "lineno": 95,
+    "end_lineno": 116
+  },
+  "gcpdeploy.src.correlation.save_correlations_as_parquet": {
+    "type": "function",
+    "module": "gcpdeploy.src.correlation",
+    "qualified_name": "gcpdeploy.src.correlation.save_correlations_as_parquet",
+    "file": "gcpdeploy/src/correlation.py",
+    "lineno": 118,
+    "end_lineno": 142
+  },
+  "gcpdeploy.src.customers_behavior.customers_behavior": {
+    "type": "function",
+    "module": "gcpdeploy.src.customers_behavior",
+    "qualified_name": "gcpdeploy.src.customers_behavior.customers_behavior",
+    "file": "gcpdeploy/src/customers_behavior.py",
+    "lineno": 16,
+    "end_lineno": 69
+  },
+  "gcpdeploy.src.data_loader.load_data": {
+    "type": "function",
+    "module": "gcpdeploy.src.data_loader",
+    "qualified_name": "gcpdeploy.src.data_loader.load_data",
+    "file": "gcpdeploy/src/data_loader.py",
+    "lineno": 17,
+    "end_lineno": 48
+  },
+  "gcpdeploy.src.download_data.ingest_data": {
+    "type": "function",
+    "module": "gcpdeploy.src.download_data",
+    "qualified_name": "gcpdeploy.src.download_data.ingest_data",
+    "file": "gcpdeploy/src/download_data.py",
+    "lineno": 9,
+    "end_lineno": 36
+  },
+  "gcpdeploy.src.duplicates_handler.remove_duplicates": {
+    "type": "function",
+    "module": "gcpdeploy.src.duplicates_handler",
+    "qualified_name": "gcpdeploy.src.duplicates_handler.remove_duplicates",
+    "file": "gcpdeploy/src/duplicates_handler.py",
+    "lineno": 21,
+    "end_lineno": 44
+  },
+  "gcpdeploy.src.geographic_features.geographic_features": {
+    "type": "function",
+    "module": "gcpdeploy.src.geographic_features",
+    "qualified_name": "gcpdeploy.src.geographic_features.geographic_features",
+    "file": "gcpdeploy/src/geographic_features.py",
+    "lineno": 14,
+    "end_lineno": 53
+  },
+  "gcpdeploy.src.inference.predict_custom_trained_model": {
+    "type": "function",
+    "module": "gcpdeploy.src.inference",
+    "qualified_name": "gcpdeploy.src.inference.predict_custom_trained_model",
+    "file": "gcpdeploy/src/inference.py",
+    "lineno": 7,
+    "end_lineno": 46
+  },
+  "gcpdeploy.src.mflow_logging.mlflow_logging_train": {
+    "type": "function",
+    "module": "gcpdeploy.src.mflow_logging",
+    "qualified_name": "gcpdeploy.src.mflow_logging.mlflow_logging_train",
+    "file": "gcpdeploy/src/mflow_logging.py",
+    "lineno": 35,
+    "end_lineno": 92
+  },
+  "gcpdeploy.src.missing_values_handler.handle_missing": {
+    "type": "function",
+    "module": "gcpdeploy.src.missing_values_handler",
+    "qualified_name": "gcpdeploy.src.missing_values_handler.handle_missing",
+    "file": "gcpdeploy/src/missing_values_handler.py",
+    "lineno": 15,
+    "end_lineno": 45
+  },
+  "gcpdeploy.src.model_analysis.load_data": {
+    "type": "function",
+    "module": "gcpdeploy.src.model_analysis",
+    "qualified_name": "gcpdeploy.src.model_analysis.load_data",
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 28,
+    "end_lineno": 49
+  },
+  "gcpdeploy.src.model_analysis.normalize_data": {
+    "type": "function",
+    "module": "gcpdeploy.src.model_analysis",
+    "qualified_name": "gcpdeploy.src.model_analysis.normalize_data",
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 51,
+    "end_lineno": 71
+  },
+  "gcpdeploy.src.model_analysis.data_transform": {
+    "type": "function",
+    "module": "gcpdeploy.src.model_analysis",
+    "qualified_name": "gcpdeploy.src.model_analysis.data_transform",
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 73,
+    "end_lineno": 115
+  },
+  "gcpdeploy.src.model_analysis.top_pca": {
+    "type": "function",
+    "module": "gcpdeploy.src.model_analysis",
+    "qualified_name": "gcpdeploy.src.model_analysis.top_pca",
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 117,
+    "end_lineno": 163
+  },
+  "gcpdeploy.src.model_analysis.cluster_distribution": {
+    "type": "function",
+    "module": "gcpdeploy.src.model_analysis",
+    "qualified_name": "gcpdeploy.src.model_analysis.cluster_distribution",
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 165,
+    "end_lineno": 207
+  },
+  "gcpdeploy.src.model_analysis.evaluation_metrics": {
+    "type": "function",
+    "module": "gcpdeploy.src.model_analysis",
+    "qualified_name": "gcpdeploy.src.model_analysis.evaluation_metrics",
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 209,
+    "end_lineno": 249
+  },
+  "gcpdeploy.src.model_analysis.train_model": {
+    "type": "function",
+    "module": "gcpdeploy.src.model_analysis",
+    "qualified_name": "gcpdeploy.src.model_analysis.train_model",
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 251,
+    "end_lineno": 264
+  },
+  "gcpdeploy.src.model_analysis.save_and_upload_model": {
+    "type": "function",
+    "module": "gcpdeploy.src.model_analysis",
+    "qualified_name": "gcpdeploy.src.model_analysis.save_and_upload_model",
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 266,
+    "end_lineno": 280
+  },
+  "gcpdeploy.src.model_analysis.silhouette_analysis": {
+    "type": "function",
+    "module": "gcpdeploy.src.model_analysis",
+    "qualified_name": "gcpdeploy.src.model_analysis.silhouette_analysis",
+    "file": "gcpdeploy/src/model_analysis.py",
+    "lineno": 282,
+    "end_lineno": 345
+  },
+  "gcpdeploy.src.outlier_treatment.removing_outlier": {
+    "type": "function",
+    "module": "gcpdeploy.src.outlier_treatment",
+    "qualified_name": "gcpdeploy.src.outlier_treatment.removing_outlier",
+    "file": "gcpdeploy/src/outlier_treatment.py",
+    "lineno": 16,
+    "end_lineno": 48
+  },
+  "gcpdeploy.src.pca.pc_analyzer": {
+    "type": "function",
+    "module": "gcpdeploy.src.pca",
+    "qualified_name": "gcpdeploy.src.pca.pc_analyzer",
+    "file": "gcpdeploy/src/pca.py",
+    "lineno": 23,
+    "end_lineno": 92
+  },
+  "gcpdeploy.src.pca.pca_": {
+    "type": "function",
+    "module": "gcpdeploy.src.pca",
+    "qualified_name": "gcpdeploy.src.pca.pca_",
+    "file": "gcpdeploy/src/pca.py",
+    "lineno": 94,
+    "end_lineno": 119
+  },
+  "gcpdeploy.src.removing_zero_unitprice.removing_zero": {
+    "type": "function",
+    "module": "gcpdeploy.src.removing_zero_unitprice",
+    "qualified_name": "gcpdeploy.src.removing_zero_unitprice.removing_zero",
+    "file": "gcpdeploy/src/removing_zero_unitprice.py",
+    "lineno": 16,
+    "end_lineno": 36
+  },
+  "gcpdeploy.src.rfm.rfm": {
+    "type": "function",
+    "module": "gcpdeploy.src.rfm",
+    "qualified_name": "gcpdeploy.src.rfm.rfm",
+    "file": "gcpdeploy/src/rfm.py",
+    "lineno": 14,
+    "end_lineno": 58
+  },
+  "gcpdeploy.src.seasonality.seasonality_impacts": {
+    "type": "function",
+    "module": "gcpdeploy.src.seasonality",
+    "qualified_name": "gcpdeploy.src.seasonality.seasonality_impacts",
+    "file": "gcpdeploy/src/seasonality.py",
+    "lineno": 16,
+    "end_lineno": 73
+  },
+  "gcpdeploy.src.serve.predict.get_table_schema": {
+    "type": "function",
+    "module": "gcpdeploy.src.serve.predict",
+    "qualified_name": "gcpdeploy.src.serve.predict.get_table_schema",
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 36,
+    "end_lineno": 52
+  },
+  "gcpdeploy.src.serve.predict.create_table_if_not_exists": {
+    "type": "function",
+    "module": "gcpdeploy.src.serve.predict",
+    "qualified_name": "gcpdeploy.src.serve.predict.create_table_if_not_exists",
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 55,
+    "end_lineno": 72
+  },
+  "gcpdeploy.src.serve.predict.initialize_variables": {
+    "type": "function",
+    "module": "gcpdeploy.src.serve.predict",
+    "qualified_name": "gcpdeploy.src.serve.predict.initialize_variables",
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 76,
+    "end_lineno": 84
+  },
+  "gcpdeploy.src.serve.predict.initialize_client_and_bucket": {
+    "type": "function",
+    "module": "gcpdeploy.src.serve.predict",
+    "qualified_name": "gcpdeploy.src.serve.predict.initialize_client_and_bucket",
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 86,
+    "end_lineno": 96
+  },
+  "gcpdeploy.src.serve.predict.load_model": {
+    "type": "function",
+    "module": "gcpdeploy.src.serve.predict",
+    "qualified_name": "gcpdeploy.src.serve.predict.load_model",
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 98,
+    "end_lineno": 121
+  },
+  "gcpdeploy.src.serve.predict.fetch_latest_model": {
+    "type": "function",
+    "module": "gcpdeploy.src.serve.predict",
+    "qualified_name": "gcpdeploy.src.serve.predict.fetch_latest_model",
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 124,
+    "end_lineno": 142
+  },
+  "gcpdeploy.src.serve.predict.health_check": {
+    "type": "function",
+    "module": "gcpdeploy.src.serve.predict",
+    "qualified_name": "gcpdeploy.src.serve.predict.health_check",
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 145,
+    "end_lineno": 150
+  },
+  "gcpdeploy.src.serve.predict.predict": {
+    "type": "function",
+    "module": "gcpdeploy.src.serve.predict",
+    "qualified_name": "gcpdeploy.src.serve.predict.predict",
+    "file": "gcpdeploy/src/serve/predict.py",
+    "lineno": 153,
+    "end_lineno": 209
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender.remove_outliers": {
+    "type": "function",
+    "module": "gcpdeploy.src.trainer.ClusterBasedRecommender",
+    "qualified_name": "gcpdeploy.src.trainer.ClusterBasedRecommender.remove_outliers",
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 8,
+    "end_lineno": 25
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender.merge_customer_transactions": {
+    "type": "function",
+    "module": "gcpdeploy.src.trainer.ClusterBasedRecommender",
+    "qualified_name": "gcpdeploy.src.trainer.ClusterBasedRecommender.merge_customer_transactions",
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 28,
+    "end_lineno": 49
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender.identify_top_products": {
+    "type": "function",
+    "module": "gcpdeploy.src.trainer.ClusterBasedRecommender",
+    "qualified_name": "gcpdeploy.src.trainer.ClusterBasedRecommender.identify_top_products",
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 52,
+    "end_lineno": 72
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender.record_customer_purchases": {
+    "type": "function",
+    "module": "gcpdeploy.src.trainer.ClusterBasedRecommender",
+    "qualified_name": "gcpdeploy.src.trainer.ClusterBasedRecommender.record_customer_purchases",
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 75,
+    "end_lineno": 90
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender.create_recommendations": {
+    "type": "function",
+    "module": "gcpdeploy.src.trainer.ClusterBasedRecommender",
+    "qualified_name": "gcpdeploy.src.trainer.ClusterBasedRecommender.create_recommendations",
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 93,
+    "end_lineno": 128
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender.generate_recommendations": {
+    "type": "function",
+    "module": "gcpdeploy.src.trainer.ClusterBasedRecommender",
+    "qualified_name": "gcpdeploy.src.trainer.ClusterBasedRecommender.generate_recommendations",
+    "file": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "lineno": 131,
+    "end_lineno": 163
+  },
+  "gcpdeploy.src.trainer.train.kmeans_clustering": {
+    "type": "function",
+    "module": "gcpdeploy.src.trainer.train",
+    "qualified_name": "gcpdeploy.src.trainer.train.kmeans_clustering",
+    "file": "gcpdeploy/src/trainer/train.py",
+    "lineno": 33,
+    "end_lineno": 56
+  },
+  "gcpdeploy.src.trainer.train.save_and_upload_model": {
+    "type": "function",
+    "module": "gcpdeploy.src.trainer.train",
+    "qualified_name": "gcpdeploy.src.trainer.train.save_and_upload_model",
+    "file": "gcpdeploy/src/trainer/train.py",
+    "lineno": 58,
+    "end_lineno": 72
+  },
+  "gcpdeploy.src.trainer.train.main": {
+    "type": "function",
+    "module": "gcpdeploy.src.trainer.train",
+    "qualified_name": "gcpdeploy.src.trainer.train.main",
+    "file": "gcpdeploy/src/trainer/train.py",
+    "lineno": 75,
+    "end_lineno": 107
+  },
+  "gcpdeploy.src.transaction_status_handler.handle_transaction_status": {
+    "type": "function",
+    "module": "gcpdeploy.src.transaction_status_handler",
+    "qualified_name": "gcpdeploy.src.transaction_status_handler.handle_transaction_status",
+    "file": "gcpdeploy/src/transaction_status_handler.py",
+    "lineno": 18,
+    "end_lineno": 47
+  },
+  "gcpdeploy.src.unique_products.unique_products": {
+    "type": "function",
+    "module": "gcpdeploy.src.unique_products",
+    "qualified_name": "gcpdeploy.src.unique_products.unique_products",
+    "file": "gcpdeploy/src/unique_products.py",
+    "lineno": 14,
+    "end_lineno": 52
+  },
+  "gcpdeploy.src.unzip_data.unzip_file": {
+    "type": "function",
+    "module": "gcpdeploy.src.unzip_data",
+    "qualified_name": "gcpdeploy.src.unzip_data.unzip_file",
+    "file": "gcpdeploy/src/unzip_data.py",
+    "lineno": 13,
+    "end_lineno": 30
+  },
+  "src.anomaly_code_handler.handle_anomalous_codes": {
+    "type": "function",
+    "module": "src.anomaly_code_handler",
+    "qualified_name": "src.anomaly_code_handler.handle_anomalous_codes",
+    "file": "src/anomaly_code_handler.py",
+    "lineno": 16,
+    "end_lineno": 43
+  },
+  "src.cancellation_details.cancellation_details": {
+    "type": "function",
+    "module": "src.cancellation_details",
+    "qualified_name": "src.cancellation_details.cancellation_details",
+    "file": "src/cancellation_details.py",
+    "lineno": 16,
+    "end_lineno": 50
+  },
+  "src.cleaning_description.cleaning_description": {
+    "type": "function",
+    "module": "src.cleaning_description",
+    "qualified_name": "src.cleaning_description.cleaning_description",
+    "file": "src/cleaning_description.py",
+    "lineno": 14,
+    "end_lineno": 39
+  },
+  "src.correlation.correlation_check": {
+    "type": "function",
+    "module": "src.correlation",
+    "qualified_name": "src.correlation.correlation_check",
+    "file": "src/correlation.py",
+    "lineno": 35,
+    "end_lineno": 96
+  },
+  "src.correlation.save_heatmap": {
+    "type": "function",
+    "module": "src.correlation",
+    "qualified_name": "src.correlation.save_heatmap",
+    "file": "src/correlation.py",
+    "lineno": 98,
+    "end_lineno": 119
+  },
+  "src.correlation.save_correlations_as_parquet": {
+    "type": "function",
+    "module": "src.correlation",
+    "qualified_name": "src.correlation.save_correlations_as_parquet",
+    "file": "src/correlation.py",
+    "lineno": 121,
+    "end_lineno": 145
+  },
+  "src.customers_behavior.customers_behavior": {
+    "type": "function",
+    "module": "src.customers_behavior",
+    "qualified_name": "src.customers_behavior.customers_behavior",
+    "file": "src/customers_behavior.py",
+    "lineno": 16,
+    "end_lineno": 69
+  },
+  "src.data_loader.load_data": {
+    "type": "function",
+    "module": "src.data_loader",
+    "qualified_name": "src.data_loader.load_data",
+    "file": "src/data_loader.py",
+    "lineno": 17,
+    "end_lineno": 48
+  },
+  "src.download_data.ingest_data": {
+    "type": "function",
+    "module": "src.download_data",
+    "qualified_name": "src.download_data.ingest_data",
+    "file": "src/download_data.py",
+    "lineno": 9,
+    "end_lineno": 36
+  },
+  "src.duplicates_handler.remove_duplicates": {
+    "type": "function",
+    "module": "src.duplicates_handler",
+    "qualified_name": "src.duplicates_handler.remove_duplicates",
+    "file": "src/duplicates_handler.py",
+    "lineno": 21,
+    "end_lineno": 44
+  },
+  "src.geographic_features.geographic_features": {
+    "type": "function",
+    "module": "src.geographic_features",
+    "qualified_name": "src.geographic_features.geographic_features",
+    "file": "src/geographic_features.py",
+    "lineno": 14,
+    "end_lineno": 53
+  },
+  "src.histogram_analysis.rfm_histograms": {
+    "type": "function",
+    "module": "src.histogram_analysis",
+    "qualified_name": "src.histogram_analysis.rfm_histograms",
+    "file": "src/histogram_analysis.py",
+    "lineno": 19,
+    "end_lineno": 59
+  },
+  "src.missing_values_handler.handle_missing": {
+    "type": "function",
+    "module": "src.missing_values_handler",
+    "qualified_name": "src.missing_values_handler.handle_missing",
+    "file": "src/missing_values_handler.py",
+    "lineno": 15,
+    "end_lineno": 45
+  },
+  "src.outlier_treatment.removing_outlier": {
+    "type": "function",
+    "module": "src.outlier_treatment",
+    "qualified_name": "src.outlier_treatment.removing_outlier",
+    "file": "src/outlier_treatment.py",
+    "lineno": 16,
+    "end_lineno": 48
+  },
+  "src.pca.pc_analyzer": {
+    "type": "function",
+    "module": "src.pca",
+    "qualified_name": "src.pca.pc_analyzer",
+    "file": "src/pca.py",
+    "lineno": 27,
+    "end_lineno": 96
+  },
+  "src.pca.pca_": {
+    "type": "function",
+    "module": "src.pca",
+    "qualified_name": "src.pca.pca_",
+    "file": "src/pca.py",
+    "lineno": 98,
+    "end_lineno": 123
+  },
+  "src.radar_analysis.radar_charts": {
+    "type": "function",
+    "module": "src.radar_analysis",
+    "qualified_name": "src.radar_analysis.radar_charts",
+    "file": "src/radar_analysis.py",
+    "lineno": 21,
+    "end_lineno": 58
+  },
+  "src.removing_zero_unitprice.removing_zero": {
+    "type": "function",
+    "module": "src.removing_zero_unitprice",
+    "qualified_name": "src.removing_zero_unitprice.removing_zero",
+    "file": "src/removing_zero_unitprice.py",
+    "lineno": 16,
+    "end_lineno": 36
+  },
+  "src.rfm.rfm": {
+    "type": "function",
+    "module": "src.rfm",
+    "qualified_name": "src.rfm.rfm",
+    "file": "src/rfm.py",
+    "lineno": 14,
+    "end_lineno": 58
+  },
+  "src.scaler.scaler": {
+    "type": "function",
+    "module": "src.scaler",
+    "qualified_name": "src.scaler.scaler",
+    "file": "src/scaler.py",
+    "lineno": 27,
+    "end_lineno": 95
+  },
+  "src.seasonality.seasonality_impacts": {
+    "type": "function",
+    "module": "src.seasonality",
+    "qualified_name": "src.seasonality.seasonality_impacts",
+    "file": "src/seasonality.py",
+    "lineno": 16,
+    "end_lineno": 73
+  },
+  "src.transaction_status_handler.handle_transaction_status": {
+    "type": "function",
+    "module": "src.transaction_status_handler",
+    "qualified_name": "src.transaction_status_handler.handle_transaction_status",
+    "file": "src/transaction_status_handler.py",
+    "lineno": 18,
+    "end_lineno": 47
+  },
+  "src.unique_products.unique_products": {
+    "type": "function",
+    "module": "src.unique_products",
+    "qualified_name": "src.unique_products.unique_products",
+    "file": "src/unique_products.py",
+    "lineno": 14,
+    "end_lineno": 52
+  },
+  "src.unzip_data.unzip_file": {
+    "type": "function",
+    "module": "src.unzip_data",
+    "qualified_name": "src.unzip_data.unzip_file",
+    "file": "src/unzip_data.py",
+    "lineno": 13,
+    "end_lineno": 30
+  },
+  "test.test_anomaly_code_handler.test_handle_anomalous_codes": {
+    "type": "function",
+    "module": "test.test_anomaly_code_handler",
+    "qualified_name": "test.test_anomaly_code_handler.test_handle_anomalous_codes",
+    "file": "test/test_anomaly_code_handler.py",
+    "lineno": 16,
+    "end_lineno": 33
+  },
+  "test.test_cancellation_details.test_cancellation_details": {
+    "type": "function",
+    "module": "test.test_cancellation_details",
+    "qualified_name": "test.test_cancellation_details.test_cancellation_details",
+    "file": "test/test_cancellation_details.py",
+    "lineno": 15,
+    "end_lineno": 21
+  },
+  "test.test_cleaning_description.test_cleaning_description": {
+    "type": "function",
+    "module": "test.test_cleaning_description",
+    "qualified_name": "test.test_cleaning_description.test_cleaning_description",
+    "file": "test/test_cleaning_description.py",
+    "lineno": 18,
+    "end_lineno": 33
+  },
+  "test.test_correlation.test_correlation_filenotfound": {
+    "type": "function",
+    "module": "test.test_correlation",
+    "qualified_name": "test.test_correlation.test_correlation_filenotfound",
+    "file": "test/test_correlation.py",
+    "lineno": 15,
+    "end_lineno": 21
+  },
+  "test.test_correlation.test_correlation_parquetpath_error": {
+    "type": "function",
+    "module": "test.test_correlation",
+    "qualified_name": "test.test_correlation.test_correlation_parquetpath_error",
+    "file": "test/test_correlation.py",
+    "lineno": 23,
+    "end_lineno": 29
+  },
+  "test.test_correlation.test_correlation_imagepath_error": {
+    "type": "function",
+    "module": "test.test_correlation",
+    "qualified_name": "test.test_correlation.test_correlation_imagepath_error",
+    "file": "test/test_correlation.py",
+    "lineno": 31,
+    "end_lineno": 37
+  },
+  "test.test_correlation.test_correlation_imagesavecheck": {
+    "type": "function",
+    "module": "test.test_correlation",
+    "qualified_name": "test.test_correlation.test_correlation_imagesavecheck",
+    "file": "test/test_correlation.py",
+    "lineno": 39,
+    "end_lineno": 49
+  },
+  "test.test_correlation.test_correlation_parquetsavecheck": {
+    "type": "function",
+    "module": "test.test_correlation",
+    "qualified_name": "test.test_correlation.test_correlation_parquetsavecheck",
+    "file": "test/test_correlation.py",
+    "lineno": 51,
+    "end_lineno": 61
+  },
+  "test.test_correlation.test_corr_thresh_error": {
+    "type": "function",
+    "module": "test.test_correlation",
+    "qualified_name": "test.test_correlation.test_corr_thresh_error",
+    "file": "test/test_correlation.py",
+    "lineno": 63,
+    "end_lineno": 69
+  },
+  "test.test_customers_behavior.test_customers_behavior": {
+    "type": "function",
+    "module": "test.test_customers_behavior",
+    "qualified_name": "test.test_customers_behavior.test_customers_behavior",
+    "file": "test/test_customers_behavior.py",
+    "lineno": 15,
+    "end_lineno": 21
+  },
+  "test.test_data_loader.test_load_data_from_excel": {
+    "type": "function",
+    "module": "test.test_data_loader",
+    "qualified_name": "test.test_data_loader.test_load_data_from_excel",
+    "file": "test/test_data_loader.py",
+    "lineno": 17,
+    "end_lineno": 29
+  },
+  "test.test_data_loader.test_load_data_no_files": {
+    "type": "function",
+    "module": "test.test_data_loader",
+    "qualified_name": "test.test_data_loader.test_load_data_no_files",
+    "file": "test/test_data_loader.py",
+    "lineno": 31,
+    "end_lineno": 46
+  },
+  "test.test_download_data.test_ingest_data": {
+    "type": "function",
+    "module": "test.test_download_data",
+    "qualified_name": "test.test_download_data.test_ingest_data",
+    "file": "test/test_download_data.py",
+    "lineno": 11,
+    "end_lineno": 22
+  },
+  "test.test_download_data.test_ingest_data_successful_download": {
+    "type": "function",
+    "module": "test.test_download_data",
+    "qualified_name": "test.test_download_data.test_ingest_data_successful_download",
+    "file": "test/test_download_data.py",
+    "lineno": 23,
+    "end_lineno": 46
+  },
+  "test.test_duplicates_handler.test_remove_duplicates_no_input_file": {
+    "type": "function",
+    "module": "test.test_duplicates_handler",
+    "qualified_name": "test.test_duplicates_handler.test_remove_duplicates_no_input_file",
+    "file": "test/test_duplicates_handler.py",
+    "lineno": 17,
+    "end_lineno": 29
+  },
+  "test.test_duplicates_handler.test_remove_duplicates": {
+    "type": "function",
+    "module": "test.test_duplicates_handler",
+    "qualified_name": "test.test_duplicates_handler.test_remove_duplicates",
+    "file": "test/test_duplicates_handler.py",
+    "lineno": 31,
+    "end_lineno": 44
+  },
+  "test.test_geographic_features.test_geographic_features": {
+    "type": "function",
+    "module": "test.test_geographic_features",
+    "qualified_name": "test.test_geographic_features.test_geographic_features",
+    "file": "test/test_geographic_features.py",
+    "lineno": 15,
+    "end_lineno": 21
+  },
+  "test.test_missing_values_handler.test_handle_missing_success": {
+    "type": "function",
+    "module": "test.test_missing_values_handler",
+    "qualified_name": "test.test_missing_values_handler.test_handle_missing_success",
+    "file": "test/test_missing_values_handler.py",
+    "lineno": 16,
+    "end_lineno": 22
+  },
+  "test.test_missing_values_handler.test_handle_missing_file_not_found": {
+    "type": "function",
+    "module": "test.test_missing_values_handler",
+    "qualified_name": "test.test_missing_values_handler.test_handle_missing_file_not_found",
+    "file": "test/test_missing_values_handler.py",
+    "lineno": 23,
+    "end_lineno": 35
+  },
+  "test.test_outlier_treatment.test_outlier_treatment": {
+    "type": "function",
+    "module": "test.test_outlier_treatment",
+    "qualified_name": "test.test_outlier_treatment.test_outlier_treatment",
+    "file": "test/test_outlier_treatment.py",
+    "lineno": 18,
+    "end_lineno": 36
+  },
+  "test.test_pca.test_pca_file_not_found": {
+    "type": "function",
+    "module": "test.test_pca",
+    "qualified_name": "test.test_pca.test_pca_file_not_found",
+    "file": "test/test_pca.py",
+    "lineno": 18,
+    "end_lineno": 24
+  },
+  "test.test_pca.test_missing_columns": {
+    "type": "function",
+    "module": "test.test_pca",
+    "qualified_name": "test.test_pca.test_missing_columns",
+    "file": "test/test_pca.py",
+    "lineno": 26,
+    "end_lineno": 32
+  },
+  "test.test_pca.test_pca_outfile_exists": {
+    "type": "function",
+    "module": "test.test_pca",
+    "qualified_name": "test.test_pca.test_pca_outfile_exists",
+    "file": "test/test_pca.py",
+    "lineno": 34,
+    "end_lineno": 43
+  },
+  "test.test_pca.test_cvr_thresh_error": {
+    "type": "function",
+    "module": "test.test_pca",
+    "qualified_name": "test.test_pca.test_cvr_thresh_error",
+    "file": "test/test_pca.py",
+    "lineno": 45,
+    "end_lineno": 51
+  },
+  "test.test_pca.test_pca_columnslessthan4": {
+    "type": "function",
+    "module": "test.test_pca",
+    "qualified_name": "test.test_pca.test_pca_columnslessthan4",
+    "file": "test/test_pca.py",
+    "lineno": 53,
+    "end_lineno": 59
+  },
+  "test.test_removing_zero_unitpirce.test_removing_zero": {
+    "type": "function",
+    "module": "test.test_removing_zero_unitpirce",
+    "qualified_name": "test.test_removing_zero_unitpirce.test_removing_zero",
+    "file": "test/test_removing_zero_unitpirce.py",
+    "lineno": 18,
+    "end_lineno": 32
+  },
+  "test.test_rfm.test_rfm": {
+    "type": "function",
+    "module": "test.test_rfm",
+    "qualified_name": "test.test_rfm.test_rfm",
+    "file": "test/test_rfm.py",
+    "lineno": 15,
+    "end_lineno": 21
+  },
+  "test.test_scaler.test_scaler_file_not_found": {
+    "type": "function",
+    "module": "test.test_scaler",
+    "qualified_name": "test.test_scaler.test_scaler_file_not_found",
+    "file": "test/test_scaler.py",
+    "lineno": 19,
+    "end_lineno": 25
+  },
+  "test.test_scaler.test_missing_std_columns": {
+    "type": "function",
+    "module": "test.test_scaler",
+    "qualified_name": "test.test_scaler.test_missing_std_columns",
+    "file": "test/test_scaler.py",
+    "lineno": 27,
+    "end_lineno": 33
+  },
+  "test.test_scaler.test_missing_norm_columns": {
+    "type": "function",
+    "module": "test.test_scaler",
+    "qualified_name": "test.test_scaler.test_missing_norm_columns",
+    "file": "test/test_scaler.py",
+    "lineno": 35,
+    "end_lineno": 41
+  },
+  "test.test_scaler.test_scaler_outfile_exists": {
+    "type": "function",
+    "module": "test.test_scaler",
+    "qualified_name": "test.test_scaler.test_scaler_outfile_exists",
+    "file": "test/test_scaler.py",
+    "lineno": 43,
+    "end_lineno": 52
+  },
+  "test.test_seasonality.test_seasonality_impacts": {
+    "type": "function",
+    "module": "test.test_seasonality",
+    "qualified_name": "test.test_seasonality.test_seasonality_impacts",
+    "file": "test/test_seasonality.py",
+    "lineno": 15,
+    "end_lineno": 21
+  },
+  "test.test_transaction_status_handler.test_handle_transaction_status": {
+    "type": "function",
+    "module": "test.test_transaction_status_handler",
+    "qualified_name": "test.test_transaction_status_handler.test_handle_transaction_status",
+    "file": "test/test_transaction_status_handler.py",
+    "lineno": 16,
+    "end_lineno": 33
+  },
+  "test.test_unique_products.test_unique_products": {
+    "type": "function",
+    "module": "test.test_unique_products",
+    "qualified_name": "test.test_unique_products.test_unique_products",
+    "file": "test/test_unique_products.py",
+    "lineno": 15,
+    "end_lineno": 20
+  },
+  "test.test_unzip_data.test_unzip_file_successful": {
+    "type": "function",
+    "module": "test.test_unzip_data",
+    "qualified_name": "test.test_unzip_data.test_unzip_file_successful",
+    "file": "test/test_unzip_data.py",
+    "lineno": 16,
+    "end_lineno": 27
+  },
+  "test.test_unzip_data.test_unzip_file_bad_zip": {
+    "type": "function",
+    "module": "test.test_unzip_data",
+    "qualified_name": "test.test_unzip_data.test_unzip_file_bad_zip",
+    "file": "test/test_unzip_data.py",
+    "lineno": 30,
+    "end_lineno": 46
+  }
+}

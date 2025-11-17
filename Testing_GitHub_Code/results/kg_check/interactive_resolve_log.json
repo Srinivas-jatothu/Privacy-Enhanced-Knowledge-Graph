@@ -1,0 +1,137 @@
+{
+  "log": [
+    {
+      "id": "Function:handle_anomalous_codes",
+      "action": "manual_choice",
+      "file": "src/anomaly_code_handler.py",
+      "lineno": 16
+    },
+    {
+      "id": "Function:cancellation_details",
+      "action": "manual_choice",
+      "file": "src/cancellation_details.py",
+      "lineno": 16
+    },
+    {
+      "id": "Function:cleaning_description",
+      "action": "manual_choice",
+      "file": "src/cleaning_description.py",
+      "lineno": 14
+    },
+    {
+      "id": "Function:correlation_check",
+      "action": "manual_choice",
+      "file": "src/correlation.py",
+      "lineno": 35
+    },
+    {
+      "id": "Function:save_heatmap",
+      "action": "manual_choice",
+      "file": "src/correlation.py",
+      "lineno": 98
+    },
+    {
+      "id": "Function:save_correlations_as_parquet",
+      "action": "manual_choice",
+      "file": "src/correlation.py",
+      "lineno": 121
+    },
+    {
+      "id": "Function:customers_behavior",
+      "action": "manual_choice",
+      "file": "src/customers_behavior.py",
+      "lineno": 16
+    },
+    {
+      "id": "Function:ingest_data",
+      "action": "manual_choice",
+      "file": "src/download_data.py",
+      "lineno": 9
+    },
+    {
+      "id": "Function:remove_duplicates",
+      "action": "manual_choice",
+      "file": "src/duplicates_handler.py",
+      "lineno": 21
+    },
+    {
+      "id": "Function:geographic_features",
+      "action": "manual_choice",
+      "file": "src/geographic_features.py",
+      "lineno": 14
+    },
+    {
+      "id": "Function:handle_missing",
+      "action": "manual_choice",
+      "file": "src/missing_values_handler.py",
+      "lineno": 15
+    },
+    {
+      "id": "Function:removing_outlier",
+      "action": "manual_choice",
+      "file": "src/outlier_treatment.py",
+      "lineno": 16
+    },
+    {
+      "id": "Function:pc_analyzer",
+      "action": "manual_choice",
+      "file": "src/pca.py",
+      "lineno": 27
+    },
+    {
+      "id": "Function:pca_",
+      "action": "manual_choice",
+      "file": "src/pca.py",
+      "lineno": 98
+    },
+    {
+      "id": "Function:removing_zero",
+      "action": "manual_choice",
+      "file": "src/removing_zero_unitprice.py",
+      "lineno": 16
+    },
+    {
+      "id": "Function:rfm",
+      "action": "manual_choice",
+      "file": "src/rfm.py",
+      "lineno": 14
+    },
+    {
+      "id": "Function:scaler",
+      "action": "manual_choice",
+      "file": "src/scaler.py",
+      "lineno": 27
+    },
+    {
+      "id": "Function:seasonality_impacts",
+      "action": "manual_choice",
+      "file": "src/seasonality.py",
+      "lineno": 16
+    },
+    {
+      "id": "Function:handle_transaction_status",
+      "action": "manual_choice",
+      "file": "src/transaction_status_handler.py",
+      "lineno": 18
+    },
+    {
+      "id": "Function:unique_products",
+      "action": "manual_choice",
+      "file": "src/unique_products.py",
+      "lineno": 14
+    },
+    {
+      "id": "Function:unzip_file",
+      "action": "manual_choice",
+      "file": "src/unzip_data.py",
+      "lineno": 13
+    },
+    {
+      "id": "Function:main",
+      "action": "manual_choice",
+      "file": "gcpdeploy/src/trainer/train.py",
+      "lineno": 75
+    }
+  ],
+  "timestamp": 1763224401
+}

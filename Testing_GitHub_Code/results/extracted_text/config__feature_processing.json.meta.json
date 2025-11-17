@@ -1,0 +1,32 @@
+{
+  "relpath": "config/feature_processing.json",
+  "manifest_meta": {
+    "relpath": "config/feature_processing.json",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\config\\feature_processing.json",
+    "size": 1104,
+    "mtime": 1763123856.7750392,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "2b82b93974f6193e2002e821f10ef3673406c7e08f427c6ea7146a62b3abd94b",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\config__feature_processing.json.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "0",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'feature_processing.json'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "1104",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

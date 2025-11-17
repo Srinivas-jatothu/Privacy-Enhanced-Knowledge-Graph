@@ -1,0 +1,32 @@
+{
+  "relpath": "pytest.ini",
+  "manifest_meta": {
+    "relpath": "pytest.ini",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\pytest.ini",
+    "size": 66,
+    "mtime": 1763123859.3793478,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "c76fdb615fc362b05dc8e5a48bc6b667e349863ee2149d1ccaf392cb7ab47e2c",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\pytest.ini.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "12",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'pytest.ini'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "66",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

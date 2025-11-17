@@ -1,0 +1,32 @@
+{
+  "relpath": "gcpdeploy/src/serve/testing_serve.py",
+  "manifest_meta": {
+    "relpath": "gcpdeploy/src/serve/testing_serve.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\serve\\testing_serve.py",
+    "size": 575,
+    "mtime": 1763123859.3737159,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "645ad2157cebad9c0432713f9ad6e0668a74f7802dec0ca69025c3e8d1917842",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\gcpdeploy__src__serve__testing_serve.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "1",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'testing_serve.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "575",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

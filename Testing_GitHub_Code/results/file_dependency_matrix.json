@@ -1,0 +1,902 @@
+{
+  "dags/src/airflow.py": {
+    "src/download_data.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:ingest_data->src.download_data.ingest_data"
+      ]
+    },
+    "src/unzip_data.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:unzip_file->src.unzip_data.unzip_file"
+      ]
+    },
+    "src/data_loader.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:load_data->src.data_loader.load_data"
+      ]
+    },
+    "src/missing_values_handler.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:handle_missing->src.missing_values_handler.handle_missing"
+      ]
+    },
+    "src/duplicates_handler.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:remove_duplicates->src.duplicates_handler.remove_duplicates"
+      ]
+    },
+    "src/transaction_status_handler.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:handle_transaction_status->src.transaction_status_handler.handle_transaction_status"
+      ]
+    },
+    "src/anomaly_code_handler.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:handle_anomalous_codes->src.anomaly_code_handler.handle_anomalous_codes"
+      ]
+    },
+    "src/cleaning_description.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:cleaning_description->src.cleaning_description.cleaning_description"
+      ]
+    },
+    "src/removing_zero_unitprice.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:removing_zero->src.removing_zero_unitprice.removing_zero"
+      ]
+    },
+    "src/rfm.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:rfm->src.rfm.rfm"
+      ]
+    },
+    "src/unique_products.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:unique_products->src.unique_products.unique_products"
+      ]
+    },
+    "src/customers_behavior.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:customers_behavior->src.customers_behavior.customers_behavior"
+      ]
+    },
+    "src/geographic_features.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:geographic_features->src.geographic_features.geographic_features"
+      ]
+    },
+    "src/cancellation_details.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:cancellation_details->src.cancellation_details.cancellation_details"
+      ]
+    },
+    "src/seasonality.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:seasonality_impacts->src.seasonality.seasonality_impacts"
+      ]
+    },
+    "src/outlier_treatment.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:removing_outlier->src.outlier_treatment.removing_outlier"
+      ]
+    },
+    "src/scaler.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:scaler->src.scaler.scaler"
+      ]
+    },
+    "src/pca.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:pc_analyzer->src.pca.pc_analyzer"
+      ]
+    },
+    "src/correlation.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:correlation_check->src.correlation.correlation_check"
+      ]
+    }
+  },
+  "gcpdeploy/src/airflow.py": {
+    "src/download_data.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:ingest_data->src.download_data.ingest_data"
+      ]
+    },
+    "src/unzip_data.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:unzip_file->src.unzip_data.unzip_file"
+      ]
+    },
+    "src/data_loader.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:load_data->src.data_loader.load_data"
+      ]
+    },
+    "src/missing_values_handler.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:handle_missing->src.missing_values_handler.handle_missing"
+      ]
+    },
+    "src/duplicates_handler.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:remove_duplicates->src.duplicates_handler.remove_duplicates"
+      ]
+    },
+    "src/transaction_status_handler.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:handle_transaction_status->src.transaction_status_handler.handle_transaction_status"
+      ]
+    },
+    "src/anomaly_code_handler.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:handle_anomalous_codes->src.anomaly_code_handler.handle_anomalous_codes"
+      ]
+    },
+    "src/cleaning_description.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:cleaning_description->src.cleaning_description.cleaning_description"
+      ]
+    },
+    "src/removing_zero_unitprice.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:removing_zero->src.removing_zero_unitprice.removing_zero"
+      ]
+    },
+    "src/rfm.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:rfm->src.rfm.rfm"
+      ]
+    },
+    "src/unique_products.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:unique_products->src.unique_products.unique_products"
+      ]
+    },
+    "src/customers_behavior.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:customers_behavior->src.customers_behavior.customers_behavior"
+      ]
+    },
+    "src/geographic_features.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:geographic_features->src.geographic_features.geographic_features"
+      ]
+    },
+    "src/cancellation_details.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:cancellation_details->src.cancellation_details.cancellation_details"
+      ]
+    },
+    "src/seasonality.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:seasonality_impacts->src.seasonality.seasonality_impacts"
+      ]
+    },
+    "src/outlier_treatment.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:removing_outlier->src.outlier_treatment.removing_outlier"
+      ]
+    },
+    "src/scaler.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:scaler->src.scaler.scaler"
+      ]
+    },
+    "src/pca.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:pc_analyzer->src.pca.pc_analyzer"
+      ]
+    },
+    "src/correlation.py": {
+      "count": 1,
+      "provenance": {
+        "import_statements": 1
+      },
+      "reasons": [
+        "import:correlation_check->src.correlation.correlation_check"
+      ]
+    }
+  },
+  "test/test_anomaly_code_handler.py": {
+    "src/anomaly_code_handler.py": {
+      "count": 2,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 1
+      },
+      "reasons": [
+        "handle_anomalous_codes",
+        "import:handle_anomalous_codes->src.anomaly_code_handler.handle_anomalous_codes"
+      ]
+    }
+  },
+  "test/test_cleaning_description.py": {
+    "src/cleaning_description.py": {
+      "count": 2,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 1
+      },
+      "reasons": [
+        "cleaning_description",
+        "import:cleaning_description->src.cleaning_description.cleaning_description"
+      ]
+    }
+  },
+  "test/test_correlation.py": {
+    "src/correlation.py": {
+      "count": 7,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 6
+      },
+      "reasons": [
+        "correlation_check",
+        "import:correlation_check->src.correlation.correlation_check"
+      ]
+    }
+  },
+  "test/test_data_loader.py": {
+    "src/data_loader.py": {
+      "count": 3,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 2
+      },
+      "reasons": [
+        "import:load_data->src.data_loader.load_data",
+        "load_data"
+      ]
+    }
+  },
+  "test/test_download_data.py": {
+    "src/download_data.py": {
+      "count": 3,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 2
+      },
+      "reasons": [
+        "download_data.ingest_data",
+        "import:download_data->src.download_data"
+      ]
+    }
+  },
+  "test/test_duplicates_handler.py": {
+    "src/duplicates_handler.py": {
+      "count": 3,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 2
+      },
+      "reasons": [
+        "import:remove_duplicates->src.duplicates_handler.remove_duplicates",
+        "remove_duplicates"
+      ]
+    }
+  },
+  "test/test_missing_values_handler.py": {
+    "src/missing_values_handler.py": {
+      "count": 3,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 2
+      },
+      "reasons": [
+        "handle_missing",
+        "import:handle_missing->src.missing_values_handler.handle_missing"
+      ]
+    }
+  },
+  "test/test_outlier_treatment.py": {
+    "src/outlier_treatment.py": {
+      "count": 2,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 1
+      },
+      "reasons": [
+        "import:removing_outlier->src.outlier_treatment.removing_outlier",
+        "removing_outlier"
+      ]
+    }
+  },
+  "test/test_pca.py": {
+    "src/pca.py": {
+      "count": 6,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 5
+      },
+      "reasons": [
+        "import:pc_analyzer->src.pca.pc_analyzer",
+        "pc_analyzer"
+      ]
+    }
+  },
+  "test/test_removing_zero_unitpirce.py": {
+    "src/removing_zero_unitprice.py": {
+      "count": 2,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 1
+      },
+      "reasons": [
+        "import:removing_zero->src.removing_zero_unitprice.removing_zero",
+        "removing_zero"
+      ]
+    }
+  },
+  "test/test_scaler.py": {
+    "src/scaler.py": {
+      "count": 5,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 4
+      },
+      "reasons": [
+        "import:scaler->src.scaler.scaler",
+        "scaler"
+      ]
+    }
+  },
+  "test/test_transaction_status_handler.py": {
+    "src/transaction_status_handler.py": {
+      "count": 2,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 1
+      },
+      "reasons": [
+        "handle_transaction_status",
+        "import:handle_transaction_status->src.transaction_status_handler.handle_transaction_status"
+      ]
+    }
+  },
+  "test/test_unzip_data.py": {
+    "src/unzip_data.py": {
+      "count": 3,
+      "provenance": {
+        "import_statements": 1,
+        "call_sites": 2
+      },
+      "reasons": [
+        "import:unzip_data->src.unzip_data",
+        "unzip_data.unzip_file"
+      ]
+    }
+  },
+  "dags/src/correlation.py": {
+    "dags/src/correlation.py": {
+      "count": 2,
+      "provenance": {
+        "call_sites": 2
+      },
+      "reasons": [
+        "save_correlations_as_parquet",
+        "save_heatmap"
+      ]
+    }
+  },
+  "dags/src/download_data.py": {
+    "dags/src/download_data.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "ingest_data"
+      ]
+    }
+  },
+  "dags/src/pca.py": {
+    "dags/src/pca.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "pca_"
+      ]
+    }
+  },
+  "dags/src/unzip_data.py": {
+    "dags/src/unzip_data.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "unzip_file"
+      ]
+    }
+  },
+  "gcpdeploy/src/build.py": {
+    "gcpdeploy/src/build.py": {
+      "count": 5,
+      "provenance": {
+        "call_sites": 5
+      },
+      "reasons": [
+        "create_training_job",
+        "deploy_model_to_endpoint",
+        "initialize_aiplatform",
+        "main",
+        "run_training_job"
+      ]
+    }
+  },
+  "gcpdeploy/src/correlation.py": {
+    "gcpdeploy/src/correlation.py": {
+      "count": 2,
+      "provenance": {
+        "call_sites": 2
+      },
+      "reasons": [
+        "save_correlations_as_parquet",
+        "save_heatmap"
+      ]
+    }
+  },
+  "gcpdeploy/src/datapipeline.py": {
+    "dags/src/download_data.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "ingest_data"
+      ]
+    },
+    "dags/src/unzip_data.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "unzip_file"
+      ]
+    },
+    "dags/src/data_loader.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "load_data"
+      ]
+    },
+    "dags/src/missing_values_handler.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "handle_missing"
+      ]
+    },
+    "dags/src/duplicates_handler.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "remove_duplicates"
+      ]
+    },
+    "dags/src/transaction_status_handler.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "handle_transaction_status"
+      ]
+    },
+    "dags/src/anomaly_code_handler.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "handle_anomalous_codes"
+      ]
+    }
+  },
+  "gcpdeploy/src/download_data.py": {
+    "gcpdeploy/src/download_data.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "ingest_data"
+      ]
+    }
+  },
+  "gcpdeploy/src/inference.py": {
+    "gcpdeploy/src/inference.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "predict_custom_trained_model"
+      ]
+    },
+    "gcpdeploy/src/serve/predict.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "client.predict"
+      ]
+    }
+  },
+  "gcpdeploy/src/mflow_logging.py": {
+    "gcpdeploy/src/serve/predict.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "kmeans.predict"
+      ]
+    }
+  },
+  "gcpdeploy/src/model_analysis.py": {
+    "gcpdeploy/src/model_analysis.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "normalize_data"
+      ]
+    },
+    "gcpdeploy/src/serve/predict.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "km.predict"
+      ]
+    }
+  },
+  "gcpdeploy/src/pca.py": {
+    "gcpdeploy/src/pca.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "pca_"
+      ]
+    }
+  },
+  "gcpdeploy/src/serve/predict.py": {
+    "gcpdeploy/src/serve/predict.py": {
+      "count": 7,
+      "provenance": {
+        "call_sites": 7
+      },
+      "reasons": [
+        "create_table_if_not_exists",
+        "fetch_latest_model",
+        "get_table_schema",
+        "initialize_client_and_bucket",
+        "initialize_variables",
+        "load_model",
+        "model.predict"
+      ]
+    }
+  },
+  "gcpdeploy/src/trainer/ClusterBasedRecommender.py": {
+    "gcpdeploy/src/trainer/ClusterBasedRecommender.py": {
+      "count": 5,
+      "provenance": {
+        "call_sites": 5
+      },
+      "reasons": [
+        "create_recommendations",
+        "identify_top_products",
+        "merge_customer_transactions",
+        "record_customer_purchases",
+        "remove_outliers"
+      ]
+    }
+  },
+  "gcpdeploy/src/trainer/train.py": {
+    "gcpdeploy/src/trainer/train.py": {
+      "count": 3,
+      "provenance": {
+        "call_sites": 3
+      },
+      "reasons": [
+        "kmeans_clustering",
+        "main",
+        "save_and_upload_model"
+      ]
+    },
+    "gcpdeploy/src/trainer/ClusterBasedRecommender.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "generate_recommendations"
+      ]
+    }
+  },
+  "gcpdeploy/src/unzip_data.py": {
+    "gcpdeploy/src/unzip_data.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "unzip_file"
+      ]
+    }
+  },
+  "src/correlation.py": {
+    "src/correlation.py": {
+      "count": 2,
+      "provenance": {
+        "call_sites": 2
+      },
+      "reasons": [
+        "save_correlations_as_parquet",
+        "save_heatmap"
+      ]
+    }
+  },
+  "src/datapipeline.py": {
+    "dags/src/download_data.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "ingest_data"
+      ]
+    },
+    "dags/src/unzip_data.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "unzip_file"
+      ]
+    },
+    "dags/src/data_loader.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "load_data"
+      ]
+    },
+    "dags/src/missing_values_handler.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "handle_missing"
+      ]
+    },
+    "dags/src/duplicates_handler.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "remove_duplicates"
+      ]
+    },
+    "dags/src/transaction_status_handler.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "handle_transaction_status"
+      ]
+    },
+    "dags/src/anomaly_code_handler.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "handle_anomalous_codes"
+      ]
+    }
+  },
+  "src/download_data.py": {
+    "src/download_data.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "ingest_data"
+      ]
+    }
+  },
+  "src/pca.py": {
+    "src/pca.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "pca_"
+      ]
+    }
+  },
+  "src/unzip_data.py": {
+    "src/unzip_data.py": {
+      "count": 1,
+      "provenance": {
+        "call_sites": 1
+      },
+      "reasons": [
+        "unzip_file"
+      ]
+    }
+  }
+}

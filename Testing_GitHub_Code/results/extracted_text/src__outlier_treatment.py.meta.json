@@ -1,0 +1,32 @@
+{
+  "relpath": "src/outlier_treatment.py",
+  "manifest_meta": {
+    "relpath": "src/outlier_treatment.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\outlier_treatment.py",
+    "size": 1616,
+    "mtime": 1763123859.5596094,
+    "mime": "text/x-python",
+    "is_text": true,
+    "sha256": "45b2d164d5804b8c0dcac3f6e7ffba119feb6057da05431e68c7b407b32ec77f",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\src__outlier_treatment.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "5",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'outlier_treatment.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "1616",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

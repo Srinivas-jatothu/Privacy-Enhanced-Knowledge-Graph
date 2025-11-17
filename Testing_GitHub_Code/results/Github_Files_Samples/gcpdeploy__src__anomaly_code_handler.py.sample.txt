@@ -1,0 +1,10 @@
+"""
+A module for removing anomalies from StockCode column if they have 0 or 1 
+digit characters since the normal values are 5 or 6 digits.
+"""
+
+import pickle
+import os
+
+# Determine the absolute path of the project directory
+PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

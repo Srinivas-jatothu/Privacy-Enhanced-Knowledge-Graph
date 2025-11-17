@@ -1,0 +1,10 @@
+from google.cloud import aiplatform
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Configuration parameters
+REGION = os.getenv("REGION")
+PROJECT_ID = os.getenv("PROJECT_ID")
+BASE_OUTPUT_DIR =  os.getenv("BASE_OUTPUT_DIR")

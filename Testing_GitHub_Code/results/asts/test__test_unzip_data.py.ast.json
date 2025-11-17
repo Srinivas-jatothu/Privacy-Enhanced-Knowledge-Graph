@@ -1,0 +1,788 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Expr",
+      "value": {
+        "_const_preview": "\nFunction to test the unzip_data functions\n"
+      },
+      "lineno": 1,
+      "end_lineno": 3
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "os",
+          "asname": null,
+          "lineno": 4,
+          "end_lineno": 4
+        }
+      ],
+      "lineno": 4,
+      "end_lineno": 4
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "unzip_data",
+          "asname": null,
+          "lineno": 5,
+          "end_lineno": 5
+        }
+      ],
+      "level": 0,
+      "lineno": 5,
+      "end_lineno": 5
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "ROOT_DIR",
+          "lineno": 9,
+          "end_lineno": 9
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 9,
+              "end_lineno": 9
+            },
+            "attr": "path",
+            "lineno": 9,
+            "end_lineno": 9
+          },
+          "attr": "abspath",
+          "lineno": 9,
+          "end_lineno": 9
+        },
+        "args": [
+          {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 9,
+                  "end_lineno": 9
+                },
+                "attr": "path",
+                "lineno": 9,
+                "end_lineno": 9
+              },
+              "attr": "join",
+              "lineno": 9,
+              "end_lineno": 9
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 9,
+                      "end_lineno": 9
+                    },
+                    "attr": "path",
+                    "lineno": 9,
+                    "end_lineno": 9
+                  },
+                  "attr": "dirname",
+                  "lineno": 9,
+                  "end_lineno": 9
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "__file__",
+                    "lineno": 9,
+                    "end_lineno": 9
+                  }
+                ],
+                "keywords": [],
+                "lineno": 9,
+                "end_lineno": 9
+              },
+              {
+                "_type": "Constant",
+                "value": "..",
+                "kind": null,
+                "lineno": 9,
+                "end_lineno": 9
+              }
+            ],
+            "keywords": [],
+            "lineno": 9,
+            "end_lineno": 9
+          }
+        ],
+        "keywords": [],
+        "lineno": 9,
+        "end_lineno": 9
+      },
+      "type_comment": null,
+      "lineno": 9,
+      "end_lineno": 9
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "ZIP_FILENAME",
+          "lineno": 11,
+          "end_lineno": 11
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 11,
+              "end_lineno": 11
+            },
+            "attr": "path",
+            "lineno": 11,
+            "end_lineno": 11
+          },
+          "attr": "join",
+          "lineno": 11,
+          "end_lineno": 11
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "ROOT_DIR",
+            "lineno": 11,
+            "end_lineno": 11
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 11,
+            "end_lineno": 11
+          },
+          {
+            "_type": "Constant",
+            "value": "data.zip",
+            "kind": null,
+            "lineno": 11,
+            "end_lineno": 11
+          }
+        ],
+        "keywords": [],
+        "lineno": 11,
+        "end_lineno": 11
+      },
+      "type_comment": null,
+      "lineno": 11,
+      "end_lineno": 11
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "EXTRACT_TO",
+          "lineno": 12,
+          "end_lineno": 12
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 12,
+              "end_lineno": 12
+            },
+            "attr": "path",
+            "lineno": 12,
+            "end_lineno": 12
+          },
+          "attr": "join",
+          "lineno": 12,
+          "end_lineno": 12
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "ROOT_DIR",
+            "lineno": 12,
+            "end_lineno": 12
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 12,
+            "end_lineno": 12
+          }
+        ],
+        "keywords": [],
+        "lineno": 12,
+        "end_lineno": 12
+      },
+      "type_comment": null,
+      "lineno": 12,
+      "end_lineno": 12
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "BAD_ZIP_FILENAME",
+          "lineno": 13,
+          "end_lineno": 13
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 13,
+              "end_lineno": 13
+            },
+            "attr": "path",
+            "lineno": 13,
+            "end_lineno": 13
+          },
+          "attr": "join",
+          "lineno": 13,
+          "end_lineno": 13
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "ROOT_DIR",
+            "lineno": 13,
+            "end_lineno": 13
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 13,
+            "end_lineno": 13
+          },
+          {
+            "_type": "Constant",
+            "value": "bad.zip",
+            "kind": null,
+            "lineno": 13,
+            "end_lineno": 13
+          }
+        ],
+        "keywords": [],
+        "lineno": 13,
+        "end_lineno": 13
+      },
+      "type_comment": null,
+      "lineno": 13,
+      "end_lineno": 13
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "test_unzip_file_successful",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n      Test for successful unzipping\n    "
+          },
+          "lineno": 17,
+          "end_lineno": 19
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "unzipped_file",
+              "lineno": 21,
+              "end_lineno": 21
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "unzip_data",
+                "lineno": 21,
+                "end_lineno": 21
+              },
+              "attr": "unzip_file",
+              "lineno": 21,
+              "end_lineno": 21
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "ZIP_FILENAME",
+                "lineno": 21,
+                "end_lineno": 21
+              },
+              {
+                "_type": "Name",
+                "id": "EXTRACT_TO",
+                "lineno": 21,
+                "end_lineno": 21
+              }
+            ],
+            "keywords": [],
+            "lineno": 21,
+            "end_lineno": 21
+          },
+          "type_comment": null,
+          "lineno": 21,
+          "end_lineno": 21
+        },
+        {
+          "_type": "Assert",
+          "test": {
+            "_type": "Compare",
+            "left": {
+              "_type": "Name",
+              "id": "unzipped_file",
+              "lineno": 24,
+              "end_lineno": 24
+            },
+            "ops": [
+              {
+                "_type": "Eq"
+              }
+            ],
+            "comparators": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 24,
+                      "end_lineno": 24
+                    },
+                    "attr": "path",
+                    "lineno": 24,
+                    "end_lineno": 24
+                  },
+                  "attr": "join",
+                  "lineno": 24,
+                  "end_lineno": 24
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "EXTRACT_TO",
+                    "lineno": 24,
+                    "end_lineno": 24
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "Online Retail.xlsx",
+                    "kind": null,
+                    "lineno": 24,
+                    "end_lineno": 24
+                  }
+                ],
+                "keywords": [],
+                "lineno": 24,
+                "end_lineno": 24
+              }
+            ],
+            "lineno": 24,
+            "end_lineno": 24
+          },
+          "msg": null,
+          "lineno": 24,
+          "end_lineno": 24
+        },
+        {
+          "_type": "Assert",
+          "test": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 27,
+                  "end_lineno": 27
+                },
+                "attr": "path",
+                "lineno": 27,
+                "end_lineno": 27
+              },
+              "attr": "isfile",
+              "lineno": 27,
+              "end_lineno": 27
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "unzipped_file",
+                "lineno": 27,
+                "end_lineno": 27
+              }
+            ],
+            "keywords": [],
+            "lineno": 27,
+            "end_lineno": 27
+          },
+          "msg": null,
+          "lineno": 27,
+          "end_lineno": 27
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 16,
+      "end_lineno": 27
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "test_unzip_file_bad_zip",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "tmp_path",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 30,
+            "end_lineno": 30
+          },
+          {
+            "_type": "arg",
+            "arg": "capsys",
+            "annotation": null,
+            "type_comment": null,
+            "lineno": 30,
+            "end_lineno": 30
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n      Test for handling a bad zip file\n    "
+          },
+          "lineno": 31,
+          "end_lineno": 33
+        },
+        {
+          "_type": "With",
+          "items": [
+            {
+              "_type": "withitem",
+              "context_expr": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "open",
+                  "lineno": 35,
+                  "end_lineno": 35
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "BAD_ZIP_FILENAME",
+                    "lineno": 35,
+                    "end_lineno": 35
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "wb",
+                    "kind": null,
+                    "lineno": 35,
+                    "end_lineno": 35
+                  }
+                ],
+                "keywords": [],
+                "lineno": 35,
+                "end_lineno": 35
+              },
+              "optional_vars": {
+                "_type": "Name",
+                "id": "file",
+                "lineno": 35,
+                "end_lineno": 35
+              }
+            }
+          ],
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "file",
+                    "lineno": 36,
+                    "end_lineno": 36
+                  },
+                  "attr": "write",
+                  "lineno": 36,
+                  "end_lineno": 36
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": "b'This is not a valid zip file'",
+                    "kind": null,
+                    "lineno": 36,
+                    "end_lineno": 36
+                  }
+                ],
+                "keywords": [],
+                "lineno": 36,
+                "end_lineno": 36
+              },
+              "lineno": 36,
+              "end_lineno": 36
+            }
+          ],
+          "type_comment": null,
+          "lineno": 35,
+          "end_lineno": 36
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "test_dir",
+              "lineno": 39,
+              "end_lineno": 39
+            }
+          ],
+          "value": {
+            "_type": "BinOp",
+            "left": {
+              "_type": "Name",
+              "id": "tmp_path",
+              "lineno": 39,
+              "end_lineno": 39
+            },
+            "op": {
+              "_type": "Div"
+            },
+            "right": {
+              "_type": "Constant",
+              "value": "test_dir",
+              "kind": null,
+              "lineno": 39,
+              "end_lineno": 39
+            },
+            "lineno": 39,
+            "end_lineno": 39
+          },
+          "type_comment": null,
+          "lineno": 39,
+          "end_lineno": 39
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "test_dir",
+                "lineno": 40,
+                "end_lineno": 40
+              },
+              "attr": "mkdir",
+              "lineno": 40,
+              "end_lineno": 40
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 40,
+            "end_lineno": 40
+          },
+          "lineno": 40,
+          "end_lineno": 40
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "unzip_data",
+                "lineno": 42,
+                "end_lineno": 42
+              },
+              "attr": "unzip_file",
+              "lineno": 42,
+              "end_lineno": 42
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "BAD_ZIP_FILENAME",
+                "lineno": 42,
+                "end_lineno": 42
+              },
+              {
+                "_type": "Name",
+                "id": "test_dir",
+                "lineno": 42,
+                "end_lineno": 42
+              }
+            ],
+            "keywords": [],
+            "lineno": 42,
+            "end_lineno": 42
+          },
+          "lineno": 42,
+          "end_lineno": 42
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "captured",
+              "lineno": 45,
+              "end_lineno": 45
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "capsys",
+                "lineno": 45,
+                "end_lineno": 45
+              },
+              "attr": "readouterr",
+              "lineno": 45,
+              "end_lineno": 45
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 45,
+            "end_lineno": 45
+          },
+          "type_comment": null,
+          "lineno": 45,
+          "end_lineno": 45
+        },
+        {
+          "_type": "Assert",
+          "test": {
+            "_type": "Compare",
+            "left": {
+              "_type": "Constant",
+              "value": "Failed to unzip",
+              "kind": null,
+              "lineno": 46,
+              "end_lineno": 46
+            },
+            "ops": [
+              {
+                "_type": "In"
+              }
+            ],
+            "comparators": [
+              {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "captured",
+                  "lineno": 46,
+                  "end_lineno": 46
+                },
+                "attr": "out",
+                "lineno": 46,
+                "end_lineno": 46
+              }
+            ],
+            "lineno": 46,
+            "end_lineno": 46
+          },
+          "msg": null,
+          "lineno": 46,
+          "end_lineno": 46
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 30,
+      "end_lineno": 46
+    }
+  ],
+  "type_ignores": []
+}

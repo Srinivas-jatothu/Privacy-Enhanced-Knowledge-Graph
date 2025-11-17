@@ -1,0 +1,2708 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Expr",
+      "value": {
+        "_const_preview": "\nThe Airflow Dag for the preprocessing datapipeline\n"
+      },
+      "lineno": 1,
+      "end_lineno": 3
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "datetime",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "datetime",
+          "asname": null,
+          "lineno": 6,
+          "end_lineno": 6
+        },
+        {
+          "_type": "alias",
+          "name": "timedelta",
+          "asname": null,
+          "lineno": 6,
+          "end_lineno": 6
+        }
+      ],
+      "level": 0,
+      "lineno": 6,
+      "end_lineno": 6
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "airflow",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "DAG",
+          "asname": null,
+          "lineno": 7,
+          "end_lineno": 7
+        }
+      ],
+      "level": 0,
+      "lineno": 7,
+      "end_lineno": 7
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "airflow.operators.python",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "PythonOperator",
+          "asname": null,
+          "lineno": 8,
+          "end_lineno": 8
+        }
+      ],
+      "level": 0,
+      "lineno": 8,
+      "end_lineno": 8
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "airflow",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "configuration",
+          "asname": "conf",
+          "lineno": 9,
+          "end_lineno": 9
+        }
+      ],
+      "level": 0,
+      "lineno": 9,
+      "end_lineno": 9
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.download_data",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "ingest_data",
+          "asname": null,
+          "lineno": 10,
+          "end_lineno": 10
+        }
+      ],
+      "level": 0,
+      "lineno": 10,
+      "end_lineno": 10
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.unzip_data",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "unzip_file",
+          "asname": null,
+          "lineno": 11,
+          "end_lineno": 11
+        }
+      ],
+      "level": 0,
+      "lineno": 11,
+      "end_lineno": 11
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.data_loader",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "load_data",
+          "asname": null,
+          "lineno": 12,
+          "end_lineno": 12
+        }
+      ],
+      "level": 0,
+      "lineno": 12,
+      "end_lineno": 12
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.missing_values_handler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "handle_missing",
+          "asname": null,
+          "lineno": 13,
+          "end_lineno": 13
+        }
+      ],
+      "level": 0,
+      "lineno": 13,
+      "end_lineno": 13
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.duplicates_handler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "remove_duplicates",
+          "asname": null,
+          "lineno": 14,
+          "end_lineno": 14
+        }
+      ],
+      "level": 0,
+      "lineno": 14,
+      "end_lineno": 14
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.transaction_status_handler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "handle_transaction_status",
+          "asname": null,
+          "lineno": 15,
+          "end_lineno": 15
+        }
+      ],
+      "level": 0,
+      "lineno": 15,
+      "end_lineno": 15
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.anomaly_code_handler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "handle_anomalous_codes",
+          "asname": null,
+          "lineno": 16,
+          "end_lineno": 16
+        }
+      ],
+      "level": 0,
+      "lineno": 16,
+      "end_lineno": 16
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.cleaning_description",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "cleaning_description",
+          "asname": null,
+          "lineno": 17,
+          "end_lineno": 17
+        }
+      ],
+      "level": 0,
+      "lineno": 17,
+      "end_lineno": 17
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.removing_zero_unitprice",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "removing_zero",
+          "asname": null,
+          "lineno": 18,
+          "end_lineno": 18
+        }
+      ],
+      "level": 0,
+      "lineno": 18,
+      "end_lineno": 18
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.rfm",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "rfm",
+          "asname": null,
+          "lineno": 19,
+          "end_lineno": 19
+        }
+      ],
+      "level": 0,
+      "lineno": 19,
+      "end_lineno": 19
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.unique_products",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "unique_products",
+          "asname": null,
+          "lineno": 20,
+          "end_lineno": 20
+        }
+      ],
+      "level": 0,
+      "lineno": 20,
+      "end_lineno": 20
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.customers_behavior",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "customers_behavior",
+          "asname": null,
+          "lineno": 21,
+          "end_lineno": 21
+        }
+      ],
+      "level": 0,
+      "lineno": 21,
+      "end_lineno": 21
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.geographic_features",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "geographic_features",
+          "asname": null,
+          "lineno": 22,
+          "end_lineno": 22
+        }
+      ],
+      "level": 0,
+      "lineno": 22,
+      "end_lineno": 22
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.cancellation_details",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "cancellation_details",
+          "asname": null,
+          "lineno": 23,
+          "end_lineno": 23
+        }
+      ],
+      "level": 0,
+      "lineno": 23,
+      "end_lineno": 23
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.seasonality",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "seasonality_impacts",
+          "asname": null,
+          "lineno": 24,
+          "end_lineno": 24
+        }
+      ],
+      "level": 0,
+      "lineno": 24,
+      "end_lineno": 24
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.outlier_treatment",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "removing_outlier",
+          "asname": null,
+          "lineno": 25,
+          "end_lineno": 25
+        }
+      ],
+      "level": 0,
+      "lineno": 25,
+      "end_lineno": 25
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.scaler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "scaler",
+          "asname": null,
+          "lineno": 26,
+          "end_lineno": 26
+        }
+      ],
+      "level": 0,
+      "lineno": 26,
+      "end_lineno": 26
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.pca",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "pc_analyzer",
+          "asname": null,
+          "lineno": 27,
+          "end_lineno": 27
+        }
+      ],
+      "level": 0,
+      "lineno": 27,
+      "end_lineno": 27
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.correlation",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "correlation_check",
+          "asname": null,
+          "lineno": 28,
+          "end_lineno": 28
+        }
+      ],
+      "level": 0,
+      "lineno": 28,
+      "end_lineno": 28
+    },
+    {
+      "_type": "Expr",
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "conf",
+            "lineno": 31,
+            "end_lineno": 31
+          },
+          "attr": "set",
+          "lineno": 31,
+          "end_lineno": 31
+        },
+        "args": [
+          {
+            "_type": "Constant",
+            "value": "core",
+            "kind": null,
+            "lineno": 31,
+            "end_lineno": 31
+          },
+          {
+            "_type": "Constant",
+            "value": "enable_xcom_pickling",
+            "kind": null,
+            "lineno": 31,
+            "end_lineno": 31
+          },
+          {
+            "_type": "Constant",
+            "value": "True",
+            "kind": null,
+            "lineno": 31,
+            "end_lineno": 31
+          }
+        ],
+        "keywords": [],
+        "lineno": 31,
+        "end_lineno": 31
+      },
+      "lineno": 31,
+      "end_lineno": 31
+    },
+    {
+      "_type": "Expr",
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Name",
+            "id": "conf",
+            "lineno": 32,
+            "end_lineno": 32
+          },
+          "attr": "set",
+          "lineno": 32,
+          "end_lineno": 32
+        },
+        "args": [
+          {
+            "_type": "Constant",
+            "value": "core",
+            "kind": null,
+            "lineno": 32,
+            "end_lineno": 32
+          },
+          {
+            "_type": "Constant",
+            "value": "enable_parquet_xcom",
+            "kind": null,
+            "lineno": 32,
+            "end_lineno": 32
+          },
+          {
+            "_type": "Constant",
+            "value": "True",
+            "kind": null,
+            "lineno": 32,
+            "end_lineno": 32
+          }
+        ],
+        "keywords": [],
+        "lineno": 32,
+        "end_lineno": 32
+      },
+      "lineno": 32,
+      "end_lineno": 32
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "default_args",
+          "lineno": 35,
+          "end_lineno": 35
+        }
+      ],
+      "value": {
+        "_type": "Dict",
+        "keys": [
+          {
+            "_type": "Constant",
+            "value": "owner",
+            "kind": null,
+            "lineno": 36,
+            "end_lineno": 36
+          },
+          {
+            "_type": "Constant",
+            "value": "start_date",
+            "kind": null,
+            "lineno": 37,
+            "end_lineno": 37
+          },
+          {
+            "_type": "Constant",
+            "value": "retries",
+            "kind": null,
+            "lineno": 38,
+            "end_lineno": 38
+          },
+          {
+            "_type": "Constant",
+            "value": "retry_delay",
+            "kind": null,
+            "lineno": 39,
+            "end_lineno": 39
+          }
+        ],
+        "values": [
+          {
+            "_type": "Constant",
+            "value": "your_name",
+            "kind": null,
+            "lineno": 36,
+            "end_lineno": 36
+          },
+          {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "datetime",
+              "lineno": 37,
+              "end_lineno": 37
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": 2023,
+                "kind": null,
+                "lineno": 37,
+                "end_lineno": 37
+              },
+              {
+                "_type": "Constant",
+                "value": 11,
+                "kind": null,
+                "lineno": 37,
+                "end_lineno": 37
+              },
+              {
+                "_type": "Constant",
+                "value": 9,
+                "kind": null,
+                "lineno": 37,
+                "end_lineno": 37
+              }
+            ],
+            "keywords": [],
+            "lineno": 37,
+            "end_lineno": 37
+          },
+          {
+            "_type": "Constant",
+            "value": 0,
+            "kind": null,
+            "lineno": 38,
+            "end_lineno": 38
+          },
+          {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "timedelta",
+              "lineno": 39,
+              "end_lineno": 39
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "minutes",
+                "value": {
+                  "_type": "Constant",
+                  "value": 5,
+                  "kind": null,
+                  "lineno": 39,
+                  "end_lineno": 39
+                },
+                "lineno": 39,
+                "end_lineno": 39
+              }
+            ],
+            "lineno": 39,
+            "end_lineno": 39
+          }
+        ],
+        "lineno": 35,
+        "end_lineno": 40
+      },
+      "type_comment": null,
+      "lineno": 35,
+      "end_lineno": 40
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "dag",
+          "lineno": 43,
+          "end_lineno": 43
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "DAG",
+          "lineno": 43,
+          "end_lineno": 43
+        },
+        "args": [
+          {
+            "_type": "Constant",
+            "value": "datapipeline",
+            "kind": null,
+            "lineno": 44,
+            "end_lineno": 44
+          }
+        ],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "default_args",
+            "value": {
+              "_type": "Name",
+              "id": "default_args",
+              "lineno": 45,
+              "end_lineno": 45
+            },
+            "lineno": 45,
+            "end_lineno": 45
+          },
+          {
+            "_type": "keyword",
+            "arg": "description",
+            "value": {
+              "_const_preview": "Airflow DAG for the datapipeline"
+            },
+            "lineno": 46,
+            "end_lineno": 46
+          },
+          {
+            "_type": "keyword",
+            "arg": "schedule_interval",
+            "value": {
+              "_type": "Constant",
+              "value": null,
+              "kind": null,
+              "lineno": 47,
+              "end_lineno": 47
+            },
+            "lineno": 47,
+            "end_lineno": 47
+          },
+          {
+            "_type": "keyword",
+            "arg": "catchup",
+            "value": {
+              "_type": "Constant",
+              "value": false,
+              "kind": null,
+              "lineno": 48,
+              "end_lineno": 48
+            },
+            "lineno": 48,
+            "end_lineno": 48
+          }
+        ],
+        "lineno": 43,
+        "end_lineno": 49
+      },
+      "type_comment": null,
+      "lineno": 43,
+      "end_lineno": 49
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "ingest_data_task",
+          "lineno": 54,
+          "end_lineno": 54
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 54,
+          "end_lineno": 54
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "ingest_data_task"
+            },
+            "lineno": 55,
+            "end_lineno": 55
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "ingest_data",
+              "lineno": 56,
+              "end_lineno": 56
+            },
+            "lineno": 56,
+            "end_lineno": 56
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_args",
+            "value": {
+              "_type": "List",
+              "elts": [
+                {
+                  "_type": "Constant",
+                  "value": "https://archive.ics.uci.edu/static/public/352/online+retail.zip",
+                  "kind": null,
+                  "lineno": 57,
+                  "end_lineno": 57
+                }
+              ],
+              "lineno": 57,
+              "end_lineno": 57
+            },
+            "lineno": 57,
+            "end_lineno": 57
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 58,
+              "end_lineno": 58
+            },
+            "lineno": 58,
+            "end_lineno": 58
+          }
+        ],
+        "lineno": 54,
+        "end_lineno": 59
+      },
+      "type_comment": null,
+      "lineno": 54,
+      "end_lineno": 59
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "unzip_file_task",
+          "lineno": 62,
+          "end_lineno": 62
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 62,
+          "end_lineno": 62
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "unzip_file_task"
+            },
+            "lineno": 63,
+            "end_lineno": 63
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "unzip_file",
+              "lineno": 64,
+              "end_lineno": 64
+            },
+            "lineno": 64,
+            "end_lineno": 64
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_args",
+            "value": {
+              "_type": "List",
+              "elts": [
+                {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "ingest_data_task",
+                    "lineno": 65,
+                    "end_lineno": 65
+                  },
+                  "attr": "output",
+                  "lineno": 65,
+                  "end_lineno": 65
+                }
+              ],
+              "lineno": 65,
+              "end_lineno": 65
+            },
+            "lineno": 65,
+            "end_lineno": 65
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 66,
+              "end_lineno": 66
+            },
+            "lineno": 66,
+            "end_lineno": 66
+          }
+        ],
+        "lineno": 62,
+        "end_lineno": 67
+      },
+      "type_comment": null,
+      "lineno": 62,
+      "end_lineno": 67
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "load_data_task",
+          "lineno": 70,
+          "end_lineno": 70
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 70,
+          "end_lineno": 70
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "load_data_task"
+            },
+            "lineno": 71,
+            "end_lineno": 71
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "load_data",
+              "lineno": 72,
+              "end_lineno": 72
+            },
+            "lineno": 72,
+            "end_lineno": 72
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "excel_path",
+                  "kind": null,
+                  "lineno": 74,
+                  "end_lineno": 74
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"unzip_file_task\") }}",
+                  "kind": null,
+                  "lineno": 74,
+                  "end_lineno": 74
+                }
+              ],
+              "lineno": 73,
+              "end_lineno": 75
+            },
+            "lineno": 73,
+            "end_lineno": 75
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 76,
+              "end_lineno": 76
+            },
+            "lineno": 76,
+            "end_lineno": 76
+          }
+        ],
+        "lineno": 70,
+        "end_lineno": 77
+      },
+      "type_comment": null,
+      "lineno": 70,
+      "end_lineno": 77
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "handle_missing_task",
+          "lineno": 80,
+          "end_lineno": 80
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 80,
+          "end_lineno": 80
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "missing_values_task"
+            },
+            "lineno": 81,
+            "end_lineno": 81
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "handle_missing",
+              "lineno": 82,
+              "end_lineno": 82
+            },
+            "lineno": 82,
+            "end_lineno": 82
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 84,
+                  "end_lineno": 84
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"load_data_task\") }}",
+                  "kind": null,
+                  "lineno": 84,
+                  "end_lineno": 84
+                }
+              ],
+              "lineno": 83,
+              "end_lineno": 85
+            },
+            "lineno": 83,
+            "end_lineno": 85
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 86,
+              "end_lineno": 86
+            },
+            "lineno": 86,
+            "end_lineno": 86
+          }
+        ],
+        "lineno": 80,
+        "end_lineno": 87
+      },
+      "type_comment": null,
+      "lineno": 80,
+      "end_lineno": 87
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "remove_duplicates_task",
+          "lineno": 90,
+          "end_lineno": 90
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 90,
+          "end_lineno": 90
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "remove_duplicates_task"
+            },
+            "lineno": 91,
+            "end_lineno": 91
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "remove_duplicates",
+              "lineno": 92,
+              "end_lineno": 92
+            },
+            "lineno": 92,
+            "end_lineno": 92
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 94,
+                  "end_lineno": 94
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"handle_missing_task\") }}",
+                  "kind": null,
+                  "lineno": 94,
+                  "end_lineno": 94
+                }
+              ],
+              "lineno": 93,
+              "end_lineno": 95
+            },
+            "lineno": 93,
+            "end_lineno": 95
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 96,
+              "end_lineno": 96
+            },
+            "lineno": 96,
+            "end_lineno": 96
+          }
+        ],
+        "lineno": 90,
+        "end_lineno": 97
+      },
+      "type_comment": null,
+      "lineno": 90,
+      "end_lineno": 97
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "transaction_status_task",
+          "lineno": 100,
+          "end_lineno": 100
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 100,
+          "end_lineno": 100
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "transaction_status_task"
+            },
+            "lineno": 101,
+            "end_lineno": 101
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "handle_transaction_status",
+              "lineno": 102,
+              "end_lineno": 102
+            },
+            "lineno": 102,
+            "end_lineno": 102
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 104,
+                  "end_lineno": 104
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"remove_duplicates_task\") }}",
+                  "kind": null,
+                  "lineno": 104,
+                  "end_lineno": 104
+                }
+              ],
+              "lineno": 103,
+              "end_lineno": 105
+            },
+            "lineno": 103,
+            "end_lineno": 105
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 106,
+              "end_lineno": 106
+            },
+            "lineno": 106,
+            "end_lineno": 106
+          }
+        ],
+        "lineno": 100,
+        "end_lineno": 107
+      },
+      "type_comment": null,
+      "lineno": 100,
+      "end_lineno": 107
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "anomaly_codes_task",
+          "lineno": 110,
+          "end_lineno": 110
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 110,
+          "end_lineno": 110
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "anomaly_codes_task"
+            },
+            "lineno": 111,
+            "end_lineno": 111
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "handle_anomalous_codes",
+              "lineno": 112,
+              "end_lineno": 112
+            },
+            "lineno": 112,
+            "end_lineno": 112
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 114,
+                  "end_lineno": 114
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"transaction_status_task\") }}",
+                  "kind": null,
+                  "lineno": 114,
+                  "end_lineno": 114
+                }
+              ],
+              "lineno": 113,
+              "end_lineno": 115
+            },
+            "lineno": 113,
+            "end_lineno": 115
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 116,
+              "end_lineno": 116
+            },
+            "lineno": 116,
+            "end_lineno": 116
+          }
+        ],
+        "lineno": 110,
+        "end_lineno": 117
+      },
+      "type_comment": null,
+      "lineno": 110,
+      "end_lineno": 117
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "cleaning_description_task",
+          "lineno": 120,
+          "end_lineno": 120
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 120,
+          "end_lineno": 120
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "cleaning_description_task"
+            },
+            "lineno": 121,
+            "end_lineno": 121
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "cleaning_description",
+              "lineno": 122,
+              "end_lineno": 122
+            },
+            "lineno": 122,
+            "end_lineno": 122
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 124,
+                  "end_lineno": 124
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"anomaly_codes_task\") }}",
+                  "kind": null,
+                  "lineno": 124,
+                  "end_lineno": 124
+                }
+              ],
+              "lineno": 123,
+              "end_lineno": 125
+            },
+            "lineno": 123,
+            "end_lineno": 125
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 126,
+              "end_lineno": 126
+            },
+            "lineno": 126,
+            "end_lineno": 126
+          }
+        ],
+        "lineno": 120,
+        "end_lineno": 127
+      },
+      "type_comment": null,
+      "lineno": 120,
+      "end_lineno": 127
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "removing_zero_unitprice_task",
+          "lineno": 130,
+          "end_lineno": 130
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 130,
+          "end_lineno": 130
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "removing_zero_unitprice_task"
+            },
+            "lineno": 131,
+            "end_lineno": 131
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "removing_zero",
+              "lineno": 132,
+              "end_lineno": 132
+            },
+            "lineno": 132,
+            "end_lineno": 132
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 134,
+                  "end_lineno": 134
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"cleaning_description_task\") }}",
+                  "kind": null,
+                  "lineno": 134,
+                  "end_lineno": 134
+                }
+              ],
+              "lineno": 133,
+              "end_lineno": 135
+            },
+            "lineno": 133,
+            "end_lineno": 135
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 136,
+              "end_lineno": 136
+            },
+            "lineno": 136,
+            "end_lineno": 136
+          }
+        ],
+        "lineno": 130,
+        "end_lineno": 137
+      },
+      "type_comment": null,
+      "lineno": 130,
+      "end_lineno": 137
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "rfm_task",
+          "lineno": 140,
+          "end_lineno": 140
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 140,
+          "end_lineno": 140
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "rfm_task"
+            },
+            "lineno": 141,
+            "end_lineno": 141
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "rfm",
+              "lineno": 142,
+              "end_lineno": 142
+            },
+            "lineno": 142,
+            "end_lineno": 142
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 144,
+                  "end_lineno": 144
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"removing_zero_unitprice_task\") }}",
+                  "kind": null,
+                  "lineno": 144,
+                  "end_lineno": 144
+                }
+              ],
+              "lineno": 143,
+              "end_lineno": 145
+            },
+            "lineno": 143,
+            "end_lineno": 145
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 146,
+              "end_lineno": 146
+            },
+            "lineno": 146,
+            "end_lineno": 146
+          }
+        ],
+        "lineno": 140,
+        "end_lineno": 147
+      },
+      "type_comment": null,
+      "lineno": 140,
+      "end_lineno": 147
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "unique_products_task",
+          "lineno": 150,
+          "end_lineno": 150
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 150,
+          "end_lineno": 150
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "unique_products_task"
+            },
+            "lineno": 151,
+            "end_lineno": 151
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "unique_products",
+              "lineno": 152,
+              "end_lineno": 152
+            },
+            "lineno": 152,
+            "end_lineno": 152
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 154,
+                  "end_lineno": 154
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"rfm_task\") }}",
+                  "kind": null,
+                  "lineno": 154,
+                  "end_lineno": 154
+                }
+              ],
+              "lineno": 153,
+              "end_lineno": 155
+            },
+            "lineno": 153,
+            "end_lineno": 155
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 156,
+              "end_lineno": 156
+            },
+            "lineno": 156,
+            "end_lineno": 156
+          }
+        ],
+        "lineno": 150,
+        "end_lineno": 157
+      },
+      "type_comment": null,
+      "lineno": 150,
+      "end_lineno": 157
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "customers_behavior_task",
+          "lineno": 160,
+          "end_lineno": 160
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 160,
+          "end_lineno": 160
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "customers_behavior_task"
+            },
+            "lineno": 161,
+            "end_lineno": 161
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "customers_behavior",
+              "lineno": 162,
+              "end_lineno": 162
+            },
+            "lineno": 162,
+            "end_lineno": 162
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 164,
+                  "end_lineno": 164
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"unique_products_task\") }}",
+                  "kind": null,
+                  "lineno": 164,
+                  "end_lineno": 164
+                }
+              ],
+              "lineno": 163,
+              "end_lineno": 165
+            },
+            "lineno": 163,
+            "end_lineno": 165
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 166,
+              "end_lineno": 166
+            },
+            "lineno": 166,
+            "end_lineno": 166
+          }
+        ],
+        "lineno": 160,
+        "end_lineno": 167
+      },
+      "type_comment": null,
+      "lineno": 160,
+      "end_lineno": 167
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "geographic_features_task",
+          "lineno": 170,
+          "end_lineno": 170
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 170,
+          "end_lineno": 170
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "geographic_features_task"
+            },
+            "lineno": 171,
+            "end_lineno": 171
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "geographic_features",
+              "lineno": 172,
+              "end_lineno": 172
+            },
+            "lineno": 172,
+            "end_lineno": 172
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 174,
+                  "end_lineno": 174
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"customers_behavior_task\") }}",
+                  "kind": null,
+                  "lineno": 174,
+                  "end_lineno": 174
+                }
+              ],
+              "lineno": 173,
+              "end_lineno": 175
+            },
+            "lineno": 173,
+            "end_lineno": 175
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 176,
+              "end_lineno": 176
+            },
+            "lineno": 176,
+            "end_lineno": 176
+          }
+        ],
+        "lineno": 170,
+        "end_lineno": 177
+      },
+      "type_comment": null,
+      "lineno": 170,
+      "end_lineno": 177
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "cancellation_details_task",
+          "lineno": 180,
+          "end_lineno": 180
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 180,
+          "end_lineno": 180
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "cancellation_details_task"
+            },
+            "lineno": 181,
+            "end_lineno": 181
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "cancellation_details",
+              "lineno": 182,
+              "end_lineno": 182
+            },
+            "lineno": 182,
+            "end_lineno": 182
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 184,
+                  "end_lineno": 184
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"geographic_features_task\") }}",
+                  "kind": null,
+                  "lineno": 184,
+                  "end_lineno": 184
+                }
+              ],
+              "lineno": 183,
+              "end_lineno": 185
+            },
+            "lineno": 183,
+            "end_lineno": 185
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 186,
+              "end_lineno": 186
+            },
+            "lineno": 186,
+            "end_lineno": 186
+          }
+        ],
+        "lineno": 180,
+        "end_lineno": 187
+      },
+      "type_comment": null,
+      "lineno": 180,
+      "end_lineno": 187
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "seasonality_task",
+          "lineno": 190,
+          "end_lineno": 190
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 190,
+          "end_lineno": 190
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "seasonality_task"
+            },
+            "lineno": 191,
+            "end_lineno": 191
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "seasonality_impacts",
+              "lineno": 192,
+              "end_lineno": 192
+            },
+            "lineno": 192,
+            "end_lineno": 192
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 194,
+                  "end_lineno": 194
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"cancellation_details_task\") }}",
+                  "kind": null,
+                  "lineno": 194,
+                  "end_lineno": 194
+                }
+              ],
+              "lineno": 193,
+              "end_lineno": 195
+            },
+            "lineno": 193,
+            "end_lineno": 195
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 196,
+              "end_lineno": 196
+            },
+            "lineno": 196,
+            "end_lineno": 196
+          }
+        ],
+        "lineno": 190,
+        "end_lineno": 197
+      },
+      "type_comment": null,
+      "lineno": 190,
+      "end_lineno": 197
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "outlier_treatment_task",
+          "lineno": 200,
+          "end_lineno": 200
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 200,
+          "end_lineno": 200
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "outlier_treatment_task"
+            },
+            "lineno": 201,
+            "end_lineno": 201
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "removing_outlier",
+              "lineno": 202,
+              "end_lineno": 202
+            },
+            "lineno": 202,
+            "end_lineno": 202
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "input_picle_path",
+                  "kind": null,
+                  "lineno": 204,
+                  "end_lineno": 204
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"seasonality_task\") }}",
+                  "kind": null,
+                  "lineno": 204,
+                  "end_lineno": 204
+                }
+              ],
+              "lineno": 203,
+              "end_lineno": 205
+            },
+            "lineno": 203,
+            "end_lineno": 205
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 206,
+              "end_lineno": 206
+            },
+            "lineno": 206,
+            "end_lineno": 206
+          }
+        ],
+        "lineno": 200,
+        "end_lineno": 207
+      },
+      "type_comment": null,
+      "lineno": 200,
+      "end_lineno": 207
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "column_values_scaler_task",
+          "lineno": 210,
+          "end_lineno": 210
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 210,
+          "end_lineno": 210
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "column_values_scaler_task"
+            },
+            "lineno": 211,
+            "end_lineno": 211
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "scaler",
+              "lineno": 212,
+              "end_lineno": 212
+            },
+            "lineno": 212,
+            "end_lineno": 212
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "in_path",
+                  "kind": null,
+                  "lineno": 214,
+                  "end_lineno": 214
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"outlier_treatment_task\") }}",
+                  "kind": null,
+                  "lineno": 214,
+                  "end_lineno": 214
+                }
+              ],
+              "lineno": 213,
+              "end_lineno": 215
+            },
+            "lineno": 213,
+            "end_lineno": 215
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 216,
+              "end_lineno": 216
+            },
+            "lineno": 216,
+            "end_lineno": 216
+          }
+        ],
+        "lineno": 210,
+        "end_lineno": 217
+      },
+      "type_comment": null,
+      "lineno": 210,
+      "end_lineno": 217
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "pca_task",
+          "lineno": 220,
+          "end_lineno": 220
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 220,
+          "end_lineno": 220
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "pca_task"
+            },
+            "lineno": 221,
+            "end_lineno": 221
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "pc_analyzer",
+              "lineno": 222,
+              "end_lineno": 222
+            },
+            "lineno": 222,
+            "end_lineno": 222
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "in_path",
+                  "kind": null,
+                  "lineno": 224,
+                  "end_lineno": 224
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"column_values_scaler_task\") }}",
+                  "kind": null,
+                  "lineno": 224,
+                  "end_lineno": 224
+                }
+              ],
+              "lineno": 223,
+              "end_lineno": 225
+            },
+            "lineno": 223,
+            "end_lineno": 225
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 226,
+              "end_lineno": 226
+            },
+            "lineno": 226,
+            "end_lineno": 226
+          }
+        ],
+        "lineno": 220,
+        "end_lineno": 227
+      },
+      "type_comment": null,
+      "lineno": 220,
+      "end_lineno": 227
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "correlation_check_task",
+          "lineno": 230,
+          "end_lineno": 230
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "PythonOperator",
+          "lineno": 230,
+          "end_lineno": 230
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "task_id",
+            "value": {
+              "_const_preview": "correlation_check_task"
+            },
+            "lineno": 231,
+            "end_lineno": 231
+          },
+          {
+            "_type": "keyword",
+            "arg": "python_callable",
+            "value": {
+              "_type": "Name",
+              "id": "correlation_check",
+              "lineno": 232,
+              "end_lineno": 232
+            },
+            "lineno": 232,
+            "end_lineno": 232
+          },
+          {
+            "_type": "keyword",
+            "arg": "op_kwargs",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "in_path",
+                  "kind": null,
+                  "lineno": 234,
+                  "end_lineno": 234
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": "{{ ti.xcom_pull(task_ids=\"column_values_scaler_task\") }}",
+                  "kind": null,
+                  "lineno": 234,
+                  "end_lineno": 234
+                }
+              ],
+              "lineno": 233,
+              "end_lineno": 235
+            },
+            "lineno": 233,
+            "end_lineno": 235
+          },
+          {
+            "_type": "keyword",
+            "arg": "dag",
+            "value": {
+              "_type": "Name",
+              "id": "dag",
+              "lineno": 236,
+              "end_lineno": 236
+            },
+            "lineno": 236,
+            "end_lineno": 236
+          }
+        ],
+        "lineno": 230,
+        "end_lineno": 237
+      },
+      "type_comment": null,
+      "lineno": 230,
+      "end_lineno": 237
+    },
+    {
+      "_type": "Expr",
+      "value": {
+        "_type": "BinOp",
+        "left": {
+          "_type": "BinOp",
+          "left": {
+            "_type": "BinOp",
+            "left": {
+              "_type": "BinOp",
+              "left": {
+                "_type": "BinOp",
+                "left": {
+                  "_type": "BinOp",
+                  "left": {
+                    "_type": "BinOp",
+                    "left": {
+                      "_type": "BinOp",
+                      "left": {
+                        "_type": "BinOp",
+                        "left": {
+                          "_type": "BinOp",
+                          "left": {
+                            "_type": "BinOp",
+                            "left": {
+                              "_type": "BinOp",
+                              "left": {
+                                "_type": "BinOp",
+                                "left": {
+                                  "_type": "BinOp",
+                                  "left": {
+                                    "_type": "BinOp",
+                                    "left": {
+                                      "_type": "BinOp",
+                                      "left": {
+                                        "_type": "BinOp",
+                                        "left": {
+                                          "_type": "BinOp",
+                                          "left": {
+                                            "_type": "Name",
+                                            "id": "ingest_data_task",
+                                            "lineno": 240,
+                                            "end_lineno": 240
+                                          },
+                                          "op": {
+                                            "_type": "RShift"
+                                          },
+                                          "right": {
+                                            "_type": "Name",
+                                            "id": "unzip_file_task",
+                                            "lineno": 240,
+                                            "end_lineno": 240
+                                          },
+                                          "lineno": 240,
+                                          "end_lineno": 240
+                                        },
+                                        "op": {
+                                          "_type": "RShift"
+                                        },
+                                        "right": {
+                                          "_type": "Name",
+                                          "id": "load_data_task",
+                                          "lineno": 240,
+                                          "end_lineno": 240
+                                        },
+                                        "lineno": 240,
+                                        "end_lineno": 240
+                                      },
+                                      "op": {
+                                        "_type": "RShift"
+                                      },
+                                      "right": {
+                                        "_type": "Name",
+                                        "id": "handle_missing_task",
+                                        "lineno": 240,
+                                        "end_lineno": 240
+                                      },
+                                      "lineno": 240,
+                                      "end_lineno": 240
+                                    },
+                                    "op": {
+                                      "_type": "RShift"
+                                    },
+                                    "right": {
+                                      "_type": "Name",
+                                      "id": "remove_duplicates_task",
+                                      "lineno": 241,
+                                      "end_lineno": 241
+                                    },
+                                    "lineno": 240,
+                                    "end_lineno": 241
+                                  },
+                                  "op": {
+                                    "_type": "RShift"
+                                  },
+                                  "right": {
+                                    "_type": "Name",
+                                    "id": "transaction_status_task",
+                                    "lineno": 241,
+                                    "end_lineno": 241
+                                  },
+                                  "lineno": 240,
+                                  "end_lineno": 241
+                                },
+                                "op": {
+                                  "_type": "RShift"
+                                },
+                                "right": {
+                                  "_type": "Name",
+                                  "id": "anomaly_codes_task",
+                                  "lineno": 241,
+                                  "end_lineno": 241
+                                },
+                                "lineno": 240,
+                                "end_lineno": 241
+                              },
+                              "op": {
+                                "_type": "RShift"
+                              },
+                              "right": {
+                                "_type": "Name",
+                                "id": "cleaning_description_task",
+                                "lineno": 241,
+                                "end_lineno": 241
+                              },
+                              "lineno": 240,
+                              "end_lineno": 241
+                            },
+                            "op": {
+                              "_type": "RShift"
+                            },
+                            "right": {
+                              "_type": "Name",
+                              "id": "removing_zero_unitprice_task",
+                              "lineno": 242,
+                              "end_lineno": 242
+                            },
+                            "lineno": 240,
+                            "end_lineno": 242
+                          },
+                          "op": {
+                            "_type": "RShift"
+                          },
+                          "right": {
+                            "_type": "Name",
+                            "id": "rfm_task",
+                            "lineno": 242,
+                            "end_lineno": 242
+                          },
+                          "lineno": 240,
+                          "end_lineno": 242
+                        },
+                        "op": {
+                          "_type": "RShift"
+                        },
+                        "right": {
+                          "_type": "Name",
+                          "id": "unique_products_task",
+                          "lineno": 242,
+                          "end_lineno": 242
+                        },
+                        "lineno": 240,
+                        "end_lineno": 242
+                      },
+                      "op": {
+                        "_type": "RShift"
+                      },
+                      "right": {
+                        "_type": "Name",
+                        "id": "customers_behavior_task",
+                        "lineno": 242,
+                        "end_lineno": 242
+                      },
+                      "lineno": 240,
+                      "end_lineno": 242
+                    },
+                    "op": {
+                      "_type": "RShift"
+                    },
+                    "right": {
+                      "_type": "Name",
+                      "id": "geographic_features_task",
+                      "lineno": 243,
+                      "end_lineno": 243
+                    },
+                    "lineno": 240,
+                    "end_lineno": 243
+                  },
+                  "op": {
+                    "_type": "RShift"
+                  },
+                  "right": {
+                    "_type": "Name",
+                    "id": "cancellation_details_task",
+                    "lineno": 243,
+                    "end_lineno": 243
+                  },
+                  "lineno": 240,
+                  "end_lineno": 243
+                },
+                "op": {
+                  "_type": "RShift"
+                },
+                "right": {
+                  "_type": "Name",
+                  "id": "seasonality_task",
+                  "lineno": 243,
+                  "end_lineno": 243
+                },
+                "lineno": 240,
+                "end_lineno": 243
+              },
+              "op": {
+                "_type": "RShift"
+              },
+              "right": {
+                "_type": "Name",
+                "id": "outlier_treatment_task",
+                "lineno": 243,
+                "end_lineno": 243
+              },
+              "lineno": 240,
+              "end_lineno": 243
+            },
+            "op": {
+              "_type": "RShift"
+            },
+            "right": {
+              "_type": "Name",
+              "id": "column_values_scaler_task",
+              "lineno": 244,
+              "end_lineno": 244
+            },
+            "lineno": 240,
+            "end_lineno": 244
+          },
+          "op": {
+            "_type": "RShift"
+          },
+          "right": {
+            "_type": "Name",
+            "id": "pca_task",
+            "lineno": 244,
+            "end_lineno": 244
+          },
+          "lineno": 240,
+          "end_lineno": 244
+        },
+        "op": {
+          "_type": "RShift"
+        },
+        "right": {
+          "_type": "Name",
+          "id": "correlation_check_task",
+          "lineno": 244,
+          "end_lineno": 244
+        },
+        "lineno": 240,
+        "end_lineno": 244
+      },
+      "lineno": 240,
+      "end_lineno": 244
+    },
+    {
+      "_type": "If",
+      "test": {
+        "_type": "Compare",
+        "left": {
+          "_type": "Name",
+          "id": "__name__",
+          "lineno": 247,
+          "end_lineno": 247
+        },
+        "ops": [
+          {
+            "_type": "Eq"
+          }
+        ],
+        "comparators": [
+          {
+            "_type": "Constant",
+            "value": "__main__",
+            "kind": null,
+            "lineno": 247,
+            "end_lineno": 247
+          }
+        ],
+        "lineno": 247,
+        "end_lineno": 247
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "dag",
+                "lineno": 248,
+                "end_lineno": 248
+              },
+              "attr": "cli",
+              "lineno": 248,
+              "end_lineno": 248
+            },
+            "args": [],
+            "keywords": [],
+            "lineno": 248,
+            "end_lineno": 248
+          },
+          "lineno": 248,
+          "end_lineno": 248
+        }
+      ],
+      "orelse": [],
+      "lineno": 247,
+      "end_lineno": 248
+    }
+  ],
+  "type_ignores": []
+}

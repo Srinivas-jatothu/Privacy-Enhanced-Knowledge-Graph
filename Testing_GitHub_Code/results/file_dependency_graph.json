@@ -1,0 +1,1004 @@
+[
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/download_data.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:ingest_data->src.download_data.ingest_data"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/unzip_data.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:unzip_file->src.unzip_data.unzip_file"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/data_loader.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:load_data->src.data_loader.load_data"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/missing_values_handler.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:handle_missing->src.missing_values_handler.handle_missing"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/duplicates_handler.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:remove_duplicates->src.duplicates_handler.remove_duplicates"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/transaction_status_handler.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:handle_transaction_status->src.transaction_status_handler.handle_transaction_status"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/anomaly_code_handler.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:handle_anomalous_codes->src.anomaly_code_handler.handle_anomalous_codes"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/cleaning_description.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:cleaning_description->src.cleaning_description.cleaning_description"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/removing_zero_unitprice.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:removing_zero->src.removing_zero_unitprice.removing_zero"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/rfm.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:rfm->src.rfm.rfm"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/unique_products.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:unique_products->src.unique_products.unique_products"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/customers_behavior.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:customers_behavior->src.customers_behavior.customers_behavior"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/geographic_features.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:geographic_features->src.geographic_features.geographic_features"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/cancellation_details.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:cancellation_details->src.cancellation_details.cancellation_details"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/seasonality.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:seasonality_impacts->src.seasonality.seasonality_impacts"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/outlier_treatment.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:removing_outlier->src.outlier_treatment.removing_outlier"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/scaler.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:scaler->src.scaler.scaler"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/pca.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:pc_analyzer->src.pca.pc_analyzer"
+    ]
+  },
+  {
+    "source": "dags/src/airflow.py",
+    "target": "src/correlation.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:correlation_check->src.correlation.correlation_check"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/download_data.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:ingest_data->src.download_data.ingest_data"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/unzip_data.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:unzip_file->src.unzip_data.unzip_file"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/data_loader.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:load_data->src.data_loader.load_data"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/missing_values_handler.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:handle_missing->src.missing_values_handler.handle_missing"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/duplicates_handler.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:remove_duplicates->src.duplicates_handler.remove_duplicates"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/transaction_status_handler.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:handle_transaction_status->src.transaction_status_handler.handle_transaction_status"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/anomaly_code_handler.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:handle_anomalous_codes->src.anomaly_code_handler.handle_anomalous_codes"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/cleaning_description.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:cleaning_description->src.cleaning_description.cleaning_description"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/removing_zero_unitprice.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:removing_zero->src.removing_zero_unitprice.removing_zero"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/rfm.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:rfm->src.rfm.rfm"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/unique_products.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:unique_products->src.unique_products.unique_products"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/customers_behavior.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:customers_behavior->src.customers_behavior.customers_behavior"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/geographic_features.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:geographic_features->src.geographic_features.geographic_features"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/cancellation_details.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:cancellation_details->src.cancellation_details.cancellation_details"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/seasonality.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:seasonality_impacts->src.seasonality.seasonality_impacts"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/outlier_treatment.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:removing_outlier->src.outlier_treatment.removing_outlier"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/scaler.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:scaler->src.scaler.scaler"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/pca.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:pc_analyzer->src.pca.pc_analyzer"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/airflow.py",
+    "target": "src/correlation.py",
+    "count": 1,
+    "provenance": {
+      "import_statements": 1
+    },
+    "reasons": [
+      "import:correlation_check->src.correlation.correlation_check"
+    ]
+  },
+  {
+    "source": "test/test_anomaly_code_handler.py",
+    "target": "src/anomaly_code_handler.py",
+    "count": 2,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 1
+    },
+    "reasons": [
+      "handle_anomalous_codes",
+      "import:handle_anomalous_codes->src.anomaly_code_handler.handle_anomalous_codes"
+    ]
+  },
+  {
+    "source": "test/test_cleaning_description.py",
+    "target": "src/cleaning_description.py",
+    "count": 2,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 1
+    },
+    "reasons": [
+      "cleaning_description",
+      "import:cleaning_description->src.cleaning_description.cleaning_description"
+    ]
+  },
+  {
+    "source": "test/test_correlation.py",
+    "target": "src/correlation.py",
+    "count": 7,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 6
+    },
+    "reasons": [
+      "correlation_check",
+      "import:correlation_check->src.correlation.correlation_check"
+    ]
+  },
+  {
+    "source": "test/test_data_loader.py",
+    "target": "src/data_loader.py",
+    "count": 3,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 2
+    },
+    "reasons": [
+      "import:load_data->src.data_loader.load_data",
+      "load_data"
+    ]
+  },
+  {
+    "source": "test/test_download_data.py",
+    "target": "src/download_data.py",
+    "count": 3,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 2
+    },
+    "reasons": [
+      "download_data.ingest_data",
+      "import:download_data->src.download_data"
+    ]
+  },
+  {
+    "source": "test/test_duplicates_handler.py",
+    "target": "src/duplicates_handler.py",
+    "count": 3,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 2
+    },
+    "reasons": [
+      "import:remove_duplicates->src.duplicates_handler.remove_duplicates",
+      "remove_duplicates"
+    ]
+  },
+  {
+    "source": "test/test_missing_values_handler.py",
+    "target": "src/missing_values_handler.py",
+    "count": 3,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 2
+    },
+    "reasons": [
+      "handle_missing",
+      "import:handle_missing->src.missing_values_handler.handle_missing"
+    ]
+  },
+  {
+    "source": "test/test_outlier_treatment.py",
+    "target": "src/outlier_treatment.py",
+    "count": 2,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 1
+    },
+    "reasons": [
+      "import:removing_outlier->src.outlier_treatment.removing_outlier",
+      "removing_outlier"
+    ]
+  },
+  {
+    "source": "test/test_pca.py",
+    "target": "src/pca.py",
+    "count": 6,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 5
+    },
+    "reasons": [
+      "import:pc_analyzer->src.pca.pc_analyzer",
+      "pc_analyzer"
+    ]
+  },
+  {
+    "source": "test/test_removing_zero_unitpirce.py",
+    "target": "src/removing_zero_unitprice.py",
+    "count": 2,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 1
+    },
+    "reasons": [
+      "import:removing_zero->src.removing_zero_unitprice.removing_zero",
+      "removing_zero"
+    ]
+  },
+  {
+    "source": "test/test_scaler.py",
+    "target": "src/scaler.py",
+    "count": 5,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 4
+    },
+    "reasons": [
+      "import:scaler->src.scaler.scaler",
+      "scaler"
+    ]
+  },
+  {
+    "source": "test/test_transaction_status_handler.py",
+    "target": "src/transaction_status_handler.py",
+    "count": 2,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 1
+    },
+    "reasons": [
+      "handle_transaction_status",
+      "import:handle_transaction_status->src.transaction_status_handler.handle_transaction_status"
+    ]
+  },
+  {
+    "source": "test/test_unzip_data.py",
+    "target": "src/unzip_data.py",
+    "count": 3,
+    "provenance": {
+      "import_statements": 1,
+      "call_sites": 2
+    },
+    "reasons": [
+      "import:unzip_data->src.unzip_data",
+      "unzip_data.unzip_file"
+    ]
+  },
+  {
+    "source": "dags/src/correlation.py",
+    "target": "dags/src/correlation.py",
+    "count": 2,
+    "provenance": {
+      "call_sites": 2
+    },
+    "reasons": [
+      "save_correlations_as_parquet",
+      "save_heatmap"
+    ]
+  },
+  {
+    "source": "dags/src/download_data.py",
+    "target": "dags/src/download_data.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "ingest_data"
+    ]
+  },
+  {
+    "source": "dags/src/pca.py",
+    "target": "dags/src/pca.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "pca_"
+    ]
+  },
+  {
+    "source": "dags/src/unzip_data.py",
+    "target": "dags/src/unzip_data.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "unzip_file"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/build.py",
+    "target": "gcpdeploy/src/build.py",
+    "count": 5,
+    "provenance": {
+      "call_sites": 5
+    },
+    "reasons": [
+      "create_training_job",
+      "deploy_model_to_endpoint",
+      "initialize_aiplatform",
+      "main",
+      "run_training_job"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/correlation.py",
+    "target": "gcpdeploy/src/correlation.py",
+    "count": 2,
+    "provenance": {
+      "call_sites": 2
+    },
+    "reasons": [
+      "save_correlations_as_parquet",
+      "save_heatmap"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/datapipeline.py",
+    "target": "dags/src/download_data.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "ingest_data"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/datapipeline.py",
+    "target": "dags/src/unzip_data.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "unzip_file"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/datapipeline.py",
+    "target": "dags/src/data_loader.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "load_data"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/datapipeline.py",
+    "target": "dags/src/missing_values_handler.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "handle_missing"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/datapipeline.py",
+    "target": "dags/src/duplicates_handler.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "remove_duplicates"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/datapipeline.py",
+    "target": "dags/src/transaction_status_handler.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "handle_transaction_status"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/datapipeline.py",
+    "target": "dags/src/anomaly_code_handler.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "handle_anomalous_codes"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/download_data.py",
+    "target": "gcpdeploy/src/download_data.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "ingest_data"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/inference.py",
+    "target": "gcpdeploy/src/inference.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "predict_custom_trained_model"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/inference.py",
+    "target": "gcpdeploy/src/serve/predict.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "client.predict"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/mflow_logging.py",
+    "target": "gcpdeploy/src/serve/predict.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "kmeans.predict"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/model_analysis.py",
+    "target": "gcpdeploy/src/model_analysis.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "normalize_data"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/model_analysis.py",
+    "target": "gcpdeploy/src/serve/predict.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "km.predict"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/pca.py",
+    "target": "gcpdeploy/src/pca.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "pca_"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/serve/predict.py",
+    "target": "gcpdeploy/src/serve/predict.py",
+    "count": 7,
+    "provenance": {
+      "call_sites": 7
+    },
+    "reasons": [
+      "create_table_if_not_exists",
+      "fetch_latest_model",
+      "get_table_schema",
+      "initialize_client_and_bucket",
+      "initialize_variables",
+      "load_model",
+      "model.predict"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "target": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "count": 5,
+    "provenance": {
+      "call_sites": 5
+    },
+    "reasons": [
+      "create_recommendations",
+      "identify_top_products",
+      "merge_customer_transactions",
+      "record_customer_purchases",
+      "remove_outliers"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/trainer/train.py",
+    "target": "gcpdeploy/src/trainer/train.py",
+    "count": 3,
+    "provenance": {
+      "call_sites": 3
+    },
+    "reasons": [
+      "kmeans_clustering",
+      "main",
+      "save_and_upload_model"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/trainer/train.py",
+    "target": "gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "generate_recommendations"
+    ]
+  },
+  {
+    "source": "gcpdeploy/src/unzip_data.py",
+    "target": "gcpdeploy/src/unzip_data.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "unzip_file"
+    ]
+  },
+  {
+    "source": "src/correlation.py",
+    "target": "src/correlation.py",
+    "count": 2,
+    "provenance": {
+      "call_sites": 2
+    },
+    "reasons": [
+      "save_correlations_as_parquet",
+      "save_heatmap"
+    ]
+  },
+  {
+    "source": "src/datapipeline.py",
+    "target": "dags/src/download_data.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "ingest_data"
+    ]
+  },
+  {
+    "source": "src/datapipeline.py",
+    "target": "dags/src/unzip_data.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "unzip_file"
+    ]
+  },
+  {
+    "source": "src/datapipeline.py",
+    "target": "dags/src/data_loader.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "load_data"
+    ]
+  },
+  {
+    "source": "src/datapipeline.py",
+    "target": "dags/src/missing_values_handler.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "handle_missing"
+    ]
+  },
+  {
+    "source": "src/datapipeline.py",
+    "target": "dags/src/duplicates_handler.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "remove_duplicates"
+    ]
+  },
+  {
+    "source": "src/datapipeline.py",
+    "target": "dags/src/transaction_status_handler.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "handle_transaction_status"
+    ]
+  },
+  {
+    "source": "src/datapipeline.py",
+    "target": "dags/src/anomaly_code_handler.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "handle_anomalous_codes"
+    ]
+  },
+  {
+    "source": "src/download_data.py",
+    "target": "src/download_data.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "ingest_data"
+    ]
+  },
+  {
+    "source": "src/pca.py",
+    "target": "src/pca.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "pca_"
+    ]
+  },
+  {
+    "source": "src/unzip_data.py",
+    "target": "src/unzip_data.py",
+    "count": 1,
+    "provenance": {
+      "call_sites": 1
+    },
+    "reasons": [
+      "unzip_file"
+    ]
+  }
+]

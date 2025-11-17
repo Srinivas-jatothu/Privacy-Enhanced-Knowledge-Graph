@@ -1,0 +1,32 @@
+{
+  "relpath": "src/scaler.py",
+  "manifest_meta": {
+    "relpath": "src/scaler.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\src\\scaler.py",
+    "size": 3485,
+    "mtime": 1763123859.5626068,
+    "mime": "text/x-python",
+    "is_text": true,
+    "sha256": "cba762c2417764d956e93031c5b83572f1d6b739891a3043740e995b6a416663",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\src__scaler.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "5",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'scaler.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "3485",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

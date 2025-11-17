@@ -1,0 +1,602 @@
+"""
+stepO_merge_into_kg.py
+
+Purpose:
+  - Merge existing pipeline artifacts (in results/) into a canonical, "normal" KG:
+    - Produce `kg_schema.json` (if not present), `nodes.json`, `edges.json`
+    - Produce Neo4j-friendly CSVs: `kg_nodes.csv`, `kg_edges.csv`
+  - Sources used (if present):
+    - manifest_enriched.json / manifest.json
+    - symbol_table.json
+    - module_index.json / module_defs.json
+    - import_aliases.json
+    - call_graph_enriched.json (preferred) or call_graph.json
+    - file_dependency_graph.json
+    - function_commits.json
+    - commits.json
+    - pull_requests.json
+    - commit_to_prs.json (or commit_to_prs mapping)
+    - dependencies.json / dependencies_by_file.json
+    - code_entities_full.json / code_entities_enriched.json
+    - extracted_text/* (for Document nodes)
+  - All outputs written to results/ by default.
+
+Notes:
+  - Designed to be robust to missing intermediate artifacts.
+  - Uses deterministic canonical IDs:
+      <TYPE>:<identifier> e.g. File:src/main.py, Function:package.module.func_name, Commit:6edf754...
+  - Edges contain `provenance` (list of sources) and `count` where numeric counts are available.
+
+Usage:
+  python stepO_merge_into_kg.py --repo-dir /path/to/repo --results-dir ./results
+
+Author: PEKG pipeline (professional)
+"""
+
+from __future__ import annotations
+import argparse
+import csv
+import hashlib
+import json
+import logging
+import os
+import pathlib
+import sys
+from collections import defaultdict
+from typing import Any, Dict, List, Optional, Tuple
+
+# ---------- Defaults ----------
+DEFAULT_REPO_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "Ecommerce-Data-MLOps"))
+DEFAULT_RESULTS_DIR = os.path.join(os.getcwd(), "results")
+KG_SCHEMA_NAME = "kg_schema.json"
+
+# ---------- Logging ----------
+def setup_logger(out_dir: str, level=logging.INFO):
+    os.makedirs(out_dir, exist_ok=True)
+    logger = logging.getLogger("kg-merge")
+    logger.setLevel(level)
+    if not logger.handlers:
+        fh = logging.StreamHandler(sys.stdout)
+        fmt = logging.Formatter("%(asctime)s %(levelname)-8s %(message)s", "%H:%M:%S")
+        fh.setFormatter(fmt)
+        logger.addHandler(fh)
+    return logger
+
+# ---------- Helpers ----------
+def load_json(path: str) -> Optional[Any]:
+    if path and os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8") as fh:
+                return json.load(fh)
+        except Exception:
+            return None
+    return None
+
+def write_json(path: str, obj: Any) -> None:
+    with open(path, "w", encoding="utf-8") as fh:
+        json.dump(obj, fh, indent=2, ensure_ascii=False)
+
+def canonical_node_id(node_type: str, identifier: str) -> str:
+    # sanitize identifier (use forward slashes)
+    ident = identifier.replace("\\", "/")
+    return f"{node_type}:{ident}"
+
+def short_id(s: str, length: int = 8) -> str:
+    return hashlib.sha1(s.encode("utf-8")).hexdigest()[:length]
+
+def ensure_str(v):
+    return None if v is None else str(v)
+
+# ---------- Merge logic ----------
+def produce_schema_if_missing(results_dir: str, logger):
+    schema_path = os.path.join(results_dir, KG_SCHEMA_NAME)
+    if not os.path.exists(schema_path):
+        # write the embedded default schema (small)
+        default_schema = {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "title": "PEKG - Normal KG Schema (minimal)",
+            "description": "Auto-generated schema by stepO_merge_into_kg.py",
+            "node_types": ["File", "Module", "Function", "Class", "Commit", "PullRequest", "Package", "Config", "Document"],
+            "edge_types": ["IMPORTS", "CALLS", "DEFINES", "MODIFIED_BY", "CLOSED_BY", "DEPENDS_ON", "MENTIONS"]
+        }
+        write_json(schema_path, default_schema)
+        logger.info("Wrote default KG schema to %s", schema_path)
+    else:
+        logger.info("KG schema found: %s", schema_path)
+
+def load_artifacts(results_dir: str, logger) -> Dict[str, Any]:
+    # list of expected artifacts
+    artifacts = {
+        "manifest_enriched": load_json(os.path.join(results_dir, "manifest_enriched.json")),
+        "manifest": load_json(os.path.join(results_dir, "manifest.json")),
+        "symbol_table": load_json(os.path.join(results_dir, "symbol_table.json")),
+        "module_index": load_json(os.path.join(results_dir, "module_index.json")),
+        "import_aliases": load_json(os.path.join(results_dir, "import_aliases.json")),
+        "call_graph_enriched": load_json(os.path.join(results_dir, "call_graph_enriched.json")),
+        "call_graph": load_json(os.path.join(results_dir, "call_graph.json")),
+        "file_dependency_graph": load_json(os.path.join(results_dir, "file_dependency_graph.json")),
+        "function_commits": load_json(os.path.join(results_dir, "function_commits.json")),
+        "commits": load_json(os.path.join(results_dir, "commits.json")),
+        "pull_requests": load_json(os.path.join(results_dir, "pull_requests.json")),
+        "commit_to_prs": load_json(os.path.join(results_dir, "commit_to_prs.json")),
+        "dependencies": load_json(os.path.join(results_dir, "dependencies.json")),
+        "dependencies_by_file": load_json(os.path.join(results_dir, "dependencies_by_file.json")),
+        "code_entities_full": load_json(os.path.join(results_dir, "code_entities_full.json")),
+        "code_entities_enriched": load_json(os.path.join(results_dir, "code_entities_enriched.json")),
+        "extracted_text_dir": os.path.join(results_dir, "extracted_text"),
+        "raw_sources_dir": os.path.join(results_dir, "raw_sources"),
+    }
+    # log what we found
+    for k, v in artifacts.items():
+        if v is None and k.endswith("_dir"):
+            continue
+        logger.info("Artifact %-25s : %s", k, ("FOUND" if v is not None else "MISSING"))
+    return artifacts
+
+def build_nodes_and_index(artifacts: Dict[str, Any], repo_dir: str, results_dir: str, logger):
+    nodes: Dict[str, Dict[str, Any]] = {}   # id -> node dict
+    id_by_file = {}     # file_rel -> node id (File)
+    id_by_module = {}   # module name -> node id (Module)
+    id_by_symbol = {}   # qualified symbol -> node id (Function/Class)
+    id_by_commit = {}   # sha -> node id
+    id_by_pr = {}       # pr_number -> node id
+    id_by_package = {}  # pkg name@ver -> node id
+    # 1) File nodes from manifest_enriched or manifest
+    manifest = artifacts.get("manifest_enriched") or artifacts.get("manifest")
+    if manifest and isinstance(manifest, list):
+        for entry in manifest:
+            path = entry.get("path") or entry.get("name") or entry.get("file") or entry.get("relpath")
+            if not path:
+                continue
+            file_id = canonical_node_id("File", path)
+            nodes[file_id] = {
+                "id": file_id,
+                "type": "File",
+                "label": os.path.basename(path),
+                "path": path,
+                "size": entry.get("size"),
+                "mime": entry.get("mime"),
+                "hash": entry.get("sha") or entry.get("hash"),
+            }
+            id_by_file[path] = file_id
+    else:
+        # fallback: discover files under repo_dir
+        logger.info("No manifest found, discovering files under repo dir for File nodes")
+        for root, dirs, files in os.walk(repo_dir):
+            for f in files:
+                rel = os.path.relpath(os.path.join(root, f), repo_dir).replace("\\", "/")
+                file_id = canonical_node_id("File", rel)
+                nodes[file_id] = {"id": file_id, "type": "File", "label": f, "path": rel}
+                id_by_file[rel] = file_id
+
+    # 2) Module nodes
+    module_index = artifacts.get("module_index") or {}
+    if isinstance(module_index, dict):
+        for mod, info in module_index.items():
+            mid = canonical_node_id("Module", mod)
+            nodes[mid] = {"id": mid, "type": "Module", "label": mod, "name": mod, "file": info.get("file")}
+            id_by_module[mod] = mid
+            file_rel = info.get("file")
+            if file_rel and file_rel not in id_by_file:
+                fid = canonical_node_id("File", file_rel)
+                id_by_file[file_rel] = fid
+                if fid not in nodes:
+                    nodes[fid] = {"id": fid, "type": "File", "label": os.path.basename(file_rel), "path": file_rel}
+
+    # 3) Function & Class nodes from symbol_table or code_entities_full
+    symbol_table = artifacts.get("symbol_table") or {}
+    if isinstance(symbol_table, dict):
+        for qname, info in symbol_table.items():
+            # prefer qname as canonical qualified_name
+            typ = info.get("kind") or info.get("type") or "Function"
+            # normalize type mapping
+            if typ and typ.lower().startswith("class"):
+                ntype = "Class"
+            else:
+                ntype = "Function"
+            name = qname.split(".")[-1]
+            file_rel = info.get("file") or info.get("path") or info.get("filename")
+            lineno = info.get("lineno") or info.get("line")
+            node_id = canonical_node_id(ntype, qname)
+            nodes[node_id] = {
+                "id": node_id,
+                "type": ntype,
+                "label": name,
+                "qualified_name": qname,
+                "file": file_rel,
+                "lineno": lineno,
+                "attrs": info
+            }
+            id_by_symbol[qname] = node_id
+            # ensure file node exists
+            if file_rel and file_rel not in id_by_file:
+                fid = canonical_node_id("File", file_rel)
+                id_by_file[file_rel] = fid
+                nodes[fid] = {"id": fid, "type": "File", "label": os.path.basename(file_rel), "path": file_rel}
+
+    # 4) Commits
+    commits = artifacts.get("commits") or []
+    if isinstance(commits, list):
+        for c in commits:
+            sha = c.get("sha") or c.get("id") or c.get("commit", {}).get("sha") if isinstance(c, dict) else None
+            if not sha:
+                # some commit objects may be keyed differently
+                continue
+            cid = canonical_node_id("Commit", sha)
+            nodes[cid] = {"id": cid, "type": "Commit", "sha": sha, "message": c.get("message") or c.get("commit", {}).get("message"), "author": c.get("author") or c.get("commit", {}).get("author", {}).get("name"), "date": c.get("date") or c.get("commit", {}).get("author", {}).get("date")}
+            id_by_commit[sha] = cid
+
+    # 5) Pull requests
+    # prs = artifacts.get("pull_requests") or []
+    # if isinstance(prs, list):
+    #     for p in prs:
+    #         num = p.get("number") or p.get("id")
+    #         if num is None:
+    #             continue
+    #         pid = canonical_node_id("PullRequest", str(num))
+    #         nodes[pid] = {"id": pid, "type": "PullRequest", "number": int(num), "title": p.get("title"), "author": p.get("user") and p.get("user", {}).get("login") or p.get("author"), "created_at": p.get("created_at"), "merged_at": p.get("merged_at")}
+    #         id_by_pr[str(num)] = pid
+    prs = artifacts.get("pull_requests") or []
+    if isinstance(prs, list):
+        for p in prs:
+            # guard for non-dict entries
+            if not isinstance(p, dict):
+                # if the entry itself is just an id/number, skip or create a minimal node
+                try:
+                    num = int(p)
+                except Exception:
+                    continue
+                pid = canonical_node_id("PullRequest", str(num))
+                nodes[pid] = {"id": pid, "type": "PullRequest", "number": int(num)}
+                id_by_pr[str(num)] = pid
+                continue
+
+            num = p.get("number") or p.get("id")
+            if num is None:
+                continue
+            # resolve author: user may be dict {'login':...} or a string username, or missing
+            user_field = p.get("user")
+            if isinstance(user_field, dict):
+                author = user_field.get("login") or user_field.get("name") or p.get("author")
+            elif isinstance(user_field, str):
+                author = user_field
+            else:
+                author = p.get("author")
+            # create PR node
+            pid = canonical_node_id("PullRequest", str(num))
+            nodes[pid] = {
+                "id": pid,
+                "type": "PullRequest",
+                "number": int(num) if isinstance(num, (int, str)) and str(num).isdigit() else num,
+                "title": p.get("title"),
+                "author": author,
+                "created_at": p.get("created_at"),
+                "merged_at": p.get("merged_at"),
+                "attrs": p  # keep raw attrs for debugging if you want
+            }
+            id_by_pr[str(num)] = pid
+
+
+    # 6) Packages from dependencies
+    deps = artifacts.get("dependencies") or []
+    if isinstance(deps, list):
+        for d in deps:
+            name = d.get("name")
+            version = d.get("version") or ""
+            if not name:
+                continue
+            key = f"{name}@{version}"
+            pid = canonical_node_id("Package", key)
+            nodes[pid] = {"id": pid, "type": "Package", "name": name, "version": version}
+            id_by_package[key] = pid
+
+    # 7) Documents / extracted_text: create Document nodes pointing to the file
+    extracted_dir = artifacts.get("extracted_text_dir")
+    if extracted_dir and os.path.isdir(extracted_dir):
+        for root, dirs, files in os.walk(extracted_dir):
+            for f in files:
+                full = os.path.join(root, f)
+                rel = os.path.relpath(full, results_dir).replace("\\", "/")
+                text_preview = None
+                try:
+                    with open(full, "r", encoding="utf-8", errors="replace") as fh:
+                        text_preview = fh.read(2000)
+                except Exception:
+                    text_preview = None
+                doc_id = canonical_node_id("Document", rel)
+                nodes[doc_id] = {"id": doc_id, "type": "Document", "file": rel, "text_preview": text_preview}
+    # 8) Code entities full (fallback for docstrings)
+    code_entities = artifacts.get("code_entities_full") or artifacts.get("code_entities_enriched")
+    if isinstance(code_entities, list):
+        # code_entities entries often contain file, functions, classes, docstrings
+        for ent in code_entities:
+            fpath = ent.get("file") or ent.get("path")
+            funcs = ent.get("functions") or []
+            for f in funcs:
+                qname = f.get("qualified_name") or f.get("name")
+                if not qname:
+                    continue
+                if qname not in id_by_symbol:
+                    node_id = canonical_node_id("Function", qname)
+                    nodes[node_id] = {"id": node_id, "type": "Function", "qualified_name": qname, "file": fpath, "signature": f.get("sig"), "docstring": f.get("doc")}
+                    id_by_symbol[qname] = node_id
+                    if fpath and fpath not in id_by_file:
+                        fid = canonical_node_id("File", fpath)
+                        id_by_file[fpath] = fid
+                        nodes[fid] = {"id": fid, "type": "File", "label": os.path.basename(fpath), "path": fpath}
+
+    return nodes, id_by_file, id_by_module, id_by_symbol, id_by_commit, id_by_pr, id_by_package
+
+def build_edges(
+    artifacts: Dict[str, Any],
+    nodes_index: Dict[str, Dict[str, Any]],
+    ids: Tuple[Dict[str, Any], Dict[str, str], Dict[str, str], Dict[str, str], Dict[str, str], Dict[str, str], Dict[str, str]],
+    results_dir: str,
+    logger,
+):
+    # nodes_index: nodes dict; ids: tuple of id maps
+    (_, id_by_file, id_by_module, id_by_symbol, id_by_commit, id_by_pr, id_by_package) = ids
+    edges = {}  # key: (src, tgt, type) -> {"count":int, "provenance":set(), "attrs": {}}
+    def add_edge(src_id, tgt_id, etype, count=1, prov=None, attrs=None):
+        if not src_id or not tgt_id:
+            return
+        key = (src_id, tgt_id, etype)
+        if key not in edges:
+            edges[key] = {"count": 0, "provenance": defaultdict(int), "attrs": {}}
+        edges[key]["count"] += count
+        if prov:
+            edges[key]["provenance"][prov] += 1
+        if attrs:
+            edges[key]["attrs"].update(attrs)
+
+    # 1) IMPORTS from file_dependency_graph.json
+    file_dep = artifacts.get("file_dependency_graph") or []
+    if isinstance(file_dep, list):
+        for rec in file_dep:
+            src = rec.get("source")
+            tgt = rec.get("target")
+            if src in id_by_file:
+                src_id = id_by_file[src]
+            else:
+                src_id = canonical_node_id("File", src)
+                # ensure in nodes
+                if src_id not in nodes_index:
+                    nodes_index[src_id] = {"id": src_id, "type": "File", "path": src, "label": os.path.basename(src)}
+            if tgt in id_by_file:
+                tgt_id = id_by_file[tgt]
+            else:
+                tgt_id = canonical_node_id("File", tgt)
+                if tgt_id not in nodes_index:
+                    nodes_index[tgt_id] = {"id": tgt_id, "type": "File", "path": tgt, "label": os.path.basename(tgt)}
+            add_edge(src_id, tgt_id, "IMPORTS", count=rec.get("count", 1), prov="file_dependency_graph", attrs={"reasons": rec.get("reasons")})
+
+    # 2) CALLS from call_graph_enriched or call_graph
+    call_graph = artifacts.get("call_graph_enriched") or artifacts.get("call_graph") or []
+    if isinstance(call_graph, list):
+        for rec in call_graph:
+            caller_file = rec.get("caller_file") or rec.get("caller_filepath") or rec.get("caller")
+            callee_resolved = rec.get("enrichments", {}).get("resolved_symbol") if isinstance(rec.get("enrichments"), dict) else None
+            callee_chain = rec.get("callee_chain") or rec.get("callee")
+            # map caller function id
+            caller_qual = rec.get("caller_qualified") or rec.get("caller_symbol")
+            caller_id = None
+            if caller_qual and caller_qual in id_by_symbol:
+                caller_id = id_by_symbol[caller_qual]
+            else:
+                # derive a synthetic function id from caller_file+lineno
+                lineno = rec.get("site_lineno") or rec.get("caller_lineno")
+                if caller_file:
+                    func_ident = f"{caller_file}:{lineno or '0'}"
+                    caller_id = canonical_node_id("Function", func_ident)
+                    if caller_id not in nodes_index:
+                        nodes_index[caller_id] = {"id": caller_id, "type": "Function", "label": os.path.basename(caller_file), "file": caller_file, "lineno": lineno}
+            # map callee function id
+            callee_id = None
+            if callee_resolved and callee_resolved in id_by_symbol:
+                callee_id = id_by_symbol[callee_resolved]
+            elif callee_chain:
+                # search for best matching symbol (endswith)
+                cand = None
+                short = callee_chain.split(".")[-1]
+                for q, nid in id_by_symbol.items():
+                    if q.endswith(f".{short}") or q.endswith(short):
+                        cand = nid
+                        break
+                callee_id = cand
+            # add edge (only if both sides exist)
+            if caller_id and callee_id:
+                add_edge(caller_id, callee_id, "CALLS", count=1, prov="call_graph_enriched" if artifacts.get("call_graph_enriched") else "call_graph", attrs={"callee_chain": callee_chain})
+            else:
+                # optionally add file-level call edge (caller_file -> callee_file) if resolved by enriched symbol mapping
+                if caller_file and callee_resolved and callee_resolved in ids[3]:
+                    callee_file = nodes_index[ids[3][callee_resolved]]["file"]
+                    src_file_id = id_by_file.get(caller_file) or canonical_node_id("File", caller_file)
+                    tgt_file_id = id_by_file.get(callee_file) or canonical_node_id("File", callee_file)
+                    add_edge(src_file_id, tgt_file_id, "CALLS_FILE_LEVEL", count=1, prov="call_graph_fallback")
+
+    # 3) DEFINES (file -> function/class)
+    # iterate over symbol table index in nodes_index (functions/classes)
+    for nid, node in list(nodes_index.items()):
+        if not node:
+            continue
+        if node.get("type") in ("Function", "Class"):
+            fpath = node.get("file")
+            if fpath:
+                fid = id_by_file.get(fpath) or canonical_node_id("File", fpath)
+                if fid not in nodes_index:
+                    nodes_index[fid] = {"id": fid, "type": "File", "path": fpath, "label": os.path.basename(fpath)}
+                add_edge(fid, nid, "DEFINES", count=1, prov="symbol_table")
+
+    # 4) MODIFIED_BY (function -> commit) from function_commits
+    func_commits = artifacts.get("function_commits") or {}
+    if isinstance(func_commits, dict):
+        for func, commits in func_commits.items():
+            # commits may be list of commit dicts or list of shas
+            func_id = id_by_symbol.get(func) or canonical_node_id("Function", func)
+            if func_id not in nodes_index:
+                nodes_index[func_id] = {"id": func_id, "type": "Function", "qualified_name": func}
+            for c in commits or []:
+                sha = c.get("sha") if isinstance(c, dict) else c
+                if not sha:
+                    continue
+                commit_node = id_by_commit.get(sha) or canonical_node_id("Commit", sha)
+                # ensure commit node exists in nodes_index
+                if commit_node not in nodes_index:
+                    nodes_index[commit_node] = {"id": commit_node, "type": "Commit", "sha": sha}
+                add_edge(func_id, commit_node, "MODIFIED_BY", count=1, prov="function_commits")
+
+    # 5) CLOSED_BY (commit -> PR) from commit_to_prs
+    commit_to_prs = artifacts.get("commit_to_prs") or {}
+    if isinstance(commit_to_prs, dict):
+        for sha, pr_list in commit_to_prs.items():
+            commit_node = id_by_commit.get(sha) or canonical_node_id("Commit", sha)
+            if commit_node not in nodes_index:
+                nodes_index[commit_node] = {"id": commit_node, "type": "Commit", "sha": sha}
+            for pr in pr_list or []:
+                prnum = pr.get("number") if isinstance(pr, dict) else pr
+                pr_node = id_by_pr.get(str(prnum)) or canonical_node_id("PullRequest", str(prnum))
+                if pr_node not in nodes_index:
+                    nodes_index[pr_node] = {"id": pr_node, "type": "PullRequest", "number": prnum}
+                add_edge(commit_node, pr_node, "CLOSED_BY", count=1, prov="commit_to_prs")
+
+    # 6) DEPENDS_ON (file -> package) from dependencies_by_file or dependencies
+    deps_by_file = artifacts.get("dependencies_by_file") or {}
+    if isinstance(deps_by_file, dict):
+        for file_rel, deps in deps_by_file.items():
+            src_fid = id_by_file.get(file_rel) or canonical_node_id("File", file_rel)
+            if src_fid not in nodes_index:
+                nodes_index[src_fid] = {"id": src_fid, "type": "File", "path": file_rel}
+            for d in deps or []:
+                name = d.get("name")
+                ver = d.get("version") or ""
+                key = f"{name}@{ver}"
+                pkg_node = id_by_package.get(key) or canonical_node_id("Package", key)
+                if pkg_node not in nodes_index:
+                    nodes_index[pkg_node] = {"id": pkg_node, "type": "Package", "name": name, "version": ver}
+                add_edge(src_fid, pkg_node, "DEPENDS_ON", count=1, prov="dependencies_by_file")
+    else:
+        # fall back to dependencies list
+        deps = artifacts.get("dependencies") or []
+        for d in deps:
+            file_rel = d.get("file")
+            name = d.get("name")
+            ver = d.get("version") or ""
+            if not name:
+                continue
+            src_fid = id_by_file.get(file_rel) if file_rel else None
+            pkg_node = id_by_package.get(f"{name}@{ver}") or canonical_node_id("Package", f"{name}@{ver}")
+            if pkg_node not in nodes_index:
+                nodes_index[pkg_node] = {"id": pkg_node, "type": "Package", "name": name, "version": ver}
+            if src_fid:
+                add_edge(src_fid, pkg_node, "DEPENDS_ON", count=1, prov="dependencies")
+
+    # 7) MENTIONS (File/Function -> Document) using extracted_text mapping heuristic
+    extracted_dir = artifacts.get("extracted_text_dir")
+    if extracted_dir and os.path.isdir(extracted_dir):
+        # map doc nodes by path relative to results_dir
+        for root, dirs, files in os.walk(extracted_dir):
+            for f in files:
+                full = os.path.join(root, f)
+                # rel = os.path.relpath(full, results_dir).replace("\\", "/")
+                rel = os.path.relpath(full, results_dir).replace("\\", "/")
+                doc_id = canonical_node_id("Document", rel)
+                # find files that mention this document (heuristic: same basename)
+                base = os.path.splitext(f)[0]
+                # map to files with base in name
+                for file_rel, fid in id_by_file.items():
+                    if base in os.path.basename(file_rel):
+                        add_edge(fid, doc_id, "MENTIONS", count=1, prov="extracted_text_match")
+
+    return edges
+
+def edges_to_lists(edges: Dict[Tuple[str,str,str], Dict[str,Any]]):
+    edge_list = []
+    for (src, tgt, etype), meta in edges.items():
+        rec = {
+            "source": src,
+            "target": tgt,
+            "type": etype,
+            "count": int(meta["count"]),
+            "provenance": dict(meta["provenance"]),
+            "attrs": meta.get("attrs", {})
+        }
+        edge_list.append(rec)
+    return edge_list
+
+def write_outputs(results_dir: str, nodes_index: Dict[str, Any], edges_list: List[Dict[str,Any]], logger):
+    os.makedirs(results_dir, exist_ok=True)
+    nodes_out = os.path.join(results_dir, "nodes.json")
+    edges_out = os.path.join(results_dir, "edges.json")
+    nodes_csv = os.path.join(results_dir, "kg_nodes.csv")
+    edges_csv = os.path.join(results_dir, "kg_edges.csv")
+
+    # write JSON
+    write_json(nodes_out, list(nodes_index.values()))
+    write_json(edges_out, edges_list)
+    logger.info("Wrote nodes.json (%d entries) and edges.json (%d entries)", len(nodes_index), len(edges_list))
+
+    # write CSVs (nodes: id,type,label,properties(json))
+    with open(nodes_csv, "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(["id", "type", "label", "properties"])
+        for nid, node in nodes_index.items():
+            label = node.get("label") or node.get("id")
+            properties = dict(node)
+            # remove id/label/type from props to avoid duplication
+            properties.pop("id", None)
+            properties.pop("label", None)
+            properties.pop("type", None)
+            w.writerow([nid, node.get("type"), label, json.dumps(properties, ensure_ascii=False)])
+
+    # edges CSV: source,target,type,count,provenance(json),attrs(json)
+    with open(edges_csv, "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        w.writerow(["source", "target", "type", "count", "provenance", "attrs"])
+        for e in edges_list:
+            w.writerow([e["source"], e["target"], e["type"], e.get("count", 1), json.dumps(e.get("provenance", {}), ensure_ascii=False), json.dumps(e.get("attrs", {}), ensure_ascii=False)])
+
+    logger.info("Wrote CSV exports: %s, %s", nodes_csv, edges_csv)
+
+# ---------- CLI ----------
+def parse_args():
+    p = argparse.ArgumentParser(description="Merge pipeline artifacts into a canonical KG (nodes.json, edges.json, CSVs).")
+    p.add_argument("--repo-dir", default=DEFAULT_REPO_DIR, help="Repository root (source files).")
+    p.add_argument("--results-dir", default=DEFAULT_RESULTS_DIR, help="Directory containing artifacts and to write KG outputs.")
+    p.add_argument("--log-level", default="INFO", help="Logging level.")
+    return p.parse_args()
+
+def main():
+    args = parse_args()
+    logger = setup_logger(args.results_dir, getattr(logging, args.log_level.upper(), logging.INFO))
+    logger.info("Starting KG merge (normal KG)")
+    logger.info("Repo dir: %s", args.repo_dir)
+    logger.info("Results dir: %s", args.results_dir)
+
+    produce_schema_if_missing(args.results_dir, logger)
+    artifacts = load_artifacts(args.results_dir, logger)
+    nodes_index, id_by_file, id_by_module, id_by_symbol, id_by_commit, id_by_pr, id_by_package = build_nodes_and_index(artifacts, args.repo_dir, args.results_dir, logger)
+    # edges = build_edges(artifacts, nodes_index, (nodes_index, id_by_file, id_by_module, id_by_symbol, id_by_commit, id_by_pr, id_by_package), logger)
+    edges = edges = build_edges(
+    artifacts,
+    nodes_index,
+    (nodes_index, id_by_file, id_by_module, id_by_symbol, id_by_commit, id_by_pr, id_by_package),
+    args.results_dir,
+    logger,)
+    edge_list = edges_to_lists(edges)
+    write_outputs(args.results_dir, nodes_index, edge_list, logger)
+
+    # basic summary
+    logger.info("KG merge complete: nodes=%d edges=%d", len(nodes_index), len(edge_list))
+    # top hubs (out-degree by source)
+    outdeg = defaultdict(int)
+    indeg = defaultdict(int)
+    for e in edge_list:
+        outdeg[e["source"]] += e.get("count", 1)
+        indeg[e["target"]] += e.get("count", 1)
+    top_out = sorted(outdeg.items(), key=lambda x: x[1], reverse=True)[:10]
+    top_in = sorted(indeg.items(), key=lambda x: x[1], reverse=True)[:10]
+    logger.info("Top 10 sources by out-degree: %s", top_out)
+    logger.info("Top 10 targets by in-degree: %s", top_in)
+
+if __name__ == "__main__":
+    main()

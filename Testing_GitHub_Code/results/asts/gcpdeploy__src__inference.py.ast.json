@@ -1,0 +1,982 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "ImportFrom",
+      "module": "typing",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "Dict",
+          "asname": null,
+          "lineno": 1,
+          "end_lineno": 1
+        },
+        {
+          "_type": "alias",
+          "name": "List",
+          "asname": null,
+          "lineno": 1,
+          "end_lineno": 1
+        },
+        {
+          "_type": "alias",
+          "name": "Union",
+          "asname": null,
+          "lineno": 1,
+          "end_lineno": 1
+        }
+      ],
+      "level": 0,
+      "lineno": 1,
+      "end_lineno": 1
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "google.cloud",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "aiplatform",
+          "asname": null,
+          "lineno": 2,
+          "end_lineno": 2
+        }
+      ],
+      "level": 0,
+      "lineno": 2,
+      "end_lineno": 2
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "google.protobuf",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "json_format",
+          "asname": null,
+          "lineno": 3,
+          "end_lineno": 3
+        }
+      ],
+      "level": 0,
+      "lineno": 3,
+      "end_lineno": 3
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "google.protobuf.struct_pb2",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "Value",
+          "asname": null,
+          "lineno": 4,
+          "end_lineno": 4
+        }
+      ],
+      "level": 0,
+      "lineno": 4,
+      "end_lineno": 4
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "predict_custom_trained_model",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [
+          {
+            "_type": "arg",
+            "arg": "project",
+            "annotation": {
+              "_type": "Name",
+              "id": "str",
+              "lineno": 8,
+              "end_lineno": 8
+            },
+            "type_comment": null,
+            "lineno": 8,
+            "end_lineno": 8
+          },
+          {
+            "_type": "arg",
+            "arg": "endpoint_id",
+            "annotation": {
+              "_type": "Name",
+              "id": "str",
+              "lineno": 9,
+              "end_lineno": 9
+            },
+            "type_comment": null,
+            "lineno": 9,
+            "end_lineno": 9
+          },
+          {
+            "_type": "arg",
+            "arg": "instances",
+            "annotation": {
+              "_type": "Subscript",
+              "value": {
+                "_type": "Name",
+                "id": "Union",
+                "lineno": 10,
+                "end_lineno": 10
+              },
+              "slice": {
+                "_type": "Tuple",
+                "elts": [
+                  {
+                    "_type": "Name",
+                    "id": "Dict",
+                    "lineno": 10,
+                    "end_lineno": 10
+                  },
+                  {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Name",
+                      "id": "List",
+                      "lineno": 10,
+                      "end_lineno": 10
+                    },
+                    "slice": {
+                      "_type": "Name",
+                      "id": "Dict",
+                      "lineno": 10,
+                      "end_lineno": 10
+                    },
+                    "lineno": 10,
+                    "end_lineno": 10
+                  }
+                ],
+                "lineno": 10,
+                "end_lineno": 10
+              },
+              "lineno": 10,
+              "end_lineno": 10
+            },
+            "type_comment": null,
+            "lineno": 10,
+            "end_lineno": 10
+          },
+          {
+            "_type": "arg",
+            "arg": "location",
+            "annotation": {
+              "_type": "Name",
+              "id": "str",
+              "lineno": 11,
+              "end_lineno": 11
+            },
+            "type_comment": null,
+            "lineno": 11,
+            "end_lineno": 11
+          },
+          {
+            "_type": "arg",
+            "arg": "api_endpoint",
+            "annotation": {
+              "_type": "Name",
+              "id": "str",
+              "lineno": 12,
+              "end_lineno": 12
+            },
+            "type_comment": null,
+            "lineno": 12,
+            "end_lineno": 12
+          }
+        ],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": [
+          {
+            "_type": "Constant",
+            "value": "us-east1",
+            "kind": null,
+            "lineno": 11,
+            "end_lineno": 11
+          },
+          {
+            "_type": "Constant",
+            "value": "us-east1-aiplatform.googleapis.com",
+            "kind": null,
+            "lineno": 12,
+            "end_lineno": 12
+          }
+        ]
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "Make a prediction to a deployed custom trained model\n    Args:\n        project (str): Project ID\n        endpoint_id (str): Endpoint ID\n        instances (Union"
+          },
+          "lineno": 14,
+          "end_lineno": 21
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "client_options",
+              "lineno": 24,
+              "end_lineno": 24
+            }
+          ],
+          "value": {
+            "_type": "Dict",
+            "keys": [
+              {
+                "_type": "Constant",
+                "value": "api_endpoint",
+                "kind": null,
+                "lineno": 24,
+                "end_lineno": 24
+              }
+            ],
+            "values": [
+              {
+                "_type": "Name",
+                "id": "api_endpoint",
+                "lineno": 24,
+                "end_lineno": 24
+              }
+            ],
+            "lineno": 24,
+            "end_lineno": 24
+          },
+          "type_comment": null,
+          "lineno": 24,
+          "end_lineno": 24
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "client",
+              "lineno": 27,
+              "end_lineno": 27
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "aiplatform",
+                  "lineno": 27,
+                  "end_lineno": 27
+                },
+                "attr": "gapic",
+                "lineno": 27,
+                "end_lineno": 27
+              },
+              "attr": "PredictionServiceClient",
+              "lineno": 27,
+              "end_lineno": 27
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "client_options",
+                "value": {
+                  "_type": "Name",
+                  "id": "client_options",
+                  "lineno": 27,
+                  "end_lineno": 27
+                },
+                "lineno": 27,
+                "end_lineno": 27
+              }
+            ],
+            "lineno": 27,
+            "end_lineno": 27
+          },
+          "type_comment": null,
+          "lineno": 27,
+          "end_lineno": 27
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "instances",
+              "lineno": 29,
+              "end_lineno": 29
+            }
+          ],
+          "value": {
+            "_type": "IfExp",
+            "test": {
+              "_type": "Call",
+              "func": {
+                "_type": "Name",
+                "id": "isinstance",
+                "lineno": 29,
+                "end_lineno": 29
+              },
+              "args": [
+                {
+                  "_type": "Name",
+                  "id": "instances",
+                  "lineno": 29,
+                  "end_lineno": 29
+                },
+                {
+                  "_type": "Name",
+                  "id": "list",
+                  "lineno": 29,
+                  "end_lineno": 29
+                }
+              ],
+              "keywords": [],
+              "lineno": 29,
+              "end_lineno": 29
+            },
+            "body": {
+              "_type": "Name",
+              "id": "instances",
+              "lineno": 29,
+              "end_lineno": 29
+            },
+            "orelse": {
+              "_type": "List",
+              "elts": [
+                {
+                  "_type": "Name",
+                  "id": "instances",
+                  "lineno": 29,
+                  "end_lineno": 29
+                }
+              ],
+              "lineno": 29,
+              "end_lineno": 29
+            },
+            "lineno": 29,
+            "end_lineno": 29
+          },
+          "type_comment": null,
+          "lineno": 29,
+          "end_lineno": 29
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "instances",
+              "lineno": 30,
+              "end_lineno": 30
+            }
+          ],
+          "value": {
+            "_type": "ListComp",
+            "elt": {
+              "_type": "Call",
+              "func": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "json_format",
+                  "lineno": 31,
+                  "end_lineno": 31
+                },
+                "attr": "ParseDict",
+                "lineno": 31,
+                "end_lineno": 31
+              },
+              "args": [
+                {
+                  "_type": "Name",
+                  "id": "instance_dict",
+                  "lineno": 31,
+                  "end_lineno": 31
+                },
+                {
+                  "_type": "Call",
+                  "func": {
+                    "_type": "Name",
+                    "id": "Value",
+                    "lineno": 31,
+                    "end_lineno": 31
+                  },
+                  "args": [],
+                  "keywords": [],
+                  "lineno": 31,
+                  "end_lineno": 31
+                }
+              ],
+              "keywords": [],
+              "lineno": 31,
+              "end_lineno": 31
+            },
+            "generators": [
+              {
+                "_type": "comprehension",
+                "target": {
+                  "_type": "Name",
+                  "id": "instance_dict",
+                  "lineno": 31,
+                  "end_lineno": 31
+                },
+                "iter": {
+                  "_type": "Name",
+                  "id": "instances",
+                  "lineno": 31,
+                  "end_lineno": 31
+                },
+                "ifs": [],
+                "is_async": 0
+              }
+            ],
+            "lineno": 30,
+            "end_lineno": 32
+          },
+          "type_comment": null,
+          "lineno": 30,
+          "end_lineno": 32
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "parameters_dict",
+              "lineno": 33,
+              "end_lineno": 33
+            }
+          ],
+          "value": {
+            "_type": "Dict",
+            "keys": [],
+            "values": [],
+            "lineno": 33,
+            "end_lineno": 33
+          },
+          "type_comment": null,
+          "lineno": 33,
+          "end_lineno": 33
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "parameters",
+              "lineno": 34,
+              "end_lineno": 34
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "json_format",
+                "lineno": 34,
+                "end_lineno": 34
+              },
+              "attr": "ParseDict",
+              "lineno": 34,
+              "end_lineno": 34
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "parameters_dict",
+                "lineno": 34,
+                "end_lineno": 34
+              },
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "Value",
+                  "lineno": 34,
+                  "end_lineno": 34
+                },
+                "args": [],
+                "keywords": [],
+                "lineno": 34,
+                "end_lineno": 34
+              }
+            ],
+            "keywords": [],
+            "lineno": 34,
+            "end_lineno": 34
+          },
+          "type_comment": null,
+          "lineno": 34,
+          "end_lineno": 34
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "endpoint",
+              "lineno": 35,
+              "end_lineno": 35
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "client",
+                "lineno": 35,
+                "end_lineno": 35
+              },
+              "attr": "endpoint_path",
+              "lineno": 35,
+              "end_lineno": 35
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "project",
+                "value": {
+                  "_type": "Name",
+                  "id": "project",
+                  "lineno": 36,
+                  "end_lineno": 36
+                },
+                "lineno": 36,
+                "end_lineno": 36
+              },
+              {
+                "_type": "keyword",
+                "arg": "location",
+                "value": {
+                  "_type": "Name",
+                  "id": "location",
+                  "lineno": 36,
+                  "end_lineno": 36
+                },
+                "lineno": 36,
+                "end_lineno": 36
+              },
+              {
+                "_type": "keyword",
+                "arg": "endpoint",
+                "value": {
+                  "_type": "Name",
+                  "id": "endpoint_id",
+                  "lineno": 36,
+                  "end_lineno": 36
+                },
+                "lineno": 36,
+                "end_lineno": 36
+              }
+            ],
+            "lineno": 35,
+            "end_lineno": 37
+          },
+          "type_comment": null,
+          "lineno": 35,
+          "end_lineno": 37
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "response",
+              "lineno": 38,
+              "end_lineno": 38
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Name",
+                "id": "client",
+                "lineno": 38,
+                "end_lineno": 38
+              },
+              "attr": "predict",
+              "lineno": 38,
+              "end_lineno": 38
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "endpoint",
+                "value": {
+                  "_type": "Name",
+                  "id": "endpoint",
+                  "lineno": 39,
+                  "end_lineno": 39
+                },
+                "lineno": 39,
+                "end_lineno": 39
+              },
+              {
+                "_type": "keyword",
+                "arg": "instances",
+                "value": {
+                  "_type": "Name",
+                  "id": "instances",
+                  "lineno": 39,
+                  "end_lineno": 39
+                },
+                "lineno": 39,
+                "end_lineno": 39
+              },
+              {
+                "_type": "keyword",
+                "arg": "parameters",
+                "value": {
+                  "_type": "Name",
+                  "id": "parameters",
+                  "lineno": 39,
+                  "end_lineno": 39
+                },
+                "lineno": 39,
+                "end_lineno": 39
+              }
+            ],
+            "lineno": 38,
+            "end_lineno": 40
+          },
+          "type_comment": null,
+          "lineno": 38,
+          "end_lineno": 40
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "print",
+              "lineno": 41,
+              "end_lineno": 41
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "response",
+                "kind": null,
+                "lineno": 41,
+                "end_lineno": 41
+              }
+            ],
+            "keywords": [],
+            "lineno": 41,
+            "end_lineno": 41
+          },
+          "lineno": 41,
+          "end_lineno": 41
+        },
+        {
+          "_type": "Expr",
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "print",
+              "lineno": 42,
+              "end_lineno": 42
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": " deployed_model_id:",
+                "kind": null,
+                "lineno": 42,
+                "end_lineno": 42
+              },
+              {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "response",
+                  "lineno": 42,
+                  "end_lineno": 42
+                },
+                "attr": "deployed_model_id",
+                "lineno": 42,
+                "end_lineno": 42
+              }
+            ],
+            "keywords": [],
+            "lineno": 42,
+            "end_lineno": 42
+          },
+          "lineno": 42,
+          "end_lineno": 42
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "predictions",
+              "lineno": 44,
+              "end_lineno": 44
+            }
+          ],
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "response",
+              "lineno": 44,
+              "end_lineno": 44
+            },
+            "attr": "predictions",
+            "lineno": 44,
+            "end_lineno": 44
+          },
+          "type_comment": null,
+          "lineno": 44,
+          "end_lineno": 44
+        },
+        {
+          "_type": "For",
+          "target": {
+            "_type": "Name",
+            "id": "prediction",
+            "lineno": 45,
+            "end_lineno": 45
+          },
+          "iter": {
+            "_type": "Name",
+            "id": "predictions",
+            "lineno": 45,
+            "end_lineno": 45
+          },
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "print",
+                  "lineno": 46,
+                  "end_lineno": 46
+                },
+                "args": [
+                  {
+                    "_type": "Constant",
+                    "value": " prediction:",
+                    "kind": null,
+                    "lineno": 46,
+                    "end_lineno": 46
+                  },
+                  {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "dict",
+                      "lineno": 46,
+                      "end_lineno": 46
+                    },
+                    "args": [
+                      {
+                        "_type": "Name",
+                        "id": "prediction",
+                        "lineno": 46,
+                        "end_lineno": 46
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 46,
+                    "end_lineno": 46
+                  }
+                ],
+                "keywords": [],
+                "lineno": 46,
+                "end_lineno": 46
+              },
+              "lineno": 46,
+              "end_lineno": 46
+            }
+          ],
+          "orelse": [],
+          "type_comment": null,
+          "lineno": 45,
+          "end_lineno": 46
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 7,
+      "end_lineno": 46
+    },
+    {
+      "_type": "Expr",
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Name",
+          "id": "predict_custom_trained_model",
+          "lineno": 49,
+          "end_lineno": 49
+        },
+        "args": [],
+        "keywords": [
+          {
+            "_type": "keyword",
+            "arg": "project",
+            "value": {
+              "_const_preview": "1002663879452"
+            },
+            "lineno": 50,
+            "end_lineno": 50
+          },
+          {
+            "_type": "keyword",
+            "arg": "endpoint_id",
+            "value": {
+              "_const_preview": "3665182428772696064"
+            },
+            "lineno": 51,
+            "end_lineno": 51
+          },
+          {
+            "_type": "keyword",
+            "arg": "location",
+            "value": {
+              "_const_preview": "us-east1"
+            },
+            "lineno": 52,
+            "end_lineno": 52
+          },
+          {
+            "_type": "keyword",
+            "arg": "instances",
+            "value": {
+              "_type": "Dict",
+              "keys": [
+                {
+                  "_type": "Constant",
+                  "value": "PC1",
+                  "kind": null,
+                  "lineno": 55,
+                  "end_lineno": 55
+                },
+                {
+                  "_type": "Constant",
+                  "value": "PC2",
+                  "kind": null,
+                  "lineno": 56,
+                  "end_lineno": 56
+                },
+                {
+                  "_type": "Constant",
+                  "value": "PC3",
+                  "kind": null,
+                  "lineno": 57,
+                  "end_lineno": 57
+                },
+                {
+                  "_type": "Constant",
+                  "value": "PC4",
+                  "kind": null,
+                  "lineno": 58,
+                  "end_lineno": 58
+                },
+                {
+                  "_type": "Constant",
+                  "value": "PC5",
+                  "kind": null,
+                  "lineno": 59,
+                  "end_lineno": 59
+                },
+                {
+                  "_type": "Constant",
+                  "value": "PC6",
+                  "kind": null,
+                  "lineno": 60,
+                  "end_lineno": 60
+                }
+              ],
+              "values": [
+                {
+                  "_type": "Constant",
+                  "value": 1000.595596,
+                  "kind": null,
+                  "lineno": 55,
+                  "end_lineno": 55
+                },
+                {
+                  "_type": "UnaryOp",
+                  "op": {
+                    "_type": "USub"
+                  },
+                  "operand": {
+                    "_type": "Constant",
+                    "value": 0.944713,
+                    "kind": null,
+                    "lineno": 56,
+                    "end_lineno": 56
+                  },
+                  "lineno": 56,
+                  "end_lineno": 56
+                },
+                {
+                  "_type": "Constant",
+                  "value": 0.340492,
+                  "kind": null,
+                  "lineno": 57,
+                  "end_lineno": 57
+                },
+                {
+                  "_type": "Constant",
+                  "value": 1.335999,
+                  "kind": null,
+                  "lineno": 58,
+                  "end_lineno": 58
+                },
+                {
+                  "_type": "Constant",
+                  "value": 0.13531,
+                  "kind": null,
+                  "lineno": 59,
+                  "end_lineno": 59
+                },
+                {
+                  "_type": "Constant",
+                  "value": 0.506377,
+                  "kind": null,
+                  "lineno": 60,
+                  "end_lineno": 60
+                }
+              ],
+              "lineno": 53,
+              "end_lineno": 61
+            },
+            "lineno": 53,
+            "end_lineno": 61
+          }
+        ],
+        "lineno": 49,
+        "end_lineno": 62
+      },
+      "lineno": 49,
+      "end_lineno": 62
+    }
+  ],
+  "type_ignores": []
+}

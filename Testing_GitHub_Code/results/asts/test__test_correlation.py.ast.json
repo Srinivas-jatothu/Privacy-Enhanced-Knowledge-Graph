@@ -1,0 +1,1208 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Expr",
+      "value": {
+        "_const_preview": "\nA test module for testing correlation module.\n"
+      },
+      "lineno": 1,
+      "end_lineno": 3
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "os",
+          "asname": null,
+          "lineno": 4,
+          "end_lineno": 4
+        }
+      ],
+      "lineno": 4,
+      "end_lineno": 4
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "pytest",
+          "asname": null,
+          "lineno": 5,
+          "end_lineno": 5
+        }
+      ],
+      "lineno": 5,
+      "end_lineno": 5
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "src.correlation",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "correlation_check",
+          "asname": null,
+          "lineno": 6,
+          "end_lineno": 6
+        }
+      ],
+      "level": 0,
+      "lineno": 6,
+      "end_lineno": 6
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "PROJECT_DIR",
+          "lineno": 9,
+          "end_lineno": 9
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 9,
+              "end_lineno": 9
+            },
+            "attr": "path",
+            "lineno": 9,
+            "end_lineno": 9
+          },
+          "attr": "dirname",
+          "lineno": 9,
+          "end_lineno": 9
+        },
+        "args": [
+          {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 9,
+                  "end_lineno": 9
+                },
+                "attr": "path",
+                "lineno": 9,
+                "end_lineno": 9
+              },
+              "attr": "dirname",
+              "lineno": 9,
+              "end_lineno": 9
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 9,
+                      "end_lineno": 9
+                    },
+                    "attr": "path",
+                    "lineno": 9,
+                    "end_lineno": 9
+                  },
+                  "attr": "abspath",
+                  "lineno": 9,
+                  "end_lineno": 9
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "__file__",
+                    "lineno": 9,
+                    "end_lineno": 9
+                  }
+                ],
+                "keywords": [],
+                "lineno": 9,
+                "end_lineno": 9
+              }
+            ],
+            "keywords": [],
+            "lineno": 9,
+            "end_lineno": 9
+          }
+        ],
+        "keywords": [],
+        "lineno": 9,
+        "end_lineno": 9
+      },
+      "type_comment": null,
+      "lineno": 9,
+      "end_lineno": 9
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "INPUT_FILE_PATH",
+          "lineno": 10,
+          "end_lineno": 10
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 10,
+              "end_lineno": 10
+            },
+            "attr": "path",
+            "lineno": 10,
+            "end_lineno": 10
+          },
+          "attr": "join",
+          "lineno": 10,
+          "end_lineno": 10
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "PROJECT_DIR",
+            "lineno": 10,
+            "end_lineno": 10
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 10,
+            "end_lineno": 10
+          },
+          {
+            "_type": "Constant",
+            "value": "processed",
+            "kind": null,
+            "lineno": 10,
+            "end_lineno": 10
+          },
+          {
+            "_type": "Constant",
+            "value": "scaler_output.parquet",
+            "kind": null,
+            "lineno": 10,
+            "end_lineno": 10
+          }
+        ],
+        "keywords": [],
+        "lineno": 10,
+        "end_lineno": 10
+      },
+      "type_comment": null,
+      "lineno": 10,
+      "end_lineno": 10
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "test_img_path",
+          "lineno": 11,
+          "end_lineno": 11
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 11,
+              "end_lineno": 11
+            },
+            "attr": "path",
+            "lineno": 11,
+            "end_lineno": 11
+          },
+          "attr": "join",
+          "lineno": 11,
+          "end_lineno": 11
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "PROJECT_DIR",
+            "lineno": 11,
+            "end_lineno": 11
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 11,
+            "end_lineno": 11
+          },
+          {
+            "_type": "Constant",
+            "value": "test_data",
+            "kind": null,
+            "lineno": 11,
+            "end_lineno": 11
+          },
+          {
+            "_type": "Constant",
+            "value": "corr.png",
+            "kind": null,
+            "lineno": 11,
+            "end_lineno": 11
+          }
+        ],
+        "keywords": [],
+        "lineno": 11,
+        "end_lineno": 11
+      },
+      "type_comment": null,
+      "lineno": 11,
+      "end_lineno": 11
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "test_corr_path",
+          "lineno": 12,
+          "end_lineno": 12
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 12,
+              "end_lineno": 12
+            },
+            "attr": "path",
+            "lineno": 12,
+            "end_lineno": 12
+          },
+          "attr": "join",
+          "lineno": 12,
+          "end_lineno": 12
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "PROJECT_DIR",
+            "lineno": 12,
+            "end_lineno": 12
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 12,
+            "end_lineno": 12
+          },
+          {
+            "_type": "Constant",
+            "value": "test_data",
+            "kind": null,
+            "lineno": 12,
+            "end_lineno": 12
+          },
+          {
+            "_type": "Constant",
+            "value": "corr.parquet",
+            "kind": null,
+            "lineno": 12,
+            "end_lineno": 12
+          }
+        ],
+        "keywords": [],
+        "lineno": 12,
+        "end_lineno": 12
+      },
+      "type_comment": null,
+      "lineno": 12,
+      "end_lineno": 12
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "OUTPUT_PATH",
+          "lineno": 13,
+          "end_lineno": 13
+        }
+      ],
+      "value": {
+        "_type": "Tuple",
+        "elts": [
+          {
+            "_type": "Name",
+            "id": "test_img_path",
+            "lineno": 13,
+            "end_lineno": 13
+          },
+          {
+            "_type": "Name",
+            "id": "test_corr_path",
+            "lineno": 13,
+            "end_lineno": 13
+          }
+        ],
+        "lineno": 13,
+        "end_lineno": 13
+      },
+      "type_comment": null,
+      "lineno": 13,
+      "end_lineno": 13
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "test_correlation_filenotfound",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Test that raises an error when the input files doesn't exist.\n    "
+          },
+          "lineno": 16,
+          "end_lineno": 18
+        },
+        {
+          "_type": "With",
+          "items": [
+            {
+              "_type": "withitem",
+              "context_expr": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "pytest",
+                    "lineno": 19,
+                    "end_lineno": 19
+                  },
+                  "attr": "raises",
+                  "lineno": 19,
+                  "end_lineno": 19
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "FileNotFoundError",
+                    "lineno": 19,
+                    "end_lineno": 19
+                  }
+                ],
+                "keywords": [],
+                "lineno": 19,
+                "end_lineno": 19
+              },
+              "optional_vars": null
+            }
+          ],
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "correlation_check",
+                  "lineno": 21,
+                  "end_lineno": 21
+                },
+                "args": [],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "in_path",
+                    "value": {
+                      "_const_preview": "nonexistent_file.csv"
+                    },
+                    "lineno": 21,
+                    "end_lineno": 21
+                  }
+                ],
+                "lineno": 21,
+                "end_lineno": 21
+              },
+              "lineno": 21,
+              "end_lineno": 21
+            }
+          ],
+          "type_comment": null,
+          "lineno": 19,
+          "end_lineno": 21
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 15,
+      "end_lineno": 21
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "test_correlation_parquetpath_error",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Test that raises an error path is not a string.\n    "
+          },
+          "lineno": 24,
+          "end_lineno": 26
+        },
+        {
+          "_type": "With",
+          "items": [
+            {
+              "_type": "withitem",
+              "context_expr": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "pytest",
+                    "lineno": 28,
+                    "end_lineno": 28
+                  },
+                  "attr": "raises",
+                  "lineno": 28,
+                  "end_lineno": 28
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "TypeError",
+                    "lineno": 28,
+                    "end_lineno": 28
+                  }
+                ],
+                "keywords": [],
+                "lineno": 28,
+                "end_lineno": 28
+              },
+              "optional_vars": null
+            }
+          ],
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "correlation_check",
+                  "lineno": 29,
+                  "end_lineno": 29
+                },
+                "args": [],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "out_path",
+                    "value": {
+                      "_type": "Tuple",
+                      "elts": [
+                        {
+                          "_type": "Constant",
+                          "value": 1233,
+                          "kind": null,
+                          "lineno": 29,
+                          "end_lineno": 29
+                        },
+                        {
+                          "_type": "Subscript",
+                          "value": {
+                            "_type": "Name",
+                            "id": "OUTPUT_PATH",
+                            "lineno": 29,
+                            "end_lineno": 29
+                          },
+                          "slice": {
+                            "_type": "Constant",
+                            "value": 1,
+                            "kind": null,
+                            "lineno": 29,
+                            "end_lineno": 29
+                          },
+                          "lineno": 29,
+                          "end_lineno": 29
+                        }
+                      ],
+                      "lineno": 29,
+                      "end_lineno": 29
+                    },
+                    "lineno": 29,
+                    "end_lineno": 29
+                  }
+                ],
+                "lineno": 29,
+                "end_lineno": 29
+              },
+              "lineno": 29,
+              "end_lineno": 29
+            }
+          ],
+          "type_comment": null,
+          "lineno": 28,
+          "end_lineno": 29
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 23,
+      "end_lineno": 29
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "test_correlation_imagepath_error",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Test that raises an error path is not a string.\n    "
+          },
+          "lineno": 32,
+          "end_lineno": 34
+        },
+        {
+          "_type": "With",
+          "items": [
+            {
+              "_type": "withitem",
+              "context_expr": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "pytest",
+                    "lineno": 36,
+                    "end_lineno": 36
+                  },
+                  "attr": "raises",
+                  "lineno": 36,
+                  "end_lineno": 36
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "TypeError",
+                    "lineno": 36,
+                    "end_lineno": 36
+                  }
+                ],
+                "keywords": [],
+                "lineno": 36,
+                "end_lineno": 36
+              },
+              "optional_vars": null
+            }
+          ],
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "correlation_check",
+                  "lineno": 37,
+                  "end_lineno": 37
+                },
+                "args": [],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "out_path",
+                    "value": {
+                      "_type": "Tuple",
+                      "elts": [
+                        {
+                          "_type": "Subscript",
+                          "value": {
+                            "_type": "Name",
+                            "id": "OUTPUT_PATH",
+                            "lineno": 37,
+                            "end_lineno": 37
+                          },
+                          "slice": {
+                            "_type": "Constant",
+                            "value": 0,
+                            "kind": null,
+                            "lineno": 37,
+                            "end_lineno": 37
+                          },
+                          "lineno": 37,
+                          "end_lineno": 37
+                        },
+                        {
+                          "_type": "Constant",
+                          "value": 1233,
+                          "kind": null,
+                          "lineno": 37,
+                          "end_lineno": 37
+                        }
+                      ],
+                      "lineno": 37,
+                      "end_lineno": 37
+                    },
+                    "lineno": 37,
+                    "end_lineno": 37
+                  }
+                ],
+                "lineno": 37,
+                "end_lineno": 37
+              },
+              "lineno": 37,
+              "end_lineno": 37
+            }
+          ],
+          "type_comment": null,
+          "lineno": 36,
+          "end_lineno": 37
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 31,
+      "end_lineno": 37
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "test_correlation_imagesavecheck",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Test that raises an error when image not saved correctly.\n    "
+          },
+          "lineno": 40,
+          "end_lineno": 42
+        },
+        {
+          "_type": "Try",
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "os",
+                    "lineno": 45,
+                    "end_lineno": 45
+                  },
+                  "attr": "remove",
+                  "lineno": 45,
+                  "end_lineno": 45
+                },
+                "args": [
+                  {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Name",
+                      "id": "OUTPUT_PATH",
+                      "lineno": 45,
+                      "end_lineno": 45
+                    },
+                    "slice": {
+                      "_type": "Constant",
+                      "value": 0,
+                      "kind": null,
+                      "lineno": 45,
+                      "end_lineno": 45
+                    },
+                    "lineno": 45,
+                    "end_lineno": 45
+                  }
+                ],
+                "keywords": [],
+                "lineno": 45,
+                "end_lineno": 45
+              },
+              "lineno": 45,
+              "end_lineno": 45
+            }
+          ],
+          "handlers": [
+            {
+              "_type": "ExceptHandler",
+              "type": {
+                "_type": "Name",
+                "id": "FileNotFoundError",
+                "lineno": 46,
+                "end_lineno": 46
+              },
+              "name": null,
+              "body": [
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "correlation_check",
+                      "lineno": 48,
+                      "end_lineno": 48
+                    },
+                    "args": [],
+                    "keywords": [
+                      {
+                        "_type": "keyword",
+                        "arg": "out_path",
+                        "value": {
+                          "_type": "Name",
+                          "id": "OUTPUT_PATH",
+                          "lineno": 48,
+                          "end_lineno": 48
+                        },
+                        "lineno": 48,
+                        "end_lineno": 48
+                      }
+                    ],
+                    "lineno": 48,
+                    "end_lineno": 48
+                  },
+                  "lineno": 48,
+                  "end_lineno": 48
+                },
+                {
+                  "_type": "Assert",
+                  "test": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Attribute",
+                        "value": {
+                          "_type": "Name",
+                          "id": "os",
+                          "lineno": 49,
+                          "end_lineno": 49
+                        },
+                        "attr": "path",
+                        "lineno": 49,
+                        "end_lineno": 49
+                      },
+                      "attr": "exists",
+                      "lineno": 49,
+                      "end_lineno": 49
+                    },
+                    "args": [
+                      {
+                        "_type": "Subscript",
+                        "value": {
+                          "_type": "Name",
+                          "id": "OUTPUT_PATH",
+                          "lineno": 49,
+                          "end_lineno": 49
+                        },
+                        "slice": {
+                          "_type": "Constant",
+                          "value": 0,
+                          "kind": null,
+                          "lineno": 49,
+                          "end_lineno": 49
+                        },
+                        "lineno": 49,
+                        "end_lineno": 49
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 49,
+                    "end_lineno": 49
+                  },
+                  "msg": null,
+                  "lineno": 49,
+                  "end_lineno": 49
+                }
+              ],
+              "lineno": 46,
+              "end_lineno": 49
+            }
+          ],
+          "orelse": [],
+          "finalbody": [],
+          "lineno": 44,
+          "end_lineno": 49
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 39,
+      "end_lineno": 49
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "test_correlation_parquetsavecheck",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Test that raises an error when parquet not saved correctly.\n    "
+          },
+          "lineno": 52,
+          "end_lineno": 54
+        },
+        {
+          "_type": "Try",
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "os",
+                    "lineno": 57,
+                    "end_lineno": 57
+                  },
+                  "attr": "remove",
+                  "lineno": 57,
+                  "end_lineno": 57
+                },
+                "args": [
+                  {
+                    "_type": "Subscript",
+                    "value": {
+                      "_type": "Name",
+                      "id": "OUTPUT_PATH",
+                      "lineno": 57,
+                      "end_lineno": 57
+                    },
+                    "slice": {
+                      "_type": "Constant",
+                      "value": 1,
+                      "kind": null,
+                      "lineno": 57,
+                      "end_lineno": 57
+                    },
+                    "lineno": 57,
+                    "end_lineno": 57
+                  }
+                ],
+                "keywords": [],
+                "lineno": 57,
+                "end_lineno": 57
+              },
+              "lineno": 57,
+              "end_lineno": 57
+            }
+          ],
+          "handlers": [
+            {
+              "_type": "ExceptHandler",
+              "type": {
+                "_type": "Name",
+                "id": "FileNotFoundError",
+                "lineno": 58,
+                "end_lineno": 58
+              },
+              "name": null,
+              "body": [
+                {
+                  "_type": "Expr",
+                  "value": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Name",
+                      "id": "correlation_check",
+                      "lineno": 60,
+                      "end_lineno": 60
+                    },
+                    "args": [],
+                    "keywords": [
+                      {
+                        "_type": "keyword",
+                        "arg": "out_path",
+                        "value": {
+                          "_type": "Name",
+                          "id": "OUTPUT_PATH",
+                          "lineno": 60,
+                          "end_lineno": 60
+                        },
+                        "lineno": 60,
+                        "end_lineno": 60
+                      }
+                    ],
+                    "lineno": 60,
+                    "end_lineno": 60
+                  },
+                  "lineno": 60,
+                  "end_lineno": 60
+                },
+                {
+                  "_type": "Assert",
+                  "test": {
+                    "_type": "Call",
+                    "func": {
+                      "_type": "Attribute",
+                      "value": {
+                        "_type": "Attribute",
+                        "value": {
+                          "_type": "Name",
+                          "id": "os",
+                          "lineno": 61,
+                          "end_lineno": 61
+                        },
+                        "attr": "path",
+                        "lineno": 61,
+                        "end_lineno": 61
+                      },
+                      "attr": "exists",
+                      "lineno": 61,
+                      "end_lineno": 61
+                    },
+                    "args": [
+                      {
+                        "_type": "Subscript",
+                        "value": {
+                          "_type": "Name",
+                          "id": "OUTPUT_PATH",
+                          "lineno": 61,
+                          "end_lineno": 61
+                        },
+                        "slice": {
+                          "_type": "Constant",
+                          "value": 1,
+                          "kind": null,
+                          "lineno": 61,
+                          "end_lineno": 61
+                        },
+                        "lineno": 61,
+                        "end_lineno": 61
+                      }
+                    ],
+                    "keywords": [],
+                    "lineno": 61,
+                    "end_lineno": 61
+                  },
+                  "msg": null,
+                  "lineno": 61,
+                  "end_lineno": 61
+                }
+              ],
+              "lineno": 58,
+              "end_lineno": 61
+            }
+          ],
+          "orelse": [],
+          "finalbody": [],
+          "lineno": 56,
+          "end_lineno": 61
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 51,
+      "end_lineno": 61
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "test_corr_thresh_error",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Test that raises an error when not 0< thresh <1.\n    "
+          },
+          "lineno": 64,
+          "end_lineno": 66
+        },
+        {
+          "_type": "With",
+          "items": [
+            {
+              "_type": "withitem",
+              "context_expr": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "pytest",
+                    "lineno": 67,
+                    "end_lineno": 67
+                  },
+                  "attr": "raises",
+                  "lineno": 67,
+                  "end_lineno": 67
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "ValueError",
+                    "lineno": 67,
+                    "end_lineno": 67
+                  }
+                ],
+                "keywords": [],
+                "lineno": 67,
+                "end_lineno": 67
+              },
+              "optional_vars": null
+            }
+          ],
+          "body": [
+            {
+              "_type": "Expr",
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "correlation_check",
+                  "lineno": 69,
+                  "end_lineno": 69
+                },
+                "args": [],
+                "keywords": [
+                  {
+                    "_type": "keyword",
+                    "arg": "out_path",
+                    "value": {
+                      "_type": "Name",
+                      "id": "OUTPUT_PATH",
+                      "lineno": 69,
+                      "end_lineno": 69
+                    },
+                    "lineno": 69,
+                    "end_lineno": 69
+                  },
+                  {
+                    "_type": "keyword",
+                    "arg": "correlation_threshold",
+                    "value": {
+                      "_type": "Constant",
+                      "value": 80,
+                      "kind": null,
+                      "lineno": 69,
+                      "end_lineno": 69
+                    },
+                    "lineno": 69,
+                    "end_lineno": 69
+                  }
+                ],
+                "lineno": 69,
+                "end_lineno": 69
+              },
+              "lineno": 69,
+              "end_lineno": 69
+            }
+          ],
+          "type_comment": null,
+          "lineno": 67,
+          "end_lineno": 69
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 63,
+      "end_lineno": 69
+    }
+  ],
+  "type_ignores": []
+}

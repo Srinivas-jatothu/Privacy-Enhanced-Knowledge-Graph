@@ -1,0 +1,32 @@
+{
+  "relpath": "dags/src/anomaly_code_handler.py",
+  "manifest_meta": {
+    "relpath": "dags/src/anomaly_code_handler.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\dags\\src\\anomaly_code_handler.py",
+    "size": 1939,
+    "mtime": 1763123856.781577,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "745ee6a7f470656c0f3307e8078000dd09494df4ad30252bc0e097abdd405cd6",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\dags__src__anomaly_code_handler.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'anomaly_code_handler.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "1939",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

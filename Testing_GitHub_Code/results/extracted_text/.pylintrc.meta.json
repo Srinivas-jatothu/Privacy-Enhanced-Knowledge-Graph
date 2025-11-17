@@ -1,0 +1,32 @@
+{
+  "relpath": ".pylintrc",
+  "manifest_meta": {
+    "relpath": ".pylintrc",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.pylintrc",
+    "size": 518,
+    "mtime": 1763123856.7303996,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "a9d36bf78ab263371ceea6b7e877c23daf35db76d90410b02527b0b99f7b9ded",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.pylintrc.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'.pylintrc'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "518",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

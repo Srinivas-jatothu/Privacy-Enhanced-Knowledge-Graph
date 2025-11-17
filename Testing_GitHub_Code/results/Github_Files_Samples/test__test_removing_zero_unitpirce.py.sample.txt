@@ -1,0 +1,10 @@
+"""
+A test for check the removal of zero unit prices
+"""
+
+import os
+import pickle
+from src.removing_zero_unitprice import removing_zero
+
+
+# Determine the absolute path of the project directory

@@ -1,0 +1,10 @@
+"""
+A module to detect and remove outliers
+"""
+
+
+import os
+import pickle
+from sklearn.ensemble import IsolationForest
+
+# Determine the absolute path of the project directory

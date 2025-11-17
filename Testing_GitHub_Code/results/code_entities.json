@@ -1,0 +1,548 @@
+[
+  {
+    "file": "src/anomaly_code_handler.py",
+    "module_doc": "A module for removing anomalies from StockCode column if they have 0 or 1 \ndigit characters since the normal values are 5 or 6 digits.",
+    "functions": [
+      {
+        "name": "handle_anomalous_codes",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, remove rows with stock codes that \nhave 0 or 1 numeric characters, \nthen save the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/cancellation_details.py",
+    "module_doc": "This module shows how cancelling of orders affect the business and the data.\nIt also shows the frequency of cancellation and cancellation rate.",
+    "functions": [
+      {
+        "name": "cancellation_details",
+        "sig": "(input_pickle_file, geographic_pickle_file, output_pickle_file)",
+        "doc": "Process cancellation frequency and calculate cancellation rates for customers.\n\n:param input_pickle_file: Input pickle file path containing transaction data.\n:param geographic_pickle_file: Input pickle file path after geographic_features.\n:param output_pickle_file: Output pickle file path for storing processed customer data.\n:return: Processed customer data with cancellation details and rates."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/cleaning_description.py",
+    "module_doc": "A module for cleaning the description column",
+    "functions": [
+      {
+        "name": "cleaning_description",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, \nremove rows where the description cointains service related information\nand Standardize the text to uppercase\nsave the DataFrame back to a pickle and return its path."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/correlation.py",
+    "module_doc": "Inputs: {\n    path: file saving location, \n    correlation threshold: threshold for determining high correlations}\nOutputs: { \n    Image: png file with masked heatmap\n    Matrix: Correlation Matrix as parquet}\nReturns: None",
+    "functions": [
+      {
+        "name": "correlation_check",
+        "sig": "(in_path, out_path, correlation_threshold)",
+        "doc": "Global variables(can only be changed through Config file)\nArgs:\nin_path(str): ingest_path, \nout_path(str1,str2):\ncvr_threshold[float]: cumulative explained variance threshold for variance\ndrop_cols: column to be ommitted for pca"
+      },
+      {
+        "name": "save_heatmap",
+        "sig": "(fig, path)",
+        "doc": "Saves the heatmap as png file.\nInputs: data: data to be saved, path: file saving location\nReturns: None\nExecutes: saving of png, except prompts the user to proceed if file open.\nError Checks: FileNotFoundError"
+      },
+      {
+        "name": "save_correlations_as_parquet",
+        "sig": "(data, path)",
+        "doc": "Saves the correlation matrix as parquet.\nInputs: data: data to be saved, path: file saving location\nReturns: None\nExecutes: raises Attribute error if data is not df as /\nto_parquet would not be executed.\nError Checks: FileNotFoundError"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/customers_behavior.py",
+    "module_doc": "The module shows how the behaviorial patterns of customers affect the business\nbased on weekly frequency.",
+    "functions": [
+      {
+        "name": "customers_behavior",
+        "sig": "(input_pickle_file, unique_pickle_file, output_pickle_file)",
+        "doc": "Process customer behavior and generate relevant insights.\n\n:param input_pickle_file: Input pickle file path containing customer transaction data.\n:param unique_pickle_file: Input pickle file path after unique_products.\n:param output_pickle_file: Output pickle file path for storing processed\n                           customer behavior data.\n:return: Processed customer behavior data with insights."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/datapipeline.py",
+    "module_doc": "Modularized Data pipeline to form DAGs in the future",
+    "functions": [],
+    "classes": []
+  },
+  {
+    "file": "src/data_loader.py",
+    "module_doc": "Module to handle the loading of e-commerce dataset from either pickle or Excel file format.",
+    "functions": [
+      {
+        "name": "load_data",
+        "sig": "(pickle_path, excel_path)",
+        "doc": "Load the e-commerce dataset.\nFirst, try to load from the pickle file. If it doesn't exist, load from the excel file.\nRegardless of the source, save the loaded data as a pickle for future use and\nreturn the path to that pickle.\n\n:param pickle_path: Path to the pickle file.\n:param excel_path: Path to the Excel file.\n:return: Path to the saved pickle file."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/download_data.py",
+    "module_doc": "Function to download and ingest the data file",
+    "functions": [
+      {
+        "name": "ingest_data",
+        "sig": "(file_url)",
+        "doc": "Function to download file from URL\nArgs:\n    file_url: URL of the file, A default is used if not specified\nReturns:\n    zipfile_path: The zipped file path to the data"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/duplicates_handler.py",
+    "module_doc": "A module for removing duplicates in dataset based on subset of \nfollowing columns:\n- InvoiceNo\n- StockCode\n- Description\n- CustomerID\n- Quantity",
+    "functions": [
+      {
+        "name": "remove_duplicates",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, drop duplicates based on certain columns.\nSave the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/geographic_features.py",
+    "module_doc": "This module defines the distribution of the customers' data with respect to regions.",
+    "functions": [
+      {
+        "name": "geographic_features",
+        "sig": "(input_pickle_file, behavorial_pickle_file, output_pickle_file)",
+        "doc": "Process geographic features and merge with behavioral data.\n\n:param input_pickle_file: Input pickle file path containing\n                          transaction data with geographic information.\n:param behavioral_pickle_file: Input pickle file path after customer_behavior.\n:param output_pickle_file: Output pickle file path for storing processed\n                           customer data with geographic features.\n:return: Processed customer data with added\n         geographic features(whether the datapoint is from UK or not)."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/histogram_analysis.py",
+    "module_doc": "Module for Analyzing Customer Clusters\nusing Radar Chart",
+    "functions": [
+      {
+        "name": "rfm_histograms",
+        "sig": "(in_path)",
+        "doc": "Docstring"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/missing_values_handler.py",
+    "module_doc": "A module for removing missig values from dataset based on CustomeID\nand Description column.",
+    "functions": [
+      {
+        "name": "handle_missing",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, \nremove rows with missing values in 'CustomerID' and 'Description' columns.\nThen, check if there are any missing values left in the dataframe.\nIf there are, raise a ValueError. Finally, \nsave the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/outlier_treatment.py",
+    "module_doc": "A module to detect and remove outliers",
+    "functions": [
+      {
+        "name": "removing_outlier",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": " Load the DataFrame from the input pickle, \ndetect and remove outliers\nsave the DataFrame back to a pickle and return its path"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/pca.py",
+    "module_doc": "Modular script to perform PCA on incoming data.\nScripts checks PC ranging from 2 to 8 until cumulative explained variance of threshold is achieved.\nInput: Path string to load pickle/parquet file.\nOutput: Path string for parquet file.",
+    "functions": [
+      {
+        "name": "pc_analyzer",
+        "sig": "(in_path, out_path, drop_cols, cvr_thresh)",
+        "doc": "Global variables(can only be changed through Config file)\nArgs:\npaths(str1,str2): str1:ingest_path, str2:output_path\nCVR_THRESHOLDold[float]: cumulative explained variance threshold for variance\ndrop_cols: column to be ommitted for pca"
+      },
+      {
+        "name": "pca_",
+        "sig": "(data, thresh)",
+        "doc": "Refactoring for iterative check of n_components \nto cover threshold cumulative explained variance.\ndata: input data for pca\nthresh[float]: cumulative explained variance threshold for variance"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/radar_analysis.py",
+    "module_doc": "Module for Analyzing Customer Clusters\nusing Radar Chart",
+    "functions": [
+      {
+        "name": "radar_charts",
+        "sig": "(in_path)",
+        "doc": "Docstring"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/removing_zero_unitprice.py",
+    "module_doc": "A module for removing unit prices with a value of zero",
+    "functions": [
+      {
+        "name": "removing_zero",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": " Load the DataFrame from the input pickle, \nremove rows where unit price is zero\nsave the DataFrame back to a pickle and return its path"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/rfm.py",
+    "module_doc": "This module analyzes Recency, Frequency and Monetary methods to know about the value\nof customers and dividing the base.",
+    "functions": [
+      {
+        "name": "rfm",
+        "sig": "(input_pickle_file, output_pickle_file)",
+        "doc": "Process customer RFM data based on input pickle file.\n\n:param input_pickle_file: Input pickle file path containing customer data.\n:param output_pickle_file: Output pickle file path for storing processed RFM data.\n:return: Processed RFM data."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/scaler.py",
+    "module_doc": "Modular script to perform scaling on incoming data.\nScript taken in columns to be standardized or normalized.\nInput: Path string to load pickle/parquet file.\nOutput: Path string for parquet file.",
+    "functions": [
+      {
+        "name": "scaler",
+        "sig": "(in_path, out_path, cols)",
+        "doc": "Global variables(can only be changed through Config file)\ncvr_threshold[float]: cumulative explained variance threshold for variance\ncols(standardize_columns, normalize_columns): tuple of columns to be scaled. "
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/seasonality.py",
+    "module_doc": "This module analyzes the seasonal trends and how it affects customers and business",
+    "functions": [
+      {
+        "name": "seasonality_impacts",
+        "sig": "(input_pickle_file, cancellation_pickle_file, output_pickle_file)",
+        "doc": "Calculate seasonality impacts and trends for customer spending.\n\n:param input_pickle_file: Input pickle file path containing customer spending data.\n:param cancellation_pickle_file: Input pickle file path containing data from\ncancellation_details.\n:param output_pickle_file: Output pickle file path for storing processed customer data.\n:return: Processed customer data with seasonality impacts and trends."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/transaction_status_handler.py",
+    "module_doc": "A module for adding a new column named transaction_status based on the \nstarting character of InvoiceNo column. \ntransaction_status values are Cancelled or Completed.",
+    "functions": [
+      {
+        "name": "handle_transaction_status",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, add a 'transaction_status' column \nto indicate whether the transaction was 'Cancelled' or 'Completed'. \nSave the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file.\n\n:raises KeyError: If the 'InvoiceNo' column doesn't exist in the dataframe."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/unique_products.py",
+    "module_doc": "This module groups the values based on unique values of CustomerID and orders.",
+    "functions": [
+      {
+        "name": "unique_products",
+        "sig": "(input_pickle_file, rfm_pickle_file, output_pickle_file)",
+        "doc": "Calculate the number of unique products purchased by each customer.\n\n:param input_pickle_file: Input pickle file path containing transaction data.\n:param rfm_pickle_file: Input pickle file path containing RFM data.\n:param output_pickle_file: Output pickle file path for storing processed customer data\n                           with unique product information.\n:return: Processed customer data with added information about unique products purchased."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/unzip_data.py",
+    "module_doc": "Function to unzip data and make it available",
+    "functions": [
+      {
+        "name": "unzip_file",
+        "sig": "(zip_filename, extract_to)",
+        "doc": "Function to unzip the downloaded data\nArgs:\n  zip_filename: zipfile path, a default is used if not specified\n  extract_to: Path where the unzipped and extracted data is available\nReturns:\n  extract_to: filepath where the data is available"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "src/__init__.py",
+    "module_doc": null,
+    "functions": [],
+    "classes": []
+  },
+  {
+    "file": "dags/__init__.py",
+    "module_doc": null,
+    "functions": [],
+    "classes": []
+  },
+  {
+    "file": "dags/data/__init__.py",
+    "module_doc": null,
+    "functions": [],
+    "classes": []
+  },
+  {
+    "file": "dags/src/airflow.py",
+    "module_doc": "The Airflow Dag for the preprocessing datapipeline",
+    "functions": [],
+    "classes": []
+  },
+  {
+    "file": "dags/src/anomaly_code_handler.py",
+    "module_doc": "A module for removing anomalies from StockCode column if they have 0 or 1 \ndigit characters since the normal values are 5 or 6 digits.",
+    "functions": [
+      {
+        "name": "handle_anomalous_codes",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, remove rows with stock codes that \nhave 0 or 1 numeric characters, \nthen save the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/cancellation_details.py",
+    "module_doc": "This module shows how cancelling of orders affect the business and the data.\nIt also shows the frequency of cancellation and cancellation rate.",
+    "functions": [
+      {
+        "name": "cancellation_details",
+        "sig": "(input_pickle_file, geographic_pickle_file, output_pickle_file)",
+        "doc": "Process cancellation frequency and calculate cancellation rates for customers.\n\n:param input_pickle_file: Input pickle file path containing transaction data.\n:param geographic_pickle_file: Input pickle file path after geographic_features.\n:param output_pickle_file: Output pickle file path for storing processed customer data.\n:return: Processed customer data with cancellation details and rates."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/cleaning_description.py",
+    "module_doc": "A module for cleaning the description column",
+    "functions": [
+      {
+        "name": "cleaning_description",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, \nremove rows where the description cointains service related information\nand Standardize the text to uppercase\nsave the DataFrame back to a pickle and return its path."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/correlation.py",
+    "module_doc": "Inputs: {\n    path: file saving location, \n    correlation threshold: threshold for determining high correlations}\nOutputs: { \n    Image: png file with masked heatmap\n    Matrix: Correlation Matrix as parquet}\nReturns: None",
+    "functions": [
+      {
+        "name": "correlation_check",
+        "sig": "(in_path, out_path, correlation_threshold)",
+        "doc": "Global variables(can only be changed through Config file)\nArgs:\nin_path(str): ingest_path, \nout_path(str1,str2):\ncvr_threshold[float]: cumulative explained variance threshold for variance\ndrop_cols: column to be ommitted for pca"
+      },
+      {
+        "name": "save_heatmap",
+        "sig": "(fig, path)",
+        "doc": "Saves the heatmap as png file.\nInputs: data: data to be saved, path: file saving location\nReturns: None\nExecutes: saving of png, except prompts the user to proceed if file open.\nError Checks: FileNotFoundError"
+      },
+      {
+        "name": "save_correlations_as_parquet",
+        "sig": "(data, path)",
+        "doc": "Saves the correlation matrix as parquet.\nInputs: data: data to be saved, path: file saving location\nReturns: None\nExecutes: raises Attribute error if data is not df as /\nto_parquet would not be executed.\nError Checks: FileNotFoundError"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/customers_behavior.py",
+    "module_doc": "The module shows how the behaviorial patterns of customers affect the business\nbased on weekly frequency.",
+    "functions": [
+      {
+        "name": "customers_behavior",
+        "sig": "(input_pickle_file, unique_pickle_file, output_pickle_file)",
+        "doc": "Process customer behavior and generate relevant insights.\n\n:param input_pickle_file: Input pickle file path containing customer transaction data.\n:param unique_pickle_file: Input pickle file path after unique_products.\n:param output_pickle_file: Output pickle file path for storing processed\n                           customer behavior data.\n:return: Processed customer behavior data with insights."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/data_loader.py",
+    "module_doc": "Module to handle the loading of e-commerce dataset from either pickle or Excel file format.",
+    "functions": [
+      {
+        "name": "load_data",
+        "sig": "(pickle_path, excel_path)",
+        "doc": "Load the e-commerce dataset.\nFirst, try to load from the pickle file. If it doesn't exist, load from the excel file.\nRegardless of the source, save the loaded data as a pickle for future use and\nreturn the path to that pickle.\n\n:param pickle_path: Path to the pickle file.\n:param excel_path: Path to the Excel file.\n:return: Path to the saved pickle file."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/download_data.py",
+    "module_doc": "Function to download and ingest the data file",
+    "functions": [
+      {
+        "name": "ingest_data",
+        "sig": "(file_url)",
+        "doc": "Function to download file from URL\nArgs:\n    file_url: URL of the file, A default is used if not specified\nReturns:\n    zipfile_path: The zipped file path to the data"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/duplicates_handler.py",
+    "module_doc": "A module for removing duplicates in dataset based on subset of \nfollowing columns:\n- InvoiceNo\n- StockCode\n- Description\n- CustomerID\n- Quantity",
+    "functions": [
+      {
+        "name": "remove_duplicates",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, drop duplicates based on certain columns.\nSave the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/geographic_features.py",
+    "module_doc": "This module defines the distribution of the customers' data with respect to regions.",
+    "functions": [
+      {
+        "name": "geographic_features",
+        "sig": "(input_pickle_file, behavorial_pickle_file, output_pickle_file)",
+        "doc": "Process geographic features and merge with behavioral data.\n\n:param input_pickle_file: Input pickle file path containing\n                          transaction data with geographic information.\n:param behavioral_pickle_file: Input pickle file path after customer_behavior.\n:param output_pickle_file: Output pickle file path for storing processed\n                           customer data with geographic features.\n:return: Processed customer data with added\n         geographic features(whether the datapoint is from UK or not)."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/missing_values_handler.py",
+    "module_doc": "A module for removing missig values from dataset based on CustomeID\nand Description column.",
+    "functions": [
+      {
+        "name": "handle_missing",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, \nremove rows with missing values in 'CustomerID' and 'Description' columns.\nThen, check if there are any missing values left in the dataframe.\nIf there are, raise a ValueError. Finally, \nsave the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/outlier_treatment.py",
+    "module_doc": "A module to detect and remove outliers",
+    "functions": [
+      {
+        "name": "removing_outlier",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": " Load the DataFrame from the input pickle, \ndetect and remove outliers\nsave the DataFrame back to a pickle and return its path"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/pca.py",
+    "module_doc": "Modular script to perform PCA on incoming data.\nScripts checks PC ranging from 2 to 8 until cumulative explained variance of threshold is achieved.\nInput: Path string to load pickle/parquet file.\nOutput: Path string for parquet file.",
+    "functions": [
+      {
+        "name": "pc_analyzer",
+        "sig": "(in_path, out_path, drop_cols, cvr_thresh)",
+        "doc": "Global variables(can only be changed through Config file)\nArgs:\npaths(str1,str2): str1:ingest_path, str2:output_path\nCVR_THRESHOLDold[float]: cumulative explained variance threshold for variance\ndrop_cols: column to be ommitted for pca"
+      },
+      {
+        "name": "pca_",
+        "sig": "(data, thresh)",
+        "doc": "Refactoring for iterative check of n_components \nto cover threshold cumulative explained variance.\ndata: input data for pca\nthresh[float]: cumulative explained variance threshold for variance"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/removing_zero_unitprice.py",
+    "module_doc": "A module for removing unit prices with a value of zero",
+    "functions": [
+      {
+        "name": "removing_zero",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": " Load the DataFrame from the input pickle, \nremove rows where unit price is zero\nsave the DataFrame back to a pickle and return its path"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/rfm.py",
+    "module_doc": "This module analyzes Recency, Frequency and Monetary methods to know about the value\nof customers and dividing the base.",
+    "functions": [
+      {
+        "name": "rfm",
+        "sig": "(input_pickle_file, output_pickle_file)",
+        "doc": "Process customer RFM data based on input pickle file.\n\n:param input_pickle_file: Input pickle file path containing customer data.\n:param output_pickle_file: Output pickle file path for storing processed RFM data.\n:return: Processed RFM data."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/scaler.py",
+    "module_doc": "Modular script to perform scaling on incoming data.\nScript taken in columns to be standardized or normalized.\nInput: Path string to load pickle/parquet file.\nOutput: Path string for parquet file.",
+    "functions": [
+      {
+        "name": "scaler",
+        "sig": "(in_path, out_path, cols)",
+        "doc": "Global variables(can only be changed through Config file)\ncvr_threshold[float]: cumulative explained variance threshold for variance\ncols(standardize_columns, normalize_columns): tuple of columns to be scaled. "
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/seasonality.py",
+    "module_doc": "This module analyzes the seasonal trends and how it affects customers and business",
+    "functions": [
+      {
+        "name": "seasonality_impacts",
+        "sig": "(input_pickle_file, cancellation_pickle_file, output_pickle_file, data_filepath)",
+        "doc": "Calculate seasonality impacts and trends for customer spending.\n\n:param input_pickle_file: Input pickle file path containing customer spending data.\n:param cancellation_pickle_file: Input pickle file path containing data from\ncancellation_details.\n:param output_pickle_file: Output pickle file path for storing processed customer data.\n:return: Processed customer data with seasonality impacts and trends."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/transaction_status_handler.py",
+    "module_doc": "A module for adding a new column named transaction_status based on the \nstarting character of InvoiceNo column. \ntransaction_status values are Cancelled or Completed.",
+    "functions": [
+      {
+        "name": "handle_transaction_status",
+        "sig": "(input_pickle_path, output_pickle_path)",
+        "doc": "Load the DataFrame from the input pickle, add a 'transaction_status' column \nto indicate whether the transaction was 'Cancelled' or 'Completed'. \nSave the DataFrame back to a pickle and return its path.\n\n:param input_pickle_path: Path to the input pickle file.\n:param output_pickle_path: Path to the output pickle file.\n:return: Path to the saved pickle file.\n\n:raises KeyError: If the 'InvoiceNo' column doesn't exist in the dataframe."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/unique_products.py",
+    "module_doc": "This module groups the values based on unique values of CustomerID and orders.",
+    "functions": [
+      {
+        "name": "unique_products",
+        "sig": "(input_pickle_file, rfm_pickle_file, output_pickle_file)",
+        "doc": "Calculate the number of unique products purchased by each customer.\n\n:param input_pickle_file: Input pickle file path containing transaction data.\n:param rfm_pickle_file: Input pickle file path containing RFM data.\n:param output_pickle_file: Output pickle file path for storing processed customer data\n                           with unique product information.\n:return: Processed customer data with added information about unique products purchased."
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/unzip_data.py",
+    "module_doc": "Function to unzip data and make it available",
+    "functions": [
+      {
+        "name": "unzip_file",
+        "sig": "(zip_filename, extract_to)",
+        "doc": "Function to unzip the downloaded data\nArgs:\n  zip_filename: zipfile path, a default is used if not specified\n  extract_to: Path where the unzipped and extracted data is available\nReturns:\n  extract_to: filepath where the data is available"
+      }
+    ],
+    "classes": []
+  },
+  {
+    "file": "dags/src/__init__.py",
+    "module_doc": null,
+    "functions": [],
+    "classes": []
+  }
+]

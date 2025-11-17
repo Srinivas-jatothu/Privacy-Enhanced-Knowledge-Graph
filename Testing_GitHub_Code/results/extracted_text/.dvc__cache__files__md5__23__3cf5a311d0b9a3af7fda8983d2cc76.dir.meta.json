@@ -1,0 +1,32 @@
+{
+  "relpath": ".dvc/cache/files/md5/23/3cf5a311d0b9a3af7fda8983d2cc76.dir",
+  "manifest_meta": {
+    "relpath": ".dvc/cache/files/md5/23/3cf5a311d0b9a3af7fda8983d2cc76.dir",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\.dvc\\cache\\files\\md5\\23\\3cf5a311d0b9a3af7fda8983d2cc76.dir",
+    "size": 1618,
+    "mtime": 1763123855.2945187,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "5335f3eeb563601fafa8c240ea404f5cb20fa0bf06dccc18cd061fb378a81144",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\.dvc__cache__files__md5__23__3cf5a311d0b9a3af7fda8983d2cc76.dir.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "ISO-8859-1",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'3cf5a311d0b9a3af7fda8983d2cc76.dir'",
+    "X-TIKA:detectedEncoding": "ISO-8859-1",
+    "Content-Length": "1618",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=ISO-8859-1"
+  }
+}

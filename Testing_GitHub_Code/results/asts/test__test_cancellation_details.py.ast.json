@@ -1,0 +1,436 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Expr",
+      "value": {
+        "_const_preview": "\nThis module checks if the cancellation_details script works.\n"
+      },
+      "lineno": 1,
+      "end_lineno": 3
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "os",
+          "asname": null,
+          "lineno": 4,
+          "end_lineno": 4
+        }
+      ],
+      "lineno": 4,
+      "end_lineno": 4
+    },
+    {
+      "_type": "Import",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "pickle",
+          "asname": null,
+          "lineno": 5,
+          "end_lineno": 5
+        }
+      ],
+      "lineno": 5,
+      "end_lineno": 5
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "PROJECT_DIR",
+          "lineno": 7,
+          "end_lineno": 7
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 7,
+              "end_lineno": 7
+            },
+            "attr": "path",
+            "lineno": 7,
+            "end_lineno": 7
+          },
+          "attr": "dirname",
+          "lineno": 7,
+          "end_lineno": 7
+        },
+        "args": [
+          {
+            "_type": "Call",
+            "func": {
+              "_type": "Attribute",
+              "value": {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "os",
+                  "lineno": 7,
+                  "end_lineno": 7
+                },
+                "attr": "path",
+                "lineno": 7,
+                "end_lineno": 7
+              },
+              "attr": "dirname",
+              "lineno": 7,
+              "end_lineno": 7
+            },
+            "args": [
+              {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Attribute",
+                    "value": {
+                      "_type": "Name",
+                      "id": "os",
+                      "lineno": 7,
+                      "end_lineno": 7
+                    },
+                    "attr": "path",
+                    "lineno": 7,
+                    "end_lineno": 7
+                  },
+                  "attr": "abspath",
+                  "lineno": 7,
+                  "end_lineno": 7
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "__file__",
+                    "lineno": 7,
+                    "end_lineno": 7
+                  }
+                ],
+                "keywords": [],
+                "lineno": 7,
+                "end_lineno": 7
+              }
+            ],
+            "keywords": [],
+            "lineno": 7,
+            "end_lineno": 7
+          }
+        ],
+        "keywords": [],
+        "lineno": 7,
+        "end_lineno": 7
+      },
+      "type_comment": null,
+      "lineno": 7,
+      "end_lineno": 7
+    },
+    {
+      "_type": "Assign",
+      "targets": [
+        {
+          "_type": "Name",
+          "id": "input_pickle_path",
+          "lineno": 8,
+          "end_lineno": 8
+        }
+      ],
+      "value": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 8,
+              "end_lineno": 8
+            },
+            "attr": "path",
+            "lineno": 8,
+            "end_lineno": 8
+          },
+          "attr": "join",
+          "lineno": 8,
+          "end_lineno": 8
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "PROJECT_DIR",
+            "lineno": 8,
+            "end_lineno": 8
+          },
+          {
+            "_type": "Constant",
+            "value": "data",
+            "kind": null,
+            "lineno": 8,
+            "end_lineno": 8
+          },
+          {
+            "_type": "Constant",
+            "value": "processed",
+            "kind": null,
+            "lineno": 8,
+            "end_lineno": 8
+          },
+          {
+            "_type": "Constant",
+            "value": "cancellation_details.pkl",
+            "kind": null,
+            "lineno": 9,
+            "end_lineno": 9
+          }
+        ],
+        "keywords": [],
+        "lineno": 8,
+        "end_lineno": 9
+      },
+      "type_comment": null,
+      "lineno": 8,
+      "end_lineno": 9
+    },
+    {
+      "_type": "If",
+      "test": {
+        "_type": "Call",
+        "func": {
+          "_type": "Attribute",
+          "value": {
+            "_type": "Attribute",
+            "value": {
+              "_type": "Name",
+              "id": "os",
+              "lineno": 11,
+              "end_lineno": 11
+            },
+            "attr": "path",
+            "lineno": 11,
+            "end_lineno": 11
+          },
+          "attr": "exists",
+          "lineno": 11,
+          "end_lineno": 11
+        },
+        "args": [
+          {
+            "_type": "Name",
+            "id": "input_pickle_path",
+            "lineno": 11,
+            "end_lineno": 11
+          }
+        ],
+        "keywords": [],
+        "lineno": 11,
+        "end_lineno": 11
+      },
+      "body": [
+        {
+          "_type": "With",
+          "items": [
+            {
+              "_type": "withitem",
+              "context_expr": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Name",
+                  "id": "open",
+                  "lineno": 12,
+                  "end_lineno": 12
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "input_pickle_path",
+                    "lineno": 12,
+                    "end_lineno": 12
+                  },
+                  {
+                    "_type": "Constant",
+                    "value": "rb",
+                    "kind": null,
+                    "lineno": 12,
+                    "end_lineno": 12
+                  }
+                ],
+                "keywords": [],
+                "lineno": 12,
+                "end_lineno": 12
+              },
+              "optional_vars": {
+                "_type": "Name",
+                "id": "file",
+                "lineno": 12,
+                "end_lineno": 12
+              }
+            }
+          ],
+          "body": [
+            {
+              "_type": "Assign",
+              "targets": [
+                {
+                  "_type": "Name",
+                  "id": "result",
+                  "lineno": 13,
+                  "end_lineno": 13
+                }
+              ],
+              "value": {
+                "_type": "Call",
+                "func": {
+                  "_type": "Attribute",
+                  "value": {
+                    "_type": "Name",
+                    "id": "pickle",
+                    "lineno": 13,
+                    "end_lineno": 13
+                  },
+                  "attr": "load",
+                  "lineno": 13,
+                  "end_lineno": 13
+                },
+                "args": [
+                  {
+                    "_type": "Name",
+                    "id": "file",
+                    "lineno": 13,
+                    "end_lineno": 13
+                  }
+                ],
+                "keywords": [],
+                "lineno": 13,
+                "end_lineno": 13
+              },
+              "type_comment": null,
+              "lineno": 13,
+              "end_lineno": 13
+            }
+          ],
+          "type_comment": null,
+          "lineno": 12,
+          "end_lineno": 13
+        }
+      ],
+      "orelse": [],
+      "lineno": 11,
+      "end_lineno": 13
+    },
+    {
+      "_type": "FunctionDef",
+      "name": "test_cancellation_details",
+      "args": {
+        "_type": "arguments",
+        "posonlyargs": [],
+        "args": [],
+        "vararg": null,
+        "kwonlyargs": [],
+        "kw_defaults": [],
+        "kwarg": null,
+        "defaults": []
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    This function raises an AssertionError if the specified columns are not\n    present in the result DataFrame.\n    "
+          },
+          "lineno": 16,
+          "end_lineno": 19
+        },
+        {
+          "_type": "Assert",
+          "test": {
+            "_type": "Compare",
+            "left": {
+              "_type": "Constant",
+              "value": "Cancellation_Frequency",
+              "kind": null,
+              "lineno": 20,
+              "end_lineno": 20
+            },
+            "ops": [
+              {
+                "_type": "In"
+              }
+            ],
+            "comparators": [
+              {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "result",
+                  "lineno": 20,
+                  "end_lineno": 20
+                },
+                "attr": "columns",
+                "lineno": 20,
+                "end_lineno": 20
+              }
+            ],
+            "lineno": 20,
+            "end_lineno": 20
+          },
+          "msg": null,
+          "lineno": 20,
+          "end_lineno": 20
+        },
+        {
+          "_type": "Assert",
+          "test": {
+            "_type": "Compare",
+            "left": {
+              "_type": "Constant",
+              "value": "Cancellation_Rate",
+              "kind": null,
+              "lineno": 21,
+              "end_lineno": 21
+            },
+            "ops": [
+              {
+                "_type": "In"
+              }
+            ],
+            "comparators": [
+              {
+                "_type": "Attribute",
+                "value": {
+                  "_type": "Name",
+                  "id": "result",
+                  "lineno": 21,
+                  "end_lineno": 21
+                },
+                "attr": "columns",
+                "lineno": 21,
+                "end_lineno": 21
+              }
+            ],
+            "lineno": 21,
+            "end_lineno": 21
+          },
+          "msg": null,
+          "lineno": 21,
+          "end_lineno": 21
+        }
+      ],
+      "decorator_list": [],
+      "returns": null,
+      "type_comment": null,
+      "lineno": 15,
+      "end_lineno": 21
+    }
+  ],
+  "type_ignores": []
+}

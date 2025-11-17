@@ -1,0 +1,32 @@
+{
+  "relpath": "gcpdeploy/src/pca.py",
+  "manifest_meta": {
+    "relpath": "gcpdeploy/src/pca.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\pca.py",
+    "size": 4204,
+    "mtime": 1763123859.3707168,
+    "mime": "text/x-python",
+    "is_text": true,
+    "sha256": "1ade675b81750e23419a12a18015214cd0d7c96c435b25f4a2196cc7cc2ca066",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\gcpdeploy__src__pca.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "1",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'pca.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "4204",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

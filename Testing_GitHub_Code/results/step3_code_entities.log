@@ -1,0 +1,9 @@
+22:16:36 INFO     Repo dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Ecommerce-Data-MLOps
+22:16:36 INFO     Output dir: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results
+22:16:36 INFO     Patterns: ['**/*.py']
+22:16:36 INFO     Max source lines per node: 200
+22:16:36 INFO     Write full source files: False
+22:16:36 INFO     Found 100 files matching patterns
+22:16:36 INFO     Processed 50 files...
+22:16:36 INFO     Processed 100 files...
+22:16:36 INFO     Wrote aggregated code entities to: C:\Users\jsrin\OneDrive\Desktop\PEKG\Testing_GitHub_Code\results\code_entities_full.json (files=100 failed=0)

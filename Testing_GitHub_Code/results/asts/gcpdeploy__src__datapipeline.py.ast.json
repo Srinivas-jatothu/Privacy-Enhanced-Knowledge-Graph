@@ -1,0 +1,443 @@
+{
+  "_type": "Module",
+  "body": [
+    {
+      "_type": "Expr",
+      "value": {
+        "_const_preview": "\nFunctions to run the datapipeline in GCP\n"
+      },
+      "lineno": 1,
+      "end_lineno": 3
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "download_data",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "ingest_data",
+          "asname": null,
+          "lineno": 4,
+          "end_lineno": 4
+        }
+      ],
+      "level": 0,
+      "lineno": 4,
+      "end_lineno": 4
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "unzip_data",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "unzip_file",
+          "asname": null,
+          "lineno": 5,
+          "end_lineno": 5
+        }
+      ],
+      "level": 0,
+      "lineno": 5,
+      "end_lineno": 5
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "data_loader",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "load_data",
+          "asname": null,
+          "lineno": 6,
+          "end_lineno": 6
+        }
+      ],
+      "level": 0,
+      "lineno": 6,
+      "end_lineno": 6
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "missing_values_handler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "handle_missing",
+          "asname": null,
+          "lineno": 7,
+          "end_lineno": 7
+        }
+      ],
+      "level": 0,
+      "lineno": 7,
+      "end_lineno": 7
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "duplicates_handler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "remove_duplicates",
+          "asname": null,
+          "lineno": 8,
+          "end_lineno": 8
+        }
+      ],
+      "level": 0,
+      "lineno": 8,
+      "end_lineno": 8
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "transaction_status_handler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "handle_transaction_status",
+          "asname": null,
+          "lineno": 9,
+          "end_lineno": 9
+        }
+      ],
+      "level": 0,
+      "lineno": 9,
+      "end_lineno": 9
+    },
+    {
+      "_type": "ImportFrom",
+      "module": "anomaly_code_handler",
+      "names": [
+        {
+          "_type": "alias",
+          "name": "handle_anomalous_codes",
+          "asname": null,
+          "lineno": 10,
+          "end_lineno": 10
+        }
+      ],
+      "level": 0,
+      "lineno": 10,
+      "end_lineno": 10
+    },
+    {
+      "_type": "If",
+      "test": {
+        "_type": "Compare",
+        "left": {
+          "_type": "Name",
+          "id": "__name__",
+          "lineno": 13,
+          "end_lineno": 13
+        },
+        "ops": [
+          {
+            "_type": "Eq"
+          }
+        ],
+        "comparators": [
+          {
+            "_type": "Constant",
+            "value": "__main__",
+            "kind": null,
+            "lineno": 13,
+            "end_lineno": 13
+          }
+        ],
+        "lineno": 13,
+        "end_lineno": 13
+      },
+      "body": [
+        {
+          "_type": "Expr",
+          "value": {
+            "_const_preview": "\n    Add your modules to the pipeline and refactor them to only return only dataframes.\n    Don't use any path variables\n    "
+          },
+          "lineno": 14,
+          "end_lineno": 17
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "ZIPFILE_PATH",
+              "lineno": 19,
+              "end_lineno": 19
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "ingest_data",
+              "lineno": 19,
+              "end_lineno": 19
+            },
+            "args": [
+              {
+                "_type": "Constant",
+                "value": "https://archive.ics.uci.edu/static/public/352/online+retail.zip",
+                "kind": null,
+                "lineno": 20,
+                "end_lineno": 20
+              }
+            ],
+            "keywords": [],
+            "lineno": 19,
+            "end_lineno": 20
+          },
+          "type_comment": null,
+          "lineno": 19,
+          "end_lineno": 20
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "UNZIPPED_FILE",
+              "lineno": 21,
+              "end_lineno": 21
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "unzip_file",
+              "lineno": 21,
+              "end_lineno": 21
+            },
+            "args": [
+              {
+                "_type": "Name",
+                "id": "ZIPFILE_PATH",
+                "lineno": 21,
+                "end_lineno": 21
+              },
+              {
+                "_type": "Constant",
+                "value": "data",
+                "kind": null,
+                "lineno": 21,
+                "end_lineno": 21
+              }
+            ],
+            "keywords": [],
+            "lineno": 21,
+            "end_lineno": 21
+          },
+          "type_comment": null,
+          "lineno": 21,
+          "end_lineno": 21
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "LOADED_DATA_PATH",
+              "lineno": 22,
+              "end_lineno": 22
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "load_data",
+              "lineno": 22,
+              "end_lineno": 22
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "excel_path",
+                "value": {
+                  "_type": "Name",
+                  "id": "UNZIPPED_FILE",
+                  "lineno": 22,
+                  "end_lineno": 22
+                },
+                "lineno": 22,
+                "end_lineno": 22
+              }
+            ],
+            "lineno": 22,
+            "end_lineno": 22
+          },
+          "type_comment": null,
+          "lineno": 22,
+          "end_lineno": 22
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "AFTER_MISSING_PATH",
+              "lineno": 23,
+              "end_lineno": 23
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "handle_missing",
+              "lineno": 23,
+              "end_lineno": 23
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "input_pickle_path",
+                "value": {
+                  "_type": "Name",
+                  "id": "LOADED_DATA_PATH",
+                  "lineno": 23,
+                  "end_lineno": 23
+                },
+                "lineno": 23,
+                "end_lineno": 23
+              }
+            ],
+            "lineno": 23,
+            "end_lineno": 23
+          },
+          "type_comment": null,
+          "lineno": 23,
+          "end_lineno": 23
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "AFTER_DUPLICATES_PATH",
+              "lineno": 24,
+              "end_lineno": 24
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "remove_duplicates",
+              "lineno": 24,
+              "end_lineno": 24
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "input_pickle_path",
+                "value": {
+                  "_type": "Name",
+                  "id": "AFTER_MISSING_PATH",
+                  "lineno": 24,
+                  "end_lineno": 24
+                },
+                "lineno": 24,
+                "end_lineno": 24
+              }
+            ],
+            "lineno": 24,
+            "end_lineno": 24
+          },
+          "type_comment": null,
+          "lineno": 24,
+          "end_lineno": 24
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "AFTER_TRANSACTION_PATH",
+              "lineno": 25,
+              "end_lineno": 25
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "handle_transaction_status",
+              "lineno": 25,
+              "end_lineno": 25
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "input_pickle_path",
+                "value": {
+                  "_type": "Name",
+                  "id": "AFTER_DUPLICATES_PATH",
+                  "lineno": 25,
+                  "end_lineno": 25
+                },
+                "lineno": 25,
+                "end_lineno": 25
+              }
+            ],
+            "lineno": 25,
+            "end_lineno": 25
+          },
+          "type_comment": null,
+          "lineno": 25,
+          "end_lineno": 25
+        },
+        {
+          "_type": "Assign",
+          "targets": [
+            {
+              "_type": "Name",
+              "id": "AFTER_ANOMALY_CODE_PATH",
+              "lineno": 26,
+              "end_lineno": 26
+            }
+          ],
+          "value": {
+            "_type": "Call",
+            "func": {
+              "_type": "Name",
+              "id": "handle_anomalous_codes",
+              "lineno": 26,
+              "end_lineno": 26
+            },
+            "args": [],
+            "keywords": [
+              {
+                "_type": "keyword",
+                "arg": "input_pickle_path",
+                "value": {
+                  "_type": "Name",
+                  "id": "AFTER_TRANSACTION_PATH",
+                  "lineno": 26,
+                  "end_lineno": 26
+                },
+                "lineno": 26,
+                "end_lineno": 26
+              }
+            ],
+            "lineno": 26,
+            "end_lineno": 26
+          },
+          "type_comment": null,
+          "lineno": 26,
+          "end_lineno": 26
+        }
+      ],
+      "orelse": [],
+      "lineno": 13,
+      "end_lineno": 26
+    }
+  ],
+  "type_ignores": []
+}

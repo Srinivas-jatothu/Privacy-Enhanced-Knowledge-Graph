@@ -1,0 +1,32 @@
+{
+  "relpath": "gcpdeploy/src/customers_behavior.py",
+  "manifest_meta": {
+    "relpath": "gcpdeploy/src/customers_behavior.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\gcpdeploy\\src\\customers_behavior.py",
+    "size": 3039,
+    "mtime": 1763123859.365239,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "49866bc9f448ff935901edcb73b80981df63e6ac24cf40a7e2a2fa0dace850a2",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\gcpdeploy__src__customers_behavior.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "4",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'customers_behavior.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "3039",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

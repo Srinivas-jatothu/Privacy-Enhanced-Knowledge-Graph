@@ -1,0 +1,32 @@
+{
+  "relpath": "test/test_missing_values_handler.py",
+  "manifest_meta": {
+    "relpath": "test/test_missing_values_handler.py",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\test\\test_missing_values_handler.py",
+    "size": 1566,
+    "mtime": 1763123859.571562,
+    "mime": "text/x-python",
+    "is_text": true,
+    "sha256": "78dd7ec593397ce9c800493e5ed5b0d993e946449f9a560c62ed4a81def61457",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\test__test_missing_values_handler.py.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "3",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'test_missing_values_handler.py'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "1566",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}

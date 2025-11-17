@@ -1,0 +1,10 @@
+"""
+Function to download and ingest the data file
+"""
+import os
+import requests
+
+DEFAULT_FILE_URL = "https://archive.ics.uci.edu/static/public/352/online+retail.zip"
+
+def ingest_data(file_url=DEFAULT_FILE_URL):
+    """

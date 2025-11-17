@@ -1,0 +1,569 @@
+{
+  "dags": {},
+  "dags.data": {},
+  "dags.src": {},
+  "dags.src.airflow": {
+    "datetime": "datetime.datetime",
+    "timedelta": "datetime.timedelta",
+    "DAG": "airflow.DAG",
+    "PythonOperator": "airflow.operators.python.PythonOperator",
+    "conf": "airflow.configuration",
+    "ingest_data": "src.download_data.ingest_data",
+    "unzip_file": "src.unzip_data.unzip_file",
+    "load_data": "src.data_loader.load_data",
+    "handle_missing": "src.missing_values_handler.handle_missing",
+    "remove_duplicates": "src.duplicates_handler.remove_duplicates",
+    "handle_transaction_status": "src.transaction_status_handler.handle_transaction_status",
+    "handle_anomalous_codes": "src.anomaly_code_handler.handle_anomalous_codes",
+    "cleaning_description": "src.cleaning_description.cleaning_description",
+    "removing_zero": "src.removing_zero_unitprice.removing_zero",
+    "rfm": "src.rfm.rfm",
+    "unique_products": "src.unique_products.unique_products",
+    "customers_behavior": "src.customers_behavior.customers_behavior",
+    "geographic_features": "src.geographic_features.geographic_features",
+    "cancellation_details": "src.cancellation_details.cancellation_details",
+    "seasonality_impacts": "src.seasonality.seasonality_impacts",
+    "removing_outlier": "src.outlier_treatment.removing_outlier",
+    "scaler": "src.scaler.scaler",
+    "pc_analyzer": "src.pca.pc_analyzer",
+    "correlation_check": "src.correlation.correlation_check"
+  },
+  "dags.src.anomaly_code_handler": {
+    "pickle": "pickle",
+    "os": "os"
+  },
+  "dags.src.cancellation_details": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas",
+    "np": "numpy"
+  },
+  "dags.src.cleaning_description": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "dags.src.correlation": {
+    "os": "os",
+    "json": "json",
+    "yes_no_dialog": "prompt_toolkit.shortcuts.yes_no_dialog",
+    "pd": "pandas",
+    "sns": "seaborn",
+    "np": "numpy",
+    "plt": "matplotlib.pyplot",
+    "LinearSegmentedColormap": "matplotlib.colors.LinearSegmentedColormap"
+  },
+  "dags.src.customers_behavior": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "dags.src.data_loader": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "dags.src.download_data": {
+    "os": "os",
+    "requests": "requests"
+  },
+  "dags.src.duplicates_handler": {
+    "pickle": "pickle",
+    "os": "os"
+  },
+  "dags.src.geographic_features": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "dags.src.missing_values_handler": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "dags.src.outlier_treatment": {
+    "os": "os",
+    "pickle": "pickle",
+    "IsolationForest": "sklearn.ensemble.IsolationForest"
+  },
+  "dags.src.pca": {
+    "os": "os",
+    "json": "json",
+    "pd": "pandas",
+    "np": "numpy",
+    "PCA": "sklearn.decomposition.PCA",
+    "yes_no_dialog": "prompt_toolkit.shortcuts.yes_no_dialog"
+  },
+  "dags.src.removing_zero_unitprice": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "dags.src.rfm": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "dags.src.scaler": {
+    "os": "os",
+    "json": "json",
+    "pd": "pandas",
+    "StandardScaler": "sklearn.preprocessing.StandardScaler",
+    "Normalizer": "sklearn.preprocessing.Normalizer",
+    "yes_no_dialog": "prompt_toolkit.shortcuts.yes_no_dialog"
+  },
+  "dags.src.seasonality": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas",
+    "np": "numpy",
+    "sc": "scipy.stats"
+  },
+  "dags.src.transaction_status_handler": {
+    "pickle": "pickle",
+    "os": "os",
+    "np": "numpy"
+  },
+  "dags.src.unique_products": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "dags.src.unzip_data": {
+    "zipfile": "zipfile",
+    "os": "os"
+  },
+  "data": {},
+  "data.test_data": {},
+  "gcpdeploy.src": {},
+  "gcpdeploy.src.airflow": {
+    "datetime": "datetime.datetime",
+    "timedelta": "datetime.timedelta",
+    "DAG": "airflow.DAG",
+    "PythonOperator": "airflow.operators.python.PythonOperator",
+    "conf": "airflow.configuration",
+    "ingest_data": "src.download_data.ingest_data",
+    "unzip_file": "src.unzip_data.unzip_file",
+    "load_data": "src.data_loader.load_data",
+    "handle_missing": "src.missing_values_handler.handle_missing",
+    "remove_duplicates": "src.duplicates_handler.remove_duplicates",
+    "handle_transaction_status": "src.transaction_status_handler.handle_transaction_status",
+    "handle_anomalous_codes": "src.anomaly_code_handler.handle_anomalous_codes",
+    "cleaning_description": "src.cleaning_description.cleaning_description",
+    "removing_zero": "src.removing_zero_unitprice.removing_zero",
+    "rfm": "src.rfm.rfm",
+    "unique_products": "src.unique_products.unique_products",
+    "customers_behavior": "src.customers_behavior.customers_behavior",
+    "geographic_features": "src.geographic_features.geographic_features",
+    "cancellation_details": "src.cancellation_details.cancellation_details",
+    "seasonality_impacts": "src.seasonality.seasonality_impacts",
+    "removing_outlier": "src.outlier_treatment.removing_outlier",
+    "scaler": "src.scaler.scaler",
+    "pc_analyzer": "src.pca.pc_analyzer",
+    "correlation_check": "src.correlation.correlation_check"
+  },
+  "gcpdeploy.src.anomaly_code_handler": {
+    "pickle": "pickle",
+    "os": "os"
+  },
+  "gcpdeploy.src.build": {
+    "aiplatform": "google.cloud.aiplatform",
+    "os": "os",
+    "load_dotenv": "dotenv.load_dotenv"
+  },
+  "gcpdeploy.src.cancellation_details": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas",
+    "np": "numpy"
+  },
+  "gcpdeploy.src.cleaning_description": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "gcpdeploy.src.correlation": {
+    "os": "os",
+    "yes_no_dialog": "prompt_toolkit.shortcuts.yes_no_dialog",
+    "pd": "pandas",
+    "sns": "seaborn",
+    "np": "numpy",
+    "plt": "matplotlib.pyplot",
+    "LinearSegmentedColormap": "matplotlib.colors.LinearSegmentedColormap"
+  },
+  "gcpdeploy.src.customers_behavior": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "gcpdeploy.src.data_loader": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "gcpdeploy.src.datapipeline": {
+    "ingest_data": "download_data.ingest_data",
+    "unzip_file": "unzip_data.unzip_file",
+    "load_data": "data_loader.load_data",
+    "handle_missing": "missing_values_handler.handle_missing",
+    "remove_duplicates": "duplicates_handler.remove_duplicates",
+    "handle_transaction_status": "transaction_status_handler.handle_transaction_status",
+    "handle_anomalous_codes": "anomaly_code_handler.handle_anomalous_codes"
+  },
+  "gcpdeploy.src.download_data": {
+    "os": "os",
+    "requests": "requests"
+  },
+  "gcpdeploy.src.duplicates_handler": {
+    "pickle": "pickle",
+    "os": "os"
+  },
+  "gcpdeploy.src.geographic_features": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "gcpdeploy.src.inference": {
+    "Dict": "typing.Dict",
+    "List": "typing.List",
+    "Union": "typing.Union",
+    "aiplatform": "google.cloud.aiplatform",
+    "json_format": "google.protobuf.json_format",
+    "Value": "google.protobuf.struct_pb2.Value"
+  },
+  "gcpdeploy.src.mflow_logging": {
+    "os": "os",
+    "logging": "logging",
+    "warnings": "warnings",
+    "json": "json",
+    "datetime": "datetime.datetime",
+    "pd": "pandas",
+    "KMeans": "sklearn.cluster.KMeans",
+    "silhouette_score": "sklearn.metrics.silhouette_score",
+    "davies_bouldin_score": "sklearn.metrics.davies_bouldin_score",
+    "calinski_harabasz_score": "sklearn.metrics.calinski_harabasz_score",
+    "mlflow": "mlflow.sklearn",
+    "infer_signature": "mlflow.models.infer_signature"
+  },
+  "gcpdeploy.src.missing_values_handler": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "gcpdeploy.src.model_analysis": {
+    "storage": "google.cloud.storage",
+    "datetime": "datetime.datetime",
+    "pytz": "pytz",
+    "pd": "pandas",
+    "train_test_split": "sklearn.model_selection.train_test_split",
+    "RandomForestRegressor": "sklearn.ensemble.RandomForestRegressor",
+    "joblib": "joblib",
+    "json": "json",
+    "gcsfs": "gcsfs",
+    "os": "os",
+    "load_dotenv": "dotenv.load_dotenv",
+    "go": "plotly.graph_objects",
+    "sns": "seaborn",
+    "plt": "matplotlib.pyplot",
+    "np": "numpy",
+    "silhouette_score": "sklearn.metrics.silhouette_score",
+    "calinski_harabasz_score": "sklearn.metrics.calinski_harabasz_score",
+    "davies_bouldin_score": "sklearn.metrics.davies_bouldin_score",
+    "tabulate": "tabulate.tabulate"
+  },
+  "gcpdeploy.src.outlier_treatment": {
+    "os": "os",
+    "pickle": "pickle",
+    "IsolationForest": "sklearn.ensemble.IsolationForest"
+  },
+  "gcpdeploy.src.pca": {
+    "os": "os",
+    "pd": "pandas",
+    "np": "numpy",
+    "PCA": "sklearn.decomposition.PCA",
+    "yes_no_dialog": "prompt_toolkit.shortcuts.yes_no_dialog"
+  },
+  "gcpdeploy.src.removing_zero_unitprice": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "gcpdeploy.src.rfm": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "gcpdeploy.src.seasonality": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas",
+    "np": "numpy",
+    "sc": "scipy.stats"
+  },
+  "gcpdeploy.src.serve.predict": {
+    "Flask": "flask.Flask",
+    "jsonify": "flask.jsonify",
+    "request": "flask.request",
+    "joblib": "joblib",
+    "os": "os",
+    "json": "json",
+    "load_dotenv": "dotenv.load_dotenv",
+    "pd": "pandas",
+    "time": "time",
+    "datetime": "datetime.datetime",
+    "storage": "google.cloud.storage",
+    "logging": "google.cloud.logging",
+    "bigquery": "google.cloud.bigquery",
+    "SchemaField": "google.cloud.bigquery.SchemaField",
+    "NotFound": "google.api_core.exceptions.NotFound",
+    "service_account": "google.oauth2.service_account",
+    "severity": "google.logging.type.log_severity_pb2"
+  },
+  "gcpdeploy.src.serve.testing_serve": {
+    "requests": "requests",
+    "json": "json"
+  },
+  "gcpdeploy.src.trainer.ClusterBasedRecommender": {
+    "pd": "pandas"
+  },
+  "gcpdeploy.src.trainer": {},
+  "gcpdeploy.src.trainer.train": {
+    "storage": "google.cloud.storage",
+    "datetime": "datetime.datetime",
+    "pytz": "pytz",
+    "pd": "pandas",
+    "KMeans": "sklearn.cluster.KMeans",
+    "joblib": "joblib",
+    "json": "json",
+    "gcsfs": "gcsfs",
+    "os": "os",
+    "load_dotenv": "dotenv.load_dotenv",
+    "np": "numpy",
+    "Counter": "collections.Counter",
+    "generate_recommendations": "ClusterBasedRecommender.generate_recommendations"
+  },
+  "gcpdeploy.src.transaction_status_handler": {
+    "pickle": "pickle",
+    "os": "os",
+    "np": "numpy"
+  },
+  "gcpdeploy.src.unique_products": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "gcpdeploy.src.unzip_data": {
+    "zipfile": "zipfile",
+    "os": "os"
+  },
+  "src": {},
+  "src.anomaly_code_handler": {
+    "pickle": "pickle",
+    "os": "os"
+  },
+  "src.cancellation_details": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas",
+    "np": "numpy"
+  },
+  "src.cleaning_description": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "src.correlation": {
+    "os": "os",
+    "json": "json",
+    "yes_no_dialog": "prompt_toolkit.shortcuts.yes_no_dialog",
+    "pd": "pandas",
+    "sns": "seaborn",
+    "np": "numpy",
+    "plt": "matplotlib.pyplot",
+    "LinearSegmentedColormap": "matplotlib.colors.LinearSegmentedColormap"
+  },
+  "src.customers_behavior": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "src.data_loader": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "src.datapipeline": {
+    "ingest_data": "download_data.ingest_data",
+    "unzip_file": "unzip_data.unzip_file",
+    "load_data": "data_loader.load_data",
+    "handle_missing": "missing_values_handler.handle_missing",
+    "remove_duplicates": "duplicates_handler.remove_duplicates",
+    "handle_transaction_status": "transaction_status_handler.handle_transaction_status",
+    "handle_anomalous_codes": "anomaly_code_handler.handle_anomalous_codes"
+  },
+  "src.download_data": {
+    "os": "os",
+    "requests": "requests"
+  },
+  "src.duplicates_handler": {
+    "pickle": "pickle",
+    "os": "os"
+  },
+  "src.geographic_features": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "src.histogram_analysis": {
+    "os": "os",
+    "pd": "pandas",
+    "plt": "matplotlib.pyplot"
+  },
+  "src.missing_values_handler": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "src.outlier_treatment": {
+    "os": "os",
+    "pickle": "pickle",
+    "IsolationForest": "sklearn.ensemble.IsolationForest"
+  },
+  "src.pca": {
+    "os": "os",
+    "json": "json",
+    "pd": "pandas",
+    "np": "numpy",
+    "PCA": "sklearn.decomposition.PCA",
+    "yes_no_dialog": "prompt_toolkit.shortcuts.yes_no_dialog"
+  },
+  "src.radar_analysis": {
+    "os": "os",
+    "pd": "pandas",
+    "px": "plotly.express",
+    "write_image": "plotly.io.write_image",
+    "StandardScaler": "sklearn.preprocessing.StandardScaler"
+  },
+  "src.removing_zero_unitprice": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "src.rfm": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "src.scaler": {
+    "os": "os",
+    "json": "json",
+    "pd": "pandas",
+    "StandardScaler": "sklearn.preprocessing.StandardScaler",
+    "Normalizer": "sklearn.preprocessing.Normalizer",
+    "yes_no_dialog": "prompt_toolkit.shortcuts.yes_no_dialog"
+  },
+  "src.seasonality": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas",
+    "np": "numpy",
+    "sc": "scipy.stats"
+  },
+  "src.transaction_status_handler": {
+    "pickle": "pickle",
+    "os": "os",
+    "np": "numpy"
+  },
+  "src.unique_products": {
+    "pickle": "pickle",
+    "os": "os",
+    "pd": "pandas"
+  },
+  "src.unzip_data": {
+    "zipfile": "zipfile",
+    "os": "os"
+  },
+  "test": {},
+  "test.test_anomaly_code_handler": {
+    "os": "os",
+    "pickle": "pickle",
+    "handle_anomalous_codes": "src.anomaly_code_handler.handle_anomalous_codes"
+  },
+  "test.test_cancellation_details": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "test.test_cleaning_description": {
+    "os": "os",
+    "pickle": "pickle",
+    "cleaning_description": "src.cleaning_description.cleaning_description"
+  },
+  "test.test_correlation": {
+    "os": "os",
+    "pytest": "pytest",
+    "correlation_check": "src.correlation.correlation_check"
+  },
+  "test.test_customers_behavior": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "test.test_data_loader": {
+    "os": "os",
+    "pytest": "pytest",
+    "load_data": "src.data_loader.load_data"
+  },
+  "test.test_datapipeline": {},
+  "test.test_download_data": {
+    "os": "os",
+    "requests": "requests",
+    "requests_mock": "requests_mock",
+    "download_data": "src.download_data"
+  },
+  "test.test_duplicates_handler": {
+    "os": "os",
+    "pickle": "pickle",
+    "pytest": "pytest",
+    "remove_duplicates": "src.duplicates_handler.remove_duplicates"
+  },
+  "test.test_geographic_features": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "test.test_missing_values_handler": {
+    "os": "os",
+    "pytest": "pytest",
+    "handle_missing": "src.missing_values_handler.handle_missing"
+  },
+  "test.test_outlier_treatment": {
+    "os": "os",
+    "pickle": "pickle",
+    "removing_outlier": "src.outlier_treatment.removing_outlier"
+  },
+  "test.test_pca": {
+    "os": "os",
+    "pytest": "pytest",
+    "pc_analyzer": "src.pca.pc_analyzer"
+  },
+  "test.test_removing_zero_unitpirce": {
+    "os": "os",
+    "pickle": "pickle",
+    "removing_zero": "src.removing_zero_unitprice.removing_zero"
+  },
+  "test.test_rfm": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "test.test_scaler": {
+    "os": "os",
+    "pytest": "pytest",
+    "scaler": "src.scaler.scaler"
+  },
+  "test.test_seasonality": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "test.test_transaction_status_handler": {
+    "os": "os",
+    "pickle": "pickle",
+    "handle_transaction_status": "src.transaction_status_handler.handle_transaction_status"
+  },
+  "test.test_unique_products": {
+    "os": "os",
+    "pickle": "pickle"
+  },
+  "test.test_unzip_data": {
+    "os": "os",
+    "unzip_data": "src.unzip_data"
+  }
+}

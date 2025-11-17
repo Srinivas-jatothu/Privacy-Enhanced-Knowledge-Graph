@@ -1,0 +1,216 @@
+{
+  "repo": "Thomas-George-T/Ecommerce-Data-MLOps",
+  "total_fetched": 341,
+  "sample_first_n": [
+    {
+      "sha": "63ba542f61ac4451a6676f17b0db7760ce0ddabb",
+      "message_head": "Merge pull request #109 from Thomas-George-T/dependabot/pip/grpcio-1.53.2",
+      "author_name": "Thomas George Thomas",
+      "author_email": "thomas.th@northeastern.edu",
+      "author_date": "2024-06-05T16:52:03Z",
+      "parents": [
+        "2943a93511f49dc1685974354dffbf68709d8f52",
+        "af0af94401176e64b35d92dd63a4e83a3dd5e9f1"
+      ]
+    },
+    {
+      "sha": "af0af94401176e64b35d92dd63a4e83a3dd5e9f1",
+      "message_head": "Update requirements.txt",
+      "author_name": "Thomas George Thomas",
+      "author_email": "thomas.th@northeastern.edu",
+      "author_date": "2024-06-05T16:47:37Z",
+      "parents": [
+        "9d71e9035e161f0715194da1641d6ad14a974830"
+      ]
+    },
+    {
+      "sha": "9d71e9035e161f0715194da1641d6ad14a974830",
+      "message_head": "Bump grpcio from 1.51.3 to 1.53.2",
+      "author_name": "dependabot[bot]",
+      "author_email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "author_date": "2024-06-05T16:47:04Z",
+      "parents": [
+        "2943a93511f49dc1685974354dffbf68709d8f52"
+      ]
+    },
+    {
+      "sha": "2943a93511f49dc1685974354dffbf68709d8f52",
+      "message_head": "Merge pull request #108 from Thomas-George-T/Thomas-George-T-patch-1",
+      "author_name": "Thomas George Thomas",
+      "author_email": "thomas.th@northeastern.edu",
+      "author_date": "2024-06-05T16:45:25Z",
+      "parents": [
+        "d9a2ff012828d347c98a736164d1ac3b8cc326d7",
+        "b6e2ca6f491b3ec815392cb64effcfdcfd342a13"
+      ]
+    },
+    {
+      "sha": "b6e2ca6f491b3ec815392cb64effcfdcfd342a13",
+      "message_head": "Bumping up versions of Github actions",
+      "author_name": "Thomas George Thomas",
+      "author_email": "thomas.th@northeastern.edu",
+      "author_date": "2024-06-05T16:41:58Z",
+      "parents": [
+        "182703553878d358ccc76a3f2f825c93092f0d62"
+      ]
+    },
+    {
+      "sha": "182703553878d358ccc76a3f2f825c93092f0d62",
+      "message_head": "Merge pull request #110 from Thomas-George-T/Thomas-George-T-patch-2",
+      "author_name": "Thomas George Thomas",
+      "author_email": "thomas.th@northeastern.edu",
+      "author_date": "2024-06-05T16:34:33Z",
+      "parents": [
+        "162ca030184db52d9fe20a31d5f93c5e11cea70f",
+        "6edf75481708fa18215867a867a17d9056db4988"
+      ]
+    },
+    {
+      "sha": "6edf75481708fa18215867a867a17d9056db4988",
+      "message_head": "Update pytest.yml",
+      "author_name": "Thomas George Thomas",
+      "author_email": "thomas.th@northeastern.edu",
+      "author_date": "2024-06-05T16:34:01Z",
+      "parents": [
+        "d9a2ff012828d347c98a736164d1ac3b8cc326d7"
+      ]
+    },
+    {
+      "sha": "162ca030184db52d9fe20a31d5f93c5e11cea70f",
+      "message_head": "Update .pylintrc",
+      "author_name": "Thomas George Thomas",
+      "author_email": "thomas.th@northeastern.edu",
+      "author_date": "2024-06-05T16:29:45Z",
+      "parents": [
+        "79c65c61033e757be538a9a3ca16c0a337f0688b"
+      ]
+    },
+    {
+      "sha": "79c65c61033e757be538a9a3ca16c0a337f0688b",
+      "message_head": "Update requirements.txt",
+      "author_name": "Thomas George Thomas",
+      "author_email": "thomas.th@northeastern.edu",
+      "author_date": "2024-06-05T16:23:15Z",
+      "parents": [
+        "f422d44556426ad13c050f253319f62c92761062"
+      ]
+    },
+    {
+      "sha": "f422d44556426ad13c050f253319f62c92761062",
+      "message_head": "Update .pylintrc",
+      "author_name": "Thomas George Thomas",
+      "author_email": "thomas.th@northeastern.edu",
+      "author_date": "2024-06-05T16:21:34Z",
+      "parents": [
+        "d9a2ff012828d347c98a736164d1ac3b8cc326d7"
+      ]
+    },
+    {
+      "sha": "d9a2ff012828d347c98a736164d1ac3b8cc326d7",
+      "message_head": "Merge pull request #107 from Thomas-George-T/dependabot/pip/flask-appbuilder-4.3.11",
+      "author_name": "Thomas George Thomas",
+      "author_email": "thomas.th@northeastern.edu",
+      "author_date": "2024-06-05T16:17:33Z",
+      "parents": [
+        "99d0f19e66f56d47b5e2374ae4d6db628d7cbee6",
+        "5533e5d200b775685becd28469567c0051c0327b"
+      ]
+    },
+    {
+      "sha": "5533e5d200b775685becd28469567c0051c0327b",
+      "message_head": "Bump flask-appbuilder from 4.3.6 to 4.3.11",
+      "author_name": "dependabot[bot]",
+      "author_email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "author_date": "2024-06-05T14:10:37Z",
+      "parents": [
+        "99d0f19e66f56d47b5e2374ae4d6db628d7cbee6"
+      ]
+    },
+    {
+      "sha": "99d0f19e66f56d47b5e2374ae4d6db628d7cbee6",
+      "message_head": "Merge pull request #106 from Thomas-George-T/dependabot/pip/mlflow-2.13.1",
+      "author_name": "Thomas George Thomas",
+      "author_email": "thomas.th@northeastern.edu",
+      "author_date": "2024-06-05T14:07:35Z",
+      "parents": [
+        "8edb1111803e6c907f3da2a2044037cf97288c84",
+        "08a2e6238e403440a4ba55922d858f89a4427586"
+      ]
+    },
+    {
+      "sha": "08a2e6238e403440a4ba55922d858f89a4427586",
+      "message_head": "Bump mlflow from 2.8.1 to 2.13.1",
+      "author_name": "dependabot[bot]",
+      "author_email": "49699333+dependabot[bot]@users.noreply.github.com",
+      "author_date": "2024-06-05T13:57:51Z",
+      "parents": [
+        "8edb1111803e6c907f3da2a2044037cf97288c84"
+      ]
+    },
+    {
+      "sha": "8edb1111803e6c907f3da2a2044037cf97288c84",
+      "message_head": "Merge pull request #104 from Thomas-George-T/feature_machine_learning",
+      "author_name": "Thomas George Thomas",
+      "author_email": "tgt555@gmail.com",
+      "author_date": "2023-12-13T22:28:55Z",
+      "parents": [
+        "f8e59ee17f13e4c5b4579256934624a186256b10",
+        "10338bce9d7cd8cbe6d6e34e8f4eb9ca5fb0c051"
+      ]
+    },
+    {
+      "sha": "10338bce9d7cd8cbe6d6e34e8f4eb9ca5fb0c051",
+      "message_head": "Merge branch 'main' into feature_machine_learning",
+      "author_name": "Thomas George Thomas",
+      "author_email": "thomas.th@northeastern.edu",
+      "author_date": "2023-12-13T22:18:14Z",
+      "parents": [
+        "9c56ea039e2f4474dcbaf59c2d90eee0d4d93ac9",
+        "f8e59ee17f13e4c5b4579256934624a186256b10"
+      ]
+    },
+    {
+      "sha": "9c56ea039e2f4474dcbaf59c2d90eee0d4d93ac9",
+      "message_head": "Merge pull request #103 from Thomas-George-T/feature_koko",
+      "author_name": "Thomas George Thomas",
+      "author_email": "tgt555@gmail.com",
+      "author_date": "2023-12-13T22:14:09Z",
+      "parents": [
+        "06927841e95775df6e424a148761182d69e53741",
+        "05ad5d3f73695fbff73e42a06fe58d5afd84ea9d"
+      ]
+    },
+    {
+      "sha": "05ad5d3f73695fbff73e42a06fe58d5afd84ea9d",
+      "message_head": "Updated readme",
+      "author_name": "kokomocha",
+      "author_email": "komalpardeshi31@gmail.com",
+      "author_date": "2023-12-13T22:08:08Z",
+      "parents": [
+        "90c720d8840a0f76658fecec3f949e29fc30c971"
+      ]
+    },
+    {
+      "sha": "90c720d8840a0f76658fecec3f949e29fc30c971",
+      "message_head": "Merge branch 'feature_machine_learning' of https://github.com/Thomas-George-T/Ecommerce-Data-MLOps into feature_koko",
+      "author_name": "kokomocha",
+      "author_email": "komalpardeshi31@gmail.com",
+      "author_date": "2023-12-13T22:04:53Z",
+      "parents": [
+        "ea97936208a499cd8a8a24a7cac24583f5f107d9",
+        "06927841e95775df6e424a148761182d69e53741"
+      ]
+    },
+    {
+      "sha": "ea97936208a499cd8a8a24a7cac24583f5f107d9",
+      "message_head": "Updated readme",
+      "author_name": "kokomocha",
+      "author_email": "komalpardeshi31@gmail.com",
+      "author_date": "2023-12-13T21:46:19Z",
+      "parents": [
+        "f2af78b1801289ec9701589a7e50a4367cdc0d97"
+      ]
+    }
+  ],
+  "last_sha": "f7d84d162ebbadff3794c0ef7ccbd29199e2b270"
+}

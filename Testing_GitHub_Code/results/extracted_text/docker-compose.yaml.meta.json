@@ -1,0 +1,32 @@
+{
+  "relpath": "docker-compose.yaml",
+  "manifest_meta": {
+    "relpath": "docker-compose.yaml",
+    "abs_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Ecommerce-Data-MLOps\\docker-compose.yaml",
+    "size": 13265,
+    "mtime": 1763123858.5637045,
+    "mime": "text/plain",
+    "is_text": true,
+    "sha256": "8b09ed5db3dfd664ce0502b6f366dfb460f372e4167b17233f6db0b0b0b53191",
+    "sample_path": "C:\\Users\\jsrin\\OneDrive\\Desktop\\PEKG\\Testing_GitHub_Code\\results\\extracted_text\\docker-compose.yaml.txt"
+  },
+  "tika_meta": {
+    "X-TIKA:Parsed-By": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:Parsed-By-Full-Set": [
+      "org.apache.tika.parser.DefaultParser",
+      "org.apache.tika.parser.csv.TextAndCSVParser"
+    ],
+    "X-TIKA:content_handler": "ToTextContentHandler",
+    "Content-Encoding": "windows-1252",
+    "X-TIKA:parse_time_millis": "14",
+    "X-TIKA:embedded_depth": "0",
+    "resourceName": "b'docker-compose.yaml'",
+    "X-TIKA:detectedEncoding": "windows-1252",
+    "Content-Length": "13265",
+    "X-TIKA:encodingDetector": "UniversalEncodingDetector",
+    "Content-Type": "text/plain; charset=windows-1252"
+  }
+}
