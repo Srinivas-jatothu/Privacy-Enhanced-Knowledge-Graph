@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pipeline Flow</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f8f9fc;
+        padding: 40px;
+        line-height: 1.4;
+    }
+    .container {
+        width: 800px;
+        margin: auto;
+    }
+    .node {
+        background: white;
+        padding: 18px 22px;
+        border-radius: 8px;
+        border: 1px solid #cfd8dc;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .node-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+    .icon {
+        font-size: 20px;
+        margin-right: 8px;
+    }
+    .arrow {
+        text-align: center;
+        font-size: 28px;
+        margin: -10px 0 20px;
+        color: #546e7a;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <div class="node">
+        <div class="node-title"><span class="icon">📦</span>Final KG (node_v2.json)</div>
+    </div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="node">
+        <div class="node-title"><span class="icon">🎯</span>step1_resolve_canonical_node</div>
+        <div>(Map requested target → canonical KG node)</div>
+    </div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="node">
+        <div class="node-title"><span class="icon">📑</span>step2_fetch_target_metadata</div>
+        <div>(docstring, signature, attributes)</div>
+    </div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="node">
+        <div class="node-title"><span class="icon">🕸️</span>step3_retrieve_graph_context</div>
+        <div>(Neighborhood retrieval from KG)</div>
+    </div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="node">
+        <div class="node-title"><span class="icon">🧩</span>step4_map_node_to_ast</div>
+        <div>(Locate AST node / snippet)</div>
+    </div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="node">
+        <div class="node-title"><span class="icon">🏗️</span>step5_ast_struct</div>
+        <div>(Extract structural AST features)</div>
+    </div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="node">
+        <div class="node-title"><span class="icon">📄</span>step6_extract_code_snippets</div>
+        <div>(Extract code + usage examples)</div>
+    </div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="node">
+        <div class="node-title"><span class="icon">🧷</span>step7_payload_assembly</div>
+        <div>(Assemble metadata + KG facts + snippets)</div>
+    </div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="node">
+        <div class="node-title"><span class="icon">🔍</span>step8_re_rank</div>
+        <div>(Re-rank neighbors/context)</div>
+    </div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="node">
+        <div class="node-title"><span class="icon">📝</span>step9_generate_summaries</div>
+        <div>(LLM generates summaries)</div>
+    </div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="node">
+        <div class="node-title"><span class="icon">📊</span>step0_normalize_compute_metrics</div>
+        <div>(Normalize/validate outputs & compute metrics)</div>
+    </div>
+
+    <div class="arrow">⬇️</div>
+
+    <div class="node">
+        <div class="node-title"><span class="icon">📤</span>Final Outputs</div>
+        <div>— auto_summaries.json<br>— node_v2_with_summaries.json<br>— metrics / predictions_with_refs.jsonl</div>
+    </div>
+
+</div>
+</body>
+</html>

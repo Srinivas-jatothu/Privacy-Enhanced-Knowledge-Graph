@@ -1,0 +1,9 @@
+**Summary:**
+**Purpose Summary:**
+**Summary:**
+**Purpose Summary:**
+**Purpose**: Processes transaction data to calculate and store customer cancellation rates.
+**Purpose**: Cleans and standardizes a DataFrame by removing specific descriptions and converting text to uppercase, then saves it to a pickle file.
+**Purpose**: The `correlation_check` function calculates and visualizes the correlation matrix of a dataset, saving the results as an image and a parquet file.
+**Purpose Summary**: The `save_heatmap` function saves a heatmap figure as a PNG file to a specified path, handling file existence errors.
+**Purpose Summary**: The function `save_correlations_as_parquet` saves a correlation matrix to a specified file path in Parquet format.

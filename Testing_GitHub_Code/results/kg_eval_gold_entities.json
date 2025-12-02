@@ -1,0 +1,522 @@
+[
+  {
+    "id": "File:dags/src/airflow.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/anomaly_code_handler.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/cancellation_details.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/cleaning_description.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/correlation.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/customers_behavior.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/data_loader.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/download_data.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/duplicates_handler.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/geographic_features.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/missing_values_handler.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/outlier_treatment.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/pca.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/removing_zero_unitprice.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/rfm.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/scaler.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/seasonality.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/transaction_status_handler.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/unique_products.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/unzip_data.py",
+    "type": "File"
+  },
+  {
+    "id": "File:dags/src/__init__.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/airflow.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/anomaly_code_handler.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/build.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/cancellation_details.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/cleaning_description.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/correlation.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/customers_behavior.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/datapipeline.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/data_loader.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/download_data.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/duplicates_handler.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/geographic_features.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/inference.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/mflow_logging.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/missing_values_handler.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/model_analysis.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/outlier_treatment.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/pca.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/removing_zero_unitprice.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/rfm.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/scaler.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/seasonality.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/transaction_status_handler.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/unique_products.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/unzip_data.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/__init__.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/serve/Dockerfile",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/serve/predict.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/serve/testing_serve.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/trainer/Dockerfile",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/trainer/train.py",
+    "type": "File"
+  },
+  {
+    "id": "File:gcpdeploy/src/trainer/__init__.py",
+    "type": "File"
+  },
+  {
+    "id": "Function:dags.src.anomaly_code_handler.handle_anomalous_codes",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.cancellation_details.cancellation_details",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.cleaning_description.cleaning_description",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.correlation.correlation_check",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.correlation.save_heatmap",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.correlation.save_correlations_as_parquet",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.customers_behavior.customers_behavior",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.data_loader.load_data",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.download_data.ingest_data",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.duplicates_handler.remove_duplicates",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.geographic_features.geographic_features",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.missing_values_handler.handle_missing",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.outlier_treatment.removing_outlier",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.pca.pc_analyzer",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.pca.pca_",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.removing_zero_unitprice.removing_zero",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.rfm.rfm",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.scaler.scaler",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.seasonality.seasonality_impacts",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.transaction_status_handler.handle_transaction_status",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.unique_products.unique_products",
+    "type": "Function"
+  },
+  {
+    "id": "Function:dags.src.unzip_data.unzip_file",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.anomaly_code_handler.handle_anomalous_codes",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.build.initialize_aiplatform",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.build.create_training_job",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.build.run_training_job",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.build.deploy_model_to_endpoint",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.build.main",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.cancellation_details.cancellation_details",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.cleaning_description.cleaning_description",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.correlation.correlation_check",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.correlation.save_heatmap",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.correlation.save_correlations_as_parquet",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.customers_behavior.customers_behavior",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.data_loader.load_data",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.download_data.ingest_data",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.duplicates_handler.remove_duplicates",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.geographic_features.geographic_features",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.inference.predict_custom_trained_model",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.mflow_logging.mlflow_logging_train",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.missing_values_handler.handle_missing",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.model_analysis.load_data",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.model_analysis.normalize_data",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.model_analysis.data_transform",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.model_analysis.top_pca",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.model_analysis.cluster_distribution",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.model_analysis.evaluation_metrics",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.model_analysis.train_model",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.model_analysis.save_and_upload_model",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.model_analysis.silhouette_analysis",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.outlier_treatment.removing_outlier",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.pca.pc_analyzer",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.pca.pca_",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.removing_zero_unitprice.removing_zero",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.rfm.rfm",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.seasonality.seasonality_impacts",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.serve.predict.get_table_schema",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.serve.predict.initialize_variables",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.serve.predict.initialize_client_and_bucket",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.serve.predict.load_model",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.serve.predict.fetch_latest_model",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.serve.predict.health_check",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.serve.predict.predict",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.remove_outliers",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.merge_customer_transactions",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.identify_top_products",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.record_customer_purchases",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.create_recommendations",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.generate_recommendations",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.trainer.train.kmeans_clustering",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.trainer.train.save_and_upload_model",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.trainer.train.main",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.transaction_status_handler.handle_transaction_status",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.unique_products.unique_products",
+    "type": "Function"
+  },
+  {
+    "id": "Function:gcpdeploy.src.unzip_data.unzip_file",
+    "type": "Function"
+  }
+]

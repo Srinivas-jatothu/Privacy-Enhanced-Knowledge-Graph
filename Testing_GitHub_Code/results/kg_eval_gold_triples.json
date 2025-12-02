@@ -1,0 +1,822 @@
+[
+  {
+    "subject": "File:dags/src/correlation.py",
+    "predicate": "IMPORTS",
+    "object": "File:dags/src/correlation.py"
+  },
+  {
+    "subject": "File:dags/src/download_data.py",
+    "predicate": "IMPORTS",
+    "object": "File:dags/src/download_data.py"
+  },
+  {
+    "subject": "File:dags/src/pca.py",
+    "predicate": "IMPORTS",
+    "object": "File:dags/src/pca.py"
+  },
+  {
+    "subject": "File:dags/src/unzip_data.py",
+    "predicate": "IMPORTS",
+    "object": "File:dags/src/unzip_data.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/build.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/build.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/correlation.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/correlation.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/datapipeline.py",
+    "predicate": "IMPORTS",
+    "object": "File:dags/src/download_data.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/datapipeline.py",
+    "predicate": "IMPORTS",
+    "object": "File:dags/src/unzip_data.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/datapipeline.py",
+    "predicate": "IMPORTS",
+    "object": "File:dags/src/data_loader.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/datapipeline.py",
+    "predicate": "IMPORTS",
+    "object": "File:dags/src/missing_values_handler.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/datapipeline.py",
+    "predicate": "IMPORTS",
+    "object": "File:dags/src/duplicates_handler.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/datapipeline.py",
+    "predicate": "IMPORTS",
+    "object": "File:dags/src/transaction_status_handler.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/datapipeline.py",
+    "predicate": "IMPORTS",
+    "object": "File:dags/src/anomaly_code_handler.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/download_data.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/download_data.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/inference.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/inference.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/inference.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/serve/predict.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/mflow_logging.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/serve/predict.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/model_analysis.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/model_analysis.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/model_analysis.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/serve/predict.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/pca.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/pca.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/serve/predict.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/serve/predict.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/trainer/ClusterBasedRecommender.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/trainer/train.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/trainer/train.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/trainer/train.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/trainer/ClusterBasedRecommender.py"
+  },
+  {
+    "subject": "File:gcpdeploy/src/unzip_data.py",
+    "predicate": "IMPORTS",
+    "object": "File:gcpdeploy/src/unzip_data.py"
+  },
+  {
+    "subject": "Function:dags.src.anomaly_code_handler.handle_anomalous_codes",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.cancellation_details.cancellation_details",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.cleaning_description.cleaning_description",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.correlation.correlation_check",
+    "predicate": "CALLS",
+    "object": "Function:dags.src.correlation.save_heatmap"
+  },
+  {
+    "subject": "Function:dags.src.correlation.correlation_check",
+    "predicate": "CALLS",
+    "object": "Function:dags.src.correlation.save_correlations_as_parquet"
+  },
+  {
+    "subject": "Function:dags.src.correlation.save_heatmap",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.correlation.save_correlations_as_parquet",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.customers_behavior.customers_behavior",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.data_loader.load_data",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.duplicates_handler.remove_duplicates",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.geographic_features.geographic_features",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.missing_values_handler.handle_missing",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.outlier_treatment.removing_outlier",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.pca.pc_analyzer",
+    "predicate": "CALLS",
+    "object": "Function:dags.src.pca.pca_"
+  },
+  {
+    "subject": "Function:dags.src.pca.pc_analyzer",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.model_analysis.data_transform"
+  },
+  {
+    "subject": "Function:dags.src.pca.pc_analyzer",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.removing_zero_unitprice.removing_zero",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.rfm.rfm",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.scaler.scaler",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.seasonality.seasonality_impacts",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.transaction_status_handler.handle_transaction_status",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:dags.src.unique_products.unique_products",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.anomaly_code_handler.handle_anomalous_codes",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.build.main",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.build.initialize_aiplatform"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.build.main",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.build.create_training_job"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.build.main",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.build.run_training_job"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.build.main",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.build.deploy_model_to_endpoint"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.cancellation_details.cancellation_details",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.cleaning_description.cleaning_description",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.correlation.correlation_check",
+    "predicate": "CALLS",
+    "object": "Function:dags.src.correlation.save_heatmap"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.correlation.correlation_check",
+    "predicate": "CALLS",
+    "object": "Function:dags.src.correlation.save_correlations_as_parquet"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.correlation.save_heatmap",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.correlation.save_correlations_as_parquet",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.customers_behavior.customers_behavior",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.data_loader.load_data",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.duplicates_handler.remove_duplicates",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.geographic_features.geographic_features",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.inference.predict_custom_trained_model",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.predict"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.mflow_logging.mlflow_logging_train",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.mflow_logging.mlflow_logging_train",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.predict"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.missing_values_handler.handle_missing",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.model_analysis.data_transform",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.model_analysis.normalize_data"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.model_analysis.silhouette_analysis",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.predict"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.model_analysis.top_pca",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.predict"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.outlier_treatment.removing_outlier",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.pca.pc_analyzer",
+    "predicate": "CALLS",
+    "object": "Function:dags.src.pca.pca_"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.pca.pc_analyzer",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.model_analysis.data_transform"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.pca.pc_analyzer",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.removing_zero_unitprice.removing_zero",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.rfm.rfm",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.seasonality.seasonality_impacts",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.serve.predict.predict",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.predict"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.serve.predict.load_model",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.fetch_latest_model"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.generate_recommendations",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.remove_outliers"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.generate_recommendations",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.merge_customer_transactions"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.generate_recommendations",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.identify_top_products"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.generate_recommendations",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.record_customer_purchases"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.generate_recommendations",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.create_recommendations"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.trainer.train.main",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.trainer.train.kmeans_clustering"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.trainer.train.main",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.generate_recommendations"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.trainer.train.main",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.model_analysis.save_and_upload_model"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.transaction_status_handler.handle_transaction_status",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "Function:gcpdeploy.src.unique_products.unique_products",
+    "predicate": "CALLS",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "File:dags/src/anomaly_code_handler.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.anomaly_code_handler.handle_anomalous_codes"
+  },
+  {
+    "subject": "File:dags/src/cancellation_details.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.cancellation_details.cancellation_details"
+  },
+  {
+    "subject": "File:dags/src/cleaning_description.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.cleaning_description.cleaning_description"
+  },
+  {
+    "subject": "File:dags/src/correlation.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.correlation.correlation_check"
+  },
+  {
+    "subject": "File:dags/src/correlation.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.correlation.save_heatmap"
+  },
+  {
+    "subject": "File:dags/src/correlation.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.correlation.save_correlations_as_parquet"
+  },
+  {
+    "subject": "File:dags/src/customers_behavior.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.customers_behavior.customers_behavior"
+  },
+  {
+    "subject": "File:dags/src/data_loader.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.data_loader.load_data"
+  },
+  {
+    "subject": "File:dags/src/download_data.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.download_data.ingest_data"
+  },
+  {
+    "subject": "File:dags/src/duplicates_handler.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.duplicates_handler.remove_duplicates"
+  },
+  {
+    "subject": "File:dags/src/geographic_features.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.geographic_features.geographic_features"
+  },
+  {
+    "subject": "File:dags/src/missing_values_handler.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.missing_values_handler.handle_missing"
+  },
+  {
+    "subject": "File:dags/src/outlier_treatment.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.outlier_treatment.removing_outlier"
+  },
+  {
+    "subject": "File:dags/src/pca.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.pca.pc_analyzer"
+  },
+  {
+    "subject": "File:dags/src/pca.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.pca.pca_"
+  },
+  {
+    "subject": "File:dags/src/removing_zero_unitprice.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.removing_zero_unitprice.removing_zero"
+  },
+  {
+    "subject": "File:dags/src/rfm.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.rfm.rfm"
+  },
+  {
+    "subject": "File:dags/src/scaler.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.scaler.scaler"
+  },
+  {
+    "subject": "File:dags/src/seasonality.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.seasonality.seasonality_impacts"
+  },
+  {
+    "subject": "File:dags/src/transaction_status_handler.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.transaction_status_handler.handle_transaction_status"
+  },
+  {
+    "subject": "File:dags/src/unique_products.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.unique_products.unique_products"
+  },
+  {
+    "subject": "File:dags/src/unzip_data.py",
+    "predicate": "DEFINES",
+    "object": "Function:dags.src.unzip_data.unzip_file"
+  },
+  {
+    "subject": "File:gcpdeploy/src/anomaly_code_handler.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.anomaly_code_handler.handle_anomalous_codes"
+  },
+  {
+    "subject": "File:gcpdeploy/src/build.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.build.initialize_aiplatform"
+  },
+  {
+    "subject": "File:gcpdeploy/src/build.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.build.create_training_job"
+  },
+  {
+    "subject": "File:gcpdeploy/src/build.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.build.run_training_job"
+  },
+  {
+    "subject": "File:gcpdeploy/src/build.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.build.deploy_model_to_endpoint"
+  },
+  {
+    "subject": "File:gcpdeploy/src/build.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.build.main"
+  },
+  {
+    "subject": "File:gcpdeploy/src/cancellation_details.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.cancellation_details.cancellation_details"
+  },
+  {
+    "subject": "File:gcpdeploy/src/cleaning_description.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.cleaning_description.cleaning_description"
+  },
+  {
+    "subject": "File:gcpdeploy/src/correlation.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.correlation.correlation_check"
+  },
+  {
+    "subject": "File:gcpdeploy/src/correlation.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.correlation.save_heatmap"
+  },
+  {
+    "subject": "File:gcpdeploy/src/correlation.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.correlation.save_correlations_as_parquet"
+  },
+  {
+    "subject": "File:gcpdeploy/src/customers_behavior.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.customers_behavior.customers_behavior"
+  },
+  {
+    "subject": "File:gcpdeploy/src/data_loader.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.data_loader.load_data"
+  },
+  {
+    "subject": "File:gcpdeploy/src/download_data.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.download_data.ingest_data"
+  },
+  {
+    "subject": "File:gcpdeploy/src/duplicates_handler.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.duplicates_handler.remove_duplicates"
+  },
+  {
+    "subject": "File:gcpdeploy/src/geographic_features.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.geographic_features.geographic_features"
+  },
+  {
+    "subject": "File:gcpdeploy/src/inference.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.inference.predict_custom_trained_model"
+  },
+  {
+    "subject": "File:gcpdeploy/src/mflow_logging.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.mflow_logging.mlflow_logging_train"
+  },
+  {
+    "subject": "File:gcpdeploy/src/missing_values_handler.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.missing_values_handler.handle_missing"
+  },
+  {
+    "subject": "File:gcpdeploy/src/model_analysis.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.model_analysis.load_data"
+  },
+  {
+    "subject": "File:gcpdeploy/src/model_analysis.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.model_analysis.normalize_data"
+  },
+  {
+    "subject": "File:gcpdeploy/src/model_analysis.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.model_analysis.data_transform"
+  },
+  {
+    "subject": "File:gcpdeploy/src/model_analysis.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.model_analysis.top_pca"
+  },
+  {
+    "subject": "File:gcpdeploy/src/model_analysis.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.model_analysis.cluster_distribution"
+  },
+  {
+    "subject": "File:gcpdeploy/src/model_analysis.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.model_analysis.evaluation_metrics"
+  },
+  {
+    "subject": "File:gcpdeploy/src/model_analysis.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.model_analysis.train_model"
+  },
+  {
+    "subject": "File:gcpdeploy/src/model_analysis.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.model_analysis.save_and_upload_model"
+  },
+  {
+    "subject": "File:gcpdeploy/src/model_analysis.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.model_analysis.silhouette_analysis"
+  },
+  {
+    "subject": "File:gcpdeploy/src/outlier_treatment.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.outlier_treatment.removing_outlier"
+  },
+  {
+    "subject": "File:gcpdeploy/src/pca.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.pca.pc_analyzer"
+  },
+  {
+    "subject": "File:gcpdeploy/src/pca.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.pca.pca_"
+  },
+  {
+    "subject": "File:gcpdeploy/src/removing_zero_unitprice.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.removing_zero_unitprice.removing_zero"
+  },
+  {
+    "subject": "File:gcpdeploy/src/rfm.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.rfm.rfm"
+  },
+  {
+    "subject": "File:gcpdeploy/src/seasonality.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.seasonality.seasonality_impacts"
+  },
+  {
+    "subject": "File:gcpdeploy/src/serve/predict.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.serve.predict.get_table_schema"
+  },
+  {
+    "subject": "File:gcpdeploy/src/serve/predict.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.serve.predict.create_table_if_not_exists"
+  },
+  {
+    "subject": "File:gcpdeploy/src/serve/predict.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.serve.predict.initialize_variables"
+  },
+  {
+    "subject": "File:gcpdeploy/src/serve/predict.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.serve.predict.initialize_client_and_bucket"
+  },
+  {
+    "subject": "File:gcpdeploy/src/serve/predict.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.serve.predict.load_model"
+  },
+  {
+    "subject": "File:gcpdeploy/src/serve/predict.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.serve.predict.fetch_latest_model"
+  },
+  {
+    "subject": "File:gcpdeploy/src/serve/predict.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.serve.predict.health_check"
+  },
+  {
+    "subject": "File:gcpdeploy/src/serve/predict.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.serve.predict.predict"
+  },
+  {
+    "subject": "File:gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.remove_outliers"
+  },
+  {
+    "subject": "File:gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.merge_customer_transactions"
+  },
+  {
+    "subject": "File:gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.identify_top_products"
+  },
+  {
+    "subject": "File:gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.record_customer_purchases"
+  },
+  {
+    "subject": "File:gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.create_recommendations"
+  },
+  {
+    "subject": "File:gcpdeploy/src/trainer/ClusterBasedRecommender.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.trainer.ClusterBasedRecommender.generate_recommendations"
+  },
+  {
+    "subject": "File:gcpdeploy/src/trainer/train.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.trainer.train.kmeans_clustering"
+  },
+  {
+    "subject": "File:gcpdeploy/src/trainer/train.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.trainer.train.save_and_upload_model"
+  },
+  {
+    "subject": "File:gcpdeploy/src/trainer/train.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.trainer.train.main"
+  },
+  {
+    "subject": "File:gcpdeploy/src/transaction_status_handler.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.transaction_status_handler.handle_transaction_status"
+  },
+  {
+    "subject": "File:gcpdeploy/src/unique_products.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.unique_products.unique_products"
+  },
+  {
+    "subject": "File:gcpdeploy/src/unzip_data.py",
+    "predicate": "DEFINES",
+    "object": "Function:gcpdeploy.src.unzip_data.unzip_file"
+  }
+]
