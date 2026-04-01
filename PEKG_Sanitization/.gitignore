@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+PEKG_Sanitization/venv/
+
+# Environment variables
+.env
+
+# Large result files
+Method2_Toolchain/results/*.json
+Method2_Toolchain/results/*.csv
+Method2_Toolchain/results/*.jsonl
+Method2_Toolchain/results/*.txt
+
+PEKG_Sanitization/Method2_Toolchain/results/
+PEKG_Sanitization/Method3_RuleAware/results/
+PEKG_Sanitization/Method1_LLM/results/
+
+# Temp/check scripts
+PEKG_Sanitization/Method2_Toolchain/check_*.py
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log

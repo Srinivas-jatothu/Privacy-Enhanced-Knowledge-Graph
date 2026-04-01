@@ -1,0 +1,5 @@
+python -m venv venv  
+venv\Scripts\activate  
+
+1. Did we go through the code files and did we sanitize them?
+2. Did we check for any hardcoded secrets or sensitive information in the code files?
