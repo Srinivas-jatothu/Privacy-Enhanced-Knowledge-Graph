@@ -1,0 +1,3 @@
+file,type,detail
+gcpdeploy\src\scaler.py,syntax_error,"unmatched ')' (<unknown>, line 14)"
+gcpdeploy\src\scaler.py,original_func_name_found,'scaler' still present

@@ -1,0 +1,148 @@
+IDENTIFIER MAP SUMMARY - Method 3
+============================================================
+Total identifiers    : 426
+Unique functions     : 91
+Unique classes       : 0
+Unique parameters    : 65
+Unique files         : 91
+Unique modules       : 34
+
+Functions by Role:
+  analysis                    34
+  feature_engineering         14
+  data_cleaning               12
+  ml_model                    11
+  utility                      7
+  data_loader                  7
+  data_saver                   3
+  pipeline                     2
+  visualization                1
+
+All Function Mappings:
+  analysis_func_002                   ← calculate_trend
+  feature_engineering_func_001        ← cancellation_details
+  utility_func_001                    ← cleaning_description
+  ml_model_func_009                   ← cluster_distribution
+  analysis_func_001                   ← correlation_check
+  feature_engineering_func_011        ← create_recommendations
+  feature_engineering_func_008        ← create_table_if_not_exists
+  feature_engineering_func_007        ← create_training_job
+  feature_engineering_func_002        ← customers_behavior
+  ml_model_func_007                   ← data_transform
+  ml_model_func_004                   ← deploy_model_to_endpoint
+  utility_func_003                    ← evaluation_metrics
+  data_loader_func_006                ← fetch_latest_model
+  feature_engineering_func_012        ← generate_recommendations
+  feature_engineering_func_003        ← geographic_features
+  data_loader_func_004                ← get_table_schema
+  data_cleaning_func_001              ← handle_anomalous_codes
+  data_cleaning_func_003              ← handle_missing
+  data_cleaning_func_006              ← handle_transaction_status
+  analysis_func_004                   ← health_check
+  feature_engineering_func_010        ← identify_top_products
+  data_loader_func_002                ← ingest_data
+  utility_func_002                    ← initialize_aiplatform
+  utility_func_005                    ← initialize_client_and_bucket
+  utility_func_004                    ← initialize_variables
+  utility_func_007                    ← kmeans_clustering
+  data_loader_func_001                ← load_data
+  data_loader_func_005                ← load_model
+  pipeline_func_002                   ← main
+  feature_engineering_func_009        ← merge_customer_transactions
+  ml_model_func_006                   ← mlflow_logging_train
+  data_cleaning_func_007              ← normalize_data
+  ml_model_func_001                   ← pc_analyzer
+  ml_model_func_002                   ← pca_
+  ml_model_func_011                   ← predict
+  ml_model_func_005                   ← predict_custom_trained_model
+  visualization_func_001              ← radar_charts
+  utility_func_006                    ← record_customer_purchases
+  data_cleaning_func_002              ← remove_duplicates
+  data_cleaning_func_008              ← remove_outliers
+  data_cleaning_func_004              ← removing_outlier
+  data_cleaning_func_005              ← removing_zero
+  feature_engineering_func_004        ← rfm
+  feature_engineering_func_013        ← rfm_histograms
+  pipeline_func_001                   ← run_training_job
+  data_saver_func_003                 ← save_and_upload_model
+  data_saver_func_002                 ← save_correlations_as_parquet
+  data_saver_func_001                 ← save_heatmap
+  ml_model_func_003                   ← scaler
+  feature_engineering_func_005        ← seasonality_impacts
+  analysis_func_003                   ← silhouette_analysis
+  analysis_func_005                   ← test_cancellation_details
+  analysis_func_006                   ← test_cleaning_description
+  analysis_func_012                   ← test_corr_thresh_error
+  analysis_func_007                   ← test_correlation_filenotfound
+  analysis_func_009                   ← test_correlation_imagepath_error
+  analysis_func_010                   ← test_correlation_imagesavecheck
+  analysis_func_008                   ← test_correlation_parquetpath_error
+  analysis_func_011                   ← test_correlation_parquetsavecheck
+  analysis_func_013                   ← test_customers_behavior
+  analysis_func_024                   ← test_cvr_thresh_error
+  analysis_func_019                   ← test_geographic_features
+  data_cleaning_func_009              ← test_handle_anomalous_codes
+  data_cleaning_func_011              ← test_handle_missing_file_not_found
+  data_cleaning_func_010              ← test_handle_missing_success
+  analysis_func_032                   ← test_handle_transaction_status
+  analysis_func_016                   ← test_ingest_data
+  data_loader_func_007                ← test_ingest_data_successful_download
+  analysis_func_014                   ← test_load_data_from_excel
+  analysis_func_015                   ← test_load_data_no_files
+  analysis_func_022                   ← test_missing_columns
+  analysis_func_029                   ← test_missing_norm_columns
+  analysis_func_028                   ← test_missing_std_columns
+  analysis_func_020                   ← test_outlier_treatment
+  analysis_func_025                   ← test_pca_columnslessthan4
+  analysis_func_021                   ← test_pca_file_not_found
+  analysis_func_023                   ← test_pca_outfile_exists
+  analysis_func_018                   ← test_remove_duplicates
+  analysis_func_017                   ← test_remove_duplicates_no_input_file
+  data_cleaning_func_012              ← test_removing_zero
+  analysis_func_026                   ← test_rfm
+  analysis_func_027                   ← test_scaler_file_not_found
+  analysis_func_030                   ← test_scaler_outfile_exists
+  analysis_func_031                   ← test_seasonality_impacts
+  feature_engineering_func_014        ← test_unique_products
+  analysis_func_034                   ← test_unzip_file_bad_zip
+  analysis_func_033                   ← test_unzip_file_successful
+  ml_model_func_008                   ← top_pca
+  ml_model_func_010                   ← train_model
+  feature_engineering_func_006        ← unique_products
+  data_loader_func_003                ← unzip_file
+
+Internal Module Mappings:
+  module_l1_012             ← ClusterBasedRecommender
+  module_l1_008             ← anomaly_code_handler
+  module_l1_004             ← data_loader
+  module_l1_002             ← download_data
+  module_l1_006             ← duplicates_handler
+  module_l1_010             ← gcsfs
+  module_l1_005             ← missing_values_handler
+  module_l2_020             ← prompt_toolkit.shortcuts
+  module_l1_009             ← pytz
+  module_l1_013             ← requests_mock
+  module_l1_014             ← src
+  module_l2_007             ← src.anomaly_code_handler
+  module_l2_014             ← src.cancellation_details
+  module_l2_008             ← src.cleaning_description
+  module_l2_019             ← src.correlation
+  module_l2_012             ← src.customers_behavior
+  module_l2_003             ← src.data_loader
+  module_l2_001             ← src.download_data
+  module_l2_005             ← src.duplicates_handler
+  module_l2_013             ← src.geographic_features
+  module_l2_004             ← src.missing_values_handler
+  module_l2_016             ← src.outlier_treatment
+  module_l2_018             ← src.pca
+  module_l2_009             ← src.removing_zero_unitprice
+  module_l2_010             ← src.rfm
+  module_l2_017             ← src.scaler
+  module_l2_015             ← src.seasonality
+  module_l2_006             ← src.transaction_status_handler
+  module_l2_011             ← src.unique_products
+  module_l2_002             ← src.unzip_data
+  module_l1_011             ← tabulate
+  module_l1_007             ← transaction_status_handler
+  module_l1_003             ← unzip_data
+  module_l1_001             ← zipfile

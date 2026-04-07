@@ -1,0 +1,3702 @@
+{
+  "functions": {
+    "handle_anomalous_codes": "data_cleaning_func_001",
+    "cancellation_details": "feature_engineering_func_001",
+    "cleaning_description": "utility_func_001",
+    "correlation_check": "analysis_func_001",
+    "save_heatmap": "data_saver_func_001",
+    "save_correlations_as_parquet": "data_saver_func_002",
+    "customers_behavior": "feature_engineering_func_002",
+    "load_data": "data_loader_func_001",
+    "ingest_data": "data_loader_func_002",
+    "remove_duplicates": "data_cleaning_func_002",
+    "geographic_features": "feature_engineering_func_003",
+    "handle_missing": "data_cleaning_func_003",
+    "removing_outlier": "data_cleaning_func_004",
+    "pc_analyzer": "ml_model_func_001",
+    "pca_": "ml_model_func_002",
+    "removing_zero": "data_cleaning_func_005",
+    "rfm": "feature_engineering_func_004",
+    "scaler": "ml_model_func_003",
+    "seasonality_impacts": "feature_engineering_func_005",
+    "calculate_trend": "analysis_func_002",
+    "handle_transaction_status": "data_cleaning_func_006",
+    "unique_products": "feature_engineering_func_006",
+    "unzip_file": "data_loader_func_003",
+    "initialize_aiplatform": "utility_func_002",
+    "create_training_job": "feature_engineering_func_007",
+    "run_training_job": "pipeline_func_001",
+    "deploy_model_to_endpoint": "ml_model_func_004",
+    "main": "pipeline_func_002",
+    "predict_custom_trained_model": "ml_model_func_005",
+    "mlflow_logging_train": "ml_model_func_006",
+    "normalize_data": "data_cleaning_func_007",
+    "data_transform": "ml_model_func_007",
+    "top_pca": "ml_model_func_008",
+    "cluster_distribution": "ml_model_func_009",
+    "evaluation_metrics": "utility_func_003",
+    "train_model": "ml_model_func_010",
+    "save_and_upload_model": "data_saver_func_003",
+    "silhouette_analysis": "analysis_func_003",
+    "get_table_schema": "data_loader_func_004",
+    "create_table_if_not_exists": "feature_engineering_func_008",
+    "initialize_variables": "utility_func_004",
+    "initialize_client_and_bucket": "utility_func_005",
+    "load_model": "data_loader_func_005",
+    "fetch_latest_model": "data_loader_func_006",
+    "health_check": "analysis_func_004",
+    "predict": "ml_model_func_011",
+    "remove_outliers": "data_cleaning_func_008",
+    "merge_customer_transactions": "feature_engineering_func_009",
+    "identify_top_products": "feature_engineering_func_010",
+    "record_customer_purchases": "utility_func_006",
+    "create_recommendations": "feature_engineering_func_011",
+    "generate_recommendations": "feature_engineering_func_012",
+    "kmeans_clustering": "utility_func_007",
+    "rfm_histograms": "feature_engineering_func_013",
+    "radar_charts": "visualization_func_001",
+    "test_handle_anomalous_codes": "data_cleaning_func_009",
+    "test_cancellation_details": "analysis_func_005",
+    "test_cleaning_description": "analysis_func_006",
+    "test_correlation_filenotfound": "analysis_func_007",
+    "test_correlation_parquetpath_error": "analysis_func_008",
+    "test_correlation_imagepath_error": "analysis_func_009",
+    "test_correlation_imagesavecheck": "analysis_func_010",
+    "test_correlation_parquetsavecheck": "analysis_func_011",
+    "test_corr_thresh_error": "analysis_func_012",
+    "test_customers_behavior": "analysis_func_013",
+    "test_load_data_from_excel": "analysis_func_014",
+    "test_load_data_no_files": "analysis_func_015",
+    "test_ingest_data": "analysis_func_016",
+    "test_ingest_data_successful_download": "data_loader_func_007",
+    "test_remove_duplicates_no_input_file": "analysis_func_017",
+    "test_remove_duplicates": "analysis_func_018",
+    "test_geographic_features": "analysis_func_019",
+    "test_handle_missing_success": "data_cleaning_func_010",
+    "test_handle_missing_file_not_found": "data_cleaning_func_011",
+    "test_outlier_treatment": "analysis_func_020",
+    "test_pca_file_not_found": "analysis_func_021",
+    "test_missing_columns": "analysis_func_022",
+    "test_pca_outfile_exists": "analysis_func_023",
+    "test_cvr_thresh_error": "analysis_func_024",
+    "test_pca_columnslessthan4": "analysis_func_025",
+    "test_removing_zero": "data_cleaning_func_012",
+    "test_rfm": "analysis_func_026",
+    "test_scaler_file_not_found": "analysis_func_027",
+    "test_missing_std_columns": "analysis_func_028",
+    "test_missing_norm_columns": "analysis_func_029",
+    "test_scaler_outfile_exists": "analysis_func_030",
+    "test_seasonality_impacts": "analysis_func_031",
+    "test_handle_transaction_status": "analysis_func_032",
+    "test_unique_products": "feature_engineering_func_014",
+    "test_unzip_file_successful": "analysis_func_033",
+    "test_unzip_file_bad_zip": "analysis_func_034"
+  },
+  "classes": {},
+  "parameters": {
+    "input_pickle_path": "param_001",
+    "output_pickle_path": "param_002",
+    "input_pickle_file": "param_003",
+    "geographic_pickle_file": "param_004",
+    "output_pickle_file": "param_005",
+    "in_path": "param_006",
+    "out_path": "param_007",
+    "correlation_threshold": "param_008",
+    "fig": "param_009",
+    "unique_pickle_file": "param_010",
+    "pickle_path": "param_011",
+    "excel_path": "param_012",
+    "file_url": "param_013",
+    "behavorial_pickle_file": "param_014",
+    "drop_cols": "param_015",
+    "cvr_thresh": "param_016",
+    "thresh": "param_017",
+    "cols": "param_018",
+    "cancellation_pickle_file": "param_019",
+    "data_filepath": "param_020",
+    "spend_data": "param_021",
+    "rfm_pickle_file": "param_022",
+    "zip_filename": "param_023",
+    "extract_to": "param_024",
+    "project_id": "param_025",
+    "region": "param_026",
+    "bucket": "param_027",
+    "display_name": "param_028",
+    "container_uri": "param_029",
+    "model_serving_container_image_uri": "param_030",
+    "job": "param_031",
+    "base_output_dir": "param_032",
+    "service_account_email": "param_033",
+    "model": "param_034",
+    "project": "param_035",
+    "endpoint_id": "param_036",
+    "instances": "param_037",
+    "location": "param_038",
+    "api_endpoint": "param_039",
+    "data_path": "param_040",
+    "gcs_train_data_path": "param_041",
+    "stats": "param_042",
+    "pca_output": "param_043",
+    "X_train": "param_044",
+    "y_train": "param_045",
+    "local_model_path": "param_046",
+    "gcs_model_path": "param_047",
+    "figsize": "param_048",
+    "client": "param_049",
+    "table_id": "param_050",
+    "schema": "param_051",
+    "bucket_name": "param_052",
+    "prefix": "param_053",
+    "outliers_data": "param_054",
+    "customer_data_cleaned": "param_055",
+    "merged_data": "param_056",
+    "customer_data": "param_057",
+    "top_products_per_cluster": "param_058",
+    "customer_purchases": "param_059",
+    "df_cleaned": "param_060",
+    "df_pca": "param_061",
+    "number_of_clusters": "param_062",
+    "mocker": "param_063",
+    "tmp_path": "param_064",
+    "capsys": "param_065"
+  },
+  "files": {
+    "dags\\src\\airflow.py": "pipeline_file_001.py",
+    "dags\\src\\anomaly_code_handler.py": "data_cleaning_file_001.py",
+    "dags\\src\\cancellation_details.py": "feature_engineering_file_001.py",
+    "dags\\src\\cleaning_description.py": "data_cleaning_file_002.py",
+    "dags\\src\\correlation.py": "visualization_file_001.py",
+    "dags\\src\\customers_behavior.py": "ml_model_file_001.py",
+    "dags\\src\\data_loader.py": "data_loader_file_001.py",
+    "dags\\src\\download_data.py": "data_loader_file_002.py",
+    "dags\\src\\duplicates_handler.py": "utility_file_001.py",
+    "dags\\src\\geographic_features.py": "feature_engineering_file_002.py",
+    "dags\\src\\missing_values_handler.py": "data_cleaning_file_003.py",
+    "dags\\src\\outlier_treatment.py": "data_cleaning_file_004.py",
+    "dags\\src\\pca.py": "analysis_file_001.py",
+    "dags\\src\\removing_zero_unitprice.py": "data_cleaning_file_005.py",
+    "dags\\src\\rfm.py": "analysis_file_002.py",
+    "dags\\src\\scaler.py": "utility_file_002.py",
+    "dags\\src\\seasonality.py": "analysis_file_003.py",
+    "dags\\src\\transaction_status_handler.py": "feature_engineering_file_003.py",
+    "dags\\src\\unique_products.py": "feature_engineering_file_004.py",
+    "dags\\src\\unzip_data.py": "data_loader_file_003.py",
+    "gcpdeploy\\src\\airflow.py": "pipeline_file_002.py",
+    "gcpdeploy\\src\\anomaly_code_handler.py": "data_cleaning_file_006.py",
+    "gcpdeploy\\src\\build.py": "utility_file_003.py",
+    "gcpdeploy\\src\\cancellation_details.py": "feature_engineering_file_005.py",
+    "gcpdeploy\\src\\cleaning_description.py": "data_cleaning_file_007.py",
+    "gcpdeploy\\src\\correlation.py": "visualization_file_002.py",
+    "gcpdeploy\\src\\customers_behavior.py": "ml_model_file_002.py",
+    "gcpdeploy\\src\\datapipeline.py": "pipeline_file_003.py",
+    "gcpdeploy\\src\\data_loader.py": "data_loader_file_004.py",
+    "gcpdeploy\\src\\download_data.py": "data_loader_file_005.py",
+    "gcpdeploy\\src\\duplicates_handler.py": "utility_file_004.py",
+    "gcpdeploy\\src\\geographic_features.py": "feature_engineering_file_006.py",
+    "gcpdeploy\\src\\inference.py": "utility_file_005.py",
+    "gcpdeploy\\src\\mflow_logging.py": "utility_file_006.py",
+    "gcpdeploy\\src\\missing_values_handler.py": "data_cleaning_file_008.py",
+    "gcpdeploy\\src\\model_analysis.py": "utility_file_007.py",
+    "gcpdeploy\\src\\outlier_treatment.py": "data_cleaning_file_009.py",
+    "gcpdeploy\\src\\pca.py": "analysis_file_004.py",
+    "gcpdeploy\\src\\removing_zero_unitprice.py": "data_cleaning_file_010.py",
+    "gcpdeploy\\src\\rfm.py": "analysis_file_005.py",
+    "gcpdeploy\\src\\scaler.py": "utility_file_008.py",
+    "gcpdeploy\\src\\seasonality.py": "analysis_file_006.py",
+    "gcpdeploy\\src\\transaction_status_handler.py": "feature_engineering_file_007.py",
+    "gcpdeploy\\src\\unique_products.py": "feature_engineering_file_008.py",
+    "gcpdeploy\\src\\unzip_data.py": "data_loader_file_006.py",
+    "gcpdeploy\\src\\serve\\predict.py": "utility_file_009.py",
+    "gcpdeploy\\src\\serve\\testing_serve.py": "deployment_file_001.py",
+    "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py": "ml_model_file_003.py",
+    "gcpdeploy\\src\\trainer\\train.py": "utility_file_010.py",
+    "src\\anomaly_code_handler.py": "data_cleaning_file_011.py",
+    "src\\cancellation_details.py": "feature_engineering_file_009.py",
+    "src\\cleaning_description.py": "data_cleaning_file_012.py",
+    "src\\correlation.py": "visualization_file_003.py",
+    "src\\customers_behavior.py": "ml_model_file_004.py",
+    "src\\datapipeline.py": "pipeline_file_004.py",
+    "src\\data_loader.py": "data_loader_file_007.py",
+    "src\\download_data.py": "data_loader_file_008.py",
+    "src\\duplicates_handler.py": "utility_file_011.py",
+    "src\\geographic_features.py": "feature_engineering_file_010.py",
+    "src\\histogram_analysis.py": "visualization_file_004.py",
+    "src\\missing_values_handler.py": "data_cleaning_file_013.py",
+    "src\\outlier_treatment.py": "data_cleaning_file_014.py",
+    "src\\pca.py": "analysis_file_007.py",
+    "src\\radar_analysis.py": "visualization_file_005.py",
+    "src\\removing_zero_unitprice.py": "data_cleaning_file_015.py",
+    "src\\rfm.py": "analysis_file_008.py",
+    "src\\scaler.py": "utility_file_012.py",
+    "src\\seasonality.py": "analysis_file_009.py",
+    "src\\transaction_status_handler.py": "feature_engineering_file_011.py",
+    "src\\unique_products.py": "feature_engineering_file_012.py",
+    "src\\unzip_data.py": "data_loader_file_009.py",
+    "test\\test_anomaly_code_handler.py": "testing_file_001.py",
+    "test\\test_cancellation_details.py": "testing_file_002.py",
+    "test\\test_cleaning_description.py": "testing_file_003.py",
+    "test\\test_correlation.py": "testing_file_004.py",
+    "test\\test_customers_behavior.py": "ml_model_file_005.py",
+    "test\\test_datapipeline.py": "testing_file_005.py",
+    "test\\test_data_loader.py": "data_loader_file_010.py",
+    "test\\test_download_data.py": "data_loader_file_011.py",
+    "test\\test_duplicates_handler.py": "testing_file_006.py",
+    "test\\test_geographic_features.py": "testing_file_007.py",
+    "test\\test_missing_values_handler.py": "testing_file_008.py",
+    "test\\test_outlier_treatment.py": "testing_file_009.py",
+    "test\\test_pca.py": "testing_file_010.py",
+    "test\\test_removing_zero_unitpirce.py": "data_cleaning_file_016.py",
+    "test\\test_rfm.py": "testing_file_011.py",
+    "test\\test_scaler.py": "testing_file_012.py",
+    "test\\test_seasonality.py": "testing_file_013.py",
+    "test\\test_transaction_status_handler.py": "testing_file_014.py",
+    "test\\test_unique_products.py": "testing_file_015.py",
+    "test\\test_unzip_data.py": "data_loader_file_012.py"
+  },
+  "modules": {
+    "src.download_data": "module_l2_001",
+    "src.unzip_data": "module_l2_002",
+    "src.data_loader": "module_l2_003",
+    "src.missing_values_handler": "module_l2_004",
+    "src.duplicates_handler": "module_l2_005",
+    "src.transaction_status_handler": "module_l2_006",
+    "src.anomaly_code_handler": "module_l2_007",
+    "src.cleaning_description": "module_l2_008",
+    "src.removing_zero_unitprice": "module_l2_009",
+    "src.rfm": "module_l2_010",
+    "src.unique_products": "module_l2_011",
+    "src.customers_behavior": "module_l2_012",
+    "src.geographic_features": "module_l2_013",
+    "src.cancellation_details": "module_l2_014",
+    "src.seasonality": "module_l2_015",
+    "src.outlier_treatment": "module_l2_016",
+    "src.scaler": "module_l2_017",
+    "src.pca": "module_l2_018",
+    "src.correlation": "module_l2_019",
+    "prompt_toolkit.shortcuts": "module_l2_020",
+    "zipfile": "module_l1_001",
+    "download_data": "module_l1_002",
+    "unzip_data": "module_l1_003",
+    "data_loader": "module_l1_004",
+    "missing_values_handler": "module_l1_005",
+    "duplicates_handler": "module_l1_006",
+    "transaction_status_handler": "module_l1_007",
+    "anomaly_code_handler": "module_l1_008",
+    "pytz": "module_l1_009",
+    "gcsfs": "module_l1_010",
+    "tabulate": "module_l1_011",
+    "ClusterBasedRecommender": "module_l1_012",
+    "requests_mock": "module_l1_013",
+    "src": "module_l1_014"
+  },
+  "records": [
+    {
+      "type": "import_from",
+      "original": "src.download_data",
+      "placeholder": "module_l2_001",
+      "file": "dags\\src\\airflow.py",
+      "line": 10,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.unzip_data",
+      "placeholder": "module_l2_002",
+      "file": "dags\\src\\airflow.py",
+      "line": 11,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.data_loader",
+      "placeholder": "module_l2_003",
+      "file": "dags\\src\\airflow.py",
+      "line": 12,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.missing_values_handler",
+      "placeholder": "module_l2_004",
+      "file": "dags\\src\\airflow.py",
+      "line": 13,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.duplicates_handler",
+      "placeholder": "module_l2_005",
+      "file": "dags\\src\\airflow.py",
+      "line": 14,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.transaction_status_handler",
+      "placeholder": "module_l2_006",
+      "file": "dags\\src\\airflow.py",
+      "line": 15,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.anomaly_code_handler",
+      "placeholder": "module_l2_007",
+      "file": "dags\\src\\airflow.py",
+      "line": 16,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.cleaning_description",
+      "placeholder": "module_l2_008",
+      "file": "dags\\src\\airflow.py",
+      "line": 17,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.removing_zero_unitprice",
+      "placeholder": "module_l2_009",
+      "file": "dags\\src\\airflow.py",
+      "line": 18,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.rfm",
+      "placeholder": "module_l2_010",
+      "file": "dags\\src\\airflow.py",
+      "line": 19,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.unique_products",
+      "placeholder": "module_l2_011",
+      "file": "dags\\src\\airflow.py",
+      "line": 20,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.customers_behavior",
+      "placeholder": "module_l2_012",
+      "file": "dags\\src\\airflow.py",
+      "line": 21,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.geographic_features",
+      "placeholder": "module_l2_013",
+      "file": "dags\\src\\airflow.py",
+      "line": 22,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.cancellation_details",
+      "placeholder": "module_l2_014",
+      "file": "dags\\src\\airflow.py",
+      "line": 23,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.seasonality",
+      "placeholder": "module_l2_015",
+      "file": "dags\\src\\airflow.py",
+      "line": 24,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.outlier_treatment",
+      "placeholder": "module_l2_016",
+      "file": "dags\\src\\airflow.py",
+      "line": 25,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.scaler",
+      "placeholder": "module_l2_017",
+      "file": "dags\\src\\airflow.py",
+      "line": 26,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.pca",
+      "placeholder": "module_l2_018",
+      "file": "dags\\src\\airflow.py",
+      "line": 27,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.correlation",
+      "placeholder": "module_l2_019",
+      "file": "dags\\src\\airflow.py",
+      "line": 28,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "handle_anomalous_codes",
+      "placeholder": "data_cleaning_func_001",
+      "file": "dags\\src\\anomaly_code_handler.py",
+      "line": 16,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "dags\\src\\anomaly_code_handler.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "dags\\src\\anomaly_code_handler.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "cancellation_details",
+      "placeholder": "feature_engineering_func_001",
+      "file": "dags\\src\\cancellation_details.py",
+      "line": 16,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "dags\\src\\cancellation_details.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "geographic_pickle_file",
+      "placeholder": "param_004",
+      "file": "dags\\src\\cancellation_details.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "dags\\src\\cancellation_details.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "cleaning_description",
+      "placeholder": "utility_func_001",
+      "file": "dags\\src\\cleaning_description.py",
+      "line": 14,
+      "role": "utility"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "dags\\src\\cleaning_description.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "dags\\src\\cleaning_description.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "import_from",
+      "original": "prompt_toolkit.shortcuts",
+      "placeholder": "module_l2_020",
+      "file": "dags\\src\\correlation.py",
+      "line": 12,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "correlation_check",
+      "placeholder": "analysis_func_001",
+      "file": "dags\\src\\correlation.py",
+      "line": 35,
+      "role": "analysis"
+    },
+    {
+      "type": "parameter",
+      "original": "in_path",
+      "placeholder": "param_006",
+      "file": "dags\\src\\correlation.py",
+      "line": 35,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "out_path",
+      "placeholder": "param_007",
+      "file": "dags\\src\\correlation.py",
+      "line": 35,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "correlation_threshold",
+      "placeholder": "param_008",
+      "file": "dags\\src\\correlation.py",
+      "line": 35,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "save_heatmap",
+      "placeholder": "data_saver_func_001",
+      "file": "dags\\src\\correlation.py",
+      "line": 98,
+      "role": "data_saver"
+    },
+    {
+      "type": "parameter",
+      "original": "fig",
+      "placeholder": "param_009",
+      "file": "dags\\src\\correlation.py",
+      "line": 98,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "save_correlations_as_parquet",
+      "placeholder": "data_saver_func_002",
+      "file": "dags\\src\\correlation.py",
+      "line": 121,
+      "role": "data_saver"
+    },
+    {
+      "type": "function",
+      "original": "customers_behavior",
+      "placeholder": "feature_engineering_func_002",
+      "file": "dags\\src\\customers_behavior.py",
+      "line": 16,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "dags\\src\\customers_behavior.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "unique_pickle_file",
+      "placeholder": "param_010",
+      "file": "dags\\src\\customers_behavior.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "dags\\src\\customers_behavior.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "load_data",
+      "placeholder": "data_loader_func_001",
+      "file": "dags\\src\\data_loader.py",
+      "line": 17,
+      "role": "data_loader"
+    },
+    {
+      "type": "parameter",
+      "original": "pickle_path",
+      "placeholder": "param_011",
+      "file": "dags\\src\\data_loader.py",
+      "line": 17,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "excel_path",
+      "placeholder": "param_012",
+      "file": "dags\\src\\data_loader.py",
+      "line": 17,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "ingest_data",
+      "placeholder": "data_loader_func_002",
+      "file": "dags\\src\\download_data.py",
+      "line": 9,
+      "role": "data_loader"
+    },
+    {
+      "type": "parameter",
+      "original": "file_url",
+      "placeholder": "param_013",
+      "file": "dags\\src\\download_data.py",
+      "line": 9,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "remove_duplicates",
+      "placeholder": "data_cleaning_func_002",
+      "file": "dags\\src\\duplicates_handler.py",
+      "line": 21,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "dags\\src\\duplicates_handler.py",
+      "line": 21,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "dags\\src\\duplicates_handler.py",
+      "line": 21,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "geographic_features",
+      "placeholder": "feature_engineering_func_003",
+      "file": "dags\\src\\geographic_features.py",
+      "line": 14,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "dags\\src\\geographic_features.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "behavorial_pickle_file",
+      "placeholder": "param_014",
+      "file": "dags\\src\\geographic_features.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "dags\\src\\geographic_features.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "handle_missing",
+      "placeholder": "data_cleaning_func_003",
+      "file": "dags\\src\\missing_values_handler.py",
+      "line": 15,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "dags\\src\\missing_values_handler.py",
+      "line": 15,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "dags\\src\\missing_values_handler.py",
+      "line": 15,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "removing_outlier",
+      "placeholder": "data_cleaning_func_004",
+      "file": "dags\\src\\outlier_treatment.py",
+      "line": 18,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "dags\\src\\outlier_treatment.py",
+      "line": 18,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "dags\\src\\outlier_treatment.py",
+      "line": 18,
+      "role": "parameter"
+    },
+    {
+      "type": "import_from",
+      "original": "prompt_toolkit.shortcuts",
+      "placeholder": "module_l2_020",
+      "file": "dags\\src\\pca.py",
+      "line": 13,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "pc_analyzer",
+      "placeholder": "ml_model_func_001",
+      "file": "dags\\src\\pca.py",
+      "line": 27,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "in_path",
+      "placeholder": "param_006",
+      "file": "dags\\src\\pca.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "out_path",
+      "placeholder": "param_007",
+      "file": "dags\\src\\pca.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "drop_cols",
+      "placeholder": "param_015",
+      "file": "dags\\src\\pca.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "cvr_thresh",
+      "placeholder": "param_016",
+      "file": "dags\\src\\pca.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "pca_",
+      "placeholder": "ml_model_func_002",
+      "file": "dags\\src\\pca.py",
+      "line": 98,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "thresh",
+      "placeholder": "param_017",
+      "file": "dags\\src\\pca.py",
+      "line": 98,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "removing_zero",
+      "placeholder": "data_cleaning_func_005",
+      "file": "dags\\src\\removing_zero_unitprice.py",
+      "line": 16,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "dags\\src\\removing_zero_unitprice.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "dags\\src\\removing_zero_unitprice.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "rfm",
+      "placeholder": "feature_engineering_func_004",
+      "file": "dags\\src\\rfm.py",
+      "line": 14,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "dags\\src\\rfm.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "dags\\src\\rfm.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "import_from",
+      "original": "prompt_toolkit.shortcuts",
+      "placeholder": "module_l2_020",
+      "file": "dags\\src\\scaler.py",
+      "line": 12,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "scaler",
+      "placeholder": "ml_model_func_003",
+      "file": "dags\\src\\scaler.py",
+      "line": 27,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "in_path",
+      "placeholder": "param_006",
+      "file": "dags\\src\\scaler.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "out_path",
+      "placeholder": "param_007",
+      "file": "dags\\src\\scaler.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "cols",
+      "placeholder": "param_018",
+      "file": "dags\\src\\scaler.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "seasonality_impacts",
+      "placeholder": "feature_engineering_func_005",
+      "file": "dags\\src\\seasonality.py",
+      "line": 19,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "dags\\src\\seasonality.py",
+      "line": 19,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "cancellation_pickle_file",
+      "placeholder": "param_019",
+      "file": "dags\\src\\seasonality.py",
+      "line": 19,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "dags\\src\\seasonality.py",
+      "line": 19,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "data_filepath",
+      "placeholder": "param_020",
+      "file": "dags\\src\\seasonality.py",
+      "line": 19,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "calculate_trend",
+      "placeholder": "analysis_func_002",
+      "file": "dags\\src\\seasonality.py",
+      "line": 55,
+      "role": "analysis"
+    },
+    {
+      "type": "parameter",
+      "original": "spend_data",
+      "placeholder": "param_021",
+      "file": "dags\\src\\seasonality.py",
+      "line": 55,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "handle_transaction_status",
+      "placeholder": "data_cleaning_func_006",
+      "file": "dags\\src\\transaction_status_handler.py",
+      "line": 18,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "dags\\src\\transaction_status_handler.py",
+      "line": 18,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "dags\\src\\transaction_status_handler.py",
+      "line": 18,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "unique_products",
+      "placeholder": "feature_engineering_func_006",
+      "file": "dags\\src\\unique_products.py",
+      "line": 14,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "dags\\src\\unique_products.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "rfm_pickle_file",
+      "placeholder": "param_022",
+      "file": "dags\\src\\unique_products.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "dags\\src\\unique_products.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "import",
+      "original": "zipfile",
+      "placeholder": "module_l1_001",
+      "file": "dags\\src\\unzip_data.py",
+      "line": 4,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "unzip_file",
+      "placeholder": "data_loader_func_003",
+      "file": "dags\\src\\unzip_data.py",
+      "line": 13,
+      "role": "data_loader"
+    },
+    {
+      "type": "parameter",
+      "original": "zip_filename",
+      "placeholder": "param_023",
+      "file": "dags\\src\\unzip_data.py",
+      "line": 13,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "extract_to",
+      "placeholder": "param_024",
+      "file": "dags\\src\\unzip_data.py",
+      "line": 13,
+      "role": "parameter"
+    },
+    {
+      "type": "import_from",
+      "original": "src.download_data",
+      "placeholder": "module_l2_001",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 10,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.unzip_data",
+      "placeholder": "module_l2_002",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 11,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.data_loader",
+      "placeholder": "module_l2_003",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 12,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.missing_values_handler",
+      "placeholder": "module_l2_004",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 13,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.duplicates_handler",
+      "placeholder": "module_l2_005",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 14,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.transaction_status_handler",
+      "placeholder": "module_l2_006",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 15,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.anomaly_code_handler",
+      "placeholder": "module_l2_007",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 16,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.cleaning_description",
+      "placeholder": "module_l2_008",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 17,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.removing_zero_unitprice",
+      "placeholder": "module_l2_009",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 18,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.rfm",
+      "placeholder": "module_l2_010",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 19,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.unique_products",
+      "placeholder": "module_l2_011",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 20,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.customers_behavior",
+      "placeholder": "module_l2_012",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 21,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.geographic_features",
+      "placeholder": "module_l2_013",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 22,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.cancellation_details",
+      "placeholder": "module_l2_014",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 23,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.seasonality",
+      "placeholder": "module_l2_015",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 24,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.outlier_treatment",
+      "placeholder": "module_l2_016",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 25,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.scaler",
+      "placeholder": "module_l2_017",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 26,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.pca",
+      "placeholder": "module_l2_018",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 27,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src.correlation",
+      "placeholder": "module_l2_019",
+      "file": "gcpdeploy\\src\\airflow.py",
+      "line": 28,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "handle_anomalous_codes",
+      "placeholder": "data_cleaning_func_001",
+      "file": "gcpdeploy\\src\\anomaly_code_handler.py",
+      "line": 16,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "gcpdeploy\\src\\anomaly_code_handler.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "gcpdeploy\\src\\anomaly_code_handler.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "initialize_aiplatform",
+      "placeholder": "utility_func_002",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 17,
+      "role": "utility"
+    },
+    {
+      "type": "parameter",
+      "original": "project_id",
+      "placeholder": "param_025",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 17,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "region",
+      "placeholder": "param_026",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 17,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "bucket",
+      "placeholder": "param_027",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 17,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "create_training_job",
+      "placeholder": "feature_engineering_func_007",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 26,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "display_name",
+      "placeholder": "param_028",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 26,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "container_uri",
+      "placeholder": "param_029",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 26,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "model_serving_container_image_uri",
+      "placeholder": "param_030",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 26,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "bucket",
+      "placeholder": "param_027",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 26,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "run_training_job",
+      "placeholder": "pipeline_func_001",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 43,
+      "role": "pipeline"
+    },
+    {
+      "type": "parameter",
+      "original": "job",
+      "placeholder": "param_031",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 43,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "display_name",
+      "placeholder": "param_028",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 43,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "base_output_dir",
+      "placeholder": "param_032",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 43,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "service_account_email",
+      "placeholder": "param_033",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 43,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "deploy_model_to_endpoint",
+      "placeholder": "ml_model_func_004",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 59,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "model",
+      "placeholder": "param_034",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 59,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "display_name",
+      "placeholder": "param_028",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 59,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "service_account_email",
+      "placeholder": "param_033",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 59,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "main",
+      "placeholder": "pipeline_func_002",
+      "file": "gcpdeploy\\src\\build.py",
+      "line": 73,
+      "role": "pipeline"
+    },
+    {
+      "type": "function",
+      "original": "cancellation_details",
+      "placeholder": "feature_engineering_func_001",
+      "file": "gcpdeploy\\src\\cancellation_details.py",
+      "line": 16,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "gcpdeploy\\src\\cancellation_details.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "geographic_pickle_file",
+      "placeholder": "param_004",
+      "file": "gcpdeploy\\src\\cancellation_details.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "gcpdeploy\\src\\cancellation_details.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "cleaning_description",
+      "placeholder": "utility_func_001",
+      "file": "gcpdeploy\\src\\cleaning_description.py",
+      "line": 14,
+      "role": "utility"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "gcpdeploy\\src\\cleaning_description.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "gcpdeploy\\src\\cleaning_description.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "import_from",
+      "original": "prompt_toolkit.shortcuts",
+      "placeholder": "module_l2_020",
+      "file": "gcpdeploy\\src\\correlation.py",
+      "line": 11,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "correlation_check",
+      "placeholder": "analysis_func_001",
+      "file": "gcpdeploy\\src\\correlation.py",
+      "line": 32,
+      "role": "analysis"
+    },
+    {
+      "type": "parameter",
+      "original": "in_path",
+      "placeholder": "param_006",
+      "file": "gcpdeploy\\src\\correlation.py",
+      "line": 32,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "out_path",
+      "placeholder": "param_007",
+      "file": "gcpdeploy\\src\\correlation.py",
+      "line": 32,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "correlation_threshold",
+      "placeholder": "param_008",
+      "file": "gcpdeploy\\src\\correlation.py",
+      "line": 32,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "save_heatmap",
+      "placeholder": "data_saver_func_001",
+      "file": "gcpdeploy\\src\\correlation.py",
+      "line": 95,
+      "role": "data_saver"
+    },
+    {
+      "type": "parameter",
+      "original": "fig",
+      "placeholder": "param_009",
+      "file": "gcpdeploy\\src\\correlation.py",
+      "line": 95,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "save_correlations_as_parquet",
+      "placeholder": "data_saver_func_002",
+      "file": "gcpdeploy\\src\\correlation.py",
+      "line": 118,
+      "role": "data_saver"
+    },
+    {
+      "type": "function",
+      "original": "customers_behavior",
+      "placeholder": "feature_engineering_func_002",
+      "file": "gcpdeploy\\src\\customers_behavior.py",
+      "line": 16,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "gcpdeploy\\src\\customers_behavior.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "unique_pickle_file",
+      "placeholder": "param_010",
+      "file": "gcpdeploy\\src\\customers_behavior.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "gcpdeploy\\src\\customers_behavior.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "import_from",
+      "original": "download_data",
+      "placeholder": "module_l1_002",
+      "file": "gcpdeploy\\src\\datapipeline.py",
+      "line": 4,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "unzip_data",
+      "placeholder": "module_l1_003",
+      "file": "gcpdeploy\\src\\datapipeline.py",
+      "line": 5,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "data_loader",
+      "placeholder": "module_l1_004",
+      "file": "gcpdeploy\\src\\datapipeline.py",
+      "line": 6,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "missing_values_handler",
+      "placeholder": "module_l1_005",
+      "file": "gcpdeploy\\src\\datapipeline.py",
+      "line": 7,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "duplicates_handler",
+      "placeholder": "module_l1_006",
+      "file": "gcpdeploy\\src\\datapipeline.py",
+      "line": 8,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "transaction_status_handler",
+      "placeholder": "module_l1_007",
+      "file": "gcpdeploy\\src\\datapipeline.py",
+      "line": 9,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "anomaly_code_handler",
+      "placeholder": "module_l1_008",
+      "file": "gcpdeploy\\src\\datapipeline.py",
+      "line": 10,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "load_data",
+      "placeholder": "data_loader_func_001",
+      "file": "gcpdeploy\\src\\data_loader.py",
+      "line": 17,
+      "role": "data_loader"
+    },
+    {
+      "type": "parameter",
+      "original": "pickle_path",
+      "placeholder": "param_011",
+      "file": "gcpdeploy\\src\\data_loader.py",
+      "line": 17,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "excel_path",
+      "placeholder": "param_012",
+      "file": "gcpdeploy\\src\\data_loader.py",
+      "line": 17,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "ingest_data",
+      "placeholder": "data_loader_func_002",
+      "file": "gcpdeploy\\src\\download_data.py",
+      "line": 9,
+      "role": "data_loader"
+    },
+    {
+      "type": "parameter",
+      "original": "file_url",
+      "placeholder": "param_013",
+      "file": "gcpdeploy\\src\\download_data.py",
+      "line": 9,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "remove_duplicates",
+      "placeholder": "data_cleaning_func_002",
+      "file": "gcpdeploy\\src\\duplicates_handler.py",
+      "line": 21,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "gcpdeploy\\src\\duplicates_handler.py",
+      "line": 21,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "gcpdeploy\\src\\duplicates_handler.py",
+      "line": 21,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "geographic_features",
+      "placeholder": "feature_engineering_func_003",
+      "file": "gcpdeploy\\src\\geographic_features.py",
+      "line": 14,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "gcpdeploy\\src\\geographic_features.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "behavorial_pickle_file",
+      "placeholder": "param_014",
+      "file": "gcpdeploy\\src\\geographic_features.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "gcpdeploy\\src\\geographic_features.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "predict_custom_trained_model",
+      "placeholder": "ml_model_func_005",
+      "file": "gcpdeploy\\src\\inference.py",
+      "line": 7,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "project",
+      "placeholder": "param_035",
+      "file": "gcpdeploy\\src\\inference.py",
+      "line": 7,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "endpoint_id",
+      "placeholder": "param_036",
+      "file": "gcpdeploy\\src\\inference.py",
+      "line": 7,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "instances",
+      "placeholder": "param_037",
+      "file": "gcpdeploy\\src\\inference.py",
+      "line": 7,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "location",
+      "placeholder": "param_038",
+      "file": "gcpdeploy\\src\\inference.py",
+      "line": 7,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "api_endpoint",
+      "placeholder": "param_039",
+      "file": "gcpdeploy\\src\\inference.py",
+      "line": 7,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "mlflow_logging_train",
+      "placeholder": "ml_model_func_006",
+      "file": "gcpdeploy\\src\\mflow_logging.py",
+      "line": 35,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "data_path",
+      "placeholder": "param_040",
+      "file": "gcpdeploy\\src\\mflow_logging.py",
+      "line": 35,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "handle_missing",
+      "placeholder": "data_cleaning_func_003",
+      "file": "gcpdeploy\\src\\missing_values_handler.py",
+      "line": 15,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "gcpdeploy\\src\\missing_values_handler.py",
+      "line": 15,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "gcpdeploy\\src\\missing_values_handler.py",
+      "line": 15,
+      "role": "parameter"
+    },
+    {
+      "type": "import",
+      "original": "pytz",
+      "placeholder": "module_l1_009",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 3,
+      "role": "module"
+    },
+    {
+      "type": "import",
+      "original": "gcsfs",
+      "placeholder": "module_l1_010",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 9,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "tabulate",
+      "placeholder": "module_l1_011",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 17,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "load_data",
+      "placeholder": "data_loader_func_001",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 28,
+      "role": "data_loader"
+    },
+    {
+      "type": "parameter",
+      "original": "gcs_train_data_path",
+      "placeholder": "param_041",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 28,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "normalize_data",
+      "placeholder": "data_cleaning_func_007",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 51,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "stats",
+      "placeholder": "param_042",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 51,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "data_transform",
+      "placeholder": "ml_model_func_007",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 73,
+      "role": "ml_model"
+    },
+    {
+      "type": "function",
+      "original": "top_pca",
+      "placeholder": "ml_model_func_008",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 117,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "pca_output",
+      "placeholder": "param_043",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 117,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "cluster_distribution",
+      "placeholder": "ml_model_func_009",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 165,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "pca_output",
+      "placeholder": "param_043",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 165,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "evaluation_metrics",
+      "placeholder": "utility_func_003",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 209,
+      "role": "utility"
+    },
+    {
+      "type": "parameter",
+      "original": "pca_output",
+      "placeholder": "param_043",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 209,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "train_model",
+      "placeholder": "ml_model_func_010",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 251,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "X_train",
+      "placeholder": "param_044",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 251,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "y_train",
+      "placeholder": "param_045",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 251,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "save_and_upload_model",
+      "placeholder": "data_saver_func_003",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 266,
+      "role": "data_saver"
+    },
+    {
+      "type": "parameter",
+      "original": "model",
+      "placeholder": "param_034",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 266,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "local_model_path",
+      "placeholder": "param_046",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 266,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "gcs_model_path",
+      "placeholder": "param_047",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 266,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "silhouette_analysis",
+      "placeholder": "analysis_func_003",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 282,
+      "role": "analysis"
+    },
+    {
+      "type": "parameter",
+      "original": "figsize",
+      "placeholder": "param_048",
+      "file": "gcpdeploy\\src\\model_analysis.py",
+      "line": 282,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "removing_outlier",
+      "placeholder": "data_cleaning_func_004",
+      "file": "gcpdeploy\\src\\outlier_treatment.py",
+      "line": 16,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "gcpdeploy\\src\\outlier_treatment.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "gcpdeploy\\src\\outlier_treatment.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "import_from",
+      "original": "prompt_toolkit.shortcuts",
+      "placeholder": "module_l2_020",
+      "file": "gcpdeploy\\src\\pca.py",
+      "line": 12,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "pc_analyzer",
+      "placeholder": "ml_model_func_001",
+      "file": "gcpdeploy\\src\\pca.py",
+      "line": 23,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "in_path",
+      "placeholder": "param_006",
+      "file": "gcpdeploy\\src\\pca.py",
+      "line": 23,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "out_path",
+      "placeholder": "param_007",
+      "file": "gcpdeploy\\src\\pca.py",
+      "line": 23,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "drop_cols",
+      "placeholder": "param_015",
+      "file": "gcpdeploy\\src\\pca.py",
+      "line": 23,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "cvr_thresh",
+      "placeholder": "param_016",
+      "file": "gcpdeploy\\src\\pca.py",
+      "line": 23,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "pca_",
+      "placeholder": "ml_model_func_002",
+      "file": "gcpdeploy\\src\\pca.py",
+      "line": 94,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "thresh",
+      "placeholder": "param_017",
+      "file": "gcpdeploy\\src\\pca.py",
+      "line": 94,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "removing_zero",
+      "placeholder": "data_cleaning_func_005",
+      "file": "gcpdeploy\\src\\removing_zero_unitprice.py",
+      "line": 16,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "gcpdeploy\\src\\removing_zero_unitprice.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "gcpdeploy\\src\\removing_zero_unitprice.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "rfm",
+      "placeholder": "feature_engineering_func_004",
+      "file": "gcpdeploy\\src\\rfm.py",
+      "line": 14,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "gcpdeploy\\src\\rfm.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "gcpdeploy\\src\\rfm.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "seasonality_impacts",
+      "placeholder": "feature_engineering_func_005",
+      "file": "gcpdeploy\\src\\seasonality.py",
+      "line": 16,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "gcpdeploy\\src\\seasonality.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "cancellation_pickle_file",
+      "placeholder": "param_019",
+      "file": "gcpdeploy\\src\\seasonality.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "gcpdeploy\\src\\seasonality.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "calculate_trend",
+      "placeholder": "analysis_func_002",
+      "file": "gcpdeploy\\src\\seasonality.py",
+      "line": 50,
+      "role": "analysis"
+    },
+    {
+      "type": "parameter",
+      "original": "spend_data",
+      "placeholder": "param_021",
+      "file": "gcpdeploy\\src\\seasonality.py",
+      "line": 50,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "handle_transaction_status",
+      "placeholder": "data_cleaning_func_006",
+      "file": "gcpdeploy\\src\\transaction_status_handler.py",
+      "line": 18,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "gcpdeploy\\src\\transaction_status_handler.py",
+      "line": 18,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "gcpdeploy\\src\\transaction_status_handler.py",
+      "line": 18,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "unique_products",
+      "placeholder": "feature_engineering_func_006",
+      "file": "gcpdeploy\\src\\unique_products.py",
+      "line": 14,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "gcpdeploy\\src\\unique_products.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "rfm_pickle_file",
+      "placeholder": "param_022",
+      "file": "gcpdeploy\\src\\unique_products.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "gcpdeploy\\src\\unique_products.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "import",
+      "original": "zipfile",
+      "placeholder": "module_l1_001",
+      "file": "gcpdeploy\\src\\unzip_data.py",
+      "line": 4,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "unzip_file",
+      "placeholder": "data_loader_func_003",
+      "file": "gcpdeploy\\src\\unzip_data.py",
+      "line": 13,
+      "role": "data_loader"
+    },
+    {
+      "type": "parameter",
+      "original": "zip_filename",
+      "placeholder": "param_023",
+      "file": "gcpdeploy\\src\\unzip_data.py",
+      "line": 13,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "extract_to",
+      "placeholder": "param_024",
+      "file": "gcpdeploy\\src\\unzip_data.py",
+      "line": 13,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "get_table_schema",
+      "placeholder": "data_loader_func_004",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 36,
+      "role": "data_loader"
+    },
+    {
+      "type": "function",
+      "original": "create_table_if_not_exists",
+      "placeholder": "feature_engineering_func_008",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 55,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "client",
+      "placeholder": "param_049",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 55,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "table_id",
+      "placeholder": "param_050",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 55,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "schema",
+      "placeholder": "param_051",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 55,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "initialize_variables",
+      "placeholder": "utility_func_004",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 76,
+      "role": "utility"
+    },
+    {
+      "type": "function",
+      "original": "initialize_client_and_bucket",
+      "placeholder": "utility_func_005",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 86,
+      "role": "utility"
+    },
+    {
+      "type": "parameter",
+      "original": "bucket_name",
+      "placeholder": "param_052",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 86,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "load_model",
+      "placeholder": "data_loader_func_005",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 98,
+      "role": "data_loader"
+    },
+    {
+      "type": "parameter",
+      "original": "bucket",
+      "placeholder": "param_027",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 98,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "bucket_name",
+      "placeholder": "param_052",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 98,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "fetch_latest_model",
+      "placeholder": "data_loader_func_006",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 124,
+      "role": "data_loader"
+    },
+    {
+      "type": "parameter",
+      "original": "bucket_name",
+      "placeholder": "param_052",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 124,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "prefix",
+      "placeholder": "param_053",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 124,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "health_check",
+      "placeholder": "analysis_func_004",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 145,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "predict",
+      "placeholder": "ml_model_func_011",
+      "file": "gcpdeploy\\src\\serve\\predict.py",
+      "line": 153,
+      "role": "ml_model"
+    },
+    {
+      "type": "function",
+      "original": "remove_outliers",
+      "placeholder": "data_cleaning_func_008",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 8,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "outliers_data",
+      "placeholder": "param_054",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 8,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "merge_customer_transactions",
+      "placeholder": "feature_engineering_func_009",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 28,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "customer_data_cleaned",
+      "placeholder": "param_055",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 28,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "identify_top_products",
+      "placeholder": "feature_engineering_func_010",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 52,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "merged_data",
+      "placeholder": "param_056",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 52,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "record_customer_purchases",
+      "placeholder": "utility_func_006",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 75,
+      "role": "utility"
+    },
+    {
+      "type": "parameter",
+      "original": "merged_data",
+      "placeholder": "param_056",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 75,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "create_recommendations",
+      "placeholder": "feature_engineering_func_011",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 93,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "customer_data",
+      "placeholder": "param_057",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 93,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "top_products_per_cluster",
+      "placeholder": "param_058",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 93,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "customer_purchases",
+      "placeholder": "param_059",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 93,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "generate_recommendations",
+      "placeholder": "feature_engineering_func_012",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 131,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "outliers_data",
+      "placeholder": "param_054",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 131,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "customer_data_cleaned",
+      "placeholder": "param_055",
+      "file": "gcpdeploy\\src\\trainer\\ClusterBasedRecommender.py",
+      "line": 131,
+      "role": "parameter"
+    },
+    {
+      "type": "import",
+      "original": "pytz",
+      "placeholder": "module_l1_009",
+      "file": "gcpdeploy\\src\\trainer\\train.py",
+      "line": 3,
+      "role": "module"
+    },
+    {
+      "type": "import",
+      "original": "gcsfs",
+      "placeholder": "module_l1_010",
+      "file": "gcpdeploy\\src\\trainer\\train.py",
+      "line": 10,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "ClusterBasedRecommender",
+      "placeholder": "module_l1_012",
+      "file": "gcpdeploy\\src\\trainer\\train.py",
+      "line": 22,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "kmeans_clustering",
+      "placeholder": "utility_func_007",
+      "file": "gcpdeploy\\src\\trainer\\train.py",
+      "line": 33,
+      "role": "utility"
+    },
+    {
+      "type": "parameter",
+      "original": "df_cleaned",
+      "placeholder": "param_060",
+      "file": "gcpdeploy\\src\\trainer\\train.py",
+      "line": 33,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "df_pca",
+      "placeholder": "param_061",
+      "file": "gcpdeploy\\src\\trainer\\train.py",
+      "line": 33,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "number_of_clusters",
+      "placeholder": "param_062",
+      "file": "gcpdeploy\\src\\trainer\\train.py",
+      "line": 33,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "save_and_upload_model",
+      "placeholder": "data_saver_func_003",
+      "file": "gcpdeploy\\src\\trainer\\train.py",
+      "line": 58,
+      "role": "data_saver"
+    },
+    {
+      "type": "parameter",
+      "original": "model",
+      "placeholder": "param_034",
+      "file": "gcpdeploy\\src\\trainer\\train.py",
+      "line": 58,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "local_model_path",
+      "placeholder": "param_046",
+      "file": "gcpdeploy\\src\\trainer\\train.py",
+      "line": 58,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "gcs_model_path",
+      "placeholder": "param_047",
+      "file": "gcpdeploy\\src\\trainer\\train.py",
+      "line": 58,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "main",
+      "placeholder": "pipeline_func_002",
+      "file": "gcpdeploy\\src\\trainer\\train.py",
+      "line": 75,
+      "role": "pipeline"
+    },
+    {
+      "type": "function",
+      "original": "handle_anomalous_codes",
+      "placeholder": "data_cleaning_func_001",
+      "file": "src\\anomaly_code_handler.py",
+      "line": 16,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "src\\anomaly_code_handler.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "src\\anomaly_code_handler.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "cancellation_details",
+      "placeholder": "feature_engineering_func_001",
+      "file": "src\\cancellation_details.py",
+      "line": 16,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "src\\cancellation_details.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "geographic_pickle_file",
+      "placeholder": "param_004",
+      "file": "src\\cancellation_details.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "src\\cancellation_details.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "cleaning_description",
+      "placeholder": "utility_func_001",
+      "file": "src\\cleaning_description.py",
+      "line": 14,
+      "role": "utility"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "src\\cleaning_description.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "src\\cleaning_description.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "import_from",
+      "original": "prompt_toolkit.shortcuts",
+      "placeholder": "module_l2_020",
+      "file": "src\\correlation.py",
+      "line": 12,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "correlation_check",
+      "placeholder": "analysis_func_001",
+      "file": "src\\correlation.py",
+      "line": 35,
+      "role": "analysis"
+    },
+    {
+      "type": "parameter",
+      "original": "in_path",
+      "placeholder": "param_006",
+      "file": "src\\correlation.py",
+      "line": 35,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "out_path",
+      "placeholder": "param_007",
+      "file": "src\\correlation.py",
+      "line": 35,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "correlation_threshold",
+      "placeholder": "param_008",
+      "file": "src\\correlation.py",
+      "line": 35,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "save_heatmap",
+      "placeholder": "data_saver_func_001",
+      "file": "src\\correlation.py",
+      "line": 98,
+      "role": "data_saver"
+    },
+    {
+      "type": "parameter",
+      "original": "fig",
+      "placeholder": "param_009",
+      "file": "src\\correlation.py",
+      "line": 98,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "save_correlations_as_parquet",
+      "placeholder": "data_saver_func_002",
+      "file": "src\\correlation.py",
+      "line": 121,
+      "role": "data_saver"
+    },
+    {
+      "type": "function",
+      "original": "customers_behavior",
+      "placeholder": "feature_engineering_func_002",
+      "file": "src\\customers_behavior.py",
+      "line": 16,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "src\\customers_behavior.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "unique_pickle_file",
+      "placeholder": "param_010",
+      "file": "src\\customers_behavior.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "src\\customers_behavior.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "import_from",
+      "original": "download_data",
+      "placeholder": "module_l1_002",
+      "file": "src\\datapipeline.py",
+      "line": 4,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "unzip_data",
+      "placeholder": "module_l1_003",
+      "file": "src\\datapipeline.py",
+      "line": 5,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "data_loader",
+      "placeholder": "module_l1_004",
+      "file": "src\\datapipeline.py",
+      "line": 6,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "missing_values_handler",
+      "placeholder": "module_l1_005",
+      "file": "src\\datapipeline.py",
+      "line": 7,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "duplicates_handler",
+      "placeholder": "module_l1_006",
+      "file": "src\\datapipeline.py",
+      "line": 8,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "transaction_status_handler",
+      "placeholder": "module_l1_007",
+      "file": "src\\datapipeline.py",
+      "line": 9,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "anomaly_code_handler",
+      "placeholder": "module_l1_008",
+      "file": "src\\datapipeline.py",
+      "line": 10,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "load_data",
+      "placeholder": "data_loader_func_001",
+      "file": "src\\data_loader.py",
+      "line": 17,
+      "role": "data_loader"
+    },
+    {
+      "type": "parameter",
+      "original": "pickle_path",
+      "placeholder": "param_011",
+      "file": "src\\data_loader.py",
+      "line": 17,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "excel_path",
+      "placeholder": "param_012",
+      "file": "src\\data_loader.py",
+      "line": 17,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "ingest_data",
+      "placeholder": "data_loader_func_002",
+      "file": "src\\download_data.py",
+      "line": 9,
+      "role": "data_loader"
+    },
+    {
+      "type": "parameter",
+      "original": "file_url",
+      "placeholder": "param_013",
+      "file": "src\\download_data.py",
+      "line": 9,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "remove_duplicates",
+      "placeholder": "data_cleaning_func_002",
+      "file": "src\\duplicates_handler.py",
+      "line": 21,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "src\\duplicates_handler.py",
+      "line": 21,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "src\\duplicates_handler.py",
+      "line": 21,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "geographic_features",
+      "placeholder": "feature_engineering_func_003",
+      "file": "src\\geographic_features.py",
+      "line": 14,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "src\\geographic_features.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "behavorial_pickle_file",
+      "placeholder": "param_014",
+      "file": "src\\geographic_features.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "src\\geographic_features.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "rfm_histograms",
+      "placeholder": "feature_engineering_func_013",
+      "file": "src\\histogram_analysis.py",
+      "line": 19,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "in_path",
+      "placeholder": "param_006",
+      "file": "src\\histogram_analysis.py",
+      "line": 19,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "handle_missing",
+      "placeholder": "data_cleaning_func_003",
+      "file": "src\\missing_values_handler.py",
+      "line": 15,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "src\\missing_values_handler.py",
+      "line": 15,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "src\\missing_values_handler.py",
+      "line": 15,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "removing_outlier",
+      "placeholder": "data_cleaning_func_004",
+      "file": "src\\outlier_treatment.py",
+      "line": 16,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "src\\outlier_treatment.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "src\\outlier_treatment.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "import_from",
+      "original": "prompt_toolkit.shortcuts",
+      "placeholder": "module_l2_020",
+      "file": "src\\pca.py",
+      "line": 13,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "pc_analyzer",
+      "placeholder": "ml_model_func_001",
+      "file": "src\\pca.py",
+      "line": 27,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "in_path",
+      "placeholder": "param_006",
+      "file": "src\\pca.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "out_path",
+      "placeholder": "param_007",
+      "file": "src\\pca.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "drop_cols",
+      "placeholder": "param_015",
+      "file": "src\\pca.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "cvr_thresh",
+      "placeholder": "param_016",
+      "file": "src\\pca.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "pca_",
+      "placeholder": "ml_model_func_002",
+      "file": "src\\pca.py",
+      "line": 98,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "thresh",
+      "placeholder": "param_017",
+      "file": "src\\pca.py",
+      "line": 98,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "radar_charts",
+      "placeholder": "visualization_func_001",
+      "file": "src\\radar_analysis.py",
+      "line": 21,
+      "role": "visualization"
+    },
+    {
+      "type": "parameter",
+      "original": "in_path",
+      "placeholder": "param_006",
+      "file": "src\\radar_analysis.py",
+      "line": 21,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "removing_zero",
+      "placeholder": "data_cleaning_func_005",
+      "file": "src\\removing_zero_unitprice.py",
+      "line": 16,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "src\\removing_zero_unitprice.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "src\\removing_zero_unitprice.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "rfm",
+      "placeholder": "feature_engineering_func_004",
+      "file": "src\\rfm.py",
+      "line": 14,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "src\\rfm.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "src\\rfm.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "import_from",
+      "original": "prompt_toolkit.shortcuts",
+      "placeholder": "module_l2_020",
+      "file": "src\\scaler.py",
+      "line": 12,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "scaler",
+      "placeholder": "ml_model_func_003",
+      "file": "src\\scaler.py",
+      "line": 27,
+      "role": "ml_model"
+    },
+    {
+      "type": "parameter",
+      "original": "in_path",
+      "placeholder": "param_006",
+      "file": "src\\scaler.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "out_path",
+      "placeholder": "param_007",
+      "file": "src\\scaler.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "cols",
+      "placeholder": "param_018",
+      "file": "src\\scaler.py",
+      "line": 27,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "seasonality_impacts",
+      "placeholder": "feature_engineering_func_005",
+      "file": "src\\seasonality.py",
+      "line": 16,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "src\\seasonality.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "cancellation_pickle_file",
+      "placeholder": "param_019",
+      "file": "src\\seasonality.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "src\\seasonality.py",
+      "line": 16,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "calculate_trend",
+      "placeholder": "analysis_func_002",
+      "file": "src\\seasonality.py",
+      "line": 50,
+      "role": "analysis"
+    },
+    {
+      "type": "parameter",
+      "original": "spend_data",
+      "placeholder": "param_021",
+      "file": "src\\seasonality.py",
+      "line": 50,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "handle_transaction_status",
+      "placeholder": "data_cleaning_func_006",
+      "file": "src\\transaction_status_handler.py",
+      "line": 18,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_path",
+      "placeholder": "param_001",
+      "file": "src\\transaction_status_handler.py",
+      "line": 18,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_path",
+      "placeholder": "param_002",
+      "file": "src\\transaction_status_handler.py",
+      "line": 18,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "unique_products",
+      "placeholder": "feature_engineering_func_006",
+      "file": "src\\unique_products.py",
+      "line": 14,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "parameter",
+      "original": "input_pickle_file",
+      "placeholder": "param_003",
+      "file": "src\\unique_products.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "rfm_pickle_file",
+      "placeholder": "param_022",
+      "file": "src\\unique_products.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "output_pickle_file",
+      "placeholder": "param_005",
+      "file": "src\\unique_products.py",
+      "line": 14,
+      "role": "parameter"
+    },
+    {
+      "type": "import",
+      "original": "zipfile",
+      "placeholder": "module_l1_001",
+      "file": "src\\unzip_data.py",
+      "line": 4,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "unzip_file",
+      "placeholder": "data_loader_func_003",
+      "file": "src\\unzip_data.py",
+      "line": 13,
+      "role": "data_loader"
+    },
+    {
+      "type": "parameter",
+      "original": "zip_filename",
+      "placeholder": "param_023",
+      "file": "src\\unzip_data.py",
+      "line": 13,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "extract_to",
+      "placeholder": "param_024",
+      "file": "src\\unzip_data.py",
+      "line": 13,
+      "role": "parameter"
+    },
+    {
+      "type": "import_from",
+      "original": "src.anomaly_code_handler",
+      "placeholder": "module_l2_007",
+      "file": "test\\test_anomaly_code_handler.py",
+      "line": 7,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_handle_anomalous_codes",
+      "placeholder": "data_cleaning_func_009",
+      "file": "test\\test_anomaly_code_handler.py",
+      "line": 16,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "function",
+      "original": "test_cancellation_details",
+      "placeholder": "analysis_func_005",
+      "file": "test\\test_cancellation_details.py",
+      "line": 15,
+      "role": "analysis"
+    },
+    {
+      "type": "import_from",
+      "original": "src.cleaning_description",
+      "placeholder": "module_l2_008",
+      "file": "test\\test_cleaning_description.py",
+      "line": 7,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_cleaning_description",
+      "placeholder": "analysis_func_006",
+      "file": "test\\test_cleaning_description.py",
+      "line": 18,
+      "role": "analysis"
+    },
+    {
+      "type": "import_from",
+      "original": "src.correlation",
+      "placeholder": "module_l2_019",
+      "file": "test\\test_correlation.py",
+      "line": 6,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_correlation_filenotfound",
+      "placeholder": "analysis_func_007",
+      "file": "test\\test_correlation.py",
+      "line": 15,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_correlation_parquetpath_error",
+      "placeholder": "analysis_func_008",
+      "file": "test\\test_correlation.py",
+      "line": 23,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_correlation_imagepath_error",
+      "placeholder": "analysis_func_009",
+      "file": "test\\test_correlation.py",
+      "line": 31,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_correlation_imagesavecheck",
+      "placeholder": "analysis_func_010",
+      "file": "test\\test_correlation.py",
+      "line": 39,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_correlation_parquetsavecheck",
+      "placeholder": "analysis_func_011",
+      "file": "test\\test_correlation.py",
+      "line": 51,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_corr_thresh_error",
+      "placeholder": "analysis_func_012",
+      "file": "test\\test_correlation.py",
+      "line": 63,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_customers_behavior",
+      "placeholder": "analysis_func_013",
+      "file": "test\\test_customers_behavior.py",
+      "line": 15,
+      "role": "analysis"
+    },
+    {
+      "type": "import_from",
+      "original": "src.data_loader",
+      "placeholder": "module_l2_003",
+      "file": "test\\test_data_loader.py",
+      "line": 7,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_load_data_from_excel",
+      "placeholder": "analysis_func_014",
+      "file": "test\\test_data_loader.py",
+      "line": 17,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_load_data_no_files",
+      "placeholder": "analysis_func_015",
+      "file": "test\\test_data_loader.py",
+      "line": 31,
+      "role": "analysis"
+    },
+    {
+      "type": "import",
+      "original": "requests_mock",
+      "placeholder": "module_l1_013",
+      "file": "test\\test_download_data.py",
+      "line": 6,
+      "role": "module"
+    },
+    {
+      "type": "import_from",
+      "original": "src",
+      "placeholder": "module_l1_014",
+      "file": "test\\test_download_data.py",
+      "line": 7,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_ingest_data",
+      "placeholder": "analysis_func_016",
+      "file": "test\\test_download_data.py",
+      "line": 11,
+      "role": "analysis"
+    },
+    {
+      "type": "parameter",
+      "original": "mocker",
+      "placeholder": "param_063",
+      "file": "test\\test_download_data.py",
+      "line": 11,
+      "role": "parameter"
+    },
+    {
+      "type": "function",
+      "original": "test_ingest_data_successful_download",
+      "placeholder": "data_loader_func_007",
+      "file": "test\\test_download_data.py",
+      "line": 23,
+      "role": "data_loader"
+    },
+    {
+      "type": "import_from",
+      "original": "src.duplicates_handler",
+      "placeholder": "module_l2_005",
+      "file": "test\\test_duplicates_handler.py",
+      "line": 8,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_remove_duplicates_no_input_file",
+      "placeholder": "analysis_func_017",
+      "file": "test\\test_duplicates_handler.py",
+      "line": 17,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_remove_duplicates",
+      "placeholder": "analysis_func_018",
+      "file": "test\\test_duplicates_handler.py",
+      "line": 31,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_geographic_features",
+      "placeholder": "analysis_func_019",
+      "file": "test\\test_geographic_features.py",
+      "line": 15,
+      "role": "analysis"
+    },
+    {
+      "type": "import_from",
+      "original": "src.missing_values_handler",
+      "placeholder": "module_l2_004",
+      "file": "test\\test_missing_values_handler.py",
+      "line": 7,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_handle_missing_success",
+      "placeholder": "data_cleaning_func_010",
+      "file": "test\\test_missing_values_handler.py",
+      "line": 16,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "function",
+      "original": "test_handle_missing_file_not_found",
+      "placeholder": "data_cleaning_func_011",
+      "file": "test\\test_missing_values_handler.py",
+      "line": 23,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "import_from",
+      "original": "src.outlier_treatment",
+      "placeholder": "module_l2_016",
+      "file": "test\\test_outlier_treatment.py",
+      "line": 7,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_outlier_treatment",
+      "placeholder": "analysis_func_020",
+      "file": "test\\test_outlier_treatment.py",
+      "line": 18,
+      "role": "analysis"
+    },
+    {
+      "type": "import_from",
+      "original": "src.pca",
+      "placeholder": "module_l2_018",
+      "file": "test\\test_pca.py",
+      "line": 6,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_pca_file_not_found",
+      "placeholder": "analysis_func_021",
+      "file": "test\\test_pca.py",
+      "line": 18,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_missing_columns",
+      "placeholder": "analysis_func_022",
+      "file": "test\\test_pca.py",
+      "line": 26,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_pca_outfile_exists",
+      "placeholder": "analysis_func_023",
+      "file": "test\\test_pca.py",
+      "line": 34,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_cvr_thresh_error",
+      "placeholder": "analysis_func_024",
+      "file": "test\\test_pca.py",
+      "line": 45,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_pca_columnslessthan4",
+      "placeholder": "analysis_func_025",
+      "file": "test\\test_pca.py",
+      "line": 53,
+      "role": "analysis"
+    },
+    {
+      "type": "import_from",
+      "original": "src.removing_zero_unitprice",
+      "placeholder": "module_l2_009",
+      "file": "test\\test_removing_zero_unitpirce.py",
+      "line": 7,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_removing_zero",
+      "placeholder": "data_cleaning_func_012",
+      "file": "test\\test_removing_zero_unitpirce.py",
+      "line": 18,
+      "role": "data_cleaning"
+    },
+    {
+      "type": "function",
+      "original": "test_rfm",
+      "placeholder": "analysis_func_026",
+      "file": "test\\test_rfm.py",
+      "line": 15,
+      "role": "analysis"
+    },
+    {
+      "type": "import_from",
+      "original": "src.scaler",
+      "placeholder": "module_l2_017",
+      "file": "test\\test_scaler.py",
+      "line": 6,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_scaler_file_not_found",
+      "placeholder": "analysis_func_027",
+      "file": "test\\test_scaler.py",
+      "line": 19,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_missing_std_columns",
+      "placeholder": "analysis_func_028",
+      "file": "test\\test_scaler.py",
+      "line": 27,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_missing_norm_columns",
+      "placeholder": "analysis_func_029",
+      "file": "test\\test_scaler.py",
+      "line": 35,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_scaler_outfile_exists",
+      "placeholder": "analysis_func_030",
+      "file": "test\\test_scaler.py",
+      "line": 43,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_seasonality_impacts",
+      "placeholder": "analysis_func_031",
+      "file": "test\\test_seasonality.py",
+      "line": 15,
+      "role": "analysis"
+    },
+    {
+      "type": "import_from",
+      "original": "src.transaction_status_handler",
+      "placeholder": "module_l2_006",
+      "file": "test\\test_transaction_status_handler.py",
+      "line": 7,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_handle_transaction_status",
+      "placeholder": "analysis_func_032",
+      "file": "test\\test_transaction_status_handler.py",
+      "line": 16,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_unique_products",
+      "placeholder": "feature_engineering_func_014",
+      "file": "test\\test_unique_products.py",
+      "line": 15,
+      "role": "feature_engineering"
+    },
+    {
+      "type": "import_from",
+      "original": "src",
+      "placeholder": "module_l1_014",
+      "file": "test\\test_unzip_data.py",
+      "line": 5,
+      "role": "module"
+    },
+    {
+      "type": "function",
+      "original": "test_unzip_file_successful",
+      "placeholder": "analysis_func_033",
+      "file": "test\\test_unzip_data.py",
+      "line": 16,
+      "role": "analysis"
+    },
+    {
+      "type": "function",
+      "original": "test_unzip_file_bad_zip",
+      "placeholder": "analysis_func_034",
+      "file": "test\\test_unzip_data.py",
+      "line": 30,
+      "role": "analysis"
+    },
+    {
+      "type": "parameter",
+      "original": "tmp_path",
+      "placeholder": "param_064",
+      "file": "test\\test_unzip_data.py",
+      "line": 30,
+      "role": "parameter"
+    },
+    {
+      "type": "parameter",
+      "original": "capsys",
+      "placeholder": "param_065",
+      "file": "test\\test_unzip_data.py",
+      "line": 30,
+      "role": "parameter"
+    }
+  ]
+}

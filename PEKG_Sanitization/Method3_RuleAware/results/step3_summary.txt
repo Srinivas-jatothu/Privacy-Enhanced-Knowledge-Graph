@@ -1,0 +1,15 @@
+SOURCE CODE SANITIZATION SUMMARY - Method 3
+============================================================
+Files processed    : 91
+Files changed      : 89
+Files failed       : 0
+Syntax errors      : 1
+Total replacements : 765
+
+Replacements by Type:
+  parameter                    377
+  function_def                 140
+  import                        84
+  standalone_identifier         81
+  function_call                 73
+  url                           10

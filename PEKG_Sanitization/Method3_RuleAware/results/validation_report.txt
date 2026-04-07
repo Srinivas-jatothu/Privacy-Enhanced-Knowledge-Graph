@@ -1,0 +1,13 @@
+VALIDATION REPORT - Method 3
+============================================================
+Files validated     : 91
+Syntax PASSED       : 90
+Syntax FAILED       : 1
+Total issues        : 2
+Verdict             : PASS - Repo is fully sanitized and valid
+
+Issues by type:
+  syntax_error                           1
+  original_func_name_found               1
+
+Functions not replaced (defined but not called):

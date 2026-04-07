@@ -1,0 +1,766 @@
+file,change_type,original,replacement
+dags\src\airflow.py,import,from src.download_data import ingest_data,from module_l2_001 import data_loader_func_002
+dags\src\airflow.py,import,from src.unzip_data import unzip_file,from module_l2_002 import data_loader_func_003
+dags\src\airflow.py,import,from src.data_loader import load_data,from module_l2_003 import data_loader_func_001
+dags\src\airflow.py,import,from src.missing_values_handler import handle_missing,from module_l2_004 import data_cleaning_func_003
+dags\src\airflow.py,import,from src.duplicates_handler import remove_duplicates,from module_l2_005 import data_cleaning_func_002
+dags\src\airflow.py,import,from src.transaction_status_handler import handle_transactio,from module_l2_006 import data_cleaning_func_006
+dags\src\airflow.py,import,from src.anomaly_code_handler import handle_anomalous_codes,from module_l2_007 import data_cleaning_func_001
+dags\src\airflow.py,import,from src.cleaning_description import cleaning_description,from module_l2_008 import utility_func_001
+dags\src\airflow.py,import,from src.removing_zero_unitprice import removing_zero,from module_l2_009 import data_cleaning_func_005
+dags\src\airflow.py,import,from src.rfm import rfm,from module_l2_010 import feature_engineering_func_004
+dags\src\airflow.py,import,from src.unique_products import unique_products,from module_l2_011 import feature_engineering_func_006
+dags\src\airflow.py,import,from src.customers_behavior import customers_behavior,from module_l2_012 import feature_engineering_func_002
+dags\src\airflow.py,import,from src.geographic_features import geographic_features,from module_l2_013 import feature_engineering_func_003
+dags\src\airflow.py,import,from src.cancellation_details import cancellation_details,from module_l2_014 import feature_engineering_func_001
+dags\src\airflow.py,import,from src.seasonality import seasonality_impacts,from module_l2_015 import feature_engineering_func_005
+dags\src\airflow.py,import,from src.outlier_treatment import removing_outlier,from module_l2_016 import data_cleaning_func_004
+dags\src\airflow.py,import,from src.scaler import scaler,from module_l2_017 import ml_model_func_003
+dags\src\airflow.py,import,from src.pca import pc_analyzer,from module_l2_018 import ml_model_func_001
+dags\src\airflow.py,import,from src.correlation import correlation_check,from module_l2_019 import analysis_func_001
+dags\src\airflow.py,standalone_identifier,handle_transaction_status,data_cleaning_func_006
+dags\src\airflow.py,standalone_identifier,handle_anomalous_codes,data_cleaning_func_001
+dags\src\airflow.py,standalone_identifier,cancellation_details,feature_engineering_func_001
+dags\src\airflow.py,standalone_identifier,cleaning_description,utility_func_001
+dags\src\airflow.py,standalone_identifier,geographic_features,feature_engineering_func_003
+dags\src\airflow.py,standalone_identifier,seasonality_impacts,feature_engineering_func_005
+dags\src\airflow.py,standalone_identifier,customers_behavior,feature_engineering_func_002
+dags\src\airflow.py,standalone_identifier,correlation_check,analysis_func_001
+dags\src\airflow.py,standalone_identifier,remove_duplicates,data_cleaning_func_002
+dags\src\airflow.py,standalone_identifier,removing_outlier,data_cleaning_func_004
+dags\src\airflow.py,standalone_identifier,unique_products,feature_engineering_func_006
+dags\src\airflow.py,standalone_identifier,handle_missing,data_cleaning_func_003
+dags\src\airflow.py,standalone_identifier,removing_zero,data_cleaning_func_005
+dags\src\airflow.py,standalone_identifier,ingest_data,data_loader_func_002
+dags\src\airflow.py,standalone_identifier,pc_analyzer,ml_model_func_001
+dags\src\airflow.py,standalone_identifier,unzip_file,data_loader_func_003
+dags\src\airflow.py,standalone_identifier,load_data,data_loader_func_001
+dags\src\airflow.py,standalone_identifier,scaler,ml_model_func_003
+dags\src\airflow.py,standalone_identifier,rfm,feature_engineering_func_004
+dags\src\airflow.py,parameter,excel_path,param_012
+dags\src\airflow.py,parameter,in_path,param_006
+dags\src\airflow.py,url,url,[URL]
+dags\src\anomaly_code_handler.py,function_def,handle_anomalous_codes,data_cleaning_func_001
+dags\src\anomaly_code_handler.py,parameter,output_pickle_path,param_002
+dags\src\anomaly_code_handler.py,parameter,input_pickle_path,param_001
+dags\src\anomaly_code_handler.py,parameter,project,param_035
+dags\src\cancellation_details.py,function_def,cancellation_details,feature_engineering_func_001
+dags\src\cancellation_details.py,standalone_identifier,cancellation_details,feature_engineering_func_001
+dags\src\cancellation_details.py,standalone_identifier,geographic_features,feature_engineering_func_003
+dags\src\cancellation_details.py,parameter,geographic_pickle_file,param_004
+dags\src\cancellation_details.py,parameter,output_pickle_path,param_002
+dags\src\cancellation_details.py,parameter,output_pickle_file,param_005
+dags\src\cancellation_details.py,parameter,input_pickle_path,param_001
+dags\src\cancellation_details.py,parameter,input_pickle_file,param_003
+dags\src\cancellation_details.py,parameter,customer_data,param_057
+dags\src\cleaning_description.py,function_def,cleaning_description,utility_func_001
+dags\src\cleaning_description.py,parameter,output_pickle_path,param_002
+dags\src\cleaning_description.py,parameter,input_pickle_path,param_001
+dags\src\cleaning_description.py,parameter,project,param_035
+dags\src\correlation.py,import,from prompt_toolkit.shortcuts import yes_no_dialog,from module_l2_020 import yes_no_dialog
+dags\src\correlation.py,function_def,save_correlations_as_parquet,data_saver_func_002
+dags\src\correlation.py,function_def,correlation_check,analysis_func_001
+dags\src\correlation.py,function_def,save_heatmap,data_saver_func_001
+dags\src\correlation.py,function_call,save_correlations_as_parquet,data_saver_func_002
+dags\src\correlation.py,function_call,save_heatmap,data_saver_func_001
+dags\src\correlation.py,parameter,correlation_threshold,param_008
+dags\src\correlation.py,parameter,cvr_thresh,param_016
+dags\src\correlation.py,parameter,drop_cols,param_015
+dags\src\correlation.py,parameter,out_path,param_007
+dags\src\correlation.py,parameter,location,param_038
+dags\src\correlation.py,parameter,in_path,param_006
+dags\src\correlation.py,parameter,figsize,param_048
+dags\src\correlation.py,parameter,fig,param_009
+dags\src\customers_behavior.py,function_def,customers_behavior,feature_engineering_func_002
+dags\src\customers_behavior.py,standalone_identifier,customers_behavior,feature_engineering_func_002
+dags\src\customers_behavior.py,standalone_identifier,unique_products,feature_engineering_func_006
+dags\src\customers_behavior.py,parameter,output_pickle_path,param_002
+dags\src\customers_behavior.py,parameter,output_pickle_file,param_005
+dags\src\customers_behavior.py,parameter,unique_pickle_file,param_010
+dags\src\customers_behavior.py,parameter,input_pickle_path,param_001
+dags\src\customers_behavior.py,parameter,input_pickle_file,param_003
+dags\src\customers_behavior.py,parameter,customer_data,param_057
+dags\src\data_loader.py,function_def,load_data,data_loader_func_001
+dags\src\data_loader.py,parameter,pickle_path,param_011
+dags\src\data_loader.py,parameter,excel_path,param_012
+dags\src\data_loader.py,parameter,project,param_035
+dags\src\download_data.py,function_def,ingest_data,data_loader_func_002
+dags\src\download_data.py,function_call,ingest_data,data_loader_func_002
+dags\src\download_data.py,parameter,file_url,param_013
+dags\src\download_data.py,url,url,[URL]
+dags\src\duplicates_handler.py,function_def,remove_duplicates,data_cleaning_func_002
+dags\src\duplicates_handler.py,parameter,output_pickle_path,param_002
+dags\src\duplicates_handler.py,parameter,input_pickle_path,param_001
+dags\src\duplicates_handler.py,parameter,project,param_035
+dags\src\geographic_features.py,function_def,geographic_features,feature_engineering_func_003
+dags\src\geographic_features.py,standalone_identifier,geographic_features,feature_engineering_func_003
+dags\src\geographic_features.py,standalone_identifier,customers_behavior,feature_engineering_func_002
+dags\src\geographic_features.py,parameter,behavorial_pickle_file,param_014
+dags\src\geographic_features.py,parameter,output_pickle_path,param_002
+dags\src\geographic_features.py,parameter,output_pickle_file,param_005
+dags\src\geographic_features.py,parameter,input_pickle_path,param_001
+dags\src\geographic_features.py,parameter,input_pickle_file,param_003
+dags\src\geographic_features.py,parameter,customer_data,param_057
+dags\src\missing_values_handler.py,function_def,handle_missing,data_cleaning_func_003
+dags\src\missing_values_handler.py,parameter,output_pickle_path,param_002
+dags\src\missing_values_handler.py,parameter,input_pickle_path,param_001
+dags\src\missing_values_handler.py,parameter,project,param_035
+dags\src\outlier_treatment.py,function_def,removing_outlier,data_cleaning_func_004
+dags\src\outlier_treatment.py,parameter,output_pickle_path,param_002
+dags\src\outlier_treatment.py,parameter,input_pickle_path,param_001
+dags\src\outlier_treatment.py,parameter,df_cleaned,param_060
+dags\src\outlier_treatment.py,parameter,project,param_035
+dags\src\outlier_treatment.py,parameter,model,param_034
+dags\src\pca.py,import,from prompt_toolkit.shortcuts import yes_no_dialog,from module_l2_020 import yes_no_dialog
+dags\src\pca.py,function_def,pc_analyzer,ml_model_func_001
+dags\src\pca.py,function_def,pca_,ml_model_func_002
+dags\src\pca.py,function_call,pca_,ml_model_func_002
+dags\src\pca.py,parameter,cvr_thresh,param_016
+dags\src\pca.py,parameter,drop_cols,param_015
+dags\src\pca.py,parameter,out_path,param_007
+dags\src\pca.py,parameter,in_path,param_006
+dags\src\pca.py,parameter,thresh,param_017
+dags\src\removing_zero_unitprice.py,function_def,removing_zero,data_cleaning_func_005
+dags\src\removing_zero_unitprice.py,parameter,output_pickle_path,param_002
+dags\src\removing_zero_unitprice.py,parameter,input_pickle_path,param_001
+dags\src\removing_zero_unitprice.py,parameter,project,param_035
+dags\src\rfm.py,function_def,rfm,feature_engineering_func_004
+dags\src\rfm.py,parameter,output_pickle_path,param_002
+dags\src\rfm.py,parameter,output_pickle_file,param_005
+dags\src\rfm.py,parameter,input_pickle_path,param_001
+dags\src\rfm.py,parameter,input_pickle_file,param_003
+dags\src\rfm.py,parameter,customer_data,param_057
+dags\src\scaler.py,import,from prompt_toolkit.shortcuts import yes_no_dialog,from module_l2_020 import yes_no_dialog
+dags\src\scaler.py,function_def,scaler,ml_model_func_003
+dags\src\scaler.py,standalone_identifier,scaler,ml_model_func_003
+dags\src\scaler.py,parameter,out_path,param_007
+dags\src\scaler.py,parameter,in_path,param_006
+dags\src\scaler.py,parameter,cols,param_018
+dags\src\seasonality.py,function_def,seasonality_impacts,feature_engineering_func_005
+dags\src\seasonality.py,function_def,calculate_trend,analysis_func_002
+dags\src\seasonality.py,standalone_identifier,cancellation_details,feature_engineering_func_001
+dags\src\seasonality.py,standalone_identifier,calculate_trend,analysis_func_002
+dags\src\seasonality.py,parameter,cancellation_pickle_file,param_019
+dags\src\seasonality.py,parameter,output_pickle_path,param_002
+dags\src\seasonality.py,parameter,output_pickle_file,param_005
+dags\src\seasonality.py,parameter,input_pickle_path,param_001
+dags\src\seasonality.py,parameter,input_pickle_file,param_003
+dags\src\seasonality.py,parameter,data_filepath,param_020
+dags\src\seasonality.py,parameter,customer_data,param_057
+dags\src\seasonality.py,parameter,spend_data,param_021
+dags\src\seasonality.py,parameter,stats,param_042
+dags\src\transaction_status_handler.py,function_def,handle_transaction_status,data_cleaning_func_006
+dags\src\transaction_status_handler.py,parameter,output_pickle_path,param_002
+dags\src\transaction_status_handler.py,parameter,input_pickle_path,param_001
+dags\src\transaction_status_handler.py,parameter,project,param_035
+dags\src\unique_products.py,function_def,unique_products,feature_engineering_func_006
+dags\src\unique_products.py,standalone_identifier,unique_products,feature_engineering_func_006
+dags\src\unique_products.py,parameter,output_pickle_path,param_002
+dags\src\unique_products.py,parameter,output_pickle_file,param_005
+dags\src\unique_products.py,parameter,input_pickle_path,param_001
+dags\src\unique_products.py,parameter,input_pickle_file,param_003
+dags\src\unique_products.py,parameter,rfm_pickle_file,param_022
+dags\src\unique_products.py,parameter,customer_data,param_057
+dags\src\unzip_data.py,import,import zipfile,import module_l1_001
+dags\src\unzip_data.py,function_def,unzip_file,data_loader_func_003
+dags\src\unzip_data.py,function_call,unzip_file,data_loader_func_003
+dags\src\unzip_data.py,parameter,zip_filename,param_023
+dags\src\unzip_data.py,parameter,extract_to,param_024
+gcpdeploy\src\airflow.py,import,from src.download_data import ingest_data,from module_l2_001 import data_loader_func_002
+gcpdeploy\src\airflow.py,import,from src.unzip_data import unzip_file,from module_l2_002 import data_loader_func_003
+gcpdeploy\src\airflow.py,import,from src.data_loader import load_data,from module_l2_003 import data_loader_func_001
+gcpdeploy\src\airflow.py,import,from src.missing_values_handler import handle_missing,from module_l2_004 import data_cleaning_func_003
+gcpdeploy\src\airflow.py,import,from src.duplicates_handler import remove_duplicates,from module_l2_005 import data_cleaning_func_002
+gcpdeploy\src\airflow.py,import,from src.transaction_status_handler import handle_transactio,from module_l2_006 import data_cleaning_func_006
+gcpdeploy\src\airflow.py,import,from src.anomaly_code_handler import handle_anomalous_codes,from module_l2_007 import data_cleaning_func_001
+gcpdeploy\src\airflow.py,import,from src.cleaning_description import cleaning_description,from module_l2_008 import utility_func_001
+gcpdeploy\src\airflow.py,import,from src.removing_zero_unitprice import removing_zero,from module_l2_009 import data_cleaning_func_005
+gcpdeploy\src\airflow.py,import,from src.rfm import rfm,from module_l2_010 import feature_engineering_func_004
+gcpdeploy\src\airflow.py,import,from src.unique_products import unique_products,from module_l2_011 import feature_engineering_func_006
+gcpdeploy\src\airflow.py,import,from src.customers_behavior import customers_behavior,from module_l2_012 import feature_engineering_func_002
+gcpdeploy\src\airflow.py,import,from src.geographic_features import geographic_features,from module_l2_013 import feature_engineering_func_003
+gcpdeploy\src\airflow.py,import,from src.cancellation_details import cancellation_details,from module_l2_014 import feature_engineering_func_001
+gcpdeploy\src\airflow.py,import,from src.seasonality import seasonality_impacts,from module_l2_015 import feature_engineering_func_005
+gcpdeploy\src\airflow.py,import,from src.outlier_treatment import removing_outlier,from module_l2_016 import data_cleaning_func_004
+gcpdeploy\src\airflow.py,import,from src.scaler import scaler,from module_l2_017 import ml_model_func_003
+gcpdeploy\src\airflow.py,import,from src.pca import pc_analyzer,from module_l2_018 import ml_model_func_001
+gcpdeploy\src\airflow.py,import,from src.correlation import correlation_check,from module_l2_019 import analysis_func_001
+gcpdeploy\src\airflow.py,standalone_identifier,handle_transaction_status,data_cleaning_func_006
+gcpdeploy\src\airflow.py,standalone_identifier,handle_anomalous_codes,data_cleaning_func_001
+gcpdeploy\src\airflow.py,standalone_identifier,cancellation_details,feature_engineering_func_001
+gcpdeploy\src\airflow.py,standalone_identifier,cleaning_description,utility_func_001
+gcpdeploy\src\airflow.py,standalone_identifier,geographic_features,feature_engineering_func_003
+gcpdeploy\src\airflow.py,standalone_identifier,seasonality_impacts,feature_engineering_func_005
+gcpdeploy\src\airflow.py,standalone_identifier,customers_behavior,feature_engineering_func_002
+gcpdeploy\src\airflow.py,standalone_identifier,correlation_check,analysis_func_001
+gcpdeploy\src\airflow.py,standalone_identifier,remove_duplicates,data_cleaning_func_002
+gcpdeploy\src\airflow.py,standalone_identifier,removing_outlier,data_cleaning_func_004
+gcpdeploy\src\airflow.py,standalone_identifier,unique_products,feature_engineering_func_006
+gcpdeploy\src\airflow.py,standalone_identifier,handle_missing,data_cleaning_func_003
+gcpdeploy\src\airflow.py,standalone_identifier,removing_zero,data_cleaning_func_005
+gcpdeploy\src\airflow.py,standalone_identifier,ingest_data,data_loader_func_002
+gcpdeploy\src\airflow.py,standalone_identifier,pc_analyzer,ml_model_func_001
+gcpdeploy\src\airflow.py,standalone_identifier,unzip_file,data_loader_func_003
+gcpdeploy\src\airflow.py,standalone_identifier,load_data,data_loader_func_001
+gcpdeploy\src\airflow.py,standalone_identifier,scaler,ml_model_func_003
+gcpdeploy\src\airflow.py,standalone_identifier,rfm,feature_engineering_func_004
+gcpdeploy\src\airflow.py,parameter,excel_path,param_012
+gcpdeploy\src\airflow.py,parameter,in_path,param_006
+gcpdeploy\src\airflow.py,url,url,[URL]
+gcpdeploy\src\anomaly_code_handler.py,function_def,handle_anomalous_codes,data_cleaning_func_001
+gcpdeploy\src\anomaly_code_handler.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\anomaly_code_handler.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\anomaly_code_handler.py,parameter,project,param_035
+gcpdeploy\src\build.py,function_def,deploy_model_to_endpoint,ml_model_func_004
+gcpdeploy\src\build.py,function_def,initialize_aiplatform,utility_func_002
+gcpdeploy\src\build.py,function_def,create_training_job,feature_engineering_func_007
+gcpdeploy\src\build.py,function_def,run_training_job,pipeline_func_001
+gcpdeploy\src\build.py,function_def,main,pipeline_func_002
+gcpdeploy\src\build.py,function_call,deploy_model_to_endpoint,ml_model_func_004
+gcpdeploy\src\build.py,function_call,initialize_aiplatform,utility_func_002
+gcpdeploy\src\build.py,function_call,create_training_job,feature_engineering_func_007
+gcpdeploy\src\build.py,function_call,run_training_job,pipeline_func_001
+gcpdeploy\src\build.py,function_call,main,pipeline_func_002
+gcpdeploy\src\build.py,parameter,model_serving_container_image_uri,param_030
+gcpdeploy\src\build.py,parameter,service_account_email,param_033
+gcpdeploy\src\build.py,parameter,base_output_dir,param_032
+gcpdeploy\src\build.py,parameter,container_uri,param_029
+gcpdeploy\src\build.py,parameter,display_name,param_028
+gcpdeploy\src\build.py,parameter,project_id,param_025
+gcpdeploy\src\build.py,parameter,location,param_038
+gcpdeploy\src\build.py,parameter,project,param_035
+gcpdeploy\src\build.py,parameter,region,param_026
+gcpdeploy\src\build.py,parameter,bucket,param_027
+gcpdeploy\src\build.py,parameter,model,param_034
+gcpdeploy\src\build.py,parameter,job,param_031
+gcpdeploy\src\cancellation_details.py,function_def,cancellation_details,feature_engineering_func_001
+gcpdeploy\src\cancellation_details.py,standalone_identifier,cancellation_details,feature_engineering_func_001
+gcpdeploy\src\cancellation_details.py,standalone_identifier,geographic_features,feature_engineering_func_003
+gcpdeploy\src\cancellation_details.py,parameter,geographic_pickle_file,param_004
+gcpdeploy\src\cancellation_details.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\cancellation_details.py,parameter,output_pickle_file,param_005
+gcpdeploy\src\cancellation_details.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\cancellation_details.py,parameter,input_pickle_file,param_003
+gcpdeploy\src\cancellation_details.py,parameter,customer_data,param_057
+gcpdeploy\src\cleaning_description.py,function_def,cleaning_description,utility_func_001
+gcpdeploy\src\cleaning_description.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\cleaning_description.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\cleaning_description.py,parameter,project,param_035
+gcpdeploy\src\correlation.py,import,from prompt_toolkit.shortcuts import yes_no_dialog,from module_l2_020 import yes_no_dialog
+gcpdeploy\src\correlation.py,function_def,save_correlations_as_parquet,data_saver_func_002
+gcpdeploy\src\correlation.py,function_def,correlation_check,analysis_func_001
+gcpdeploy\src\correlation.py,function_def,save_heatmap,data_saver_func_001
+gcpdeploy\src\correlation.py,function_call,save_correlations_as_parquet,data_saver_func_002
+gcpdeploy\src\correlation.py,function_call,save_heatmap,data_saver_func_001
+gcpdeploy\src\correlation.py,parameter,correlation_threshold,param_008
+gcpdeploy\src\correlation.py,parameter,cvr_thresh,param_016
+gcpdeploy\src\correlation.py,parameter,drop_cols,param_015
+gcpdeploy\src\correlation.py,parameter,out_path,param_007
+gcpdeploy\src\correlation.py,parameter,location,param_038
+gcpdeploy\src\correlation.py,parameter,in_path,param_006
+gcpdeploy\src\correlation.py,parameter,figsize,param_048
+gcpdeploy\src\correlation.py,parameter,fig,param_009
+gcpdeploy\src\customers_behavior.py,function_def,customers_behavior,feature_engineering_func_002
+gcpdeploy\src\customers_behavior.py,standalone_identifier,customers_behavior,feature_engineering_func_002
+gcpdeploy\src\customers_behavior.py,standalone_identifier,unique_products,feature_engineering_func_006
+gcpdeploy\src\customers_behavior.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\customers_behavior.py,parameter,output_pickle_file,param_005
+gcpdeploy\src\customers_behavior.py,parameter,unique_pickle_file,param_010
+gcpdeploy\src\customers_behavior.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\customers_behavior.py,parameter,input_pickle_file,param_003
+gcpdeploy\src\customers_behavior.py,parameter,customer_data,param_057
+gcpdeploy\src\datapipeline.py,import,from download_data import ingest_data,from module_l1_002 import data_loader_func_002
+gcpdeploy\src\datapipeline.py,import,from unzip_data import unzip_file,from module_l1_003 import data_loader_func_003
+gcpdeploy\src\datapipeline.py,import,from data_loader import load_data,from module_l1_004 import data_loader_func_001
+gcpdeploy\src\datapipeline.py,import,from missing_values_handler import handle_missing,from module_l1_005 import data_cleaning_func_003
+gcpdeploy\src\datapipeline.py,import,from duplicates_handler import remove_duplicates,from module_l1_006 import data_cleaning_func_002
+gcpdeploy\src\datapipeline.py,import,from transaction_status_handler import handle_transaction_st,from module_l1_007 import data_cleaning_func_006
+gcpdeploy\src\datapipeline.py,import,from anomaly_code_handler import handle_anomalous_codes,from module_l1_008 import data_cleaning_func_001
+gcpdeploy\src\datapipeline.py,function_call,handle_transaction_status,data_cleaning_func_006
+gcpdeploy\src\datapipeline.py,function_call,handle_anomalous_codes,data_cleaning_func_001
+gcpdeploy\src\datapipeline.py,function_call,remove_duplicates,data_cleaning_func_002
+gcpdeploy\src\datapipeline.py,function_call,handle_missing,data_cleaning_func_003
+gcpdeploy\src\datapipeline.py,function_call,ingest_data,data_loader_func_002
+gcpdeploy\src\datapipeline.py,function_call,unzip_file,data_loader_func_003
+gcpdeploy\src\datapipeline.py,function_call,load_data,data_loader_func_001
+gcpdeploy\src\datapipeline.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\datapipeline.py,parameter,excel_path,param_012
+gcpdeploy\src\datapipeline.py,url,url,[URL]
+gcpdeploy\src\data_loader.py,function_def,load_data,data_loader_func_001
+gcpdeploy\src\data_loader.py,parameter,pickle_path,param_011
+gcpdeploy\src\data_loader.py,parameter,excel_path,param_012
+gcpdeploy\src\data_loader.py,parameter,project,param_035
+gcpdeploy\src\download_data.py,function_def,ingest_data,data_loader_func_002
+gcpdeploy\src\download_data.py,function_call,ingest_data,data_loader_func_002
+gcpdeploy\src\download_data.py,parameter,file_url,param_013
+gcpdeploy\src\download_data.py,url,url,[URL]
+gcpdeploy\src\duplicates_handler.py,function_def,remove_duplicates,data_cleaning_func_002
+gcpdeploy\src\duplicates_handler.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\duplicates_handler.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\duplicates_handler.py,parameter,project,param_035
+gcpdeploy\src\geographic_features.py,function_def,geographic_features,feature_engineering_func_003
+gcpdeploy\src\geographic_features.py,standalone_identifier,geographic_features,feature_engineering_func_003
+gcpdeploy\src\geographic_features.py,standalone_identifier,customers_behavior,feature_engineering_func_002
+gcpdeploy\src\geographic_features.py,parameter,behavorial_pickle_file,param_014
+gcpdeploy\src\geographic_features.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\geographic_features.py,parameter,output_pickle_file,param_005
+gcpdeploy\src\geographic_features.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\geographic_features.py,parameter,input_pickle_file,param_003
+gcpdeploy\src\geographic_features.py,parameter,customer_data,param_057
+gcpdeploy\src\inference.py,function_def,predict_custom_trained_model,ml_model_func_005
+gcpdeploy\src\inference.py,function_call,predict_custom_trained_model,ml_model_func_005
+gcpdeploy\src\inference.py,function_call,predict,ml_model_func_011
+gcpdeploy\src\inference.py,standalone_identifier,predict,ml_model_func_011
+gcpdeploy\src\inference.py,parameter,api_endpoint,param_039
+gcpdeploy\src\inference.py,parameter,endpoint_id,param_036
+gcpdeploy\src\inference.py,parameter,instances,param_037
+gcpdeploy\src\inference.py,parameter,location,param_038
+gcpdeploy\src\inference.py,parameter,project,param_035
+gcpdeploy\src\inference.py,parameter,client,param_049
+gcpdeploy\src\inference.py,parameter,schema,param_051
+gcpdeploy\src\inference.py,parameter,model,param_034
+gcpdeploy\src\mflow_logging.py,function_def,mlflow_logging_train,ml_model_func_006
+gcpdeploy\src\mflow_logging.py,function_call,mlflow_logging_train,ml_model_func_006
+gcpdeploy\src\mflow_logging.py,function_call,predict,ml_model_func_011
+gcpdeploy\src\mflow_logging.py,parameter,pca_output,param_043
+gcpdeploy\src\mflow_logging.py,parameter,data_path,param_040
+gcpdeploy\src\mflow_logging.py,parameter,model,param_034
+gcpdeploy\src\mflow_logging.py,url,url,[URL]
+gcpdeploy\src\missing_values_handler.py,function_def,handle_missing,data_cleaning_func_003
+gcpdeploy\src\missing_values_handler.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\missing_values_handler.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\missing_values_handler.py,parameter,project,param_035
+gcpdeploy\src\model_analysis.py,import,import pytz,import module_l1_009
+gcpdeploy\src\model_analysis.py,import,import gcsfs,import module_l1_010
+gcpdeploy\src\model_analysis.py,import,from tabulate import tabulate,from module_l1_011 import module_l1_011
+gcpdeploy\src\model_analysis.py,function_def,save_and_upload_model,data_saver_func_003
+gcpdeploy\src\model_analysis.py,function_def,cluster_distribution,ml_model_func_009
+gcpdeploy\src\model_analysis.py,function_def,silhouette_analysis,analysis_func_003
+gcpdeploy\src\model_analysis.py,function_def,evaluation_metrics,utility_func_003
+gcpdeploy\src\model_analysis.py,function_def,normalize_data,data_cleaning_func_007
+gcpdeploy\src\model_analysis.py,function_def,data_transform,ml_model_func_007
+gcpdeploy\src\model_analysis.py,function_def,train_model,ml_model_func_010
+gcpdeploy\src\model_analysis.py,function_def,load_data,data_loader_func_001
+gcpdeploy\src\model_analysis.py,function_def,top_pca,ml_model_func_008
+gcpdeploy\src\model_analysis.py,function_call,normalize_data,data_cleaning_func_007
+gcpdeploy\src\model_analysis.py,function_call,predict,ml_model_func_011
+gcpdeploy\src\model_analysis.py,standalone_identifier,scaler,ml_model_func_003
+gcpdeploy\src\model_analysis.py,parameter,gcs_train_data_path,param_041
+gcpdeploy\src\model_analysis.py,parameter,local_model_path,param_046
+gcpdeploy\src\model_analysis.py,parameter,gcs_model_path,param_047
+gcpdeploy\src\model_analysis.py,parameter,bucket_name,param_052
+gcpdeploy\src\model_analysis.py,parameter,pca_output,param_043
+gcpdeploy\src\model_analysis.py,parameter,X_train,param_044
+gcpdeploy\src\model_analysis.py,parameter,y_train,param_045
+gcpdeploy\src\model_analysis.py,parameter,figsize,param_048
+gcpdeploy\src\model_analysis.py,parameter,bucket,param_027
+gcpdeploy\src\model_analysis.py,parameter,client,param_049
+gcpdeploy\src\model_analysis.py,parameter,model,param_034
+gcpdeploy\src\model_analysis.py,parameter,stats,param_042
+gcpdeploy\src\model_analysis.py,parameter,fig,param_009
+gcpdeploy\src\outlier_treatment.py,function_def,removing_outlier,data_cleaning_func_004
+gcpdeploy\src\outlier_treatment.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\outlier_treatment.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\outlier_treatment.py,parameter,df_cleaned,param_060
+gcpdeploy\src\outlier_treatment.py,parameter,project,param_035
+gcpdeploy\src\outlier_treatment.py,parameter,model,param_034
+gcpdeploy\src\pca.py,import,from prompt_toolkit.shortcuts import yes_no_dialog,from module_l2_020 import yes_no_dialog
+gcpdeploy\src\pca.py,function_def,pc_analyzer,ml_model_func_001
+gcpdeploy\src\pca.py,function_def,pca_,ml_model_func_002
+gcpdeploy\src\pca.py,function_call,pca_,ml_model_func_002
+gcpdeploy\src\pca.py,parameter,cvr_thresh,param_016
+gcpdeploy\src\pca.py,parameter,pca_output,param_043
+gcpdeploy\src\pca.py,parameter,drop_cols,param_015
+gcpdeploy\src\pca.py,parameter,out_path,param_007
+gcpdeploy\src\pca.py,parameter,in_path,param_006
+gcpdeploy\src\pca.py,parameter,thresh,param_017
+gcpdeploy\src\removing_zero_unitprice.py,function_def,removing_zero,data_cleaning_func_005
+gcpdeploy\src\removing_zero_unitprice.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\removing_zero_unitprice.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\removing_zero_unitprice.py,parameter,project,param_035
+gcpdeploy\src\rfm.py,function_def,rfm,feature_engineering_func_004
+gcpdeploy\src\rfm.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\rfm.py,parameter,output_pickle_file,param_005
+gcpdeploy\src\rfm.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\rfm.py,parameter,input_pickle_file,param_003
+gcpdeploy\src\rfm.py,parameter,customer_data,param_057
+gcpdeploy\src\scaler.py,import,from prompt_toolkit.shortcuts import yes_no_dialog,from module_l2_020 import yes_no_dialog
+gcpdeploy\src\scaler.py,function_def,scaler,ml_model_func_003
+gcpdeploy\src\scaler.py,parameter,out_path,param_007
+gcpdeploy\src\scaler.py,parameter,in_path,param_006
+gcpdeploy\src\scaler.py,parameter,cols,param_018
+gcpdeploy\src\seasonality.py,function_def,seasonality_impacts,feature_engineering_func_005
+gcpdeploy\src\seasonality.py,function_def,calculate_trend,analysis_func_002
+gcpdeploy\src\seasonality.py,standalone_identifier,cancellation_details,feature_engineering_func_001
+gcpdeploy\src\seasonality.py,standalone_identifier,calculate_trend,analysis_func_002
+gcpdeploy\src\seasonality.py,parameter,cancellation_pickle_file,param_019
+gcpdeploy\src\seasonality.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\seasonality.py,parameter,output_pickle_file,param_005
+gcpdeploy\src\seasonality.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\seasonality.py,parameter,input_pickle_file,param_003
+gcpdeploy\src\seasonality.py,parameter,customer_data,param_057
+gcpdeploy\src\seasonality.py,parameter,spend_data,param_021
+gcpdeploy\src\seasonality.py,parameter,stats,param_042
+gcpdeploy\src\transaction_status_handler.py,function_def,handle_transaction_status,data_cleaning_func_006
+gcpdeploy\src\transaction_status_handler.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\transaction_status_handler.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\transaction_status_handler.py,parameter,project,param_035
+gcpdeploy\src\unique_products.py,function_def,unique_products,feature_engineering_func_006
+gcpdeploy\src\unique_products.py,standalone_identifier,unique_products,feature_engineering_func_006
+gcpdeploy\src\unique_products.py,parameter,output_pickle_path,param_002
+gcpdeploy\src\unique_products.py,parameter,output_pickle_file,param_005
+gcpdeploy\src\unique_products.py,parameter,input_pickle_path,param_001
+gcpdeploy\src\unique_products.py,parameter,input_pickle_file,param_003
+gcpdeploy\src\unique_products.py,parameter,rfm_pickle_file,param_022
+gcpdeploy\src\unique_products.py,parameter,customer_data,param_057
+gcpdeploy\src\unzip_data.py,import,import zipfile,import module_l1_001
+gcpdeploy\src\unzip_data.py,function_def,unzip_file,data_loader_func_003
+gcpdeploy\src\unzip_data.py,function_call,unzip_file,data_loader_func_003
+gcpdeploy\src\unzip_data.py,parameter,zip_filename,param_023
+gcpdeploy\src\unzip_data.py,parameter,extract_to,param_024
+gcpdeploy\src\serve\predict.py,function_def,initialize_client_and_bucket,utility_func_005
+gcpdeploy\src\serve\predict.py,function_def,create_table_if_not_exists,feature_engineering_func_008
+gcpdeploy\src\serve\predict.py,function_def,initialize_variables,utility_func_004
+gcpdeploy\src\serve\predict.py,function_def,fetch_latest_model,data_loader_func_006
+gcpdeploy\src\serve\predict.py,function_def,get_table_schema,data_loader_func_004
+gcpdeploy\src\serve\predict.py,function_def,health_check,analysis_func_004
+gcpdeploy\src\serve\predict.py,function_def,load_model,data_loader_func_005
+gcpdeploy\src\serve\predict.py,function_def,predict,ml_model_func_011
+gcpdeploy\src\serve\predict.py,function_call,initialize_client_and_bucket,utility_func_005
+gcpdeploy\src\serve\predict.py,function_call,create_table_if_not_exists,feature_engineering_func_008
+gcpdeploy\src\serve\predict.py,function_call,initialize_variables,utility_func_004
+gcpdeploy\src\serve\predict.py,function_call,fetch_latest_model,data_loader_func_006
+gcpdeploy\src\serve\predict.py,function_call,get_table_schema,data_loader_func_004
+gcpdeploy\src\serve\predict.py,function_call,load_model,data_loader_func_005
+gcpdeploy\src\serve\predict.py,function_call,predict,ml_model_func_011
+gcpdeploy\src\serve\predict.py,parameter,bucket_name,param_052
+gcpdeploy\src\serve\predict.py,parameter,project_id,param_025
+gcpdeploy\src\serve\predict.py,parameter,instances,param_037
+gcpdeploy\src\serve\predict.py,parameter,table_id,param_050
+gcpdeploy\src\serve\predict.py,parameter,project,param_035
+gcpdeploy\src\serve\predict.py,parameter,bucket,param_027
+gcpdeploy\src\serve\predict.py,parameter,client,param_049
+gcpdeploy\src\serve\predict.py,parameter,schema,param_051
+gcpdeploy\src\serve\predict.py,parameter,prefix,param_053
+gcpdeploy\src\serve\predict.py,parameter,model,param_034
+gcpdeploy\src\serve\testing_serve.py,standalone_identifier,predict,ml_model_func_011
+gcpdeploy\src\serve\testing_serve.py,parameter,instances,param_037
+gcpdeploy\src\serve\testing_serve.py,url,url,[URL]
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,function_def,merge_customer_transactions,feature_engineering_func_009
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,function_def,record_customer_purchases,utility_func_006
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,function_def,generate_recommendations,feature_engineering_func_012
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,function_def,create_recommendations,feature_engineering_func_011
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,function_def,identify_top_products,feature_engineering_func_010
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,function_def,remove_outliers,data_cleaning_func_008
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,function_call,merge_customer_transactions,feature_engineering_func_009
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,function_call,record_customer_purchases,utility_func_006
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,function_call,create_recommendations,feature_engineering_func_011
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,function_call,identify_top_products,feature_engineering_func_010
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,function_call,remove_outliers,data_cleaning_func_008
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,standalone_identifier,main,pipeline_func_002
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,parameter,top_products_per_cluster,param_058
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,parameter,customer_data_cleaned,param_055
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,parameter,customer_purchases,param_059
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,parameter,outliers_data,param_054
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,parameter,customer_data,param_057
+gcpdeploy\src\trainer\ClusterBasedRecommender.py,parameter,merged_data,param_056
+gcpdeploy\src\trainer\train.py,import,import pytz,import module_l1_009
+gcpdeploy\src\trainer\train.py,import,import gcsfs,import module_l1_010
+gcpdeploy\src\trainer\train.py,import,from ClusterBasedRecommender import generate_recommendations,from module_l1_012 import feature_engineering_func_012
+gcpdeploy\src\trainer\train.py,function_def,save_and_upload_model,data_saver_func_003
+gcpdeploy\src\trainer\train.py,function_def,kmeans_clustering,utility_func_007
+gcpdeploy\src\trainer\train.py,function_def,main,pipeline_func_002
+gcpdeploy\src\trainer\train.py,function_call,generate_recommendations,feature_engineering_func_012
+gcpdeploy\src\trainer\train.py,function_call,save_and_upload_model,data_saver_func_003
+gcpdeploy\src\trainer\train.py,function_call,kmeans_clustering,utility_func_007
+gcpdeploy\src\trainer\train.py,function_call,data_transform,ml_model_func_007
+gcpdeploy\src\trainer\train.py,function_call,load_data,data_loader_func_001
+gcpdeploy\src\trainer\train.py,function_call,main,pipeline_func_002
+gcpdeploy\src\trainer\train.py,parameter,customer_data_cleaned,param_055
+gcpdeploy\src\trainer\train.py,parameter,gcs_train_data_path,param_041
+gcpdeploy\src\trainer\train.py,parameter,number_of_clusters,param_062
+gcpdeploy\src\trainer\train.py,parameter,local_model_path,param_046
+gcpdeploy\src\trainer\train.py,parameter,gcs_model_path,param_047
+gcpdeploy\src\trainer\train.py,parameter,outliers_data,param_054
+gcpdeploy\src\trainer\train.py,parameter,bucket_name,param_052
+gcpdeploy\src\trainer\train.py,parameter,pca_output,param_043
+gcpdeploy\src\trainer\train.py,parameter,df_cleaned,param_060
+gcpdeploy\src\trainer\train.py,parameter,X_train,param_044
+gcpdeploy\src\trainer\train.py,parameter,y_train,param_045
+gcpdeploy\src\trainer\train.py,parameter,df_pca,param_061
+gcpdeploy\src\trainer\train.py,parameter,model,param_034
+src\anomaly_code_handler.py,function_def,handle_anomalous_codes,data_cleaning_func_001
+src\anomaly_code_handler.py,parameter,output_pickle_path,param_002
+src\anomaly_code_handler.py,parameter,input_pickle_path,param_001
+src\anomaly_code_handler.py,parameter,project,param_035
+src\cancellation_details.py,function_def,cancellation_details,feature_engineering_func_001
+src\cancellation_details.py,standalone_identifier,cancellation_details,feature_engineering_func_001
+src\cancellation_details.py,standalone_identifier,geographic_features,feature_engineering_func_003
+src\cancellation_details.py,parameter,geographic_pickle_file,param_004
+src\cancellation_details.py,parameter,output_pickle_path,param_002
+src\cancellation_details.py,parameter,output_pickle_file,param_005
+src\cancellation_details.py,parameter,input_pickle_path,param_001
+src\cancellation_details.py,parameter,input_pickle_file,param_003
+src\cancellation_details.py,parameter,customer_data,param_057
+src\cleaning_description.py,function_def,cleaning_description,utility_func_001
+src\cleaning_description.py,parameter,output_pickle_path,param_002
+src\cleaning_description.py,parameter,input_pickle_path,param_001
+src\cleaning_description.py,parameter,project,param_035
+src\correlation.py,import,from prompt_toolkit.shortcuts import yes_no_dialog,from module_l2_020 import yes_no_dialog
+src\correlation.py,function_def,save_correlations_as_parquet,data_saver_func_002
+src\correlation.py,function_def,correlation_check,analysis_func_001
+src\correlation.py,function_def,save_heatmap,data_saver_func_001
+src\correlation.py,function_call,save_correlations_as_parquet,data_saver_func_002
+src\correlation.py,function_call,save_heatmap,data_saver_func_001
+src\correlation.py,parameter,correlation_threshold,param_008
+src\correlation.py,parameter,cvr_thresh,param_016
+src\correlation.py,parameter,drop_cols,param_015
+src\correlation.py,parameter,out_path,param_007
+src\correlation.py,parameter,location,param_038
+src\correlation.py,parameter,in_path,param_006
+src\correlation.py,parameter,figsize,param_048
+src\correlation.py,parameter,fig,param_009
+src\customers_behavior.py,function_def,customers_behavior,feature_engineering_func_002
+src\customers_behavior.py,standalone_identifier,customers_behavior,feature_engineering_func_002
+src\customers_behavior.py,standalone_identifier,unique_products,feature_engineering_func_006
+src\customers_behavior.py,parameter,output_pickle_path,param_002
+src\customers_behavior.py,parameter,output_pickle_file,param_005
+src\customers_behavior.py,parameter,unique_pickle_file,param_010
+src\customers_behavior.py,parameter,input_pickle_path,param_001
+src\customers_behavior.py,parameter,input_pickle_file,param_003
+src\customers_behavior.py,parameter,customer_data,param_057
+src\datapipeline.py,import,from download_data import ingest_data,from module_l1_002 import data_loader_func_002
+src\datapipeline.py,import,from unzip_data import unzip_file,from module_l1_003 import data_loader_func_003
+src\datapipeline.py,import,from data_loader import load_data,from module_l1_004 import data_loader_func_001
+src\datapipeline.py,import,from missing_values_handler import handle_missing,from module_l1_005 import data_cleaning_func_003
+src\datapipeline.py,import,from duplicates_handler import remove_duplicates,from module_l1_006 import data_cleaning_func_002
+src\datapipeline.py,import,from transaction_status_handler import handle_transaction_st,from module_l1_007 import data_cleaning_func_006
+src\datapipeline.py,import,from anomaly_code_handler import handle_anomalous_codes,from module_l1_008 import data_cleaning_func_001
+src\datapipeline.py,function_call,handle_transaction_status,data_cleaning_func_006
+src\datapipeline.py,function_call,handle_anomalous_codes,data_cleaning_func_001
+src\datapipeline.py,function_call,remove_duplicates,data_cleaning_func_002
+src\datapipeline.py,function_call,handle_missing,data_cleaning_func_003
+src\datapipeline.py,function_call,ingest_data,data_loader_func_002
+src\datapipeline.py,function_call,unzip_file,data_loader_func_003
+src\datapipeline.py,function_call,load_data,data_loader_func_001
+src\datapipeline.py,parameter,input_pickle_path,param_001
+src\datapipeline.py,parameter,excel_path,param_012
+src\datapipeline.py,url,url,[URL]
+src\data_loader.py,function_def,load_data,data_loader_func_001
+src\data_loader.py,parameter,pickle_path,param_011
+src\data_loader.py,parameter,excel_path,param_012
+src\data_loader.py,parameter,project,param_035
+src\download_data.py,function_def,ingest_data,data_loader_func_002
+src\download_data.py,function_call,ingest_data,data_loader_func_002
+src\download_data.py,parameter,file_url,param_013
+src\download_data.py,url,url,[URL]
+src\duplicates_handler.py,function_def,remove_duplicates,data_cleaning_func_002
+src\duplicates_handler.py,parameter,output_pickle_path,param_002
+src\duplicates_handler.py,parameter,input_pickle_path,param_001
+src\duplicates_handler.py,parameter,project,param_035
+src\geographic_features.py,function_def,geographic_features,feature_engineering_func_003
+src\geographic_features.py,standalone_identifier,geographic_features,feature_engineering_func_003
+src\geographic_features.py,standalone_identifier,customers_behavior,feature_engineering_func_002
+src\geographic_features.py,parameter,behavorial_pickle_file,param_014
+src\geographic_features.py,parameter,output_pickle_path,param_002
+src\geographic_features.py,parameter,output_pickle_file,param_005
+src\geographic_features.py,parameter,input_pickle_path,param_001
+src\geographic_features.py,parameter,input_pickle_file,param_003
+src\geographic_features.py,parameter,customer_data,param_057
+src\histogram_analysis.py,function_def,rfm_histograms,feature_engineering_func_013
+src\histogram_analysis.py,function_call,rfm_histograms,feature_engineering_func_013
+src\histogram_analysis.py,parameter,df_cleaned,param_060
+src\histogram_analysis.py,parameter,in_path,param_006
+src\histogram_analysis.py,parameter,figsize,param_048
+src\histogram_analysis.py,parameter,fig,param_009
+src\missing_values_handler.py,function_def,handle_missing,data_cleaning_func_003
+src\missing_values_handler.py,parameter,output_pickle_path,param_002
+src\missing_values_handler.py,parameter,input_pickle_path,param_001
+src\missing_values_handler.py,parameter,project,param_035
+src\outlier_treatment.py,function_def,removing_outlier,data_cleaning_func_004
+src\outlier_treatment.py,parameter,output_pickle_path,param_002
+src\outlier_treatment.py,parameter,input_pickle_path,param_001
+src\outlier_treatment.py,parameter,df_cleaned,param_060
+src\outlier_treatment.py,parameter,project,param_035
+src\outlier_treatment.py,parameter,model,param_034
+src\pca.py,import,from prompt_toolkit.shortcuts import yes_no_dialog,from module_l2_020 import yes_no_dialog
+src\pca.py,function_def,pc_analyzer,ml_model_func_001
+src\pca.py,function_def,pca_,ml_model_func_002
+src\pca.py,function_call,pca_,ml_model_func_002
+src\pca.py,parameter,cvr_thresh,param_016
+src\pca.py,parameter,drop_cols,param_015
+src\pca.py,parameter,out_path,param_007
+src\pca.py,parameter,in_path,param_006
+src\pca.py,parameter,thresh,param_017
+src\radar_analysis.py,function_def,radar_charts,visualization_func_001
+src\radar_analysis.py,function_call,radar_charts,visualization_func_001
+src\radar_analysis.py,standalone_identifier,scaler,ml_model_func_003
+src\radar_analysis.py,parameter,df_cleaned,param_060
+src\radar_analysis.py,parameter,in_path,param_006
+src\radar_analysis.py,parameter,project,param_035
+src\radar_analysis.py,parameter,fig,param_009
+src\removing_zero_unitprice.py,function_def,removing_zero,data_cleaning_func_005
+src\removing_zero_unitprice.py,parameter,output_pickle_path,param_002
+src\removing_zero_unitprice.py,parameter,input_pickle_path,param_001
+src\removing_zero_unitprice.py,parameter,project,param_035
+src\rfm.py,function_def,rfm,feature_engineering_func_004
+src\rfm.py,parameter,output_pickle_path,param_002
+src\rfm.py,parameter,output_pickle_file,param_005
+src\rfm.py,parameter,input_pickle_path,param_001
+src\rfm.py,parameter,input_pickle_file,param_003
+src\rfm.py,parameter,customer_data,param_057
+src\scaler.py,import,from prompt_toolkit.shortcuts import yes_no_dialog,from module_l2_020 import yes_no_dialog
+src\scaler.py,function_def,scaler,ml_model_func_003
+src\scaler.py,standalone_identifier,scaler,ml_model_func_003
+src\scaler.py,parameter,out_path,param_007
+src\scaler.py,parameter,in_path,param_006
+src\scaler.py,parameter,cols,param_018
+src\seasonality.py,function_def,seasonality_impacts,feature_engineering_func_005
+src\seasonality.py,function_def,calculate_trend,analysis_func_002
+src\seasonality.py,standalone_identifier,cancellation_details,feature_engineering_func_001
+src\seasonality.py,standalone_identifier,calculate_trend,analysis_func_002
+src\seasonality.py,parameter,cancellation_pickle_file,param_019
+src\seasonality.py,parameter,output_pickle_path,param_002
+src\seasonality.py,parameter,output_pickle_file,param_005
+src\seasonality.py,parameter,input_pickle_path,param_001
+src\seasonality.py,parameter,input_pickle_file,param_003
+src\seasonality.py,parameter,customer_data,param_057
+src\seasonality.py,parameter,spend_data,param_021
+src\seasonality.py,parameter,stats,param_042
+src\transaction_status_handler.py,function_def,handle_transaction_status,data_cleaning_func_006
+src\transaction_status_handler.py,parameter,output_pickle_path,param_002
+src\transaction_status_handler.py,parameter,input_pickle_path,param_001
+src\transaction_status_handler.py,parameter,project,param_035
+src\unique_products.py,function_def,unique_products,feature_engineering_func_006
+src\unique_products.py,standalone_identifier,unique_products,feature_engineering_func_006
+src\unique_products.py,parameter,output_pickle_path,param_002
+src\unique_products.py,parameter,output_pickle_file,param_005
+src\unique_products.py,parameter,input_pickle_path,param_001
+src\unique_products.py,parameter,input_pickle_file,param_003
+src\unique_products.py,parameter,rfm_pickle_file,param_022
+src\unique_products.py,parameter,customer_data,param_057
+src\unzip_data.py,import,import zipfile,import module_l1_001
+src\unzip_data.py,function_def,unzip_file,data_loader_func_003
+src\unzip_data.py,function_call,unzip_file,data_loader_func_003
+src\unzip_data.py,parameter,zip_filename,param_023
+src\unzip_data.py,parameter,extract_to,param_024
+test\test_anomaly_code_handler.py,import,from src.anomaly_code_handler import handle_anomalous_codes,from module_l2_007 import data_cleaning_func_001
+test\test_anomaly_code_handler.py,function_def,test_handle_anomalous_codes,data_cleaning_func_009
+test\test_anomaly_code_handler.py,function_call,handle_anomalous_codes,data_cleaning_func_001
+test\test_anomaly_code_handler.py,standalone_identifier,handle_anomalous_codes,data_cleaning_func_001
+test\test_anomaly_code_handler.py,parameter,output_pickle_path,param_002
+test\test_anomaly_code_handler.py,parameter,input_pickle_path,param_001
+test\test_anomaly_code_handler.py,parameter,project,param_035
+test\test_cancellation_details.py,function_def,test_cancellation_details,analysis_func_005
+test\test_cancellation_details.py,standalone_identifier,cancellation_details,feature_engineering_func_001
+test\test_cancellation_details.py,parameter,input_pickle_path,param_001
+test\test_cleaning_description.py,import,from src.cleaning_description import cleaning_description,from module_l2_008 import utility_func_001
+test\test_cleaning_description.py,function_def,test_cleaning_description,analysis_func_006
+test\test_cleaning_description.py,function_call,cleaning_description,utility_func_001
+test\test_cleaning_description.py,parameter,output_pickle_path,param_002
+test\test_cleaning_description.py,parameter,input_pickle_path,param_001
+test\test_cleaning_description.py,parameter,project,param_035
+test\test_correlation.py,import,from src.correlation import correlation_check,from module_l2_019 import analysis_func_001
+test\test_correlation.py,function_def,test_correlation_parquetpath_error,analysis_func_008
+test\test_correlation.py,function_def,test_correlation_parquetsavecheck,analysis_func_011
+test\test_correlation.py,function_def,test_correlation_imagepath_error,analysis_func_009
+test\test_correlation.py,function_def,test_correlation_imagesavecheck,analysis_func_010
+test\test_correlation.py,function_def,test_correlation_filenotfound,analysis_func_007
+test\test_correlation.py,function_def,test_corr_thresh_error,analysis_func_012
+test\test_correlation.py,function_call,correlation_check,analysis_func_001
+test\test_correlation.py,parameter,correlation_threshold,param_008
+test\test_correlation.py,parameter,out_path,param_007
+test\test_correlation.py,parameter,in_path,param_006
+test\test_correlation.py,parameter,project,param_035
+test\test_correlation.py,parameter,thresh,param_017
+test\test_customers_behavior.py,function_def,test_customers_behavior,analysis_func_013
+test\test_customers_behavior.py,standalone_identifier,customers_behavior,feature_engineering_func_002
+test\test_customers_behavior.py,parameter,input_pickle_path,param_001
+test\test_data_loader.py,import,from src.data_loader import load_data,from module_l2_003 import data_loader_func_001
+test\test_data_loader.py,function_def,test_load_data_from_excel,analysis_func_014
+test\test_data_loader.py,function_def,test_load_data_no_files,analysis_func_015
+test\test_data_loader.py,function_call,load_data,data_loader_func_001
+test\test_data_loader.py,standalone_identifier,load_data,data_loader_func_001
+test\test_data_loader.py,parameter,pickle_path,param_011
+test\test_data_loader.py,parameter,excel_path,param_012
+test\test_data_loader.py,parameter,project,param_035
+test\test_download_data.py,import,import requests_mock,import module_l1_013
+test\test_download_data.py,import,from src import download_data,from module_l1_014 import module_l1_002
+test\test_download_data.py,function_def,test_ingest_data_successful_download,data_loader_func_007
+test\test_download_data.py,function_def,test_ingest_data,analysis_func_016
+test\test_download_data.py,function_call,ingest_data,data_loader_func_002
+test\test_download_data.py,parameter,mocker,param_063
+test\test_download_data.py,url,url,[URL]
+test\test_duplicates_handler.py,import,from src.duplicates_handler import remove_duplicates,from module_l2_005 import data_cleaning_func_002
+test\test_duplicates_handler.py,function_def,test_remove_duplicates_no_input_file,analysis_func_017
+test\test_duplicates_handler.py,function_def,test_remove_duplicates,analysis_func_018
+test\test_duplicates_handler.py,function_call,remove_duplicates,data_cleaning_func_002
+test\test_duplicates_handler.py,standalone_identifier,remove_duplicates,data_cleaning_func_002
+test\test_duplicates_handler.py,parameter,output_pickle_path,param_002
+test\test_duplicates_handler.py,parameter,input_pickle_path,param_001
+test\test_duplicates_handler.py,parameter,project,param_035
+test\test_geographic_features.py,function_def,test_geographic_features,analysis_func_019
+test\test_geographic_features.py,standalone_identifier,geographic_features,feature_engineering_func_003
+test\test_geographic_features.py,parameter,input_pickle_path,param_001
+test\test_missing_values_handler.py,import,from src.missing_values_handler import handle_missing,from module_l2_004 import data_cleaning_func_003
+test\test_missing_values_handler.py,function_def,test_handle_missing_file_not_found,data_cleaning_func_011
+test\test_missing_values_handler.py,function_def,test_handle_missing_success,data_cleaning_func_010
+test\test_missing_values_handler.py,function_call,handle_missing,data_cleaning_func_003
+test\test_missing_values_handler.py,standalone_identifier,handle_missing,data_cleaning_func_003
+test\test_missing_values_handler.py,parameter,output_pickle_path,param_002
+test\test_missing_values_handler.py,parameter,input_pickle_path,param_001
+test\test_missing_values_handler.py,parameter,project,param_035
+test\test_outlier_treatment.py,import,from src.outlier_treatment import removing_outlier,from module_l2_016 import data_cleaning_func_004
+test\test_outlier_treatment.py,function_def,test_outlier_treatment,analysis_func_020
+test\test_outlier_treatment.py,function_call,removing_outlier,data_cleaning_func_004
+test\test_outlier_treatment.py,parameter,output_pickle_path,param_002
+test\test_outlier_treatment.py,parameter,input_pickle_path,param_001
+test\test_outlier_treatment.py,parameter,project,param_035
+test\test_pca.py,import,from src.pca import pc_analyzer,from module_l2_018 import ml_model_func_001
+test\test_pca.py,function_def,test_pca_columnslessthan4,analysis_func_025
+test\test_pca.py,function_def,test_pca_file_not_found,analysis_func_021
+test\test_pca.py,function_def,test_pca_outfile_exists,analysis_func_023
+test\test_pca.py,function_def,test_cvr_thresh_error,analysis_func_024
+test\test_pca.py,function_def,test_missing_columns,analysis_func_022
+test\test_pca.py,function_call,pc_analyzer,ml_model_func_001
+test\test_pca.py,parameter,cvr_thresh,param_016
+test\test_pca.py,parameter,drop_cols,param_015
+test\test_pca.py,parameter,out_path,param_007
+test\test_pca.py,parameter,in_path,param_006
+test\test_pca.py,parameter,project,param_035
+test\test_removing_zero_unitpirce.py,import,from src.removing_zero_unitprice import removing_zero,from module_l2_009 import data_cleaning_func_005
+test\test_removing_zero_unitpirce.py,function_def,test_removing_zero,data_cleaning_func_012
+test\test_removing_zero_unitpirce.py,function_call,removing_zero,data_cleaning_func_005
+test\test_removing_zero_unitpirce.py,parameter,output_pickle_path,param_002
+test\test_removing_zero_unitpirce.py,parameter,input_pickle_path,param_001
+test\test_removing_zero_unitpirce.py,parameter,project,param_035
+test\test_rfm.py,function_def,test_rfm,analysis_func_026
+test\test_rfm.py,parameter,input_pickle_path,param_001
+test\test_scaler.py,import,from src.scaler import scaler,from module_l2_017 import ml_model_func_003
+test\test_scaler.py,function_def,test_scaler_file_not_found,analysis_func_027
+test\test_scaler.py,function_def,test_scaler_outfile_exists,analysis_func_030
+test\test_scaler.py,function_def,test_missing_norm_columns,analysis_func_029
+test\test_scaler.py,function_def,test_missing_std_columns,analysis_func_028
+test\test_scaler.py,function_call,scaler,ml_model_func_003
+test\test_scaler.py,parameter,out_path,param_007
+test\test_scaler.py,parameter,in_path,param_006
+test\test_scaler.py,parameter,project,param_035
+test\test_scaler.py,parameter,cols,param_018
+test\test_seasonality.py,function_def,test_seasonality_impacts,analysis_func_031
+test\test_seasonality.py,parameter,input_pickle_path,param_001
+test\test_transaction_status_handler.py,import,from src.transaction_status_handler import handle_transactio,from module_l2_006 import data_cleaning_func_006
+test\test_transaction_status_handler.py,function_def,test_handle_transaction_status,analysis_func_032
+test\test_transaction_status_handler.py,function_call,handle_transaction_status,data_cleaning_func_006
+test\test_transaction_status_handler.py,standalone_identifier,handle_transaction_status,data_cleaning_func_006
+test\test_transaction_status_handler.py,parameter,output_pickle_path,param_002
+test\test_transaction_status_handler.py,parameter,input_pickle_path,param_001
+test\test_transaction_status_handler.py,parameter,project,param_035
+test\test_unique_products.py,function_def,test_unique_products,feature_engineering_func_014
+test\test_unique_products.py,standalone_identifier,unique_products,feature_engineering_func_006
+test\test_unique_products.py,parameter,input_pickle_path,param_001
+test\test_unzip_data.py,import,from src import unzip_data,from module_l1_014 import module_l1_003
+test\test_unzip_data.py,function_def,test_unzip_file_successful,analysis_func_033
+test\test_unzip_data.py,function_def,test_unzip_file_bad_zip,analysis_func_034
+test\test_unzip_data.py,function_call,unzip_file,data_loader_func_003
+test\test_unzip_data.py,parameter,tmp_path,param_064
+test\test_unzip_data.py,parameter,capsys,param_065
