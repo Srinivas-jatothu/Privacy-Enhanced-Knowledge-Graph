@@ -617,7 +617,7 @@ productive_files (≥3 funcs)     84         84       1.000    ✅ PERFECT
 role_analysis                   94        105       0.895    ✅ OK
 role_ml_model                   58         65       0.892    ✅ OK
 role_feature_engineering       102        117       0.872    ✅ OK
-role_data_cleaning              36         61       0.590    ⚠ Below threshold
+role_data_cleaning              36         61       0.590    ⚠ Par Above threshold
 role_visualization               2         17       0.118    ⚠ Small set
 role_data_loader                 0         24       0.000    ℹ Metric artefact*
 ────────────────────────────────────────────────────────────────────────
@@ -644,10 +644,10 @@ Semantic Utility
 (ROUGE-L)
   0.30 │                    ★ M3 (28.16)  ← Best utility
        │                   ╱╲             Role-Aware beats raw KG!
-  0.28 │ ─ ─ ─ ─ ─ ─ ─ ─ ╱  ╲─ ─ utility threshold (raw KG: 26.03)
+  0.28 │ ─ ─ ─ ─ ─ ─ ─ ─  ╱  ╲─ ─ utility threshold (raw KG: 26.03)
        │                 ╱    ╲
-  0.26 │               ╱      🔒 M4 (25.91) ← Structural guarantee
-       │              ╱
+  0.26 │                ╱      🔒 M4 (25.91) ← Structural guarantee
+       │               ╱
   0.24 │  M2 (23.81) ●         P(re-id) ≤ 0.333
        │  Blind
   0.22 │
@@ -813,60 +813,6 @@ Hypothesis: LLM-generated summaries from sanitized KG context
 
 ---
 
-## 📚 Key References
-
-```bibtex
-@article{bellomarini2024syntheticKG,
-  title   = {Privacy-Preserving Synthetically Augmented Knowledge Graphs
-             with Semantic Utility},
-  author  = {Bellomarini, Luigi and others},
-  journal = {Proceedings of the VLDB Endowment},
-  year    = {2024}
-}
-
-@inproceedings{ahmad2020transformer,
-  title     = {A Transformer-based Approach for Source Code Summarization},
-  author    = {Ahmad, Wasi Uddin and others},
-  booktitle = {ACL},
-  year      = {2020}
-}
-
-@book{dwork2014algorithmic,
-  title     = {The Algorithmic Foundations of Differential Privacy},
-  author    = {Dwork, Cynthia and Roth, Aaron},
-  publisher = {Now Publishers},
-  year      = {2014}
-}
-
-@inproceedings{papineni2002bleu,
-  title     = {BLEU: a Method for Automatic Evaluation of Machine Translation},
-  author    = {Papineni, Kishore and others},
-  booktitle = {ACL},
-  year      = {2002}
-}
-
-@inproceedings{lin2004rouge,
-  title     = {ROUGE: A Package for Automatic Evaluation of Summaries},
-  author    = {Lin, Chin-Yew},
-  booktitle = {ACL Workshop},
-  year      = {2004}
-}
-```
-
----
-
-## 📜 Citation
-
-```bibtex
-@mastersthesis{nayak2025pekg,
-  title   = {Privacy Enhanced Knowledge Graph (PEKG) for Code Summarization},
-  author  = {Nayak, Jatothu Srinivas},
-  school  = {Indian Institute of Technology Tirupati},
-  year    = {2025},
-  type    = {Master of Technology Thesis},
-  note    = {Supervisors: Dr. Sridhar Chimalakonda, Dr. G. Ramakrishna}
-}
-```
 
 ---
 
